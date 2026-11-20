@@ -1,0 +1,859 @@
+{
+ "welcome": {
+  "de": [
+   "Das [[ae2:charger]] braucht **zwei** Kupferbarren, oben und unten in der Mitte, dazu fünf Eisen; die Mitte und das Feld rechts daneben bleiben leer. Die [[ae2:crank]] sind vier Stöcke und ein Kupferbarren.",
+   "Setz die Kurbel oben oder unten an das Ladegerät und dreh, bis aus dem Kompass ein [[ae2:meteorite_compass]] geworden ist. Er zeigt zum Mysteriösen Würfel des nächsten Meteoriten, weiter bei {{ae2/meteorite}}."
+  ],
+  "en": [
+   "The [[ae2:charger]] takes **two** copper ingots, top and bottom centre, plus five iron; the centre and the slot right of it stay empty. The [[ae2:crank]] is four sticks and a copper ingot.",
+   "Put the crank on top of or below the charger and turn it until the compass has become a [[ae2:meteorite_compass]]. It points to the Mysterious Cube of the nearest meteorite, next in {{ae2/meteorite}}."
+  ],
+  "sources": [
+   "ae2:network/blocks/crystal_processing_charger (aba / a__ / aba, b = copper)",
+   "ae2:network/blocks/crank (aaa / __a / __b)",
+   "ae2:charger/meteorite_compass",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/charger.md",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/meteorites.md"
+  ]
+ },
+ "meteorite": {
+  "de": [
+   "Aus dem Krater kommt [[ae2:sky_stone_block]]; im Ofen wird daraus der [[ae2:smooth_sky_stone_block]], den der ME-Controller in den vier Ecken braucht. Unfertige Certusknospen geben beim Abbau nur einen Certusquarzstaub, ein voller Cluster vier Kristalle, mit Glück mehr.",
+   "Ein makelloser Knospenblock lässt sich nicht abbauen, ohne ihn zu verlieren, aber später wieder herstellen: Der {{ae2/crystal_fixer}} hebt einen unreinen Block auf makellos, und Raumspeicher ({{ae2_advanced/spatial_cell}}) trägt ihn im Ganzen heim."
+  ],
+  "en": [
+   "The crater gives [[ae2:sky_stone_block]]; a furnace turns it into the [[ae2:smooth_sky_stone_block]] the ME Controller needs in its four corners. Unfinished certus buds drop a single certus quartz dust, a full cluster four crystals, more with Fortune.",
+   "A flawless budding block cannot be mined without losing it, but you can make one again later: the {{ae2/crystal_fixer}} raises a flawed block to flawless, and spatial storage ({{ae2_advanced/spatial_cell}}) carries it home whole."
+  ],
+  "sources": [
+   "ae2:smelting/smooth_sky_stone_block",
+   "kronwerke:ae2/controller",
+   "extendedae:fixer/certus_flawed",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/certus-growth.md"
+  ]
+ },
+ "presses": {
+  "de": [
+   "Bau den Mysteriösen Würfel **ohne Behutsamkeit** ab: Mit Behutsamkeit bekommst du nur den Würfel als Block, ohne fallen alle vier Pressen.",
+   "Zum Kopieren kommt die Presse in den oberen Platz der Gravurmaschine ({{ae2/inscriber}}) und ein [[minecraft:iron_block]] in die Mitte; die Presse bleibt erhalten. Gib deinem Team so einen eigenen Satz."
+  ],
+  "en": [
+   "Mine the Mysterious Cube **without Silk Touch**: with Silk Touch you only get the cube block, without it all four presses drop.",
+   "To copy a press, put it in the top slot of the inscriber ({{ae2/inscriber}}) and an [[minecraft:iron_block]] in the middle; the press is kept. That way your team gets its own set."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: data/ae2/loot_table/blocks/mysterious_cube.json (silk_touch gives the cube, else #ae2:inscriber_presses)",
+   "ae2:inscriber/silicon_press (top press, middle iron_block)"
+  ]
+ },
+ "charged": {
+  "de": [
+   "Für die Imbuement-Kammer ({{ars_nouveau/imbuement}}) brauchst du [[ars_nouveau:arcane_pedestal]] ({{ars_nouveau/pedestals}}) daneben, eins mit Redstone-Staub und eins mit Glowstone-Staub; jeder Kristall kostet 2 000 Quelle. Die Energizing Orb ({{powah/orb}}) braucht 20 000 FE für zwei Kristalle und ist auf Dauer der bessere Weg.",
+   "Das Ladegerät, die Reaktionskammer von Advanced AE und alle anderen Wege sind entfernt. Jeder geladene Kristall steckt später in Fluix, Knospenblöcken und Himmelsstahl, also bau früh eine Orb."
+  ],
+  "en": [
+   "The imbuement chamber ({{ars_nouveau/imbuement}}) needs [[ars_nouveau:arcane_pedestal]]s ({{ars_nouveau/pedestals}}) next to it, one with redstone dust and one with glowstone dust; each crystal costs 2,000 source. The Energizing Orb ({{powah/orb}}) takes 20,000 FE for two crystals and is the better route in the long run.",
+   "The charger, the Advanced AE reaction chamber and every other route are removed. Charged crystals go into fluix, budding blocks and sky steel later, so build an orb early."
+  ],
+  "sources": [
+   "kronwerke:ae2/charged_certus_imbuement (source 2000)",
+   "kronwerke:ae2/charged_certus_energizing (energy 20000, count 2)",
+   "kubejs/server_scripts/kronwerke/ae2.js (remove output charged_certus)",
+   "kronwerke:tech/energizing_orb (botania:mana_diamond)"
+  ]
+ },
+ "fluix": {
+  "de": [
+   "Die Zutaten müssen gemeinsam in einem Wasserblock liegen. Ohne Werfen geht es im Mechanischen Mixer von Create: geladener Certus, Redstone, Netherquarz und 250 mB Wasser ergeben dort ebenfalls zwei [[ae2:fluix_crystal]].",
+   "Mehr Certus bekommst du mit einem geladenen Kristall und einem [[ae2:certus_quartz_dust]] im Wasser: zwei normale Kristalle. Den Staub mahlt die Gravurmaschine ({{ae2/inscriber}}) aus einem Kristall."
+  ],
+  "en": [
+   "The ingredients have to lie together in one water block. Without throwing, Create's Mechanical Mixer does it too: charged certus, redstone, nether quartz and 250 mB of water make two [[ae2:fluix_crystal]]s there as well.",
+   "For more certus, drop a charged crystal and a [[ae2:certus_quartz_dust]] in water: two plain crystals. The inscriber ({{ae2/inscriber}}) grinds the dust from a crystal."
+  ],
+  "sources": [
+   "ae2:transform/fluix_crystals",
+   "create:mixing/compat/ae2/fluix_crystal",
+   "ae2:transform/certus_quartz_crystals",
+   "ae2:inscriber/certus_quartz_dust"
+  ]
+ },
+ "growth": {
+  "de": [
+   "Ein [[ae2:quartz_block]] sind vier Certuskristalle. Mit einem geladenen Kristall im Wasser wird er zum Beschädigten Knospenblock, jeder weitere hebt ihn um eine Stufe: Angeschlagen, dann Unrein.",
+   "Ein Beschleuniger macht das Wachstum nach dem Guide etwa 90-mal schneller, und mehrere addieren sich; jede belegte Seite des Knospenblocks bremst ihn aber auch. Strom kommt oben oder unten an den rosa Enden an, zur Not über eine [[ae2:crank]]."
+  ],
+  "en": [
+   "A [[ae2:quartz_block]] is four certus crystals. With a charged crystal in water it becomes a Damaged Budding block, each further one raises it a tier: Chipped, then Flawed.",
+   "According to the guide one accelerator makes growth about 90 times faster and several add up; every covered side of the budding block also slows it, though. Power goes in at the pink ends on top or bottom, a [[ae2:crank]] does in a pinch."
+  ],
+  "sources": [
+   "ae2:decorative/quartz_block",
+   "ae2:transform/damaged_budding_quartz",
+   "ae2:transform/chipped_budding_quartz",
+   "ae2:transform/flawed_budding_quartz",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/growth_accelerator.md",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/certus-growth.md"
+  ]
+ },
+ "inscriber": {
+  "de": [
+   "Auf Kronwerke ersetzt die [[create:mechanical_press]] die Kolben. Das Raster: oben Eisen, Presse, Eisen; in der Mitte links ein Kupferbarren, **die Mitte frei**, rechts Eisen; unten wieder Eisen, Presse, Eisen.",
+   "Ohne Presse mahlt sie auch Fluix zu [[ae2:fluix_dust]], den du für Energiezellen und Kerne brauchst. Mit Strom über FE oder AE läuft sie von allein, Pressen bleiben beim Gravieren erhalten."
+  ],
+  "en": [
+   "On Kronwerke the [[create:mechanical_press]] replaces the pistons. The grid: top iron, press, iron; middle row copper ingot on the left, **centre empty**, iron on the right; bottom iron, press, iron again.",
+   "Without a press it also grinds fluix into [[ae2:fluix_dust]], which energy cells and cores need. Powered with FE or AE it runs on its own, and presses are not used up."
+  ],
+  "sources": [
+   "ae2:network/blocks/inscribers (aba / c_a / aba)",
+   "kubejs/server_scripts/kronwerke/round.js (piston to create:mechanical_press)",
+   "ae2:inscriber/fluix_dust"
+  ]
+ },
+ "silicon": {
+  "de": [
+   "Mehr [[ae2:silicon]] pro Certus: Die Anreicherungskammer von Mekanism macht aus einem Certusquarzstaub zwei Silizium, der Zerkleinerer aus Sand eines. Noch ergiebiger ist Quartz Blend von Extended AE (ein Quarzstaub, je zwei Kohle und Holzkohle, sechs Sand ergeben sechs Blend, jedes im Ofen vier Silizium).",
+   "Das [[ae2:printed_silicon]] steckt in jedem Prozessor und in jedem [[mekanism:advanced_control_circuit]]; die Schaltkreise brauchst du auch für {{mekanism_advanced/circuits}}."
+  ],
+  "en": [
+   "More [[ae2:silicon]] per certus: Mekanism's Enrichment Chamber turns one certus quartz dust into two silicon, the Crusher makes one from sand. Extended AE's Quartz Blend gives even more (one quartz dust, two coal, two charcoal and six sand make six blend, each smelts into four silicon).",
+   "[[ae2:printed_silicon]] goes into every processor and every [[mekanism:advanced_control_circuit]]; you also need those circuits for {{mekanism_advanced/circuits}}."
+  ],
+  "sources": [
+   "mekanism:compat/ae2/certus_quartz_dust_to_silicon",
+   "mekanism:compat/ae2/sand_to_silicon",
+   "extendedae:quartz_blend",
+   "extendedae:smelting/quartz_blend",
+   "kronwerke:tech/advanced_control_circuit"
+  ]
+ },
+ "logic_proc": {
+  "de": [
+   "Alle drei Prozessoren laufen in zwei Gängen: erst die Presse oben mit dem Rohstoff in der Mitte zum gedruckten Schaltkreis, dann der Schaltkreis oben, Redstone in der Mitte, [[ae2:printed_silicon]] unten.",
+   "Der Crystal Assembler ({{ae2/crystal_assembler}}) macht den zweiten Gang mit vier Prozessoren pro Durchlauf, der {{ae2/circuit_cutter}} schneidet aus einem Goldblock neun Logikschaltkreise."
+  ],
+  "en": [
+   "All three processors take two passes: first the press on top with the raw material in the middle for the printed circuit, then the circuit on top, redstone in the middle, [[ae2:printed_silicon]] at the bottom.",
+   "The Crystal Assembler ({{ae2/crystal_assembler}}) does the second pass with four processors per run, and the {{ae2/circuit_cutter}} slices nine logic circuits from a gold block."
+  ],
+  "sources": [
+   "ae2:inscriber/logic_processor_print",
+   "ae2:inscriber/logic_processor",
+   "extendedae:assembler/logic_processor (count 4)",
+   "extendedae:cutter/logic_processor (9)"
+  ]
+ },
+ "calc_proc": {
+  "de": [
+   "Unter den Kalkulationsdruck kommt ein normaler [[ae2:certus_quartz_crystal]], kein geladener. Du brauchst viele: zwei Basiskarten, jede Fertigungseinheit und jede Zellkomponente ab 4k kosten je einen.",
+   "Im {{ae2/circuit_cutter}} gibt ein Certusquarzblock vier gedruckte Kalkulationsschaltkreise."
+  ],
+  "en": [
+   "The calculation press takes a plain [[ae2:certus_quartz_crystal]], not a charged one. You need plenty: every pair of basic cards, every crafting unit and every cell component from 4k up costs one.",
+   "In the {{ae2/circuit_cutter}} a certus quartz block gives four printed calculation circuits."
+  ],
+  "sources": [
+   "ae2:inscriber/calculation_processor_print",
+   "ae2:materials/basiccard",
+   "ae2:network/crafting/cpu_crafting_unit",
+   "extendedae:cutter/calculation_processor (4)"
+  ]
+ },
+ "processors": {
+  "de": [
+   "Der Konstruktionsdruck braucht einen [[minecraft:diamond]] pro Schaltkreis, das ist der teure Teil. Der {{ae2/circuit_cutter}} schneidet aus einem Diamantblock neun.",
+   "Für den Stahlkern ({{mekanism_advanced/steel_core}}) rechne 16 Prozessoren für acht Kerne ein, zusätzlich zu Laufwerk, Controller und Tunneln."
+  ],
+  "en": [
+   "The engineering press needs a [[minecraft:diamond]] per circuit, that is the expensive part. The {{ae2/circuit_cutter}} slices nine from a diamond block.",
+   "For the Steel Core ({{mekanism_advanced/steel_core}}) count 16 processors for eight cores, on top of the drive, controller and tunnels."
+  ],
+  "sources": [
+   "ae2:inscriber/engineering_processor_print",
+   "kronwerke:milestones/steel_core (two engineering processors)",
+   "config/kronwerke/goals.json (steel_core 8, fixed)",
+   "extendedae:cutter/engineering_processor (9)"
+  ]
+ },
+ "drive": {
+  "de": [
+   "Ein [[mekanism:advanced_control_circuit]] ist zwei Infundierte Legierungen, ein Einfacher Steuerschaltkreis und ein Gedrucktes Silizium; für ein Laufwerk brauchst du zwei.",
+   "Das Laufwerk ist reiner Platz für Zellen und zeigt nichts an. Ohne Konsole und Strom ({{ae2/network}}) siehst du die Zellen nicht."
+  ],
+  "en": [
+   "An [[mekanism:advanced_control_circuit]] is two infused alloys, a basic control circuit and a printed silicon; a drive needs two.",
+   "The drive only holds cells and shows nothing itself. Without a terminal and power ({{ae2/network}}) you cannot see the cells."
+  ],
+  "sources": [
+   "kronwerke:ae2/drive (IEI / A_A / IEI)",
+   "kronwerke:tech/advanced_control_circuit"
+  ]
+ },
+ "network": {
+  "de": [
+   "Fluix-Glaskabel verbinden sich mit allen Farben. Die [[ae2:terminal]] braucht ein [[ae2:semi_dark_monitor]] (Quarzglas, Glowstone, Redstone, Eisen, gibt drei); Formations- und Annihilationskern sind je Logikprozessor, Fluixstaub und Certus beziehungsweise Netherquarz, und jedes Rezept gibt zwei.",
+   "Stell die [[ae2:energy_cell]] früh dazu: Sie ist Certus, Fluixstaub und Quarzglas. Danach Zellen bauen ({{ae2/cell_1k}}) und später den Controller ({{ae2/controller}})."
+  ],
+  "en": [
+   "Fluix glass cable connects to every colour. The [[ae2:terminal]] needs an [[ae2:semi_dark_monitor]] (quartz glass, glowstone, redstone, iron, makes three); the formation and annihilation cores are each a logic processor, fluix dust and certus or nether quartz, and each recipe makes two.",
+   "Add the [[ae2:energy_cell]] early: it is certus, fluix dust and quartz glass. Next build cells ({{ae2/cell_1k}}) and later the controller ({{ae2/controller}})."
+  ],
+  "sources": [
+   "ae2:network/parts/terminals",
+   "ae2:network/parts/panels_semi_dark_monitor",
+   "ae2:materials/formationcore",
+   "ae2:materials/annihilationcore",
+   "ae2:network/blocks/energy_energy_cell",
+   "srv/config/ae2-common.toml (forgeEnergy 0.5)"
+  ]
+ },
+ "cell_1k": {
+  "de": [
+   "Ein Typ kostet in der 1k-Zelle 8 Bytes vorab, darum passen bei einer Sorte (1 024 minus 8) mal 8 = 8 128 Stück hinein. Das Gehäuse ([[ae2:item_cell_housing]]) bleibt beim Zerlegen übrig und nimmt später jede größere Komponente.",
+   "Für Sorten in großen Mengen ist eine Schublade am Speicherbus oft besser ({{ae2/storage_bus}})."
+  ],
+  "en": [
+   "In a 1k cell each type costs 8 bytes up front, so one kind fits (1,024 minus 8) times 8 = 8,128 items. The housing ([[ae2:item_cell_housing]]) is left over when you take a cell apart and takes any bigger component later.",
+   "For a few kinds in large amounts a drawer on a storage bus is often better ({{ae2/storage_bus}})."
+  ],
+  "sources": [
+   "ae2:network/cells/item_storage_cell_1k_storage",
+   "ae2:network/cells/item_storage_components_cell_1k_part",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/bytes-and-types.md"
+  ]
+ },
+ "cell_4k": {
+  "de": [
+   "Pro 4k-Komponente brauchst du drei 1k-Komponenten, also drei Logikprozessoren und einen Kalkulationsprozessor. Rechne früh, was du wirklich lagerst: viele kleine Zellen kosten weniger als eine große, haben aber alle 63 Typen.",
+   "Mit dem {{ae2/io_port}} ziehst du volle Zellen schnell um."
+  ],
+  "en": [
+   "Each 4k component takes three 1k components, so three logic processors and a calculation processor. Work out early what you really store: several small cells cost less than one big one and each has all 63 types.",
+   "The {{ae2/io_port}} moves full cells over quickly."
+  ],
+  "sources": [
+   "ae2:network/cells/item_storage_components_cell_4k_part (aba / cdc / aca)"
+  ]
+ },
+ "cell_16k": {
+  "de": [
+   "Eine 16k-Komponente enthält neun 1k-Komponenten, also neun Logikprozessoren, und vier Kalkulationsprozessoren. Bei 63 Typen passen 66 560 Stück hinein, gut halb so viel wie bei einer Sorte.",
+   "Weiter geht es im Kapitel AE2: Fortgeschritten mit {{ae2_advanced/welcome}}, dort braucht die nächste Komponente einen [[naturesaura:sky_ingot]]."
+  ],
+  "en": [
+   "A 16k component holds nine 1k components, so nine logic processors, and four calculation processors. With 63 types it holds 66,560 items, about half of the single kind figure.",
+   "The chapter AE2: Advanced continues with {{ae2_advanced/welcome}}, where the next component needs a [[naturesaura:sky_ingot]]."
+  ],
+  "sources": [
+   "ae2:network/cells/item_storage_components_cell_16k_part",
+   "kronwerke:ae2/cell_component_64k"
+  ]
+ },
+ "controller": {
+  "de": [
+   "Der [[occultism:spirit_attuned_gem]] entsteht, wenn du einen **Diamanten** in Spiritfire wirfst ({{occultism/spirit_gem}}), nicht aus Lapis. In die Ecken gehören [[ae2:smooth_sky_stone_block]], also geschmolzener Himmelsstein.",
+   "Jeder Controllerblock speichert selbst 8 000 AE. Alle Blöcke müssen sich berühren, und ein Block darf nur entlang einer Achse auf beiden Seiten Nachbarn haben, sonst wird er rot."
+  ],
+  "en": [
+   "The [[occultism:spirit_attuned_gem]] comes from throwing a **diamond** into spiritfire ({{occultism/spirit_gem}}), not from lapis. The corners take [[ae2:smooth_sky_stone_block]], which is smelted sky stone.",
+   "Each controller block stores 8,000 AE itself. All blocks must touch, and a block may have neighbours on both sides along one axis only, otherwise it turns red."
+  ],
+  "sources": [
+   "kronwerke:ae2/controller (SGS / FEF / SFS, S = smooth_sky_stone_block)",
+   "occultism:spirit_fire/spirit_attuned_gem (#c:gems/diamond)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/controller.md"
+  ]
+ },
+ "channels": {
+  "de": [
+   "Das [[ae2:fluix_covered_dense_cable]] (im Spiel Fluix dickes ME-Kabel) sind vier verdeckte Kabel, ein verdecktes Kabel ist ein Glaskabel mit Wolle. Die [[create:electron_tube]] für die schlauen Kabel kommt aus Polierter Rosenquarz und einem Eisenblech ({{create_brass/electron_tube}}).",
+   "Jeder Kanal kostet etwas Strom pro Gerät auf seinem Weg, große Netze ziehen also mehr."
+  ],
+  "en": [
+   "The [[ae2:fluix_covered_dense_cable]] is four covered cables, a covered cable is a glass cable with wool. The [[create:electron_tube]] for smart cables is polished rose quartz and an iron sheet ({{create_brass/electron_tube}}).",
+   "Each channel costs a little power for every node it passes, so big networks draw more."
+  ],
+  "sources": [
+   "ae2:network/cables/dense_covered_fluix",
+   "ae2:network/cables/covered_fluix",
+   "kronwerke:ae2/fluix_smart_cable",
+   "create:crafting/materials/electron_tube",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/channels.md"
+  ]
+ },
+ "buses": {
+  "de": [
+   "Beide Busse sind flache Kabelteile und brauchen je einen Kanal. Den Exportbus musst du einstellen: Zieh den Gegenstand aus EMI in seinen Filter, sonst tut er nichts. Der Importbus ohne Filter nimmt alles.",
+   "Kolben brauchst du hier in Mengen, je Bus einen."
+  ],
+  "en": [
+   "Both buses are flat cable parts and need one channel each. The export bus has to be configured: drag the item from EMI into its filter, otherwise it does nothing. An import bus without a filter takes everything.",
+   "You need pistons in numbers here, one per bus."
+  ],
+  "sources": [
+   "ae2:network/parts/import_bus",
+   "ae2:network/parts/export_bus",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/export_bus.md"
+  ],
+  "client": [
+   "dragging from EMI into the bus filter"
+  ]
+ },
+ "cards": {
+  "de": [
+   "Basiskarte und Fortgeschrittene Karte geben je zwei Stück, eine Fortgeschrittene Karte kostet einen Diamanten. Die Beschleunigungskarte braucht einen Fluixkristall, die Kapazitätskarte einen Certuskristall, geladen oder nicht.",
+   "Aus der Basiskarte entstehen auch Fertigungskarte ({{ae2/crafting_card}}) und Overflow Zerstörungskarte."
+  ],
+  "en": [
+   "Basic and advanced cards come two at a time, an advanced card costs a diamond. The acceleration card takes a fluix crystal, the capacity card a certus crystal, charged or not.",
+   "The basic card is also the base of the crafting card ({{ae2/crafting_card}}) and the overflow destruction card."
+  ],
+  "sources": [
+   "ae2:materials/basiccard (count 2)",
+   "ae2:materials/advancedcard (count 2)",
+   "ae2:materials/cardspeed (#ae2:all_fluix = fluix_crystal)",
+   "ae2:materials/cardcapacity (#ae2:all_certus_quartz)",
+   "ae2:materials/cardvoid"
+  ]
+ },
+ "storage_bus": {
+  "de": [
+   "Der Speicherbus braucht eine [[ae2:interface]] ({{ae2/interface}}) als Zutat. Setz ihn vor einen [[functionalstorage:storage_controller]], dann sieht das Netz alle angeschlossenen Schubladen ({{storage/drawers_4}}) auf einmal.",
+   "Auf Rechtsklick hat er Priorität und Filter: Gib der Wand eine höhere Priorität als den Zellen, dann landen ihre Sorten zuerst dort."
+  ],
+  "en": [
+   "The storage bus takes an [[ae2:interface]] ({{ae2/interface}}) as ingredient. Put it in front of a [[functionalstorage:storage_controller]] and the network sees every connected drawer ({{storage/drawers_4}}) at once.",
+   "Right-click it for priority and filter: give the wall a higher priority than the cells and its kinds go there first."
+  ],
+  "sources": [
+   "ae2:network/parts/storage_bus",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/storage_bus.md"
+  ],
+  "client": [
+   "storage bus on a Functional Storage drawer controller shows the whole wall"
+  ]
+ },
+ "wireless": {
+  "de": [
+   "Der [[ae2:wireless_receiver]] braucht auf Kronwerke einen [[deeperdarker:sculk_transmitter]] aus der Otherside statt einer Fluixperle ({{deeper_darker/transmitter}}). Die drahtlose Konsole braucht dazu eine Dichte Energiezelle.",
+   "Ohne Verstärker reicht ein Zugangspunkt 16 Blöcke weit, jeder [[ae2:wireless_booster]] hebt das (Verstärker hoch 1,5). Der Zugangspunkt braucht einen Kanal."
+  ],
+  "en": [
+   "On Kronwerke the [[ae2:wireless_receiver]] takes a [[deeperdarker:sculk_transmitter]] from the Otherside instead of a fluix pearl ({{deeper_darker/transmitter}}). The wireless terminal also needs a dense energy cell.",
+   "Without boosters an access point reaches 16 blocks, each [[ae2:wireless_booster]] adds to that (boosters to the power of 1.5). The access point needs a channel."
+  ],
+  "sources": [
+   "ae2:network/wireless_part",
+   "kubejs/server_scripts/kronwerke/round.js (fluix_pearl to deeperdarker:sculk_transmitter)",
+   "srv/config/ae2-common.toml (wirelessBaseRange 16, wirelessBoosterExp 1.5)",
+   "appeng.core.AEConfig#wireless_getMaxRange (javap)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/wireless_terminals.md"
+  ]
+ },
+ "pattern_terminal": {
+  "de": [
+   "Die [[ae2:blank_pattern]] gibt das Rezept zu zweit; jede Schablone, die du schreibst, verbraucht eine. Die Schablonenkonsole ist ein Kabelteil und braucht einen Kanal.",
+   "Reihenfolge der nächsten Quests: {{ae2/first_pattern}}, {{ae2/provider}}, {{ae2/autocraft}}, {{ae2/cpu}}."
+  ],
+  "en": [
+   "The [[ae2:blank_pattern]] recipe makes two; every pattern you encode uses one. The pattern encoding terminal is a cable part and needs a channel.",
+   "The next quests in order: {{ae2/first_pattern}}, {{ae2/provider}}, {{ae2/autocraft}}, {{ae2/cpu}}."
+  ],
+  "sources": [
+   "ae2:network/crafting/patterns_blank (count 2)",
+   "ae2:network/parts/terminals_pattern_encoding",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/patterns.md"
+  ]
+ },
+ "first_pattern": {
+  "de": [
+   "Eine Fertigungsschablone gilt nur für Werkbankrezepte und läuft im Molekularassembler ({{ae2/autocraft}}). Für Öfen und Maschinen schreibst du später Verarbeitungsschablonen ({{ae2/processing_pattern}}).",
+   "Der Plus-Knopf in EMI überträgt das Rezept nur, solange die Schablonenkonsole offen ist."
+  ],
+  "en": [
+   "A crafting pattern only covers workbench recipes and runs in the molecular assembler ({{ae2/autocraft}}). For furnaces and machines you write processing patterns later ({{ae2/processing_pattern}}).",
+   "EMI's plus button only transfers the recipe while the pattern encoding terminal is open."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/patterns.md"
+  ],
+  "client": [
+   "EMI plus button transfers into the pattern encoding terminal"
+  ]
+ },
+ "provider": {
+  "de": [
+   "Das [[create:precision_mechanism]] in der Mitte kommt aus der Fließbandmontage von Create ({{create_brass/precision}}). Der Provider ist ein Block; formlos wird er zum flachen Kabelteil und wieder zurück.",
+   "Ein Provider schiebt in jeden Block, der an ihm sitzt, also stell nur den Assembler oder die Maschine daneben."
+  ],
+  "en": [
+   "The [[create:precision_mechanism]] in the middle comes from Create's sequenced assembly ({{create_brass/precision}}). The provider is a block; a shapeless craft turns it into a flat cable part and back.",
+   "A provider pushes into every block touching it, so place only the assembler or the machine next to it."
+  ],
+  "sources": [
+   "kronwerke:ae2/pattern_provider (ITI / APF / ITI)",
+   "ae2:network/blocks/pattern_providers_interface_part",
+   "ae2:network/blocks/pattern_providers_interface_alt",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/pattern_provider.md"
+  ]
+ },
+ "autocraft": {
+  "de": [
+   "Der Assembler braucht zwei [[create:precision_mechanism]], das ist der Engpass beim Ausbau. Er hat keinen eigenen Netzanschluss: Er arbeitet nur, wenn er direkt an einem Provider sitzt.",
+   "Ohne Fertigungs-CPU ({{ae2/cpu}}) kannst du noch nichts bestellen."
+  ],
+  "en": [
+   "The assembler takes two [[create:precision_mechanism]]s, the bottleneck when you scale up. It has no network connection of its own: it only works while it touches a provider.",
+   "Without a crafting CPU ({{ae2/cpu}}) you cannot order anything yet."
+  ],
+  "sources": [
+   "kronwerke:ae2/molecular_assembler (IGI / PCP / IGI)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/molecular_assembler.md"
+  ]
+ },
+ "cpu": {
+  "de": [
+   "Die kleinste CPU ist ein einzelner [[ae2:1k_crafting_storage]]. Die [[ae2:crafting_accelerator]] (im Spiel Fertigungs-Prozessoreinheit) lässt die CPU öfter Zutaten losschicken.",
+   "Eine CPU nimmt einen Auftrag; willst du zwei Dinge gleichzeitig bestellen, bau zwei CPUs. Sie lässt sich auf Spieler, Automatik oder beides stellen."
+  ],
+  "en": [
+   "The smallest CPU is a single [[ae2:1k_crafting_storage]]. The [[ae2:crafting_accelerator]] makes the CPU send out ingredients more often.",
+   "A CPU takes one job; to order two things at once, build two CPUs. It can be set to accept players, automation or both."
+  ],
+  "sources": [
+   "ae2:network/crafting/1k_cpu_crafting_storage",
+   "ae2:network/crafting/cpu_crafting_accelerator",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/crafting_cpu_multiblock.md"
+  ]
+ },
+ "processing_pattern": {
+  "de": [
+   "Die Gravurmaschine braucht den Siliziumdruck fest im oberen Platz, die Schablone liefert nur das Silizium. Für Logik- und andere Prozessoren lohnt eine eigene Maschine pro Presse.",
+   "Stell die Gravurmaschine so ein, dass sie Ergebnisse in Nachbarinventare schiebt: Was sie in den Provider schiebt, geht direkt ins Netz."
+  ],
+  "en": [
+   "The inscriber needs the silicon press fixed in its top slot; the pattern only delivers the silicon. For logic and the other processors one machine per press is worth it.",
+   "Set the inscriber to push results into adjacent inventories: whatever it pushes into the provider goes straight to the network."
+  ],
+  "sources": [
+   "ae2:inscriber/silicon_print",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/inscriber.md",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/pattern_provider.md"
+  ],
+  "client": [
+   "the inscriber button that pushes results to adjacent inventories"
+  ]
+ },
+ "crafting_card": {
+  "de": [
+   "Die [[ae2:crafting_card]] im Exportbus braucht eine Schablone und eine freie CPU, sonst bestellt sie nichts. Der [[ae2:level_emitter]] braucht keinen Kanal.",
+   "So halten Kiste und Bus den Vorrat für {{ae2/factory}}."
+  ],
+  "en": [
+   "The [[ae2:crafting_card]] in an export bus needs a pattern and a free CPU, otherwise it orders nothing. The [[ae2:level_emitter]] needs no channel.",
+   "This is how a chest and a bus keep the stock for {{ae2/factory}}."
+  ],
+  "sources": [
+   "ae2:materials/cardcrafting",
+   "ae2:network/parts/level_emitter",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/devices.md",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/upgrade_cards.md"
+  ]
+ },
+ "factory": {
+  "de": [
+   "Die Kette: [[create:electron_tube]] mit Redstone in der Metallurgischen Infusionsanlage gibt den Einfachen Steuerschaltkreis ({{mekanism/circuit}}), Kupfer mit Redstone dort die Infundierte Legierung, dann Werkbank. Pro Fortgeschrittenem Schaltkreis also zwei Kupfer, eine Röhre, ein Silizium und Redstone.",
+   "Die Mengen von \"Der Ofen schläft nie\" sind Grundwerte; der Server passt sie an die Zahl aktiver Spieler an. Beim Schleich-Klick am Obelisken gibst du nur die Inventarreihen ab, nicht die Hotbar."
+  ],
+  "en": [
+   "The chain: [[create:electron_tube]] with redstone in the Metallurgic Infuser makes the basic control circuit ({{mekanism/circuit}}), copper with redstone there the infused alloy, then a crafting table. So each advanced circuit is two copper, one tube, one silicon and redstone.",
+   "The amounts of \"The Furnace Never Sleeps\" are base values; the server scales them to the number of active players. A sneak click at the obelisk hands in only your inventory rows, not the hotbar."
+  ],
+  "sources": [
+   "kronwerke:tech/basic_control_circuit",
+   "mekanism:metallurgic_infusing/alloy/infused",
+   "kronwerke:tech/advanced_control_circuit",
+   "config/kronwerke/goals.json (stage3, scale true)",
+   "core: goal/GoalManager.java (currentFactor, depositAll slots 9 to 35)"
+  ]
+ },
+ "p2p": {
+  "de": [
+   "Tunnel sind nicht beidseitig: Der Eingang gibt weiter, die Ausgänge nehmen. Einen ME-Tunnel stellst du per Rechtsklick mit einem Kabel wieder auf ME zurück.",
+   "Die [[ae2:memory_card]] ist Kalkulationsprozessor, Eisen, Gold und Redstone und speichert auch Einstellungen anderer Geräte."
+  ],
+  "en": [
+   "Tunnels are one way: the input sends, the outputs receive. Right-click a tunnel with any cable to turn it back into an ME tunnel.",
+   "The [[ae2:memory_card]] is a calculation processor, iron, gold and redstone, and it also copies the settings of other devices."
+  ],
+  "sources": [
+   "ae2:network/parts/tunnels_me",
+   "ae2:tools/network_memory_card",
+   "srv/mods/appliedenergistics2-19.2.18.jar: data/ae2/tags/item/p2p_attunements/me_p2p_tunnel.json",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/p2p_tunnels.md"
+  ]
+ },
+ "p2p_item": {
+  "de": [
+   "Auch ein Speicher-, Import- oder Exportbus oder eine ME-Schnittstelle stimmen den Tunnel um. Ein Trichter vor dem Eingang wirkt, als stünde er direkt an der Kiste am Ausgang."
+  ],
+  "en": [
+   "A storage, import or export bus or an ME interface attunes the tunnel too. A hopper facing the input acts as if it touched the chest at the output."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: data/ae2/tags/item/p2p_attunements/item_p2p_tunnel.json",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/p2p_tunnels.md"
+  ]
+ },
+ "p2p_fluid": {
+  "de": [
+   "Es geht jeder leere Eimer, Wasser-, Lava- oder Milcheimer. Der Tunnel pumpt nicht selbst: Eine Pumpe oder ein Tank muss in den Eingang schieben."
+  ],
+  "en": [
+   "Any empty, water, lava or milk bucket works. The tunnel does not pump on its own: a pump or tank has to push into the input."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: data/ae2/tags/item/p2p_attunements/fluid_p2p_tunnel.json"
+  ]
+ },
+ "p2p_fe": {
+  "de": [
+   "Dichte Energiezelle oder Energieakzeptor stimmen ihn auch um. Die 2,5 Prozent zahlt das ME-Netz als AE-Verbrauch, nicht der Strom im Tunnel."
+  ],
+  "en": [
+   "A dense energy cell or an energy acceptor attunes it too. The 2.5 percent is paid by the ME network as AE draw, not taken from the power in the tunnel."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: data/ae2/tags/item/p2p_attunements/fe_p2p_tunnel.json",
+   "srv/config/ae2-common.toml (p2pTunnelEnergyTax 0.025)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/p2p_tunnels.md"
+  ]
+ },
+ "p2p_redstone": {
+  "de": [
+   "Auch Verstärker, Komparator, Redstonelampe, Tageslichtsensor und Redstoneblock stimmen ihn um. So schaltest du Maschinen am anderen Ende der Basis ohne Leitung."
+  ],
+  "en": [
+   "A repeater, comparator, redstone lamp, daylight detector or redstone block attunes it too. That way you switch machines across the base without wiring."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: data/ae2/tags/item/p2p_attunements/redstone_p2p_tunnel.json"
+  ]
+ },
+ "p2p_light": {
+  "de": [
+   "Nur Fackel und Glowstone-Block stimmen ihn um. Praktisch für Pflanzen unter der Erde, deren Licht von der Oberfläche kommt."
+  ],
+  "en": [
+   "Only a torch or a glowstone block attunes it. Handy for plants underground that get their light from the surface."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: data/ae2/tags/item/p2p_attunements/light_p2p_tunnel.json"
+  ]
+ },
+ "p2p_chemical": {
+  "de": [
+   "Jeder Chemikalientank von Mekanism geht, vom einfachen bis zum ultimativen. Mit diesen Tunneln läuft Wasserstoff oder Sauerstoff quer durch die Basis zu den Maschinen."
+  ],
+  "en": [
+   "Any Mekanism chemical tank works, from basic to ultimate. These tunnels carry hydrogen or oxygen across the base to the machines."
+  ],
+  "sources": [
+   "srv/mods/Applied-Mekanistics-1.6.3.jar: data/appmek/tags/item/p2p_attunements/chemical_p2p_tunnel.json"
+  ]
+ },
+ "interface": {
+  "de": [
+   "Die [[ae2:interface]] geht als Block oder per Formlos-Rezept als flaches Kabelteil. Mit einer Schnittstelle als Ziel eines Speicherbusses machst du ein Unternetz, das aus dem Hauptnetz liest.",
+   "Für Werkzeugmaschinen, die immer dieselben Zutaten brauchen, ist sie oft einfacher als Autocrafting."
+  ],
+  "en": [
+   "The [[ae2:interface]] works as a block or, with a shapeless craft, as a flat cable part. With an interface as the target of a storage bus you build a subnetwork that reads from the main network.",
+   "For machines that always need the same ingredients it is often simpler than autocrafting."
+  ],
+  "sources": [
+   "ae2:network/blocks/interfaces_interface",
+   "ae2:network/blocks/interfaces_interface_alt",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/interface.md",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/subnetworks.md"
+  ]
+ },
+ "list_devices": {
+  "de": [
+   "Die Vibrationskammer verbrennt Brennstoff wie ein Ofen und ist der einfachste Generator vor dem Energieakzeptor. Der Kristallresonanzgenerator ({{ae2/resonance}}) gibt 20 AE/t, aber nur einer pro Netz.",
+   "Ein Netz ohne Controller trägt acht Geräte mit Kanal, darum kommt {{ae2/controller}} früh."
+  ],
+  "en": [
+   "The vibration chamber burns fuel like a furnace and is the simplest generator next to the energy acceptor. The crystal resonance generator ({{ae2/resonance}}) gives 20 AE/t, but only one per network.",
+   "A network without a controller carries eight channel devices, which is why {{ae2/controller}} comes early."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/vibration_chamber.md",
+   "srv/config/ae2-common.toml (crystalResonanceGeneratorRate 20)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/controller.md"
+  ]
+ },
+ "list_cells": {
+  "de": [
+   "Eine Zelle rüstest du an der Werkbank auf: volle Zelle und größere Komponente zusammen, der Inhalt bleibt. Das gilt auch für Flüssigkeits- und FE-Zellen.",
+   "Flüssigkeitszellen halten nur 5 Typen. Die Draconiumbarren in 256k und den MEGA-Zellen fehlen dem Obelisken in Stufe 4."
+  ],
+  "en": [
+   "Upgrade a cell at the crafting table: full cell plus bigger component, the contents stay. The same works for fluid and FE cells.",
+   "Fluid cells hold only 5 types. The draconium ingots in 256k and MEGA cells are missing from the obelisk in stage 4."
+  ],
+  "sources": [
+   "ae2:upgrade/item_storage_cell_1k_to_64k (ae2:storage_cell_upgrade)",
+   "appflux:upgrade/fe_1k_to_64k_cell",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/storage_cells.md",
+   "config/kronwerke/goals.json (stage4 draconium_ingot)"
+  ]
+ },
+ "entro": {
+  "de": [
+   "Der [[extendedae:entro_seed]] gibt zwei Stück pro Rezept. Von Hand auf den Fluixblock geklickt wird er zum Budding Fully Entroized Fluix; im Crystal Assembler gibt es nur die schwächere Stufe Mostly.",
+   "Unfertige Entro-Knospen geben Entro Shards, acht davon ergeben einen Entro Crystal. Den [[extendedae:entro_dust]] mahlt auch die Gravurmaschine aus einem Kristall."
+  ],
+  "en": [
+   "The [[extendedae:entro_seed]] recipe gives two. Right-clicked by hand on a fluix block it becomes Budding Fully Entroized Fluix; the Crystal Assembler only makes the weaker Mostly tier.",
+   "Unfinished entro buds drop Entro Shards, eight of them make an Entro Crystal. The inscriber also grinds [[extendedae:entro_dust]] from a crystal."
+  ],
+  "sources": [
+   "extendedae:entro_seed (count 2)",
+   "extendedae:assembler/budding (entro_budding_mostly)",
+   "extendedae:entro_recycle",
+   "extendedae:inscriber/crush_entro",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/entro_budding.md, entro_seed.md"
+  ]
+ },
+ "crystal_assembler": {
+  "de": [
+   "Der [[extendedae:crystal_assembler]] selbst kommt von der Werkbank: oben die Fertigungskonsole, in der Mitte Logikprozessor, Rahmen, Logikprozessor, unten Glaskabel, [[ae2:sky_stone_tank]], Glaskabel. Den Tank machst du aus Himmelsstein und Quarzglas.",
+   "Für Fluix braucht er 100 mB Wasser pro Durchgang. Die vier Prozessoren baut er gleich zu viert aus einem Satz gedruckter Teile."
+  ],
+  "en": [
+   "The [[extendedae:crystal_assembler]] itself is a crafting table recipe: the crafting terminal on top, logic processor, frame, logic processor in the middle, glass cable, [[ae2:sky_stone_tank]], glass cable at the bottom. The tank is sky stone and quartz glass.",
+   "For fluix it needs 100 mB of water per run. It makes the processors four at a time from one set of printed parts."
+  ],
+  "sources": [
+   "extendedae:crystal_assembler (_T_ / LML / CKC)",
+   "ae2:misc/tank_sky_stone",
+   "extendedae:assembler/fluix_transformation (100 mB water, 8 out)",
+   "extendedae:assembler/logic_processor (count 4)"
+  ]
+ },
+ "circuit_cutter": {
+  "de": [
+   "Die Inscriber Concurrent Press baut der Crystal Assembler aus drei Enderaugen, vier Entro Crystals und einem Siliziumdruck. Ein Siliziumblock sind neun Silizium an der Werkbank.",
+   "Ein Entro-Block gibt im Slicer vier gedruckte Concurrent-Schaltkreise, die du für die Ex-Maschinen in Stufe 4 brauchst ({{ae2_advanced/ex_machines}})."
+  ],
+  "en": [
+   "The Crystal Assembler builds the Inscriber Concurrent Press from three eyes of ender, four Entro Crystals and a silicon press. A silicon block is nine silicon at the crafting table.",
+   "An Entro Block gives four printed concurrent circuits in the slicer, which the stage 4 Ex machines need ({{ae2_advanced/ex_machines}})."
+  ],
+  "sources": [
+   "extendedae:assembler/concurrent_press (3 ender_eye, 4 #c:gems/entro, silicon_press)",
+   "extendedae:silicon_block",
+   "extendedae:cutter/concurrent_processor (4)",
+   "extendedae:assembler/circuit_cutter"
+  ]
+ },
+ "flux_crystal": {
+  "de": [
+   "Anders als Certus lädt das [[ae2:charger]] den Redstone-Kristall, und es braucht dafür Strom. Der Energiedruck entsteht ebenfalls im Ladegerät aus einem Eisenblock und lässt sich wie jede Presse kopieren.",
+   "Im Crystal Assembler gibt dasselbe Rezept acht Redstone-Kristalle statt zwei."
+  ],
+  "en": [
+   "Unlike certus, the [[ae2:charger]] does charge the redstone crystal, and it needs power for it. The energy press is also made in the charger from an iron block and copies like any press.",
+   "In the Crystal Assembler the same recipe gives eight redstone crystals instead of two."
+  ],
+  "sources": [
+   "appflux:charger/charge_redstone",
+   "appflux:charger/energy_press",
+   "appflux:inscriber/energy_press",
+   "appflux:transform/redstone_crystal (2)",
+   "extendedae:assembler/redstone_crystal (8)"
+  ]
+ },
+ "flux_cell": {
+  "de": [
+   "Der [[appflux:flux_accessor]] ist ein Energieakzeptor mit zwei Energieprozessoren, Kupfer und Glowstone. Er holt Strom aus den FE-Zellen im Netz; nach seinem Tooltip brauchst du ein fremdes Kabel daran, um ihn zu Maschinen zu schieben.",
+   "Die FE-Zelle kommt ins Laufwerk wie jede Zelle. Isolierharz entsteht formlos und wird im Ofen hart."
+  ],
+  "en": [
+   "The [[appflux:flux_accessor]] is an energy acceptor with two energy processors, copper and glowstone. It draws power from the FE cells in the network; according to its tooltip you need another mod's cable on it to push that power to machines.",
+   "The FE cell goes in a drive like any cell. Insulating resin is shapeless and hardens in a furnace."
+  ],
+  "sources": [
+   "appflux:flux_accessor (DPD / IMI / DPD)",
+   "srv/config/appflux-common.toml (amount 1048576, flux_accessor enable false)",
+   "srv/mods/AppliedFlux-1.21-2.1.5-neoforge.jar: assets/appflux/lang/en_us.json (flux_accessor.tooltip)",
+   "appflux:insulating_resin",
+   "appflux:smelting/harden_resin"
+  ],
+  "client": [
+   "flux accessor needs an external cable to push energy out"
+  ]
+ },
+ "fluix_tools": {
+  "de": [
+   "Die Quarzspitzhacke darf aus Certus oder Netherquarz sein; aus Certus sind es drei Kristalle und zwei Stöcke. Die Vorlage geht beim Schmieden verloren, eine neue kostet aber nur Papier und einen Fluixkristall.",
+   "Der Fluixblock sind vier Fluixkristalle."
+  ],
+  "en": [
+   "The quartz pickaxe may be certus or nether quartz; the certus one is three crystals and two sticks. The template is used up in smithing, but a new one only costs paper and a fluix crystal.",
+   "The fluix block is four fluix crystals."
+  ],
+  "sources": [
+   "ae2:tools/fluix_pickaxe (#ae2:quartz_pickaxe)",
+   "ae2:tools/certus_quartz_pickaxe",
+   "ae2:tools/fluix_upgrade_smithing_template",
+   "ae2:decorative/fluix_block",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/fluix_tools.md"
+  ]
+ },
+ "resonance": {
+  "de": [
+   "20 AE/t sind 40 FE/t, das reicht für einen Controller mit ein paar Geräten. Ein zweiter Generator im selben Netz bringt nichts, ein Unternetz bekommt seinen eigenen.",
+   "Der geladene Kristall wird dabei verbraucht, kommt also aus Imbuement-Kammer oder Orb ({{ae2/charged}})."
+  ],
+  "en": [
+   "20 AE/t equals 40 FE/t, enough for a controller with a few devices. A second generator in the same network does nothing; a subnetwork gets its own.",
+   "The charged crystal is used up in the recipe, so it comes from the imbuement chamber or the orb ({{ae2/charged}})."
+  ],
+  "sources": [
+   "ae2:network/crystal_resonance_generator (cfc / cqc / iii)",
+   "srv/config/ae2-common.toml (crystalResonanceGeneratorRate 20, forgeEnergy 0.5)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/crystal_resonance_generator.md"
+  ]
+ },
+ "fluid_cell": {
+  "de": [
+   "Das [[ae2:fluid_cell_housing]] ist Quarzglas und Redstone oben und an den Seiten und drei Kupferbarren unten. Jede Zellenkomponente passt, also auch eine 4k oder 16k.",
+   "Für Gase brauchst du das Chemiegehäuse; P2P für Gase steht bei {{ae2/p2p_chemical}}."
+  ],
+  "en": [
+   "The [[ae2:fluid_cell_housing]] is quartz glass and redstone on top and the sides, three copper ingots below. Any cell component fits, so a 4k or 16k one too.",
+   "Gases need the chemical housing; gas P2P is in {{ae2/p2p_chemical}}."
+  ],
+  "sources": [
+   "ae2:network/cells/fluid_cell_housing (aba / b_b / ccc)",
+   "appmek:chemical_cell_housing",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/storage_cells.md"
+  ]
+ },
+ "cell_workbench": {
+  "de": [
+   "Für Filter musst du nichts besitzen: Ziehen aus EMI reicht, und ein Rechtsklick mit einem Eimer oder Tank setzt die Flüssigkeit als Filter. Die Werkbank kann den Filter behalten, wenn du die Zelle herausnimmst, so kopierst du ihn auf die nächste.",
+   "Die Overflow Zerstörungskarte ist Basiskarte und Kalkulationsprozessor, die Verteilungskarte Fortgeschrittene Karte und Kalkulationsprozessor."
+  ],
+  "en": [
+   "You do not need to own an item to filter it: dragging from EMI is enough, and right-clicking with a bucket or tank sets the fluid as filter. The workbench can keep the filter when you take the cell out, so you copy it to the next one.",
+   "The overflow destruction card is a basic card and a calculation processor, the equal distribution card an advanced card and a calculation processor."
+  ],
+  "sources": [
+   "ae2:network/blocks/cell_workbench",
+   "ae2:materials/cardvoid",
+   "ae2:materials/carddistribution",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/cell_workbench.md"
+  ],
+  "client": [
+   "EMI drag into cell workbench filter"
+  ]
+ },
+ "io_port": {
+  "de": [
+   "Der IO-Port kostet zwei ME-Laufwerke und damit vier Fortgeschrittene Steuerschaltkreise. Er stellt sich ein, wann eine Zelle in die Ausgabe wandert: wenn sie leer ist, voll ist oder nichts mehr zu tun ist.",
+   "Mit der Redstone-Karte arbeitet er bei Signal an, Signal aus oder einmal pro Impuls."
+  ],
+  "en": [
+   "The IO port costs two ME drives and so four advanced control circuits. You set when a cell moves to the output: when it is empty, full, or the work is done.",
+   "With a redstone card it runs on high signal, low signal or once per pulse."
+  ],
+  "sources": [
+   "ae2:network/blocks/io_port (aaa / bcb / ded)",
+   "kronwerke:ae2/drive",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/io_port.md"
+  ]
+ },
+ "planes": {
+  "de": [
+   "Gegenstände nimmt das Annihilationsfeld nur auf, wenn sie seine Fläche berühren, es saugt nicht im Umkreis. Effizienz senkt den Strom pro Block, Haltbarkeit spart ihn manchmal ganz.",
+   "Nach oben zeigend auf der höchsten Bauhöhe erzeugt es [[ae2:sky_dust]], der im Ofen wieder Himmelsstein wird."
+  ],
+  "en": [
+   "The annihilation plane only picks up items that touch its face, it does not pull from an area. Efficiency lowers the power per block, Unbreaking sometimes saves it entirely.",
+   "Facing up at the build height limit it produces [[ae2:sky_dust]], which smelts back into sky stone."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/annihilation_plane.md",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/sky_stone.md",
+   "srv/config/ae2-common.toml (annihilationPlaneSkyDustGeneration true)",
+   "ae2:blasting/sky_stone_block"
+  ],
+  "client": [
+   "sky dust generation at the build height limit"
+  ]
+ },
+ "cpu_monitor": {
+  "de": [
+   "Der Fertigungsmonitor braucht einen ME-Speichermonitor, der selbst aus Füllstandsemitter und Leuchtfeld entsteht. Größere Fertigungsspeicher machst du mit 16k-Komponente genauso, 64k und mehr kommen in Stufe 4 ({{ae2_advanced/cell_64k}}).",
+   "Rechtsklick auf die CPU zeigt den Auftrag auch ohne Monitor."
+  ],
+  "en": [
+   "The crafting monitor needs an ME storage monitor, which is itself a level emitter and an illuminated panel. Bigger crafting storages work the same with a 16k component; 64k and up come in stage 4 ({{ae2_advanced/cell_64k}}).",
+   "Right-clicking the CPU shows the job even without a monitor."
+  ],
+  "sources": [
+   "ae2:network/crafting/cpu_crafting_monitor",
+   "ae2:network/parts/monitors_storage",
+   "ae2:network/crafting/4k_cpu_crafting_storage",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/crafting_cpu_multiblock.md"
+  ]
+ },
+ "pattern_access": {
+  "de": [
+   "Die Konsole (im Spiel ME Schablonen-Konsole) braucht selbst einen Schablonen-Provider, also wieder ein Präzisionsgetriebe. Mit AE2 Wireless Terminals gibt es sie auch drahtlos."
+  ],
+  "en": [
+   "The terminal takes a pattern provider of its own, so another precision mechanism. AE2 Wireless Terminals adds a wireless version."
+  ],
+  "sources": [
+   "ae2:network/parts/terminals_pattern_access",
+   "ae2wtlib:wireless_pattern_access_terminal"
+  ]
+ },
+ "crystal_fixer": {
+  "de": [
+   "Er hebt Beschädigt auf Angeschlagen, Angeschlagen auf Unrein und **Unrein auf Makellos**, das kann nur er. Jede Stufe kostet einen geladenen Kristall.",
+   "Ein makelloser Block verliert danach keine Stufe mehr, deine Certusfarm läuft dann ohne Nachschub."
+  ],
+  "en": [
+   "It raises Damaged to Chipped, Chipped to Flawed and **Flawed to Flawless**, which only it can do. Each tier costs a charged crystal.",
+   "A flawless block never loses a tier again, so your certus farm runs without restocking."
+  ],
+  "sources": [
+   "extendedae:fixer/certus_damage",
+   "extendedae:fixer/certus_chipped",
+   "extendedae:fixer/certus_flawed",
+   "extendedae:assembler/crystal_fixer",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/certus-growth.md"
+  ],
+  "client": [
+   "orientation of the fixer towards the budding block"
+  ]
+ },
+ "tag_storage_bus": {
+  "de": [
+   "Hinter den Bus gehört eine Kiste oder Schublade wie beim normalen Speicherbus. Er filtert auch nach Flüssigkeits-Tags, vor einem Tank also nur die passenden Flüssigkeiten."
+  ],
+  "en": [
+   "Put a chest or drawer behind it, as with a normal storage bus. It filters by fluid tags too, so in front of a tank it only takes matching fluids."
+  ],
+  "sources": [
+   "extendedae:tag_storage_bus",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/tag_storage_bus.md"
+  ]
+ }
+}

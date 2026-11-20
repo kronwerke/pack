@@ -1,0 +1,651 @@
+{
+ "welcome": {
+  "de": [
+   "Den [[naturesaura:sky_ingot]] gibt es nur als Opfer am [[naturesaura:offering_table]] von Nature's Aura: ein [[naturesaura:infused_iron]] mit einem [[naturesaura:calling_spirit]] ergibt einen Barren, ein Tainted Gold Ingot sogar zwei.",
+   "Jede 64k-Komponente kostet einen Himmelsbarren, jede 256k-Komponente drei. Weiter geht es mit {{ae2_advanced/cell_64k}}, für Flüssigkeiten {{ae2_advanced/fluid_big}}."
+  ],
+  "en": [
+   "The [[naturesaura:sky_ingot]] only comes from an offering at Nature's Aura's [[naturesaura:offering_table]]: an [[naturesaura:infused_iron]] with a [[naturesaura:calling_spirit]] makes one ingot, a Tainted Gold Ingot even two.",
+   "Every 64k component costs one ingot of the skies, every 256k component three. Next is {{ae2_advanced/cell_64k}}, for fluids {{ae2_advanced/fluid_big}}."
+  ],
+  "sources": [
+   "kronwerke:ae2/cell_component_64k",
+   "naturesaura:offering/sky_ingot",
+   "naturesaura:offering/sky_ingot_from_gold (count 2)",
+   "naturesaura:calling_spirit"
+  ],
+  "client": [
+   "how the offering at the offering table is performed"
+  ]
+ },
+ "cell_64k": {
+  "de": [
+   "Volle 1k-, 4k- und 16k-Zellen lassen sich direkt mit einer 64k-Komponente aufrüsten, du musst nicht über jede Stufe gehen. Der [[ae2:64k_crafting_storage]] lohnt sich erst für Aufträge mit vielen Zwischenschritten, etwa Elite-Schaltkreise.",
+   "Für einen Puffer an einem Kabel ohne eigenes Laufwerk gibt es {{ae2_advanced/cell_dock}}."
+  ],
+  "en": [
+   "Full 1k, 4k and 16k cells upgrade straight to 64k with a 64k component, no need to step through each size. The [[ae2:64k_crafting_storage]] only pays off for jobs with many intermediate steps, such as elite circuits.",
+   "For a buffer on a cable without its own drive there is {{ae2_advanced/cell_dock}}."
+  ],
+  "sources": [
+   "ae2:upgrade/item_storage_cell_1k_to_64k",
+   "ae2:upgrade/item_storage_cell_4k_to_64k",
+   "ae2:upgrade/item_storage_cell_16k_to_64k",
+   "ae2:network/crafting/64k_cpu_crafting_storage"
+  ]
+ },
+ "cell_256k": {
+  "de": [
+   "Eine 256k-Komponente sind drei 64k-Komponenten (drei Himmelsbarren) und ein [[draconicevolution:draconium_ingot]]. Draconium baust du im End ab ({{the_end/draconium}}), Erz und Staub schmelzen im Ofen zum Barren.",
+   "Die 1 000 Barren von \"Licht des Drachen\" sind eine Grundmenge, die der Server an die Zahl aktiver Spieler anpasst."
+  ],
+  "en": [
+   "A 256k component is three 64k components (three ingots of the skies) and one [[draconicevolution:draconium_ingot]]. You mine draconium in the End ({{the_end/draconium}}); ore and dust smelt into ingots.",
+   "The 1,000 ingots of \"Light of the Dragon\" are a base amount that the server scales to the number of active players."
+  ],
+  "sources": [
+   "kronwerke:ae2/cell_component_256k",
+   "draconicevolution:components/draconium_ingot_from_ore",
+   "draconicevolution:components/draconium_ingot_from_dust",
+   "config/kronwerke/goals.json (stage4, scale true)",
+   "core: goal/GoalManager.java (currentFactor)"
+  ]
+ },
+ "fluid_big": {
+  "de": [
+   "Das [[ae2:fluid_cell_housing]] ist Quarzglas, Redstone und drei Kupferbarren. Da Flüssigkeitszellen nur 5 Typen halten, lohnt die große Zelle für wenige Flüssigkeiten in Massen, etwa Lava, Wasser oder Öl.",
+   "Volle kleinere Flüssigkeitszellen rüstest du an der Werkbank direkt auf 64k auf."
+  ],
+  "en": [
+   "The [[ae2:fluid_cell_housing]] is quartz glass, redstone and three copper ingots. Fluid cells hold only 5 types, so the big cell pays off for a few fluids in bulk, like lava, water or oil.",
+   "Full smaller fluid cells upgrade straight to 64k at the crafting table."
+  ],
+  "sources": [
+   "ae2:network/cells/fluid_storage_cell_64k_storage",
+   "ae2:network/cells/fluid_cell_housing",
+   "ae2:upgrade/fluid_storage_cell_1k_to_64k",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/storage_cells.md"
+  ]
+ },
+ "fe_big": {
+  "de": [
+   "Der [[appflux:energy_processor]] kommt aus {{ae2/flux_crystal}}, das [[ae2:quartz_vibrant_glass]] ist ein Quarzglas zwischen zwei Glowstone-Staub. FE-Zellen gehen bis 4M in Stufe 4, ab 16M erst in Stufe 5.",
+   "Die Reaktionskammer ({{ae2_advanced/reaction}}) kann ihren Strom direkt aus FE-Zellen im Laufwerk ziehen, das schont den AE-Puffer."
+  ],
+  "en": [
+   "The [[appflux:energy_processor]] comes from {{ae2/flux_crystal}}, [[ae2:quartz_vibrant_glass]] is a quartz glass between two glowstone dust. FE cells go up to 4M in stage 4, 16M and up only in stage 5.",
+   "The reaction chamber ({{ae2_advanced/reaction}}) can draw its power straight from FE cells in a drive, which spares the AE buffer."
+  ],
+  "sources": [
+   "appflux:64k_core (DPD / LGL / DLD)",
+   "ae2:decorative/quartz_vibrant_glass",
+   "kubejs/data/kronwerke/chapters/stages/stage5.json (appflux:fe_16m_cell)",
+   "srv/mods/AdvancedAE-1.6.12-1.21.1.jar: assets/advanced_ae/ae2guide/aae_intro/reaction_chamber.md"
+  ]
+ },
+ "matter": {
+  "de": [
+   "Der Kondensator nimmt auch Flüssigkeiten: 256 Eimer zählen wie 256 Gegenstände. Für Materiebälle reicht eine 1k-Komponente im Komponentenplatz.",
+   "Sind Puffer und Ausgabe voll, nimmt er nichts mehr an. Häng ihn also an ein Netz oder einen Trichter, der die Bälle abholt."
+  ],
+  "en": [
+   "The condenser takes fluids too: 256 buckets count like 256 items. A 1k component in the component slot is enough for matter balls.",
+   "Once its buffer and output are full it accepts nothing more, so hook it to a network or a hopper that takes the balls out."
+  ],
+  "sources": [
+   "ae2:network/blocks/io_condenser",
+   "srv/config/ae2-common.toml (matterBalls 256, singularity 256000)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/condenser.md"
+  ]
+ },
+ "singularity": {
+  "de": [
+   "Eine 64k-Komponente gibt 524 288 Bit Puffer, genug für die 256 000 Gegenstände einer Singularität. Die unendliche Bruchsteinzelle ({{ae2_advanced/infinity_cells}}) im Laufwerk und ein Exportbus auf den Kondensator liefern den Bruchstein ohne Steinbruch.",
+   "Die Reaktionskammer spart Material, kostet aber eine Million AE pro Singularität; stell genug Energiezellen dazu."
+  ],
+  "en": [
+   "A 64k component gives 524,288 bits of buffer, enough for the 256,000 items of a singularity. The infinity cobblestone cell ({{ae2_advanced/infinity_cells}}) in a drive and an export bus onto the condenser supply the cobblestone without a quarry.",
+   "The reaction chamber saves material but costs a million AE per singularity; add enough energy cells."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/condenser.md",
+   "advanced_ae:singularity (64 matter_ball, 100 mB lava, 1000000 AE)",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/infinity_cell.md"
+  ],
+  "client": [
+   "export bus pulling cobblestone from an infinity cell into the condenser"
+  ]
+ },
+ "entangled": {
+  "de": [
+   "[[ae2:ender_dust]] mahlt die Gravurmaschine aus einer Enderperle, eine ganze Perle geht aber genauso. Ein Paar reicht für genau eine Verbindung: eine Hälfte in jede Brückenkammer, oder eine in die Brücke und eine mit der Karte ({{ae2_advanced/quantum_card}}) in die drahtlose Konsole."
+  ],
+  "en": [
+   "The inscriber grinds [[ae2:ender_dust]] from an ender pearl, but a whole pearl works just as well. One pair is good for exactly one link: one half in each bridge chamber, or one in the bridge and one with the card ({{ae2_advanced/quantum_card}}) in the wireless terminal."
+  ],
+  "sources": [
+   "ae2:transform/entangled_singularity",
+   "ae2:transform/entangled_singularity_from_pearl",
+   "ae2:inscriber/ender_dust",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/singularities.md"
+  ]
+ },
+ "quantum_ring": {
+  "de": [
+   "Jeder Ring kostet eine [[ae2:energy_cell]], ein [[ae2:fluix_smart_dense_cable]], zwei Logikprozessoren und einen Konstruktionsprozessor; 16 Ringe also 32 Logikprozessoren. Eine [[ae2:fluix_pearl]] ist eine Enderperle in der Mitte, Fluixstaub in den Ecken und Fluixkristalle an den Seiten.",
+   "Zwei Kammern brauchen acht Perlen und damit acht Enderperlen."
+  ],
+  "en": [
+   "Each ring costs an [[ae2:energy_cell]], a [[ae2:fluix_smart_dense_cable]], two logic processors and an engineering processor; 16 rings means 32 logic processors. A [[ae2:fluix_pearl]] is an ender pearl in the middle, fluix dust in the corners and fluix crystals on the sides.",
+   "Two chambers need eight pearls and so eight ender pearls."
+  ],
+  "sources": [
+   "ae2:network/blocks/quantum_ring (aba / cde / aba)",
+   "ae2:network/blocks/quantum_link",
+   "ae2:misc/fluixpearl"
+  ]
+ },
+ "bridge": {
+  "de": [
+   "Die Brücke trägt 32 Kanäle, egal an wie viele Seiten du Kabel legst; sie wirkt wie ein dichtes Kabel ohne Länge. Die Kammer selbst verbindet sich mit keinem Kabel, ihr Platz für die Singularität ist aber von Rohren erreichbar.",
+   "Zum Laden reicht auch der Chunkloader von FTB Chunks (neun Chunks pro Team), am anderen Ende in einer anderen Dimension sonst der {{ae2_advanced/anchor}}."
+  ],
+  "en": [
+   "The bridge carries 32 channels however many sides you cable; it acts like a dense cable without length. The chamber itself connects to no cable, but its singularity slot can be reached by pipes.",
+   "For loading, FTB Chunks' chunk loading (nine chunks per team) works too; otherwise use the {{ae2_advanced/anchor}} at the far end."
+  ],
+  "sources": [
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/quantum_bridge.md",
+   "docs/SERVER.md (9 force loaded chunks per team)"
+  ]
+ },
+ "quantum_card": {
+  "de": [
+   "Steck die Karte und **eine Hälfte** eines verschränkten Paares ({{ae2_advanced/entangled}}) in die drahtlose Konsole, die andere Hälfte in eine Quantenbrücke an deinem Netz. Dann reicht die Konsole überall hin, auch in andere Dimensionen, und lädt sich aus dem Netz auf.",
+   "Der Chunk mit deinem Netz muss geladen sein, sonst findet die Konsole nichts."
+  ],
+  "en": [
+   "Put the card and **one half** of an entangled pair ({{ae2_advanced/entangled}}) into the wireless terminal, the other half into a quantum bridge on your network. The terminal then reaches everywhere, other dimensions included, and recharges from the network.",
+   "The chunk with your network has to be loaded, or the terminal finds nothing."
+  ],
+  "sources": [
+   "ae2wtlib:quantum_bridge_card",
+   "srv/mods/ae2wtlib-19.5.1.jar: assets/ae2wtlib/ae2guide/ae2wtlib/quantum_bridge_card.md"
+  ]
+ },
+ "sky_steel": {
+  "de": [
+   "Pro geladenem Kristall bekommst du in Lava und im Crystal Assembler (je vier Zutaten und 100 mB Lava für acht Barren) zwei Barren. Die Reaktionskammer ({{ae2_advanced/reaction}}) macht aus je 16 Zutaten 64 Barren, also vier pro Kristall.",
+   "Himmelsstein für große Mengen liefert ein Annihilationsfeld, das auf der höchsten Bauhöhe nach oben zeigt: Es erzeugt Himmelssteinstaub, der im Ofen zu Himmelsstein wird."
+  ],
+  "en": [
+   "Per charged crystal you get two ingots in lava and in the Crystal Assembler (four of each ingredient and 100 mB of lava for eight ingots). The reaction chamber ({{ae2_advanced/reaction}}) makes 64 ingots from 16 of each, so four per crystal.",
+   "For sky stone in bulk, an annihilation plane facing up at the build height limit produces sky stone dust, which smelts into sky stone."
+  ],
+  "sources": [
+   "megacells:transform/sky_steel_ingot",
+   "extendedae:assembler/sky_steel (4 each, 100 mB lava, 8 out)",
+   "advanced_ae:skysteel (16 each, 500 mB lava, 64 out)",
+   "srv/config/ae2-common.toml (annihilationPlaneSkyDustGeneration true)",
+   "ae2:blasting/sky_stone_block"
+  ],
+  "client": [
+   "sky dust generation at the build height limit"
+  ]
+ },
+ "accumulation": {
+  "de": [
+   "Die Presse kostet einmal eine Singularität, jede Kopie danach nur einen Eisenblock. Der Circuit Slicer ({{ae2/circuit_cutter}}) schneidet aus einem Himmelsstahlblock neun gedruckte Akkumulationsschaltkreise.",
+   "Im Crystal Assembler gibt der letzte Schritt vier Prozessoren auf einmal."
+  ],
+  "en": [
+   "The press costs a singularity once; every copy after that just an iron block. The Circuit Slicer ({{ae2/circuit_cutter}}) slices nine printed accumulation circuits from a sky steel block.",
+   "In the Crystal Assembler the last step makes four processors at once."
+  ],
+  "sources": [
+   "megacells:inscriber/accumulation_processor_press",
+   "megacells:inscriber/accumulation_processor_press_extra",
+   "extendedae:cutter/accumulation_processor (9)",
+   "extendedae:assembler/accumulation_processor (4)"
+  ]
+ },
+ "mega_1m": {
+  "de": [
+   "Das [[megacells:mega_item_cell_housing]]: oben Polarisiertes Quarzglas, Himmelssteinstaub, Polarisiertes Quarzglas, in der Mitte Himmelssteinstaub links und rechts, unten drei Himmelsstahlbarren.",
+   "In einer 1M-Komponente stecken vier Draconiumbarren (einer selbst, je einer in den drei 256k-Komponenten) und neun Himmelsbarren."
+  ],
+  "en": [
+   "The [[megacells:mega_item_cell_housing]]: vibrant quartz glass, sky stone dust, vibrant quartz glass on top, sky stone dust left and right in the middle, three sky steel ingots below.",
+   "A 1M component holds four draconium ingots (one itself, one in each of the three 256k components) and nine ingots of the skies."
+  ],
+  "sources": [
+   "megacells:cells/mega_item_cell_housing (aba / b_b / ddd)",
+   "kronwerke:ae2/cell_component_1m",
+   "kronwerke:ae2/cell_component_256k",
+   "kronwerke:ae2/cell_component_64k"
+  ]
+ },
+ "mega_provider": {
+  "de": [
+   "Der MEGA-Provider hält 18 Schablonen statt 9, aber nur Verarbeitungsschablonen. Für Werkbankrezepte am Molekularassembler bleibt der normale Provider.",
+   "Die MEGA-Schnittstelle hat doppelt so viele Plätze und doppelten Durchsatz."
+  ],
+  "en": [
+   "The MEGA provider holds 18 patterns instead of 9, but only processing patterns. Crafting patterns for the molecular assembler stay on a normal provider.",
+   "The MEGA interface has twice the slots and twice the throughput."
+  ],
+  "sources": [
+   "megacells:network/mega_pattern_provider",
+   "megacells:network/mega_interface",
+   "srv/mods/megacells-4.11.0.jar: assets/megacells/ae2guide/crafting.md",
+   "srv/mods/megacells-4.11.0.jar: assets/megacells/ae2guide/extras.md"
+  ]
+ },
+ "mega_energy": {
+  "de": [
+   "12,8 Millionen AE sind acht dichte oder 64 normale Energiezellen, und genau so viele stecken im Rezept. Die Superdichte Zelle ist auch die Zutat der {{ae2_advanced/greater_card}}."
+  ],
+  "en": [
+   "12.8 million AE is eight dense or 64 normal energy cells, and that is exactly what the recipe contains. The superdense cell is also the ingredient of the {{ae2_advanced/greater_card}}."
+  ],
+  "sources": [
+   "megacells:crafting/mega_energy_cell (8 dense_energy_cell)",
+   "ae2:network/blocks/energy_dense_energy_cell (8 energy_cell)",
+   "srv/mods/megacells-4.11.0.jar: assets/megacells/ae2guide/energy.md"
+  ]
+ },
+ "mega_crafting": {
+  "de": [
+   "Ein MEGA-Co-Prozessor bringt vier Threads, ein normaler einen. Die MEGA-Einheit kostet vier normale Fertigungseinheiten, zwei Logikprozessoren, zwei schlaue Kabel und einen Akkumulationsprozessor.",
+   "Der große Speicher braucht eine MEGA-Einheit, die normale Einheit nimmt keine MEGA-Komponente."
+  ],
+  "en": [
+   "A MEGA co-processor gives four threads, a normal one gives one. The MEGA unit costs four normal crafting units, two logic processors, two smart cables and an accumulation processor.",
+   "The big storages need a MEGA unit; the normal unit takes no MEGA component."
+  ],
+  "sources": [
+   "megacells:crafting/mega_crafting_unit (aba / cdc / aba)",
+   "megacells:crafting/mega_crafting_accelerator",
+   "srv/mods/megacells-4.11.0.jar: assets/megacells/ae2guide/crafting.md"
+  ]
+ },
+ "mega_4m": {
+  "de": [
+   "In einer 4M-Zelle stecken **13 Draconiumbarren** (einer in der Komponente, je vier in den drei 1M-Komponenten), 27 Himmelsbarren und vier Akkumulationsprozessoren. Eine Singularität steckt nicht darin, die braucht nur die Presse einmal.",
+   "Der [[mekanism:elite_control_circuit]] sind zwei Fortgeschrittene Steuerschaltkreise, ein Draconiumstaub und zwei Verstärkte Legierungen ({{the_end/elite_circuit}}). Die Zielmengen skalieren mit den aktiven Spielern."
+  ],
+  "en": [
+   "A 4M cell holds **13 draconium ingots** (one in the component, four in each of the three 1M components), 27 ingots of the skies and four accumulation processors. It holds no singularity; that is only used once for the press.",
+   "The [[mekanism:elite_control_circuit]] is two advanced control circuits, a draconium dust and two reinforced alloys ({{the_end/elite_circuit}}). The goal amounts scale with the active players."
+  ],
+  "sources": [
+   "kronwerke:ae2/cell_component_4m",
+   "kronwerke:ae2/cell_component_1m",
+   "megacells:cells/standard/item_storage_cell_4m",
+   "kronwerke:tech/elite_control_circuit",
+   "config/kronwerke/goals.json (stage4)"
+  ]
+ },
+ "spatial": {
+  "de": [
+   "Ein [[ae2:spatial_pylon]] ist Quarzglas in den Ecken, Glaskabel oben und unten, Fluixstaub links und rechts, ein Fluixkristall in der Mitte. Die kleinste Hülle ist 3 x 3 x 3 für einen einzigen Block.",
+   "Alle Pylone müssen in der äußeren Hülle liegen und im selben Netz hängen. Eine dünn besetzte Hülle um einen großen Raum kann Milliarden AE kosten."
+  ],
+  "en": [
+   "A [[ae2:spatial_pylon]] is quartz glass in the corners, glass cable top and bottom, fluix dust left and right, a fluix crystal in the middle. The smallest shell is 3 x 3 x 3 for a single block.",
+   "All pylons must sit in the outer shell and on the same network. A sparse shell around a large space can cost billions of AE."
+  ],
+  "sources": [
+   "ae2:network/blocks/spatial_io_pylon (aba / cdc / aba)",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/spatial-io.md"
+  ]
+ },
+ "spatial_port": {
+  "de": [
+   "Der Port zeigt gespeicherte und benötigte Energie, die Effizienz der Hülle und die Größe des Raums. Die Energie wird auf einen Schlag gezogen, darum gehören Superdichte Energiezellen ({{ae2_advanced/mega_energy}}) in dasselbe Netz."
+  ],
+  "en": [
+   "The port shows stored and required energy, the efficiency of the shell and the size of the space. The energy is drawn all at once, so superdense energy cells ({{ae2_advanced/mega_energy}}) belong on the same network."
+  ],
+  "sources": [
+   "ae2:network/blocks/spatial_io_port",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/spatial-io.md",
+   "srv/config/ae2-common.toml (spatialPowerMultiplier 1250, spatialPowerExponent 1.35)"
+  ]
+ },
+ "spatial_cell": {
+  "de": [
+   "Die Maße sind gerichtet: Ein Raum von 2 x 2 x 3 ist nicht derselbe wie 3 x 2 x 2. Eine 16³-Zelle nimmt jede Größe bis 16 x 16 x 16; passt die Zelle nicht zum Raum, arbeitet der Port nicht.",
+   "Jede Komponentenstufe braucht neben den vier kleineren auch Glowstone-Staub und einen Konstruktionsprozessor."
+  ],
+  "en": [
+   "The dimensions have a direction: a 2 x 2 x 3 space is not the same as 3 x 2 x 2. A 16³ cell takes any size up to 16 x 16 x 16; if the cell does not match the space, the port does not run.",
+   "Each component tier needs glowstone dust and an engineering processor besides the four smaller ones."
+  ],
+  "sources": [
+   "ae2:network/cells/spatial_components",
+   "ae2:network/cells/spatial_components_0",
+   "ae2:network/cells/spatial_storage_cell_16_cubed",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/spatial-io.md"
+  ]
+ },
+ "anchor": {
+  "de": [
+   "Der Verbrauch ist 80 plus x mal (x + 1) durch 2 AE/t bei x geladenen Chunks: zehn Chunks kosten 135 AE/t. Im Netz zeigt er auf Wunsch ein Hologramm der geladenen Chunks.",
+   "Die Zufallsticks sind auf dem Server an, eine Certusfarm wächst also mit."
+  ],
+  "en": [
+   "The draw is 80 plus x times (x + 1) over 2 AE/t for x loaded chunks: ten chunks cost 135 AE/t. It can show a hologram of the loaded chunks.",
+   "Random ticks are on for the server, so a certus farm keeps growing."
+  ],
+  "sources": [
+   "ae2:network/blocks/spatial_anchor",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/spatial_anchor.md",
+   "srv/config/ae2-common.toml (spatialAnchorEnableRandomTicks true)"
+  ],
+  "client": [
+   "anchor hologram"
+  ]
+ },
+ "reaction": {
+  "de": [
+   "Ein Provider oder eine Schnittstelle als **flaches Kabelteil** gibt der Kammer keinen Netzanschluss; dann brauchst du zusätzlich ein Fluix-Kabel direkt an der Kammer. Beschleunigungskarten erhöhen den Strom pro Tick.",
+   "Fehlt Strom, zeigt das Fenster eine Warnung und die Arbeit wird langsamer. Mit Applied Flux zieht sie Strom auch aus FE-Zellen im Laufwerk."
+  ],
+  "en": [
+   "A provider or interface as a **flat cable part** gives the chamber no network connection; then you also need a fluix cable right on the chamber. Acceleration cards raise the power per tick.",
+   "Without enough power the screen shows a warning and work slows down. With Applied Flux it also draws power from FE cells in a drive."
+  ],
+  "sources": [
+   "advanced_ae:reactionchamber (EME / FVF / GBG)",
+   "srv/mods/AdvancedAE-1.6.12-1.21.1.jar: assets/advanced_ae/ae2guide/aae_intro/reaction_chamber.md"
+  ],
+  "client": [
+   "warning in the chamber screen"
+  ]
+ },
+ "shattered": {
+  "de": [
+   "Pro Singularität bekommst du zwei Zerbrochene, dazu kosten sie 200 000 AE und 100 mB Lava. Die Gravurmaschine ohne Presse mahlt jede zu genau einem [[advanced_ae:quantum_infused_dust]].",
+   "Leg eine Zerbrochene für die Quantenpresse ({{ae2_advanced/quantum_processor}}) zur Seite."
+  ],
+  "en": [
+   "Each singularity gives two shattered ones, at 200,000 AE and 100 mB of lava. The inscriber without a press grinds each into exactly one [[advanced_ae:quantum_infused_dust]].",
+   "Keep one shattered singularity aside for the quantum press ({{ae2_advanced/quantum_processor}})."
+  ],
+  "sources": [
+   "advanced_ae:shatteredsingularity",
+   "advanced_ae:quantum_infused_dust",
+   "advanced_ae:quantum_processor_press"
+  ]
+ },
+ "quantum_alloy": {
+  "de": [
+   "Ein Barren kostet vier Singularitäten, vier Zerbrochene (zwei Singularitäten) und 1 000 mB Quanteninfusion aus einem Staub (eine halbe Singularität), zusammen 6,5 Singularitäten. Im Kondensator sind das gut 1,6 Millionen Gegenstände, über die Reaktionskammer 416 Materiebälle.",
+   "Die Infusion braucht 4 000 mB Wasser und 20 000 AE, der Barren selbst 200 000 AE."
+  ],
+  "en": [
+   "One ingot costs four singularities, four shattered ones (two singularities) and 1,000 mB of quantum infusion from one dust (half a singularity), 6.5 singularities in all. In the condenser that is over 1.6 million items, through the reaction chamber 416 matter balls.",
+   "The infusion takes 4,000 mB of water and 20,000 AE, the ingot itself 200,000 AE."
+  ],
+  "sources": [
+   "advanced_ae:quantum_alloy",
+   "advanced_ae:quantum_infusion",
+   "advanced_ae:shatteredsingularity",
+   "advanced_ae:singularity"
+  ]
+ },
+ "quantum_processor": {
+  "de": [
+   "Die [[advanced_ae:quantum_processor_press]] kostet eine Zerbrochene Singularität, Kopien danach einen Eisenblock. Im Crystal Assembler gibt der letzte Schritt vier Prozessoren auf einmal.",
+   "Die nächsten Teile mit Quantenprozessoren sind {{ae2_advanced/adv_io_bus}}; Quantencomputer und Quantenrüstung öffnen erst in Stufe 5."
+  ],
+  "en": [
+   "The [[advanced_ae:quantum_processor_press]] costs a shattered singularity, copies after that an iron block. In the Crystal Assembler the last step makes four processors at once.",
+   "The next part using quantum processors is {{ae2_advanced/adv_io_bus}}; the quantum computer and armour only open in stage 5."
+  ],
+  "sources": [
+   "advanced_ae:quantum_processor_press",
+   "advanced_ae:quantum_processor_press_from_iron",
+   "advanced_ae:quantum_processor_eae (count 4)",
+   "kubejs/data/kronwerke/chapters/stages/stage5.json"
+  ]
+ },
+ "adv_io_bus": {
+  "de": [
+   "Der [[advanced_ae:stock_export_bus_part]] ist Kalkulationsprozessor, Exportbus und Logikprozessor in einer Reihe. Der fertige Bus exportiert nach Filter bis zu einer Menge und importiert alles, was nicht im Filter steht; Import und Export laufen getrennt.",
+   "Er braucht etwas Zeit, bis er auf volle Geschwindigkeit kommt."
+  ],
+  "en": [
+   "The [[advanced_ae:stock_export_bus_part]] is a calculation processor, export bus and logic processor in a row. The finished bus exports by filter up to an amount and imports everything not in the filter; import and export run separately.",
+   "It takes a while to ramp up to full speed."
+  ],
+  "sources": [
+   "advanced_ae:stock_export_bus",
+   "advanced_ae:import_export_bus",
+   "advanced_ae:advanced_io_bus (AQA / IQS / AQA)",
+   "srv/mods/AdvancedAE-1.6.12-1.21.1.jar: assets/advanced_ae/ae2guide/aae_intro/advanced_io_bus.md"
+  ]
+ },
+ "adv_provider": {
+  "de": [
+   "Der Encoder ist vier geladene Certus, vier Redstone und ein Konstruktionsprozessor. Gerichtete Schablonen wirken nur im Advanced Pattern Provider; in einem normalen verhalten sie sich wie gewöhnliche.",
+   "Passt eine Zutat nicht auf ihre Seite, schickt der Provider die ganze Lieferung wie ein normaler Provider."
+  ],
+  "en": [
+   "The encoder is four charged certus, four redstone and an engineering processor. Directional patterns only work in the Advanced Pattern Provider; in a normal one they act like plain patterns.",
+   "If one ingredient does not fit on its side, the provider sends the whole batch like a normal provider."
+  ],
+  "sources": [
+   "advanced_ae:advpartenc (QRQ / RER / QRQ)",
+   "advanced_ae:smalladvpatpro",
+   "advanced_ae:eaeadvpatpro",
+   "srv/mods/AdvancedAE-1.6.12-1.21.1.jar: assets/advanced_ae/ae2guide/aae_intro/advanced_pattern_encoder.md",
+   "srv/mods/AdvancedAE-1.6.12-1.21.1.jar: assets/advanced_ae/ae2guide/aae_intro/advanced_pattern_provider.md"
+  ]
+ },
+ "ex_machines": {
+  "de": [
+   "Das [[extendedae:ex_drive]] hält 20 Zellen. Den Concurrent Processor pressen Gravurmaschine oder Crystal Assembler wie jeden Prozessor; der gedruckte Schaltkreis kommt aus dem Circuit Slicer (ein Entro-Block gibt vier) oder von der Concurrent Press.",
+   "Der Extended Pattern Provider kostet einen Provider, drei Kapazitätskarten, drei Werkbänke, einen Concurrent Processor und sechs Glaskabel."
+  ],
+  "en": [
+   "The [[extendedae:ex_drive]] holds 20 cells. The inscriber or Crystal Assembler presses the Concurrent Processor like any processor; its printed circuit comes from the Circuit Slicer (an Entro Block gives four) or the concurrent press.",
+   "The Extended Pattern Provider costs a provider, three capacity cards, three crafting tables, a concurrent processor and six glass cables."
+  ],
+  "sources": [
+   "extendedae:assembler/ex_drive",
+   "extendedae:assembler/ex_pattern_provider",
+   "extendedae:inscriber/concurrent_process",
+   "extendedae:cutter/concurrent_processor (4)",
+   "extendedae:inscriber/concurrent_print",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/extended_drive.md"
+  ]
+ },
+ "ex_inscriber": {
+  "de": [
+   "Füttert ein Provider die Erweiterte Gravurmaschine, stell ihre Stapelgröße mit dem Knopf im Fenster auf 1; das rät der Guide von Extended AE.",
+   "Der Extended IO Port kostet einen IO-Port, vier Beschleunigungskarten, drei Logikprozessoren und zwei Concurrent Processors."
+  ],
+  "en": [
+   "If a provider feeds the Extended Inscriber, set its stack size to 1 with the button in its screen; the Extended AE guide recommends that.",
+   "The Extended IO Port costs an IO port, four acceleration cards, three logic processors and two concurrent processors."
+  ],
+  "sources": [
+   "extendedae:assembler/ex_inscriber",
+   "extendedae:assembler/ex_io_port",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/extended_inscriber.md",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/extended_io_port.md"
+  ],
+  "client": [
+   "stack size button in the Extended Inscriber screen"
+  ]
+ },
+ "matrix": {
+  "de": [
+   "Auf dem Server ist die Matrix höchstens **6** Blöcke pro Kante groß, nicht 7. Sie muss ganz gefüllt sein, Hohlräume gehen nicht.",
+   "Die Kerne entstehen im Crystal Assembler aus einer Assembler Matrix Wall mit je sechs Lumen-Farbbällen: Pattern Core mit Extended Pattern Provider und blauen, Craft Core mit Extended Molecular Assembler ({{ae2_advanced/ex_assembler}}) und violetten, Speed Core mit acht Beschleunigungskarten und roten."
+  ],
+  "en": [
+   "On the server the matrix is at most **6** blocks per edge, not 7. It must be completely filled, hollow spaces do not work.",
+   "The cores are made in the Crystal Assembler from an Assembler Matrix Wall with six lumen paint balls each: Pattern Core with an Extended Pattern Provider and blue ones, Craft Core with an Extended Molecular Assembler ({{ae2_advanced/ex_assembler}}) and purple ones, Speed Core with eight acceleration cards and red ones."
+  ],
+  "sources": [
+   "srv/config/extendedae-common.toml (assembler_matrix_max_size = 6)",
+   "extendedae:assembler/assembler_matrix_pattern",
+   "extendedae:assembler/assembler_matrix_crafter",
+   "extendedae:assembler/assembler_matrix_speed",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/assembler_matrix.md"
+  ]
+ },
+ "wireless": {
+  "de": [
+   "Die Reichweite ist auf dem Server höchstens 1 000 Blöcke. Ein Verbinder verbindet genau einen anderen; Schleich-Klick mit dem Setup Kit löscht die gespeicherte Auswahl.",
+   "Verbinder lassen sich wie Kabel färben und verbinden sich dann nur mit Kabeln derselben Farbe."
+  ],
+  "en": [
+   "On the server the range is at most 1,000 blocks. A connector links to exactly one other; sneak-click with the Setup Kit clears its stored selection.",
+   "Connectors can be coloured like cables and then only connect to cables of the same colour."
+  ],
+  "sources": [
+   "srv/config/extendedae-common.toml (wireless_connector_max_range 1000)",
+   "extendedae:assembler/wireless_connector (2 out)",
+   "extendedae:assembler/wireless_kit",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/wireless_connector.md"
+  ]
+ },
+ "cell_dock": {
+  "de": [
+   "Das Dock ist ein Kabelteil: Bis zu sechs passen an ein Kabelstück, eines pro Seite. Es zeigt nichts an, du siehst den Inhalt über eine Konsole im selben Netz."
+  ],
+  "en": [
+   "The dock is a cable part: up to six fit on one cable segment, one per side. It shows nothing itself; you see the contents through a terminal on the same network."
+  ],
+  "sources": [
+   "megacells:network/cell_dock (ICI / _#_)",
+   "srv/mods/megacells-4.11.0.jar: assets/megacells/ae2guide/extras.md",
+   "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/ae2-mechanics/cable-subparts.md"
+  ],
+  "client": [
+   "six cell docks on one cable"
+  ]
+ },
+ "fluid_1m": {
+  "de": [
+   "[[megacells:sky_bronze_ingot]] machst du wie Himmelsstahl mit Kupfer statt Eisen: in Lava zwei pro geladenem Kristall, in der Reaktionskammer vier. Die 1M-Komponente ist dieselbe wie für Gegenstände ({{ae2_advanced/mega_1m}})."
+  ],
+  "en": [
+   "You make [[megacells:sky_bronze_ingot]] like sky steel with copper instead of iron: two per charged crystal in lava, four in the reaction chamber. The 1M component is the same as for items ({{ae2_advanced/mega_1m}})."
+  ],
+  "sources": [
+   "megacells:transform/sky_bronze_ingot",
+   "advanced_ae:skybronze",
+   "megacells:cells/mega_fluid_cell_housing",
+   "megacells:cells/standard/fluid_storage_cell_1m"
+  ]
+ },
+ "radioactive": {
+  "de": [
+   "Die Zelle muss vor dem Einsatz an der Speicherzellenwerkbank ({{ae2/cell_workbench}}) auf genau einen Stoff eingestellt sein. 2 048 Eimer sind 256 Bytes oder vier Tonnen für radioaktiven Abfall.",
+   "Das [[mekanism:pellet_polonium]] kommt auf Kronwerke über NuclearCraft ({{mekanism_elite/polonium}})."
+  ],
+  "en": [
+   "The cell must be partitioned to exactly one substance at the cell workbench ({{ae2/cell_workbench}}) before use. 2,048 buckets is 256 bytes or four radioactive waste barrels.",
+   "On Kronwerke the [[mekanism:pellet_polonium]] comes through NuclearCraft ({{mekanism_elite/polonium}})."
+  ],
+  "sources": [
+   "megacells:cells/standard/radioactive_chemical_cell",
+   "megacells:crafting/radioactive_cell_component",
+   "srv/mods/megacells-4.11.0.jar: assets/megacells/ae2guide/radioactive_cell.md",
+   "srv/config/megacells-common.toml (spentNuclearWasteAllowed false)"
+  ]
+ },
+ "greater_card": {
+  "de": [
+   "Eine normale [[ae2:energy_card]] mit einer Superdichten Energiezelle wird ebenfalls zur Greater Energy Card, du verlierst also keine Karte. Sie kostet je eine Superdichte Zelle, also 64 Energiezellen."
+  ],
+  "en": [
+   "A normal [[ae2:energy_card]] with a superdense energy cell also becomes a Greater Energy Card, so no card is wasted. Each costs one superdense cell, so 64 energy cells."
+  ],
+  "sources": [
+   "megacells:crafting/greater_energy_card",
+   "megacells:crafting/greater_energy_card_upgraded",
+   "srv/mods/megacells-4.11.0.jar: assets/megacells/ae2guide/energy.md"
+  ]
+ },
+ "throughput": {
+  "de": [
+   "Rechtsklick mit dem Gegenstand stellt ihn ein, Schleich-Rechtsklick mit leerer Hand sperrt den Monitor. Er braucht keinen Kanal.",
+   "Die Einheit wechselst du mit dem [[advanced_ae:throughput_monitor_configurator]] (Eisen und eine Beschleunigungskarte): pro Tick, Sekunde, Minute oder zehn Minuten."
+  ],
+  "en": [
+   "Right-click with the item to set it, sneak right-click with an empty hand to lock the monitor. It needs no channel.",
+   "Switch the unit with the [[advanced_ae:throughput_monitor_configurator]] (iron and an acceleration card): per tick, second, minute or ten minutes."
+  ],
+  "sources": [
+   "advanced_ae:throughput_monitor",
+   "advanced_ae:throughput_monitor_configurator",
+   "srv/mods/AdvancedAE-1.6.12-1.21.1.jar: assets/advanced_ae/ae2guide/aae_intro/throughput_monitor.md",
+   "srv/mods/AdvancedAE-1.6.12-1.21.1.jar: assets/advanced_ae/lang/en_us.json (ThroughputMonitorValue /t /s /m /10m)"
+  ],
+  "client": [
+   "setting and locking the monitor, configurator cycling"
+  ]
+ },
+ "infinity_cells": {
+  "de": [
+   "Jede Zelle kostet eine 16k-Komponente und drei Diamanten; die Wasser- und Lavaeimer bekommst du als leere Eimer zurück. Ein Exportbus aus der Bruchsteinzelle in den Materiekondensator macht Singularitäten ohne Steinbruch ({{ae2_advanced/singularity}})."
+  ],
+  "en": [
+   "Each cell costs a 16k component and three diamonds; you get the water and lava buckets back as empty buckets. An export bus from the cobblestone cell into the matter condenser makes singularities without a quarry ({{ae2_advanced/singularity}})."
+  ],
+  "sources": [
+   "extendedae:cobblestone_cell (CLC / WXW / III)",
+   "extendedae:water_cell",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/infinity_cell.md",
+   "srv/config/extendedae-common.toml (infinity_cell_energy_cost 8)"
+  ]
+ },
+ "ex_assembler": {
+  "de": [
+   "Acht Aufträge gleichzeitig schafft er nur, wenn die CPU genug Prozessoreinheiten hat. Ein Extended Molecular Assembler ist auch Zutat des Craft Core der Assembler-Matrix ({{ae2_advanced/matrix}})."
+  ],
+  "en": [
+   "It only runs eight jobs at once if the CPU has enough co-processing units. An Extended Molecular Assembler is also the ingredient of the Assembler Matrix Craft Core ({{ae2_advanced/matrix}})."
+  ],
+  "sources": [
+   "extendedae:assembler/ex_molecular_assembler",
+   "extendedae:assembler/assembler_matrix_crafter",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/extended_modecular_assembler.md"
+  ]
+ },
+ "oversize": {
+  "de": [
+   "Das ME Extended Interface dafür kommt aus dem Crystal Assembler: Schnittstelle, drei Kapazitätskarten, drei Glas, ein Concurrent Processor und sechs Glaskabel. Das 16-fache ist die Servereinstellung; FE von Applied Flux bekommt nur das 4-fache."
+  ],
+  "en": [
+   "The ME Extended Interface for it comes from the Crystal Assembler: interface, three capacity cards, three glass, a concurrent processor and six glass cables. The 16 times is the server setting; FE from Applied Flux only gets 4 times."
+  ],
+  "sources": [
+   "extendedae:assembler/ex_interface",
+   "extendedae:assembler/oversize_interface",
+   "srv/config/extendedae-common.toml (oversize_interface_multiplier 16, custom appflux:flux 4)"
+  ]
+ },
+ "ex_buses": {
+  "de": [
+   "Der Faktor 8 ist die Servereinstellung von Extended AE. Mit Beschleunigungskarten in den zusätzlichen Kartenplätzen werden sie noch schneller. Beide sind außerdem Zutat der Smart Annihilation Plane und der Active Formation Plane von Extended AE, den großen Brüdern aus {{ae2/planes}}."
+  ],
+  "en": [
+   "The factor 8 is Extended AE's server setting. Acceleration cards in the extra card slots make them faster still. Both are also ingredients of Extended AE's Smart Annihilation Plane and Active Formation Plane, the big siblings of {{ae2/planes}}."
+  ],
+  "sources": [
+   "srv/config/extendedae-common.toml (extended_io_bus_multiplier 8)",
+   "extendedae:assembler/ex_import_bus",
+   "extendedae:assembler/ex_export_bus",
+   "srv/mods/ExtendedAE-1.21-2.2.35-neoforge.jar: assets/extendedae/ae2guide/epp_intro/extended_io_bus.md",
+   "extendedae:assembler/smart_annihilation_plane",
+   "extendedae:assembler/active_formation_plane"
+  ]
+ }
+}

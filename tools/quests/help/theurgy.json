@@ -1,0 +1,603 @@
+{
+ "welcome": {
+  "de": [
+   "Jedes Gerät von Theurgy steht auf einer eigenen [[theurgy:pyromantic_brazier]]: [[theurgy:liquefaction_cauldron]], [[theurgy:calcination_oven]], [[theurgy:distiller]] und [[theurgy:incubator]]. Die Schale brennt mit Holz, Kohle oder Holzkohle, die du per Rechtsklick oder Trichter einfüllst; später heizt der Caloric Flux Emitter ohne Brennstoff ({{theurgy/caloric}}).",
+   "Theurgy hat keine deutschen Namen, im Spiel heißt alles englisch. Die Reihe beginnt mit dem Lösungsmittel ({{theurgy/sal_ore}}) und führt über Ofen und Distiller zum Incubator."
+  ],
+  "en": [
+   "Every Theurgy device sits on its own [[theurgy:pyromantic_brazier]]: [[theurgy:liquefaction_cauldron]], [[theurgy:calcination_oven]], [[theurgy:distiller]] and [[theurgy:incubator]]. The brazier burns wood, coal or charcoal, put in by right click or hopper; later the Caloric Flux Emitter heats without fuel ({{theurgy/caloric}}).",
+   "The row starts with the solvent ({{theurgy/sal_ore}}) and leads through the oven and the distiller to the incubator."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/pyromantic_brazier",
+   "theurgy 1.76.1 jar: assets/theurgy/lang/en_us.json (the_hermetica.apparatus.pyromantic_brazier)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "sal_ore": {
+  "de": [
+   "Das Erz liegt in jedem Oberwelt-Biom, 20 Adern pro Chunk, am dichtesten um Y 70 herum, also schon in normalen Höhlen. Glück erhöht die Ausbeute, mit Behutsamkeit bekommst du den Erzblock statt Kristallen.",
+   "Ein Kristall wird im Akkumulator pro Eimer Wasser verbraucht. Sammle also gleich einen Vorrat, die Quest {{theurgy/sal_ammoniac}} gibt dir vier zurück."
+  ],
+  "en": [
+   "The ore is in every overworld biome, 20 veins per chunk, densest around Y 70, so ordinary caves have it. Fortune raises the yield, Silk Touch gives the ore block instead of crystals.",
+   "The accumulator uses up one crystal per bucket of water. Gather a stock right away; {{theurgy/sal_ammoniac}} gives you four back."
+  ],
+  "sources": [
+   "theurgy jar: data/theurgy/worldgen/placed_feature/sal_ammoniac_ore.json (count 20, trapezoid -64..200)",
+   "theurgy jar: data/theurgy/neoforge/biome_modifier/add_sal_ammoniac_ore.json (#minecraft:is_overworld)",
+   "theurgy jar: data/theurgy/loot_table/blocks/sal_ammoniac_ore.json (silk touch, fortune ore_drops)",
+   "theurgy:accumulation/sal_ammoniac_from_water_and_sal_ammoniac_crystal"
+  ]
+ },
+ "sal_tank": {
+  "de": [
+   "Der [[theurgy:sal_ammoniac_accumulator]] funktioniert nur direkt auf dem [[theurgy:sal_ammoniac_tank]]. Das Wasser gießt du oben in den Akkumulator, das fertige Sal Ammoniac sammelt sich unten im Tank, von dort zapfst du es ab.",
+   "Beide brauchen keine Feuerschale. Ein Rohr oder später ein Fluid Inserter ({{theurgy/fluid_logistics}}) ersetzt das Eimertragen."
+  ],
+  "en": [
+   "The [[theurgy:sal_ammoniac_accumulator]] only works placed right on top of the [[theurgy:sal_ammoniac_tank]]. Pour the water into the accumulator; the finished sal ammoniac collects in the tank below, where you tap it.",
+   "Neither needs a brazier. A pipe, or later a Fluid Inserter ({{theurgy/fluid_logistics}}), saves carrying buckets."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/sal_ammoniac_tank",
+   "theurgy:crafting/shaped/sal_ammoniac_accumulator",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.sal_ammoniac_accumulator, sal_ammoniac_tank)"
+  ]
+ },
+ "sal_ammoniac": {
+  "de": [
+   "Pro 1 000 mB Wasser verbraucht der Akkumulator einen [[theurgy:sal_ammoniac_crystal]], der Kristall ist also kein Dauerkatalysator. Mit 10 mB pro Vorgang im Kessel reicht ein [[theurgy:sal_ammoniac_bucket]] trotzdem für hundert Erze.",
+   "Brauchst du Kristalle zurück, wird ein Eimer Sal Ammoniac an der Werkbank wieder zu einem Kristall."
+  ],
+  "en": [
+   "The accumulator uses up one [[theurgy:sal_ammoniac_crystal]] per 1,000 mB of water, so the crystal is not a lasting catalyst. At 10 mB per run in the cauldron a [[theurgy:sal_ammoniac_bucket]] still lasts for a hundred ores.",
+   "If you need crystals back, a bucket of sal ammoniac turns back into one crystal at the crafting table."
+  ],
+  "sources": [
+   "theurgy:accumulation/sal_ammoniac_from_water_and_sal_ammoniac_crystal",
+   "theurgy:accumulation/sal_ammoniac_from_water",
+   "theurgy:crafting/shapeless/sal_ammoniac_crystal_from_sal_ammoniac_bucket"
+  ]
+ },
+ "liquefaction": {
+  "de": [
+   "Der Kessel ist **fünf Kupferbarren**, ein Kessel und drei Stein: die obere Reihe ist ganz aus Kupfer. Den Eimer Sal Ammoniac kippst du per Rechtsklick hinein, dann das Erz. Steigen Blasen auf, arbeitet er.",
+   "Lös immer das Rohstück oder das Erz, nie Barren: ein Rohes Eisen gibt drei Sulfur, ein Eisenerz mit Behutsamkeit fünf, ein Barren nur eins. Die drei Iron Sulfur werden im {{theurgy/ore_mult}} zu drei Barren."
+  ],
+  "en": [
+   "The cauldron takes **five copper ingots**, a cauldron and three stone: the top row is all copper. Pour the sal ammoniac bucket in with a right click, then the ore. Rising bubbles mean it works.",
+   "Always dissolve the raw piece or the ore, never ingots: a raw iron gives three sulfur, a silk touched iron ore five, an ingot only one. The three Iron Sulfur become three ingots in {{theurgy/ore_mult}}."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/liquefaction_cauldron (CCC/CBC/SSS)",
+   "theurgy:liquefaction/alchemical_sulfur_iron_from_raw_materials_iron (3, 10 mB)",
+   "theurgy:liquefaction/alchemical_sulfur_iron_from_ores_iron (5)",
+   "theurgy:liquefaction/alchemical_sulfur_iron_from_ingots_iron (1)",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.liquefaction_cauldron)"
+  ]
+ },
+ "calcination": {
+  "de": [
+   "Der Ofen gibt je nach Eingang verschieden viel Mineral Salt: ein Rohstück eins, ein Barren oder ein Edelstein zwei, ein Erzblock drei. Ein Rohes Eisen liefert drei Sulfur, braucht also drei Salze, das Rohstück selbst deckt nur eins.",
+   "Wenn sich die orangen Ringe bewegen, arbeitet er. Für den Rest des Salzes nimmst du Bruchstein ({{theurgy/strata}} und {{theurgy/strata_mineral}})."
+  ],
+  "en": [
+   "The oven gives different amounts of Mineral Salt by input: a raw piece one, an ingot or a gem two, an ore block three. A raw iron yields three sulfur and so needs three salts, the raw piece itself covers only one.",
+   "Moving orange rings mean it works. Make the rest of the salt from cobblestone ({{theurgy/strata}} and {{theurgy/strata_mineral}})."
+  ],
+  "sources": [
+   "theurgy:calcination/alchemical_salt_mineral_from_raw_materials (1)",
+   "theurgy:calcination/alchemical_salt_mineral_from_ingots (2)",
+   "theurgy:calcination/alchemical_salt_mineral_from_gems (2)",
+   "theurgy:calcination/alchemical_salt_mineral_from_ores (3)",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.calcination_oven.working)"
+  ]
+ },
+ "distiller": {
+  "de": [
+   "Ein [[minecraft:raw_iron]] gibt im Distiller **nur einen** [[theurgy:mercury_shard]], fünf gibt erst ein Eisenerz. Billiger sind Massenstoffe: 10 Bruchstein, 3 Feldfrüchte, Setzlinge oder Samen, 2 Stämme oder ein Stück Wolle geben je einen Shard.",
+   "Ein Distiller, den ein Trichter aus einer Truhe Bruchstein füttert, deckt den Bedarf des Incubators. Schwebt er leicht auf und ab, arbeitet er."
+  ],
+  "en": [
+   "In the distiller a [[minecraft:raw_iron]] gives **only one** [[theurgy:mercury_shard]]; an iron ore gives five. Bulk stuff is cheaper: 10 cobblestone, 3 crops, saplings or seeds, 2 logs or one wool give a shard each.",
+   "A distiller fed by a hopper from a chest of cobblestone covers the incubator's needs. When it bobs up and down, it works."
+  ],
+  "sources": [
+   "theurgy:distillation/raw_materials.mercury.low (1)",
+   "theurgy:distillation/ores.mercury.low (5)",
+   "theurgy jar: data/theurgy/tags/item/raw_materials/mercury/low.json (#c:raw_materials/iron)",
+   "theurgy:distillation/cobblestones, crops, saplings, seeds, logs, wool",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.distiller.working)"
+  ]
+ },
+ "incubator": {
+  "de": [
+   "Der [[theurgy:incubator]] steht auf einer eigenen Feuerschale, die drei Gefäße stehen direkt an seinen Seiten ({{theurgy/vessels}}). Er braucht Wärme wie die anderen Geräte; Rauch zeigt, dass er arbeitet.",
+   "Die fertigen Barren holst du mit leerer Hand per Rechtsklick aus dem Incubator."
+  ],
+  "en": [
+   "The [[theurgy:incubator]] stands on its own brazier, the three vessels right at its sides ({{theurgy/vessels}}). It needs heat like the other devices; smoke shows that it works.",
+   "Take the finished ingots out with an empty hand and a right click on the incubator."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/incubator",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.incubator.usage, .working; getting_started.incubation.step3)"
+  ]
+ },
+ "vessels": {
+  "de": [
+   "Die drei Gefäße sehen gleich aus, unterscheiden sich nur durch das Prinzip oben in der Mitte: ein beliebiges Salt, ein beliebiges Sulfur, ein Mercury Shard. Jedes nimmt nur sein eigenes Prinzip an.",
+   "Für die Rezepte brauchst du also schon etwas aus Ofen, Kessel und Distiller. Dein erstes Sulfur kommt aus {{theurgy/liquefaction}}."
+  ],
+  "en": [
+   "The three vessels look alike and differ only by the principle in the top middle: any Salt, any Sulfur, a Mercury Shard. Each takes only its own principle.",
+   "So the recipes already need something from oven, cauldron and distiller. Your first sulfur comes from {{theurgy/liquefaction}}."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/incubator_salt_vessel",
+   "theurgy:crafting/shaped/incubator_sulfur_vessel",
+   "theurgy:crafting/shaped/incubator_mercury_vessel"
+  ]
+ },
+ "ore_mult": {
+  "de": [
+   "Pro Barren gehen ein Iron Sulfur, ein Mineral Salt und ein Mercury Shard in die Gefäße. Für ein Rohes Eisen sind das also drei Salze und drei Shards; beides machst du am billigsten aus Bruchstein ({{theurgy/strata_mineral}}, {{theurgy/distiller}}).",
+   "Kupfer, Gold, Zinn, Blei, Zink, Osmium, Nickel, Silber, Uran und Iesnium gehen genauso, Rohstücke geben je drei Sulfur. Wie viel Stahl das Stufenziel will, hängt von der Zahl aktiver Spieler ab, das zeigt **/kw goals**."
+  ],
+  "en": [
+   "Each ingot takes one Iron Sulfur, one Mineral Salt and one Mercury Shard in the vessels. For one raw iron that is three salts and three shards; both are cheapest from cobblestone ({{theurgy/strata_mineral}}, {{theurgy/distiller}}).",
+   "Copper, gold, tin, lead, zinc, osmium, nickel, silver, uranium and iesnium work the same, raw pieces give three sulfur each. How much steel the stage goal wants depends on the number of active players; **/kw goals** shows it."
+  ],
+  "sources": [
+   "theurgy:incubation/ingots_iron_from_alchemical_sulfur_iron",
+   "theurgy:incubation/ingots_copper_from_alchemical_sulfur_copper (and tin, lead, zinc, osmium, nickel, silver, uranium, iesnium)",
+   "theurgy:liquefaction/alchemical_sulfur_copper_from_raw_materials_copper (3)",
+   "config/kronwerke/goals.json (stage3 #c:ingots/steel base 4000, scale true)",
+   "core/README.md (Scaling)",
+   "theurgy:liquefaction/alchemical_sulfur_nickel_from_raw_materials_nickel, _silver_, _uranium_ (3)"
+  ]
+ },
+ "strata": {
+  "de": [
+   "Bruchstein, Stein, Kies, Sand, Erde, Sandstein und Tonklumpen geben je ein Strata Salt, ein **Tonblock** sogar vier. Endstein, Purpur, Magmablöcke und Beton geben zwei.",
+   "Fünf Strata Salt werden im zweiten Durchgang zu einem Mineral Salt ({{theurgy/strata_mineral}}). Strata Salt allein reicht schon für die Digestion Vat ({{theurgy/purified_gold}}) und für Crystallized Water."
+  ],
+  "en": [
+   "Cobblestone, stone, gravel, sand, dirt, sandstone and clay balls give one Strata Salt each, a **clay block** gives four. End stone, purpur, magma blocks and concrete give two.",
+   "Five Strata Salt become one Mineral Salt in a second run ({{theurgy/strata_mineral}}). Strata Salt alone is already enough for the Digestion Vat ({{theurgy/purified_gold}}) and for Crystallized Water."
+  ],
+  "sources": [
+   "theurgy:calcination/alchemical_salt_strata_from_cobblestone, _stone, _gravel, _sand, _dirt, _sandstone, _clay_ball (1)",
+   "theurgy:calcination/alchemical_salt_strata_from_clay (4)",
+   "theurgy:calcination/alchemical_salt_strata_from_end_stone, _purpur_block, _magma_block, _concrete (2)",
+   "theurgy:digestion/purified_gold (#theurgy:alchemical_salts)"
+  ]
+ },
+ "strata_mineral": {
+  "de": [
+   "Das Salz für einen Barren kostet so fünf Bruchstein oder gut einen Tonblock. Zwei Öfen, einer für Strata, einer für Mineral Salt, laufen per Trichter hintereinander.",
+   "Die Feuerschale unter jedem Ofen braucht dabei Brennstoff, bis du auf Caloric Flux umstellst ({{theurgy/caloric}})."
+  ],
+  "en": [
+   "That way the salt for one ingot costs five cobblestone, or a little more than one clay block. Two ovens, one for strata and one for mineral salt, run in a row through hoppers.",
+   "Each oven's brazier needs fuel until you switch to caloric flux ({{theurgy/caloric}})."
+  ],
+  "sources": [
+   "theurgy:calcination/alchemical_salt_mineral_from_strata_salt (5 to 1)",
+   "theurgy:calcination/alchemical_salt_strata_from_clay (4)"
+  ]
+ },
+ "crystal_water": {
+  "de": [
+   "Das Rezept nimmt jedes Alchemical Salt, auch billiges Strata Salt. Ein [[theurgy:crystallized_water]] oder [[theurgy:crystallized_lava]] wird mit einem leeren Eimer an der Werkbank wieder zum vollen Eimer.",
+   "So trägst du Wasser und Lava stapelbar mit, etwa in die Farmwelt oder für den Akkumulator, der den Kristall direkt zu 1 000 mB auflöst."
+  ],
+  "en": [
+   "The recipe takes any Alchemical Salt, cheap Strata Salt included. A [[theurgy:crystallized_water]] or [[theurgy:crystallized_lava]] turns back into a full bucket with an empty bucket at the crafting table.",
+   "That lets you carry water and lava in stacks, say into the farm world, or for the accumulator, which dissolves the crystal straight into 1,000 mB."
+  ],
+  "sources": [
+   "theurgy:crafting/shapeless/crystallized_water (#theurgy:alchemical_salts)",
+   "theurgy:crafting/shapeless/water_bucket",
+   "theurgy:crafting/shapeless/lava_bucket",
+   "theurgy:accumulation/water_from_crystallized_water"
+  ]
+ },
+ "catalyst": {
+  "de": [
+   "Der [[theurgy:mercury_catalyst]] braucht einen **Quarzblock** in der Mitte, also vier Netherquarz aus dem Nether, und ein Mercury in der oberen Mitte. Ein Shard ergibt 800 Flux, abgegeben werden 20 pro Tick.",
+   "Mit dem Flux laufen der Caloric Flux Emitter ({{theurgy/caloric}}) und die Reformation ({{theurgy/array}}). Ein Trichter oder ein Inserter hält ihn mit Shards voll."
+  ],
+  "en": [
+   "The [[theurgy:mercury_catalyst]] needs a **block of quartz** in the middle, so four Nether quartz from the Nether, and a mercury in the top middle. One shard makes 800 flux, given off at 20 per tick.",
+   "The flux runs the Caloric Flux Emitter ({{theurgy/caloric}}) and reformation ({{theurgy/array}}). A hopper or an inserter keeps it stocked with shards."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/mercury_catalyst",
+   "theurgy:catalysation/mercury_flux_from_mercury_shard (800, 20 per tick)",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.mercury_catalyst.redstone)"
+  ]
+ },
+ "caloric": {
+  "de": [
+   "Erst das Zielgerät mit dem Emitter in der Hand anklicken, dann den Emitter auf den Catalyst setzen; die Reichweite ist 8 Blöcke. Für die Quest brauchst du zwei, jeder heizt ein Gerät.",
+   "Der Emitter heizt Geräte, die sonst eine Feuerschale darunter bräuchten. Ein Redstone-Signal am Emitter schaltet die Wärme ab."
+  ],
+  "en": [
+   "First click the target device with the emitter in hand, then place the emitter on the catalyst; the range is 8 blocks. The quest wants two, each heats one device.",
+   "The emitter heats devices that would otherwise need a brazier below them. A redstone signal on the emitter turns the heat off."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/caloric_flux_emitter_from_campfire",
+   "theurgy:crafting/shaped/caloric_flux_emitter_from_lava_bucket",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.caloric_flux_emitter.usage, .redstone, .intro)"
+  ]
+ },
+ "divination": {
+  "de": [
+   "Schleichend auf einen Block klicken stellt die Rute auf genau diese Blockart ein, auch auf Holz. Sie zeigt zum nächsten Block der Art; erst die höheren Stufen finden Gold und Diamant ({{theurgy/divination2}}).",
+   "Mit Sulfur gebaute Ruten sind fest eingestellt, halten aber deutlich länger. Für Knospenden Amethyst gibt es eine eigene Rute aus Glas, Stöcken und lila Farbstoff."
+  ],
+  "en": [
+   "Sneak clicking a block attunes the rod to exactly that block type, wood included. It points to the nearest block of that type; only the higher tiers find gold and diamond ({{theurgy/divination2}}).",
+   "Rods crafted with sulfur are fixed, but last much longer. Budding amethyst has a rod of its own, made of glass, sticks and purple dye."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/divination_rod_t1",
+   "theurgy:crafting/shaped/amethyst_divination_rod",
+   "theurgy jar: en_us.json (the_hermetica.getting_started.about_divination_rods, t1_divination_rod)"
+  ]
+ },
+ "divination2": {
+  "de": [
+   "Die vier Stufen: Glas (findet Eisen und Kohle), Amethyst (Gold), Diamant aus Quarz, Diamant und Amethyst (Diamant) und Blaze aus Lohenrute, [[minecraft:ancient_debris]] und Amethyst (alle Erze, die höchste Haltbarkeit).",
+   "Die Sulfur-Ruten brauchst du für eine Erzgruppe: Iron Sulfur ergibt eine Rute für häufige Erze, Gold Sulfur eine für seltene, Diamond Sulfur eine für kostbare."
+  ],
+  "en": [
+   "The four tiers: glass (finds iron and coal), amethyst (gold), diamond from quartz, diamond and amethyst (diamond) and blaze from a blaze rod, [[minecraft:ancient_debris]] and amethyst (every ore, the highest durability).",
+   "The sulfur rods are for one ore group: Iron Sulfur makes a rod for common ores, Gold Sulfur one for rare ores, Diamond Sulfur one for precious ores."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/divination_rod_t2, _t3, _t4",
+   "theurgy:crafting/shaped/sulfur_attuned_divination_rod_common, _rare, _precious",
+   "theurgy jar: data/theurgy/tags/item/alchemical_sulfurs/metals/common.json, rare.json, gems/precious.json",
+   "theurgy jar: en_us.json (t2..t4_divination_rod, *_sulfur_attuned_divination_rod)",
+   "theurgy:crafting/shaped/divination_rod_t4 (c:ores/netherite_scrap)"
+  ]
+ },
+ "wand": {
+  "de": [
+   "Schleichen und Mausrad wechselt den Modus des [[theurgy:mercurial_wand]]: an und aus, Richtung wählen und Frequenz wählen. Beim Richtungsmodus leuchtet die gewählte Seite gelb, die nächste grün.",
+   "Mit Frequenzen teilst du ein Drahtnetz in Teilnetze auf, die sich nicht gegenseitig beliefern."
+  ],
+  "en": [
+   "Sneak and scroll switches the [[theurgy:mercurial_wand]] between its modes: on and off, select direction and select frequency. In direction mode the selected side lights yellow, the next one green.",
+   "Frequencies split one wire network into sub-networks that do not feed each other."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/mercurial_wand",
+   "theurgy jar: en_us.json (the_hermetica.logistics.mercurial_wand.*, frequency.*)"
+  ]
+ },
+ "logistics": {
+  "de": [
+   "Beide lassen sich an der Werkbank ineinander umwandeln. Ein Extraktor zieht standardmäßig von der Seite, an der er sitzt: unten am Ofen also die Ausgabe. Andere Seiten stellst du mit dem Stab ein ({{theurgy/wand}}).",
+   "Allein tun sie nichts, erst der Draht verbindet sie ({{theurgy/wire}})."
+  ],
+  "en": [
+   "Each converts into the other at the crafting table. An extractor pulls from the face it sits on by default: at the bottom of a furnace that is the output. Set other faces with the wand ({{theurgy/wand}}).",
+   "On their own they do nothing; the wire connects them ({{theurgy/wire}})."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/logistics_item_extractor",
+   "theurgy:crafting/shaped/logistics_item_inserter",
+   "theurgy:crafting/shapeless/logistics_item_inserter_from_extractor",
+   "theurgy jar: en_us.json (the_hermetica.logistics.item_extractor.usage, .direction)"
+  ]
+ },
+ "wire": {
+  "de": [
+   "Draht verbindet nur Logistik-Blöcke, keine Truhen direkt. Abnehmen: einen der beiden Blöcke abbauen oder beide noch einmal mit Draht anklicken.",
+   "Jeder Extraktor verteilt reihum auf alle Inserter im Netz. Wer was bekommt, steuerst du mit Filtern ({{theurgy/attribute_filter}}) oder Frequenzen ({{theurgy/wand}})."
+  ],
+  "en": [
+   "Wire only connects logistics blocks, never chests directly. To remove one, break one of the two blocks or click both again with wire.",
+   "Every extractor splits round robin across all inserters in the network. Steer what goes where with filters ({{theurgy/attribute_filter}}) or frequencies ({{theurgy/wand}})."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/copper_wire (10)",
+   "theurgy:crafting/shaped/logistics_connector_node (3)",
+   "theurgy jar: en_us.json (the_hermetica.logistics.mercurial_wire.*, connection_node.large_networks)"
+  ]
+ },
+ "auto_incubator": {
+  "de": [
+   "Vergiss den Extraktor am [[theurgy:incubator]] selbst nicht, sonst bleiben die Barren darin liegen. Ohne Filter verteilt jeder Extraktor reihum an alle Inserter, also bekommt jedes Gefäß einen [[theurgy:list_filter]] mit seinem Prinzip.",
+   "Laufen soll es offline: die Anlage in einem dauerhaft geladenen Chunk bauen ({{tips/m_claim}}) und mit Caloric Flux heizen, dann braucht sie nur Raw Iron, Bruchstein und Shards."
+  ],
+  "en": [
+   "Do not forget an extractor on the [[theurgy:incubator]] itself, or the ingots stay inside. Without filters each extractor splits round robin across all inserters, so give each vessel a [[theurgy:list_filter]] with its principle.",
+   "For it to run offline, build it in a force loaded chunk ({{tips/m_claim}}) and heat it with caloric flux; then it only needs raw iron, cobblestone and shards."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/list_filter (9)",
+   "theurgy jar: en_us.json (the_hermetica.logistics.connection_node.large_networks, list_filter.usage)",
+   "config/ftbchunks-world.snbt (force_load_mode always)"
+  ]
+ },
+ "array": {
+  "de": [
+   "Das [[theurgy:reformation_target_pedestal]] kostet einen **Diamanten**, alle drei brauchen [[minecraft:blackstone]] aus dem Nether (die Quest gibt dir 16) und ein beliebiges Sulfur. Zwei Source Pedestals lohnen sich, weil manche Rezepte mehrere Quellen auf einmal verbrauchen.",
+   "Über einem Pedestal mit Sulfur schwebt eine leuchtende Kugel. Weiter geht es mit dem Emitter ({{theurgy/flux_emitter}})."
+  ],
+  "en": [
+   "The [[theurgy:reformation_target_pedestal]] costs a **diamond**, all three need [[minecraft:blackstone]] from the Nether (the quest gives you 16) and any sulfur. Two source pedestals pay off, since some recipes use several sources at once.",
+   "A glowing orb floats above a pedestal that holds sulfur. Next comes the emitter ({{theurgy/flux_emitter}})."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/reformation_target_pedestal (c:gems/diamond)",
+   "theurgy:crafting/shaped/reformation_source_pedestal",
+   "theurgy:crafting/shaped/reformation_result_pedestal",
+   "theurgy jar: en_us.json (the_hermetica.getting_started.reformation_array.source, apparatus.reformation_array.visuals)"
+  ]
+ },
+ "flux_emitter": {
+  "de": [
+   "Der [[theurgy:sulfuric_flux_emitter]] reicht 8 Blöcke weit und läuft mit dem Flux des Mercury Catalyst darunter. Zeigt der Rechtsklick keine gültige Verbindung, bau ihn ab, verknüpf die Pedestals neu und setz ihn wieder.",
+   "Arbeitet die Anordnung, fliegen Partikel vom Emitter zu den Pedestals."
+  ],
+  "en": [
+   "The [[theurgy:sulfuric_flux_emitter]] reaches 8 blocks and runs on the flux of the Mercury Catalyst under it. If the right click shows no valid link, break it, link the pedestals again and place it back.",
+   "When the array works, particles fly from the emitter to the pedestals."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/sulfuric_flux_emitter",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.sulfuric_flux_emitter.usage, .usage3; getting_started.sulfuric_flux_emitter.visuals)"
+  ]
+ },
+ "reformation": {
+  "de": [
+   "Reformation geht nur innerhalb von Art und Stufe: Lapis, Quarz, Certus-Quarz und Cinnabar sind alle häufige Edelsteine, eine Umwandlung kostet 100 Flux. Das erste Quartz Sulfur fürs Target holst du aus einem Netherquarz im Kessel.",
+   "Ein Lapiserz im Kessel gibt gleich 12 Lapis Sulfur. Legst du ein Certus Quartz Sulfur aufs Target (aus einem [[ae2:certus_quartz_crystal]] im Kessel), wird der Lapis zu Certus Quartz Sulfur und der Incubator macht Certusquarzkristalle daraus."
+  ],
+  "en": [
+   "Reformation only works within kind and tier: lapis, quartz, certus quartz and cinnabar are all common gems, one conversion costs 100 flux. Get the first Quartz Sulfur for the target from a Nether quartz in the cauldron.",
+   "A lapis ore in the cauldron gives 12 Lapis Sulfur at once. Put a Certus Quartz Sulfur on the target (from a [[ae2:certus_quartz_crystal]] in the cauldron) and the lapis turns into Certus Quartz Sulfur, which the incubator makes into certus quartz crystals."
+  ],
+  "sources": [
+   "theurgy:reformation/alchemical_sulfur_quartz_from_alchemical_sulfurs_gems_common (100 flux)",
+   "theurgy:reformation/alchemical_sulfur_certus_quartz_from_alchemical_sulfurs_gems_common",
+   "theurgy jar: data/theurgy/tags/item/alchemical_sulfurs/gems/common.json",
+   "theurgy:liquefaction/alchemical_sulfur_lapis_from_ores_lapis (12)",
+   "theurgy:liquefaction/alchemical_sulfur_quartz_from_gems_quartz",
+   "theurgy:incubation/gems_certus_quartz_from_alchemical_sulfur_certus_quartz",
+   "theurgy:liquefaction/alchemical_sulfur_certus_quartz_from_gems_certus_quartz"
+  ]
+ },
+ "fermentation": {
+  "de": [
+   "Die Gärung von Sulfur zu Niter braucht **Wasser**, kein Sal Ammoniac: Sulfur, einen Wassereimer und Zucker, eine Feldfrucht, einen Setzling, Samen, ein Ei, Bretter, einen Stamm oder einen Fermentation Starter. Eine Gärung nimmt 250 mB.",
+   "Erst schleichend mit leerer Hand schließen, dann arbeitet sie; solange sie zu ist, geht nichts hinein oder heraus. Sal Ammoniac brauchst du nur für den Gärstarter ({{theurgy/starter}})."
+  ],
+  "en": [
+   "Fermenting sulfur into niter needs **water**, not sal ammoniac: sulfur, a water bucket and sugar, a crop, a sapling, seeds, an egg, planks, a log or a Fermentation Starter. One fermentation takes 250 mB.",
+   "It only works once you close it by sneak clicking with an empty hand; while closed nothing goes in or out. Sal ammoniac is only needed for the starter ({{theurgy/starter}})."
+  ],
+  "sources": [
+   "theurgy:fermentation/alchemical_niter_gems_common_using_sugars (minecraft:water 250 mB)",
+   "theurgy:fermentation/alchemical_niter_gems_common_using_crops, _saplings, _seeds, _eggs, _planks, _logs, _flowers, _fermentation_starters",
+   "theurgy:crafting/shaped/fermentation_vat",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.fermentation_vat.usage, .process)",
+   "theurgy jar: FermentationVatBlockEntity (no heat consumer)"
+  ]
+ },
+ "starter": {
+  "de": [
+   "Ein Ansatz aus 100 mB Sal Ammoniac, einem Zucker und einer Feldfrucht, einem Setzling, Samen, einem Ei, Brettern oder einem Stamm gibt **20** [[theurgy:fermentation_starter]].",
+   "Ein Zucker reicht so für 20 Gärungen statt für eine. Ein Starter ersetzt dabei das zweite Gärgut, das Wasser brauchst du trotzdem."
+  ],
+  "en": [
+   "One batch of 100 mB sal ammoniac, one sugar and a crop, a sapling, seeds, an egg, planks or a log gives **20** [[theurgy:fermentation_starter]].",
+   "So one sugar lasts for 20 fermentations instead of one. A starter replaces the second ingredient; you still need the water."
+  ],
+  "sources": [
+   "theurgy:fermentation/fermentation_starter_from_crops (sal_ammoniac 100 mB, c:sugars, 20)",
+   "theurgy:fermentation/fermentation_starter_from_saplings, _seeds, _eggs, _planks, _logs, _flowers",
+   "theurgy:fermentation/alchemical_niter_gems_common_using_fermentation_starters"
+  ]
+ },
+ "transmutation": {
+  "de": [
+   "Fürs Target brauchst du schon ein Common Metals Niter: vergär dazu ein Iron Sulfur mit Wasser und Zucker ({{theurgy/fermentation}}). Ein Common Gems Niter gibt dann zwei Common Metals Niter für 100 Flux.",
+   "Zum Schluss Common Metals Niter auf die Source, ein Iron Sulfur aufs Target, und es wird eins zu eins Iron Sulfur. Der Weg rechnet sich bei billigem Lapis oder Quarz, nicht bei Eisenerz."
+  ],
+  "en": [
+   "The target already needs a Common Metals Niter: ferment an Iron Sulfur with water and sugar for it ({{theurgy/fermentation}}). One Common Gems Niter then gives two Common Metals Niter for 100 flux.",
+   "Finally put Common Metals Niter on the source and an Iron Sulfur on the target, and it turns one to one into Iron Sulfur. The route pays off with cheap lapis or quartz, not with iron ore."
+  ],
+  "sources": [
+   "theurgy:reformation/alchemical_niter_metals_common_from_alchemical_niter_gems_common (2, 100 flux)",
+   "theurgy:reformation/alchemical_sulfur_iron_from_alchemical_niter_metals_common",
+   "theurgy:fermentation/alchemical_niter_metals_common_using_sugars"
+  ]
+ },
+ "purified_gold": {
+  "de": [
+   "Ein Goldbarren, ein beliebiges Salt und 1 000 mB Wasser geben **20** [[theurgy:purified_gold]], ein Barren reicht also lange. Die [[theurgy:digestion_vat]] braucht wie die Fermentation Vat keine Feuerschale, sie arbeitet nur geschlossen (schleichend mit leerer Hand).",
+   "Den [[minecraft:decorated_pot]] für die Vat baust du aus vier Ziegeln. Purified Gold brauchst du für jeden Schritt nach oben ({{theurgy/exaltation}}, {{theurgy/gem_exaltation}})."
+  ],
+  "en": [
+   "One gold ingot, any Salt and 1,000 mB of water give **20** [[theurgy:purified_gold]], so one ingot lasts long. Like the Fermentation Vat, the [[theurgy:digestion_vat]] needs no brazier; it only works when closed (sneak click with an empty hand).",
+   "The [[minecraft:decorated_pot]] for the vat is made of four bricks. Purified Gold is needed for every step up ({{theurgy/exaltation}}, {{theurgy/gem_exaltation}})."
+  ],
+  "sources": [
+   "theurgy:digestion/purified_gold (c:ingots/gold, #theurgy:alchemical_salts, water 1000 mB, 20)",
+   "theurgy:crafting/shaped/digestion_vat",
+   "theurgy jar: en_us.json (the_hermetica.apparatus.digestion_vat.usage, .process)",
+   "theurgy jar: DigestionVatBlockEntity, FermentationVatBlockEntity (no HeatConsumerBehaviour; LiquefactionCauldronBlockEntity has one)",
+   "minecraft:decorated_pot_simple"
+  ]
+ },
+ "exaltation": {
+  "de": [
+   "Eine Digestion braucht 15 mB Sal Ammoniac. Fürs Target brauchst du ein Gold Sulfur, das gibt dir ein Goldbarren im Kessel; die Reformation zu Gold Sulfur kostet 150 Flux.",
+   "Unterm Strich wird so aus vier Iron Sulfur (je eins vergoren zu einem Common Metals Niter) ein Gold Sulfur. Abwärts gibt ein Rare Metals Niter vier Common Metals Niter, ohne Purified Gold."
+  ],
+  "en": [
+   "One digestion takes 15 mB of sal ammoniac. The target needs a Gold Sulfur, which a gold ingot gives you in the cauldron; reforming into Gold Sulfur costs 150 flux.",
+   "All in all four Iron Sulfur (each fermented into one Common Metals Niter) become one Gold Sulfur. Going down, one Rare Metals Niter gives four Common Metals Niter without Purified Gold."
+  ],
+  "sources": [
+   "theurgy:digestion/alchemical_niter_metals_rare_from_common (4, purified gold, 15 mB)",
+   "theurgy:digestion/alchemical_niter_metals_common_from_rare (4)",
+   "theurgy:reformation/alchemical_sulfur_gold_from_alchemical_niter_metals_rare (150 flux)",
+   "theurgy:liquefaction/alchemical_sulfur_gold_from_ingots_gold",
+   "theurgy:fermentation/alchemical_niter_metals_common_using_sugars (1)"
+  ]
+ },
+ "magnum_opus": {
+  "de": [
+   "Die 64 Iron Sulfur löst du am schnellsten aus Rohem Eisen (drei pro Stück) oder Eisenerz mit Behutsamkeit (fünf). Die vier Gold Sulfur kommen aus Rohgold oder aus {{theurgy/exaltation}}.",
+   "Die Sulfurs werden nicht abgezogen, sie bleiben dir für den Incubator. Wie viel Stahl das Stufenziel will, steht unter **/kw goals**."
+  ],
+  "en": [
+   "The 64 Iron Sulfur come fastest from raw iron (three each) or silk touched iron ore (five). The four Gold Sulfur come from raw gold or from {{theurgy/exaltation}}.",
+   "The sulfurs are not taken, they stay yours for the incubator. **/kw goals** shows how much steel the stage goal wants."
+  ],
+  "sources": [
+   "theurgy:liquefaction/alchemical_sulfur_iron_from_raw_materials_iron (3)",
+   "theurgy:liquefaction/alchemical_sulfur_iron_from_ores_iron (5)",
+   "config/kronwerke/goals.json (stage3 scale true)"
+  ]
+ },
+ "iesnium_mult": {
+  "de": [
+   "Ein Rohstück gibt fünf Sulfur, ein Barren nur eins. Lös also das [[occultism:raw_iesnium]] direkt, statt es zu schmelzen. Das Erz findest du mit Brille und Infused Pickaxe ({{occultism_afrit/iesnium}}).",
+   "Den Iesniumbarren braucht jeder Ruf eines Unbound Afrit ({{occultism_afrit/unbound_afrit}})."
+  ],
+  "en": [
+   "A raw piece gives five sulfur, an ingot only one. So dissolve the [[occultism:raw_iesnium]] directly instead of smelting it. Find the ore with goggles and the Infused Pickaxe ({{occultism_afrit/iesnium}}).",
+   "Every summoning of an Unbound Afrit costs an [[occultism:iesnium_ingot]] ({{occultism_afrit/unbound_afrit}})."
+  ],
+  "sources": [
+   "theurgy:liquefaction/alchemical_sulfur_iesnium_from_raw_materials_iesnium (5, 50 mB)",
+   "theurgy:liquefaction/alchemical_sulfur_iesnium_from_ingots_iesnium (1)",
+   "theurgy:incubation/ingots_iesnium_from_alchemical_sulfur_iesnium",
+   "occultism:ritual/summon_unbound_afrit (c:ingots/iesnium)"
+  ]
+ },
+ "netherite_mult": {
+  "de": [
+   "[[minecraft:ancient_debris]] gibt es nur im Nether, einem eigenen Server. Ein Block ergibt ein Netherite Sulfur und damit direkt einen [[minecraft:netherite_ingot]], statt der vier Blöcke, die der Ofenweg kostet.",
+   "Ein fertiger Netheritbarren gibt im Kessel auch nur ein Sulfur, lös also immer den Schrott, nie Barren."
+  ],
+  "en": [
+   "[[minecraft:ancient_debris]] is only found in the Nether, a server of its own. One block gives one Netherite Sulfur and so a whole [[minecraft:netherite_ingot]], instead of the four blocks the furnace route costs.",
+   "A finished netherite ingot also gives only one sulfur in the cauldron, so always dissolve the debris, never ingots."
+  ],
+  "sources": [
+   "theurgy:liquefaction/alchemical_sulfur_netherite_from_ores_netherite_scrap (1, 100 mB)",
+   "theurgy:liquefaction/alchemical_sulfur_netherite_from_ingots_netherite (1)",
+   "theurgy:incubation/ingots_netherite_from_alchemical_sulfur_netherite"
+  ]
+ },
+ "diamond_mult": {
+  "de": [
+   "Vier Diamanten aus einem Erz sind mehr, als Glück III im Schnitt bringt. [[minecraft:emerald_ore]] geht genauso: mit Behutsamkeit abgebaut gibt es vier Emerald Sulfur.",
+   "Ohne Erz kommst du über Lapis zu Diamant Sulfur ({{theurgy/gem_exaltation}}); fürs Target brauchst du dort schon ein Diamond Sulfur von hier."
+  ],
+  "en": [
+   "Four diamonds from one ore is more than Fortune III gives on average. [[minecraft:emerald_ore]] works the same: mined with Silk Touch it gives four Emerald Sulfur.",
+   "Without ore you get diamond sulfur from lapis ({{theurgy/gem_exaltation}}); its target needs a Diamond Sulfur from here."
+  ],
+  "sources": [
+   "theurgy:liquefaction/alchemical_sulfur_diamond_from_ores_diamond (4, 100 mB)",
+   "theurgy:liquefaction/alchemical_sulfur_diamond_from_gems_diamond (1)",
+   "theurgy:incubation/gems_diamond_from_alchemical_sulfur_diamond",
+   "theurgy:incubation/gems_emerald_from_alchemical_sulfur_emerald",
+   "theurgy:liquefaction/alchemical_sulfur_emerald_from_ores_emerald (4)"
+  ]
+ },
+ "mercury_crystal": {
+  "de": [
+   "Der [[theurgy:mercury_crystal]] lässt sich an der Werkbank wieder in vier Shards zerlegen, du verlierst also nichts.",
+   "Die Reformation von Erzen und Edelsteinen kostet 100 bis 200 Flux, die von Feldfrüchten und Erdstoffen nur 50."
+  ],
+  "en": [
+   "The [[theurgy:mercury_crystal]] splits back into four shards at the crafting table, so nothing is lost.",
+   "Reforming ores and gems costs 100 to 200 flux, reforming crops and earthen matter only 50."
+  ],
+  "sources": [
+   "theurgy:crafting/shapeless/mercury_crystal",
+   "theurgy:crafting/shapeless/mercury_shard (4)",
+   "theurgy:catalysation/mercury_flux_from_mercury_crystal (3200, 20 per tick)",
+   "theurgy:reformation/* (mercuryFlux 50, 100, 150, 200)"
+  ]
+ },
+ "fluid_logistics": {
+  "de": [
+   "Fluid Extractor und Inserter brauchen einen Block mit Tank und ziehen standardmäßig von der Seite, an der sie sitzen. Ohne Filter verteilt der Extractor reihum auf alle Kessel.",
+   "Willst du nur bestimmte Flüssigkeiten durchlassen, steckst du in einen List Filter einen Eimer davon."
+  ],
+  "en": [
+   "Fluid extractor and inserter need a block with a tank and work on the face they sit on by default. Without a filter the extractor splits round robin across all cauldrons.",
+   "To let only certain fluids through, put a bucket of that fluid into a List Filter."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/logistics_fluid_extractor",
+   "theurgy:crafting/shaped/logistics_fluid_inserter",
+   "theurgy jar: en_us.json (the_hermetica.logistics.fluid_extractor.*, fluid_list_filter.filter, connection_node.large_networks)"
+  ]
+ },
+ "attribute_filter": {
+  "de": [
+   "Mit Add Inverted kehrst du eine Eigenschaft um, mehrere Eigenschaften lassen sich kombinieren. Schleichend mit leerer Hand auf den Inserter klicken nimmt den Filter wieder ab.",
+   "So schickt ein Inserter am Kessel alle Rohstücke dorthin und der am Ofen den Bruchstein, ohne dass du jedes Metall einzeln einträgst."
+  ],
+  "en": [
+   "Add Inverted turns an attribute around, and several attributes can be combined. Sneak clicking the inserter with an empty hand takes the filter off again.",
+   "That way one inserter at the cauldron takes every raw ore and the one at the oven the cobblestone, without listing each metal."
+  ],
+  "sources": [
+   "theurgy:crafting/shaped/attribute_filter (9)",
+   "theurgy jar: en_us.json (the_hermetica.logistics.attribute_filter.usage, .removal)"
+  ]
+ },
+ "creature_pearls": {
+  "de": [
+   "Fürs Target brauchst du ein Ender Pearl Sulfur: lös dazu eine [[minecraft:ender_pearl]] im Kessel. Pfeile kosten je 15 mB Sal Ammoniac.",
+   "Creature Salt geben auch Leder, rohes Fleisch, Fisch, Federn, Fäden, Schwarzpulver und Knochenmehl, eins pro Stück; eine Enderperle gibt drei. Mit Blaze Rod Sulfur oder Slime Ball Sulfur auf dem Target werden die Pfeile zu [[minecraft:blaze_rod]] oder [[minecraft:slime_ball]]."
+  ],
+  "en": [
+   "The target needs an Ender Pearl Sulfur: dissolve one [[minecraft:ender_pearl]] in the cauldron for it. Arrows cost 15 mB of sal ammoniac each.",
+   "Leather, raw meat, fish, feathers, string, gunpowder and bone meal give Creature Salt too, one each; an ender pearl gives three. With Blaze Rod Sulfur or Slime Ball Sulfur on the target the arrows turn into [[minecraft:blaze_rod]] or [[minecraft:slime_ball]]."
+  ],
+  "sources": [
+   "theurgy:liquefaction/alchemical_sulfur_ender_pearl_from_ender_pearl",
+   "theurgy:liquefaction/alchemical_sulfur_arrow_from_arrow (15 mB)",
+   "theurgy:calcination/alchemical_salt_creature_from_rotten_flesh, _bone, _leather, _porkchop, _ender_pearl (3)",
+   "theurgy:reformation/alchemical_sulfur_ender_pearl_from_alchemical_sulfurs_mobs_common (100 flux)",
+   "theurgy:reformation/alchemical_sulfur_blaze_rod_from_alchemical_sulfurs_mobs_common",
+   "theurgy:incubation/ender_pearl, blaze_rod, slime_ball (alchemical_salt_creature)"
+  ]
+ },
+ "gem_exaltation": {
+  "de": [
+   "Die Common Gems Niter kommen aus {{theurgy/fermentation}}. Ein Lapiserz gibt 12 Lapis Sulfur, ein Netherquarzerz 10, so ist das Ausgangsmaterial schnell beisammen.",
+   "Der Schritt zu Diamond Sulfur kostet 200 Flux. Die fünf Purified Gold machst du aus einem einzigen Goldbarren ({{theurgy/purified_gold}})."
+  ],
+  "en": [
+   "The Common Gems Niter come from {{theurgy/fermentation}}. A lapis ore gives 12 Lapis Sulfur, a Nether quartz ore 10, so the raw material adds up fast.",
+   "The step to Diamond Sulfur costs 200 flux. The five Purified Gold come from a single gold ingot ({{theurgy/purified_gold}})."
+  ],
+  "sources": [
+   "theurgy:digestion/alchemical_niter_gems_rare_from_common (4, 15 mB)",
+   "theurgy:digestion/alchemical_niter_gems_precious_from_rare (4, 50 mB)",
+   "theurgy:reformation/alchemical_sulfur_diamond_from_alchemical_niter_gems_precious (200 flux)",
+   "theurgy:liquefaction/alchemical_sulfur_lapis_from_ores_lapis (12)",
+   "theurgy:liquefaction/alchemical_sulfur_quartz_from_ores_quartz (10)",
+   "theurgy:digestion/purified_gold (20)"
+  ]
+ }
+}

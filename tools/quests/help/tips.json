@@ -1,0 +1,554 @@
+{
+ "welcome": {
+  "de": [
+   "Fast alles hier sind Abhak-Quests. Nur {{tips/m_claim}} und {{tips/m_team}} prüfen, ob du wirklich einen Chunk beanspruchst und in einem Team bist; Kronwerke Core sieht das selbst.",
+   "Die Rezeptliste rechts heißt in diesem Pack **EMI**, JEI läuft nur unsichtbar darunter mit. Am Ende wartet bei {{tips/h_help}} eine Goldkiste."
+  ],
+  "en": [
+   "Almost everything here is a tick box. Only {{tips/m_claim}} and {{tips/m_team}} check that you really claimed a chunk and joined a team; Kronwerke Core sees that by itself.",
+   "The recipe list on the right is **EMI** in this pack, JEI only runs unseen underneath. A Gold Crate waits at {{tips/h_help}} at the end."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/steps/FirstSteps.java (claimed, team)",
+   "core: src/main/java/de/kronwerke/core/compat/EmiLocks.java (JEI underneath, no list of its own)",
+   "tools/quests/chapters/a_common.py (s1_rare Goldkiste)"
+  ]
+ },
+ "q_open": {
+  "de": [
+   "Eine Taste fürs Buch legst du in den Steuerungseinstellungen unter FTB Quests fest. Im offenen Buch sucht Strg+F nach Quests, Tab springt zum nächsten Kapitel (beides Standard).",
+   "Das Buch ist auf allen Servern dasselbe: Was du im Nether oder in der Farmwelt erledigst, gleicht Kronwerke Core mit der Hauptwelt ab."
+  ],
+  "en": [
+   "Bind a key for the book in the controls under FTB Quests. In the open book Ctrl+F searches quests and Tab jumps to the next chapter (both defaults).",
+   "The book is the same on every server: what you finish in the Nether or the farm world, Kronwerke Core syncs with the main world."
+  ],
+  "sources": [
+   "keys-defaults.tsv (key.ftbquests.quests unbound, gui.search Ctrl+F, gui.next_chapter Tab)",
+   "core/README.md (The network: FTB Quests, exchanged every ten seconds)"
+  ]
+ },
+ "q_claim": {
+  "de": [
+   "Die Kisten heißen in jeder Stufe anders: in Stufe 1 Steinkiste, Eisenkiste und Goldkiste, in Stufe 3 etwa Werkskiste, Elementiumkiste und Elfenkiste. Die Kisten hier im Kapitel sind Steinkisten.",
+   "Gehört etwas aus einer Kiste zu einer Stufe, die noch zu ist, darfst du es trotzdem einstecken ({{tips/q_locked}})."
+  ],
+  "en": [
+   "Crates have different names in every stage: Stone, Iron and Gold Crate in stage 1, for example Works, Elementium and Elven Crate in stage 3. The crates in this chapter are Stone Crates.",
+   "If something from a crate belongs to a stage that is still closed, you may still carry it ({{tips/q_locked}})."
+  ],
+  "sources": [
+   "tools/quests/chapters/a_common.py (s1_common Steinkiste, s1_uncommon Eisenkiste, s1_rare Goldkiste)",
+   "tools/quests/chapters/theurgy.py (s3 crate titles)",
+   "core: src/main/java/de/kronwerke/core/lock/LockedItems.java"
+  ]
+ },
+ "q_pin": {
+  "de": [
+   "Fixiere am besten eine Quest mit Mengenaufgabe, etwa 16 Barren oder 64 Bruchstein: Dann zählt die Anzeige mit, während du sammelst.",
+   "Zum Durchschalten mehrerer fixierter Quests gibt es unter FTB Quests in den Steuerungseinstellungen eine Taste, die standardmäßig frei ist."
+  ],
+  "en": [
+   "Pin a quest with an amount, such as 16 ingots or 64 cobblestone: the display then counts along while you gather.",
+   "For cycling through several pinned quests there is a key under FTB Quests in the controls, unbound by default."
+  ],
+  "sources": [
+   "keys-defaults.tsv (key.ftbquests.cycle_pinned_tracker unbound)"
+  ]
+ },
+ "q_groups": {
+  "de": [
+   "Es gibt sechs Gruppen: Zu den fünf aus der Quest kommen die **Checklisten** mit Übersichten zu Werkzeug und Rüstung, Strom, Transport und Lager sowie Dimensionen und Reisen.",
+   "Schon in Stufe 1 gehören 22 Kapitel zur Stufe, insgesamt hat das Buch 74. Die Checklisten helfen, wenn du nicht weißt, welcher Mod gerade das Richtige für dich ist."
+  ],
+  "en": [
+   "There are six groups: besides the five of the quest there are the **Checklists**, overviews of tools and armour, power, transport and storage, and dimensions and travel.",
+   "Stage 1 alone has 22 chapters, the whole book 74. The checklists help when you do not know which mod is the right one for you right now."
+  ],
+  "sources": [
+   "/home/claude/kw/qbook/book.json (groups: start, tech, magic, world, storage, lists)",
+   "/home/claude/kw/qbook/chapters/*.json (stage 1: 22, total 74)"
+  ]
+ },
+ "q_locked": {
+  "de": [
+   "Rezepte richten sich nach der Stufe ihres Ergebnisses: Solange sie zu ist, stellt weder Werkbank noch Maschine, Ritual oder Autocrafter es her. Landet ein gesperrter Gegenstand in Hand oder Rüstungsplatz und das Inventar ist voll, fällt er vor dir auf den Boden.",
+   "Sobald das Gemeinschaftsziel erfüllt ist, laden die Rezepte neu; das kostet ein paar Sekunden Ruckeln."
+  ],
+  "en": [
+   "Recipes follow the stage of their result: while that stage is closed, no crafting grid, machine, ritual or autocrafter makes it. If a locked item ends up in a hand or an armour slot and the inventory is full, it drops in front of you.",
+   "Once the community goal is met, the recipes reload; that costs a few seconds of lag."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/lock/LockedItems.java",
+   "core: src/main/java/de/kronwerke/core/lock/MachineLocks.java",
+   "docs/STAGES.md (How a stage is locked)",
+   "core: src/main/resources/assets/kronwerke/lang/de_de.json (kronwerke.locked.*)"
+  ]
+ },
+ "j_recipe": {
+  "de": [
+   "R, U und die Rücktaste sind EMIs eigene Tasten. Die Liste rechts ist EMI, JEI läuft nur im Hintergrund für Mods, die nur ein JEI-Plugin haben, deren Rezepte siehst du trotzdem in EMI.",
+   "Auch die Rezepte der nächsten Stufe kannst du schon nachschlagen ({{tips/j_next}})."
+  ],
+  "en": [
+   "R, U and Backspace are EMI's own keys. The list on the right is EMI; JEI only runs underneath for mods that have nothing but a JEI plugin, and you still see their recipes in EMI.",
+   "You can already look up the recipes of the next stage too ({{tips/j_next}})."
+  ],
+  "sources": [
+   "qolclient/mods/emi-1.1.24+1.21.1+neoforge.jar: dev.emi.emi.config.EmiConfig (view_recipes R, view_uses U, back 259)",
+   "core: src/main/java/de/kronwerke/core/compat/EmiLocks.java"
+  ]
+ },
+ "j_search": {
+  "de": [
+   "Gegenstände ab der übernächsten Stufe findet die Suche nicht, sie sind ganz aus der Liste genommen. Nur die nächste Stufe steht verhüllt darin ({{tips/j_next}}).",
+   "Strg+F, Strg+O und A sind EMIs Standardbelegung."
+  ],
+  "en": [
+   "The search does not find items from the stage after next, they are taken out of the list entirely. Only the next stage is in it, veiled ({{tips/j_next}}).",
+   "Ctrl+F, Ctrl+O and A are EMI's defaults."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/compat/EmiLocks.java",
+   "emi jar: dev.emi.emi.config.EmiConfig (focus_search Ctrl+F, toggle_visibility Ctrl+O, favorite A)"
+  ]
+ },
+ "j_transfer": {
+  "de": [
+   "EMI legt die Zutaten auch für Rezepte hinein, deren Ergebnis noch gesperrt ist, herauskommen tut dann aber nichts ({{tips/j_next}}). Die [[mekanism:metallurgic_infuser]] öffnet mit Stufe 2.",
+   "Holz bekommst du als Belohnung, damit du das gleich an einer Werkbank ausprobieren kannst."
+  ],
+  "en": [
+   "EMI also fills in recipes whose result is still locked, but nothing comes out then ({{tips/j_next}}). The [[mekanism:metallurgic_infuser]] opens with stage 2.",
+   "The reward is wood, so you can try it at a crafting table right away."
+  ],
+  "sources": [
+   "mekanism:metallurgic_infuser (stage 2)",
+   "core: src/main/java/de/kronwerke/core/lock/MachineLocks.java"
+  ],
+  "client": [
+   "That EMI's fill button puts ingredients into the grid for a recipe whose result is locked."
+  ]
+ },
+ "j_next": {
+  "de": [
+   "Versuchst du es trotzdem, sagt die Werkbank **Das kannst du erst ab** und dann die Stufe; eine Maschine meldet **Diese Maschine stellt das erst ab** und die Stufe. Mit der Stufenöffnung laden die Rezepte neu, dann geht beides.",
+   "Was du jetzt schon abbauen kannst, etwa Zink, lagerst du am besten früh ein."
+  ],
+  "en": [
+   "If you try anyway, the crafting grid says that you can only make it from the stage it names, and a machine says that it only makes it from that stage. When the stage opens the recipes reload and both work.",
+   "What you can already mine, zinc for one, is worth stocking up on early."
+  ],
+  "sources": [
+   "core: src/main/resources/assets/kronwerke/lang/de_de.json (kronwerke.machinelock.grid, .machine)",
+   "core: src/main/java/de/kronwerke/core/lock/MachineLocks.java",
+   "core: src/main/java/de/kronwerke/core/compat/EmiLocks.java (next stage veiled, later stages out)"
+  ]
+ },
+ "j_jade": {
+  "de": [
+   "Ziffernblock 3 und 4 zeigen dir Rezepte und Verwendungen des Blocks, den du ansiehst, Ziffernblock 2 schaltet die Anzeige von Flüssigkeiten um. Die Tasten stehen in den Steuerungseinstellungen unter Jade.",
+   "Ohne Ziffernblock legst du sie dort um."
+  ],
+  "en": [
+   "Numpad 3 and 4 show recipes and uses of the block you look at, Numpad 2 toggles showing fluids. The keys are in the controls under Jade.",
+   "Without a numpad, rebind them there."
+  ],
+  "sources": [
+   "keys-defaults.tsv (key.jade.config keypad 0, show_overlay keypad 1, toggle_liquid keypad 2, show_recipes keypad 3, show_uses keypad 4, show_details left shift)"
+  ]
+ },
+ "j_books": {
+  "de": [
+   "Die Rezepte sind alle formlos: [[botania:lexica_botania]] aus Buch und Setzling, [[ars_nouveau:worn_notebook]] aus Buch und Lapis, [[silentgear:guide_book]] aus Buch und einer Schablonenplatte, Dictionary of Spirits aus Buch und Datura-Samen.",
+   "Ponder öffnest du mit der Ponder-Taste, standardmäßig W gedrückt halten. Theurgy hat sein Handbuch The Hermetica aus einem Buch und zwei Sand."
+  ],
+  "en": [
+   "The recipes are all shapeless: [[botania:lexica_botania]] from a book and a sapling, [[ars_nouveau:worn_notebook]] from a book and lapis, [[silentgear:guide_book]] from a book and a template board, Dictionary of Spirits from a book and datura seeds.",
+   "Ponder opens with the Ponder key, by default holding W. Theurgy's guide The Hermetica is a book and two sand."
+  ],
+  "sources": [
+   "botania:lexica_botania",
+   "ars_nouveau:worn_notebook",
+   "silentgear:guide_book",
+   "occultism:crafting/dictionary_of_spirits",
+   "theurgy:crafting/shapeless/the_hermetica",
+   "keys-defaults.tsv (key.ponder.ponder W)"
+  ]
+ },
+ "m_map": {
+  "de": [
+   "Die Tasten sind Standard: Karte von FTB Chunks auf M, JourneyMap auf J, Wegpunkt auf B. B ist auch der Rucksack und die vierte Herkunftsfähigkeit, also eins davon umlegen ({{tips/h_keys}}).",
+   "Wegpunkte von FTB Chunks lassen sich mit deinem Team oder dem ganzen Server teilen. Die Farmwelt wird alle drei Tage neu erzeugt, Wegpunkte dort veralten also schnell ({{exploration/e_dangers}})."
+  ],
+  "en": [
+   "The keys are defaults: FTB Chunks map on M, JourneyMap on J, waypoint on B. B is also the backpack and the fourth origin skill, so rebind one of them ({{tips/h_keys}}).",
+   "FTB Chunks waypoints can be shared with your team or the whole server. The farm world is generated anew every three days, so waypoints there go stale fast ({{exploration/e_dangers}})."
+  ],
+  "sources": [
+   "keys-defaults.tsv (key.ftbchunks.map M, key.journeymap.map_toggle_alt J, key.journeymap.create_waypoint B, key.sophisticatedbackpacks.open_backpack B, key.neoorigins.skill_4 B)",
+   "config/ftbchunks-world.snbt (waypoint_sharing party, players, server)",
+   "docs/STAGES.md (mining world reset every three days)"
+  ]
+ },
+ "m_waystone": {
+  "de": [
+   "Im Nether und in der Farmwelt, beides eigene Server, stehen die Wegsteine der Hauptwelt mit in der Liste: Wählst du einen, bringt dich das nach Hause zu ihm.",
+   "Einen eigenen Wegstein an der Basis hast du schon beim ersten Login bekommen; wie du weitere baust, steht in {{exploration/e_own_waystone}}. Ein Wegstein in der Farmwelt ist beim nächsten Reset weg."
+  ],
+  "en": [
+   "In the Nether and the farm world, both servers of their own, the main world's waystones are in the list too: picking one takes you home to it.",
+   "You got a waystone of your own for your base on your first login; {{exploration/e_own_waystone}} shows how to build more. A waystone in the farm world is gone at the next reset."
+  ],
+  "sources": [
+   "config/waystones-common.toml (warpRequirements: scaled_add_xp_cost(distance, 0.01), interdimensional 27, warp plate, scroll and global 0, max 27)",
+   "core/README.md (The network: Waystones)",
+   "config/kronwerke-common.toml (join.kit)"
+  ]
+ },
+ "m_claim": {
+  "de": [
+   "Dauerhaft laden kann dein Team **25 Chunks insgesamt**, auch ein einzelner Spieler hat 25, nicht 9. Die 500 Claims gelten ebenfalls fürs ganze Team.",
+   "Geschützt sind Blöcke, Truhen, Rahmen und Rüstungsständer, dazu kommen keine Explosionen, kein Feuer und keine Flüssigkeiten von außen herein, und Kolben von Nachbarn schieben nichts über die Grenze. PvP ist in Claims aus, solange dein Team es nicht einschaltet. Im Quadrat von 96 Blöcken um den Spawn baut niemand, deine Basis gehört also weiter hinaus."
+  ],
+  "en": [
+   "Your team can force load **25 chunks in total**, and a single player also has 25, not 9. The 500 claims count for the whole team too.",
+   "Blocks, chests, item frames and armour stands are protected, no explosions, fire or fluids come in from outside, and a neighbour's pistons push nothing across the border. PvP is off in claims unless your team turns it on. Nobody builds within the square of 96 blocks around spawn, so your base belongs further out."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (max_force_loaded_chunks 25, hard_team_force_limit 25, max_claimed_chunks 500, party_limit_mode largest, max_idle_days_before_unforce 7, max_idle_days_before_unclaim 30)",
+   "config/ftbchunks-world.snbt (def_block_edit, def_block_interact, def_entity_attack allies; def_allow_explosions false; fire_spread_protection, flowing_fluid_protection, piston_protection true; pvp_mode per_team, def_pvp false)",
+   "core: src/main/java/de/kronwerke/core/spawn/SpawnGuard.java, config/kronwerke-common.toml (spawn.radius 96)"
+  ]
+ },
+ "m_team": {
+  "de": [
+   "Der Knopf heißt im Spiel **My Team**, FTB Teams hat keine deutsche Übersetzung. Ein Team teilt sich auch die 25 dauerhaft geladenen Chunks ({{tips/m_claim}}).",
+   "Ping Wheel liegt standardmäßig auf der vierten Seitentaste der Maus (Maustaste 5). Ohne solche Taste legst du den Ping in den Steuerungseinstellungen um."
+  ],
+  "en": [
+   "The button is called **My Team** in game. A team also shares the 25 force loaded chunks ({{tips/m_claim}}).",
+   "Ping Wheel's default is the second side button of the mouse (mouse button 5). Without one, rebind the ping in the controls."
+  ],
+  "sources": [
+   "ftb-teams-neoforge-2101.1.11.jar: assets/ftbteams/lang (en_us only; sidebar_button.ftbteams.my_team)",
+   "ftb-teams jar: dev.ftb.mods.ftbteams.data.FTBTeamsCommands (party create, invite)",
+   "config/ftbteams-server.snbt (max_party_size 0)",
+   "config/ftbchunks-world.snbt (party_limit_mode largest)",
+   "keys-defaults.tsv (key.pingwheel.ping_location mouse.5)"
+  ]
+ },
+ "r_together": {
+  "de": [
+   "Die Mengen der Ziele wachsen mit der Zahl aktiver Spieler: Zum Start einer Stufe wird jede Grundmenge mit einem Faktor zwischen 0,4 und 1,5 multipliziert, nur die Meilensteine bleiben fest. Die echten Zahlen zeigt **/kw goals** ({{start_here/o_scale}}).",
+   "Als aktiv zählt, wer in den letzten sieben Tagen mehr als eine Stunde gespielt hat."
+  ],
+  "en": [
+   "Goal amounts grow with the number of active players: when a stage starts every base amount is multiplied by a factor between 0.4 and 1.5, only the milestones stay fixed. **/kw goals** shows the real numbers ({{start_here/o_scale}}).",
+   "Active means more than an hour of play in the last seven days."
+  ],
+  "sources": [
+   "docs/STAGES.md (Rules 4, 8)",
+   "config/kronwerke/goals.json (scale, fixed)",
+   "core/README.md (Scaling)"
+  ]
+ },
+ "r_obelisk": {
+  "de": [
+   "Für den Schleichklick brauchst du **etwas in der Hand**: Der erste Klick fragt nach, ein zweiter innerhalb von fünf Sekunden gibt ab, und zwar nur aus den drei Inventarreihen. Hotbar, Nebenhand und Rüstung bleiben.",
+   "Schleichen mit leerer Hand zeigt, was du zum laufenden Ziel schon beigetragen hast. Abgegeben wird nur von Hand am Obelisken, ohne Trichter, Rohre oder Befehl ({{start_here/o_deposit}})."
+  ],
+  "en": [
+   "The sneak click needs **something in your hand**: the first click asks, a second one within five seconds hands in, and only from the three inventory rows. Hotbar, offhand and armour stay.",
+   "Sneaking with an empty hand shows what you have given to the running goal. Handing in is done only by hand at the obelisk, with no hopper, pipe or command ({{start_here/o_deposit}})."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (shift with empty hand: ledger; armed 5000 ms)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll slots 9..35)",
+   "core/README.md (Handing in)"
+  ]
+ },
+ "r_hold": {
+  "de": [
+   "Ist die Grenze erreicht, antwortet der Obelisk mit **Der Obelisk wartet auf das Event**. Den Termin legt das Team fest, sobald die Leiste 90 Prozent überschreitet.",
+   "Ist das Ziel voll, folgt am Obelisken ein Ritual von etwa neunzig Sekunden, danach laden die Rezepte der neuen Stufe ({{start_here/o_event}})."
+  ],
+  "en": [
+   "Once the limit is reached, the obelisk answers that it is waiting for the event. The team sets the date once the bar passes 90 percent.",
+   "When the goal is full, a rite of about ninety seconds follows at the obelisk, then the recipes of the new stage load ({{start_here/o_event}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (holdAt 0.98)",
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (obelisk.held)",
+   "docs/STAGES.md (Timeline: event date once the bar passes 90 percent; How a stage is locked)",
+   "core/README.md (rite, ninety seconds)"
+  ]
+ },
+ "r_events": {
+  "de": [
+   "Das Starterpaket von Stufe 2 sind 16 [[create:brass_ingot]], ein [[create:blaze_burner]], ein [[ars_nouveau:source_jar]] und 8 [[botania:mana_pearl]]; das von Stufe 3 32 Stahlbarren, ein Stapel Einfaches Universalkabel, 8 Geladene Certusquarzkristalle und 4 Elementiumbarren ({{start_here/s_latejoin}}).",
+   "Bosse werden mit der Zahl der Spieler in der Nähe stärker, beim Gruppenkampf lohnt sich Absprache im Sprachchat."
+  ],
+  "en": [
+   "The stage 2 starter kit is 16 [[create:brass_ingot]], a [[create:blaze_burner]], a [[ars_nouveau:source_jar]] and 8 [[botania:mana_pearl]]; the stage 3 kit 32 steel ingots, a stack of Basic Universal Cable, 8 Charged Certus Quartz Crystals and 4 Elementium Ingots ({{start_here/s_latejoin}}).",
+   "Bosses grow stronger with the number of players nearby; in a group fight it pays to talk it over in voice chat."
+  ],
+  "sources": [
+   "docs/STAGES.md (Rule 7, starter kits of stages 2 and 3, events of stages 2 and 4)",
+   "core/README.md (bosses scale with the group)"
+  ]
+ },
+ "r_fair": {
+  "de": [
+   "Die Whitelist hängt am Discord: Der Bot nimmt dich heraus, sobald du nicht mehr auf dem Server bist. Am Spawn kann niemand einem anderen schaden, und der Sprachchat wird nicht aufgezeichnet, der Server erlaubt keine Aufnahmen.",
+   "Lass auch Körper anderer liegen: Sie bleiben, solange etwas darin ist ({{tips/h_death}})."
+  ],
+  "en": [
+   "The whitelist is tied to Discord: the bot takes you off once you are no longer on the server. At spawn nobody can hurt another player, and voice chat is not recorded, the server allows no recording.",
+   "Leave other players' bodies alone too: they stay as long as something is in them ({{tips/h_death}})."
+  ],
+  "sources": [
+   "bot: internal/bot/reconcile.go (ungrant 'nicht mehr auf dem Discord')",
+   "core: src/main/java/de/kronwerke/core/spawn/SpawnGuard.java (no player hurts another)",
+   "config/voicechat/voicechat-server.properties (allow_recording=false)",
+   "config/corpse-server.toml (only_owner false)"
+  ]
+ },
+ "h_lag": {
+  "de": [
+   "Dauerhaft geladene Chunks laufen auch, wenn niemand da ist: höchstens 25 pro Team, und nach sieben Tagen ohne Login gibt sie der Server frei.",
+   "Klickst du aus dem Spiel heraus, fällt es absichtlich auf ein Bild pro Sekunde; das ist kein Ruckeln ({{tips/h_background}})."
+  ],
+  "en": [
+   "Force loaded chunks keep running when nobody is there: at most 25 per team, released after seven days without a login.",
+   "When you click out of the game it drops to one frame per second on purpose; that is not lag ({{tips/h_background}})."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (force_load_mode always, hard_team_force_limit 25, max_idle_days_before_unforce 7)",
+   "dynamic-fps jar: assets/dynamic_fps/data/default_config.json (unfocused 1)"
+  ]
+ },
+ "h_memory": {
+  "de": [
+   "Die Website rät zu 8 GB, mindestens 6 GB, und zu einem PC mit 16 GB. Mit den 2 GB, die viele Launcher voreinstellen, startet das Pack nicht richtig.",
+   "Der Speicher-Rechner auf kronwerke.com unter Installieren sagt dir, was zu deinem PC passt."
+  ],
+  "en": [
+   "The website recommends 8 GB, at least 6 GB, and a PC with 16 GB. With the 2 GB many launchers preset, the pack does not start properly.",
+   "The memory helper on kronwerke.com under Install tells you what fits your PC."
+  ],
+  "sources": [
+   "website/faq.html (wie-viel-arbeitsspeicher-brauche-ich)",
+   "website/en/install.html (memory helper)"
+  ]
+ },
+ "h_crash": {
+  "de": [
+   "Die Sicherung läuft alle zwei Stunden, aber nur, solange jemand online ist; ob zurückgesetzt wird, entscheidet das Team. Was in der Farmwelt steht, sichert dir niemand, sie wird alle drei Tage neu erzeugt.",
+   "Im Pack ist Crash Assistant, das nach einem Absturz ein Fenster mit den Logdateien öffnet."
+  ],
+  "en": [
+   "Backups run every two hours, but only while someone is online; the team decides about a rollback. Nothing saves what stands in the farm world, it is generated anew every three days.",
+   "The pack has Crash Assistant, which opens a window with the log files after a crash."
+  ],
+  "sources": [
+   "config/ftbbackups3-server.snbt (backup_timer 120, backups_to_keep 12, only_if_players_online true)",
+   "mods/crash-assistant.pw.toml",
+   "docs/STAGES.md (mining world reset every three days)"
+  ],
+  "client": [
+   "What Crash Assistant's window shows after a crash."
+  ]
+ },
+ "h_keys": {
+  "de": [
+   "Die häufigsten Doppelungen ab Werk: **V** ist Sprachchat-Menü und Fähigkeit 1, **G** Schmuckplätze, Fähigkeit 2 und Sprachchat-Gruppen, **B** Rucksack, Fähigkeit 4 und JourneyMap-Wegpunkt, **M** Karte und Mikrofon stumm, **N** Fähigkeit 3 und Sprachchat aus.",
+   "Auch **O** (Herkunftsübersicht) und **K** (Nachtsicht) teilen sich ihre Taste mit Iris, dem Shader-Mod. Die Suchleiste der Steuerung findet solche Paare schnell ({{tips/h_controls}})."
+  ],
+  "en": [
+   "The most common clashes out of the box: **V** is the voice chat menu and skill 1, **G** accessory slots, skill 2 and voice chat groups, **B** backpack, skill 4 and JourneyMap waypoint, **M** map and mute microphone, **N** skill 3 and voice chat off.",
+   "**O** (origin overview) and **K** (night vision) also share their key with Iris, the shader mod. The search bar in the controls finds such pairs quickly ({{tips/h_controls}})."
+  ],
+  "sources": [
+   "keys-defaults.tsv (voice_chat V, neoorigins.skill_1 V, curios G, skill_2 G, voice_chat_group G, open_backpack B, skill_4 B, journeymap.create_waypoint B, ftbchunks.map M, mute_microphone M, skill_3 N, disable_voice_chat N, neoorigins.view_info O, iris shaderPackSelection O, toggle_night_vision K, iris toggleShaders K)",
+   "docs/KEYS.md"
+  ]
+ },
+ "h_voice": {
+  "de": [
+   "Stummschalten liegt ab Werk auf **M**, derselben Taste wie die Karte von FTB Chunks, und N schaltet den Sprachchat ganz ab. Leg Stumm am besten auf eine eigene Taste, bevor du versehentlich still bist.",
+   "Flüstern hat ab Werk keine Taste. Der Server erlaubt keine Aufnahmen des Sprachchats."
+  ],
+  "en": [
+   "Mute sits on **M** by default, the same key as the FTB Chunks map, and N turns voice chat off entirely. Best give mute a key of its own before you go silent by accident.",
+   "Whisper has no key by default. The server allows no recording of voice chat."
+  ],
+  "sources": [
+   "keys-defaults.tsv (key.mute_microphone M, key.disable_voice_chat N, key.whisper unbound, key.push_to_talk unbound, key.ftbchunks.map M)",
+   "config/voicechat/voicechat-server.properties (max_voice_distance 48, whisper_distance 24, enable_groups true, allow_recording false)"
+  ]
+ },
+ "h_origin": {
+  "de": [
+   "Die Fähigkeitentaste 1 liegt ab Werk auf **V**, nicht auf Z, und teilt sich die Taste mit dem Sprachchat-Menü. Rollen-Taste H, Nachtsicht K und die Übersicht O sind die Standardbelegung.",
+   "Der Sternensprung trägt bis 16 Blöcke weit, nicht durch Wände, kostet 2 Hungerpunkte und hat 10 Sekunden Abklingzeit. Die Packtasche des Händlers hat neun Plätze und fällt beim Tod heraus."
+  ],
+  "en": [
+   "Skill key 1 defaults to **V**, not Z, shared with the voice chat menu. Role key H, night vision K and the overview O are the defaults.",
+   "The star jump reaches up to 16 blocks, not through walls, costs 2 hunger and has a 10 second cooldown. The Trader's pack has nine slots and drops on death."
+  ],
+  "sources": [
+   "keys-defaults.tsv (neoorigins.skill_1 V, class_skill H, toggle_night_vision K, view_info O)",
+   "kubejs/data/kronwerke/origins/powers/sternensplitter_sternensprung.json (range 16, cooldown 200, hunger 2)",
+   "kubejs/data/kronwerke/origins/powers/rolle_haendler_packtasche.json (size 9, drop_on_death)",
+   "docs/ORIGINS.md"
+  ],
+  "client": [
+   "Which key slot the Sternensprung and the Packtasche are on (skill 1 and class skill as the quest says)."
+  ]
+ },
+ "h_death": {
+  "de": [
+   "Dein Körper verbrennt nicht in Lava und fällt nicht ins Leere, auch dann bleibt alles erhalten. Nur in der Farmwelt ist er beim nächsten Reset weg ({{exploration/e_dangers}}).",
+   "Die Todeshistorie liegt ab Werk auf U und öffnet sich nur außerhalb von Menüs, weil U in EMI die Verwendungen zeigt."
+  ],
+  "en": [
+   "Your body does not burn in lava and does not fall into the void, so everything stays even then. Only in the farm world is it gone at the next reset ({{exploration/e_dangers}}).",
+   "Death history defaults to U and only opens outside menus, since U shows uses in EMI."
+  ],
+  "sources": [
+   "config/corpse-server.toml (skeleton_time 72000, lava_damage false, fall_into_void false, only_owner false, despawn force_time -1)",
+   "keys-defaults.tsv (key.corpse.death_history U); emi jar EmiConfig (view_uses U)",
+   "tools/quests/chapters/exploration.py (e_dangers)"
+  ],
+  "client": [
+   "That the death history key does nothing while a menu with EMI is open."
+  ]
+ },
+ "m_allies": {
+  "de": [
+   "Im Spiel heißt der Knopf **Manage Allies**. Ab Werk dürfen Verbündete in deinen Claims schon abbauen, bauen, Truhen öffnen und mit Wesen umgehen; wer das nicht will, stellt es in den Team-Einstellungen auf privat.",
+   "Verbündete teilen weder Questfortschritt noch dauerhaft geladene Chunks."
+  ],
+  "en": [
+   "In game the button is called **Manage Allies**. By default allies can already break, build, open chests and interact with entities in your claims; to change that, set it to private in the team settings.",
+   "Allies share neither quest progress nor force loaded chunks."
+  ],
+  "sources": [
+   "ftb-teams jar: assets/ftbteams/lang/en_us.json (ftbteams.gui.manage_allies)",
+   "config/ftbchunks-world.snbt (def_block_edit allies, def_block_interact allies, def_entity_interact allies, def_entity_attack allies)"
+  ]
+ },
+ "h_controls": {
+  "de": [
+   "KeybindsPurger setzt dort auf Knopfdruck alle Tasten einer Mod oder aller Mods frei, KeyBind Bundles legt mehrere Aktionen als Ringmenü auf eine Taste.",
+   "Welche Paare ab Werk kollidieren, steht in {{tips/h_keys}}."
+  ],
+  "en": [
+   "KeybindsPurger unbinds every key of one mod or of all mods at the push of a button there, KeyBind Bundles puts several actions on one key as a radial menu.",
+   "Which pairs clash out of the box is listed in {{tips/h_keys}}."
+  ],
+  "sources": [
+   "mods/controlling.pw.toml, mods/keybindspurger.pw.toml, mods/keybind-bundles.pw.toml",
+   "docs/KEYS.md"
+  ]
+ },
+ "h_background": {
+  "de": [
+   "Am Laptop im Akkubetrieb fällt das Spiel außerdem nach fünf Minuten ohne Eingabe auf 10 Bilder pro Sekunde. Dynamic FPS hat Tasten zum Erzwingen und Abschalten, ab Werk ohne Belegung.",
+   "Nur deine Anzeige wird gebremst, der Server und deine Maschinen laufen normal weiter."
+  ],
+  "en": [
+   "On a laptop running on battery the game also drops to 10 frames per second after five minutes without input. Dynamic FPS has keys to force and to disable it, unbound by default.",
+   "Only your display slows down; the server and your machines run on as normal."
+  ],
+  "sources": [
+   "dynamic-fps-3.11.4 jar: assets/dynamic_fps/data/default_config.json (hovered 60, unfocused 1 and 0.25, invisible 0 and 0.0, idle 300 on_battery, abandoned 10)",
+   "keys-defaults.tsv (key.dynamic_fps.toggle_forced, toggle_disabled unbound)"
+  ]
+ },
+ "k_mouse": {
+  "de": [
+   "Die Gesten gelten in jedem normalen Inventarfenster, also auch in Truhen, Rucksäcken und Maschinen. Mouse Tweaks läuft nur auf deinem Rechner, der Server merkt davon nichts.",
+   "Die Belohnung sind zwei Truhen zum Ausprobieren."
+  ],
+  "en": [
+   "The gestures work in every normal inventory screen, so in chests, backpacks and machines too. Mouse Tweaks runs on your computer only, the server knows nothing of it.",
+   "The reward is two chests to try it on."
+  ],
+  "sources": [
+   "mods/mouse-tweaks.pw.toml"
+  ],
+  "client": [
+   "That the Mouse Tweaks gestures work in Sophisticated Backpacks and machine screens."
+  ]
+ },
+ "k_polymorph": {
+  "de": [
+   "Gibt die Werkbank gar nichts aus, liegt es meist nicht an Polymorph, sondern an einer noch gesperrten Stufe des Ergebnisses ({{tips/j_next}})."
+  ],
+  "en": [
+   "If the crafting table gives nothing at all, it is usually not Polymorph but a stage of the result that is still locked ({{tips/j_next}})."
+  ],
+  "sources": [
+   "mods/polymorph.pw.toml",
+   "core: src/main/java/de/kronwerke/core/lock/MachineLocks.java"
+  ]
+ },
+ "k_food": {
+  "de": [
+   "Ultimine kostet hier für jeden mitgenommenen Block Hunger, wer viel damit abbaut, trägt also gutes Essen mit. Was satt macht, zeigen die Kapitel {{food/welcome}} und {{cooking/book}}."
+  ],
+  "en": [
+   "Here Ultimine costs hunger for every extra block, so whoever mines a lot with it carries good food. The chapters {{food/welcome}} and {{cooking/book}} show what fills you up."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (exhaustion_per_block 20.0)",
+   "mods/appleskin.pw.toml"
+  ]
+ },
+ "k_enchant": {
+  "de": [
+   "Apotheosis ändert auch den Zaubertisch und bringt Affixe auf Beute, das erklärt das Kapitel {{apotheosis/welcome}}.",
+   "Für Statuseffekte von Tränken und Zaubern ist JEED im Pack, das deren Beschreibung in EMI zeigt."
+  ],
+  "en": [
+   "Apotheosis also changes the enchanting table and puts affixes on loot; the chapter {{apotheosis/welcome}} explains it.",
+   "For status effects of potions and spells the pack has JEED, which shows their description in EMI."
+  ],
+  "sources": [
+   "mods/enchantment-descriptions.pw.toml",
+   "mods/just-enough-effect-descriptions-jeed.pw.toml"
+  ],
+  "client": [
+   "That JEED's effect descriptions show up in EMI (JEED is a JEI plugin, EMI runs JEI underneath)."
+  ]
+ },
+ "k_light": {
+  "de": [
+   "**Dynamic Lights ist nicht mehr im Pack**, es wurde mit Pack 0.11.36 entfernt, weil es zu viel Serverleistung kostete. Eine Fackel in der Hand leuchtet also nicht.",
+   "Setz in Höhlen echte Fackeln. Gegen Spawns um die Basis hilft die [[torchmaster:megatorch]] aus Fackel, Diamant, Goldblock und Stämmen."
+  ],
+  "en": [
+   "**Dynamic Lights is no longer in the pack**; it was removed in pack 0.11.36 because it cost too much server time. A torch in your hand does not light up.",
+   "Place real torches in caves. Against spawns around your base the [[torchmaster:megatorch]] helps, made of a torch, a diamond, a gold block and logs."
+  ],
+  "sources": [
+   "CHANGELOG.md (0.11.36: Dynamic Lights removed)",
+   "mods/ (no dynamic lights mod)",
+   "torchmaster:megatorch"
+  ]
+ },
+ "h_help": {
+  "de": [
+   "Für Fragen, die keiner im Chat beantworten kann, schau in die FAQ auf kronwerke.com; dort steht auch, wie viel Arbeitsspeicher das Pack braucht. Als Nächstes führt dich {{start_here/welcome}} durch den ersten Tag."
+  ],
+  "en": [
+   "For questions nobody in chat can answer, see the FAQ on kronwerke.com; it also says how much memory the pack needs. Next, {{start_here/welcome}} guides you through the first day."
+  ],
+  "sources": [
+   "website/faq.html"
+  ]
+ }
+}

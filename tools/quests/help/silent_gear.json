@@ -1,0 +1,1148 @@
+{
+ "welcome": {
+  "de": [
+   "Beim ersten Betreten legt Silent Gear dir ein [[silentgear:blueprint_package]] und das [[silentgear:material_book]] ins Inventar. Vanilla-Werkzeug musst du nicht wegwerfen: Eine [[minecraft:iron_pickaxe]] allein ins Raster wird zur Silent-Gear-Spitzhacke mit Eisenkopf, das geht für Holz bis Netherit und auch für Rüstung.",
+   "Für Teile gibt es zwei Wege: Blaupausen bleiben beim Herstellen erhalten ({{silent_gear/starter_blueprints}}), Vorlagen aus Vorlagenbrettern gehen nach einem Teil weg ({{silent_gear/crude_parts}})."
+  ],
+  "en": [
+   "On your first join Silent Gear puts a [[silentgear:blueprint_package]] and the [[silentgear:material_book]] in your inventory. You do not have to throw vanilla tools away: an [[minecraft:iron_pickaxe]] alone in the grid becomes a Silent Gear pickaxe with an iron head, and this works from wood to netherite and for armor too.",
+   "Parts come two ways: blueprints stay when you craft ({{silent_gear/starter_blueprints}}), templates made of template boards are used up after one part ({{silent_gear/crude_parts}})."
+  ],
+  "sources": [
+   "srv/config/silentgear-common.toml (spawn_with_starter_blueprints, spawn_with_material_book, allow_conversion_recipes)",
+   "silentgear:gear/convert/iron_pickaxe",
+   "silentgear:gear/convert/netherite_chestplate"
+  ]
+ },
+ "starter_blueprints": {
+  "de": [
+   "Das Bündel enthält Blaupausen für Stiel, Spitzhacke, Schaufel, Axt, Hacke und Schwert. Fehlt dir später eine, baust du sie selbst aus [[silentgear:blueprint_paper]] und Stöcken in der Form des Werkzeugs; die Stiel-Blaupause sind zwei Blaues Papier links und zwei Stöcke rechts daneben.",
+   "Die 8 Papier aus der Belohnung werden mit 2 blauem Farbstoff zu 8 Blaues Papier ({{silent_gear/blueprint_paper}})."
+  ],
+  "en": [
+   "The package holds blueprints for rod, pickaxe, shovel, axe, hoe and sword. If you need another one later, craft it from [[silentgear:blueprint_paper]] and sticks in the shape of the tool; the rod blueprint is two blueprint paper on the left and two sticks to their right.",
+   "The 8 paper of the reward plus 2 blue dye make 8 blueprint paper ({{silent_gear/blueprint_paper}})."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/loot_table/starter_blueprints.json",
+   "silentgear:rod_blueprint",
+   "silentgear:blueprint_paper"
+  ]
+ },
+ "blueprint_paper": {
+  "de": [
+   "Für einen [[minecraft:blue_dye]] brauchst du ein [[minecraft:lapis_lazuli]], eine [[minecraft:cornflower]] oder **vier** [[silentgear:flax_flowers]]. Die Belohnung bringt Zuckerrohr und Lapislazuli für die nächste Runde.",
+   "Jede Blaupause entsteht aus Blauem Papier und Stöcken in der Form ihres Werkzeugs, die genaue Form zeigt EMI an der Blaupause. Spitzhacke, Axt, Schaufel und Schwert hast du schon aus dem Bündel."
+  ],
+  "en": [
+   "One [[minecraft:blue_dye]] comes from a [[minecraft:lapis_lazuli]], a [[minecraft:cornflower]] or **four** [[silentgear:flax_flowers]]. The reward brings sugar cane and lapis for the next batch.",
+   "Every blueprint is blueprint paper and sticks in the shape of its tool; EMI shows the exact shape on the blueprint. Pickaxe, axe, shovel and sword already came in the package."
+  ],
+  "sources": [
+   "silentgear:blueprint_paper",
+   "silentgear:blue_dye_from_flax_flowers",
+   "silentgear:pickaxe_blueprint"
+  ]
+ },
+ "material_book": {
+  "de": [
+   "Die Werte hängen vom Teil ab: Eisen ist als Kopf Biegsam III, als Stiel Flexibel II und als Spitze +128 Haltbarkeit. Schau deshalb im Buch nach, bevor du ein seltenes Material in den falschen Teil steckst.",
+   "Die Quest ist optional, das Buch liegt schon im Startinventar."
+  ],
+  "en": [
+   "The stats depend on the part: iron is Malleable III as a head, Flexible II as a rod and +128 durability as a tip. So check the book before you put a rare material into the wrong part.",
+   "The quest is optional; the book is already in your starting inventory."
+  ],
+  "sources": [
+   "silentgear:material_book",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json",
+   "srv/config/silentgear-common.toml (spawn_with_material_book)"
+  ],
+  "client": [
+   "Rechtsklick öffnet die Materialliste, Strg im Tooltip zeigt die Werte"
+  ]
+ },
+ "blueprint_book": {
+  "de": [
+   "Du brauchst dafür drei [[silentgear:template_board]], also zuerst ein grobes Messer und den Steinamboss ({{silent_gear/template_boards}}). Den [[minecraft:gold_ingot]] schmilzt du aus Rohgold.",
+   "Liegt das Buch im Raster, zählt es wie die Blaupause, die du gerade gewählt hast. Gewählt ist, was der Tooltip unter \"Gewählt\" zeigt."
+  ],
+  "en": [
+   "You need three [[silentgear:template_board]] for it, so first a crude knife and the stone anvil ({{silent_gear/template_boards}}). Smelt the [[minecraft:gold_ingot]] from raw gold.",
+   "In the grid the book counts as the blueprint you have selected; the tooltip shows it under \"Selected\"."
+  ],
+  "sources": [
+   "silentgear:blueprint_book",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/de_de.json (item.silentgear.blueprint_book.keyHint, .selected)"
+  ],
+  "client": [
+   "Blaupausen ins Buch legen und mit Z und C blättern"
+  ]
+ },
+ "crude_parts": {
+  "de": [
+   "Vier [[silentgear:crude_tool_parts]] reichen für zwei Werkzeuge: das [[silentgear:crude_knife]] (Bruchstein über einem Teil) und den [[silentgear:crude_hammer]] (zwei Bruchstein oben, ein Teil rechts darunter).",
+   "Der grobe Hammer zerschlägt auf dem Steinamboss Bruchstein zu Kieseln und Barren zu Staub, das brauchst du später für Lohengoldstaub ({{silent_gear/stone_anvil}})."
+  ],
+  "en": [
+   "Four [[silentgear:crude_tool_parts]] are enough for two tools: the [[silentgear:crude_knife]] (cobblestone above one part) and the [[silentgear:crude_hammer]] (two cobblestone on top, one part below on the right).",
+   "On the stone anvil the crude hammer breaks cobblestone into pebbles and ingots into dust, which you need later for blaze gold dust ({{silent_gear/stone_anvil}})."
+  ],
+  "sources": [
+   "silentgear:crude_tool_parts",
+   "silentgear:crude_knife",
+   "silentgear:crude_hammer",
+   "silentgear:pebble",
+   "silentgear:blaze_gold_dust"
+  ]
+ },
+ "crude_knife": {
+  "de": [
+   "Auf dem Steinamboss schneidet **jedes Messer** aus dem Tag c:tools/knife: das grobe Messer, das [[silentgear:knife]] und auch die Küchenmesser von Farmer's Delight wie das [[farmersdelight:flint_knife]].",
+   "Ein Schnitt kostet einen Punkt Haltbarkeit und gibt sechs Vorlagenbretter. Weiter geht es mit {{silent_gear/stone_anvil}}."
+  ],
+  "en": [
+   "On the stone anvil **any knife** in the tag c:tools/knife cuts: the crude knife, the Silent Gear [[silentgear:knife]] and also Farmer's Delight knives such as the [[farmersdelight:flint_knife]].",
+   "One cut costs one point of durability and gives six template boards. Next comes {{silent_gear/stone_anvil}}."
+  ],
+  "sources": [
+   "silentgear:crude_knife",
+   "silentgear:template_board (tool_action, tool #c:tools/knife, damage_to_tool 1)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/c/tags/item/tools/knife.json",
+   "FarmersDelight-1.21.1-1.3.4.jar: data/c/tags/item/tools/knife.json"
+  ],
+  "client": [
+   "Ein Messer von Farmer's Delight schneidet auf dem Steinamboss Vorlagenbretter"
+  ]
+ },
+ "stone_anvil": {
+  "de": [
+   "Mit einem Messer schneidest du auf dem Amboss Stämme zu Vorlagenbrettern. Mit einem Hammer (grober Hammer, Silent-Gear-Hammer oder Prospektorhammer) machst du aus [[silentgear:blaze_gold_ingot]] den [[silentgear:blaze_gold_dust]] und aus einer [[minecraft:shulker_shell]] die [[silentgear:crushed_shulker_shell]]; die Schale kostet 10 Haltbarkeit.",
+   "Kiesel lohnen nicht: Neun [[silentgear:pebble]] werden wieder genau ein Bruchstein."
+  ],
+  "en": [
+   "With a knife the anvil cuts logs into template boards. With a hammer (crude hammer, Silent Gear hammer or prospector hammer) it turns a [[silentgear:blaze_gold_ingot]] into [[silentgear:blaze_gold_dust]] and a [[minecraft:shulker_shell]] into [[silentgear:crushed_shulker_shell]]; the shell costs 10 durability.",
+   "Pebbles are not worth it: nine [[silentgear:pebble]] turn back into exactly one cobblestone."
+  ],
+  "sources": [
+   "silentgear:stone_anvil",
+   "silentgear:pebble",
+   "silentgear:cobblestone_from_pebbles",
+   "silentgear:blaze_gold_dust",
+   "silentgear:crushed_shulker_shell",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/c/tags/item/tools/hammer.json"
+  ]
+ },
+ "template_boards": {
+  "de": [
+   "Jeder Stamm aus dem Tag minecraft:logs geht, also auch Stämme aus anderen Mods. Für die zwölf Bretter der Quest brauchst du zwei Stämme und zwei Schnitte.",
+   "Verbraucht werden sie so: drei für eine Vorlage oder das [[silentgear:blueprint_book]], fünf für das [[silentgear:crude_repair_kit]], vier für das [[silentgear:mod_kit]]."
+  ],
+  "en": [
+   "Any log in the tag minecraft:logs works, logs from other mods included. The twelve boards of the quest take two logs and two cuts.",
+   "They go into: three for a template or the [[silentgear:blueprint_book]], five for the [[silentgear:crude_repair_kit]], four for the [[silentgear:mod_kit]]."
+  ],
+  "sources": [
+   "silentgear:template_board",
+   "silentgear:pickaxe_template",
+   "silentgear:blueprint_book",
+   "silentgear:crude_repair_kit",
+   "silentgear:mod_kit"
+  ]
+ },
+ "template": {
+  "de": [
+   "Zu jeder Blaupause gibt es eine Vorlage mit derselben Form, nur aus Vorlagenbrettern statt Blauem Papier: Stiel, Verbindung, Griff, Spitze, alle Werkzeuge und Rüstungsteile.",
+   "Vorlagen lohnen für Teile, die du einmal baust, etwa einen Hammerkopf. Für Spitzhacke und Stiel, die du oft neu baust, nimm die Blaupause."
+  ],
+  "en": [
+   "Every blueprint has a template of the same shape, made of template boards instead of blueprint paper: rod, binding, grip, tip, every tool and every armor piece.",
+   "Templates pay off for parts you build once, such as a hammer head. For pickaxe and rod, which you build often, use the blueprint."
+  ],
+  "sources": [
+   "silentgear:pickaxe_template",
+   "silentgear:rod_template",
+   "silentgear:hammer_template",
+   "srv/config/silentgear-common.toml (types_allowed BOTH)"
+  ]
+ },
+ "rod": {
+  "de": [
+   "Was als Stiel geht, steht im Material: Stöcke (Holz), Knochen, [[silentgear:iron_rod]] und [[silentgear:stone_rod]], dazu Kupfer- und Goldstäbe, wenn eine andere Mod sie liefert. Ein Goldstiel gibt +3 Abbautempo.",
+   "Den Steinstab machst du aus zwei Bruchstein übereinander, er ist aber Brüchig II. Für Stufe 1 reichen Holz oder Eisen."
+  ],
+  "en": [
+   "The material file says what works as a rod: sticks (wood), bones, [[silentgear:iron_rod]] and [[silentgear:stone_rod]], plus copper and gold rods when another mod provides them. A gold rod gives +3 harvest speed.",
+   "The stone rod is two cobblestone stacked, but it is Brittle II. For stage 1 wood or iron is enough."
+  ],
+  "sources": [
+   "silentgear:part/rod",
+   "silentgear:stone_rod",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/wood.json, bone.json, stone.json, gold.json, copper.json"
+  ]
+ },
+ "iron_rod": {
+  "de": [
+   "Der [[silentgear:iron_rod]] ist im Pack derselbe Eisenstab, den Immersive Engineering nutzt. Spätere Maschinen machen ihn auch: die Metallpresse von Immersive Engineering und das Walzwerk von Create Crafts & Additions geben je zwei pro Barren, so viel wie das Raster.",
+   "Eisenstäbe brauchst du außerdem für das robuste Reparaturkit ({{silent_gear/sturdy_kit}})."
+  ],
+  "en": [
+   "The [[silentgear:iron_rod]] is the same iron rod Immersive Engineering uses in this pack. Later machines make it too: the Immersive Engineering metal press and the Create Crafts & Additions rolling mill give two per ingot, as many as the grid.",
+   "You also need iron rods for the sturdy repair kit ({{silent_gear/sturdy_kit}})."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/stick_iron",
+   "immersiveengineering:metalpress/rod_iron",
+   "createaddition:rolling/iron_ingot",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json (part_substitutes c:rods/iron)"
+  ]
+ },
+ "pickaxe_head": {
+  "de": [
+   "Die drei Einheiten dürfen verschieden sein, dann mittelt der Kopf ({{silent_gear/mix}}). Mit drei Bruchstein hast du sofort einen Kopf, der Stein, Eisenerz und Kupfer abbaut ({{silent_gear/m_stone}}).",
+   "Der Kopf ist das eine Teil, das du später nicht austauschst. Willst du ein besseres Material, baust du eine neue Spitzhacke."
+  ],
+  "en": [
+   "The three units may differ; the head then averages them ({{silent_gear/mix}}). Three cobblestone give you a head right away that mines stone, iron ore and copper ({{silent_gear/m_stone}}).",
+   "The head is the one part you do not swap later. For a better material you build a new pickaxe."
+  ],
+  "sources": [
+   "silentgear:gear/pickaxe_head",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/stone.json"
+  ]
+ },
+ "pickaxe": {
+  "de": [
+   "Der Schnellweg (Blaupause, drei Material und ein Stiel zusammen) spart einen Schritt, gibt aber dasselbe Werkzeug. Verbindung, Griff und Spitze kannst du jederzeit später dazulegen ({{silent_gear/binding}}).",
+   "Ein zerbrochenes Werkzeug reparierst du mit einem Reparaturkit ({{silent_gear/repair_kit}})."
+  ],
+  "en": [
+   "The quick way (blueprint, three materials and a rod together) saves a step and gives the same tool. Binding, grip and tip can be added any time later ({{silent_gear/binding}}).",
+   "You repair a broken tool with a repair kit ({{silent_gear/repair_kit}})."
+  ],
+  "sources": [
+   "silentgear:gear/pickaxe",
+   "silentgear:gear/pickaxe_quick",
+   "srv/config/silentgear-common.toml (breaks_permanently false)"
+  ]
+ },
+ "reading_stats": {
+  "de": [
+   "Biegsam und Flexibel lassen das Werkzeug seltener Haltbarkeit verlieren, Brüchig öfter, und Brüchig schwächt Biegsam und Flexibel ab. Eine Diamantspitze (Brüchig II) frisst also einen Teil des Vorteils eines Eisenkopfs.",
+   "Was jede Eigenschaft tut, steht auch im [[silentgear:material_book]]."
+  ],
+  "en": [
+   "Malleable and Flexible make the tool lose durability less often, Brittle more often, and Brittle weakens Malleable and Flexible. So a diamond tip (Brittle II) eats part of an iron head's benefit.",
+   "The [[silentgear:material_book]] explains every trait too."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/de_de.json (trait.silentgear.malleable.desc, flexible.desc, brittle.desc)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json, diamond.json"
+  ],
+  "client": [
+   "Strg, Shift und Alt im Tooltip; wie genau sich Biegsam und Brüchig verrechnen"
+  ]
+ },
+ "mix": {
+  "de": [
+   "Die Quest hakst du selbst ab. Zwei Eisen und ein Gold im Spitzhackenkopf geben mehr Tempo als reines Eisen, aber deutlich weniger Haltbarkeit, weil Gold nur 32 mitbringt.",
+   "Je unterschiedlicher die Materialien, desto niedriger die Synergie. Gleiches Material dreimal bleibt die sichere Wahl."
+  ],
+  "en": [
+   "You tick this quest yourself. Two iron and one gold in a pickaxe head give more speed than pure iron but clearly less durability, since gold brings only 32.",
+   "The more different the materials, the lower the synergy. Three of the same material stays the safe choice."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json, gold.json, paper.json, terracotta.json, emerald.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/de_de.json (trait.silentgear.rustic, synergistic)"
+  ],
+  "client": [
+   "Synergiewert im Tooltip eines gemischten Kopfes"
+  ]
+ },
+ "binding": {
+  "de": [
+   "Faden kommt von Spinnen, [[silentgear:flax_string]] aus Flachs ({{silent_gear/flax}}), [[silentgear:sinew_fiber]] aus Sehnen von Kühen, Schweinen und Schafen ({{silent_gear/sinew}}). Ranken bringen keine Eigenschaft, nur +3 Prozent Reparaturwirkung.",
+   "Eine fertige Verbindung legst du mit dem Werkzeug ins Raster, eine alte kommt dabei zurück ({{silent_gear/swap_parts}})."
+  ],
+  "en": [
+   "String comes from spiders, [[silentgear:flax_string]] from flax ({{silent_gear/flax}}), [[silentgear:sinew_fiber]] from the sinew of cows, pigs and sheep ({{silent_gear/sinew}}). Vines add no trait, only +3 percent repair efficiency.",
+   "Put a finished binding into the grid with the tool; an old one comes back ({{silent_gear/swap_parts}})."
+  ],
+  "sources": [
+   "silentgear:binding_blueprint_alt",
+   "silentgear:part/binding",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/string.json, flax.json, sinew.json, vine.json",
+   "srv/config/silentgear-common.toml (destroy_swapped_parts false)"
+  ]
+ },
+ "sinew": {
+  "de": [
+   "Die Sehne fällt nur, wenn **du** das Tier tötest, mit 20 Prozent Chance, mit Plünderung etwas öfter. Ein normaler [[minecraft:furnace]] trocknet sie in 10 Sekunden.",
+   "Im deutschen Spiel heißen rohe und getrocknete Sehne beide \"Sehne\"; für die Fasern brauchst du die aus dem Ofen. Eine getrocknete Sehne gibt drei [[silentgear:sinew_fiber]]."
+  ],
+  "en": [
+   "Sinew only drops when **you** kill the animal, with a 20 percent chance, a bit more with Looting. A plain [[minecraft:furnace]] dries it in 10 seconds.",
+   "In German both raw and dried sinew are called \"Sehne\"; the fibers need the one from the furnace. One dried sinew gives three [[silentgear:sinew_fiber]]."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/loot_table/drops/sinew.json (killed_by_player, chance 0.2)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/loot_modifiers/add_mob_drops/sinew.json",
+   "silentgear:dried_sinew (cookingtime 200)",
+   "silentgear:sinew_fiber"
+  ]
+ },
+ "flax": {
+  "de": [
+   "Die [[silentgear:wild_flax_plant]] wächst verstreut in Oberwelt-Biomen und gibt beim Abbauen nur einen [[silentgear:flax_seeds]]. Erst die reife Pflanze vom Acker gibt Fasern, Samen und Blumen, mit Glück mehr davon.",
+   "Vier [[silentgear:flax_flowers]] werden zu einem blauen Farbstoff. Flachssamen wachsen auch im [[botanypots:terracotta_botany_pot]]."
+  ],
+  "en": [
+   "The [[silentgear:wild_flax_plant]] grows scattered in overworld biomes and only drops one [[silentgear:flax_seeds]] when broken. Only the ripe plant on farmland gives fibers, seeds and flowers, more with Fortune.",
+   "Four [[silentgear:flax_flowers]] make one blue dye. Flax seeds also grow in a [[botanypots:terracotta_botany_pot]]."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/neoforge/biome_modifier/overworld_ores.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/loot_table/blocks/wild_flax_plant.json, flax_plant.json",
+   "silentgear:flax_string",
+   "silentgear:blue_dye_from_flax_flowers",
+   "botanypots:silentgear/crop/flax_seeds"
+  ]
+ },
+ "grip": {
+  "de": [
+   "Leder ist der bessere Griff fürs Abbauen, Wolle für Waffen, weil sie mehr Angriffstempo gibt. Die Blaupause geht mit Wolle oder mit jedem Griff-Material, also auch mit Leder.",
+   "Weiter geht es mit {{silent_gear/tip}}."
+  ],
+  "en": [
+   "Leather is the better grip for mining, wool for weapons because it adds more attack speed. The blueprint takes wool or any grip material, leather included.",
+   "Next comes {{silent_gear/tip}}."
+  ],
+  "sources": [
+   "silentgear:grip_blueprint",
+   "silentgear:grip_blueprint_alt",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/leather.json, wool.json"
+  ]
+ },
+ "tip": {
+  "de": [
+   "Die Spitze hebt die Abbaustufe auf ihre eigene: Eine Eisenspitze auf einem Bruchsteinkopf baut Diamanterz ab. Smaragd als Spitze gibt +512 Haltbarkeit und +2 Tempo.",
+   "Gold und Redstone sind Spitzen für Tempo, Eisen und Diamant für Haltbarkeit. Später kommen Purpur-Eisen (+224 Haltbarkeit, Feurig) und Purpur-Stahl (+448, Magma) dazu."
+  ],
+  "en": [
+   "The tip raises the harvest tier to its own: an iron tip on a cobblestone head mines diamond ore. Emerald as a tip gives +512 durability and +2 speed.",
+   "Gold and redstone are tips for speed, iron and diamond for durability. Later crimson iron (+224 durability, Fiery) and crimson steel (+448, Magmatic) join them."
+  ],
+  "sources": [
+   "silentgear:tip_blueprint",
+   "silentgear:part/tip",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json, gold.json, redstone.json, diamond.json, emerald.json, crimson_iron.json, crimson_steel.json"
+  ],
+  "client": [
+   "Abbaustufe eines Steinkopfs mit Eisenspitze an Diamanterz"
+  ]
+ },
+ "builds": {
+  "de": [
+   "Der Alltags-Build hat drei Flexibel-Quellen: Eisenstiel (II), Sehnen-Verbindung (IV) und Ledergriff (III). Dazu Biegsam III aus dem Eisenkopf.",
+   "Für die Waffe aus Feuerstein: Gezackt wirkt nur, wenn die Klinge abgenutzt ist. Repariere sie also nicht ganz voll."
+  ],
+  "en": [
+   "The everyday build has three sources of Flexible: iron rod (II), sinew binding (IV) and leather grip (III), plus Malleable III from the iron head.",
+   "For the flint weapon: Jagged only works while the blade is worn, so do not repair it all the way."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json, sinew.json, leather.json, flint.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/de_de.json (trait.silentgear.jagged.desc)"
+  ]
+ },
+ "crude_mixer": {
+  "de": [
+   "Den [[silentgear:flax_string]] dafür bekommst du aus {{silent_gear/flax}}. Der Mixer hat vier Eingabefelder und braucht keinen Brennstoff.",
+   "Die eigentlichen Legierungen (Lohengold, Purpur-Stahl) macht er nicht, dafür kommt in Stufe 2 die Legierungsschmiede ({{silent_gear/alloy_forge}})."
+  ],
+  "en": [
+   "You get the [[silentgear:flax_string]] for it from {{silent_gear/flax}}. The mixer has four input slots and needs no fuel.",
+   "It does not make the real alloys (blaze gold, crimson steel); stage 2 brings the alloy forge for those ({{silent_gear/alloy_forge}})."
+  ],
+  "sources": [
+   "silentgear:crude_mixer",
+   "srv/config/silentgear-common.toml (compounds.crude_mixer.property_multiplier 0.8)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: net/silentchaos512/gear/util/Const.class (CRUDE_MIXER_INFO, 4 inputs)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: net/silentchaos512/gear/block/alloymaker/entity/CrudeMixerBlockEntity.class"
+  ],
+  "client": [
+   "Mixer arbeitet ohne Brennstoff"
+  ]
+ },
+ "crude_alloy": {
+  "de": [
+   "Die Legierung trägt Roh, das die Synergie senkt, und nur 80 Prozent der Werte. Mit Edelstein und Metall zusammen bekommst du so trotzdem Eigenschaften, die kein einzelnes Material hat.",
+   "Der Mixer mischt bis zu vier Einheiten. Die Legierung hat dann einen eigenen Namen nach ihren Zutaten und geht in jeden Kopf wie ein Barren."
+  ],
+  "en": [
+   "The alloy carries Crude, which lowers synergy, and only 80 percent of the stats. Still, metal and gem together give you traits no single material has.",
+   "The mixer takes up to four units. The alloy is named after its ingredients and goes into any head like an ingot."
+  ],
+  "sources": [
+   "srv/config/silentgear-common.toml (property_multiplier 0.8)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: net/silentchaos512/gear/crafting/recipe/alloy/CrudeAlloyRecipe.class",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/de_de.json (trait.silentgear.crude)"
+  ],
+  "client": [
+   "Ablauf im GUI des Crude Mixer"
+  ]
+ },
+ "axe": {
+  "de": [
+   "Die Axt-Blaupause liegt im Startbündel. Holz und Stein geben der Axt -0,2 Angriffstempo, Eisen und Kupfer -0,1, Gold und Diamant nichts.",
+   "Für ganze Bäume auf einmal kommt später die Säge ({{silent_gear/saw}})."
+  ],
+  "en": [
+   "The axe blueprint is in the starter package. Wood and stone give the axe -0.2 attack speed, iron and copper -0.1, gold and diamond nothing.",
+   "For whole trees at once the saw comes later ({{silent_gear/saw}})."
+  ],
+  "sources": [
+   "silentgear:gear/axe_head",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/wood.json, stone.json, iron.json, copper.json"
+  ]
+ },
+ "shovel": {
+  "de": [
+   "Die Schaufel-Blaupause liegt im Startbündel, ein Kopf kostet nur eine Einheit. Damit testest du ein Material, bevor du drei oder sechs Einheiten in einen größeren Kopf steckst.",
+   "Danach öffnen sich {{silent_gear/hammer}} und {{silent_gear/mattock}}."
+  ],
+  "en": [
+   "The shovel blueprint is in the starter package and a head costs a single unit. Use it to test a material before you put three or six units into a bigger head.",
+   "It opens {{silent_gear/hammer}} and {{silent_gear/mattock}}."
+  ],
+  "sources": [
+   "silentgear:gear/shovel_head",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/loot_table/starter_blueprints.json"
+  ]
+ },
+ "sword": {
+  "de": [
+   "Die Schwert-Blaupause liegt im Startbündel. Ein Griff aus Wolle gibt +0,2 Angriffstempo, mehr als Leder.",
+   "Von hier gehen {{silent_gear/knife}}, {{silent_gear/katana}}, {{silent_gear/armor}} und {{silent_gear/bow}} weiter."
+  ],
+  "en": [
+   "The sword blueprint is in the starter package. A wool grip gives +0.2 attack speed, more than leather.",
+   "From here {{silent_gear/knife}}, {{silent_gear/katana}}, {{silent_gear/armor}} and {{silent_gear/bow}} continue."
+  ],
+  "sources": [
+   "silentgear:gear/sword_head",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/wool.json, leather.json"
+  ]
+ },
+ "knife": {
+  "de": [
+   "Das [[silentgear:knife]] steht im Tag c:tools/knife und schneidet deshalb auf dem Steinamboss Vorlagenbretter wie das grobe Messer. Anders als das grobe Messer reparierst du es mit einem Reparaturkit.",
+   "Die Blaupause ist ein Blaues Papier oben rechts und ein Stock unten links."
+  ],
+  "en": [
+   "The [[silentgear:knife]] is in the tag c:tools/knife, so it cuts template boards on the stone anvil like the crude knife. Unlike the crude knife you repair it with a repair kit.",
+   "The blueprint is a blueprint paper top right and a stick bottom left."
+  ],
+  "sources": [
+   "silentgear:knife_blueprint",
+   "silentgear:gear/knife_head",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/c/tags/item/tools/knife.json"
+  ]
+ },
+ "hammer": {
+  "de": [
+   "Bei normalen Blöcken nimmt der Hammer alles mit derselben Abbaustufe mit, bei Erzen nur genau denselben Block. Ein Schlag in eine Wand aus Stein und Eisenerz lässt das Erz also stehen.",
+   "Der Hammer zerschlägt auf dem Steinamboss auch Barren zu Staub ({{silent_gear/stone_anvil}}). Er gehört zur Ausrüstung von {{silent_gear/iron_kit}}."
+  ],
+  "en": [
+   "On normal blocks the hammer takes everything of the same harvest level, on ores only the exact same block. So a hit into a wall of stone and iron ore leaves the ore standing.",
+   "On the stone anvil the hammer also breaks ingots into dust ({{silent_gear/stone_anvil}}). It is part of {{silent_gear/iron_kit}}."
+  ],
+  "sources": [
+   "silentgear:hammer_blueprint",
+   "silentgear:gear/hammer_head",
+   "srv/config/silentgear-common.toml (gear.aoe_tool.match_mode standard MODERATE, ores STRICT)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/c/tags/item/tools/hammer.json"
+  ],
+  "client": [
+   "Hammer lässt Erz in einer gemischten Wand stehen"
+  ]
+ },
+ "excavator": {
+  "de": [
+   "Wie beim Hammer nimmt der Aushöhler nur Blöcke mit derselben Abbaustufe mit. Gold als Kopf (Tempo 12) gräbt Sand und Erde am schnellsten, hält aber nur 32.",
+   "Mit dem Straßenplanierer-Upgrade zieht er Trampelpfade in 3x3 ({{silent_gear/adv_upgrade}})."
+  ],
+  "en": [
+   "Like the hammer, the excavator only takes blocks of the same harvest level. A gold head (speed 12) digs sand and dirt fastest but only lasts 32.",
+   "With the road maker upgrade it makes dirt paths in 3x3 ({{silent_gear/adv_upgrade}})."
+  ],
+  "sources": [
+   "silentgear:excavator_blueprint",
+   "silentgear:gear/excavator_head",
+   "srv/config/silentgear-common.toml (gear.aoe_tool.match_mode)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/gold.json"
+  ]
+ },
+ "saw": {
+  "de": [
+   "Die Säge-Blaupause: oben drei Blaues Papier, in der Mitte zwei Papier und ein Stock, unten rechts ein Stock. Die Säge verfolgt den Stamm bis zu 200 Blöcke weit, das reicht für Riesenbäume.",
+   "Für normale Bäume reicht oft FTB Ultimine mit der Axt."
+  ],
+  "en": [
+   "The saw blueprint: three blueprint paper on top, two paper and a stick in the middle, a stick bottom right. The saw follows the trunk up to 200 blocks, enough for giant trees.",
+   "For ordinary trees FTB Ultimine with an axe is often enough."
+  ],
+  "sources": [
+   "silentgear:saw_blueprint",
+   "silentgear:gear/saw_head",
+   "srv/config/silentgear-common.toml (gear.saw.recursion_depth 200)"
+  ],
+  "client": [
+   "Säge fällt den ganzen Baum, Haltbarkeit pro Stamm"
+  ]
+ },
+ "paxel": {
+  "de": [
+   "Die Blaupause: oben drei Blaues Papier, Mitte Papier, Stock, Papier, unten ein Stock und ein Papier rechts. Fünf Einheiten für den Kopf sind teuer bei Diamant, bau ihn zuerst aus Eisen.",
+   "Wer lieber getrennte Werkzeuge trägt, nimmt das Werkzeugtausch-Upgrade im Rucksack ({{storage/tool_swapper}})."
+  ],
+  "en": [
+   "The blueprint: three blueprint paper on top, paper, stick, paper in the middle, a stick and a paper on the right at the bottom. Five units for the head are costly in diamond, so build it from iron first.",
+   "If you prefer separate tools, use the tool swapper upgrade in your backpack ({{storage/tool_swapper}})."
+  ],
+  "sources": [
+   "silentgear:paxel_blueprint",
+   "silentgear:gear/paxel_head"
+  ],
+  "client": [
+   "Abbautempo des Spaxfels gegen Einzelwerkzeuge"
+  ]
+ },
+ "sickle": {
+  "de": [
+   "Die Blaupause: ein Blaues Papier oben rechts, zwei in der Mitte, ein Stock unten links. Die Klinge kostet drei Einheiten.",
+   "Danach kommt {{silent_gear/machete}}, die ähnlich mäht, nur kleiner."
+  ],
+  "en": [
+   "The blueprint: one blueprint paper top right, two in the middle, a stick bottom left. The blade costs three units.",
+   "Next is {{silent_gear/machete}}, which mows similarly but over a smaller area."
+  ],
+  "sources": [
+   "silentgear:sickle_blueprint",
+   "silentgear:gear/sickle_head"
+  ],
+  "client": [
+   "Mähfläche der Sichel"
+  ]
+ },
+ "prospector": {
+  "de": [
+   "Der Hammer meldet alles im Tag c:ores und Antiken Schrott, also auch die Erze anderer Mods. Die Reichweite von 16 Blöcken steht in der Server-Config.",
+   "Er zählt als Hammer und zerschlägt auf dem Steinamboss auch Barren zu Staub."
+  ],
+  "en": [
+   "The hammer reports everything in the tag c:ores plus ancient debris, so ores of other mods too. The range of 16 blocks is set in the server config.",
+   "It counts as a hammer and also breaks ingots into dust on the stone anvil."
+  ],
+  "sources": [
+   "silentgear:prospector_hammer_blueprint",
+   "srv/config/silentgear-common.toml (gear.prospector_hammer.range 16)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/tags/block/prospector_hammer_targets.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/c/tags/item/tools/hammer.json"
+  ],
+  "client": [
+   "Anzeige der gefundenen Erze im Chat"
+  ]
+ },
+ "armor": {
+  "de": [
+   "Ein voller Eisensatz gibt 2, 6, 5 und 2 Punkte, Diamant 3, 8, 6 und 3. Das Futter ([[silentgear:lining]]) baust du mit einer eigenen Blaupause aus drei Blaues Papier, zwei Wolle und zwei Fäden, dann Blaupause plus Leder oder Wolle.",
+   "Helmplatten plus Futter ins Raster ergeben den Helm mit Futter. Danach kommen {{silent_gear/shield}} und {{silent_gear/ring}}."
+  ],
+  "en": [
+   "A full iron set gives 2, 6, 5 and 2 points, diamond 3, 8, 6 and 3. The [[silentgear:lining]] has its own blueprint of three blueprint paper, two wool and two string; then blueprint plus leather or wool.",
+   "Helmet plates plus lining in the grid give the lined helmet. Next come {{silent_gear/shield}} and {{silent_gear/ring}}."
+  ],
+  "sources": [
+   "silentgear:helmet_blueprint",
+   "silentgear:gear/helmet_plates",
+   "silentgear:lining_blueprint",
+   "silentgear:part/lining",
+   "silentgear:gear/helmet_with_lining",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json, diamond.json, leather.json"
+  ]
+ },
+ "bow": {
+  "de": [
+   "Die Bogen-Blaupause sind drei Blaues Papier links und drei Stöcke rechts. Die Sehne ([[silentgear:cord]]) braucht drei Einheiten Material: Faden, Flachsstrang, Sehnenfaser oder Flauschiger Strang.",
+   "Flachsstrang spannt am schnellsten (+20 Prozent), macht aber 10 Prozent weniger Schaden. Pfeile, Armbrust und Angel bauen auf dem Bogen auf ({{silent_gear/arrows}}, {{silent_gear/crossbow}}, {{silent_gear/fishing_rod}})."
+  ],
+  "en": [
+   "The bow blueprint is three blueprint paper on the left and three sticks on the right. The [[silentgear:cord]] takes three units: string, flax string, sinew fiber or fluffy string.",
+   "Flax string draws fastest (+20 percent) but deals 10 percent less damage. Arrows, crossbow and fishing rod build on the bow ({{silent_gear/arrows}}, {{silent_gear/crossbow}}, {{silent_gear/fishing_rod}})."
+  ],
+  "sources": [
+   "silentgear:bow_blueprint",
+   "silentgear:cord_blueprint_alt",
+   "silentgear:part/cord",
+   "silentgear:gear/bow",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/string.json, flax.json, sinew.json, fluffy_string.json"
+  ]
+ },
+ "upgrade_base": {
+  "de": [
+   "Upgrades baust du am normalen [[minecraft:smithing_table]] ein: Stock als Vorlage, Werkzeug, Upgrade. Die [[silentgear:red_card_upgrade]] lohnt sich nur, wenn kaputtes Werkzeug wirklich verschwinden soll.",
+   "Die nächste Stufe ist die verbesserte Basis ({{silent_gear/adv_upgrade}})."
+  ],
+  "en": [
+   "Upgrades go on at the normal [[minecraft:smithing_table]]: stick as the template, the tool, the upgrade. The [[silentgear:red_card_upgrade]] is only worth it if broken gear should really disappear.",
+   "The next step is the advanced base ({{silent_gear/adv_upgrade}})."
+  ],
+  "sources": [
+   "silentgear:upgrade_base",
+   "silentgear:red_card_upgrade",
+   "silentgear:smithing/upgrade/pickaxe (template minecraft:stick)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: net/silentchaos512/gear/crafting/recipe/smithing/GearSmithingRecipe.class (extends SmithingTransformRecipe)"
+  ]
+ },
+ "adv_upgrade": {
+  "de": [
+   "Die [[silentgear:diamond_shard]] machst du aus einem Diamanten, die Goldnuggets aus einem Goldbarren. Ein Diamant reicht also für drei verbesserte Basen.",
+   "Das [[silentgear:spoon_upgrade]] kostet eine ganze [[minecraft:diamond_shovel]], das [[silentgear:road_maker_upgrade]] nur eine [[minecraft:iron_shovel]]. Beide baust du am Schmiedetisch mit einem Stock ein."
+  ],
+  "en": [
+   "The [[silentgear:diamond_shard]] come from one diamond, the gold nuggets from a gold ingot. One diamond is enough for three advanced bases.",
+   "The [[silentgear:spoon_upgrade]] costs a whole [[minecraft:diamond_shovel]], the [[silentgear:road_maker_upgrade]] only an [[minecraft:iron_shovel]]. Both go on at the smithing table with a stick."
+  ],
+  "sources": [
+   "silentgear:advanced_upgrade_base",
+   "silentgear:diamond_shard",
+   "silentgear:spoon_upgrade",
+   "silentgear:road_maker_upgrade",
+   "silentgear:smithing/upgrade/pickaxe"
+  ]
+ },
+ "broken": {
+  "de": [
+   "Ein zerbrochenes Werkzeug baut nicht mehr ab und schlägt nicht mehr zu, behält aber alles. Leg es also nicht weg, sondern nimm ein Reparaturkit mit ({{silent_gear/repair_kit}}).",
+   "Im Amboss wirkt die Reparatur auf diesem Server nur halb so stark wie mit dem Kit."
+  ],
+  "en": [
+   "A broken tool no longer mines or hits but keeps everything. Do not store it away; carry a repair kit ({{silent_gear/repair_kit}}).",
+   "In an anvil the repair works only half as well on this server."
+  ],
+  "sources": [
+   "srv/config/silentgear-common.toml (gear.breaks_permanently false, gear.repairs.anvil_effectiveness 0.5)"
+  ],
+  "client": [
+   "Zerbrochenes Werkzeug baut nicht ab und schlägt nicht"
+  ]
+ },
+ "repair_kit": {
+  "de": [
+   "Das [[silentgear:very_crude_repair_kit]] mit [[minecraft:stone]] statt Eisenbarren hält 8 Einheiten bei 30 Prozent. Danach kommen das robuste Kit (32, 40 Prozent), das Purpur-Kit (48, 45 Prozent) und das Azur-Kit (64, 50 Prozent).",
+   "Ein Kit leerst du wieder, wenn du es mit einem Stock ins Raster legst."
+  ],
+  "en": [
+   "The [[silentgear:very_crude_repair_kit]] with [[minecraft:stone]] instead of an iron ingot holds 8 units at 30 percent. Then come the sturdy kit (32, 40 percent), the crimson kit (48, 45 percent) and the azure kit (64, 50 percent).",
+   "To empty a kit, put it into the grid with a stick."
+  ],
+  "sources": [
+   "silentgear:crude_repair_kit",
+   "silentgear:very_crude_repair_kit",
+   "silentgear:crude_repair_kit_empty",
+   "srv/config/silentgear-common.toml (item.repair_kits.capacity, efficiency)"
+  ],
+  "client": [
+   "Kit füllen und Werkzeug reparieren im Raster; Kit plus Stock leert es"
+  ]
+ },
+ "sturdy_kit": {
+  "de": [
+   "Der [[silentgear:iron_rod]] oben kommt aus {{silent_gear/iron_rod}}. Das Kit braucht einen Diamanten und vier Eisenbarren.",
+   "In Stufe 2 folgt das [[silentgear:crimson_repair_kit]] mit 48 Einheiten und 45 Prozent, in Stufe 4 das Azur-Kit mit 64 und 50 Prozent."
+  ],
+  "en": [
+   "The [[silentgear:iron_rod]] on top comes from {{silent_gear/iron_rod}}. The kit takes one diamond and four iron ingots.",
+   "Stage 2 brings the [[silentgear:crimson_repair_kit]] with 48 units and 45 percent, stage 4 the azure kit with 64 and 50 percent."
+  ],
+  "sources": [
+   "silentgear:sturdy_repair_kit",
+   "silentgear:crimson_repair_kit",
+   "silentgear:azure_repair_kit",
+   "srv/config/silentgear-common.toml (item.repair_kits)"
+  ]
+ },
+ "swap_parts": {
+  "de": [
+   "Das ausgebaute Teil bekommst du auf diesem Server zurück, es geht nicht verloren. So wandert eine gute Sehnen-Verbindung von der alten in die neue Spitzhacke.",
+   "Ein Teil ohne Ersatz holst du mit dem Modkit heraus ({{silent_gear/mod_kit}})."
+  ],
+  "en": [
+   "On this server you get the removed part back; it is not destroyed. That way a good sinew binding moves from the old pickaxe to the new one.",
+   "To take a part out without a replacement, use the mod kit ({{silent_gear/mod_kit}})."
+  ],
+  "sources": [
+   "silentgear:swap_gear_part",
+   "srv/config/silentgear-common.toml (gear.upgrades.destroy_swapped_parts false)"
+  ]
+ },
+ "mod_kit": {
+  "de": [
+   "Die Teilart wählst du mit dem Kit in der Hand; der Tooltip zeigt, welche gewählt ist. Nicht jede Teilart lässt sich ausbauen, das sagt der Tooltip ebenfalls.",
+   "Das Kit braucht vier [[silentgear:template_board]], einen Eisenbarren und einen Stock."
+  ],
+  "en": [
+   "You choose the part type with the kit in hand; the tooltip shows which one is selected. Not every part type can be removed, and the tooltip says so too.",
+   "The kit takes four [[silentgear:template_board]], an iron ingot and a stick."
+  ],
+  "sources": [
+   "silentgear:mod_kit",
+   "silentgear:mod_kit_remove_part",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/en_us.json (item.silentgear.mod_kit.keyHint, no_actions)"
+  ],
+  "client": [
+   "Teilart mit Z und C wählen"
+  ]
+ },
+ "m_stone": {
+  "de": [
+   "Jeder Bruchstein aus dem Tag c:cobblestones zählt als Material, für die Quest aber nur normaler [[minecraft:cobblestone]]. Als Stiel taugt Stein nicht: Brüchig II.",
+   "Urzeitlich bringt mehr Erfahrung von Blöcken und Mobs."
+  ],
+  "en": [
+   "Any cobblestone in the tag c:cobblestones works as material, but this quest counts only plain [[minecraft:cobblestone]]. As a rod stone is poor: Brittle II.",
+   "Ancient gives more experience from blocks and mobs."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/stone.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/de_de.json (trait.silentgear.ancient.desc)"
+  ]
+ },
+ "m_flint": {
+  "de": [
+   "Als Stiel ist Feuerstein Brüchig III, nimm ihn also nur für Klingen und Köpfe. Er ist kaum verzauberbar (3).",
+   "Feuerstein bekommst du aus Kies, am schnellsten mit dem Aushöhler ({{silent_gear/excavator}})."
+  ],
+  "en": [
+   "As a rod flint is Brittle III, so use it only for blades and heads. It barely takes enchantments (3).",
+   "Flint comes from gravel, fastest with the excavator ({{silent_gear/excavator}})."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/flint.json"
+  ]
+ },
+ "m_copper": {
+  "de": [
+   "Als Stiel gibt Kupfer +20 Prozent Abbautempo, aber Weich III. Als Spitze bringt es nur +32 Haltbarkeit.",
+   "Kupfer ist vor allem gut für Werkzeuge, die du verzauberst."
+  ],
+  "en": [
+   "As a rod copper gives +20 percent harvest speed but Soft III. As a tip it adds only +32 durability.",
+   "Copper is mostly good for tools you enchant."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/copper.json"
+  ]
+ },
+ "m_iron": {
+  "de": [
+   "Als Spitze gibt Eisen +128 Haltbarkeit und +1 Schaden und hebt einen Steinkopf auf Abbaustufe Eisen ({{silent_gear/tip}}). Als Stiel nimmst du statt Barren den [[silentgear:iron_rod]].",
+   "Für Axt und Hacke kostet Eisen kein oder kaum Angriffstempo."
+  ],
+  "en": [
+   "As a tip iron gives +128 durability and +1 damage and lifts a stone head to iron tier ({{silent_gear/tip}}). For a rod use the [[silentgear:iron_rod]] instead of ingots.",
+   "On axe and hoe iron costs little or no attack speed."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/iron.json"
+  ]
+ },
+ "m_gold": {
+  "de": [
+   "Ein Kopf aus Gold hat nur 32 Haltbarkeit. Als Spitze (+6 Tempo) oder als Stiel (+3 Tempo) bringt Gold sein Tempo ohne diesen Nachteil.",
+   "Mit Verzauberbarkeit 22 ist Gold das beste Material in Stufe 1 zum Verzaubern."
+  ],
+  "en": [
+   "A gold head has only 32 durability. As a tip (+6 speed) or a rod (+3 speed) gold brings its speed without that drawback.",
+   "With enchantability 22 gold is the best stage 1 material for enchanting."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/gold.json"
+  ]
+ },
+ "m_emerald": {
+  "de": [
+   "Synergistisch belohnt einen Kopf mit hoher Synergie, also drei Smaragde statt einer Mischung. Als Stiel ist Smaragd Brüchig IV.",
+   "Die Quest will drei [[minecraft:emerald]]: Dorfbewohner tauschen sie gegen Waren."
+  ],
+  "en": [
+   "Synergistic rewards a head with high synergy, so three emeralds rather than a mix. As a rod emerald is Brittle IV.",
+   "The quest wants three [[minecraft:emerald]]: villagers trade them for goods."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/emerald.json"
+  ]
+ },
+ "m_diamond": {
+  "de": [
+   "Diamant als Spitze (+256 Haltbarkeit, Abbaustufe Diamant) ist der billigere Weg: ein Diamant statt drei. Als Stiel ist Diamant Brüchig V, das lohnt nicht.",
+   "Mit Diamant ist auch das Werkzeug für {{silent_gear/iron_kit}} fertig."
+  ],
+  "en": [
+   "Diamond as a tip (+256 durability, diamond tier) is the cheaper way: one diamond instead of three. As a rod diamond is Brittle V, which is not worth it.",
+   "With diamond the gear for {{silent_gear/iron_kit}} is ready."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/diamond.json"
+  ]
+ },
+ "iron_kit": {
+  "de": [
+   "Die vier Werkzeuge müssen Silent Gear sein: Vanilla-Werkzeug zählt nicht, lässt sich aber im Raster umwandeln. Die Quest öffnet die Vorschau auf Stufe 2 ({{silent_gear/outlook}}).",
+   "Das [[sophisticatedbackpacks:tool_swapper_upgrade]] baust du in {{storage/tool_swapper}}."
+  ],
+  "en": [
+   "All four tools must be Silent Gear: vanilla tools do not count, but they convert in the grid. The quest opens the stage 2 preview ({{silent_gear/outlook}}).",
+   "You build the [[sophisticatedbackpacks:tool_swapper_upgrade]] in {{storage/tool_swapper}}."
+  ],
+  "sources": [
+   "silentgear:gear/convert/iron_pickaxe",
+   "sophisticatedbackpacks:tool_swapper_upgrade"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Der Nether ist ein eigener Server und öffnet in Stufe 2; was du im Inventar trägst, kommt mit nach Hause. Das Erz liegt im Netherrack und im Schwarzstein, Rohes Purpur-Eisen schmilzt im Ofen oder Hochofen.",
+   "Im Kapitel Nether sammelst du dafür {{nether/mod_ores}}. Purpur-Eisen ist die Grundlage für Purpur-Stahl, den Recycler und die Legierungsschmiede."
+  ],
+  "en": [
+   "The Nether is a server of its own and opens in stage 2; what you carry in your inventory comes home with you. The ore sits in netherrack and blackstone, and raw crimson iron smelts in a furnace or blast furnace.",
+   "The Nether chapter has {{nether/mod_ores}} for it. Crimson iron is the base for crimson steel, the salvager and the alloy forge."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/worldgen/configured_feature/crimson_iron_ore.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/neoforge/biome_modifier/nether_ores.json",
+   "silentgear:crimson_iron_raw_ore_smelting",
+   "silentgear:crimson_iron_raw_ore_blasting",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json",
+   "core/README.md (The network)"
+  ]
+ },
+ "blaze_gold": {
+  "de": [
+   "Den [[minecraft:blaze_powder]] machst du aus Lohenruten von Lohen in Netherfestungen. In der Legierungsschmiede sparst du die Hälfte davon.",
+   "Auf dem Steinamboss zerschlägt ein Hammer den Barren zu [[silentgear:blaze_gold_dust]], dem Katalysator I der Sternlicht-Ladestation und der Zutat für [[silentgear:blazing_dust]]."
+  ],
+  "en": [
+   "You make [[minecraft:blaze_powder]] from blaze rods of blazes in nether fortresses. The alloy forge saves half of it.",
+   "On the stone anvil a hammer breaks the ingot into [[silentgear:blaze_gold_dust]], tier I catalyst of the starlight charger and an ingredient of [[silentgear:blazing_dust]]."
+  ],
+  "sources": [
+   "silentgear:blaze_gold_ingot",
+   "silentgear:alloying/metal/blaze_gold_ingot",
+   "silentgear:blaze_gold_dust",
+   "silentgear:blazing_dust",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/tags/item/starlight_charger_catalysts/tier1.json"
+  ]
+ },
+ "steel": {
+  "de": [
+   "Jeder Stahlbarren im Tag c:ingots/steel zählt, gleich ob aus der [[mekanism:metallurgic_infuser]] von Mekanism oder dem [[immersiveengineering:blast_furnace]] von Immersive Engineering. Beide öffnen in Stufe 2.",
+   "Die Legierungsschmiede macht außerdem Kohlenstoffstahl aus einem Eisenbarren und drei Kohle: 420 Haltbarkeit, sonst fast wie Stahl ({{silent_gear/alloy_forge}})."
+  ],
+  "en": [
+   "Any steel ingot in the tag c:ingots/steel counts, whether from the Mekanism [[mekanism:metallurgic_infuser]] or the Immersive Engineering [[immersiveengineering:blast_furnace]]. Both open in stage 2.",
+   "The alloy forge also makes high carbon steel from one iron ingot and three coal: 420 durability, otherwise close to steel ({{silent_gear/alloy_forge}})."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/steel.json, high_carbon_steel.json",
+   "silentgear:alloying/metal/custom_ingot.high_carbon_steel",
+   "docs/STAGES.md (stage 2: Mekanism steel, Immersive Engineering blast furnace)"
+  ]
+ },
+ "crimson_steel": {
+  "de": [
+   "Im Raster kostet ein Barren vier Purpur-Eisen und zwei Lohenruten. In der Legierungsschmiede gibt ein [[silentgear:crimson_iron_block]] (neun Barren) mit zwei Lohenruten und Magmacreme drei Barren, das spart Eisen und vor allem Lohenruten.",
+   "Die Legierungsschmiede selbst braucht vier Purpur-Stahl, die du also im Raster machst ({{silent_gear/alloy_forge}})."
+  ],
+  "en": [
+   "In the grid one ingot costs four crimson iron and two blaze rods. In the alloy forge a [[silentgear:crimson_iron_block]] (nine ingots) with two blaze rods and magma cream gives three ingots, which saves iron and above all blaze rods.",
+   "The alloy forge itself takes four crimson steel, which you make in the grid ({{silent_gear/alloy_forge}})."
+  ],
+  "sources": [
+   "silentgear:crimson_steel_ingot",
+   "silentgear:alloying/metal/crimson_steel_ingot",
+   "silentgear:alloy_forge"
+  ]
+ },
+ "alloy_forge": {
+  "de": [
+   "Das Rezept ist auf Kronwerke geändert: Unten in der Mitte sitzt ein [[create:brass_casing]] statt des Eisenblocks, also brauchst du Create in Stufe 2 ({{create_brass/brass_casing}}). Dazu kommen vier [[silentgear:crimson_steel_ingot]] und drei [[minecraft:blackstone]].",
+   "Die Schmiede nimmt Metalle und Staub, bis zu sechs Zutaten. Was sie genau kann, zeigt EMI an der Schmiede."
+  ],
+  "en": [
+   "The recipe is changed on Kronwerke: a [[create:brass_casing]] sits in the bottom middle instead of the iron block, so you need Create in stage 2 ({{create_brass/brass_casing}}). Add four [[silentgear:crimson_steel_ingot]] and three [[minecraft:blackstone]].",
+   "The forge takes metals and dust, up to six ingredients. EMI shows what it makes on the forge."
+  ],
+  "sources": [
+   "silentgear:alloy_forge",
+   "kubejs/server_scripts/kronwerke/links.js (swap silentgear:alloy_forge #c:storage_blocks/iron -> create:brass_casing)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: net/silentchaos512/gear/util/Const.class (metal alloy maker, 6 inputs)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "salvager": {
+  "de": [
+   "Der Recycler gibt Silent-Gear-Werkzeug erst als Teile zurück; die Teile legst du danach einzeln noch einmal hinein, um an das Material zu kommen. Vanilla-Werkzeug, Rüstung und Pferderüstung zerlegt er direkt.",
+   "Der Verlust pro Teil liegt zufällig zwischen 0 und 50 Prozent, lohnt also vor allem bei teurem Material."
+  ],
+  "en": [
+   "The salvager first returns Silent Gear tools as parts; put the parts back in one by one to get the material. Vanilla tools, armor and horse armor are broken down directly.",
+   "The loss per part is random between 0 and 50 percent, so it pays off mainly for expensive materials."
+  ],
+  "sources": [
+   "silentgear:salvager",
+   "silentgear:salvaging/gear/pickaxe",
+   "silentgear:salvaging/iron_horse_armor",
+   "srv/config/silentgear-common.toml (salvager.break_down_parts_with_gear false, part_loss_rate 0.0 to 0.5)"
+  ]
+ },
+ "grader": {
+  "de": [
+   "Auf Kronwerke sitzen oben zwei [[ars_nouveau:source_gem]] statt Quarz, dazu vier Eisenbarren, eine [[silentgear:advanced_upgrade_base]] und drei [[silentgear:blaze_gold_ingot]]. Das Quelljuwel machst du in Ars Nouveau ({{ars_nouveau/first_gem}}).",
+   "Veredeln geht nur mit dem rohen Material, nicht mit fertigen Teilen. Katalysator II ist [[silentgear:blazing_dust]]."
+  ],
+  "en": [
+   "On Kronwerke the top has two [[ars_nouveau:source_gem]] instead of quartz, plus four iron ingots, an [[silentgear:advanced_upgrade_base]] and three [[silentgear:blaze_gold_ingot]]. You make the source gem in Ars Nouveau ({{ars_nouveau/first_gem}}).",
+   "Grading works only on raw material, not on finished parts. Tier II catalyst is [[silentgear:blazing_dust]]."
+  ],
+  "sources": [
+   "silentgear:material_grader",
+   "kubejs/server_scripts/kronwerke/round.js (replaceInput silentgear:material_grader #c:gems/quartz -> ars_nouveau:source_gem)",
+   "srv/config/silentgear-common.toml (material_grader.median_grade C, can_grade_parts false)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/tags/item/grader_catalysts/tier1.json, tier2.json"
+  ]
+ },
+ "charger": {
+  "de": [
+   "Die Ladestation arbeitet nur nachts und nur mit freiem Blick nach oben. Geladen wird das rohe Material, nicht ein fertiges Teil.",
+   "Den Lohengoldblock machst du aus neun [[silentgear:blaze_gold_ingot]]. Katalysator I ist [[silentgear:blaze_gold_dust]] vom Steinamboss."
+  ],
+  "en": [
+   "The charger works only at night and only with a clear view of the sky. It charges raw material, not finished parts.",
+   "The block of blaze gold is nine [[silentgear:blaze_gold_ingot]]. Tier I catalyst is [[silentgear:blaze_gold_dust]] from the stone anvil."
+  ],
+  "sources": [
+   "silentgear:starlight_charger",
+   "srv/config/silentgear-common.toml (starlight_charger.work_time NIGHTTIME, requires_view_of_sky true, can_charge_parts false)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/tags/item/starlight_charger_catalysts/tier1.json, tier2.json, tier3.json"
+  ]
+ },
+ "azure": {
+  "de": [
+   "Das End ist ein eigener Server und öffnet in Stufe 4. Als Kopf hält Azur-Silber nur 197, als Spitze gibt es +83 Haltbarkeit und +3 Tempo.",
+   "Im Raster kostet ein Azur-Elektrumbarren vier Azur-Silber, in der Legierungsschmiede ergibt ein Block drei. Mehr dazu in {{the_end/t_azure_electrum}}."
+  ],
+  "en": [
+   "The End is a server of its own and opens in stage 4. As a head azure silver only lasts 197; as a tip it adds +83 durability and +3 speed.",
+   "In the grid one azure electrum ingot costs four azure silver; in the alloy forge one block gives three. More in {{the_end/t_azure_electrum}}."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/neoforge/biome_modifier/end_ores.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/azure_silver.json, azure_electrum.json",
+   "silentgear:azure_electrum_ingot",
+   "silentgear:alloying/metal/azure_electrum_ingot",
+   "kubejs/data/kronwerke/chapters/stages/stage4.json"
+  ]
+ },
+ "tyrian": {
+  "de": [
+   "Die [[silentgear:crushed_shulker_shell]] machst du auf dem Steinamboss: [[minecraft:shulker_shell]] drauf, mit einem Hammer schlagen, kostet 10 Haltbarkeit. Den [[minecraft:netherite_scrap]] schmilzt du aus Antikem Schrott im Nether.",
+   "Leerenwächter rettet dich aus der Leere, praktisch im End."
+  ],
+  "en": [
+   "You make the [[silentgear:crushed_shulker_shell]] on the stone anvil: put a [[minecraft:shulker_shell]] on it and hit it with a hammer, which costs 10 durability. Smelt the [[minecraft:netherite_scrap]] from ancient debris in the Nether.",
+   "Void Ward saves you from the void, handy in the End."
+  ],
+  "sources": [
+   "silentgear:alloying/metal/tyrian_steel_ingot",
+   "silentgear:crushed_shulker_shell",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/tyrian_steel.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: assets/silentgear/lang/de_de.json (trait.silentgear.void_ward.desc)"
+  ]
+ },
+ "fluffy": {
+  "de": [
+   "Die [[silentgear:wild_fluffy_plant]] gibt beim Abbauen Samen, die reife Pflanze gibt [[silentgear:fluffy_puff]] und [[silentgear:fluffy_seeds]], mehr mit Glück. Ein Flauschball wird im Raster auch zu einem Samen.",
+   "Als Verbindung bringt der [[silentgear:fluffy_string]] dasselbe Flexibel III wie der Flachsstrang, kostet aber 5 Prozent Abbautempo statt es zu geben."
+  ],
+  "en": [
+   "The [[silentgear:wild_fluffy_plant]] drops seeds when broken; the ripe plant gives [[silentgear:fluffy_puff]] and [[silentgear:fluffy_seeds]], more with Fortune. A fluffy puff also turns into a seed in the grid.",
+   "As a binding [[silentgear:fluffy_string]] has the same Flexible III as flax string, but costs 5 percent harvest speed instead of adding it."
+  ],
+  "sources": [
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/neoforge/biome_modifier/overworld_ores.json",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/loot_table/blocks/fluffy_plant.json",
+   "silentgear:fluffy_seeds",
+   "silentgear:fluffy_string",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/fluffy_string.json, flax.json"
+  ]
+ },
+ "mattock": {
+  "de": [
+   "Die Blaupause: oben zwei Blaues Papier, Mitte Papier, Stock, Papier, unten ein Stock. Den Kopf baust du am besten aus Eisen, Gold kostet als Hacke 2 Angriffstempo.",
+   "Auf dem Feld ersetzt sie Hacke und Schaufel in einem Platz."
+  ],
+  "en": [
+   "The blueprint: two blueprint paper on top, paper, stick, paper in the middle, a stick at the bottom. Iron makes the best head; gold costs 2 attack speed on hoes.",
+   "On farm fields it replaces hoe and shovel."
+  ],
+  "sources": [
+   "silentgear:mattock_blueprint",
+   "silentgear:gear/mattock_head",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/gold.json (attack_speed/hoe -2)"
+  ],
+  "client": [
+   "Breithacke pflügt, gräbt und fällt Holz"
+  ]
+ },
+ "machete": {
+  "de": [
+   "Die Blaupause: ein Blaues Papier oben rechts, zwei in der Mitte, ein Stock unten links. Die Klinge braucht drei Einheiten wie die Sichel.",
+   "Feuerstein mit Gezackt III macht die Machete zu einer guten frühen Waffe."
+  ],
+  "en": [
+   "The blueprint: one blueprint paper top right, two in the middle, a stick bottom left. The blade takes three units like the sickle.",
+   "Flint with Jagged III makes the machete a good early weapon."
+  ],
+  "sources": [
+   "silentgear:machete_blueprint",
+   "silentgear:gear/machete_head",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/flint.json"
+  ],
+  "client": [
+   "Machete fällt Holz und mäht kleiner als die Sichel"
+  ]
+ },
+ "katana": {
+  "de": [
+   "Die Katana-Blaupause: zwei Blaues Papier oben, eins darunter links, ein Stock unten links. Der Dolch ist ein Blaues Papier über einem Stock, der Speer ein Papier oben links und zwei Stöcke schräg darunter.",
+   "Ein Griff aus Wolle bringt beim Katana zusätzlich Angriffstempo."
+  ],
+  "en": [
+   "The katana blueprint: two blueprint paper on top, one below on the left, a stick bottom left. The dagger is one blueprint paper above a stick, the spear a paper top left and two sticks diagonally below.",
+   "A wool grip adds attack speed to the katana."
+  ],
+  "sources": [
+   "silentgear:katana_blueprint",
+   "silentgear:dagger_blueprint",
+   "silentgear:spear_blueprint",
+   "silentgear:gear/katana_head",
+   "silentgear:gear/dagger_head",
+   "silentgear:gear/spear_head"
+  ],
+  "client": [
+   "Katana schwerer als Schwert, Dolch und Speer im Kampf"
+  ]
+ },
+ "shield": {
+  "de": [
+   "Der Schild ist [[silentgear:shield_plate]] plus Stiel, ohne Verbindung oder Griff. Diamant (1 561) oder Smaragd (1 080) halten am längsten.",
+   "Nimm für lange Kämpfe ein Reparaturkit mit ({{silent_gear/repair_kit}})."
+  ],
+  "en": [
+   "The shield is a [[silentgear:shield_plate]] plus a rod, no binding or grip. Diamond (1,561) or emerald (1,080) last longest.",
+   "For long fights carry a repair kit ({{silent_gear/repair_kit}})."
+  ],
+  "sources": [
+   "silentgear:shield_blueprint",
+   "silentgear:gear/shield_plate",
+   "silentgear:gear/shield",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/diamond.json, emerald.json"
+  ],
+  "client": [
+   "Blocken wie der Vanilla-Schild"
+  ]
+ },
+ "crossbow": {
+  "de": [
+   "Die Blaupause: oben Stock, Papier, Stock, Mitte drei Blaues Papier, unten ein Stock. Sehnenfaser als Sehne gibt +20 Prozent Fernschaden, Flauschiger Strang +5 Prozent.",
+   "Die Pfeile dafür baust du in {{silent_gear/arrows}}."
+  ],
+  "en": [
+   "The blueprint: stick, paper, stick on top, three blueprint paper in the middle, a stick at the bottom. Sinew fiber as the cord gives +20 percent ranged damage, fluffy string +5 percent.",
+   "You build its arrows in {{silent_gear/arrows}}."
+  ],
+  "sources": [
+   "silentgear:crossbow_blueprint",
+   "silentgear:gear/crossbow_main",
+   "silentgear:gear/crossbow",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/sinew.json, fluffy_string.json"
+  ],
+  "client": [
+   "Schießen wie eine Vanilla-Armbrust"
+  ]
+ },
+ "arrows": {
+  "de": [
+   "Die [[silentgear:fletching]] braucht eine eigene Blaupause aus zwei Blaues Papier und einer Feder, danach Blaupause plus Feder oder Papier. Fertig: [[silentgear:arrow_heads]], Stiel und Befiederung zusammen ins Raster.",
+   "Die Federn bekommst du von Hühnern."
+  ],
+  "en": [
+   "The [[silentgear:fletching]] needs its own blueprint of two blueprint paper and a feather, then blueprint plus feather or paper. To finish, put [[silentgear:arrow_heads]], a rod and the fletching into the grid.",
+   "Feathers come from chickens."
+  ],
+  "sources": [
+   "silentgear:arrow_blueprint",
+   "silentgear:fletching_blueprint",
+   "silentgear:part/fletching",
+   "silentgear:gear/arrow",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/silentgear_materials/feather.json, paper.json"
+  ],
+  "client": [
+   "Pfeile passen in Bogen und Armbrust, Anzahl pro Herstellung"
+  ]
+ },
+ "ring": {
+  "de": [
+   "Blaupause plus zwei Metallbarren gibt erst einen [[silentgear:ring_shank]]. Zum fertigen Ring legst du den Schaft mit den [[silentgear:jeweler_tools]] ins Raster, die wie eine Blaupause liegen bleiben.",
+   "Die Juwelenwerkzeuge baust du aus einem Diamanten, einem Eisenbarren, einem Brett, einem Blauen Papier und zwei Stöcken. Spieler haben je einen Ring-, Armband- und Halskettenplatz."
+  ],
+  "en": [
+   "Blueprint plus two metal ingots gives a [[silentgear:ring_shank]] first. For the finished ring put the shank into the grid with the [[silentgear:jeweler_tools]], which stay like a blueprint.",
+   "The jeweler tools take a diamond, an iron ingot, a plank, a blueprint paper and two sticks. Players have one ring, one bracelet and one necklace slot."
+  ],
+  "sources": [
+   "silentgear:ring_blueprint",
+   "silentgear:gear/ring_main_only",
+   "silentgear:gear/ring",
+   "silentgear:jeweler_tools",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: net/silentchaos512/gear/item/JewelerKitItem.class (extends PartBlueprintItem)",
+   "silent-gear-1.21.1-neoforge-4.2.1.1.jar: data/silentgear/curios/slots/ring.json, bracelet.json, necklace.json"
+  ],
+  "client": [
+   "Juwelenwerkzeuge werden beim Herstellen nicht verbraucht"
+  ]
+ },
+ "fishing_rod": {
+  "de": [
+   "Die Blaupause: drei Stöcke schräg, dazu zwei Blaues Papier rechts. Die [[silentgear:fishing_reel_and_hook]] braucht zwei Einheiten, die Sehne drei.",
+   "Lohnt vor allem, wenn du viel angelst: Eine zerbrochene Angel reparierst du mit einem Kit, statt neu zu bauen."
+  ],
+  "en": [
+   "The blueprint: three sticks diagonally plus two blueprint paper on the right. The [[silentgear:fishing_reel_and_hook]] takes two units, the cord three.",
+   "It pays off if you fish a lot: a broken rod is repaired with a kit instead of rebuilt."
+  ],
+  "sources": [
+   "silentgear:fishing_rod_blueprint",
+   "silentgear:gear/fishing_rod_main",
+   "silentgear:gear/fishing_rod"
+  ],
+  "client": [
+   "Angeln wie mit der Vanilla-Angel"
+  ]
+ }
+}

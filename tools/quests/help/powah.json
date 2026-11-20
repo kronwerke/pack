@@ -1,0 +1,538 @@
+{
+ "welcome": {
+  "de": [
+   "Kohle und Holzkohle gehen beide, den Lavaeimer bekommst du leer zurück. **Vor Stufe 3 ist Powah gesperrt**: Du kannst die Teile lagern, aber weder bauen noch in die Hand nehmen.",
+   "Weiter geht es mit {{powah/casing}} und {{powah/capacitors}}, beides brauchst du für die {{powah/orb}}."
+  ],
+  "en": [
+   "Coal and charcoal both work, and you get the lava bucket back empty. **Powah is locked before stage 3**: you can store its parts but neither craft nor hold them.",
+   "Next come {{powah/casing}} and {{powah/capacitors}}; you need both for the {{powah/orb}}."
+  ],
+  "sources": [
+   "powah:crafting/dielectric_paste",
+   "powah:crafting/dielectric_paste_2",
+   "docs/STAGES.md (locked items)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "casing": {
+  "de": [
+   "Ein Casing kostet vier Eisenbarren und je zwei waagerechte und senkrechte Rods; aus einer Ladung Rods zu acht werden also vier Casings. Ein senkrechter Rod wird allein an der Werkbank zum waagerechten, du brauchst nur eine Sorte zu bauen."
+  ],
+  "en": [
+   "A casing costs four iron ingots plus two horizontal and two vertical rods, so one batch of eight rods makes four casings. A vertical rod alone in the crafting grid turns into a horizontal one, so you only need to make one kind."
+  ],
+  "sources": [
+   "powah:crafting/dielectric_casing",
+   "powah:crafting/dielectric_rod",
+   "powah:crafting/dielectric_rod_h",
+   "powah:crafting/dielectric_rod_h_2"
+  ]
+ },
+ "capacitors": {
+  "de": [
+   "Den [[powah:capacitor_basic_large]] brauchst du ab Hardened in jedem Kondensator und für den Basic-Reaktor, plan also früh viele Basic Capacitors ein. Die vier Redstoneblöcke der Belohnung sind vier weitere Rezepte, also 16 Basic Capacitors."
+  ],
+  "en": [
+   "You need the [[powah:capacitor_basic_large]] in every capacitor from Hardened up and for the basic reactor, so plan lots of Basic Capacitors early. The four redstone blocks of the reward are four more recipes, 16 Basic Capacitors."
+  ],
+  "sources": [
+   "powah:crafting/capacitor_basic",
+   "powah:crafting/capacitor_basic_large",
+   "powah:crafting/capacitor_hardened",
+   "powah:crafting/reactor_basic"
+  ]
+ },
+ "orb": {
+  "de": [
+   "Den [[botania:mana_diamond]] infundierst du im Manabecken ({{botania/mana_diamond}}); die Belohnung gibt dir einen zurück. Als Glas geht jedes Glas aus dem Tag c:glass_blocks.",
+   "Die Kugel selbst bekommt keinen Strom, den liefern die Stäbe ({{powah/rods}})."
+  ],
+  "en": [
+   "You infuse the [[botania:mana_diamond]] in a mana pool ({{botania/mana_diamond}}); the reward gives you one back. Any glass of the c:glass_blocks tag works.",
+   "The orb itself takes no power, the rods deliver it ({{powah/rods}})."
+  ],
+  "sources": [
+   "kronwerke:tech/energizing_orb (kubejs/server_scripts/kronwerke/tech.js)"
+  ]
+ },
+ "rods": {
+  "de": [
+   "Ein Starter-Stab speichert 10 000 FE und gibt 100 FE/t an die Kugel. Strom bekommt er am Anfang von einem {{powah/furnator}} und Kabeln, später auch kabellos per {{flux_networks/powah_rods}}.",
+   "Beim Verbinden mit dem Wrench meldet der Chat Linking done, oder Out of range, wenn der Stab mehr als 4 Blöcke von der Kugel weg ist."
+  ],
+  "en": [
+   "A starter rod stores 10,000 FE and pushes 100 FE/t into the orb. Early on it gets power from a {{powah/furnator}} and cables, later also wirelessly through {{flux_networks/powah_rods}}.",
+   "When you link with the wrench, chat says Linking done, or Out of range if the rod is more than 4 blocks from the orb."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (energizing_rods starter 10000/100, energizing_range 4)",
+   "Powah-6.2.10.jar assets/powah/lang/en_us.json (chat.powah.wrench.link.*)"
+  ]
+ },
+ "rod_upgrade": {
+  "de": [
+   "Ein Hardened-Stab braucht zwei [[powah:capacitor_hardened]], das ist genau ein Rezept: vier [[powah:steel_energized]], vier Paste und ein Large Capacitor. Ein Quarzblock sind vier Netherquarz.",
+   "Den Energiestahl machst du in {{powah/steel}}."
+  ],
+  "en": [
+   "A hardened rod needs two [[powah:capacitor_hardened]], which is exactly one recipe: four [[powah:steel_energized]], four paste and one large capacitor. A quartz block is four nether quartz.",
+   "You make the energized steel in {{powah/steel}}."
+  ],
+  "sources": [
+   "powah:crafting/energizing_rod_hardened",
+   "powah:crafting/capacitor_hardened",
+   "powah:crafting/energizing_rod_basic"
+  ]
+ },
+ "certus": {
+  "de": [
+   "Für 16 Kristalle sind es acht Durchgänge mit acht Certus-Quarzkristallen, acht Redstone und zusammen 160 000 FE. Was du daraus baust, steht in {{ae2/charged}}."
+  ],
+  "en": [
+   "16 crystals take eight runs with eight certus quartz crystals, eight redstone and 160,000 FE in total. What you build from them is in {{ae2/charged}}."
+  ],
+  "sources": [
+   "kronwerke:ae2/charged_certus_energizing (kubejs/server_scripts/kronwerke/ae2.js)",
+   "kronwerke:ae2/charged_certus_imbuement"
+  ]
+ },
+ "steel": {
+  "de": [
+   "16 Energized Steel kosten acht Eisen, acht Gold und 80 000 FE; die Belohnung ersetzt dir genau das Metall. Neun Barren ergeben einen Block, und der wird wieder zu neun."
+  ],
+  "en": [
+   "16 energized steel cost eight iron, eight gold and 80,000 FE; the reward replaces exactly that metal. Nine ingots make a block, and it turns back into nine."
+  ],
+  "sources": [
+   "powah:energizing/energized_steel",
+   "powah:crafting/energized_steel"
+  ]
+ },
+ "blazing": {
+  "de": [
+   "Lohenstaub und Lohenrute kosten gleich viel Strom, aber eine Rute gibt an der Werkbank zwei Staub; das Rutenrezept spart also Material. Lohen findest du in Netherfestungen, der Nether läuft auf einem eigenen Server.",
+   "Acht Kristalle sind 960 000 FE."
+  ],
+  "en": [
+   "Blaze powder and blaze rod cost the same power, but one rod gives two powder in the crafting grid, so the rod recipe saves material. Blazes live in nether fortresses; the Nether runs on its own server.",
+   "Eight crystals take 960,000 FE."
+  ],
+  "sources": [
+   "powah:energizing/blazing_crystal",
+   "powah:energizing/blazing_crystal_2"
+  ]
+ },
+ "niotic": {
+  "de": [
+   "Mit einem Hardened-Stab (1 000 FE/t) dauert ein Kristall 15 Sekunden, mit einem Starter-Stab 150. Ein [[powah:capacitor_niotic]] braucht vier Niotic-Kristalle."
+  ],
+  "en": [
+   "With one hardened rod (1,000 FE/t) a crystal takes 15 seconds, with a starter rod 150. One [[powah:capacitor_niotic]] needs four niotic crystals."
+  ],
+  "sources": [
+   "powah:energizing/niotic_crystal",
+   "srv/config/powah.json5 (energizing_rods transfer_rates)",
+   "powah:crafting/capacitor_niotic"
+  ]
+ },
+ "spirited": {
+  "de": [
+   "Mit zwei Starter-Stäben dauert ein Kristall über vier Minuten, mit einem Niotic-Stab (10 000 FE/t) fünf Sekunden. Smaragde bekommst du von Dorfbewohnern oder aus Smaragderz im Gebirge."
+  ],
+  "en": [
+   "With two starter rods one crystal takes over four minutes, with a niotic rod (10,000 FE/t) five seconds. You get emeralds from villagers or from emerald ore in the mountains."
+  ],
+  "sources": [
+   "powah:energizing/spirited_crystal",
+   "srv/config/powah.json5 (energizing_rods transfer_rates)",
+   "powah:energizing/nitro_crystal"
+  ]
+ },
+ "rod_spirited": {
+  "de": [
+   "Der Weg vom Hardened-Stab: Blazing-Stab mit zwei Blazing Capacitors, Niotic-Stab mit zwei Niotic, Spirited-Stab mit zwei Spirited, dazu jedes Mal ein Casing und ein Quarzblock. Ein Spirited-Stab speichert 4 Millionen FE."
+  ],
+  "en": [
+   "The way from the hardened rod: blazing rod with two Blazing Capacitors, niotic rod with two Niotic, spirited rod with two Spirited, each time with a casing and a quartz block. A spirited rod stores 4 million FE."
+  ],
+  "sources": [
+   "powah:crafting/energizing_rod_blazing",
+   "powah:crafting/energizing_rod_niotic",
+   "powah:crafting/energizing_rod_spirited",
+   "srv/config/powah.json5 (energizing_rods)"
+  ]
+ },
+ "snowball": {
+  "de": [
+   "Vier Schneebälle kosten 2 Millionen FE, lad sie also erst mit Blazing-Stäben. Der Blitz wird dir als Verursacher zugerechnet."
+  ],
+  "en": [
+   "Four snowballs cost 2 million FE, so charge them once you have blazing rods. The lightning counts as caused by you."
+  ],
+  "sources": [
+   "powah:energizing/charged_snowball",
+   "Powah-6.2.10.jar owmii/powah/entity/ChargedSnowballEntity (LightningBolt.setCause)"
+  ]
+ },
+ "dry_ice": {
+  "de": [
+   "Trockeneis kommt nur in kalten Biomen vor, und **Behutsamkeit brauchst du nicht**: Der Block lässt sich selbst fallen.",
+   "Für das Kugelrezept: neun Eis ergeben ein Packeis, neun Packeis ein Blaueis. Den Reaktor kühlt Trockeneis rund viermal so stark wie Packeis (712 gegen 192)."
+  ],
+  "en": [
+   "Dry ice only generates in cold biomes, and **you do not need Silk Touch**: the block drops itself.",
+   "For the orb recipe: nine ice make one packed ice, nine packed ice one blue ice. In the reactor dry ice cools about four times as much as packed ice (712 against 192)."
+  ],
+  "sources": [
+   "Powah-6.2.10.jar data/powah/loot_table/blocks/dry_ice.json",
+   "Powah-6.2.10.jar data/powah/neoforge/biome_modifier/dry_ice.json, tags/worldgen/biome/has_dry_ice.json",
+   "Powah-6.2.10.jar data/powah/data_maps/item/solid_coolant.json"
+  ]
+ },
+ "ender_core": {
+  "de": [
+   "Jede Ender Cell braucht einen Core, ein Ender Gate-Rezept auch einen und gibt dafür vier Gates. Ein Enderauge machst du aus einer Enderperle und Lohenstaub."
+  ],
+  "en": [
+   "Every Ender Cell needs one core; an Ender Gate recipe also takes one and gives four gates. You make an eye of ender from an ender pearl and blaze powder."
+  ],
+  "sources": [
+   "powah:energizing/ender_core",
+   "powah:crafting/ender_cell_starter",
+   "powah:crafting/ender_gate_starter"
+  ]
+ },
+ "furnator": {
+  "de": [
+   "Ein Kohleblock gibt 480 000 FE, die vier der Belohnung also fast 2 Millionen. Der Starter speichert 20 000 FE und gibt 80 FE/t an Kabel ab."
+  ],
+  "en": [
+   "A coal block gives 480,000 FE, so the four of the reward are almost 2 million. The starter stores 20,000 FE and passes 80 FE/t to cables."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (energy_per_fuel_tick 30, furnators)",
+   "powah:crafting/furnator_starter"
+  ]
+ },
+ "furnator_basic": {
+  "de": [
+   "Ein Kohleblock hält ihn 6 000 Ticks am Laufen, also fünf Minuten. Er puffert 80 000 FE."
+  ],
+  "en": [
+   "One coal block keeps it running for 6,000 ticks, five minutes. It buffers 80,000 FE."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (furnators basic)"
+  ]
+ },
+ "gen_tiers": {
+  "de": [
+   "Du brauchst fünf [[powah:steel_energized]] und zwei Hardened Capacitors, also ein Kondensatorrezept mit vier weiteren Barren. Er puffert 200 000 FE und verbrennt einen Kohleblock in zwei Minuten."
+  ],
+  "en": [
+   "You need five [[powah:steel_energized]] and two Hardened Capacitors, that is one capacitor recipe with four more ingots. It buffers 200,000 FE and burns a coal block in two minutes."
+  ],
+  "sources": [
+   "powah:crafting/furnator_hardened",
+   "powah:crafting/capacitor_hardened",
+   "srv/config/powah.json5 (furnators hardened)"
+  ]
+ },
+ "power_plant": {
+  "de": [
+   "**Der Blazing Furnator frisst zwei Kohleblöcke pro Minute**, ohne Automatik kommst du kaum nach. Die Blazing Cell braucht zwei Hardened Cells, die wieder je zwei Basic Cells, dazu Blazing-Kristalle und zwei Blazing Capacitors.",
+   "Auf Dauer ist der Reaktor der bessere Weg ({{powah/reactor}})."
+  ],
+  "en": [
+   "**The blazing furnator eats two coal blocks a minute**, hard to keep up with by hand. The Blazing Cell needs two Hardened Cells, each of which needs two Basic Cells, plus blazing crystals and two Blazing Capacitors.",
+   "In the long run the reactor is the better way ({{powah/reactor}})."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (furnators blazing 800)",
+   "powah:crafting/furnator_blazing",
+   "powah:crafting/energy_cell_blazing",
+   "powah:crafting/energy_cell_hardened"
+  ]
+ },
+ "furnator_niotic": {
+  "de": [
+   "Er verbrennt einen Kohleblock in 12 Sekunden, fünf pro Minute. Ohne eine Baumfarm mit Automatik ist er kaum satt zu bekommen."
+  ],
+  "en": [
+   "It burns a coal block in 12 seconds, five a minute. Without an automated tree farm you will hardly keep it fed."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (furnators niotic 2000)",
+   "powah:crafting/furnator_niotic"
+  ]
+ },
+ "furnator_spirited": {
+  "de": [
+   "Bei 8 000 FE/t ist ein Kohleblock in drei Sekunden weg, das sind 20 pro Minute. Ein Basic-Reaktor ({{powah/reactor_upgrade}}) liefert weniger, ein Blazing-Reaktor mehr, beide aber aus Uraninit statt aus Bergen von Kohle."
+  ],
+  "en": [
+   "At 8,000 FE/t a coal block is gone in three seconds, 20 a minute. A basic reactor ({{powah/reactor_upgrade}}) gives less, a blazing reactor more, but both run on uraninite instead of mountains of coal."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (furnators spirited 8000, reactors)"
+  ]
+ },
+ "magmator": {
+  "de": [
+   "Er nimmt jede Lava aus dem Tag c:lava, per Eimer oder Rohr. Ein Eimer hält den Starter 25 Sekunden lang am Laufen. Im Thermo Generator ist Lava dagegen eine Wärmequelle ({{powah/thermo}})."
+  ],
+  "en": [
+   "It takes any lava of the c:lava tag, by bucket or pipe. One bucket keeps the starter going for 25 seconds. In the Thermo Generator lava is a heat source instead ({{powah/thermo}})."
+  ],
+  "sources": [
+   "Powah-6.2.10.jar data/powah/data_maps/fluid/magmator_fuel.json",
+   "srv/config/powah.json5 (magmators starter 20)"
+  ]
+ },
+ "solar": {
+  "de": [
+   "Die Lens of Ender bekommst du am Enderman ({{powah/ender_hunt}}). Ein Basic Panel baust du aus drei Starter Panels, zwei Basic Capacitors, Casing und drei Eisen."
+  ],
+  "en": [
+   "You get the Lens of Ender from an enderman ({{powah/ender_hunt}}). A basic panel takes three starter panels, two Basic Capacitors, a casing and three iron."
+  ],
+  "sources": [
+   "powah:crafting/solar_panel_basic",
+   "srv/config/powah.json5 (solar_panels)"
+  ]
+ },
+ "thermo": {
+  "de": [
+   "Als Kühlmittel nimmt er nur Wasser. **Auf Kronwerke braucht der Basic Thermo Generator [[undergarden:froststeel_ingot]]** statt Eisen, also einen Ausflug in den Undergarden.",
+   "Die vier Magmablöcke der Belohnung geben dir gleich eine Wärmequelle."
+  ],
+  "en": [
+   "It only takes water as coolant. **On Kronwerke the basic Thermo Generator needs [[undergarden:froststeel_ingot]]** instead of iron, so a trip to the Undergarden.",
+   "The four magma blocks of the reward give you a heat source right away."
+  ],
+  "sources": [
+   "Powah-6.2.10.jar data/powah/data_maps/fluid/fluid_coolant.json",
+   "powah:crafting/thermo_generator_basic (kubejs/server_scripts/kronwerke/round.js)"
+  ]
+ },
+ "uraninite": {
+  "de": [
+   "Ohne Behutsamkeit fällt Rohes Uraninit: 1 aus armem, 2 aus normalem, 4 aus dichtem Erz, Glück erhöht das. Im Ofen gibt ein Rohes Uraninit nur 1, in der Kugel 2. Mit Glück III lohnt sich meist das Rohe, ohne Glück das Erz mit Behutsamkeit.",
+   "Die 36 der Quest sind genau das Uraninit für 36 Starter-Reaktorblöcke."
+  ],
+  "en": [
+   "Without Silk Touch raw uraninite drops: 1 from poor, 2 from normal, 4 from dense ore, raised by Fortune. In a furnace one raw uraninite gives only 1, in the orb 2. With Fortune III raw ore usually wins, without Fortune the silk touched ore block does.",
+   "The quest's 36 are exactly the uraninite for 36 starter reactor blocks."
+  ],
+  "sources": [
+   "Powah-6.2.10.jar data/powah/loot_table/blocks/uraninite_ore*.json",
+   "powah:smelting/uraninite_from_raw",
+   "powah:energizing/uraninite_from_raw",
+   "powah:crafting/reactor_starter"
+  ]
+ },
+ "reactor": {
+  "de": [
+   "36 Blöcke sind neun Rezepte: 36 Uraninit, 36 Tiny Capacitors (also 18 Basic) und neun Casings. Danach zündest du ihn in {{powah/reactor_fuel}}."
+  ],
+  "en": [
+   "36 blocks are nine recipes: 36 uraninite, 36 tiny capacitors (18 basic ones) and nine casings. Then you fire it up in {{powah/reactor_fuel}}."
+  ],
+  "sources": [
+   "powah:crafting/reactor_starter",
+   "powah:crafting/capacitor_basic_tiny"
+  ],
+  "client": [
+   "reactor builds itself from one placed block on a free 3x3x4 space"
+  ]
+ },
+ "reactor_fuel": {
+  "de": [
+   "Der Kohle-Slot nimmt jeden Ofenbrennstoff, der Redstone-Slot Redstone oder Redstoneblöcke. Packeis kühlt mit -8 Grad und 192 Einheiten, Trockeneis aus {{powah/dry_ice}} fast viermal so stark."
+  ],
+  "en": [
+   "The carbon slot takes any furnace fuel, the redstone slot redstone dust or blocks. Packed ice cools at -8 degrees with 192 units, dry ice from {{powah/dry_ice}} almost four times as much."
+  ],
+  "sources": [
+   "Powah-6.2.10.jar owmii/powah/block/reactor/ReactorTile (processCarbon getBurnTime, processRedstone DUSTS/STORAGE_BLOCKS_REDSTONE, checkGenMode 70)",
+   "Powah-6.2.10.jar data/powah/data_maps/item/solid_coolant.json"
+  ]
+ },
+ "reactor_upgrade": {
+  "de": [
+   "Für 36 Basic-Blöcke brauchst du 36 Large Capacitors, also 72 Basic Capacitors aus 18 Rezepten mit 18 Redstoneblöcken, dazu neun Uraninit. Die Kondensatoren sind hier der teure Teil."
+  ],
+  "en": [
+   "36 basic blocks take 36 large capacitors, that is 72 Basic Capacitors from 18 recipes with 18 redstone blocks, plus nine uraninite. The capacitors are the expensive part here."
+  ],
+  "sources": [
+   "powah:crafting/reactor_basic",
+   "powah:crafting/capacitor_basic",
+   "powah:crafting/capacitor_basic_large"
+  ]
+ },
+ "reactor_blazing": {
+  "de": [
+   "Rechne mit 36 Hardened Capacitors (18 Rezepte, 72 Energized Steel) und 36 Blazing Capacitors (18 Rezepte, 72 Blazing-Kristalle), dazu 18 Uraninit und 36 Large Capacitors. Ein Blazing-Kabel mit 20 000 FE/t trägt die 10 000 FE/t des Reaktors ({{powah/cable_up}})."
+  ],
+  "en": [
+   "Count on 36 Hardened Capacitors (18 recipes, 72 energized steel) and 36 Blazing Capacitors (18 recipes, 72 blazing crystals), plus 18 uraninite and 36 large capacitors. One blazing cable at 20,000 FE/t carries the reactor's 10,000 FE/t ({{powah/cable_up}})."
+  ],
+  "sources": [
+   "powah:crafting/reactor_hardened",
+   "powah:crafting/reactor_blazing",
+   "powah:crafting/capacitor_hardened",
+   "powah:crafting/capacitor_blazing",
+   "srv/config/powah.json5 (cables, reactors)"
+  ]
+ },
+ "cables": {
+  "de": [
+   "Aus zwei Starter-Kabeln, einem Basic Capacitor und sechs Rods werden auch sechs Basic-Kabel, das direkte Rezept mit Eisen gibt aber zwölf. Seiten stellst du mit dem {{powah/wrench}} ein."
+  ],
+  "en": [
+   "Two starter cables, a Basic Capacitor and six rods also give six basic cables, but the direct recipe with iron gives twelve. You set sides with the {{powah/wrench}}."
+  ],
+  "sources": [
+   "powah:crafting/cable_basic",
+   "powah:crafting/cable_basic_2",
+   "powah:crafting/cable_starter"
+  ]
+ },
+ "wrench": {
+  "de": [
+   "Die vier Eisenbarren der Belohnung reichen für zwei weitere Wrenches, etwa für Mitspieler."
+  ],
+  "en": [
+   "The four iron ingots of the reward are enough for two more wrenches, for team mates for example."
+  ],
+  "sources": [
+   "powah:crafting/wrench",
+   "Powah-6.2.10.jar assets/powah/lang/en_us.json (info.powah.wrench.mode.*)"
+  ],
+  "client": [
+   "how to switch the wrench mode (sneak right click in the air)"
+  ]
+ },
+ "cells": {
+  "de": [
+   "Eine Basic Cell speichert 4 Millionen FE und schiebt 4 000 FE/t. **Ab Hardened braucht jede Zelle zwei Zellen der Stufe darunter**, dazu Material und zwei Kondensatoren der neuen Stufe."
+  ],
+  "en": [
+   "A basic cell stores 4 million FE and pushes 4,000 FE/t. **From Hardened up every cell needs two cells of the tier below**, plus material and two capacitors of the new tier."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (energy_cells)",
+   "powah:crafting/energy_cell_basic",
+   "powah:crafting/energy_cell_hardened",
+   "powah:crafting/energy_cell_blazing"
+  ]
+ },
+ "ender_cell": {
+  "de": [
+   "Kanäle: Starter 1, Basic 2, Hardened 3, Blazing 5, Niotic 7, Spirited 9. Kronwerke teilt deine Kanäle über alle Server: Eine Ender Cell im Nether oder im End zieht aus demselben Speicher wie die zu Hause.",
+   "Eine Starter Ender Cell schiebt 1 000 FE/t, ein Starter Ender Gate 500."
+  ],
+  "en": [
+   "Channels: starter 1, basic 2, hardened 3, blazing 5, niotic 7, spirited 9. Kronwerke shares your channels across all servers: an Ender Cell in the Nether or the End draws from the same buffer as the one at home.",
+   "A starter Ender Cell pushes 1,000 FE/t, a starter Ender Gate 500."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (ender_cells, ender_gates)",
+   "core README.md (The network: Powah Ender Cells and Ender Gates)"
+  ]
+ },
+ "transmitter": {
+  "de": [
+   "Für die Player Aerial Pearl gehen Zombie, Zombiedorfbewohner und Wüstenzombie, kein Ertrunkener. Der Starter speichert 1 Million FE.",
+   "Die Dimensional-Karte holst du dir in {{powah/ender_hunt}}."
+  ],
+  "en": [
+   "For the Player Aerial Pearl a zombie, zombie villager or husk works, a drowned does not. The starter stores 1 million FE.",
+   "You get the dimensional card in {{powah/ender_hunt}}."
+  ],
+  "sources": [
+   "Powah-6.2.10.jar owmii/powah/item/AerialPearlItem (Zombie, ZombieVillager, Husk by exact class)",
+   "srv/config/powah.json5 (player_transmitters)"
+  ],
+  "client": [
+   "whether the transmitter charges a player who is on another Kronwerke server (Nether, End, farm world)"
+  ]
+ },
+ "ender_hunt": {
+  "de": [
+   "Endermen findest du nachts in der ganzen Oberwelt, Endermiten schlüpfen manchmal aus geworfenen Enderperlen. Beide Teile machst du mit einem Rechtsklick auf das Monster."
+  ],
+  "en": [
+   "Endermen roam the whole overworld at night, and endermites sometimes hatch from thrown ender pearls. You make both items with one right click on the mob."
+  ],
+  "sources": [
+   "Powah-6.2.10.jar owmii/powah/item/PhotoelectricPaneItem, BindingCardItem (EnderMan, Endermite)",
+   "Powah-6.2.10.jar assets/powah/lang/en_us.json (jei.powah.lens_of_ender, binding_card_dim)"
+  ],
+  "client": [
+   "whether the mob is removed on conversion (AerialPearlItem removes the zombie; pane and card not checked)"
+  ]
+ },
+ "battery": {
+  "de": [
+   "Die Starter-Battery gibt bis 1 000 FE/t ab. Aufladen kannst du sie im {{powah/hopper}}, leeren im {{powah/discharger}}."
+  ],
+  "en": [
+   "The starter battery gives out up to 1,000 FE/t. You charge it in the {{powah/hopper}} and empty it in the {{powah/discharger}}."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (batteries)",
+   "Powah-6.2.10.jar owmii/powah/item/BatteryItem (isShiftKeyDown, setCharging)"
+  ]
+ },
+ "hopper": {
+  "de": [
+   "Der Starter speichert 1 Million FE. Eine leere Starter-Battery ist bei 500 FE/t nach 2 000 Ticks voll, also knapp zwei Minuten."
+  ],
+  "en": [
+   "The starter stores 1 million FE. An empty starter battery is full after 2,000 ticks at 500 FE/t, just under two minutes."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (hoppers starter 1000000, charging_rates 500; batteries starter 1000000)"
+  ]
+ },
+ "discharger": {
+  "de": [
+   "Der Starter speichert 1 Million FE und gibt bis 1 000 FE/t an Kabel ab, eine volle Starter-Battery ist also nach knapp einer Minute leer."
+  ],
+  "en": [
+   "The starter stores 1 million FE and passes up to 1,000 FE/t into cables, so a full starter battery is empty in under a minute."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (dischargers starter)"
+  ]
+ },
+ "cable_up": {
+  "de": [
+   "Hardened-Kabel: sechs Rods, zwei [[powah:steel_energized]] und ein Hardened Capacitor geben zwölf. Ein Strang Blazing-Kabel trägt genau zwei Blazing-Reaktoren."
+  ],
+  "en": [
+   "Hardened cable: six rods, two [[powah:steel_energized]] and one Hardened Capacitor give twelve. One line of blazing cable carries exactly two blazing reactors."
+  ],
+  "sources": [
+   "powah:crafting/cable_hardened_2",
+   "powah:crafting/cable_blazing_2",
+   "srv/config/powah.json5 (cables, reactors)"
+  ]
+ },
+ "cell_niotic": {
+  "de": [
+   "In einer Niotic-Zelle stecken zwei Blazing-, vier Hardened- und acht Basic-Zellen. Bau die Vorstufen also früh und lass sie als Puffer arbeiten, bis du sie zusammenlegst."
+  ],
+  "en": [
+   "A niotic cell holds two blazing, four hardened and eight basic cells. Build the earlier tiers early and let them buffer until you combine them."
+  ],
+  "sources": [
+   "powah:crafting/energy_cell_niotic",
+   "powah:crafting/energy_cell_blazing",
+   "powah:crafting/energy_cell_hardened"
+  ]
+ }
+}

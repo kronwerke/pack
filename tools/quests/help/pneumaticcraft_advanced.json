@@ -1,0 +1,728 @@
+{
+ "controller": {
+  "de": [
+   "Für die ganze Straße brauchst du **acht** [[pneumaticcraft:printed_circuit_board]]: drei im Controller und je eine in Plattform, Import Unit, Export Unit, Bohrer und Laser. Die Platinen baust du wie in {{pneumaticcraft/pcb}}.",
+   "Die Straße braucht beim Arbeiten nur 2 mL Luft pro Tick, ein einfacher Air Compressor reicht also. Als Nächstes kaufst du die Programme ({{pneumaticcraft_advanced/programs}})."
+  ],
+  "en": [
+   "The whole line needs **eight** [[pneumaticcraft:printed_circuit_board]]: three in the controller and one each in the platform, import unit, export unit, drill and laser. You make them as in {{pneumaticcraft/pcb}}.",
+   "While working the line only uses 2 mL of air per tick, so a basic Air Compressor is enough. Next you buy the programs ({{pneumaticcraft_advanced/programs}})."
+  ],
+  "sources": [
+   "pneumaticcraft:assembly_controller",
+   "pneumaticcraft:assembly_platform",
+   "pneumaticcraft:assembly_io_unit_import",
+   "pneumaticcraft:assembly_drill",
+   "pneumaticcraft:assembly_laser",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (USAGE_ASSEMBLING 2)"
+  ]
+ },
+ "programs": {
+  "de": [
+   "Am Amadron Tablet kosten Drill und Laser je 8 [[minecraft:emerald]], Drill & Laser 14 und der PCB Blueprint 8. Drill & Laser kannst du auch selbst machen: Drill und Laser zusammen an der Werkbank ergeben es formlos, dann sind aber beide Einzelprogramme weg.",
+   "Die Quest will Drill und Laser einzeln, kombinier sie also erst danach."
+  ],
+  "en": [
+   "On the Amadron Tablet Drill and Laser cost 8 [[minecraft:emerald]] each, Drill & Laser 14 and the PCB Blueprint 8. You can also make Drill & Laser yourself: Drill and Laser together in a crafting grid give it shapeless, but both single programs are used up.",
+   "The quest wants Drill and Laser on their own, so combine them only afterwards."
+  ],
+  "sources": [
+   "pneumaticcraft:amadron/assembly_program_drill",
+   "pneumaticcraft:amadron/assembly_program_laser",
+   "pneumaticcraft:amadron/assembly_program_drill_laser",
+   "pneumaticcraft:amadron/pcb_blueprint",
+   "pneumaticcraft:assembly_program_drill_laser"
+  ]
+ },
+ "platform": {
+  "de": [
+   "Den [[pneumaticcraft:pneumatic_cylinder]] kennst du aus {{pneumaticcraft/cylinder}}. Die Plattform braucht selbst keine Luft und kein Programm, sie ist nur die Ablage, an die alle anderen Maschinen andocken.",
+   "Rechne gleich für die ganze Straße: Plattform 2, jede IO Unit 3, Bohrer 3, Laser 3 Zylinder."
+  ],
+  "en": [
+   "You know the [[pneumaticcraft:pneumatic_cylinder]] from {{pneumaticcraft/cylinder}}. The platform needs no air and no program itself, it is only the rest every other machine docks to.",
+   "Count for the whole line right away: platform 2, each IO unit 3, drill 3, laser 3 cylinders."
+  ],
+  "sources": [
+   "pneumaticcraft:assembly_platform",
+   "pneumaticcraft:pneumatic_cylinder",
+   "pneumaticcraft:assembly_io_unit_import",
+   "pneumaticcraft:assembly_drill"
+  ]
+ },
+ "io_units": {
+  "de": [
+   "Hast du zwei gleiche gebaut, legst du eine allein in die Werkbank, und sie wird zur anderen Sorte; das kostet nichts und geht in beide Richtungen.",
+   "Die vier [[pneumaticcraft:pneumatic_cylinder]] der Belohnung decken schon einen großen Teil von Bohrer und Laser, die je drei brauchen."
+  ],
+  "en": [
+   "If you built two of the same kind, put one alone into the crafting grid and it turns into the other kind; it costs nothing and works both ways.",
+   "The four [[pneumaticcraft:pneumatic_cylinder]] of the reward already cover much of the drill and the laser, which need three each."
+  ],
+  "sources": [
+   "pneumaticcraft:assembly_io_unit_import_from_export",
+   "pneumaticcraft:assembly_io_unit_export_from_import",
+   "pneumaticcraft:assembly_drill",
+   "pneumaticcraft:assembly_laser"
+  ]
+ },
+ "drill": {
+  "de": [
+   "Den Diamanten bekommst du mit der Belohnung doppelt zurück. Später macht der Bohrer mit dem Programm Drill auch den Netheritbohrkopf fertig ({{pneumaticcraft_advanced/drill_bits}}).",
+   "Der rote Farbstoff aus Redstone ist praktisch für den {{pneumaticcraft_advanced/programmer}}, der zwei davon braucht."
+  ],
+  "en": [
+   "The reward gives you the diamond back twice. Later the drill with the Drill program also finishes the netherite drill bit ({{pneumaticcraft_advanced/drill_bits}}).",
+   "The red dye from redstone is handy for the {{pneumaticcraft_advanced/programmer}}, which needs two."
+  ],
+  "sources": [
+   "pneumaticcraft:assembly_drill",
+   "pneumaticcraft:assembly/netherite_drill_bit",
+   "pneumaticcraft:assembly/red_dye",
+   "pneumaticcraft:programmer"
+  ]
+ },
+ "laser": {
+  "de": [
+   "[[minecraft:red_stained_glass]] färbst du aus acht Glas um einen roten Farbstoff, das gibt acht Stück. Der Laser macht später auch das verstärkte Druckkammerventil fertig ({{pneumaticcraft_advanced/reinforced_valve}}) und ersetzt UV Light Box und Etching Tank ({{pneumaticcraft_advanced/pcb_laser}})."
+  ],
+  "en": [
+   "You dye [[minecraft:red_stained_glass]] from eight glass around one red dye, which gives eight. Later the laser also finishes the reinforced pressure chamber valve ({{pneumaticcraft_advanced/reinforced_valve}}) and replaces the UV Light Box and the Etching Tank ({{pneumaticcraft_advanced/pcb_laser}})."
+  ],
+  "sources": [
+   "minecraft:red_stained_glass",
+   "pneumaticcraft:assembly/reinforced_pressure_chamber_valve",
+   "pneumaticcraft:assembly/unassembled_pcb"
+  ]
+ },
+ "first_run": {
+  "de": [
+   "Den [[pneumaticcraft:compressed_iron_block]] machst du aus neun Compressed Iron. Das lohnt sich: An der Werkbank geben acht Compressed Iron und ein Rohr nur 16 Ventile, die Straße macht aus neun Barren 20.",
+   "Genau diese 20 Ventile frisst danach der Laser für die ersten acht Advanced Pressure Tubes ({{pneumaticcraft_advanced/advanced_tube}})."
+  ],
+  "en": [
+   "You make the [[pneumaticcraft:compressed_iron_block]] from nine compressed iron. It pays off: in the crafting grid eight compressed iron and a tube give only 16 valves, the line turns nine ingots into 20.",
+   "Exactly these 20 valves then go into the laser for the first eight Advanced Pressure Tubes ({{pneumaticcraft_advanced/advanced_tube}})."
+  ],
+  "sources": [
+   "pneumaticcraft:compressed_iron_block_from_ingot",
+   "pneumaticcraft:pressure_chamber_valve",
+   "pneumaticcraft:assembly/pressure_chamber_valve",
+   "pneumaticcraft:assembly/advanced_pressure_tube"
+  ]
+ },
+ "advanced_tube": {
+  "de": [
+   "[[pneumaticcraft:advanced_pressure_tube]] haben kein Werkbankrezept, sie kommen nur vom Laser. Für die Bauten dieses Kapitels brauchst du **18**: Pressurized Spawner 4, vier Reinforced Air Canisters 4, Advanced Liquid Compressor 2, Solar Compressor 2 und je eins für Advanced Air Compressor, Flux Compressor, Dynamo, Large Tank, Aerial Interface und Programmable Controller."
+  ],
+  "en": [
+   "[[pneumaticcraft:advanced_pressure_tube]] have no crafting recipe, they only come from the laser. The builds of this chapter need **18**: Pressurized Spawner 4, four Reinforced Air Canisters 4, Advanced Liquid Compressor 2, Solar Compressor 2 and one each for the Advanced Air Compressor, Flux Compressor, Dynamo, Large Tank, Aerial Interface and Programmable Controller."
+  ],
+  "sources": [
+   "pneumaticcraft:assembly/advanced_pressure_tube",
+   "helpq uses pneumaticcraft:advanced_pressure_tube"
+  ]
+ },
+ "adv_air": {
+  "de": [
+   "Er verbrennt alles, was auch im Ofen brennt, wie der normale Air Compressor, und sein Tank fasst 10 000 mL statt 5 000. Zu heiß explodiert er nicht, er liefert dann nur keine Luft mehr.",
+   "Speed Upgrades machen ihn je Stück 1,5 mal so schnell, aber Verbrauch und Hitze steigen je Stück um das 1,65fache. Ohne Kühlung bringen sie also wenig."
+  ],
+  "en": [
+   "It burns anything that burns in a furnace, like the basic Air Compressor, and its tank holds 10,000 mL instead of 5,000. It does not explode when too hot, it just stops giving air.",
+   "Each Speed Upgrade makes it 1.5 times as fast, but fuel use and heat rise 1.65 times per upgrade. Without cooling they do little."
+  ],
+  "sources": [
+   "pneumaticcraft:advanced_air_compressor",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (advanced_air_compressor tooltip)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (VOLUME_AIR_COMPRESSOR, VOLUME_ADVANCED_AIR_COMPRESSOR)",
+   "config/pneumaticcraft-common.toml (speed_upgrade_speed_multiplier 1.5, speed_upgrade_usage_multiplier 1.65)"
+  ]
+ },
+ "adv_liquid": {
+  "de": [
+   "Den Brennstoff holst du aus der Raffinerie ({{pneumaticcraft/refinery}}); welche Flüssigkeit wie gut brennt, steht in {{pneumaticcraft/fuels}}. Den alten [[pneumaticcraft:liquid_compressor]] aus {{pneumaticcraft/liquid_compressor}} baust du dabei ein, er geht nicht verloren.",
+   "Die vier [[pneumaticcraft:heat_sink]] der Belohnung reichen für die freien Seiten."
+  ],
+  "en": [
+   "You get the fuel from the refinery ({{pneumaticcraft/refinery}}); which fluid burns how well is in {{pneumaticcraft/fuels}}. Your old [[pneumaticcraft:liquid_compressor]] from {{pneumaticcraft/liquid_compressor}} goes into the recipe, it is not lost.",
+   "The four [[pneumaticcraft:heat_sink]] of the reward cover the free sides."
+  ],
+  "sources": [
+   "pneumaticcraft:advanced_liquid_compressor"
+  ]
+ },
+ "flux": {
+  "de": [
+   "Den [[mekanism:basic_control_circuit]] infundierst du in der Metallurgischen Infusionsanlage aus einer [[create:electron_tube]] und Redstone ({{mekanism/circuit}}). Du brauchst zwei, die Belohnung gibt dir zwei für den {{pneumaticcraft_advanced/dynamo}} zurück.",
+   "Speed Upgrades senken den Wirkungsgrad etwas. Strom bekommt er aus jedem FE-Kabel, auch per {{flux_networks/point}}."
+  ],
+  "en": [
+   "You infuse the [[mekanism:basic_control_circuit]] in the Metallurgic Infuser from an [[create:electron_tube]] and redstone ({{mekanism/circuit}}). You need two, and the reward gives you two back for the {{pneumaticcraft_advanced/dynamo}}.",
+   "Speed Upgrades lower the efficiency a little. It takes power from any FE cable, also through a {{flux_networks/point}}."
+  ],
+  "sources": [
+   "kronwerke:added/flux_compressor (kubejs/server_scripts/kronwerke/added.js)",
+   "kronwerke:tech/basic_control_circuit",
+   "config/pneumaticcraft-common.toml (flux_compressor_efficiency 40)",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (flux_compressor tooltip)"
+  ]
+ },
+ "dynamo": {
+  "de": [
+   "**Der Dynamo arbeitet erst ab 15 bar.** An einem 5-bar-Netz tut er nichts, er braucht also einen Advanced Compressor oder ein anderes 20-bar-Netz aus Advanced Pressure Tubes davor.",
+   "Er nimmt einen [[mekanism:basic_control_circuit]], den Rest baust du aus Compressed Iron. Speed Upgrades senken den Wirkungsgrad etwas."
+  ],
+  "en": [
+   "**The dynamo only works from 15 bar up.** On a 5 bar network it does nothing, so it needs an Advanced Compressor or another 20 bar network of Advanced Pressure Tubes in front of it.",
+   "It takes one [[mekanism:basic_control_circuit]], the rest is compressed iron. Speed Upgrades lower the efficiency a little."
+  ],
+  "sources": [
+   "kronwerke:added/pneumatic_dynamo",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (MIN_PRESSURE_PNEUMATIC_DYNAMO 15.0)",
+   "pneumaticcraft jar: PneumaticDynamoBlockEntity (getPressure compared with 15.0f)",
+   "config/pneumaticcraft-common.toml (pneumatic_dynamo_efficiency 40)"
+  ]
+ },
+ "electrostatic": {
+  "de": [
+   "Ein Gitter zählt bis 250 Blöcke, mehr bringt nichts. Mehrere Kompressoren am selben Gitter teilen sich die Luft eines Einschlags. Der Kompressor macht seine Blitze selbst, mit einer Grundchance von 1 zu 100 000 pro Tick, die Regen, Gewitter und das Gitter erhöhen.",
+   "Wie viel Erdung unten noch fehlt, zeigt der Reiter Electrostatic Info im Fenster."
+  ],
+  "en": [
+   "A grid counts up to 250 blocks, more does nothing. Several compressors on one grid share the air of a strike. The compressor makes its own lightning with a base chance of 1 in 100,000 per tick, raised by rain, thunderstorms and the grid.",
+   "The Electrostatic Info tab in its window shows how much grounding below is still missing."
+  ],
+  "sources": [
+   "pneumaticcraft:electrostatic_compressor",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (electrostatic_compressor tooltip, gui.tab.info.electrostatic)",
+   "config/pneumaticcraft-common.toml (electrostatic_lightning_chance 100000)",
+   "pneumaticcraft jar: ElectrostaticCompressorBlockEntity (spawns its own LightningBolt)"
+  ]
+ },
+ "thermal": {
+  "de": [
+   "Welche Blöcke wie heiß oder kalt sind, erklärt {{pneumaticcraft/heat_sources}}. Den alten [[pneumaticcraft:air_compressor]] baust du in die Mitte, die zwei schweren Druckplatten machst du aus je zwei Eisenbarren.",
+   "Die 16 [[minecraft:packed_ice]] der Belohnung sind die kalte Seite für den Anfang."
+  ],
+  "en": [
+   "Which blocks are how hot or cold is explained in {{pneumaticcraft/heat_sources}}. Your old [[pneumaticcraft:air_compressor]] goes into the middle; each heavy weighted pressure plate is two iron ingots.",
+   "The 16 [[minecraft:packed_ice]] of the reward are the cold side to start with."
+  ],
+  "sources": [
+   "pneumaticcraft:thermal_compressor",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (thermal_compressor tooltip)"
+  ]
+ },
+ "solar_cell": {
+  "de": [
+   "Die Thermopneumatic Processing Plant kennst du aus {{pneumaticcraft/tpp}}; für die Upgrade Matrix muss sie mindestens 0 Grad warm sein. Aus einem Lapis werden vier Matrizen, für acht Wafer reichen also zwei Lapis und acht [[minecraft:amethyst_shard]].",
+   "Amethystscherben findest du in Amethystgeoden unter der Erde; die Belohnung gibt dir acht."
+  ],
+  "en": [
+   "You know the Thermopneumatic Processing Plant from {{pneumaticcraft/tpp}}; for the Upgrade Matrix it must be at least 0 degrees warm. One lapis gives four matrices, so eight wafers need two lapis and eight [[minecraft:amethyst_shard]].",
+   "Amethyst shards come from amethyst geodes underground; the reward gives you eight."
+  ],
+  "sources": [
+   "pneumaticcraft:thermo_plant/upgrade_matrix (temperature min 273 K)",
+   "pneumaticcraft:pressure_chamber/solar_wafer",
+   "pneumaticcraft:assembly/solar_cell"
+  ]
+ },
+ "solar": {
+  "de": [
+   "**Beide Paneele** müssen tagsüber freien Himmel sehen, sonst meldet das Fenster einen Fehler. Überhitzt er, fängt er Feuer und steht still; Rechtsklick mit einer [[pneumaticcraft:solar_cell]] repariert ihn.",
+   "Speed Upgrades erhöhen Luft und Hitze, die Grenze für das Überhitzen bleibt aber gleich."
+  ],
+  "en": [
+   "**Both panels** must see open sky during the day, or the window shows a problem. If it overheats it catches fire and stops; right click it with a [[pneumaticcraft:solar_cell]] to repair it.",
+   "Speed Upgrades raise both air and heat, but the overheat limit stays the same."
+  ],
+  "sources": [
+   "pneumaticcraft:solar_compressor",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (gui.tab.problems.solar_compressor.*, gui.tab.upgrades.solar_compressor.speed)"
+  ]
+ },
+ "pcb_laser": {
+  "de": [
+   "Ein fertiges [[pneumaticcraft:printed_circuit_board]] braucht zwei [[pneumaticcraft:transistor]] und zwei [[pneumaticcraft:capacitor]]. Die Belohnung reicht also für vier deiner acht Platinen.",
+   "Weitere machst du in der Druckkammer bei 1 bar: Transistor aus drei Nuggets, Redstone und Plastik, Kondensator aus zwei Nuggets, Schleimball und Plastik."
+  ],
+  "en": [
+   "A finished [[pneumaticcraft:printed_circuit_board]] needs two [[pneumaticcraft:transistor]] and two [[pneumaticcraft:capacitor]]. The reward covers four of your eight boards.",
+   "You make more in the pressure chamber at 1 bar: a transistor from three nuggets, redstone and plastic, a capacitor from two nuggets, a slimeball and plastic."
+  ],
+  "sources": [
+   "pneumaticcraft:printed_circuit_board",
+   "pneumaticcraft:pressure_chamber/transistor",
+   "pneumaticcraft:pressure_chamber/capacitor"
+  ]
+ },
+ "pcb_mass": {
+  "de": [
+   "Nach der Straße brauchst du in diesem Kapitel noch sieben: Solar Compressor 2, Programmer, Security Station, Drone und Programmable Controller 2 (mit seiner Drohne). Dazu eins für je acht Puzzleteile.",
+   "Ein [[pneumaticcraft:failed_pcb]] wird im Schmelzofen in 5 Sekunden wieder zum Empty PCB."
+  ],
+  "en": [
+   "After the line this chapter needs seven more: Solar Compressor 2, Programmer, Security Station, Drone and Programmable Controller 2 (with its drone). Add one per eight puzzle pieces.",
+   "A [[pneumaticcraft:failed_pcb]] turns back into an Empty PCB in the blast furnace in 5 seconds."
+  ],
+  "sources": [
+   "pneumaticcraft:solar_compressor",
+   "pneumaticcraft:programmer",
+   "pneumaticcraft:security_station",
+   "kronwerke:added/drone",
+   "pneumaticcraft:programmable_controller",
+   "pneumaticcraft:empty_pcb_from_failed_pcb"
+  ]
+ },
+ "programmer": {
+  "de": [
+   "Die [[minecraft:black_stained_glass_pane]] machst du aus schwarzem Glas, sechs Glas ergeben 16 Scheiben. Den roten Farbstoff macht dir die Straße aus Redstone ({{pneumaticcraft_advanced/drill}}).",
+   "Der [[pneumaticcraft:turbine_rotor]] besteht aus drei Turbine Blades und einem Compressed Iron; die Belohnung gibt dir die zwei zurück."
+  ],
+  "en": [
+   "You make the [[minecraft:black_stained_glass_pane]] from black stained glass, six glass give 16 panes. The line makes the red dye from redstone ({{pneumaticcraft_advanced/drill}}).",
+   "A [[pneumaticcraft:turbine_rotor]] is three turbine blades and one compressed iron; the reward gives you the two back."
+  ],
+  "sources": [
+   "pneumaticcraft:programmer",
+   "minecraft:black_stained_glass_pane",
+   "pneumaticcraft:turbine_rotor"
+  ]
+ },
+ "puzzles": {
+  "de": [
+   "Plastik kommt aus {{pneumaticcraft/plastic}}. Die sieben Lern-Quests danach schenken dir zusammen 27 weitere Teile, die erste programmierte Drohne noch einmal 16."
+  ],
+  "en": [
+   "Plastic comes from {{pneumaticcraft/plastic}}. The seven lesson quests after this give you 27 more pieces in total, the first programmed drone another 16."
+  ],
+  "sources": [
+   "pneumaticcraft:programming_puzzle",
+   "quest rewards pz_start to pz_harvest, first_program"
+  ]
+ },
+ "gps": {
+  "de": [
+   "Mit Schleichen und Mausrad verschiebst du eine gespeicherte Koordinate entlang deiner Blickrichtung. Im Programmer legt Shift und Linksklick mit dem GPS Tool auf die freie Fläche ein Area-Teil an, mit dem Area Tool zwei Coordinate-Teile.",
+   "Ein Area-Teil darf auf diesem Server höchstens 250 000 Blöcke umfassen. Ein Area Tool zerfällt an der Werkbank wieder in zwei GPS Tools."
+  ],
+  "en": [
+   "Sneak and scroll the mouse wheel to move a stored coordinate along the way you face. In the Programmer, shift left click with the GPS Tool on the empty area makes an Area piece, with the Area Tool two Coordinate pieces.",
+   "An Area piece may hold at most 250,000 blocks on this server. An Area Tool splits back into two GPS Tools in the crafting grid."
+  ],
+  "sources": [
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (gps_tool, gps_area_tool tooltips)",
+   "config/pneumaticcraft-common.toml (max_programming_area 250000)",
+   "pneumaticcraft:gps_tool_from_gps_area_tool"
+  ]
+ },
+ "drone": {
+  "de": [
+   "Das [[create:precision_mechanism]] machst du wie in {{create_brass/precision}}. Eine Drohne fasst 12 000 mL Luft und tut ohne Programm aus dem {{pneumaticcraft_advanced/programmer}} nichts.",
+   "Die fertigen Spezialdrohnen (Logistics, Harvesting, Collector, Guard) brauchen kein Präzisionsgetriebe und kein Programm."
+  ],
+  "en": [
+   "You make the [[create:precision_mechanism]] as in {{create_brass/precision}}. A drone holds 12,000 mL of air and does nothing without a program from the {{pneumaticcraft_advanced/programmer}}.",
+   "The ready made special drones (Logistics, Harvesting, Collector, Guard) need no precision mechanism and no program."
+  ],
+  "sources": [
+   "kronwerke:added/drone (kubejs/server_scripts/kronwerke/added.js)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (DRONE_VOLUME 12000)",
+   "pneumaticcraft:logistics_drone",
+   "pneumaticcraft:harvesting_drone",
+   "pneumaticcraft:guard_drone",
+   "pneumaticcraft:collector_drone",
+   "config/pneumaticcraft-common.toml (max_drone_charging_station_search_range 80)"
+  ]
+ },
+ "pz_start": {
+  "de": [
+   "Fang mit einem kleinen Programm an und häng Teil für Teil darunter. Die zwei Puzzleteile der Belohnung reichen schon für Start und ein Area-Teil."
+  ],
+  "en": [
+   "Start small and add piece after piece below. The two puzzle pieces of the reward already cover Start and one Area piece."
+  ],
+  "sources": [
+   "pneumaticcraft:programming_puzzle"
+  ],
+  "client": [
+   "red border and tooltip on incomplete pieces in the Programmer"
+  ]
+ },
+ "pz_import": {
+  "de": [
+   "Das Area-Teil baust du am schnellsten mit dem GPS Area Tool ({{pneumaticcraft_advanced/gps}}). Für Flüssigkeiten gibt es das eigene Teil Liquid Import, für Strom FE Import."
+  ],
+  "en": [
+   "The quickest way to an Area piece is the GPS Area Tool ({{pneumaticcraft_advanced/gps}}). For fluids there is a separate Liquid Import piece, for power FE Import."
+  ],
+  "sources": [
+   "config/pneumaticcraft/ProgrammingPuzzleBlacklist.cfg (blacklist empty; liquid_import, rf_import)"
+  ],
+  "client": [
+   "in-game names of the Liquid Import and FE Import pieces"
+  ]
+ },
+ "pz_export": {
+  "de": [
+   "Die Gegenstücke für Flüssigkeit und Strom heißen Liquid Export und FE Export. Drop Item wirft die Ladung einfach in den Bereich, wenn keine Kiste da ist."
+  ],
+  "en": [
+   "The counterparts for fluids and power are Liquid Export and FE Export. Drop Item simply drops the load into the area when there is no chest."
+  ],
+  "sources": [
+   "config/pneumaticcraft/ProgrammingPuzzleBlacklist.cfg (liquid_export, rf_export, drop_item)"
+  ],
+  "client": [
+   "in-game names of the Liquid Export, FE Export and Drop Item pieces"
+  ]
+ },
+ "pz_goto": {
+  "de": [
+   "Bleibt die Drohne unterwegs an einem Block hängen, teleportiert sie sich nach 20 Ticks, also einer Sekunde, ans Ziel. Eine Grenze für die Teleportweite gibt es auf diesem Server nicht."
+  ],
+  "en": [
+   "If the drone gets stuck on a block on its way, it teleports to the target after 20 ticks, one second. There is no limit on the teleport distance on this server."
+  ],
+  "sources": [
+   "config/pneumaticcraft-common.toml (stuck_drone_teleport_ticks 20, max_drone_teleport_range 0)"
+  ]
+ },
+ "pz_dig": {
+  "de": [
+   "Gräbt sich die Drohne ein, nimmt sie Erstickungsschaden; lass sie lieber von oben nach unten arbeiten. Ein Area-Teil umfasst höchstens 250 000 Blöcke, für eine große Grube teilst du es auf oder nimmst den {{pneumaticcraft_advanced/controller_block}}."
+  ],
+  "en": [
+   "A drone that digs itself in takes suffocation damage; let it work from the top down. One Area piece holds at most 250,000 blocks; for a big pit split it up or use the {{pneumaticcraft_advanced/controller_block}}."
+  ],
+  "sources": [
+   "config/pneumaticcraft-common.toml (enable_drone_suffocation true, max_programming_area 250000)"
+  ]
+ },
+ "pz_place": {
+  "de": [
+   "Ohne Inventory Upgrades trägt die Drohne nur einen Stapel, für größere Bauten lohnen sich die {{pneumaticcraft_advanced/drone_upgrades}}. Setz Import und Place in eine Schleife, dann holt sie sich nach jedem Stapel Nachschub."
+  ],
+  "en": [
+   "Without Inventory Upgrades the drone carries a single stack, so bigger builds want the {{pneumaticcraft_advanced/drone_upgrades}}. Put Import and Place in a loop and it fetches more after every stack."
+  ],
+  "sources": [
+   "pneumaticcraft:inventory_upgrade"
+  ]
+ },
+ "pz_harvest": {
+  "de": [
+   "Harvest kennt Feldfrüchte, Netherwarzen, Kakao, Süßbeeren, Kaktus und Zuckerrohr sowie Bäume und Laub. Für Felder ohne Programm gibt es die fertige {{pneumaticcraft_advanced/harvesting_drone}}."
+  ],
+  "en": [
+   "Harvest knows crops, nether wart, cocoa, sweet berries, cactus and sugar cane, plus trees and leaves. For fields without a program there is the ready made {{pneumaticcraft_advanced/harvesting_drone}}."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/common/harvesting/HarvestHandler*.class"
+  ]
+ },
+ "first_program": {
+  "de": [
+   "Die Quest hakt sich ab, sobald du im Programmer **irgendein** Programm auf eine Drohne schreibst; ob sie es dann richtig ausführt, ist egal.",
+   "Danach lohnt der {{pneumaticcraft_advanced/controller_block}}, der dieselben Programme ohne fliegende Drohne ausführt."
+  ],
+  "en": [
+   "The quest ticks as soon as you write **any** program onto a drone in the Programmer; whether it then runs correctly does not matter.",
+   "After that the {{pneumaticcraft_advanced/controller_block}} is worth it: it runs the same programs without a flying drone."
+  ],
+  "sources": [
+   "pneumaticcraft jar: data/pneumaticcraft/advancement/program_drone.json",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (advancement.program_drone.desc)"
+  ]
+ },
+ "frames": {
+  "de": [
+   "Die [[pneumaticcraft:reinforced_brick_tile]] für den Logistics Core machst du wie in {{pneumaticcraft/reinforced_stone}}. Ein Rahmen allein schickt noch nichts: Es braucht eine {{pneumaticcraft_advanced/logistics_drone}} oder {{pneumaticcraft_advanced/logistics_module}} dazu.",
+   "Mit dem Logistics Configurator nimmst du Rahmen per Schleichen und Rechtsklick wieder ab."
+  ],
+  "en": [
+   "You make the [[pneumaticcraft:reinforced_brick_tile]] for the Logistics Core as in {{pneumaticcraft/reinforced_stone}}. A frame alone moves nothing: it needs a {{pneumaticcraft_advanced/logistics_drone}} or {{pneumaticcraft_advanced/logistics_module}}.",
+   "With the Logistics Configurator, sneak and right click to take frames off again."
+  ],
+  "sources": [
+   "pneumaticcraft:logistics_core",
+   "pneumaticcraft:logistics_frame_passive_provider",
+   "pneumaticcraft:logistics_configurator",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (logistics_configurator tooltip)"
+  ]
+ },
+ "logistics_drone": {
+  "de": [
+   "Ihr Gebiet reicht 16 Blöcke in jede Richtung vom Startpunkt, auch nach oben und unten. Geht ihr die Luft aus, fliegt sie zur nächsten Charging Station mit Dispenser Upgrade im Umkreis von 80 Blöcken.",
+   "Die acht Storage-Rahmen der Belohnung reichen für ein kleines Lager."
+  ],
+  "en": [
+   "Its area reaches 16 blocks in every direction from where you place it, up and down too. When it runs low on air it flies to the nearest Charging Station with a Dispenser Upgrade within 80 blocks.",
+   "The eight storage frames of the reward are enough for a small store."
+  ],
+  "sources": [
+   "pneumaticcraft jar: AbstractBasicDroneEntity.standard16x16x16Area (offset 16)",
+   "config/pneumaticcraft-common.toml (max_drone_charging_station_search_range 80)"
+  ]
+ },
+ "harvesting_drone": {
+  "de": [
+   "Ins Rezept passt jede Feldfrucht aus dem Tag c:crops. Ihr Feld reicht 8 Blöcke in jede Richtung vom Startpunkt.",
+   "Die [[pneumaticcraft:collector_drone]] der Belohnung setzt du daneben auf den Boden neben eine Kiste, dann sammelt sie alles ein. Setzt du sie auf die Kiste, nimmt sie nur, was beim Absetzen schon darin lag."
+  ],
+  "en": [
+   "Any crop from the c:crops tag fits the recipe. Its field reaches 8 blocks in every direction from where you place it.",
+   "Place the [[pneumaticcraft:collector_drone]] of the reward on the ground next to a chest and it collects everything. Placed on the chest it only takes what was already inside when you placed it."
+  ],
+  "sources": [
+   "pneumaticcraft:harvesting_drone",
+   "pneumaticcraft jar: HarvestingDroneEntity (area 16x16x16 centred), CollectorDroneEntity",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (collector_drone tooltip)"
+  ]
+ },
+ "guard_drone": {
+  "de": [
+   "Das Wachgebiet hängt an der Kiste, nicht an der Stelle, an der sie gerade fliegt. Die zwei Eisenschwerter der Belohnung legst du gleich als Ersatz hinein."
+  ],
+  "en": [
+   "The guard area is centred on the chest, not on where the drone happens to fly. Put the two iron swords of the reward straight into it as spares."
+  ],
+  "sources": [
+   "pneumaticcraft jar: GuardDroneEntity (offset -16,-5,-16 to 16,8,16)",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (guard_drone tooltip)"
+  ]
+ },
+ "aerial_interface": {
+  "de": [
+   "**Unter 10 bar tut der Block nichts**, er gehört also an ein 20-bar-Netz aus Advanced Pressure Tubes. Er arbeitet für den Spieler, der ihn gesetzt hat; die Sperrliste der Dimensionen ist auf Kronwerke leer, und auch Curios-Plätze erreicht er.",
+   "Den [[minecraft:nether_star]] holst du dir beim Wither ({{nether/f_wither}})."
+  ],
+  "en": [
+   "**Below 10 bar the block does nothing**, so it belongs on a 20 bar network of Advanced Pressure Tubes. It works for the player who placed it; the dimension blacklist is empty on Kronwerke, and it reaches Curios slots too.",
+   "You get the [[minecraft:nether_star]] from the Wither ({{nether/f_wither}})."
+  ],
+  "sources": [
+   "pneumaticcraft:aerial_interface",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (MIN_PRESSURE_AERIAL_INTERFACE 10.0)",
+   "config/pneumaticcraft-common.toml (aerial_interface_dimension_blacklist [], curios_aerial_interface_access true)"
+  ],
+  "client": [
+   "whether the Aerial Interface reaches a player who is on another server (Nether, End, farm world)"
+  ]
+ },
+ "universal_sensor": {
+  "de": [
+   "Den [[pneumaticcraft:seismic_sensor]] kennst du aus {{pneumaticcraft/find_oil}}. Steckt ein GPS Area Tool statt eines GPS Tools drin, überwacht er einen ganzen Bereich, misst dann aber seltener."
+  ],
+  "en": [
+   "You know the [[pneumaticcraft:seismic_sensor]] from {{pneumaticcraft/find_oil}}. With a GPS Area Tool instead of a GPS Tool it watches a whole area, but measures less often."
+  ],
+  "sources": [
+   "pneumaticcraft:universal_sensor",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (universal_sensor tooltip)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (USAGE_UNIVERSAL_SENSOR 1)"
+  ]
+ },
+ "security_station": {
+  "de": [
+   "**Hacken ist auf Kronwerke ausgeschaltet**: Die Station ist reiner Schutz, auch mit Pneumatic Helmet kann sie niemand knacken. Ausgenommen sind nur Server-Operatoren, Spieler im Kreativmodus nicht.",
+   "In deinen Claims schützt dich schon FTB Chunks ({{start_here/v_claim}}); die Station lohnt sich vor allem außerhalb. Die Network-Teile sind Truhen mit Farbstoff und Plastik, der Network IO Port nimmt Kondensatoren statt Plastik."
+  ],
+  "en": [
+   "**Hacking is switched off on Kronwerke**: the station is pure protection, nobody can crack it, not even with a Pneumatic Helmet. Only server operators are exempt, players in creative mode are not.",
+   "Inside your claims FTB Chunks already protects you ({{start_here/v_claim}}); the station is mainly worth it outside them. The network parts are chests with dye and plastic, the Network IO Port takes capacitors instead of plastic."
+  ],
+  "sources": [
+   "config/pneumaticcraft-common.toml (security_station_allow_hacking false, security_station_creative_players_exempt false)",
+   "pneumaticcraft:network_io_port",
+   "pneumaticcraft:network_registry",
+   "pneumaticcraft:diagnostic_subroutine",
+   "pneumaticcraft:network_node"
+  ]
+ },
+ "controller_block": {
+  "de": [
+   "Im Rezept steckt eine [[pneumaticcraft:drone]] und damit ein Präzisionsgetriebe, dazu das {{pneumaticcraft_advanced/remote}}. Er hält auch Chunks geladen, wenn du offline bist: Auf diesem Server gibt es dafür keine Zeitgrenze."
+  ],
+  "en": [
+   "The recipe holds a [[pneumaticcraft:drone]], and with it a precision mechanism, plus the {{pneumaticcraft_advanced/remote}}. It also keeps chunks loaded while you are offline: there is no time limit for that on this server."
+  ],
+  "sources": [
+   "pneumaticcraft:programmable_controller",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (USAGE_PROGRAMMABLE_CONTROLLER 10)",
+   "config/pneumaticcraft-common.toml (chunkload_offline_time 0)"
+  ],
+  "client": [
+   "chunk loading of the Programmable Controller with Chunkloader Upgrades together with FTB Chunks"
+  ]
+ },
+ "spawner_extractor": {
+  "de": [
+   "Den Unterdruck macht die Vacuum Pump aus {{pneumaticcraft/vacuum_pump}}. Die [[minecraft:ghast_tear]] für den Agitator kommt vom Ghast im Nether, die Drill Pipe sind drei Pressure Tubes übereinander (gibt drei).",
+   "Den Leeren Spawner brauchst du gleich für den {{pneumaticcraft_advanced/pressurized_spawner}}."
+  ],
+  "en": [
+   "The vacuum comes from the Vacuum Pump of {{pneumaticcraft/vacuum_pump}}. The [[minecraft:ghast_tear]] for the agitator drops from ghasts in the Nether, and a drill pipe is three pressure tubes stacked (gives three).",
+   "You need the Empty Spawner right away for the {{pneumaticcraft_advanced/pressurized_spawner}}."
+  ],
+  "sources": [
+   "pneumaticcraft:spawner_extractor",
+   "pneumaticcraft:spawner_agitator",
+   "pneumaticcraft:drill_pipe",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (empty_spawner tooltip)"
+  ]
+ },
+ "vacuum_trap": {
+  "de": [
+   "Flüssige Erfahrung bekommst du auch von Drohnen: Sie dürfen hier Erfahrungskugeln einsammeln und machen daraus Memory Essence. Für den Core aus der Shell nimmt die Plant jede Erfahrungsflüssigkeit aus dem Tag c:experience."
+  ],
+  "en": [
+   "Drones can supply liquid experience too: on this server they may pick up experience orbs and turn them into Memory Essence. For a core from the shell the plant takes any experience fluid of the c:experience tag."
+  ],
+  "sources": [
+   "config/pneumaticcraft-common.toml (drones_can_import_xp_orbs true)",
+   "pneumaticcraft:thermo_plant/spawner_core",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (vacuum_trap tooltip)"
+  ]
+ },
+ "pressurized_spawner": {
+  "de": [
+   "Jeder Spawnversuch kostet 150 mL Luft, und unter 10 bar läuft er nicht. Ein Advanced Compressor an einem Advanced Pressure Tube hält ihn sicher am Laufen.",
+   "Für Modelle der Simulationskammer siehe {{hostile_networks/sim_chamber}}."
+  ],
+  "en": [
+   "Every spawn attempt costs 150 mL of air, and below 10 bar it does not run. An Advanced Compressor on an Advanced Pressure Tube keeps it running safely.",
+   "For models of the simulation chamber see {{hostile_networks/sim_chamber}}."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues.class (USAGE_PRESSURIZED_SPAWNER 150)",
+   "config/pneumaticcraft-common.toml (pressurized_spawner_min_pressure 10.0)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "In Stufe 4 öffnen Pneumatic Helmet, Chestplate, Leggings und Boots, Minigun, Minigun Upgrade, Micromissiles und die Sentry Turret. Das Jet Boots Upgrade und das Scuba Upgrade sind schon jetzt offen, du kannst sie also vorbauen."
+  ],
+  "en": [
+   "Stage 4 opens the Pneumatic Helmet, Chestplate, Leggings and Boots, the Minigun, the Minigun Upgrade, the Micromissiles and the Sentry Turret. The Jet Boots Upgrade and the Scuba Upgrade are open already, so you can build them ahead."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage4.json",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "reinforced_canister": {
+  "de": [
+   "Der [[pneumaticcraft:reinforced_air_canister]] hat 12 000 mL Volumen, viermal so viel wie der normale Air Canister mit 3 000 mL. Bei 20 bar fasst er 240 000 mL Luft statt 30 000, also das Achtfache.",
+   "Vier davon ergeben das Array mit 48 000 mL Volumen für {{pneumaticcraft_advanced/reinforced_valve}}."
+  ],
+  "en": [
+   "The [[pneumaticcraft:reinforced_air_canister]] has 12,000 mL of volume, four times the 3,000 mL of a basic Air Canister. At 20 bar it holds 240,000 mL of air instead of 30,000, eight times as much.",
+   "Four of them make the Array with 48,000 mL of volume for {{pneumaticcraft_advanced/reinforced_valve}}."
+  ],
+  "sources": [
+   "pneumaticcraft jar: AirCanisterItem$CanisterType (REINFORCED 240000/12000, BASIC 30000/3000, REINFORCED_ARRAY 960000/48000)",
+   "pneumaticcraft:reinforced_air_canister_array"
+  ]
+ },
+ "reinforced_valve": {
+  "de": [
+   "Jedes verstärkte Ventil kostet ein Array, also vier Reinforced Air Canisters und damit vier Advanced Pressure Tubes. Zusammengesetzt wird es formlos, fertig macht es der Laser mit dem Programm Laser."
+  ],
+  "en": [
+   "Every reinforced valve costs one Array, that is four Reinforced Air Canisters and with them four Advanced Pressure Tubes. It is combined shapeless, and the laser with the Laser program finishes it."
+  ],
+  "sources": [
+   "pneumaticcraft:unassembled_reinforced_pressure_chamber_valve",
+   "pneumaticcraft:assembly/reinforced_pressure_chamber_valve",
+   "pneumaticcraft:reinforced_air_canister_array"
+  ]
+ },
+ "drill_bits": {
+  "de": [
+   "Schmiermittel machst du in der Thermopneumatic Processing Plant aus 1 000 mB Diesel oder Biodiesel und einem Redstone bei mindestens 100 Grad, oder du kaufst es am Amadron Tablet: 5 Smaragde für 1 000 mB. Die Belohnung gibt dir zwei Eimer zurück.",
+   "Der Diamantkopf kann 1x1, 1x2, 1x3, 3x3 und Erz- und Stammadern; der Netheritkopf zusätzlich das volle 3x3 und Adern aus allen Blöcken."
+  ],
+  "en": [
+   "You make lubricant in the Thermopneumatic Processing Plant from 1,000 mB of diesel or biodiesel and one redstone at 100 degrees or more, or buy it on the Amadron Tablet: 5 emeralds for 1,000 mB. The reward gives you two buckets back.",
+   "The diamond bit does 1x1, 1x2, 1x3, 3x3 and veins of ores and logs; the netherite bit adds the full 3x3 and veins of any block."
+  ],
+  "sources": [
+   "pneumaticcraft:thermo_plant/diamond_drill_bit",
+   "pneumaticcraft:thermo_plant/lubricant_from_diesel",
+   "pneumaticcraft:thermo_plant/lubricant_from_biodiesel",
+   "pneumaticcraft:amadron/emerald_to_lubricant",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (drill_bit tooltips)"
+  ]
+ },
+ "large_tank": {
+  "de": [
+   "Der Small Tank fasst 32 000 mB. Tanks verbinden sich mit dem Wrench nur, wenn einer leer ist oder beide dieselbe Flüssigkeit haben. Für den Large Tank baust du also zwei Medium Tanks, das sind vier Small Tanks."
+  ],
+  "en": [
+   "The Small Tank holds 32,000 mB. Tanks only join with the wrench if one is empty or both hold the same fluid. The Large Tank takes two Medium Tanks, that is four Small Tanks."
+  ],
+  "sources": [
+   "pneumaticcraft:medium_tank",
+   "pneumaticcraft:large_tank",
+   "pneumaticcraft:huge_tank",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (small_tank, medium_tank, large_tank, huge_tank tooltips)"
+  ]
+ },
+ "drone_upgrades": {
+  "de": [
+   "In die Ecken jedes Upgrades gehört Lapis oder die Upgrade Matrix aus {{pneumaticcraft_advanced/solar_cell}}, mit der aus einem Lapis vier Upgrades werden. Das Speed Upgrade braucht vier Zucker und einen Eimer Schmiermittel in der Mitte."
+  ],
+  "en": [
+   "Every upgrade takes lapis or the Upgrade Matrix from {{pneumaticcraft_advanced/solar_cell}} in its corners; with the matrix one lapis makes four upgrades. The Speed Upgrade needs four sugar and a bucket of lubricant in the middle."
+  ],
+  "sources": [
+   "pneumaticcraft jar: data/pneumaticcraft/tags/item/upgrade_components.json",
+   "pneumaticcraft:inventory_upgrade",
+   "pneumaticcraft:magnet_upgrade",
+   "pneumaticcraft:speed_upgrade"
+  ]
+ },
+ "logistics_module": {
+  "de": [
+   "Die Luft kostet je Gegenstand 1 mL pro Block Entfernung und je mB Flüssigkeit 0,02 mL pro Block. Lange Wege mit viel Ware leeren das Rohr also schnell; ein eigener Kompressor am Netz hilft."
+  ],
+  "en": [
+   "Air costs 1 mL per item per block of distance and 0.02 mL per mB of fluid per block. Long ways with lots of goods drain the tube fast, so give the network its own compressor."
+  ],
+  "sources": [
+   "config/pneumaticcraft-common.toml ([logistics] item_transport_cost 1.0, fluid_transport_cost 0.02, min_pressure 3.0)",
+   "pneumaticcraft:logistics_module"
+  ]
+ },
+ "tag_filter": {
+  "de": [
+   "Die Reinforced Stone Slabs machst du aus Reinforced Stone ({{pneumaticcraft/reinforced_stone}}); ein Display Shelf wird an der Werkbank auch zum Display Table. Statt Papier kannst du einen fertigen Tag Filter in die Mitte legen und ihn neu beschreiben."
+  ],
+  "en": [
+   "You make the Reinforced Stone Slabs from reinforced stone ({{pneumaticcraft/reinforced_stone}}); a Display Shelf also turns into a Display Table in the crafting grid. Instead of paper you can put an existing Tag Filter into the middle and write it anew."
+  ],
+  "sources": [
+   "pneumaticcraft:display_table",
+   "pneumaticcraft:display_table_from_shelf",
+   "pneumaticcraft:tag_workbench",
+   "pneumaticcraft jar: assets/pneumaticcraft/lang/en_us.json (tag_workbench tooltip)"
+  ]
+ },
+ "remote": {
+  "de": [
+   "Der [[pneumaticcraft:network_io_port]] ist eine Truhe mit cyan Farbstoff und vier Kondensatoren, der Network Data Storage eine mit grauem Farbstoff und Plastik. Das Remote brauchst du auch für den {{pneumaticcraft_advanced/controller_block}}."
+  ],
+  "en": [
+   "The [[pneumaticcraft:network_io_port]] is a chest with cyan dye and four capacitors, the Network Data Storage one with grey dye and plastic. You also need the Remote for the {{pneumaticcraft_advanced/controller_block}}."
+  ],
+  "sources": [
+   "pneumaticcraft:network_io_port",
+   "pneumaticcraft:network_data_storage",
+   "pneumaticcraft:remote",
+   "pneumaticcraft:programmable_controller"
+  ]
+ }
+}

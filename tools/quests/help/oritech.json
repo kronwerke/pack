@@ -1,0 +1,866 @@
+{
+ "nickel": {
+  "de": [
+   "Nickel erzeugen auf diesem Server zwei Mods: Oritech zwischen Y -65 und 40, Immersive Engineering vom Grund der Welt bis Y 24. Beide geben dasselbe [[immersiveengineering:raw_nickel]], das die Quest zählt.",
+   "Plane großzügig: Spulen, Motoren, Item Pipes, Reaktorwände und der Maschinen-Rahmen brauchen alle Nickel. Ab der {{oritech/fragment_forge}} wird Rohes Nickel nebenbei auch zu Platin."
+  ],
+  "en": [
+   "Two mods generate nickel on this server: Oritech between Y -65 and 40, Immersive Engineering from the bottom of the world up to Y 24. Both give the same [[immersiveengineering:raw_nickel]] the quest counts.",
+   "Plan generously: coils, motors, item pipes, reactor walls and the machine frame all need nickel. From the {{oritech/fragment_forge}} on, raw nickel also gives platinum on the side."
+  ],
+  "sources": [
+   "oritech jar data/oritech/worldgen/placed_feature/ore_nickel.json",
+   "srv/config/immersiveengineering-server.toml [ores.nickel, ores.deep_nickel]",
+   "oritech:grinder/raw/nickel"
+  ]
+ },
+ "steel": {
+  "de": [
+   "Das 2x2-Rezept braucht zwei Eisen für einen Stahl. Billiger ist die Gießerei aus {{oritech/foundry}}: ein Eisen und ein [[oritech:coal_dust]]. Dasselbe Paar nimmt auch der erhitzte Mixer von Create und die Legierungsschmelze von Ender IO.",
+   "Der Obelisk zählt jeden Stahl mit dem Tag c:ingots/steel, egal aus welcher Mod. Die Zielmenge richtet sich nach der Zahl aktiver Spieler."
+  ],
+  "en": [
+   "The 2x2 recipe takes two iron for one steel. The foundry from {{oritech/foundry}} is cheaper: one iron and one [[oritech:coal_dust]]. Create's heated mixer and Ender IO's alloy smelter take the same pair.",
+   "The obelisk counts every steel with the c:ingots/steel tag, from any mod. The goal amount depends on the number of active players."
+  ],
+  "sources": [
+   "oritech:crafting/alloy/steel",
+   "oritech:foundry/alloy/steel",
+   "oritech:mixing/compat/create/steel",
+   "oritech:compat/enderio/alloy/steel",
+   "config/kronwerke/goals.json (stage3 tech #c:ingots/steel, scale)"
+  ]
+ },
+ "electrum": {
+  "de": [
+   "Das 2x2-Rezept kostet zwei Gold pro Barren, Gießerei, erhitzter Mixer und der Legierungsofen von Immersive Engineering je nur eins. Der Metallurgische Infuser von Mekanism macht aus Gold und Redstone Elektrumstaub.",
+   "Der Barren heißt im Spiel [[immersiveengineering:ingot_electrum]]. Für {{oritech/pipes}} brauchst du gleich einige."
+  ],
+  "en": [
+   "The 2x2 recipe costs two gold per ingot; the foundry, the heated mixer and Immersive Engineering's alloy kiln only one. Mekanism's Metallurgic Infuser turns gold and redstone into electrum dust.",
+   "In game the ingot is the [[immersiveengineering:ingot_electrum]]. You need several right away for {{oritech/pipes}}."
+  ],
+  "sources": [
+   "oritech:crafting/alloy/electrum",
+   "oritech:foundry/alloy/electrum",
+   "oritech:mixing/compat/create/electrum",
+   "oritech:compat/immersiveengineering/alloying/electrum",
+   "oritech:compat/mekanism/infusing/electrum_dust"
+  ]
+ },
+ "coils": {
+  "de": [
+   "An der Werkbank kosten vier Spulen sechs Nickel und drei Stahl. Sobald der Zusammenfüger aus {{oritech/assembler}} steht, bau sie dort: sechs Spulen aus einem Stahl, zwei Nickel und einem Kupfer.",
+   "Halte einen Vorrat: Jeder [[oritech:motor]] von Hand frisst zwei Spulen."
+  ],
+  "en": [
+   "At the crafting table four coils cost six nickel and three steel. Once the assembler from {{oritech/assembler}} runs, make them there: six coils from one steel, two nickel and one copper.",
+   "Keep a stock: every hand made [[oritech:motor]] eats two coils."
+  ],
+  "sources": [
+   "oritech:crafting/magnet",
+   "oritech:assembler/magnet",
+   "oritech:motor/motorcraft"
+  ]
+ },
+ "plating": {
+  "de": [
+   "Statt Kupfer gehen auch Eisen oder Nickel in die Mitte; das gibt Eisen- oder Nickelverstärkte Platten, die in Rezepten genauso zählen (Tag oritech:plating).",
+   "Jede Maschine will mehrere Platten, also lohnt sich später der Zusammenfüger: acht Stück aus zwei Stahl, einem Kupfer und einer Plastik Platte."
+  ],
+  "en": [
+   "Iron or nickel in the middle instead of copper gives iron or nickel plating, which counts the same in recipes (tag oritech:plating).",
+   "Every machine wants several, so the assembler pays off later: eight from two steel, one copper and one plastic sheet."
+  ],
+  "sources": [
+   "oritech:crafting/plating",
+   "oritech:crafting/iron",
+   "oritech:crafting/nickel",
+   "oritech:assembler/plating"
+  ]
+ },
+ "motor": {
+  "de": [
+   "Von Hand kostet ein Motor ein Nickel, **vier Stahl und zwei Spulen**: Nickel oben in der Mitte, darunter zwei Reihen Stahl, Spule, Stahl. Das ist teuer.",
+   "Der Zusammenfüger aus {{oritech/assembler}} macht zwei Motoren aus einem Nickel, einem Stahl und zwei Spulen. Bau von Hand nur, was du bis dahin brauchst: den Pulverizer und den Zusammenfüger selbst."
+  ],
+  "en": [
+   "By hand one motor costs one nickel, **four steel and two coils**: nickel top middle, then two rows of steel, coil, steel. That is expensive.",
+   "The assembler from {{oritech/assembler}} makes two motors from one nickel, one steel and two coils. Only craft what you need until then: the pulverizer and the assembler itself."
+  ],
+  "sources": [
+   "oritech:motor/motorcraft",
+   "oritech:assembler/motor"
+  ]
+ },
+ "generator": {
+  "de": [
+   "Auf Kronwerke sitzt ein [[create:andesite_casing]] statt eines Ofens im Rezept. Der Generator ist kein Multiblock und braucht keine Kerne, nimmt aber auch kein Steam Boiler Addon.",
+   "Er gibt höchstens 256 RF/t ab, also kann er seinen Puffer schnell an mehrere Maschinen verteilen. Später übernehmen {{oritech/lava_gen}} und {{oritech/bio_gen}}."
+  ],
+  "en": [
+   "On Kronwerke an [[create:andesite_casing]] replaces the furnace in the recipe. The generator is no multiblock and needs no cores, but it takes no steam boiler addon either.",
+   "It outputs up to 256 RF/t, so it can share its buffer with several machines quickly. Later {{oritech/lava_gen}} and {{oritech/bio_gen}} take over."
+  ],
+  "sources": [
+   "oritech:crafting/basicgen",
+   "kubejs/server_scripts/kronwerke/links.js (swap basicgen furnace -> andesite casing)",
+   "oritech jar BasicGeneratorEntity extends UpgradableGeneratorBlockEntity",
+   "srv/config/oritech-common.toml [basicGeneratorData]",
+   "oritech jar wiki machines/powergen/steam_engine_block.mdx"
+  ]
+ },
+ "cores": {
+  "de": [
+   "Rechtsklick auf eine Maschine zeigt kurz, wo ihre Kerne hin müssen. Mit einem Kern in der Hand setzt ein Rechtsklick auf die Maschine den nächsten Kern von selbst, wenn der Platz frei ist. Kerne lassen sich nicht zwischen Maschinen teilen.",
+   "Bessere Kerne machen nichts schneller, sie erlauben nur mehr Extender. Ohne Addon-Pläne reichen die [[oritech:machine_core_1]] aus Brettern."
+  ],
+  "en": [
+   "Right clicking a machine briefly shows where its cores must go. Right clicking it with a core in hand places the next core by itself if the spot is free. Cores cannot be shared between machines.",
+   "Better cores make nothing faster, they only allow more extenders. Without addon plans the plank [[oritech:machine_core_1]] are enough."
+  ],
+  "sources": [
+   "oritech:crafting/core1",
+   "oritech:crafting/core2",
+   "oritech jar wiki docs/multiblocks.mdx",
+   "oritech jar getCorePositions (Furnace 1, Centrifuge 1, Laser 1, Foundry 3, Assembler 3, Fragment Forge 7, Atomic Forge 8)"
+  ],
+  "client": [
+   "Core highlight on right click and auto placing a held core"
+  ]
+ },
+ "pipes": {
+  "de": [
+   "Item Pipes haben kein eigenes Inventar: Trichter können nicht hineinfüllen, ein Rohrstück muss aus dem Inventar ziehen. Gezogenes geht an das nächstgelegene freie Inventar im Netz.",
+   "Kann ein Gegenstand nirgends hin, blockiert er das Ziehen aus dieser Kiste. Ein Flüssigkeitsrohr zieht einen halben Eimer alle 3 Ticks; mehr bringt {{oritech/pipe_booster}}."
+  ],
+  "en": [
+   "Item pipes have no inventory: hoppers cannot fill them, a pipe section has to extract from an inventory. Extracted items go to the closest free inventory in the network.",
+   "If an item has nowhere to go, it blocks extraction from that chest. A fluid pipe pulls half a bucket every 3 ticks; {{oritech/pipe_booster}} brings more."
+  ],
+  "sources": [
+   "oritech:crafting/energy",
+   "oritech:crafting/item",
+   "oritech:crafting/fluidpipe",
+   "oritech:crafting/wrench",
+   "oritech jar wiki logistics/item_pipe.mdx",
+   "srv/config/oritech-common.toml [logistics]"
+  ]
+ },
+ "pulverizer": {
+  "de": [
+   "Der Pulverizer ist kein Multiblock und braucht keine Kerne. Statt des Kupferblocks unten in der Mitte geht auch eine Kupferverstärkte Platte.",
+   "Kleine Stäube im Ausgang fasst er selbst zusammen. Aus [[minecraft:ender_pearl]] macht er acht [[oritech:enderic_compound]], die Fragment Forge später zwölf."
+  ],
+  "en": [
+   "The pulverizer is no multiblock and needs no cores. A copper reinforced plating works instead of the copper block in the bottom middle.",
+   "It combines small dusts in its output by itself. From an [[minecraft:ender_pearl]] it makes eight [[oritech:enderic_compound]], the fragment forge later twelve."
+  ],
+  "sources": [
+   "oritech:crafting/pulverizer",
+   "oritech:crafting/pulverizeralt",
+   "oritech jar PulverizerBlockEntity extends UpgradableMachineBlockEntity",
+   "oritech:pulverizer/pearl_enderic",
+   "oritech:grinder/pearl_enderic",
+   "oritech jar wiki machines/processing/pulverizer_block.mdx"
+  ]
+ },
+ "furnace": {
+  "de": [
+   "Der Ofen braucht einen Kern direkt bei sich; der Rechtsklick zeigt die Stelle. Er schmilzt doppelt so schnell wie ein normaler Ofen.",
+   "Hast du schon Platin, geht auch Platin statt Silizium in das Rezept. Silizium brauchst du weiter für Pumpe, Fluid Addon und Exo-Stiefel."
+  ],
+  "en": [
+   "The furnace needs one core right next to it; a right click shows the spot. It smelts twice as fast as a normal furnace.",
+   "If you already have platinum, it can replace the silicon in the recipe. You keep needing silicon for the pump, the fluid addon and the exo boots."
+  ],
+  "sources": [
+   "oritech:crafting/electricfurnace",
+   "oritech:crafting/electricfurnacealt",
+   "oritech:crafting/alloy/rawsilicon",
+   "oritech:silicon_from_smelting_raw_silicon",
+   "oritech jar PoweredFurnaceBlockEntity getCorePositions",
+   "oritech jar wiki machines/processing/powered_furnace_block.mdx"
+  ]
+ },
+ "foundry": {
+  "de": [
+   "Der [[oritech:adamant_ingot]] kommt aus einem Diamanten und einem Nickel, ebenso im Legierungsofen von Immersive Engineering oder im erhitzten Mixer. Die Gießerei will drei Kerne und nimmt bis zu 1024 RF/t auf.",
+   "Sie macht auch [[oritech:energite_ingot]] aus Nickel und Fluxite, [[oritech:biosteel_ingot]] aus Raw Biopolymer und Eisen und [[oritech:duratium_ingot]] aus Platin und Netherit."
+  ],
+  "en": [
+   "The [[oritech:adamant_ingot]] comes from one diamond and one nickel, also in Immersive Engineering's alloy kiln or the heated mixer. The foundry needs three cores and takes up to 1024 RF/t.",
+   "It also makes [[oritech:energite_ingot]] from nickel and fluxite, [[oritech:biosteel_ingot]] from raw biopolymer and iron, and [[oritech:duratium_ingot]] from platinum and netherite."
+  ],
+  "sources": [
+   "oritech:crafting/foundry",
+   "oritech:foundry/alloy/adamant",
+   "oritech:foundry/alloy/energite",
+   "oritech:foundry/alloy/biosteel",
+   "oritech:foundry/alloy/duratium",
+   "kubejs/server_scripts/kronwerke/tech.js (foundry netherite removed)",
+   "kubejs/server_scripts/kronwerke/create.js (foundry brass removed)",
+   "srv/config/oritech-common.toml [foundryData]"
+  ]
+ },
+ "centrifuge": {
+  "de": [
+   "Die Zentrifuge braucht einen Kern und 64 RF/t. Das normale Rezept will eine Verarbeitungseinheit; das Ersatzrezept der Quest kommt ohne aus.",
+   "Mit Wasser und einem Fluid Addon wird sie zum Hauptweg für Plastik ({{oritech/plastic}}) und verdoppelt die Ausbeute der Clumps in {{oritech/fragment}}."
+  ],
+  "en": [
+   "The centrifuge needs one core and 64 RF/t. The normal recipe wants a processing unit; the quest's alternative recipe does without.",
+   "With water and a fluid addon it becomes the main road to plastic ({{oritech/plastic}}) and doubles the clump yield in {{oritech/fragment}}."
+  ],
+  "sources": [
+   "oritech:crafting/centrifugealt",
+   "oritech:crafting/centrifuge",
+   "oritech:centrifuge/carbon",
+   "srv/config/oritech-common.toml [centrifugeData]",
+   "oritech:centrifuge/fluid/clump/iron"
+  ]
+ },
+ "plastic": {
+  "de": [
+   "[[oritech:packed_wheat]] sind vier Weizen im Quadrat. Eine Plastik Platte kostet also vier Weizen und 750 mB Wasser; ein Weizenfeld mit Zerstörer und Ernte-Filter hält die Straße am Laufen.",
+   "Die Zentrifuge fasst 8 Eimer. Leg ein Rohr von einer Wasserquelle oder einer Pumpe direkt an die Zentrifuge, nicht ans Addon."
+  ],
+  "en": [
+   "[[oritech:packed_wheat]] is four wheat in a square. One plastic sheet therefore costs four wheat and 750 mB of water; a wheat field with a destroyer and crop filter keeps the line going.",
+   "The centrifuge holds 8 buckets. Run a pipe from a water source or a pump directly to the centrifuge, not to the addon."
+  ],
+  "sources": [
+   "oritech:packed_wheat",
+   "oritech:centrifuge/fluid/biopolymer",
+   "oritech:centrifuge/fluid/plasticoil",
+   "oritech:crafting/addon/fluid",
+   "srv/config/oritech-common.toml [centrifugeData] tankSizeInBuckets 8",
+   "oritech jar wiki machines/processing/centrifuge_block.mdx"
+  ]
+ },
+ "assembler": {
+  "de": [
+   "Der Werker im Rezept ist der Werker aus Vanilla ([[minecraft:crafter]]). Der Zusammenfüger will drei Kerne und arbeitet mit vier Eingangsplätzen; zwei gleiche Zutaten darf er aus einem Platz nehmen.",
+   "Ab jetzt baust du Spulen, Motoren, Platten, die Enderische Linse und das Flux Gate hier. Für Automatisierung gibt es die Eingabemodi Fill-Evenly und Sided."
+  ],
+  "en": [
+   "The crafter in the recipe is the vanilla [[minecraft:crafter]]. The assembler needs three cores and has four input slots; it may take two of the same ingredient from one slot.",
+   "From now on coils, motors, plating, the enderic lens and the flux gate are made here. For automation there are the Fill-Evenly and Sided input modes."
+  ],
+  "sources": [
+   "oritech:crafting/assembler",
+   "oritech:assembler/processingunit",
+   "oritech jar wiki machines/processing/assembler_block.mdx"
+  ]
+ },
+ "laser": {
+  "de": [
+   "Der Laser braucht einen Kern. Er zielt auf eine Richtung, nicht auf einen Block: Er zerstört alles auf dieser Linie, bis ihn etwas aufhält oder ein Redstone-Signal ihn stoppt.",
+   "Fluxite macht er aus [[minecraft:amethyst_cluster]]; einen [[minecraft:budding_amethyst]] lässt er dabei viel schneller wachsen, ohne ihn zu zerstören. Den Knospenblock bekommst du in {{occultism_afrit/budding_amethyst}}."
+  ],
+  "en": [
+   "The laser needs one core. It aims at a direction, not at a block: it destroys everything on that line until something stops it or a redstone signal halts it.",
+   "It makes fluxite from [[minecraft:amethyst_cluster]], and it makes a [[minecraft:budding_amethyst]] grow much faster without breaking it. Get the budding block in {{occultism_afrit/budding_amethyst}}."
+  ],
+  "sources": [
+   "oritech:crafting/laserarm",
+   "oritech:laser/fluxite",
+   "oritech jar wiki machines/utility/laser_arm_block.mdx",
+   "kubejs/server_scripts/kronwerke/ae2.js (laser certus removed)",
+   "srv/config/oritech-common.toml [laserArmConfig]"
+  ]
+ },
+ "atomic_forge": {
+  "de": [
+   "Energierohre docken nicht an: Richte einen Laser aus {{oritech/laser}} auf die Forge. Jedes Rezept muss die Forge erst bis zu seiner Energie laden, mehr Laser oder Speed Addons am Laser machen sie also schneller.",
+   "Duratium gibt es auch hier aus Platin und zwei Reinforced Carbon Sheets, und aus einem Gold Gem oder Iron Gem mit zwei Fluxite werden zwei Staub."
+  ],
+  "en": [
+   "Energy pipes do not connect: aim a laser from {{oritech/laser}} at the forge. Every recipe has to charge the forge to its energy first, so more lasers or speed addons on the laser make it faster.",
+   "Duratium also comes from platinum and two reinforced carbon sheets here, and a gold or iron gem with two fluxite becomes two dust."
+  ],
+  "sources": [
+   "oritech:crafting/atomicforge",
+   "oritech:atomicforge/duratium",
+   "oritech:atomicforge/dust/iron",
+   "oritech:atomicforge/reinfdeepslate",
+   "srv/config/oritech-common.toml [atomicForgeData] maxEnergyInsertion 0",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "oritech jar wiki machines/processing/atomic_forge_block.mdx"
+  ]
+ },
+ "destroyer": {
+  "de": [
+   "Der Maschinen-Rahmen sind **drei** Eisengitter in einer Spalte und zwei Nickel links und rechts in der Mitte, das gibt 16 Stück. Der Zerstörer selbst braucht zwei Kerne.",
+   "Wie lange ein Block dauert, hängt von seiner Härte ab. Für eine Farm kommen {{oritech/addon_crop}} und ein Platzierer dazu, für einen Steinbruch {{oritech/addon_quarry}}."
+  ],
+  "en": [
+   "The machine frame is **three** iron bars in a column with two nickel left and right in the middle, giving 16. The destroyer itself needs two cores.",
+   "How long a block takes depends on its hardness. A farm adds {{oritech/addon_crop}} and a placer, a quarry {{oritech/addon_quarry}}."
+  ],
+  "sources": [
+   "oritech:crafting/frame",
+   "oritech:crafting/destroyer",
+   "oritech jar DestroyerBlockEntity getCorePositions (2)",
+   "oritech jar wiki machines/gantries/destroyer_block.mdx",
+   "srv/config/oritech-common.toml machineFrameMaxLength 64"
+  ]
+ },
+ "platinum": {
+  "de": [
+   "Im End gibt es viel mehr Platin, aber das End öffnet erst mit Stufe 4. Bis dahin gräbst du tief in der Oberwelt.",
+   "Sobald die {{oritech/fragment_forge}} läuft, kommt Platin nebenbei: Ein Nickelerz gibt dort zwei Rohes Nickel und ein [[oritech:raw_platinum]], ein Rohes Nickel zwei kleine Platin-Clumps. Platinerz selbst gibt dort zusätzlich Fluxite."
+  ],
+  "en": [
+   "The End has far more platinum, but the End only opens in stage 4. Until then, dig deep in the Overworld.",
+   "Once the {{oritech/fragment_forge}} runs, platinum comes on the side: nickel ore gives two raw nickel and one [[oritech:raw_platinum]] there, raw nickel two small platinum clumps. Platinum ore itself also gives fluxite there."
+  ],
+  "sources": [
+   "oritech jar worldgen placed_feature ore_platinum.json, ore_platinum_end.json",
+   "docs/STAGES.md (the End in stage 4)",
+   "oritech:grinder/ore/nickel",
+   "oritech:grinder/raw/nickel",
+   "oritech:grinder/ore/platinum",
+   "oritech:assembler/fluxgate"
+  ]
+ },
+ "fragment_forge": {
+  "de": [
+   "Sieben Kerne und bis zu 2048 RF/t Eingang: Plane zwei oder drei Generatoren oder einen Lavagenerator. Ins Flux Gate gehen eine Verarbeitungseinheit, zwei Fluxite und ein Platinbarren.",
+   "Mit Behutsamkeit abgebaute Erzblöcke lohnen sich hier besonders: Sie werden erst zu Rohem Erz und dann zu Clumps. Weiter geht es mit {{oritech/clumps}}."
+  ],
+  "en": [
+   "Seven cores and up to 2048 RF/t input: plan two or three generators or a lava generator. The flux gate takes a processing unit, two fluxite and one platinum ingot.",
+   "Silk touched ore blocks pay off especially here: they become raw ore first and then clumps. Continue with {{oritech/clumps}}."
+  ],
+  "sources": [
+   "oritech:crafting/crusher",
+   "oritech:assembler/fluxgate",
+   "oritech:grinder/ore/iron",
+   "srv/config/oritech-common.toml [fragmentForgeData]",
+   "oritech jar wiki docs/getting_started/fragmenting.mdx"
+  ]
+ },
+ "clumps": {
+  "de": [
+   "Ein Rohes Eisen gibt damit 1 1/3 Iron Clumps. Die kleinen Nickel-Clumps sammelst du ebenfalls und fasst sie zu neun zusammen.",
+   "Mehr als ein [[oritech:machine_yield_addon]] wirkt an der Fragment Forge nicht. Weiter zu {{oritech/fragment}}."
+  ],
+  "en": [
+   "One raw iron gives 1 1/3 iron clumps this way. Collect the small nickel clumps too and combine nine of them.",
+   "More than one [[oritech:machine_yield_addon]] does nothing on the fragment forge. Continue with {{oritech/fragment}}."
+  ],
+  "sources": [
+   "oritech:grinder/raw/iron",
+   "oritech:iron_clump",
+   "oritech jar wiki machines/processing/fragment_forge_block.mdx"
+  ]
+ },
+ "fragment": {
+  "de": [
+   "**Mit Wasser geht es doppelt:** Hat die Zentrifuge ein Fluid Addon und Wasser, wird ein Clump zu zwei [[oritech:iron_gem]]. Dann gibt ein Rohes Eisen rund vier Barren statt zwei.",
+   "Die Gems werden auch im Legierungsofen von Immersive Engineering und im erhitzten Mixer zu drei Barren. Mit Schwefelsäure statt Wasser gibt ein Clump sogar drei Gems."
+  ],
+  "en": [
+   "**With water it doubles:** if the centrifuge has a fluid addon and water, one clump becomes two [[oritech:iron_gem]]. Then one raw iron gives about four ingots instead of two.",
+   "Immersive Engineering's alloy kiln and the heated mixer also turn two gems into three ingots. With sulfuric acid instead of water one clump even gives three gems."
+  ],
+  "sources": [
+   "oritech:centrifuge/clump/iron",
+   "oritech:centrifuge/fluid/clump/iron",
+   "oritech:centrifuge/fluid/clumpacid/iron",
+   "oritech:foundry/alloy/gem/iron",
+   "oritech:compat/immersiveengineering/alloying/irongem",
+   "oritech:mixing/compat/create/irongem"
+  ]
+ },
+ "addons": {
+  "de": [
+   "Addons wirken nur an den Addon-Plätzen, die die Maschine im Tooltip nennt. Mehr Plätze gibt der Extender aus {{oritech/addon_extender}}.",
+   "Speed lohnt sich nur mit genug Strom: Zwei Speed Addons heißen doppeltes Tempo und 40 Prozent mehr Verbrauch. Gleiche das mit {{oritech/addon_efficiency}} aus."
+  ],
+  "en": [
+   "Addons only work on the addon slots the machine names in its tooltip. The extender from {{oritech/addon_extender}} adds more.",
+   "Speed only pays off with enough power: two speed addons mean double speed and 40 percent more use. Balance it with {{oritech/addon_efficiency}}."
+  ],
+  "sources": [
+   "oritech:crafting/addon/speed",
+   "srv/config/oritech-common.toml additiveAddons true",
+   "oritech jar wiki machines/addons/machine_speed_addon.mdx"
+  ]
+ },
+ "addon_efficiency": {
+  "de": [
+   "Auf diesem Server werden die Boni addiert: zwei Efficiency Addons sparen 40 Prozent. Ein Speed und ein Efficiency Addon zusammen geben 50 Prozent mehr Tempo bei gleichem Verbrauch.",
+   "Es wirkt an allen Maschinen, die pro Arbeitstick Strom ziehen."
+  ],
+  "en": [
+   "On this server the bonuses add up: two efficiency addons save 40 percent. One speed and one efficiency addon together give 50 percent more speed for the same use.",
+   "It works on every machine that draws power per working tick."
+  ],
+  "sources": [
+   "oritech:crafting/addon/eff",
+   "srv/config/oritech-common.toml additiveAddons true",
+   "oritech jar wiki machines/addons/machine_efficiency_addon.mdx"
+  ]
+ },
+ "addon_capacitor": {
+  "de": [
+   "[[oritech:energite_ingot]] gießt die Gießerei aus einem Nickel und einem Fluxite; Fluxite macht der Laser aus Amethysthaufen. Der Legierungsofen und der erhitzte Mixer können es auch.",
+   "Es passt an alles mit Strom, auch an den Portablen Energiespeicher aus {{oritech/small_storage}}."
+  ],
+  "en": [
+   "The foundry casts [[oritech:energite_ingot]] from one nickel and one fluxite; the laser makes fluxite from amethyst clusters. The alloy kiln and the heated mixer can do it too.",
+   "It fits on anything with power, including the portable energy storage from {{oritech/small_storage}}."
+  ],
+  "sources": [
+   "oritech:crafting/addon/capacitor",
+   "oritech:foundry/alloy/energite",
+   "oritech:compat/immersiveengineering/alloying/energite",
+   "oritech jar wiki machines/addons/machine_capacitor_addon.mdx"
+  ]
+ },
+ "addon_acceptor": {
+  "de": [
+   "Leg das Energierohr direkt an das Addon, nicht an die Maschine. Es passt an alles mit Strom.",
+   "Den Energite-Barren für die Mitte gießt die Gießerei aus Nickel und Fluxite."
+  ],
+  "en": [
+   "Connect the energy pipe to the addon itself, not to the machine. It fits on anything with power.",
+   "The foundry casts the energite ingot for the middle from nickel and fluxite."
+  ],
+  "sources": [
+   "oritech:crafting/addon/acceptor",
+   "oritech jar wiki machines/addons/machine_acceptor_addon.mdx"
+  ]
+ },
+ "addon_burst": {
+  "de": [
+   "Den [[oritech:metal_girder_block]] formst du aus Stahl und Kohlefaser, er gibt sechs. Überhitzt die Maschine, läuft sie mit 80 Prozent Tempo und 20 Prozent mehr Verbrauch, bis sie abgekühlt ist.",
+   "Es wirkt an allen Maschinen mit Rezepten, etwa Pulverizer, Ofen und Zentrifuge. Die verbleibende Burst-Zeit zeigt das Maschinenfenster."
+  ],
+  "en": [
+   "The [[oritech:metal_girder_block]] is crafted from steel and carbon fibre and gives six. If the machine overheats it runs at 80 percent speed and 20 percent more power use until it cools down.",
+   "It works on all recipe machines such as the pulverizer, furnace and centrifuge. The machine window shows the remaining burst time."
+  ],
+  "sources": [
+   "oritech:crafting/addon/burst",
+   "oritech:crafting/metalgirder",
+   "oritech jar wiki machines/addons/machine_burst_addon.mdx",
+   "srv/config/oritech-common.toml burstAddonSpeedMultiplier 8"
+  ]
+ },
+ "addon_yield": {
+  "de": [
+   "Die [[oritech:enderic_lens]] baut der Zusammenfüger aus einem Adamant, einer Kohlefaser und zwei Enderic Compound.",
+   "Mit Silk Touch Addon zusammen gewinnt Behutsamkeit, das Yield Addon wirkt dann nicht. Mobbeute am Laser mit Hunter Addon erhöht es nicht."
+  ],
+  "en": [
+   "The assembler makes the [[oritech:enderic_lens]] from one adamant, one carbon fibre and two enderic compound.",
+   "Together with a silk touch addon, silk touch wins and the yield addon does nothing. It does not raise mob loot on a laser with a hunter addon."
+  ],
+  "sources": [
+   "oritech:crafting/addon/yield",
+   "oritech:assembler/enderlens",
+   "oritech jar wiki machines/addons/machine_yield_addon.mdx",
+   "oritech jar wiki machines/addons/machine_hunter_addon.mdx"
+  ]
+ },
+ "addon_quarry": {
+  "de": [
+   "Der Zerstörer gräbt mit Addon unter seiner ganzen Rahmenfläche in die Tiefe; mit drei Addons reicht das von der Oberfläche bis zum Grund der Welt.",
+   "Was er abbaut, landet in seinem Inventar: Häng ein Item Pipe an und leg eine Kiste ans Ende."
+  ],
+  "en": [
+   "With the addon the destroyer digs down under its whole frame area; three addons reach from the surface to the bottom of the world.",
+   "What it mines goes into its inventory: attach an item pipe and put a chest at the end."
+  ],
+  "sources": [
+   "oritech:crafting/addon/quarry",
+   "oritech jar wiki machines/addons/quarry_addon.mdx",
+   "oritech jar wiki machines/gantries/destroyer_block.mdx"
+  ]
+ },
+ "addon_silk": {
+  "de": [
+   "Damit holt der Zerstörer Erzblöcke ganz, die du dann in der {{oritech/fragment_forge}} mit mehr Ausbeute zerlegst.",
+   "Jede Wolle geht, auch gefärbte. Das Addon passt an Zerstörer und Laser; zusammen mit einem Yield Addon gewinnt Behutsamkeit."
+  ],
+  "en": [
+   "With it the destroyer takes ore blocks whole, which the {{oritech/fragment_forge}} then breaks down with a better yield.",
+   "Any wool works, dyed too. The addon fits the destroyer and the laser; together with a yield addon, silk touch wins."
+  ],
+  "sources": [
+   "oritech:crafting/addon/silktouch",
+   "oritech jar wiki machines/addons/machine_silk_touch_addon.mdx",
+   "oritech jar wiki docs/getting_started/fragmenting.mdx"
+  ]
+ },
+ "addon_crop": {
+  "de": [
+   "Der Filter schont im Arbeitsfeld auch Tiere. Ein [[oritech:fertilizer_block]] auf demselben Rahmen bewässert das Ackerland und lässt alles schneller wachsen; er braucht Wasser.",
+   "Ein Weizenfeld so liefert dir Packed Wheat für {{oritech/plastic}} und Biomasse für {{oritech/bio_gen}}."
+  ],
+  "en": [
+   "The filter also spares animals in the work area. A [[oritech:fertilizer_block]] on the same frame hydrates the farmland and speeds up growth; it needs water.",
+   "A wheat field run this way gives you packed wheat for {{oritech/plastic}} and biomass for {{oritech/bio_gen}}."
+  ],
+  "sources": [
+   "oritech:crafting/addon/cropfilter",
+   "oritech jar wiki machines/addons/crop_filter_addon.mdx",
+   "oritech jar wiki machines/gantries/fertilizer_block.mdx"
+  ]
+ },
+ "addon_hunter": {
+  "de": [
+   "Speed Addons machen mehr Schaden, Efficiency Addons senken den Verbrauch, Yield Addons bringen keine Extrabeute. Mit Ernte-Filter verschont er Jungtiere.",
+   "Häng ein Rohr an den Laser, sonst geht Beute verloren, wenn sein Inventar voll ist."
+  ],
+  "en": [
+   "Speed addons deal more damage, efficiency addons lower the use, yield addons add no extra loot. With a crop filter it spares baby animals.",
+   "Attach a pipe to the laser, or loot is lost once its inventory is full."
+  ],
+  "sources": [
+   "oritech:crafting/_hunter",
+   "oritech jar wiki machines/addons/machine_hunter_addon.mdx",
+   "oritech jar wiki machines/utility/laser_arm_block.mdx"
+  ]
+ },
+ "addon_redstone": {
+  "de": [
+   "Das Addon passt an jede Maschine. Der Portable Energiespeicher reagiert wie der Laser schon ohne Addon auf Redstone.",
+   "So schaltest du zum Beispiel Generatoren ab, wenn der Speicher voll ist."
+  ],
+  "en": [
+   "The addon fits on any machine. Like the laser, the portable energy storage already reacts to redstone without it.",
+   "Use it for example to switch generators off when the storage is full."
+  ],
+  "sources": [
+   "oritech:crafting/addon/redstone",
+   "oritech jar wiki machines/addons/machine_redstone_addon.mdx"
+  ]
+ },
+ "addon_proxy": {
+  "de": [
+   "Das Addon passt an alle Maschinen mit Item-Plätzen. Am Zusammenfüger gibst du so jeder Zutat ihren eigenen Eingang.",
+   "Einfacher geht es oft mit den Eingabemodi Fill-Evenly oder Sided im Fenster des Zusammenfügers."
+  ],
+  "en": [
+   "The addon fits on every machine with item slots. On the assembler it gives each ingredient its own input.",
+   "The Fill-Evenly or Sided input modes in the assembler window are often simpler."
+  ],
+  "sources": [
+   "oritech:crafting/addon/invproxy",
+   "oritech jar wiki machines/addons/machine_inventory_proxy_addon.mdx",
+   "oritech jar wiki machines/processing/assembler_block.mdx"
+  ]
+ },
+ "addon_steam": {
+  "de": [
+   "Das Addon passt an alle Generatoren außer dem Grundlegenden. Wasser und Dampf pumpst du am Addon ein und aus, nicht an der Maschine.",
+   "Der Dampf geht in die [[oritech:steam_engine_block]] (drei Kerne). Wie viel Strom sie daraus macht, hängt von ihrem Tempo ab, am besten läuft sie um 700 Prozent; etwa 20 Prozent des Wassers gehen verloren."
+  ],
+  "en": [
+   "The addon fits on every generator except the basic one. Pump water and steam in and out at the addon, not the machine.",
+   "The steam goes into the [[oritech:steam_engine_block]] (three cores). How much power it makes depends on its speed, best around 700 percent; about 20 percent of the water is lost."
+  ],
+  "sources": [
+   "oritech:crafting/addon/steamboiler",
+   "oritech:crafting/steamgen",
+   "oritech jar SteamEngineEntity getCorePositions (3)",
+   "oritech jar wiki machines/powergen/steam_engine_block.mdx",
+   "srv/config/oritech-common.toml [steamEngineData]"
+  ]
+ },
+ "addon_processing": {
+  "de": [
+   "Der Seelenbinder steht in {{enderio/soul_binder}}. Den [[oritech:dubios_container]] baust du an der Werkbank.",
+   "Mit drei Kammern verarbeitet die Maschine vier Rezepte gleichzeitig. Später gibt es ein zweites Rezept mit Flux Gate, Platin und Super AI Chip."
+  ],
+  "en": [
+   "The soul binder is in {{enderio/soul_binder}}. The [[oritech:dubios_container]] is made at the crafting table.",
+   "With three chambers the machine runs four recipes at once. Later there is a second recipe with a flux gate, platinum and a Super AI Chip."
+  ],
+  "sources": [
+   "oritech:crafting/addon/processingalt",
+   "oritech:crafting/addon/processing",
+   "oritech:compat/enderio/allaysoul",
+   "oritech:compat/enderio/phantomsoul",
+   "oritech:compat/enderio/vexsoul",
+   "oritech jar wiki machines/addons/machine_processing_addon.mdx"
+  ]
+ },
+ "addon_extender": {
+  "de": [
+   "Duratium gießt die Gießerei aus Platin und einem Netheritbarren. Auf diesem Server lassen sich Extender nicht in Schichten stapeln.",
+   "Mit einem Capacitor Addon formlos kombiniert wird daraus der Power Bank Addon Extender, der Plätze und Speicher zugleich gibt."
+  ],
+  "en": [
+   "The foundry casts duratium from platinum and a netherite ingot. On this server extenders cannot be layered.",
+   "Combined shapeless with a capacitor addon it becomes the Power Bank Addon Extender, which gives slots and storage at once."
+  ],
+  "sources": [
+   "oritech:crafting/extender",
+   "oritech:foundry/alloy/duratium",
+   "srv/config/oritech-common.toml layeredExtenders false",
+   "oritech:crafting/addon/capextender"
+  ],
+  "client": [
+   "What layeredExtenders = false changes in play"
+  ]
+ },
+ "jetpack": {
+  "de": [
+   "Ein zweites Rezept nimmt Schwarzpulver und eine Fortgeschrittene Batterie statt Lohenstaub und Redstoneblock. Das Jetpack sitzt im Brustplatz.",
+   "Mit Turbofuel fliegt es viel schneller; es fasst 4 Eimer und lädt mit 1024 RF/t. Weiter zu {{oritech/charger}} und {{oritech/exo}}."
+  ],
+  "en": [
+   "A second recipe takes gunpowder and an advanced battery instead of blaze powder and the redstone block. The jetpack goes in the chest slot.",
+   "With turbofuel it flies much faster; it holds 4 buckets and charges at 1024 RF/t. Continue with {{oritech/charger}} and {{oritech/exo}}."
+  ],
+  "sources": [
+   "oritech:crafting/basicjetpackalt",
+   "oritech:crafting/basicjetpack",
+   "oritech:crafting/boostedelytra",
+   "oritech jar wiki equipment/jetpack.mdx"
+  ]
+ },
+ "exo": {
+  "de": [
+   "Die [[oritech:advanced_battery]] für die Brust gießt sich aus Energite, Elektrum und Stahl. Die Stiefel erhöhen auch, wie tief du sicher fallen kannst.",
+   "Jedes Teil nimmt normale Rüstungsverzauberungen an. Die Brust überträgt bis 10 000 RF/t, ein Laser mit Hunter Addon kann sie aus der Ferne laden."
+  ],
+  "en": [
+   "The [[oritech:advanced_battery]] for the chest is made from energite, electrum and steel. The boots also raise how far you can fall safely.",
+   "Every piece takes normal armor enchantments. The chest moves up to 10 000 RF/t, and a laser with a hunter addon can charge it from afar."
+  ],
+  "sources": [
+   "oritech:crafting/exohelm",
+   "oritech:crafting/exochest",
+   "oritech:crafting/exolegs",
+   "oritech:crafting/exoboots",
+   "oritech:motor/advbattery",
+   "oritech:crafting/exojetpack",
+   "oritech jar wiki equipment/exo_suit.mdx",
+   "oritech jar wiki machines/utility/laser_arm_block.mdx"
+  ]
+ },
+ "augments": {
+  "de": [
+   "In der Research Station erforschst du ein Augment, im Augmentation Center baust du es ein. Steel-Infused Frame kostet beim Einbau 8 Platten, Synthetic Muscles 4 Motoren.",
+   "[[oritech:biosteel_ingot]] machen auch der Legierungsofen und der erhitzte Mixer. Strom ist der Engpass: 10 und 30 Millionen RF wollen einen Lavagenerator oder einen Reaktor."
+  ],
+  "en": [
+   "The research station researches an augment, the augmentation center installs it. Installing Steel-Infused Frame costs 8 plating, Synthetic Muscles 4 motors.",
+   "The alloy kiln and the heated mixer also make [[oritech:biosteel_ingot]]. Power is the bottleneck: 10 and 30 million RF want a lava generator or a reactor."
+  ],
+  "sources": [
+   "oritech:crafting/augment/applicator",
+   "oritech:crafting/augment/basic",
+   "oritech:augment/hpboost",
+   "oritech:augment/speedboost",
+   "oritech:foundry/alloy/biosteel",
+   "oritech:compat/immersiveengineering/alloying/biosteel",
+   "oritech jar AugmentApplicationEntity getCorePositions (10)"
+  ]
+ },
+ "uranium": {
+  "de": [
+   "Das Uranerz von Mekanism gibt dasselbe [[mekanism:raw_uranium]] und ist oft leichter zu finden. Leg Rohes Uran immer erst in den Pulverizer: Er macht zwei Uranstaub daraus, die Atomic Forge braucht pro Gem zwei Staub oder zwei Rohe Uran.",
+   "Die Uran-Kristalle wachsen nicht nach. Mit Duratium statt Nickel gibt der Zusammenfüger sogar vier Pellets."
+  ],
+  "en": [
+   "Mekanism's uranium ore gives the same [[mekanism:raw_uranium]] and is often easier to find. Always put raw uranium through the pulverizer first: it makes two uranium dust, and the atomic forge needs two dust or two raw uranium per gem.",
+   "The uranium crystals do not grow back. With duratium instead of nickel the assembler even gives four pellets."
+  ],
+  "sources": [
+   "oritech:pulverizer/uranium",
+   "oritech:atomicforge/urandustgem",
+   "oritech:atomicforge/urandust",
+   "oritech:assembler/uranpelletult",
+   "srv/config/Mekanism/world.toml [uranium]",
+   "oritech jar wiki resources/world/deepslate_uranium_ore.mdx"
+  ]
+ },
+ "reactor": {
+  "de": [
+   "Die Kühlung von außen heißt im Spiel [[oritech:reactor_absorber_port]]; Eis, Packeis und Blaues Eis kühlen gleich gut. Bau den Innenraum zuerst flach in einer Lage: Funktioniert er, stapelst du dieselbe Lage beliebig hoch.",
+   "Zum Testen nimm kleine Pellets, dann geht der Reaktor schneller aus. Warnsirenen kommen vor dem Schmelzen."
+  ],
+  "en": [
+   "The coolant input is called [[oritech:reactor_absorber_port]] in game; ice, packed ice and blue ice cool equally. Build the interior flat in one layer first: if it works, stack the same layer as high as you like.",
+   "Use small pellets for testing so the reactor stops sooner. Warning sirens sound before a meltdown."
+  ],
+  "sources": [
+   "oritech:crafting/reactorplatingcrafting",
+   "oritech:crafting/controller",
+   "oritech:crafting/singlerod",
+   "oritech:crafting/reactorvent",
+   "oritech:crafting/fuelport",
+   "oritech:crafting/energyport",
+   "oritech:crafting/absorberport",
+   "srv/config/oritech-common.toml [reactor]",
+   "oritech jar wiki docs/reactor/introduction.mdx",
+   "oritech jar wiki docs/reactor/designs.mdx",
+   "oritech jar wiki nuclear/reactor_absorber_port.mdx"
+  ]
+ },
+ "pump": {
+  "de": [
+   "Die Pumpe braucht keine Kerne, nur Strom. Bei sehr großen Seen dauert das Abtasten am Anfang einige Sekunden.",
+   "Sie holt auch Öl aus einer Ölquelle, die oft in Wüsten sprudelt; das braucht später die Raffinerie. Weiter zu {{oritech/lava_gen}}."
+  ],
+  "en": [
+   "The pump needs no cores, only power. With very large lakes the first scan takes a few seconds.",
+   "It also takes oil from an oil spring, often found in deserts; the refinery needs that later. Continue with {{oritech/lava_gen}}."
+  ],
+  "sources": [
+   "oritech:crafting/pump",
+   "oritech jar wiki machines/utility/pump_block.mdx",
+   "oritech jar wiki resources/world/still_oil_bucket.mdx"
+  ]
+ },
+ "lava_gen": {
+  "de": [
+   "Der Lavagenerator braucht auf diesem Server **einen** Kern, direkt über sich. Ein Eimer Lava hält bei ihm 1200 Ticks, also eine Minute.",
+   "Er gibt bis 512 RF/t ab. Für Dauerbetrieb pumpt die {{oritech/pump}} Lava in einen {{oritech/small_tank}} daneben."
+  ],
+  "en": [
+   "The lava generator needs **one** core on this server, right above it. One bucket of lava lasts 1200 ticks, one minute.",
+   "It outputs up to 512 RF/t. For non stop running the {{oritech/pump}} fills a {{oritech/small_tank}} next to it."
+  ],
+  "sources": [
+   "oritech:crafting/lavagen",
+   "oritech:lavagen/lava",
+   "oritech jar LavaGeneratorEntity getCorePositions (1 at 0,1,0)",
+   "srv/config/oritech-common.toml [lavaGeneratorData]"
+  ]
+ },
+ "bio_gen": {
+  "de": [
+   "Der Biogenerator braucht auf diesem Server **einen** Kern, direkt über sich. Biomasse brennt 500 Ticks, Packed Wheat direkt sogar 4000, Raw Biopolymer 6000.",
+   "Das Flux Gate kommt aus {{oritech/fragment_forge}}, Biostahl aus der Gießerei."
+  ],
+  "en": [
+   "The bio generator needs **one** core on this server, right above it. Biomass burns 500 ticks, packed wheat directly even 4000, raw biopolymer 6000.",
+   "The flux gate comes from {{oritech/fragment_forge}}, the biosteel from the foundry."
+  ],
+  "sources": [
+   "oritech:crafting/biogen",
+   "oritech:biogen/biomass",
+   "oritech:biogen/packedwheat",
+   "oritech:biogen/polymer",
+   "oritech jar BioGeneratorEntity getCorePositions (1 at 0,1,0)",
+   "oritech:pulverizer/packagedwheatbio"
+  ]
+ },
+ "small_storage": {
+  "de": [
+   "Die [[oritech:basic_battery]] baut der Zusammenfüger billiger: Plastik, zwei Elektrum und Stahl. Der Speicher hat zwei Addon-Plätze, etwa für {{oritech/addon_capacitor}}.",
+   "Gut als Puffer zwischen Generator und Maschinen oder als tragbare Batterie für Baustellen."
+  ],
+  "en": [
+   "The assembler makes the [[oritech:basic_battery]] cheaper: plastic, two electrum and steel. The storage has two addon slots, for example for {{oritech/addon_capacitor}}.",
+   "Good as a buffer between generators and machines, or as a portable battery for a building site."
+  ],
+  "sources": [
+   "oritech:crafting/smallstorage",
+   "oritech:motor/manualbattery",
+   "oritech:assembler/battery",
+   "oritech jar wiki logistics/small_storage_block.mdx",
+   "srv/config/oritech-common.toml [storageBlocks.smallEnergyStorage]"
+  ]
+ },
+ "small_tank": {
+  "de": [
+   "Du kannst Flüssigkeiten auch mit Eimern oder über die Plätze im Fenster ein- und ausfüllen. Gestapelte Tanks sind ein einfacher großer Speicher.",
+   "Neben dem {{oritech/lava_gen}} hält ein Tank voller Lava ihn über vier Stunden am Laufen."
+  ],
+  "en": [
+   "You can also fill and empty it with buckets or through the slots in its window. Stacked tanks make a simple large store.",
+   "Next to the {{oritech/lava_gen}} one full tank of lava keeps it running for over four hours."
+  ],
+  "sources": [
+   "oritech:crafting/stank",
+   "oritech jar wiki logistics/small_tank_block.mdx",
+   "srv/config/oritech-common.toml portableTankCapacityBuckets 256",
+   "oritech:lavagen/lava"
+  ]
+ },
+ "item_filter": {
+  "de": [
+   "Der Filter hat ein eigenes Inventar mit einem Platz und zieht selbst nichts aus Nachbarinventaren.",
+   "Zusammen mit {{oritech/pipes}}: Rohr zieht aus der Kiste, Filter vor jedem Ziel, fertig ist die Sortierung."
+  ],
+  "en": [
+   "The filter has a one slot inventory of its own and does not pull from neighbouring inventories itself.",
+   "Together with {{oritech/pipes}}: a pipe extracts from the chest, a filter sits in front of each target, and the sorting is done."
+  ],
+  "sources": [
+   "oritech:crafting/itemfilter",
+   "oritech jar wiki logistics/item_filter_block.mdx"
+  ]
+ },
+ "pipe_booster": {
+  "de": [
+   "Der Booster muss direkt auf das Rohrstück zeigen, das aus dem Inventar zieht; ein Rohr mitten in der Leitung beschleunigt er nicht.",
+   "Ohne Booster ziehen Item Pipes 8 Gegenstände alle 5 Ticks."
+  ],
+  "en": [
+   "The booster has to face the very pipe section that extracts from the inventory; it does nothing for a pipe in the middle of a line.",
+   "Without a booster item pipes pull 8 items every 5 ticks."
+  ],
+  "sources": [
+   "oritech:crafting/booster",
+   "oritech jar wiki machines/utility/pipe_booster_block.mdx",
+   "srv/config/oritech-common.toml [logistics]"
+  ]
+ },
+ "treefeller": {
+  "de": [
+   "Der Baumschneider steht für sich, ohne Rahmen und ohne Kerne. Er arbeitet Block für Block und braucht für große Bäume eine Weile.",
+   "Eine Holzfarm so liefert Setzlinge und Blätter für Biomasse im {{oritech/bio_gen}}."
+  ],
+  "en": [
+   "The tree cutter stands on its own, with no frame and no cores. It works block by block and takes a while for large trees.",
+   "A wood farm built this way supplies saplings and leaves for biomass in the {{oritech/bio_gen}}."
+  ],
+  "sources": [
+   "oritech:crafting/treefeller",
+   "oritech jar wiki machines/utility/treefeller_block.mdx"
+  ]
+ },
+ "charger": {
+  "de": [
+   "Ein zweites Rezept nimmt eine Verarbeitungseinheit statt des Redstoneblocks. Das Ladegerät nimmt bis 10 000 RF/t auf.",
+   "Hier tankst du auch Turbofuel ins Jetpack. Lädt Handbohrer und Kettensäge aus {{oritech/tools}}."
+  ],
+  "en": [
+   "A second recipe takes a processing unit instead of the redstone block. The charger takes in up to 10 000 RF/t.",
+   "This is also where you fill the jetpack with turbofuel. It charges the hand drill and chainsaw from {{oritech/tools}}."
+  ],
+  "sources": [
+   "oritech:crafting/charger",
+   "oritech:crafting/chargeralt",
+   "srv/config/oritech-common.toml [equipment.charger]",
+   "oritech jar wiki machines/utility/charger_block.mdx"
+  ]
+ },
+ "tools": {
+  "de": [
+   "Der Handbohrer braucht pro Block 10 RF mal die Härte des Blocks und lädt mit 512 RF/t. Haltbarkeit senkt den Stromverbrauch, da beide ohnehin nicht kaputtgehen.",
+   "Mit dem Bohrer holst du Amethysthaufen besonders leicht. Die Kettensäge durchschneidet auch Spinnweben schnell."
+  ],
+  "en": [
+   "The hand drill uses 10 RF times the block hardness per block and charges at 512 RF/t. Unbreaking lowers the power use, since neither tool breaks anyway.",
+   "The drill is especially good at harvesting amethyst clusters. The chainsaw also cuts through cobwebs quickly."
+  ],
+  "sources": [
+   "oritech:crafting/handdrill",
+   "oritech:crafting/chainsaw",
+   "oritech jar wiki equipment/hand_drill.mdx",
+   "oritech jar wiki equipment/chainsaw.mdx",
+   "srv/config/oritech-common.toml chainsawTreeCutting true"
+  ]
+ }
+}

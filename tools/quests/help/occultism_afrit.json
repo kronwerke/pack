@@ -1,0 +1,618 @@
+{
+ "afrit_book": {
+  "de": [
+   "Das Rezept ist geformt: [[occultism:purified_ink]] oben links, [[occultism:awakened_feather]] oben rechts, das [[occultism:taboo_book]] in der Mitte und je ein gelber Farbstoff oben, links, rechts und unten. Hast du schon ein leeres Book of Binding, legst du nur die vier gelben Farbstoffe darum.",
+   "Das gebundene Afrit-Buch startet jedes Ritual dieses Kapitels. Als Erstes lohnen sich {{occultism_afrit/infused_pickaxe}} und {{occultism_afrit/goggles}}, die noch mit Djinni- und Foliot-Buch laufen."
+  ],
+  "en": [
+   "The recipe is shaped: [[occultism:purified_ink]] top left, [[occultism:awakened_feather]] top right, the [[occultism:taboo_book]] in the middle and one yellow dye each at top, left, right and bottom. If you already have an empty Book of Binding, just put the four yellow dyes around it.",
+   "The bound Afrit book starts every ritual of this chapter. Start with {{occultism_afrit/infused_pickaxe}} and {{occultism_afrit/goggles}}, which still run on the Djinni and Foliot books."
+  ],
+  "sources": [
+   "occultism:crafting/book_of_binding_afrit",
+   "occultism:crafting/book_of_binding_afrit_from_empty",
+   "docs/STAGES.md (stage 3: Occultism Afrit and Marid)"
+  ]
+ },
+ "goggles": {
+  "de": [
+   "Achtung beim Brillenrezept: Leder oben, dann Leder, [[occultism:infused_lenses]], Leder in der Mitte, und der [[occultism:lens_frame]] kommt **unten** hin. Die Linsen brauchen acht Glasscheiben um einen [[occultism:spirit_attuned_gem]], das Ritual im Eziveus' Spectral Compulsion dauert 60 Sekunden.",
+   "Den Rahmen gibt es auch aus 6 Otherrock und 2 Silber mit einem weißen Farbstoff in der Mitte. Mit der Brille geht es weiter zu {{occultism_afrit/iesnium}}."
+  ],
+  "en": [
+   "Watch the goggles recipe: leather on top, then leather, [[occultism:infused_lenses]], leather in the middle row, and the [[occultism:lens_frame]] goes at the **bottom**. The lenses take eight glass panes around a [[occultism:spirit_attuned_gem]]; the ritual in Eziveus' Spectral Compulsion takes 60 seconds.",
+   "The frame can also be made from 6 Otherrock and 2 silver with a white dye in the middle. With the goggles, go on to {{occultism_afrit/iesnium}}."
+  ],
+  "sources": [
+   "occultism:crafting/goggles",
+   "occultism:crafting/lenses",
+   "occultism:crafting/lens_frame",
+   "occultism:crafting/lens_frame_alt",
+   "occultism:ritual/craft_infused_lenses"
+  ]
+ },
+ "infused_pickaxe": {
+  "de": [
+   "Den [[occultism:spirit_attuned_pickaxe_head]] machst du aus drei [[occultism:spirit_attuned_gem]] in einer Reihe an der Werkbank. Gebunden wird im Strigeor's Higher Binding aus {{occultism/strigeor}}.",
+   "Die Haltbarkeit ist sehr gering. Bau damit nur Iesnium ab, bis du die drei Barren für {{occultism_afrit/iesnium_pick}} hast, und heb dir den Rest für später auf."
+  ],
+  "en": [
+   "The [[occultism:spirit_attuned_pickaxe_head]] is three [[occultism:spirit_attuned_gem]] in a row at the crafting table. You bind it in Strigeor's Higher Binding from {{occultism/strigeor}}.",
+   "Its durability is very low. Only mine iesnium with it until you have the three ingots for {{occultism_afrit/iesnium_pick}}, and keep the rest for later."
+  ],
+  "sources": [
+   "occultism:crafting/spirit_attuned_pickaxe_head",
+   "occultism:ritual/craft_infused_pickaxe",
+   "occultism lang: craft_infused_pickaxe.spotlight"
+  ]
+ },
+ "iesnium": {
+  "de": [
+   "Iesnium-Erz gibt es nur im Nether. Pack Brille, Wünschelrute und Spitzhacke ein, bevor du durchs Portal gehst. Nach dem Suchen zeigt die [[occultism:divination_rod]] das nächste Erz mit weißen Linien durch die Wand; ein ganz violetter Kristall heißt, es ist nah.",
+   "Nimm mehr als die 12 Barren mit: **Jeder Unbound Afrit kostet einen [[occultism:iesnium_ingot]]**, und Mineshaft, Extractor, Battlefield und Iesnium-Ritualschale brauchen je einen Iesniumblock aus neun Barren."
+  ],
+  "en": [
+   "Iesnium ore only exists in the Nether. Pack goggles, divination rod and pickaxe before you go through the portal. After a search the [[occultism:divination_rod]] marks the nearest ore with white lines through the wall; a fully purple crystal means it is close.",
+   "Bring back more than 12 ingots: **every Unbound Afrit costs one [[occultism:iesnium_ingot]]**, and the mineshaft, extractor, battlefield and iesnium ritual bowl each need an iesnium block of nine ingots."
+  ],
+  "sources": [
+   "occultism lang: getting_started.divination_rod.how_to_use",
+   "occultism:ritual/summon_unbound_afrit",
+   "occultism:ritual/craft_dimensional_mineshaft",
+   "occultism:ritual/craft_dimensional_extractor",
+   "occultism:ritual/craft_dimensional_battlefield",
+   "occultism:ritual/craft_iesnium_sacrificial_bowl",
+   "occultism:crafting/iesnium_block"
+  ]
+ },
+ "iesnium_pick": {
+  "de": [
+   "Die Spitzhacke hält lange, aber du brauchst sie mehrfach: Miner Foliot, Ore Miner Djinni und Deep Ore Miner Afrit essen je eine. Plane also vier Spitzhacken, zwölf Barren.",
+   "Weiter geht es mit {{occultism_afrit/foliot_miner}} und dem Mineshaft."
+  ],
+  "en": [
+   "The pickaxe lasts long, but you need several: the Miner Foliot, Ore Miner Djinni and Deep Ore Miner Afrit each eat one. Plan four pickaxes, twelve ingots.",
+   "Next come {{occultism_afrit/foliot_miner}} and the mineshaft."
+  ],
+  "sources": [
+   "occultism:crafting/iesnium_pickaxe",
+   "occultism:ritual/craft_miner_foliot_unspecialized",
+   "occultism:ritual/craft_miner_djinni_ores",
+   "occultism:ritual/craft_miner_afrit_deeps"
+  ]
+ },
+ "foliot_miner": {
+  "de": [
+   "Die [[occultism:magic_lamp_empty]] formst du aus fünf Silberbarren um einen Spirit Attuned Gem: einer oben, zwei an den Seiten, zwei unten. Das Ritual im Eziveus' Spectral Compulsion ({{occultism/eziveus}}) dauert 60 Sekunden.",
+   "Der Foliot ist vor allem eine Zutat: Er wandert gleich in den Ore Miner Djinni von {{occultism_afrit/mineshaft}}."
+  ],
+  "en": [
+   "The [[occultism:magic_lamp_empty]] is five silver ingots around a Spirit Attuned Gem: one on top, two at the sides, two below. The ritual in Eziveus' Spectral Compulsion ({{occultism/eziveus}}) takes 60 seconds.",
+   "The Foliot is mostly an ingredient: it goes straight into the Ore Miner Djinni of {{occultism_afrit/mineshaft}}."
+  ],
+  "sources": [
+   "occultism:crafting/magic_lamp_empty",
+   "occultism:ritual/craft_miner_foliot_unspecialized",
+   "occultism:ritual/craft_miner_djinni_ores"
+  ]
+ },
+ "mineshaft": {
+  "de": [
+   "Beide Rituale laufen 150 Sekunden. Für den Mineshaft gehen auch Otherrock statt Otherstone, der [[occultism:iesnium_block]] sind neun Barren.",
+   "Abgenutzte Lampen reparierst du später im {{occultism_afrit/sevira}}: drei [[occultism:otherworld_essence]] und ein Spirit Attuned Gem in die Schalen, die Lampe selbst als Startitem. Mit dem {{occultism_afrit/extractor}} unter dem Mineshaft landen die Funde direkt in einer Truhe."
+  ],
+  "en": [
+   "Both rituals take 150 seconds. Otherrock works instead of Otherstone for the mineshaft, and the [[occultism:iesnium_block]] is nine ingots.",
+   "Worn lamps are repaired later in {{occultism_afrit/sevira}}: three [[occultism:otherworld_essence]] and a Spirit Attuned Gem in the bowls, the lamp itself as the start item. With the {{occultism_afrit/extractor}} under the mineshaft the finds go straight into a chest."
+  ],
+  "sources": [
+   "occultism:ritual/craft_dimensional_mineshaft",
+   "occultism:ritual/craft_miner_djinni_ores",
+   "occultism:ritual/repair_miners"
+  ]
+ },
+ "storage": {
+  "de": [
+   "Die Reihenfolge: [[occultism:dimensional_matrix]] im Strigeor's Higher Binding (150 Sekunden), [[occultism:storage_controller_base]] im Eziveus' Spectral Compulsion (60 Sekunden), dann die Matrix über die Basis an die Werkbank. Der [[occultism:otherstone_pedestal]] für die Basis: zwei Otherstone-Stufen oben außen, ein Otherstone in der Mitte, drei Stufen unten.",
+   "Mehr Platz geben {{occultism_afrit/stabilizers}}, Zugriff von woanders {{occultism_afrit/storage_remote}} und {{occultism_afrit/stable_wormhole}}."
+  ],
+  "en": [
+   "The order: [[occultism:dimensional_matrix]] in Strigeor's Higher Binding (150 seconds), [[occultism:storage_controller_base]] in Eziveus' Spectral Compulsion (60 seconds), then the matrix on top of the base at the crafting table. The [[occultism:otherstone_pedestal]] for the base: two Otherstone slabs at the top corners, one Otherstone in the middle, three slabs at the bottom.",
+   "More room comes from {{occultism_afrit/stabilizers}}, access from elsewhere from {{occultism_afrit/storage_remote}} and {{occultism_afrit/stable_wormhole}}."
+  ],
+  "sources": [
+   "occultism:ritual/craft_dimensional_matrix",
+   "occultism:ritual/craft_storage_controller_base",
+   "occultism:crafting/storage_controller",
+   "occultism:crafting/otherstone_pedestal",
+   "srv/config/occultism-server.toml [storage]"
+  ]
+ },
+ "stabilizers": {
+  "de": [
+   "Der Pedestal-Stabilisator ist ein [[occultism:otherstone_pedestal]], formlos an der Werkbank umgewandelt. Jede Stufe frisst die vorige, du verlierst beim Aufrüsten also nichts. Stufe 1 und 2 brauchen Lohenstaub und eine [[minecraft:ghast_tear]] aus dem Nether.",
+   "Für Stufe 3 brauchst du eine Afrit-Essenz aus {{occultism_afrit/unbound_afrit}} und ein [[minecraft:totem_of_undying]], für Stufe 4 eine Marid-Essenz und ein [[minecraft:beacon]]."
+  ],
+  "en": [
+   "The pedestal stabilizer is an [[occultism:otherstone_pedestal]] converted shapeless at the crafting table. Each tier eats the one before, so you lose nothing when upgrading. Tiers 1 and 2 need blaze powder and a [[minecraft:ghast_tear]] from the Nether.",
+   "Tier 3 needs an afrit essence from {{occultism_afrit/unbound_afrit}} and a [[minecraft:totem_of_undying]], tier 4 a marid essence and a [[minecraft:beacon]]."
+  ],
+  "sources": [
+   "occultism:crafting/storage_stabilizer_tier0",
+   "occultism:ritual/craft_stabilizer_tier1",
+   "occultism:ritual/craft_stabilizer_tier2",
+   "occultism:ritual/craft_stabilizer_tier3",
+   "occultism:ritual/craft_stabilizer_tier4",
+   "srv/config/occultism-server.toml [storage]"
+  ]
+ },
+ "possessed_bee": {
+  "de": [
+   "Ihagan's Enthrallment kennst du aus {{occultism/ihagan}}; der Ruf dauert 60 Sekunden. Jede Biene lässt eine [[occultism:cursed_honey]] fallen, mit Plünderung manchmal mehr.",
+   "Für die drei Honige rufst du also meist drei Bienen, und jede orange Kreide in {{occultism_afrit/orange_chalk}} kostet wieder einen Honig. Halt Hühner bereit."
+  ],
+  "en": [
+   "You know Ihagan's Enthrallment from {{occultism/ihagan}}; the summoning takes 60 seconds. Each bee drops one [[occultism:cursed_honey]], sometimes more with Looting.",
+   "So three honeys usually mean three bees, and every orange chalk in {{occultism_afrit/orange_chalk}} costs another honey. Keep chickens ready."
+  ],
+  "sources": [
+   "occultism:ritual/possess_bee",
+   "occultism loot_table entities/possessed_bee.json"
+  ]
+ },
+ "orange_chalk": {
+  "de": [
+   "Jede Kreide ist ein eigener Ansatz: [[occultism:chalk_white_impure]], eine Cursed Honey, [[minecraft:glow_berries]] und [[minecraft:blaze_powder]] formlos zu Impure Orange Chalk, die du ins Spiritfire wirfst. Leuchtbeeren wachsen in Üppigen Höhlen.",
+   "Orange brauchen Kandar (40 Zeichen), Abras, Sevira und Fatma. Abgenutzte Kreide reparierst du wie in {{occultism/repair_chalk}}."
+  ],
+  "en": [
+   "Every chalk is its own batch: [[occultism:chalk_white_impure]], one Cursed Honey, [[minecraft:glow_berries]] and [[minecraft:blaze_powder]] shapeless into Impure Orange Chalk, which you throw into spiritfire. Glow berries grow in lush caves.",
+   "Kandar (40 glyphs), Abras, Sevira and Fatma all need orange. Repair worn chalk as in {{occultism/repair_chalk}}."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_orange_impure",
+   "occultism:spirit_fire/chalk_orange",
+   "occultism modonomicon multiblocks (summon_unbound_afrit, summon_afrit, craft_afrit, summon_marid)",
+   "occultism:ritual/repair_chalks"
+  ]
+ },
+ "kandar": {
+  "de": [
+   "Die 8 dunklen Zeichen müssen grau oder schwarz sein, also [[occultism:chalk_gray]] aus {{occultism/gray_paste}}. Für die 16 Fundamentzeichen reicht weiße Kreide.",
+   "Abras' Conjure aus {{occultism_afrit/abras}} hat denselben Grundriss plus 16 rote Zeichen und 4 Spirit Attuned Crystals. Such dir für Kandar einen festen Platz mit Weide daneben, denn hier rufst du jeden Afrit für den Obelisken."
+  ],
+  "en": [
+   "The 8 dark glyphs must be gray or black, so [[occultism:chalk_gray]] from {{occultism/gray_paste}}. White chalk is enough for the 16 foundation glyphs.",
+   "Abras' Conjure from {{occultism_afrit/abras}} has the same layout plus 16 red glyphs and 4 Spirit Attuned Crystals. Give Kandar a fixed spot with a pasture next to it, since every afrit for the obelisk is called here."
+  ],
+  "sources": [
+   "occultism modonomicon multiblocks summon_unbound_afrit.json, summon_afrit.json",
+   "occultism:crafting/chalk_gray_impure"
+  ]
+ },
+ "unbound_afrit": {
+  "de": [
+   "Die Kuh opferst du während des Rituals am Pentakel; bring sie an der Leine mit. Die Essenz fällt immer, jede Stufe Plünderung kann eine mehr geben.",
+   "Schneller wird es mit {{occultism_afrit/iesnium_bowl}}: Der Ruf dauert dann 37,5 statt 150 Sekunden. Das {{occultism_afrit/iesnium_knife}} trifft Geister dreifach. Danach geht es zu {{occultism_afrit/essence_line}} und {{occultism_afrit/red_chalk}}."
+  ],
+  "en": [
+   "Sacrifice the cow at the pentacle while the ritual runs; bring it on a lead. The essence always drops, and each level of Looting can add one.",
+   "{{occultism_afrit/iesnium_bowl}} speeds it up: the summoning then takes 37.5 instead of 150 seconds. The {{occultism_afrit/iesnium_knife}} hits spirits three times as hard. Next are {{occultism_afrit/essence_line}} and {{occultism_afrit/red_chalk}}."
+  ],
+  "sources": [
+   "occultism:ritual/summon_unbound_afrit",
+   "occultism loot_table entities/afrit_wild.json",
+   "occultism lang: craft_iesnium_sacrificial_bowl.spotlight"
+  ],
+  "client": [
+   "Sacrifice: the cow must be killed by the player near the pentacle during the ritual"
+  ]
+ },
+ "essence_line": {
+  "de": [
+   "Halt den Stapel in der Hand und klick den Obelisken rechts an. Schleichend geklickt gibt er alles Passende aus deinen Hauptreihen ab; dafür brauchst du ein Item in der Hand und einen zweiten Schleichklick innerhalb von 5 Sekunden.",
+   "Wie viele Essenzen das Ziel will, hängt von der Zahl aktiver Spieler ab. Rechne pro Essenz einen [[occultism:iesnium_ingot]], eine Kuh und 150 Sekunden. Zwei Essenzen gehen außerdem in jeden [[kronwerke:elven_star]]."
+  ],
+  "en": [
+   "Hold the stack and right click the obelisk. A sneak click hands in everything that fits from your main inventory rows; it needs an item in hand and a second sneak click within 5 seconds.",
+   "How many essences the goal wants depends on the number of active players. Count one [[occultism:iesnium_ingot]], one cow and 150 seconds per essence. Two essences also go into every [[kronwerke:elven_star]]."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage3 magic: occultism:afrit_essence base 150, scale)",
+   "core: obelisk/Obelisk.java",
+   "kronwerke:milestones/elven_star",
+   "occultism:ritual/summon_unbound_afrit"
+  ]
+ },
+ "odus": {
+  "de": [
+   "Gelbe Kreide machst du aus unreiner Kreide, Glowstone und zwei Goldstaub ({{occultism/yellow_chalk}}). Beide Rufe dauern 90 Sekunden.",
+   "Der Possessed Zombie Piglin lässt 1 bis 4 [[occultism:demonic_meat]] fallen, mit Plünderung mehr; meist reicht ein Ruf. Der Possessed Guardian lässt Korallen und Prismarin fallen, die Röhrenkoralle brauchst du später für blaue Kreide. Das Fleisch geht in die rosa Kreide für {{occultism_afrit/osorin}}."
+  ],
+  "en": [
+   "Yellow chalk is impure chalk, glowstone and two gold dust ({{occultism/yellow_chalk}}). Both summonings take 90 seconds.",
+   "The Possessed Zombie Piglin drops 1 to 4 [[occultism:demonic_meat]], more with Looting; one call is usually enough. The Possessed Guardian drops corals and prismarine, and you need tube coral later for blue chalk. The meat goes into the pink chalk for {{occultism_afrit/osorin}}."
+  ],
+  "sources": [
+   "occultism:ritual/possess_zombie_piglin",
+   "occultism:ritual/possess_guardian",
+   "occultism loot_table entities/possessed_zombie_piglin.json",
+   "occultism:crafting/chalk_yellow_impure",
+   "occultism:crafting/chalk_pink_impure",
+   "occultism:crafting/chalk_blue_impure"
+  ]
+ },
+ "red_chalk": {
+  "de": [
+   "Jede rote Kreide kostet eine Afrit-Essenz, die Quest will zwei. Die [[minecraft:torchflower]] wächst aus [[minecraft:torchflower_seeds]]; ein Feld davon spart dir später viele Schnüffler-Ausflüge.",
+   "Mit roter Kreide öffnen {{occultism_afrit/abras}}, {{occultism_afrit/sevira}} und {{occultism_afrit/black_chalk}}."
+  ],
+  "en": [
+   "Every red chalk costs one afrit essence, and the quest wants two. The [[minecraft:torchflower]] grows from [[minecraft:torchflower_seeds]]; a small field saves you many sniffer trips later.",
+   "Red chalk opens {{occultism_afrit/abras}}, {{occultism_afrit/sevira}} and {{occultism_afrit/black_chalk}}."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_red_impure",
+   "occultism:spirit_fire/chalk_red"
+  ]
+ },
+ "abras": {
+  "de": [
+   "Die fünf Staubsorten in den Schalen macht dein Djinni Crusher ({{occultism/djinni_crusher}}); der Obsidianstaub ist [[create:powdered_obsidian]]. Hak die Quest ab, sobald der Afrit da ist.",
+   "Auf diesem Server gibt der Afrit Crusher die doppelte Grundmenge in halber Zeit, der Djinni das Anderthalbfache. Im selben Pentakel rufst du {{occultism_afrit/afrit_smelter}} und {{occultism_afrit/afrit_weather}}."
+  ],
+  "en": [
+   "Your Djinni Crusher ({{occultism/djinni_crusher}}) makes the five dusts for the bowls; the obsidian dust is [[create:powdered_obsidian]]. Tick the quest off once the afrit is there.",
+   "On this server the Afrit Crusher gives twice the base amount in half the time, the Djinni one and a half times. The same pentacle calls {{occultism_afrit/afrit_smelter}} and {{occultism_afrit/afrit_weather}}."
+  ],
+  "sources": [
+   "occultism:ritual/summon_afrit_crusher",
+   "occultism modonomicon multiblocks summon_afrit.json",
+   "srv/config/occultism-server.toml [spirit_job.crusher_tier2/3]",
+   "occultism:crushing/obsidian_dust"
+  ]
+ },
+ "afrit_smelter": {
+  "de": [
+   "Fast alle Schalenzutaten kommen aus dem Nether: [[minecraft:blaze_rod]], [[minecraft:magma_block]], rote Netherziegel und das Seelenlagerfeuer aus Seelensand. Hak ab, sobald der Afrit da ist.",
+   "Der Afrit Crystallizer aus demselben Pentakel gibt die doppelte Menge in 30 Prozent der Zeit."
+  ],
+  "en": [
+   "Almost all bowl items come from the Nether: [[minecraft:blaze_rod]], [[minecraft:magma_block]], red nether bricks and the soul campfire from soul sand. Tick it off once the afrit is there.",
+   "The Afrit Crystallizer from the same pentacle gives twice the amount in 30 percent of the time."
+  ],
+  "sources": [
+   "occultism:ritual/summon_afrit_smelter",
+   "occultism:ritual/summon_afrit_crystallizer",
+   "srv/config/occultism-server.toml [spirit_job.smelter_tier3, crystal_tier3]"
+  ]
+ },
+ "afrit_weather": {
+  "de": [
+   "Beide Rufe kosten eine Kuh. Für Gewitter reicht ein Knochen statt Knochenmehl; die Ghast-Träne holst du im Nether.",
+   "Mit den [[minecraft:lightning_rod]] aus der Belohnung lenkst du die Blitze: Ein Blitz neben einem Creeper lädt ihn auf."
+  ],
+  "en": [
+   "Both summonings cost a cow. A bone is enough for the thunderstorm; get the ghast tear in the Nether.",
+   "The [[minecraft:lightning_rod]] from the reward steers the lightning: a strike next to a creeper charges it."
+  ],
+  "sources": [
+   "occultism:ritual/summon_afrit_rain_weather",
+   "occultism:ritual/summon_afrit_thunder_weather"
+  ]
+ },
+ "posuc": {
+  "de": [
+   "Der Possessed Warden kostet nur sechs [[minecraft:sculk]] und eine Kuh und lässt 6 bis 9 [[minecraft:echo_shard]] fallen, dazu manchmal Sculk-Blöcke, Rüstungsbesatz oder Scheibenbruchstücke. Er zählt auch als Warden-Opfer für {{occultism_afrit/reinforced_deepslate}}.",
+   "Der Possessed Elder Guardian lässt 2 bis 4 Nautilusschalen und mit 40 Prozent ein Herz des Meeres fallen; beides brauchst du für den Aquisitor in {{occultism_afrit/unbound_marid}}."
+  ],
+  "en": [
+   "The Possessed Warden costs only six [[minecraft:sculk]] and a cow and drops 6 to 9 [[minecraft:echo_shard]], sometimes also sculk blocks, an armor trim or disc fragments. It also counts as the warden sacrifice for {{occultism_afrit/reinforced_deepslate}}.",
+   "The Possessed Elder Guardian drops 2 to 4 nautilus shells and a heart of the sea with 40 percent; both go into the conduit for {{occultism_afrit/unbound_marid}}."
+  ],
+  "sources": [
+   "occultism:ritual/possess_warden",
+   "occultism:ritual/possess_elder_guardian",
+   "occultism loot_table entities/possessed_warden.json",
+   "occultism lang: possess_elder_guardian.entity",
+   "occultism data/c/tags/entity_type/wardens.json"
+  ]
+ },
+ "sevira": {
+  "de": [
+   "60 violette Zeichen sind der Engpass: Mach genug [[occultism:chalk_purple]] wie in {{occultism/purple_chalk}}. Hak die Quest ab, wenn das Pentakel steht.",
+   "Fast jedes Ritual hier läuft 300 Sekunden. Bei den Reparaturen ist das Werkzeug, die Rüstung oder die Miner-Lampe selbst das Startitem, nicht das Afrit-Buch."
+  ],
+  "en": [
+   "60 purple glyphs are the bottleneck: make enough [[occultism:chalk_purple]] as in {{occultism/purple_chalk}}. Tick the quest off when the pentacle stands.",
+   "Almost every ritual here takes 300 seconds. For repairs the tool, armor or miner lamp itself is the start item, not the Afrit book."
+  ],
+  "sources": [
+   "occultism modonomicon multiblocks craft_afrit.json",
+   "occultism:ritual/repair_tools",
+   "occultism:ritual/repair_armors",
+   "occultism:ritual/repair_miners"
+  ]
+ },
+ "afrit_miner": {
+  "de": [
+   "Der Ore Miner Djinni geht als Zutat hinein, nimm ihn also vorher aus dem Mineshaft. Das Ritual dauert 300 Sekunden.",
+   "Die [[minecraft:echo_shard]] holst du am billigsten aus dem Possessed Warden von {{occultism_afrit/posuc}}, [[minecraft:crying_obsidian]] beim Tauschhandel mit Piglins oder an Ruinierten Portalen."
+  ],
+  "en": [
+   "The Ore Miner Djinni goes in as an ingredient, so take it out of the mineshaft first. The ritual takes 300 seconds.",
+   "The cheapest [[minecraft:echo_shard]] come from the Possessed Warden of {{occultism_afrit/posuc}}, [[minecraft:crying_obsidian]] from piglin bartering or ruined portals."
+  ],
+  "sources": [
+   "occultism:ritual/craft_miner_afrit_deeps"
+  ]
+ },
+ "satchel": {
+  "de": [
+   "Ohne Apprentice Satchel geht es auch direkt: Trichter, Spender, Wolle, Leder, Faden, Silberbarren, eine Afrit-Essenz und vier Enderperlen, 300 Sekunden. Das Aufrüsten ist mit 180 Sekunden schneller und behält den Inhalt.",
+   "Für die vielen Kandar-Rufe lohnt sich die Tasche mit allen Kreiden für {{occultism_afrit/kandar}}."
+  ],
+  "en": [
+   "Without an Apprentice Satchel you can make it directly: hopper, dispenser, wool, leather, string, silver ingot, one afrit essence and four ender pearls, 300 seconds. The upgrade is faster at 180 seconds and keeps the contents.",
+   "For the many Kandar summonings, keep the satchel stocked with all chalks for {{occultism_afrit/kandar}}."
+  ],
+  "sources": [
+   "occultism:ritual/craft_ritual_satchel_t2",
+   "occultism:ritual/craft_upgrade_ritual_satchel"
+  ]
+ },
+ "osorin": {
+  "de": [
+   "Rosa Kreide braucht je drei Demonic Meat aus {{occultism_afrit/odus}}, hellblaue Kreide Eis-, Packeis- und Blaueisstaub, den erst ab dem Djinni Crusher jemand mahlt, grüne Kreide eine Nature Paste aus {{occultism/nature_paste}}. Hak ab, wenn das Pentakel steht.",
+   "Hier laufen {{occultism_afrit/wild_hunt}}, {{occultism_afrit/budding_amethyst}} und {{occultism_afrit/reinforced_deepslate}}. Viele wilde Rituale opfern einen Dorfbewohner; den rufst du wie in {{occultism/villager}}."
+  ],
+  "en": [
+   "Pink chalk needs three Demonic Meat each from {{occultism_afrit/odus}}, light blue chalk ice, packed ice and blue ice dust, which only a Djinni crusher or better grinds, green chalk a Nature Paste from {{occultism/nature_paste}}. Tick it off when the pentacle stands.",
+   "{{occultism_afrit/wild_hunt}}, {{occultism_afrit/budding_amethyst}} and {{occultism_afrit/reinforced_deepslate}} run here. Many wild rituals sacrifice a villager; call one as in {{occultism/villager}}."
+  ],
+  "sources": [
+   "occultism modonomicon multiblocks contact_wild_spirit.json",
+   "occultism:crafting/chalk_pink_impure",
+   "occultism:crafting/chalk_light_blue_impure",
+   "occultism:crafting/chalk_green_impure",
+   "occultism:crushing/ice_dust (min_tier 2)",
+   "occultism data/occultism/tags/entity_type/humans.json"
+  ]
+ },
+ "reinforced_deepslate": {
+  "de": [
+   "Das Kronwerke-Rezept ist geformt: Tiefenschiefer in die Ecken, Stahlbarren an die Seiten, der Echosplitter in die Mitte. Für die vier Blöcke der Quest brauchst du also zwei Durchgänge, zwei Echosplitter und acht Stahl.",
+   "Ein dritter Weg ist die Atomic Forge aus {{oritech/atomic_forge}}: ein Tiefenschiefer und zwei Duratium. Mit den Blöcken baust du {{deeper_darker/portal}}."
+  ],
+  "en": [
+   "The Kronwerke recipe is shaped: deepslate in the corners, steel ingots on the sides, the echo shard in the middle. So the four blocks of the quest take two crafts, two echo shards and eight steel.",
+   "A third way is the Atomic Forge from {{oritech/atomic_forge}}: one deepslate and two duratium. The blocks build {{deeper_darker/portal}}."
+  ],
+  "sources": [
+   "kronwerke:added/reinforced_deepslate",
+   "occultism:ritual/misc_reinforced_deepslate",
+   "oritech:atomicforge/reinfdeepslate"
+  ]
+ },
+ "black_chalk": {
+  "de": [
+   "Ein Ritual gibt drei [[occultism:witherite_dust]], genau eine schwarze Kreide. Den [[occultism:netherite_dust]] bekommst du am billigsten im Metallurgischen Infuser von Mekanism aus einer Netheritplatte und Gold, oder formlos aus vier Netheritplattenstaub und vier Goldstaub ({{occultism/netherite_dust}}).",
+   "Schädel und Wither-Rosen liefert dir {{occultism_afrit/wild_hunt}}: Jedes große Witherskelett lässt bis zu drei Rosen fallen."
+  ],
+  "en": [
+   "One ritual gives three [[occultism:witherite_dust]], exactly one black chalk. The cheapest [[occultism:netherite_dust]] comes from Mekanism's Metallurgic Infuser from netherite scrap and gold, or shapeless from four netherite scrap dust and four gold dust ({{occultism/netherite_dust}}).",
+   "{{occultism_afrit/wild_hunt}} gives you skulls and wither roses: every great wither skeleton drops up to three roses."
+  ],
+  "sources": [
+   "occultism:ritual/craft_witherite_dust",
+   "occultism:crafting/chalk_black_impure",
+   "mekanism:processing/netherite/scrap_to_dust",
+   "occultism:crafting/netherite_dust",
+   "occultism loot_table entities/wild_hunt_wither_skeleton.json"
+  ]
+ },
+ "unbound_marid": {
+  "de": [
+   "Tibira's Attraction ist Abras' Grundriss, aber die 8 dunklen Zeichen müssen **schwarz** sein; dazu kommen 4 Witherskelettschädel aus {{occultism_afrit/wild_hunt}}. Das Marid-Buch ist ein leeres Book of Binding mit vier grünen Farbstoffen.",
+   "Der [[minecraft:conduit]] braucht Nautilusschalen und ein Herz des Meeres, beides lässt der Possessed Elder Guardian aus {{occultism_afrit/posuc}} fallen. Die Marid-Essenz fällt immer, jede Stufe Plünderung kann eine mehr geben."
+  ],
+  "en": [
+   "Tibira's Attraction is the Abras layout, but the 8 dark glyphs must be **black**; add 4 wither skeleton skulls from {{occultism_afrit/wild_hunt}}. The Marid book is an empty Book of Binding with four green dyes.",
+   "The [[minecraft:conduit]] needs nautilus shells and a heart of the sea, both dropped by the Possessed Elder Guardian from {{occultism_afrit/posuc}}. The marid essence always drops, and each level of Looting can add one."
+  ],
+  "sources": [
+   "occultism modonomicon multiblocks summon_unbound_marid.json",
+   "occultism:ritual/summon_unbound_marid (item_to_use minecraft:trident)",
+   "occultism:crafting/book_of_binding_marid_from_empty",
+   "occultism loot_table entities/marid_unbound.json"
+  ],
+  "client": [
+   "How the trident is used on the golden bowl, and whether it is used up"
+  ]
+ },
+ "marid_crusher": {
+  "de": [
+   "Jede blaue Kreide kostet eine Marid-Essenz, und Fatma's will 60 blaue Zeichen. Die Röhrenkoralle lässt der Possessed Guardian aus {{occultism_afrit/odus}} fallen.",
+   "Teuer sind die Schalen: Der Netheritblock sind neun Netheritbarren. Die Quest selbst will nur eine [[occultism:chalk_blue]], den Crusher kannst du also auch später rufen."
+  ],
+  "en": [
+   "Every blue chalk costs one marid essence, and Fatma's wants 60 blue glyphs. The Possessed Guardian from {{occultism_afrit/odus}} drops the tube coral.",
+   "The bowls are the expensive part: the netherite block is nine netherite ingots. The quest itself only wants one [[occultism:chalk_blue]], so the crusher can wait."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_blue_impure",
+   "occultism:ritual/summon_marid_crusher",
+   "occultism modonomicon multiblocks summon_marid.json",
+   "srv/config/occultism-server.toml [spirit_job.crusher_tier4]"
+  ]
+ },
+ "master": {
+  "de": [
+   "Der [[occultism:iesnium_anvil]] kostet einen Amboss, drei Iesniumblöcke und eine Marid-Essenz (510 Sekunden). Er geht nie kaputt, erlaubt eine Verzauberungsstufe über dem Maximum, zahlt die Hälfte der Stufen und verteuert wiederholtes Arbeiten weniger.",
+   "Stabilisator Stufe 4 will Stufe 3, einen Iesniumblock, ein [[minecraft:beacon]], zwei Crystals und eine Marid-Essenz. Für alles mit Drachenatem wartest du auf das End in Stufe 4."
+  ],
+  "en": [
+   "The [[occultism:iesnium_anvil]] costs an anvil, three iesnium blocks and one marid essence (510 seconds). It never breaks, allows one enchantment level above the maximum, pays half the levels and makes repeated work cost less extra.",
+   "Stabilizer tier 4 wants tier 3, an iesnium block, a [[minecraft:beacon]], two crystals and a marid essence. Anything with dragon's breath waits for the End in stage 4."
+  ],
+  "sources": [
+   "occultism:ritual/craft_iesnium_anvil",
+   "occultism:ritual/craft_stabilizer_tier4",
+   "occultism lang: craft_iesnium_anvil.spotlight",
+   "docs/STAGES.md (the End opens in stage 4)"
+  ]
+ },
+ "storage_remote": {
+  "de": [
+   "Das [[occultism:otherstone_tablet]] machst du an der Werkbank aus Otherstone, Gold und Otherworld-Holzstaub. Die sechs Iesnium-Nuggets sind zwei Drittel eines Barrens.",
+   "Occultism gehört nicht zu den Mods, die Kronwerke zwischen den Servern teilt. Vom Nether oder End aus erreichst du ein Lager auf der Hauptwelt also nicht; nimm für den Weg dorthin eine der geteilten Verbindungen, etwa eine Quanten-Brücke von AE2, oder stell ein zweites Lager auf."
+  ],
+  "en": [
+   "The [[occultism:otherstone_tablet]] is crafted from Otherstone, gold and otherworld wood dust. The six iesnium nuggets are two thirds of an ingot.",
+   "Occultism is not one of the mods Kronwerke shares between its servers. So from the Nether or the End you do not reach a storage on the main world; use one of the shared links, such as an AE2 quantum bridge, or set up a second storage there."
+  ],
+  "sources": [
+   "occultism:crafting/storage_remote_inert",
+   "occultism:crafting/otherstone_tablet",
+   "occultism:ritual/craft_storage_remote",
+   "core: README.md (The network)"
+  ],
+  "client": [
+   "Whether the accessor really fails from the Nether/End server to a main-world actuator"
+  ]
+ },
+ "stable_wormhole": {
+  "de": [
+   "Den Otherstone Frame formst du aus acht Otherstone im Kreis. Das Ritual im Eziveus' Spectral Compulsion dauert nur 60 Sekunden.",
+   "Auf diesem Server bleibt das Wurmloch verbunden, auch wenn du es abbaust und woanders hinstellst. Pro Zugangsstelle in der Basis ein Wurmloch spart dir viele Wege zum Actuator."
+  ],
+  "en": [
+   "The Otherstone Frame is eight Otherstone in a ring. The ritual in Eziveus' Spectral Compulsion only takes 60 seconds.",
+   "On this server the wormhole stays linked even when you break it and place it elsewhere. One wormhole per work area in your base saves many walks to the actuator."
+  ],
+  "sources": [
+   "occultism:crafting/otherstone_frame",
+   "occultism:ritual/craft_stable_wormhole",
+   "srv/config/occultism-server.toml (unlinkWormholeOnBreak false)"
+  ]
+ },
+ "machine_operator": {
+  "de": [
+   "Ophyx' Calling kennst du aus {{occultism/ophyx}}. Verlierst du das Book of Calling, crafte ein neues und klick den Geist schleichend damit an.",
+   "Achtung: Setzt du eine neue Maschine oder stellst sie mit dem Buch neu ein, sind die Entnahme-Einstellungen wieder zurückgesetzt. Bei der Entnahmestelle zählt die Seite, die du anklickst."
+  ],
+  "en": [
+   "You know Ophyx' Calling from {{occultism/ophyx}}. If you lose the Book of Calling, craft a new one and sneak click the spirit with it.",
+   "Careful: setting a new machine or reconfiguring it with the book resets the extraction settings. For the extract location, the face you click is the one it takes from."
+  ],
+  "sources": [
+   "occultism:ritual/summon_djinni_manage_machine",
+   "occultism lang: summon_manage_machine.tutorial, tutorial2, book_of_calling"
+  ]
+ },
+ "entity_wormhole": {
+  "de": [
+   "Der Otherstone Frame sind acht Otherstone im Kreis. Das Wurmloch bringt nicht nur dich, sondern auch Mobs und Gegenstände ans Ziel.",
+   "Ein Kompass mit dem Namen RTP schickt dich an einen zufälligen Ort, auf diesem Server bis 4096 Blöcke weit. Mit einem Spirit Attuned Gem stellst du ein, in welche Richtung du nach dem Sprung schaust."
+  ],
+  "en": [
+   "The Otherstone Frame is eight Otherstone in a ring. The wormhole moves not only you but also mobs and items to the target.",
+   "A compass named RTP sends you to a random spot, up to 4096 blocks away on this server. A Spirit Attuned Gem sets which way you face after the jump."
+  ],
+  "sources": [
+   "occultism:crafting/otherstone_frame",
+   "occultism:ritual/craft_entity_wormhole",
+   "occultism lang: entity_wormhole.extra_uses, exit_yaw",
+   "srv/config/occultism-server.toml (maxDistanceRTP 4096)"
+  ]
+ },
+ "iesnium_bowl": {
+  "de": [
+   "Den [[occultism:research_fragment_dust]] machst du im Eziveus' Spectral Compulsion aus Smaragdstaub und zwei Erfahrungsfläschchen. Der Iesniumblock sind neun Barren.",
+   "Die Schale ersetzt die goldene in jedem Pentakel, aber nur eine pro Pentakel. Stell sie dorthin, wo du am meisten rufst: in {{occultism_afrit/kandar}}."
+  ],
+  "en": [
+   "The [[occultism:research_fragment_dust]] is made in Eziveus' Spectral Compulsion from emerald dust and two bottles o' enchanting. The iesnium block is nine ingots.",
+   "The bowl replaces the golden one in any pentacle, but only one per pentacle. Put it where you summon most: {{occultism_afrit/kandar}}."
+  ],
+  "sources": [
+   "occultism:ritual/craft_iesnium_sacrificial_bowl",
+   "occultism:ritual/craft_research_fragment_dust",
+   "occultism lang: iesnium_sacrificial_bowl.auto_tooltip"
+  ]
+ },
+ "iesnium_knife": {
+  "de": [
+   "Das [[occultism:butcher_knife]] kommt aus {{occultism/tallow}}. Den Netheritstaub bekommst du wie bei {{occultism_afrit/black_chalk}} beschrieben.",
+   "Das Messer hat eingebautes Enthaupten. Verzauber es mit Plünderung III, dann bringt jeder Unbound Afrit bis zu vier Essenzen."
+  ],
+  "en": [
+   "The [[occultism:butcher_knife]] comes from {{occultism/tallow}}. Get the netherite dust as described in {{occultism_afrit/black_chalk}}.",
+   "The knife has built in beheading. Enchant it with Looting III and every Unbound Afrit can bring up to four essences."
+  ],
+  "sources": [
+   "occultism:ritual/craft_iesnium_butcher_knife",
+   "occultism lang: iesnium_butcher_knife.auto_tooltip",
+   "occultism loot_table entities/afrit_wild.json"
+  ]
+ },
+ "battlefield": {
+  "de": [
+   "Der Mob kommt in einen [[occultism:soul_gem]] aus {{occultism/soul_gem}}. Der Brennstoff muss zusammen so viel wert sein wie die Lebenspunkte des Mobs; Otherworld Essence ist mehr wert als Demon's Dream Seeds.",
+   "Oben gehen Gem, Waffe und Brennstoff hinein, unten kommt die Beute heraus. Ein Komparator zeigt volle Plätze und den Zustand der Waffe; zeigt er 15, halt an."
+  ],
+  "en": [
+   "The mob goes into a [[occultism:soul_gem]] from {{occultism/soul_gem}}. The fuel must add up to the mob's health; Otherworld Essence is worth more than Demon's Dream seeds.",
+   "Gem, weapon and fuel go in at the top, loot comes out at the bottom. A comparator reads full slots and weapon wear; at 15, stop it."
+  ],
+  "sources": [
+   "occultism:ritual/craft_dimensional_battlefield",
+   "occultism lang: dimensional_battlefield.fuel, capabilities, redstone"
+  ]
+ },
+ "extractor": {
+  "de": [
+   "Statt des Otherstone Pedestal geht auch das Otherrock-Pedestal. Unter dem Extractor muss ein Lager stehen, das von oben annimmt, etwa eine Truhe oder der Storage Actuator.",
+   "Er passt unter den Mineshaft aus {{occultism_afrit/mineshaft}}, das Battlefield aus {{occultism_afrit/battlefield}} und unter arbeitende Geister wie den Afrit Crusher."
+  ],
+  "en": [
+   "The Otherrock pedestal works instead of the Otherstone one. Below the extractor you need an inventory that accepts from the top, such as a chest or the storage actuator.",
+   "It fits under the mineshaft from {{occultism_afrit/mineshaft}}, the battlefield from {{occultism_afrit/battlefield}} and working spirits such as the Afrit Crusher."
+  ],
+  "sources": [
+   "occultism:ritual/craft_dimensional_extractor",
+   "occultism lang: dimensional_extractor.use"
+  ]
+ },
+ "wild_hunt": {
+  "de": [
+   "Als Opfer gilt ein Dorfbewohner oder ein Spieler; Dorfbewohner rufst du wie in {{occultism/villager}}. Jedes große Witherskelett lässt seinen Schädel **sicher** fallen, wenn ein Spieler es tötet, dazu bis zu drei Wither-Rosen.",
+   "Töte die großen also selbst, nicht mit Fallen oder Lasern. Schädel und Rosen brauchst du für {{occultism_afrit/black_chalk}} und {{occultism_afrit/unbound_marid}}."
+  ],
+  "en": [
+   "The sacrifice is a villager or a player; call villagers as in {{occultism/villager}}. Every great wither skeleton **always** drops its skull when a player kills it, plus up to three wither roses.",
+   "So kill the great ones yourself, not with traps or lasers. You need the skulls and roses for {{occultism_afrit/black_chalk}} and {{occultism_afrit/unbound_marid}}."
+  ],
+  "sources": [
+   "occultism:ritual/wild_hunt",
+   "occultism data/occultism/tags/entity_type/humans.json",
+   "occultism loot_table entities/wild_hunt_wither_skeleton.json (killed_by_player)"
+  ]
+ },
+ "budding_amethyst": {
+  "de": [
+   "Amethyststaub mahlt jeder Crusher aus Amethystscherben, eine Scherbe gibt einen Staub, ohne Bonus durch bessere Geister. Das Ritual kostet ein Schwein und 180 Sekunden.",
+   "Ein Enderischer Laser aus {{oritech/laser}}, auf den Block gerichtet, lässt ihn viel schneller wachsen, und auf die Haufen gerichtet macht er Fluxite."
+  ],
+  "en": [
+   "Any crusher grinds amethyst dust from amethyst shards, one shard per dust, with no bonus from better spirits. The ritual costs a pig and 180 seconds.",
+   "An Enderic Laser from {{oritech/laser}} aimed at the block makes it grow much faster, and aimed at the clusters it makes fluxite."
+  ],
+  "sources": [
+   "occultism:ritual/misc_budding_amethyst",
+   "occultism:crushing/amethyst_dust_from_gem",
+   "oritech wiki machines/utility/laser_arm_block.mdx",
+   "oritech:laser/fluxite"
+  ]
+ }
+}

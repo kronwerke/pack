@@ -1,0 +1,693 @@
+{
+ "welcome": {
+  "de": [
+   "Der Nether läuft auf Kronwerke auf einem eigenen Server. Bleib kurz im Portal stehen, dann zieht dich der Server mit deinem ganzen Spielstand um, aber **ohne Tiere, Boote und Reittiere**.",
+   "Züge, Contraptions, Rohre und Kabel reichen nicht hinüber. Flux-Netze, Quanten-Entangloporter, die Quanten-Netzwerkbrücke von AE2 und die Wegsteinliste funktionieren dagegen zwischen beiden Servern. Stirbst du in Lava, bleibt dein Körper mit allem liegen ({{tips/h_death}}), Lava schadet ihm nicht."
+  ],
+  "en": [
+   "On Kronwerke the Nether runs on a server of its own. Stand in the portal for a moment and the server moves you over with your whole player file, but **without animals, boats or mounts**.",
+   "Trains, contraptions, pipes and cables do not reach across. Flux networks, quantum entangloporters, the AE2 quantum network bridge and the waystone list do work between the two servers. If you die in lava your body stays with everything you carried ({{tips/h_death}}), and lava does not harm it."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (portal: only players cross)",
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (player file travels whole)",
+   "core/README.md (The network)",
+   "srv/config/corpse-server.toml (lava_damage false)"
+  ],
+  "client": [
+   "Whether a corpse that lands in a lava lake can actually be reached and opened"
+  ]
+ },
+ "gear": {
+  "de": [
+   "Ein einziges Goldteil reicht, damit Piglins dich in Ruhe lassen, die Quest will aber genau den [[minecraft:golden_helmet]]. Ab Stufe 2 haben feindliche Mobs 30 Prozent mehr Leben, 20 Prozent mehr Schaden und 2 Rüstungspunkte mehr, im Nether genauso.",
+   "Für längere Touren gehört ein Trank der Feuerresistenz ins Gepäck ({{nether/brewing}})."
+  ],
+  "en": [
+   "A single piece of gold keeps piglins calm, but the quest wants exactly the [[minecraft:golden_helmet]]. From stage 2 on hostile mobs have 30 percent more health, 20 percent more damage and 2 more armour points, in the Nether too.",
+   "For longer trips pack a potion of fire resistance ({{nether/brewing}})."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([mobs] health, damage, armor)"
+  ]
+ },
+ "portal": {
+  "de": [
+   "Gehst du durch dein eigenes Portal, sucht der Nether-Server das nächste Portal bei X und Z geteilt durch 8; gibt es dort keins, baut er eins, wie in Vanilla. Die Höhe bleibt dabei gleich, das neue Portal kann also mitten in Netherrack oder über Lava stehen.",
+   "**Steig vorher ab:** Pferde, Boote und Loren bleiben auf dieser Seite, das Portal nimmt nur dich mit."
+  ],
+  "en": [
+   "When you step through your own portal, the Nether server looks for the nearest portal at X and Z divided by 8; if there is none it builds one, as in vanilla. Your height stays the same, so the new portal may end up inside netherrack or above lava.",
+   "**Dismount first:** horses, boats and carts stay on this side, the portal only takes you."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (portal: x*scale, y kept; netherExit: findClosestPortalPosition, createPortal; ride hint)"
+  ]
+ },
+ "fast_travel": {
+  "de": [
+   "Die Quest hängt am Vanilla-Fortschritt **Subraumtransport**. Minecraft zählt die Strecke nur bei einem Dimensionswechsel innerhalb eines Servers; auf Kronwerke wechselst du dabei den Server, deshalb kann es sein, dass er nie auslöst. Die Quest ist optional, das Reisen lohnt sich trotzdem: Oberwelt X und Z durch 8, die Höhe bleibt gleich."
+  ],
+  "en": [
+   "The quest uses the vanilla advancement **Subspace Bubble**. Minecraft only measures the trip on a dimension change within one server; on Kronwerke you change servers on the way, so it may never trigger. The quest is optional and the trip is still worth it: overworld X and Z divided by 8, the height stays the same."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (portal hands the player to another server, no changeDimension)",
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (place removes enteredNetherPosition)"
+  ],
+  "client": [
+   "Whether minecraft:nether/fast_travel can be earned at all across the main and Nether servers"
+  ]
+ },
+ "waystone": {
+  "de": [
+   "Wegsteine im Nether erscheinen auch in der Liste in der Oberwelt und umgekehrt. Wählst du einen auf dem anderen Server, zieht dich der Server direkt zu diesem Wegstein um.",
+   "Ein Sprung in eine andere Dimension kostet 27 Level, innerhalb einer Dimension 1 Level pro 100 Blöcke, höchstens 27. Über Warpplatten, Schriftrollen und globale Wegsteine kostet es nichts. Gebaut wird er aus [[waystones:warp_stone]], 3 Steinziegeln und 3 Obsidian."
+  ],
+  "en": [
+   "Waystones in the Nether also show up in the list in the overworld and the other way round. Choose one on the other server and the server moves you straight to it.",
+   "A jump to another dimension costs 27 levels, within one dimension 1 level per 100 blocks, at most 27. Warp plates, scrolls and global waystones cost nothing. It is made from a [[waystones:warp_stone]], 3 stone bricks and 3 obsidian."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/share/ws/WaystoneLayer.java",
+   "srv/config/waystones-common.toml (warpRequirements)",
+   "waystones:waystone"
+  ]
+ },
+ "netherrack": {
+  "de": [
+   "Im Ofen gibt jeder Netherrack einen Netherziegel als Item. Für [[immersiveengineering:blastbrick]] brauchst du genau diese: 4 Netherziegel, 4 Ziegel und 1 Magmablock ergeben 3 Sprengziegel ({{immersive/blastbrick}}).",
+   "[[create:cinder_flour]] macht nicht der Mahlstein, sondern das Mahlwerkrad von Create: 1 Netherrack gibt 1 Aschenmehl, mit 50 Prozent ein zweites."
+  ],
+  "en": [
+   "In a furnace each netherrack gives one nether brick item. [[immersiveengineering:blastbrick]] needs exactly those: 4 nether bricks, 4 bricks and 1 magma block make 3 blast bricks ({{immersive/blastbrick}}).",
+   "[[create:cinder_flour]] does not come from the millstone but from Create's crushing wheels: 1 netherrack gives 1 cinder flour, with 50 percent a second one."
+  ],
+  "sources": [
+   "minecraft:nether_brick (smelting)",
+   "immersiveengineering:crafting/blastbrick",
+   "create:crushing/netherrack"
+  ]
+ },
+ "quartz": {
+  "de": [
+   "Mehr Quarz pro Erz bekommst du mit dem Mahlwerkrad von Create: Ein Netherquarzerz (mit Behutsamkeit abgebaut) gibt dort 2 Quarz, mit 25 Prozent einen dritten und meist einen Erfahrungsklumpen dazu.",
+   "Ein Quarz und 8 Redstone werden zu [[create:rose_quartz]], dem Anfang von {{nether/rose_quartz}}."
+  ],
+  "en": [
+   "You get more quartz per ore with Create's crushing wheels: one nether quartz ore (mined with Silk Touch) gives 2 quartz there, a third with 25 percent and usually an experience nugget.",
+   "One quartz and 8 redstone make [[create:rose_quartz]], the start of {{nether/rose_quartz}}."
+  ],
+  "sources": [
+   "create:crushing/nether_quartz_ore",
+   "create:crafting/materials/rose_quartz"
+  ]
+ },
+ "rose_quartz": {
+  "de": [
+   "Statt 8 Redstone pro Stück macht der Metallurgische Infuser von Mekanism Rosenquarz aus Quarz und Redstone-Infusion, und die Anreicherungskammer poliert ihn. Mit Create polierst du am Fließband mit einem Mechanischen Arm oder Einsatzgerät, das [[create:sand_paper]] hält.",
+   "Auf Kronwerke wird der [[mekanism:basic_control_circuit]] aus einer Elektronenröhre und Redstone im Infuser gemacht ({{mekanism/circuit}}), auch der Präzisionsmechanismus und das Messingherz brauchen Röhren."
+  ],
+  "en": [
+   "Instead of 8 redstone each, Mekanism's metallurgic infuser makes rose quartz from quartz and redstone infusion, and the enrichment chamber polishes it. With Create you polish on a belt with a deployer holding [[create:sand_paper]].",
+   "On Kronwerke the [[mekanism:basic_control_circuit]] is an electron tube infused with redstone ({{mekanism/circuit}}), and the precision mechanism and the brass heart need tubes too."
+  ],
+  "sources": [
+   "createaddition:compat/mekanism/rose_quartz_metallurgic_infusing",
+   "createaddition:compat/mekanism/rose_quartz_enriching",
+   "kronwerke:tech/basic_control_circuit",
+   "kronwerke:create/precision_mechanism",
+   "kronwerke:milestones/brass_heart"
+  ],
+  "client": [
+   "That a deployer with sand paper polishes rose quartz on a belt"
+  ]
+ },
+ "glowstone": {
+  "de": [
+   "Vier Leuchtsteinstaub ergeben wieder einen [[minecraft:glowstone]]. Die Blöcke brauchst du für {{aether/portal}} und als Ladung für den [[minecraft:respawn_anchor]] ({{nether/n_respawn_anchor}}). In Stufe 4 stecken Staub auch in Jodtabletten und RadAway ({{nuclearcraft/medicine}})."
+  ],
+  "en": [
+   "Four glowstone dust make a [[minecraft:glowstone]] block again. You need the blocks for {{aether/portal}} and to charge the [[minecraft:respawn_anchor]] ({{nether/n_respawn_anchor}}). In stage 4 the dust also goes into iodine pills and RadAway ({{nuclearcraft/medicine}})."
+  ],
+  "sources": [
+   "minecraft:glowstone",
+   "nuclear_radiation:iodine_pill",
+   "nuclear_radiation:radaway"
+  ]
+ },
+ "gold": {
+  "de": [
+   "Nethergolderz gibt ohne Glück 2 bis 6 Goldnuggets. Es zählt als bewachtes Gold: Piglins in Sichtweite werden beim Abbauen wütend, Goldrüstung hilft dagegen nicht. Baue lieber dort ab, wo keiner zusieht."
+  ],
+  "en": [
+   "Nether gold ore drops 2 to 6 gold nuggets without Fortune. It counts as guarded gold: piglins in sight turn hostile when you mine it, gold armour does not help with that. Mine where none of them can see you."
+  ],
+  "sources": [
+   "vanilla nether_gold_ore loot, minecraft:guarded_by_piglins"
+  ],
+  "client": [
+   "Piglin anger when mining nether gold ore"
+  ]
+ },
+ "magma": {
+  "de": [
+   "Ein Hochofen von Immersive Engineering besteht aus 27 Sprengziegeln, das sind 9 Rezepte und damit 9 Magmablöcke ({{immersive/blast_furnace}}). Vier Magmacreme ergeben einen Block, wenn dir Magmablöcke fehlen."
+  ],
+  "en": [
+   "An Immersive Engineering blast furnace is made of 27 blast bricks, that is 9 recipes and so 9 magma blocks ({{immersive/blast_furnace}}). Four magma cream make a block if you run short of magma blocks."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/blastbrick (3 per craft)",
+   "minecraft:magma_block"
+  ]
+ },
+ "mod_ores": {
+  "de": [
+   "Purpur-Eisenerz sitzt im Netherrack und im Schwarzstein, 14 Adern pro Chunk über die ganze Höhe. Der Barren ist ab Stufe 2 offen und führt zu {{silent_gear/crimson_steel}}.",
+   "Dimensionsscherbenerz von RFTools liegt im Nether nur zwischen Y 2 und 40. Die Scherben sind erst ab Stufe 3 frei, abbauen und einlagern kannst du sie aber schon jetzt."
+  ],
+  "en": [
+   "Crimson iron ore sits in netherrack and blackstone, 14 veins per chunk over the whole height. The ingot opens in stage 2 and leads to {{silent_gear/crimson_steel}}.",
+   "RFTools dimensional shard ore lies in the Nether only between Y 2 and 40. The shards open in stage 3, but you can already mine and store them."
+  ],
+  "sources": [
+   "silent-gear jar: worldgen/placed_feature/crimson_iron_ore.json, configured_feature (c:netherracks, blackstone)",
+   "rftoolsbase jar: worldgen/placed_feature/dimshard_nether.json",
+   "rftoolsbase:dimensionalshard (stage 3)"
+  ]
+ },
+ "r_soulstone": {
+  "de": [
+   "Ohne Behutsamkeit fällt [[mysticalagriculture:soulstone_cobble]] heraus, die Quest will aber [[mysticalagriculture:soulstone]]. Schmilz den Kopfstein im Ofen oder bau mit Behutsamkeit ab.",
+   "Etwa jeder zwanzigste Block einer Ader ist [[mysticalagriculture:soulium_ore]] und gibt 1 bis 3 [[mysticalagriculture:soulium_dust]]. Inferium- und Prosperiumerz gibt es nur in der Oberwelt."
+  ],
+  "en": [
+   "Without Silk Touch it drops [[mysticalagriculture:soulstone_cobble]], but the quest wants [[mysticalagriculture:soulstone]]. Smelt the cobble in a furnace or mine with Silk Touch.",
+   "About one block in twenty of a vein is [[mysticalagriculture:soulium_ore]] and gives 1 to 3 [[mysticalagriculture:soulium_dust]]. Inferium and prosperity ore only exist in the overworld."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: loot_table/blocks/soulstone.json, soulium_ore.json, neoforge/biome_modifier (inferium #is_overworld, soulstone #is_nether)",
+   "mysticalagriculture:soulstone_smelted",
+   "srv/config/mysticalagriculture-common.toml (souliumOreChance 0.05)"
+  ]
+ },
+ "b_crimson": {
+  "de": [
+   "Karmesin- und Wirrholz fängt kein Feuer, gut für Bauten an Lavaseen. Die leuchtenden Blöcke in den Kronen heißen [[minecraft:shroomlight]]. Hoglins in diesem Wald brauchst du für {{nether/m_hoglin}}."
+  ],
+  "en": [
+   "Crimson and warped wood do not catch fire, good for building at lava lakes. The glowing blocks in the canopies are [[minecraft:shroomlight]]. The hoglins in this forest are what {{nether/m_hoglin}} wants."
+  ],
+  "sources": [
+   "vanilla"
+  ]
+ },
+ "b_warped": {
+  "de": [
+   "Endermen werden nur wütend, wenn du ihnen in die Augen schaust; ein [[minecraft:carved_pumpkin]] auf dem Kopf verhindert das. Enderperlen brauchst du für Enderaugen und später für den [[nuclearcraft:fuel_reprocessor]]."
+  ],
+  "en": [
+   "Endermen only turn hostile when you look them in the eye; a [[minecraft:carved_pumpkin]] on your head prevents that. You need ender pearls for eyes of ender and later for the [[nuclearcraft:fuel_reprocessor]]."
+  ],
+  "sources": [
+   "vanilla",
+   "nuclearcraft:fuel_reprocessor"
+  ]
+ },
+ "b_soul": {
+  "de": [
+   "Statt Seelensand geht für [[minecraft:soul_torch]] und den Wither auch Seelenerde, die im selben Biom liegt. Netherwarzen wachsen aber nur auf Seelensand ({{nether/wart}})."
+  ],
+  "en": [
+   "Soul soil from the same biome works instead of soul sand for [[minecraft:soul_torch]] and the Wither. Nether wart only grows on soul sand though ({{nether/wart}})."
+  ],
+  "sources": [
+   "minecraft:soul_torch (#minecraft:soul_fire_base_blocks)",
+   "vanilla"
+  ]
+ },
+ "b_basalt": {
+  "de": [
+   "[[minecraft:blackstone]] aus den Deltas ersetzt Bruchstein im Ofen, in Steinwerkzeugen und im Braustand. Basalt brauchst du in Stufe 4 im Rock Crusher von NuclearCraft: 7 Basalt geben Wolfram- und Niobstaub."
+  ],
+  "en": [
+   "[[minecraft:blackstone]] from the deltas replaces cobblestone in furnaces, stone tools and the brewing stand. Basalt comes back in stage 4 in the NuclearCraft rock crusher: 7 basalt give tungsten and niobium dust."
+  ],
+  "sources": [
+   "minecraft:brewing_stand (#minecraft:stone_crafting_materials)",
+   "nuclearcraft:rock_crusher/basalt"
+  ]
+ },
+ "biomes": {
+  "de": [
+   "Es zählen nur die fünf Vanilla-Biome. Auf Kronwerke teilen sie sich den Nether mit acht Biomen von Incendium und den Biomen von Biomes O' Plenty, du musst also eventuell weiter suchen. Im Spiel heißt der Fortschritt **Heißbegehrte Reiseziele**; dort siehst du, welche Biome noch fehlen."
+  ],
+  "en": [
+   "Only the five vanilla biomes count. On Kronwerke they share the Nether with eight Incendium biomes and the Biomes O' Plenty ones, so you may have to search further. In game the advancement is **Hot Tourist Destinations**; it shows which biomes are still missing."
+  ],
+  "sources": [
+   "Incendium_1.21.x_v5.4.4.jar data/minecraft/dimension/the_nether.json",
+   "vanilla advancement nether/explore_nether"
+  ],
+  "client": [
+   "That BOP nether biomes generate alongside Incendium's dimension file"
+  ]
+ },
+ "bop": {
+  "de": [
+   "Bau einen Rosenquarzhaufen mit der Spitzhacke ab: Er gibt 4 [[biomesoplenty:rose_quartz_chunk]], mit Glück mehr. Mit anderem Werkzeug sind es nur 2, mit Behutsamkeit bekommst du den Haufen selbst, und das Mahlwerkrad macht daraus 7 Brocken."
+  ],
+  "en": [
+   "Mine a rose quartz cluster with a pickaxe: it gives 4 [[biomesoplenty:rose_quartz_chunk]], more with Fortune. Other tools give only 2, Silk Touch gives the cluster itself, and crushing wheels turn that into 7 chunks."
+  ],
+  "sources": [
+   "BiomesOPlenty jar: loot_table/blocks/rose_quartz_cluster.json",
+   "create:crushing/compat/biomesoplenty/rose_quartz"
+  ]
+ },
+ "m_ghast": {
+  "de": [
+   "Ein Ghast lässt 0 bis 1 Träne fallen, jede Stufe Plünderung gibt bis zu eine dazu. Neben Endkristallen ({{the_end/crystals}}) braucht in Stufe 4 auch [[nuclear_radiation:radaway]] eine Träne pro Stück ({{nuclearcraft/medicine}})."
+  ],
+  "en": [
+   "A ghast drops 0 to 1 tear, each level of Looting adds up to one more. Besides end crystals ({{the_end/crystals}}), [[nuclear_radiation:radaway]] in stage 4 takes one tear each ({{nuclearcraft/medicine}})."
+  ],
+  "sources": [
+   "Incendium jar data/minecraft/loot_table/entities/ghast.json",
+   "nuclear_radiation:radaway"
+  ]
+ },
+ "m_hoglin": {
+  "de": [
+   "Die Quest zählt nur Hoglins, keine Zoglins. Hoglins vermehrst du mit Karmesinpilzen, so baust du dir eine Fleischquelle im Nether. Im Stufe-2-Zuschlag haben sie 30 Prozent mehr Leben."
+  ],
+  "en": [
+   "The quest only counts hoglins, not zoglins. You breed hoglins with crimson fungus, which gives you a meat source in the Nether. With the stage 2 bonus they have 30 percent more health."
+  ],
+  "sources": [
+   "quest task minecraft:hoglin",
+   "srv/config/kronwerke-common.toml ([mobs] health)"
+  ]
+ },
+ "m_strider": {
+  "de": [
+   "Der Fortschritt im Spiel heißt **Mach diesem Boot Beine**. Halt die [[minecraft:warped_fungus_on_a_stick]] in der Hand, um zu lenken. Schreiter vermehrst du mit Wirrpilzen; manche erscheinen schon mit Sattel."
+  ],
+  "en": [
+   "The advancement in game is **This Boat Has Legs**. Hold the [[minecraft:warped_fungus_on_a_stick]] to steer. You breed striders with warped fungus; some spawn with a saddle already."
+  ],
+  "sources": [
+   "vanilla"
+  ]
+ },
+ "n_return_ghast": {
+  "de": [
+   "Der Fortschritt heißt **Zurück zum Absender**. Schlag zu, wenn die Feuerkugel fast bei dir ist; den tödlichen Treffer muss der Feuerball setzen. Ein Ghast hat im Grundwert 10 Leben, mit dem Stufe-2-Zuschlag 13."
+  ],
+  "en": [
+   "The advancement is **Return to Sender**. Hit the fireball when it is almost on you; the fireball has to land the killing blow. A ghast has 10 base health, 13 with the stage 2 bonus."
+  ],
+  "sources": [
+   "vanilla advancement nether/return_to_sender",
+   "srv/config/kronwerke-common.toml ([mobs] health 0.3)"
+  ]
+ },
+ "n_soul_lantern": {
+  "de": [
+   "Billiger mit Create: Eine normale [[minecraft:lantern]] im Spuken (Ventilator durch Seelenfeuer) wird zur Seelenlaterne, ebenso eine Fackel zur [[minecraft:soul_torch]]. Seelenfackeln ergeben aus einem Rezept 4 Stück."
+  ],
+  "en": [
+   "Cheaper with Create: a plain [[minecraft:lantern]] in haunting (a fan blowing through soul fire) becomes a soul lantern, and a torch becomes a [[minecraft:soul_torch]]. One soul torch recipe makes 4."
+  ],
+  "sources": [
+   "create:haunting/soul_lantern",
+   "create:haunting/soul_torch",
+   "minecraft:soul_torch"
+  ]
+ },
+ "n_froglight": {
+  "de": [
+   "**Auf Kronwerke geht kein Tier durchs Portal**, auch nicht im Boot. Ein Ausweg ist das [[sophisticatedbackpacks:mob_catcher_upgrade]] im Rucksack: Fang den Frosch damit, der Rucksack reist samt Inhalt mit.",
+   "Für Ockernes Froschlicht brauchst du einen orangen Frosch aus gemäßigten Biomen. Perlmuttfarbenes wandelt der Alchemiekatalysator von Botania im Manapool in Ockernes um."
+  ],
+  "en": [
+   "**On Kronwerke no animal goes through the portal**, not even in a boat. One way out is the [[sophisticatedbackpacks:mob_catcher_upgrade]] in a backpack: catch the frog with it, and the backpack travels along with its contents.",
+   "Ochre froglight needs an orange frog from temperate biomes. Botania's alchemy catalyst on a mana pool turns pearlescent froglight into ochre."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (non-players stay)",
+   "core: src/main/java/de/kronwerke/core/portal/Compat.java (backpack contents travel)",
+   "sophisticatedbackpacks:mob_catcher_upgrade",
+   "botania:mana_infusion/alchemy/froglight/ochre_froglight_from_pearlescent_froglight"
+  ],
+  "client": [
+   "That a frog caught with the Mob Catcher Upgrade survives the server move and can be released in the Nether"
+  ]
+ },
+ "fortress": {
+  "de": [
+   "Die Quest will den Block [[minecraft:nether_bricks]], den du mit der Spitzhacke aus den Festungsmauern holst. Die Netherziegel aus dem Ofen ({{nether/netherrack}}) zählen nicht direkt, vier davon ergeben aber einen Block.",
+   "Die Festung ist auch die Heimat der Witherskelette ({{nether/wither_skull}}) und der Lohen ({{nether/blaze}})."
+  ],
+  "en": [
+   "The quest wants the [[minecraft:nether_bricks]] block, mined with a pickaxe from the fortress walls. Nether brick items from the furnace ({{nether/netherrack}}) do not count directly, but four make a block.",
+   "The fortress is also home to wither skeletons ({{nether/wither_skull}}) and blazes ({{nether/blaze}})."
+  ],
+  "sources": [
+   "minecraft:nether_bricks",
+   "quest task"
+  ]
+ },
+ "blaze": {
+  "de": [
+   "Lohenruten fallen nur, wenn ein Spieler die Lohe tötet, und die Quest zählt nur normale Lohen. Aus einer Rute macht der Zerkleinerer von Mekanism 4 [[minecraft:blaze_powder]], das Mahlwerkrad 3 plus mit 25 Prozent 3 weitere, die Werkbank nur 2."
+  ],
+  "en": [
+   "Blaze rods only drop when a player kills the blaze, and the quest only counts plain blazes. One rod gives 4 [[minecraft:blaze_powder]] in Mekanism's crusher, 3 plus another 3 with 25 percent on crushing wheels, and just 2 in a crafting grid."
+  ],
+  "sources": [
+   "mekanism:crushing/blaze_rod",
+   "create:crushing/blaze_rod"
+  ]
+ },
+ "blaze_burner": {
+  "de": [
+   "Den [[create:empty_blaze_burner]] baust du auf Kronwerke mit 2 [[ars_nouveau:source_gem]], 4 Eisenblechen und einem Netherrack ({{create_brass/empty_burner}}).",
+   "Der fertige [[create:blaze_burner]] ist ein Item und reist mit dir durchs Portal. Ohne Brennstoff heizt er nicht; wie er überhitzt, steht in {{create_brass/brass_superheated}}."
+  ],
+  "en": [
+   "On Kronwerke the [[create:empty_blaze_burner]] takes 2 [[ars_nouveau:source_gem]], 4 iron sheets and a netherrack ({{create_brass/empty_burner}}).",
+   "The finished [[create:blaze_burner]] is an item and travels with you through the portal. Without fuel it does not heat; how to superheat it is in {{create_brass/brass_superheated}}."
+  ],
+  "sources": [
+   "kronwerke:empty_blaze_burner",
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (inventory travels)"
+  ]
+ },
+ "wart": {
+  "de": [
+   "Netherwarzen wachsen nur auf Seelensand, nicht auf Seelenerde, und Knochenmehl wirkt bei ihnen nicht. Pflanz ein paar zu Hause an, bevor du die Festung leer erntest."
+  ],
+  "en": [
+   "Nether wart only grows on soul sand, not soul soil, and bone meal does nothing to it. Plant a few at home before you harvest the fortress bare."
+  ],
+  "sources": [
+   "vanilla"
+  ]
+ },
+ "brewing": {
+  "de": [
+   "Der [[minecraft:brewing_stand]] nimmt statt Bruchstein auch Schwarzstein. Ein Lohenstaub reicht für 20 Brauvorgänge zu je bis zu 3 Flaschen. Mit Schießpulver wird der Trank zum Wurftrank, den du auch Freunden zuwerfen kannst."
+  ],
+  "en": [
+   "The [[minecraft:brewing_stand]] also takes blackstone instead of cobblestone. One blaze powder lasts 20 brews of up to 3 bottles each. Gunpowder makes it a splash potion you can throw at friends."
+  ],
+  "sources": [
+   "minecraft:brewing_stand (#minecraft:stone_crafting_materials)",
+   "vanilla"
+  ]
+ },
+ "wither_skull": {
+  "de": [
+   "Ein zweiter Weg über Reliquary: Witherskelette lassen manchmal eine [[reliquary:withered_rib]] fallen, 3 davon mit einem Skelettschädel ergeben einen Witherskelettschädel. Mit Plünderung steigen beide Chancen."
+  ],
+  "en": [
+   "A second route through Reliquary: wither skeletons sometimes drop a [[reliquary:withered_rib]], and 3 of them with a skeleton skull make a wither skeleton skull. Looting raises both chances."
+  ],
+  "sources": [
+   "reliquary:uncrafting/wither_skeleton_skull",
+   "reliquary jar: loot_table/inject/entities/wither_skeleton.json"
+  ]
+ },
+ "f_wither": {
+  "de": [
+   "Der Wither wächst auf Kronwerke mit der Gruppe: Für jeden weiteren Spieler im Kampf bekommt er 60 Prozent mehr Leben, bis 8 Spieler, und ab zwei Spielern Zusatzangriffe ({{bosses/b_group_scaling}}). Dafür bekommt er keinen Stufenzuschlag.",
+   "Der [[minecraft:nether_star]] fällt immer. Die [[mysticalagradditions:withering_soul]] kommt mit 35 Prozent."
+  ],
+  "en": [
+   "On Kronwerke the Wither grows with the group: each extra player in the fight gives it 60 percent more health, up to 8 players, and from two players on it uses extra attacks ({{bosses/b_group_scaling}}). In return it gets no stage bonus.",
+   "The [[minecraft:nether_star]] always drops. The [[mysticalagradditions:withering_soul]] comes with 35 percent."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([bosses] scaling, healthPerPlayer, maxPlayers)",
+   "srv/config/mysticalagradditions-common.toml (witheringSoulChance 0.35)"
+  ]
+ },
+ "barter": {
+  "de": [
+   "Der Fortschritt heißt **Oh, wie glänzend!**. Nur erwachsene Piglins tauschen, und nur gegen Goldbarren. Hier bekommst du den Weinenden Obsidian für {{nether/n_respawn_anchor}}."
+  ],
+  "en": [
+   "The advancement is **Oh Shiny**. Only adult piglins barter, and only for gold ingots. This is where you get the crying obsidian for {{nether/n_respawn_anchor}}."
+  ],
+  "sources": [
+   "vanilla"
+  ]
+ },
+ "bastion": {
+  "de": [
+   "Golddurchzogener Schwarzstein gibt meist sich selbst, manchmal stattdessen Goldnuggets; mit Behutsamkeit bekommst du immer den Block. Er zählt als bewachtes Gold, die Piglins werden beim Abbauen wütend. Die Beute in den Truhen ist für jeden eigene ({{exploration/e_lootr}})."
+  ],
+  "en": [
+   "Gilded blackstone usually drops itself, sometimes gold nuggets instead; Silk Touch always gives the block. It counts as guarded gold, so piglins turn hostile when you mine it. Chest loot is separate for each player ({{exploration/e_lootr}})."
+  ],
+  "sources": [
+   "vanilla",
+   "lootr-neoforge-1.21.1-1.11.38.127.jar"
+  ],
+  "client": [
+   "Drop of gilded blackstone without Silk Touch"
+  ]
+ },
+ "debris": {
+  "de": [
+   "Im Schmelzofen geht das Schmelzen doppelt so schnell wie im Ofen. In späteren Stufen gibt es zwei Netheritplatten pro Block: im Lichtbogenofen von IE (mit Schlacke) und im Rock Crusher von NuclearCraft."
+  ],
+  "en": [
+   "The blast furnace smelts it twice as fast as a furnace. In later stages you get two scrap per block: in the IE arc furnace (with slag) and in the NuclearCraft rock crusher."
+  ],
+  "sources": [
+   "minecraft:netherite_scrap_from_blasting",
+   "immersiveengineering:arcfurnace/netherite_scrap",
+   "nuclearcraft:rock_crusher/ancient_debris"
+  ]
+ },
+ "netherite": {
+  "de": [
+   "Kopier die [[minecraft:netherite_upgrade_smithing_template]], bevor du sie verbrauchst: Jedes Upgrade am Schmiedetisch frisst eine. In Stufe 4 macht der Alloy Smelter von Eternal Starlight aus 4 Gold und nur 2 Netheritplatten einen Barren."
+  ],
+  "en": [
+   "Copy the [[minecraft:netherite_upgrade_smithing_template]] before you use it up: every upgrade at the smithing table eats one. In stage 4 the Eternal Starlight alloy furnace makes an ingot from 4 gold and only 2 netherite scrap."
+  ],
+  "sources": [
+   "minecraft:netherite_upgrade_smithing_template",
+   "eternal_starlight:alloy/netherite",
+   "docs/STAGES.md (Eternal Starlight stage 4)"
+  ]
+ },
+ "n_respawn_anchor": {
+  "de": [
+   "Pass auf, wo du deinen Spawn setzt: Stirbst du später in der Oberwelt, wachst du am Anker im Nether auf, und der Server zieht dich dafür hinüber. Ist der Anker leer oder weg, landest du am Weltspawn. Ein Bett in der Oberwelt setzt den Spawn wieder zurück."
+  ],
+  "en": [
+   "Mind where you set your spawn: if you later die in the overworld you wake up at the anchor in the Nether, and the server moves you there. If the anchor is empty or gone you land at world spawn. A bed in the overworld sets your spawn back."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (respawn, respawnAt)"
+  ]
+ },
+ "n_piglin_brute": {
+  "de": [
+   "Ein Barbar hat 50 Leben, mit dem Stufe-2-Zuschlag 65. Barbaren kommen nur mit der Bastion und erscheinen nicht neu, eine geplünderte Bastion bleibt also ruhig."
+  ],
+  "en": [
+   "A brute has 50 health, 65 with the stage 2 bonus. Brutes only come with the bastion and never respawn, so a cleared bastion stays quiet."
+  ],
+  "sources": [
+   "vanilla",
+   "srv/config/kronwerke-common.toml ([mobs] health 0.3)"
+  ]
+ },
+ "n_lava_rod": {
+  "de": [
+   "Im Nether beißt am häufigsten Searing Cod an; der [[netherdepthsupgrade:fortress_grouper]] ist am seltensten (1 von 157), der Eyeball Fish kommt 10 von 157 Mal. Schere und Fisch zusammen in die Werkbank: Der Fortress Grouper gibt 4 Platten (die werden zu Netherziegeln), der Eyeball Fish ein Auge.",
+   "Ein Blazefish ergibt 2 Lohenstaub, eine Quelle ohne Festung."
+  ],
+  "en": [
+   "In the Nether searing cod bites most often; the [[netherdepthsupgrade:fortress_grouper]] is the rarest (1 in 157) and the eyeball fish comes 10 times in 157. Put shears and the fish in a crafting grid: the fortress grouper gives 4 plates (they become nether bricks), the eyeball fish an eye.",
+   "A blazefish makes 2 blaze powder, a source without a fortress."
+  ],
+  "sources": [
+   "netherdepthsupgrade jar: loot_table/gameplay/nether_fishing/fish.json",
+   "netherdepthsupgrade:fortress_grouper_plate",
+   "netherdepthsupgrade:eyeball",
+   "netherdepthsupgrade:nether_brick",
+   "netherdepthsupgrade:blaze_powder"
+  ]
+ },
+ "n_netherite_pick": {
+  "de": [
+   "Vorlage und Barren werden verbraucht, die Verzauberungen bleiben. Mit 7 Diamanten und einem Netherrack verdoppelst du die Vorlage ({{nether/netherite}})."
+  ],
+  "en": [
+   "Template and ingot are used up, the enchantments stay. 7 diamonds and a netherrack double the template ({{nether/netherite}})."
+  ],
+  "sources": [
+   "minecraft:netherite_upgrade_smithing_template"
+  ]
+ },
+ "n_lodestone": {
+  "de": [
+   "Der [[minecraft:lodestone_compass]] zeigt nur in der Dimension, in der sein Leitstein steht. Für die Oberwelt-Basis und den Nether brauchst du je einen eigenen Leitstein und Kompass."
+  ],
+  "en": [
+   "The [[minecraft:lodestone_compass]] only points in the dimension where its lodestone stands. For your overworld base and the Nether you need a lodestone and compass each."
+  ],
+  "sources": [
+   "vanilla"
+  ]
+ },
+ "structures": {
+  "de": [
+   "Die Skelett-Türme gibt es in vier Fassungen für Ödnis, Karmesinwald, Wirrwald und Seelensandtal. Daneben bringt Incendium eigene Bauwerke wie Forbidden Castle, Sanctum und Piglin Village mit; die zählen hier nicht, lohnen aber einen Blick."
+  ],
+  "en": [
+   "Skeleton towers come in four versions for wastes, crimson forest, warped forest and soul sand valley. Incendium also adds structures of its own like the Forbidden Castle, Sanctum and Piglin Village; they do not count here but are worth a look."
+  ],
+  "sources": [
+   "dungeons-and-taverns-v4.4.4.jar worldgen/structure (nether_skeleton_tower_*)",
+   "Incendium_1.21.x_v5.4.4.jar worldgen/structure"
+  ]
+ },
+ "s_formations": {
+  "de": [
+   "Formations Nether bringt 21 kleine Bauwerke, darunter auch einen Rippenkäfig, einen Kugelkäfig, einen Schachbretttempel und Erzsplitter. Halt auf längeren Wegen die Augen offen, etwa vom Schreiter aus ({{nether/m_strider}})."
+  ],
+  "en": [
+   "Formations Nether adds 21 small structures, among them a rib cage, a sphere cage, a checkerboard temple and ore shards. Most stand in the open, so keep an eye out while travelling ({{nether/m_strider}})."
+  ],
+  "sources": [
+   "formationsnether-1.0.5b-mc1.21+.jar worldgen/structure (21 files)"
+  ]
+ },
+ "bosses": {
+  "de": [
+   "Die Kappung gilt pro Boss für alle zusammen: Ignis nimmt höchstens 14 Schaden pro Sekunde, die Monstrosity 20, egal wie viele zuschlagen. Weil Kronwerke beiden pro weiterem Spieler 60 Prozent mehr Leben gibt, dauert der Kampf zu mehreren **länger** ({{bosses/b_group_scaling}}).",
+   "Allein braucht Ignis mindestens rund 32 Sekunden reinen Schaden, zu zweit rund 51. Mehr Leute helfen beim Ablenken und Überleben, nicht beim Tempo."
+  ],
+  "en": [
+   "The cap applies per boss to everyone together: Ignis takes at most 14 damage per second and the Monstrosity 20, however many people hit. Since Kronwerke gives both 60 percent more health per extra player, the fight takes **longer** in a group ({{bosses/b_group_scaling}}).",
+   "Solo, Ignis needs at least about 32 seconds of pure damage, with two players about 51. More people help with distraction and survival, not with speed."
+  ],
+  "sources": [
+   "L_Ender's Cataclysm 1.21.1-3.33.jar (IABoss_monster/LLibrary_Boss_Monster: damageBucket drains DpsCap/20 per tick)",
+   "srv/config/cataclysm-common.toml (cap_config)",
+   "srv/config/kronwerke-common.toml ([bosses] healthPerPlayer 0.6)"
+  ]
+ },
+ "ig_find": {
+  "de": [
+   "Für das [[cataclysm:flame_eye]] brauchst du 2 Netheritplatten, also schon 2 Antiken Schrott ({{nether/debris}}). Die Arena steht nur in der Netherödnis; wirf das Auge also von dort aus, sonst wird der Weg lang."
+  ],
+  "en": [
+   "The [[cataclysm:flame_eye]] needs 2 netherite scrap, so 2 ancient debris already ({{nether/debris}}). The arena only stands in nether wastes, so throw the eye from there or the trip gets long."
+  ],
+  "sources": [
+   "cataclysm:flame_eye",
+   "cataclysm jar: tags/worldgen/biome/has_structure/burning_arena_biomes.json"
+  ]
+ },
+ "ig_revenant": {
+  "de": [
+   "Jeder Ignited Revenant lässt genau eine [[cataclysm:burning_ashes]] fallen. Ignited Berserker lassen 0 bis 2 [[cataclysm:dying_ember]] fallen, mit Plünderung mehr; so bekommst du Asche für einen zweiten Ignis-Kampf."
+  ],
+  "en": [
+   "Every ignited revenant drops exactly one [[cataclysm:burning_ashes]]. Ignited berserkers drop 0 to 2 [[cataclysm:dying_ember]], more with Looting; that is how you get ashes for a second Ignis fight."
+  ],
+  "sources": [
+   "cataclysm jar: loot_table/entities/ignited_revenant.json, ignited_berserker.json",
+   "cataclysm:burning_ashes"
+  ]
+ },
+ "ig_kill": {
+  "de": [
+   "Ignis zieht sich Leben aus seinen Treffern, und ohne Ziel heilt er sich langsam wieder: Zieh dich nicht zum Ausruhen zurück. Er wächst mit der Gruppe ({{nether/bosses}}).",
+   "Seine 3 [[cataclysm:ignitium_ingot]] reichen für drei der vier Rüstungsteile ({{nether/ig_gear}})."
+  ],
+  "en": [
+   "Ignis heals from his own hits, and without a target he slowly heals back up: do not back off to rest. He grows with the group ({{nether/bosses}}).",
+   "His 3 [[cataclysm:ignitium_ingot]] cover three of the four armour pieces ({{nether/ig_gear}})."
+  ],
+  "sources": [
+   "srv/config/cataclysm-common.toml ([mobs.ignis] healing_multiplier, nature_heal)",
+   "cataclysm jar: loot_table/entities/ignis.json"
+  ],
+  "client": [
+   "How fast Ignis regenerates without a target"
+  ]
+ },
+ "ig_gear": {
+  "de": [
+   "Jedes Ignitium-Teil verbraucht am Schmiedetisch eine [[cataclysm:ignitium_upgrade_smithing_template]], einen Barren und das Netheritteil. Die volle Rüstung braucht also 4 Ignitium-Vorlagen, dafür 4 Netherit-Vorlagen, und 4 Barren; ein Ignis-Kampf gibt 3.",
+   "**Die Ignitium-Vorlage lässt sich nicht kopieren.** Die Elytra-Brustplatte entsteht am [[cataclysm:mechanical_fusion_anvil]]."
+  ],
+  "en": [
+   "Each ignitium piece uses up an [[cataclysm:ignitium_upgrade_smithing_template]], an ingot and the netherite piece at the smithing table. A full set therefore needs 4 ignitium templates, 4 netherite templates for them, and 4 ingots; one Ignis fight gives 3.",
+   "**The ignitium template cannot be copied.** The elytra chestplate is made at the [[cataclysm:mechanical_fusion_anvil]]."
+  ],
+  "sources": [
+   "cataclysm:ignitium_upgrade_smithing_template (used in 4 recipes, no duplication)",
+   "cataclysm:smithing/ignitium_helmet",
+   "cataclysm:weapon_infusion/ignitium_elytra_chestplate"
+  ]
+ },
+ "nm_find": {
+  "de": [
+   "Das [[cataclysm:monstrous_eye]] braucht 2 Netheritplatten und 4 Lavaeimer. Die Schmiede steht nie in den Basaltdeltas; wirf das Auge aus einem der vier anderen Biome."
+  ],
+  "en": [
+   "The [[cataclysm:monstrous_eye]] needs 2 netherite scrap and 4 lava buckets. The smithy never stands in basalt deltas; throw the eye from one of the other four biomes."
+  ],
+  "sources": [
+   "cataclysm:monstrous_eye",
+   "cataclysm jar: tags/worldgen/biome/has_structure/soul_black_smith_biomes.json"
+  ]
+ },
+ "nm_kill": {
+  "de": [
+   "Allein braucht die Monstrosity bei höchstens 20 Schaden pro Sekunde mindestens 30 Sekunden reinen Schaden, zu zweit hat sie 960 Leben und braucht mindestens 48 ({{nether/bosses}}). Die Beute ist fest: [[cataclysm:infernal_forge]], [[cataclysm:monstrous_horn]] und 16 bis 24 [[cataclysm:lava_power_cell]], mit 10 Prozent eine Schallplatte."
+  ],
+  "en": [
+   "Solo the Monstrosity needs at least 30 seconds of pure damage at 20 damage per second at most; with two players she has 960 health and needs at least 48 ({{nether/bosses}}). The loot is fixed: [[cataclysm:infernal_forge]], [[cataclysm:monstrous_horn]] and 16 to 24 [[cataclysm:lava_power_cell]], with 10 percent a music disc."
+  ],
+  "sources": [
+   "cataclysm jar: Netherite_Monstrosity_Entity (MAX_HEALTH 600), loot_table/entities/netherite_monstrosity.json",
+   "srv/config/cataclysm-common.toml (dps_cap 20)",
+   "srv/config/kronwerke-common.toml (healthPerPlayer 0.6)"
+  ]
+ },
+ "nm_gear": {
+  "de": [
+   "Der [[cataclysm:monstrous_helm]] verbraucht eine Netherit-Vorlage; kopier sie vorher ({{nether/netherite}}). Die [[cataclysm:void_forge]] entsteht am Mechanischen Fusionsamboss aus Höllenschmiede und [[cataclysm:void_core]] aus dem End."
+  ],
+  "en": [
+   "The [[cataclysm:monstrous_helm]] uses up a netherite template; copy it first ({{nether/netherite}}). The [[cataclysm:void_forge]] is made at the mechanical fusion anvil from the infernal forge and a [[cataclysm:void_core]] from the End."
+  ],
+  "sources": [
+   "cataclysm:smithing/monstrous_helm",
+   "cataclysm:weapon_infusion/void_forge"
+  ]
+ },
+ "supply": {
+  "de": [
+   "Die Messingbarren des Stufenziels sind kein fester Wert: Der Grundwert 2 000 wird mit der Zahl aktiver Spieler auf 40 bis 150 Prozent angepasst, den echten Stand zeigt der Obelisk. Messing mischt nur ein Mixer über einem beheizten Lohenbrenner ({{create_brass/brass_mixing}})."
+  ],
+  "en": [
+   "The brass ingots of the stage goal are no fixed number: the base of 2,000 is scaled to 40 to 150 percent by the number of active players, and the obelisk shows the real amount. Only a mixer over a heated blaze burner mixes brass ({{create_brass/brass_mixing}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage2 create:brass_ingot base 2000, scale true)"
+  ]
+ }
+}

@@ -1,0 +1,585 @@
+{
+ "welcome": {
+  "de": [
+   "Die [[nuclearcraft:manufactory]] braucht Strom: 50 FE/t, ein Rohstück dauert 10 Sekunden und gibt 2 Staub. Die [[nuclearcraft:coil_copper]] machst du aus 4 Kupfer und 2 Eisen; sie steckt in fast jeder Maschine des Kapitels.",
+   "Radioaktive Sachen strahlen auf Kronwerke auch aus Kisten, als Block und als Item auf dem Boden. Bau Geigerzähler und Dosimeter früh ({{nuclearcraft/geiger}})."
+  ],
+  "en": [
+   "The [[nuclearcraft:manufactory]] needs power: 50 FE/t, one raw ore takes 10 seconds and gives 2 dust. [[nuclearcraft:coil_copper]] is 4 copper and 2 iron; it goes into nearly every machine of this chapter.",
+   "On Kronwerke radioactive things also radiate from chests, as placed blocks and as items on the ground. Build the Geiger counter and dosimeter early ({{nuclearcraft/geiger}})."
+  ],
+  "sources": [
+   "nuclearcraft:manufactory",
+   "nuclearcraft:manufactory/uranium_raw",
+   "nuclearcraft:coil_copper",
+   "srv/config/nuclear_radiation-radiation.toml ([features])"
+  ]
+ },
+ "ores": {
+  "de": [
+   "Uran-, Bor-, Lithium- und Thoriumerz liegen zwischen Y -60 und 60, je 4 Adern mit bis zu 9 Blöcken pro Chunk. Rohuran wird im Pack zu [[mekanism:raw_uranium]] vereinheitlicht, das zählt für die Quest.",
+   "Die Manufactory macht aus jedem Rohstück 2 Staub, du brauchst also 5 Rohuran für eine Trennung im {{nuclearcraft/isotopes}}."
+  ],
+  "en": [
+   "Uranium, boron, lithium and thorium ore lie between Y -60 and 60, 4 veins of up to 9 blocks per chunk each. Raw uranium is unified to [[mekanism:raw_uranium]] in this pack, which is what the quest counts.",
+   "The manufactory turns each raw piece into 2 dust, so 5 raw uranium cover one run of the {{nuclearcraft/isotopes}}."
+  ],
+  "sources": [
+   "srv/config/nuclearcraft/worldgen.toml",
+   "config/almostunified/unification (mekanism before nuclearcraft)",
+   "nuclearcraft:manufactory/uranium_raw",
+   "nuclearcraft:isotope_separator/uranium (10 dust)"
+  ],
+  "client": [
+   "That NuclearCraft uranium ore drops mekanism:raw_uranium after unification"
+  ]
+ },
+ "graphite": {
+  "de": [
+   "Beide Mahlschritte sind 1 zu 1; der zweite dauert nur 5 Sekunden. Kohlenstaub gibt es auch aus dem Brecher von IE, aus einem Kohleblock sogar 9 auf einmal.",
+   "Im Schmelzofen wird der Staub doppelt so schnell zum [[nuclearcraft:graphite_ingot]]. Für Moderatoren brauchst du je Block 9 Barren ({{nuclearcraft/moderator}})."
+  ],
+  "en": [
+   "Both grinding steps are 1 to 1; the second takes only 5 seconds. Coal dust also comes from the IE crusher, even 9 at once from a block of coal.",
+   "A blast furnace turns the dust into a [[nuclearcraft:graphite_ingot]] twice as fast. Each moderator block takes 9 ingots ({{nuclearcraft/moderator}})."
+  ],
+  "sources": [
+   "nuclearcraft:manufactory/coal_graphite",
+   "immersiveengineering:crusher/coal_block",
+   "nuclearcraft:blasting/graphite_dust",
+   "nuclearcraft:graphite_block"
+  ]
+ },
+ "basics": {
+  "de": [
+   "Beide Diagonalen gehen, Blei oben links oder oben rechts. Plate Basic steckt in 17 Rezepten, fast jede Maschine trägt vier in den Ecken, und jede [[nuclearcraft:plate_advanced]] verbraucht eine."
+  ],
+  "en": [
+   "Both diagonals work, lead top left or top right. Plate Basic goes into 17 recipes, nearly every machine has four in its corners, and every [[nuclearcraft:plate_advanced]] uses one up."
+  ],
+  "sources": [
+   "nuclearcraft:plate_basic",
+   "nuclearcraft:plate_basic2",
+   "nuclearcraft:plate_advanced"
+  ]
+ },
+ "alloys": {
+  "de": [
+   "Der [[nuclearcraft:alloy_smelter]] nimmt meist Staub oder Barren gleichermaßen und braucht 50 bis 75 FE/t. Fast jedes Rezept gibt 2 Barren, [[nuclearcraft:tin_silver_ingot]] sogar 4 aus 3 Zinn und 1 Silber."
+  ],
+  "en": [
+   "The [[nuclearcraft:alloy_smelter]] mostly takes dust or ingots alike and draws 50 to 75 FE/t. Nearly every recipe gives 2 ingots, [[nuclearcraft:tin_silver_ingot]] even 4 from 3 tin and 1 silver."
+  ],
+  "sources": [
+   "nuclearcraft:alloy_smelter/ferroboron_ingots",
+   "nuclearcraft:alloy_smelter/tough_alloy_ingots",
+   "nuclearcraft:alloy_smelter/tin_silver"
+  ]
+ },
+ "ferroboron": {
+  "de": [
+   "Der Alloy Smelter nimmt auch Borbarren und Stahlbarren direkt. Stahlstaub geht ohne Barren: [[mekanism:enriched_iron]] mit Kohlenstoff im Metallurgischen Infuser gibt [[mekanism:dust_steel]]."
+  ],
+  "en": [
+   "The alloy smelter also takes boron and steel ingots directly. Steel dust works without ingots too: [[mekanism:enriched_iron]] with carbon in the metallurgic infuser gives [[mekanism:dust_steel]]."
+  ],
+  "sources": [
+   "nuclearcraft:alloy_smelter/ferroboron_ingots",
+   "mekanism:processing/steel/enriched_iron_to_dust"
+  ]
+ },
+ "tough": {
+  "de": [
+   "Das Mahlen sparst du dir: Ferroboronbarren und Lithiumbarren gehen direkt in den Alloy Smelter (15 Sekunden, 75 FE/t). Plane großzügig, allein die Tough-Rüstung frisst 24 Barren ({{nuclearcraft/tough_armor}})."
+  ],
+  "en": [
+   "You can skip the grinding: ferroboron and lithium ingots go straight into the alloy smelter (15 seconds, 75 FE/t). Plan generously, the tough armour alone eats 24 ingots ({{nuclearcraft/tough_armor}})."
+  ],
+  "sources": [
+   "nuclearcraft:alloy_smelter/tough_alloy_ingots",
+   "nuclearcraft:tough_helmet (and the other pieces)"
+  ]
+ },
+ "plate_adv": {
+  "de": [
+   "Aus 2 Plate Basic, 2 Tough Alloy und 1 Redstone werden 2 Plate Advanced. Sie stecken in 32 Rezepten, unter anderem jede Reaktorhülle ({{nuclearcraft/casing}})."
+  ],
+  "en": [
+   "2 Plate Basic, 2 tough alloy and 1 redstone make 2 Plate Advanced. They go into 32 recipes, every reactor casing among them ({{nuclearcraft/casing}})."
+  ],
+  "sources": [
+   "nuclearcraft:plate_advanced"
+  ]
+ },
+ "parts": {
+  "de": [
+   "Ein [[nuclearcraft:chassis]] kostet 4 Blei, 4 Stahl und 1 Tough Alloy und gibt nur ein Stück. Es steckt in 22 Rezepten: Isotope Separator, Pressurizer, Assembler, Rock Crusher, Reprocessor, Irradiator und Turbine brauchen je eins."
+  ],
+  "en": [
+   "A [[nuclearcraft:chassis]] costs 4 lead, 4 steel and 1 tough alloy and gives just one. It goes into 22 recipes: the isotope separator, pressurizer, assembler, rock crusher, reprocessor, irradiator and turbine take one each."
+  ],
+  "sources": [
+   "nuclearcraft:chassis (used in 22 recipes)"
+  ]
+ },
+ "motor": {
+  "de": [
+   "Ein Motor braucht 4 Stahl, 2 Goldnuggets, 2 Coil Copper und 1 Eisen. Der Isotope Separator braucht 2 davon, Assembler und Rock Crusher je einen."
+  ],
+  "en": [
+   "A motor takes 4 steel, 2 gold nuggets, 2 Coil Copper and 1 iron. The isotope separator needs 2 of them, the assembler and the rock crusher one each."
+  ],
+  "sources": [
+   "nuclearcraft:motor",
+   "nuclearcraft:isotope_separator",
+   "nuclearcraft:assembler",
+   "nuclearcraft:rock_crusher"
+  ]
+ },
+ "servo": {
+  "de": [
+   "Die Servos brauchen Ferroboron als Barren. Je zwei stecken im Reaktor-Port ({{nuclearcraft/port}}) und in der Irradiation Chamber."
+  ],
+  "en": [
+   "Servos need ferroboron as ingots. Two each go into the reactor port ({{nuclearcraft/port}}) and the irradiation chamber."
+  ],
+  "sources": [
+   "nuclearcraft:servo",
+   "nuclearcraft:fission_reactor_port",
+   "nuclearcraft:fission_reactor_irradiation_chamber"
+  ]
+ },
+ "actuator": {
+  "de": [
+   "Für einen Aktuator brauchst du 1 Stahl, 2 Ferroboron, 1 Kolben und 1 Kupfer. Pressurizer, Assembler und Rock Crusher brauchen je zwei, der Decay Hastener einen."
+  ],
+  "en": [
+   "An actuator takes 1 steel, 2 ferroboron, 1 piston and 1 copper. The pressurizer, assembler and rock crusher need two each, the decay hastener one."
+  ],
+  "sources": [
+   "nuclearcraft:actuator",
+   "nuclearcraft:pressurizer",
+   "nuclearcraft:assembler",
+   "nuclearcraft:rock_crusher",
+   "nuclearcraft:decay_hastener"
+  ]
+ },
+ "isotopes": {
+  "de": [
+   "Eine Trennung dauert 40 Sekunden bei 50 FE/t. Ihre 9 Uran-238 und 1 Uran-235 reichen genau für eine LEU-Mischung, ein Uran-238 bleibt übrig ({{nuclearcraft/fuel}}). Die Quest will 2 Uran-235, also 20 Staub oder 10 Rohuran."
+  ],
+  "en": [
+   "One run takes 40 seconds at 50 FE/t. Its 9 uranium 238 and 1 uranium 235 are just enough for one LEU mix, with one uranium 238 left over ({{nuclearcraft/fuel}}). The quest wants 2 uranium 235, so 20 dust or 10 raw uranium."
+  ],
+  "sources": [
+   "nuclearcraft:isotope_separator/uranium",
+   "nuclearcraft:fuel_uranium_leu_235_cr"
+  ]
+ },
+ "fuel": {
+  "de": [
+   "Die Werte gelten pro Zelle ohne Moderator. HEU-235 macht 300 Hitze und 960 Strom pro Tick, TBU nur 18 Hitze und 120 Strom, brennt dafür 12 Minuten. LEU-235-Oxid bringt 63 Hitze und 336 Strom."
+  ],
+  "en": [
+   "The numbers are per cell without moderators. HEU-235 makes 300 heat and 960 power per tick, TBU only 18 heat and 120 power but burns 12 minutes. LEU-235 oxide gives 63 heat and 336 power."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor/uranium_leu_235",
+   "nuclearcraft:fission_reactor/uranium_heu_235",
+   "nuclearcraft:fission_reactor/thorium_tbu",
+   "nuclearcraft:fission_reactor/uranium_leu_235_ox"
+  ]
+ },
+ "pressurizer": {
+  "de": [
+   "Eine Platte dauert im Pressurizer 10 Sekunden bei 50 FE/t. Auf Kronwerke presst auch die [[create:mechanical_press]] viele NuclearCraft-Platten, darunter Tough Alloy, Bor, Graphit und Thermoconducting.",
+   "Bleiplatten gibt die Presse als [[immersiveengineering:plate_lead]], die zählen für die Reaktorhülle genauso."
+  ],
+  "en": [
+   "One plate takes 10 seconds at 50 FE/t in the pressurizer. On Kronwerke the [[create:mechanical_press]] also presses many NuclearCraft plates, tough alloy, boron, graphite and thermoconducting among them.",
+   "The press makes lead plates as [[immersiveengineering:plate_lead]], which work just as well for the reactor casing."
+  ],
+  "sources": [
+   "nuclearcraft:pressurizer/lead",
+   "kubejs/server_scripts/kronwerke/round.js (press_tough_alloy, press_boron, press_graphite, press_thermoconducting)",
+   "create:pressing/compat/immersiveengineering/plate_lead",
+   "nuclearcraft:fission_reactor_casing (#c:plates/lead)"
+  ]
+ },
+ "casing": {
+  "de": [
+   "Ein Rezept gibt 4 Casing aus 4 Bleiplatten und 4 Plate Advanced. Innen braucht ein Reaktor Platz: 3 mal 3 mal 3 hat innen nur einen Block. Für 4 mal 4 mal 4 brauchst du 56 Blöcke Hülle, für 5 mal 5 mal 5 sind es 98, Controller und Port eingerechnet."
+  ],
+  "en": [
+   "One recipe gives 4 casings from 4 lead plates and 4 Plate Advanced. A reactor needs room inside: 3 by 3 by 3 has only one block inside. 4 by 4 by 4 takes 56 hull blocks and 5 by 5 by 5 takes 98, controller and port included."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor_casing",
+   "srv/config/nuclearcraft/multiblocks.toml (min_size 3, max_size 26)"
+  ]
+ },
+ "hastener": {
+  "de": [
+   "Der Hastener frisst 13 Bor: 4 Barren und einen Borblock aus 9 Barren. Ein Alloy-Smelter-Durchgang Zinn-Silber gibt 4 Barren, und der Fuel Reprocessor braucht später ebenfalls 4 ({{nuclearcraft/reprocess}})."
+  ],
+  "en": [
+   "The hastener eats 13 boron: 4 ingots and a block of 9. One alloy smelter run of tin silver gives 4 ingots, and the fuel reprocessor needs 4 later as well ({{nuclearcraft/reprocess}})."
+  ],
+  "sources": [
+   "nuclearcraft:decay_hastener",
+   "nuclearcraft:alloy_smelter/tin_silver",
+   "nuclearcraft:fuel_reprocessor"
+  ]
+ },
+ "assembler": {
+  "de": [
+   "Hard Carbon gibt 2 Barren aus je einem Graphit- und Diamantstaub. Den Diamantstaub mahlt die Manufactory (15 Sekunden, 75 FE/t)."
+  ],
+  "en": [
+   "Hard carbon gives 2 ingots from one graphite and one diamond dust. The manufactory grinds the diamond dust (15 seconds, 75 FE/t)."
+  ],
+  "sources": [
+   "nuclearcraft:alloy_smelter/hard_carbon",
+   "nuclearcraft:manufactory/diamond"
+  ]
+ },
+ "circuit": {
+  "de": [
+   "Energetic Blend gibt der Assembler gleich doppelt, aus je einem der vier Staube. Die [[immersiveengineering:plate_electrum]] aus dem Hammer von IE oder der Create-Presse zählt als Elektrum-Platte, du brauchst den Pressurizer dafür nicht."
+  ],
+  "en": [
+   "The assembler makes energetic blend two at a time, from one of each of the four dusts. An [[immersiveengineering:plate_electrum]] from the IE hammer or the Create press counts as electrum plate, no pressurizer needed."
+  ],
+  "sources": [
+   "nuclearcraft:assembler/energetic_blend",
+   "nuclearcraft:assembler/basic_electric_circuit (#c:plates/electrum)",
+   "immersiveengineering:crafting/plate_electrum_hammering",
+   "createaddition:pressing/electrum_ingot"
+  ]
+ },
+ "controller": {
+  "de": [
+   "Plane ohne Designer mit diesen Werten: LEU-235 macht 50 Hitze pro Zelle, jede Moderatorseite gibt 33 Prozent mehr Hitze und 17 Prozent mehr Strom, ein Wasser-Kühlkörper zieht 60 ab. Der [[nuclearcraft:analyzer]] hat kein Rezept, darum gibt es den Designer nicht."
+  ],
+  "en": [
+   "Plan without the designer using these numbers: LEU-235 makes 50 heat per cell, each moderator side adds 33 percent heat and 17 percent power, a water heat sink removes 60. The [[nuclearcraft:analyzer]] has no recipe, so there is no designer."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor/uranium_leu_235",
+   "srv/config/nuclearcraft/multiblocks.toml (moderator multipliers)",
+   "NuclearCraft jar: setup/entries/FissionReactor (water 60)",
+   "nuclearcraft:analyzer (0 recipes)"
+  ]
+ },
+ "rock_crusher": {
+  "de": [
+   "Jedes Rezept braucht mehrere Blöcke auf einmal: 4 Diorit, 4 Andesit, 4 Granit, 2 Netherrack (gibt Schwefel) oder 7 Basalt. Aus 1 Antikem Schrott macht er 2 Netheritplatten und Titanstaub."
+  ],
+  "en": [
+   "Every recipe takes several blocks at once: 4 diorite, 4 andesite, 4 granite, 2 netherrack (gives sulfur) or 7 basalt. One ancient debris gives 2 netherite scrap and titanium dust."
+  ],
+  "sources": [
+   "nuclearcraft:rock_crusher/diorite",
+   "nuclearcraft:rock_crusher/andesite",
+   "nuclearcraft:rock_crusher/granite",
+   "nuclearcraft:rock_crusher/netherrack",
+   "nuclearcraft:rock_crusher/basalt",
+   "nuclearcraft:rock_crusher/ancient_debris"
+  ]
+ },
+ "cells": {
+  "de": [
+   "Eine Zelle kostet 4 Zirkoniumbarren, also 8 Diorit im Rock Crusher. Den Zirkoniumstaub schmilzt du im Ofen oder Schmelzofen zum Barren."
+  ],
+  "en": [
+   "One cell costs 4 zirconium ingots, so 8 diorite in the rock crusher. Smelt the zirconium dust into ingots in a furnace or blast furnace."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor_solid_fuel_cell",
+   "nuclearcraft:rock_crusher/diorite",
+   "nuclearcraft:smelting/zirconium_dust"
+  ]
+ },
+ "moderator": {
+  "de": [
+   "Ein Moderator kostet 9 Graphitbarren. Ein Moderator verstärkt die Zelle, und an ihm darf auch ein Wasser-Kühlkörper sitzen ({{nuclearcraft/heatsinks}}). Die Werte stehen in der Konfiguration als 16,7 und 33,3 Prozent pro Seite."
+  ],
+  "en": [
+   "A moderator costs 9 graphite ingots. It boosts the cell, and a water heat sink may sit next to it ({{nuclearcraft/heatsinks}}). The config has 16.7 and 33.3 percent per side."
+  ],
+  "sources": [
+   "nuclearcraft:graphite_block",
+   "srv/config/nuclearcraft/multiblocks.toml (moderator_fe_multiplier, moderator_heat_multiplier)",
+   "NuclearCraft jar: setup/entries/FissionReactor (water rule cell|#nuclearcraft:moderators)"
+  ]
+ },
+ "thermo": {
+  "de": [
+   "Die Mengen: 1 Arsenstaub schmilzt zu 90 mB, der Chemical Reactor macht aus 333 mB Arsen und 45 mB Bor 180 mB Borarsenid, der Ingot Former aus 90 mB einen [[nuclearcraft:boron_arsenide_gem]]. Für 2 Edelsteine brauchst du also gut 4 Arsenstaub, das sind 16 Andesit.",
+   "1 [[nuclearcraft:extreme_ingot]] und 1 Edelstein geben 2 [[nuclearcraft:thermoconducting_ingot]]. Die Platte presst auf Kronwerke auch die Create-Presse."
+  ],
+  "en": [
+   "The amounts: 1 arsenic dust melts to 90 mB, the chemical reactor makes 180 mB boron arsenide from 333 mB arsenic and 45 mB boron, and the ingot former makes a [[nuclearcraft:boron_arsenide_gem]] from 90 mB. So 2 gems take a bit over 4 arsenic dust, that is 16 andesite.",
+   "1 [[nuclearcraft:extreme_ingot]] and 1 gem give 2 [[nuclearcraft:thermoconducting_ingot]]. On Kronwerke the Create press also makes the plate."
+  ],
+  "sources": [
+   "nuclearcraft:melter/arsenic_dust",
+   "nuclearcraft:chemical_reactor/boron_arsenide",
+   "nuclearcraft:ingot_former/boron_arsenide",
+   "nuclearcraft:alloy_smelter/thermoconducting_ingots",
+   "nuclearcraft:rock_crusher/andesite",
+   "kronwerke:round/press_thermoconducting"
+  ]
+ },
+ "heatsinks": {
+  "de": [
+   "Der Wasser-Kühlkörper zählt nur, wenn er an einer Zelle oder einem Moderator sitzt. Jeder Leere Kühlkörper braucht 2 Thermoconducting-Platten, also einen Durchgang aus {{nuclearcraft/thermo}}. Der [[nuclearcraft:fluid_infuser]] füllt einen in 10 Sekunden."
+  ],
+  "en": [
+   "The water heat sink only counts when it touches a cell or a moderator. Every empty heat sink needs 2 thermoconducting plates, one run of {{nuclearcraft/thermo}}. The [[nuclearcraft:fluid_infuser]] fills one in 10 seconds."
+  ],
+  "sources": [
+   "NuclearCraft jar: setup/entries/FissionReactor (water 60, rule)",
+   "nuclearcraft:empty_heat_sink",
+   "nuclearcraft:fluid_infuser/water_heat_sink"
+  ]
+ },
+ "port": {
+  "de": [
+   "Die Tough-Alloy-Platten macht der Pressurizer oder die Create-Presse. Der Siede-Modus ist auf Kronwerke an; den Dampf nutzt die {{nuclearcraft/turbine}}."
+  ],
+  "en": [
+   "The tough alloy plates come from the pressurizer or the Create press. Boiling mode is enabled on Kronwerke; the steam feeds the {{nuclearcraft/turbine}}."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor_port",
+   "kronwerke:round/press_tough_alloy",
+   "srv/config/nuclearcraft/multiblocks.toml (supports_boiling_mode)"
+  ]
+ },
+ "reactor": {
+  "de": [
+   "Ein einfacher Plan für 5 mal 5 mal 5: die Zelle in der Mitte, ein Graphitblock daneben, zwei Wasser-Kühlkörper an der Zelle. Das sind etwa 67 Hitze gegen 120 Kühlung und rund 280 FE/t.",
+   "Eine Kernschmelze ist mehr als die Explosion mit Stärke 4: Corium läuft aus, setzt in 5 Blöcken Umkreis Dinge in Brand und schmilzt Blöcke, bis es nach 2 Minuten erstarrt, dazu entsteht Strahlung."
+  ],
+  "en": [
+   "A simple plan for 5 by 5 by 5: the cell in the middle, one graphite block next to it, two water heat sinks on the cell. That is about 67 heat against 120 cooling and roughly 280 FE/t.",
+   "A meltdown is more than the power 4 explosion: corium spills out, sets things on fire within 5 blocks and melts blocks until it solidifies after 2 minutes, and radiation is released."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor/uranium_leu_235",
+   "srv/config/nuclearcraft/multiblocks.toml (explosion_radius 4, moderator multipliers)",
+   "NuclearCraft jar: FissionReactorLogic.meltdown (spillCorium, breakCeilingBlocks, spawnMeltdownRadiation)",
+   "srv/config/nuclear_radiation-corium.toml (burn_radius 5, solidify_ticks 2400)"
+  ],
+  "client": [
+   "Real heat and power of the suggested layout in the controller"
+  ]
+ },
+ "reprocess": {
+  "de": [
+   "Ein Durchgang dauert 5 Sekunden bei 50 FE/t. Lager die Produkte in einer Kiste weit weg von deinem Arbeitsplatz: Auch Kisten strahlen auf Kronwerke ({{nuclearcraft/geiger}})."
+  ],
+  "en": [
+   "One run takes 5 seconds at 50 FE/t. Store the products in a chest far from where you work: on Kronwerke chests radiate too ({{nuclearcraft/geiger}})."
+  ],
+  "sources": [
+   "nuclearcraft:fuel_reprocessor/uranium_leu_235",
+   "srv/config/nuclear_radiation-radiation.toml (container_radiation)"
+  ]
+ },
+ "irradiation": {
+  "de": [
+   "Für den Irradiator brauchst du 2 [[nuclearcraft:coil_magnesium_diboride]] aus je 4 Magnesiumdiborid und 2 Tough Alloy; Magnesiumdiborid gibt der Alloy Smelter dreifach aus 1 Magnesium und 2 Bor.",
+   "Thoriumstaub wird in 15 Sekunden zu TBP-Staub, Bismutstaub in 20 Sekunden zu Polonium. Bismut gibt es nur aus dem Decay Hastener."
+  ],
+  "en": [
+   "The irradiator needs 2 [[nuclearcraft:coil_magnesium_diboride]], each from 4 magnesium diboride and 2 tough alloy; the alloy smelter makes magnesium diboride three at a time from 1 magnesium and 2 boron.",
+   "Thorium dust becomes TBP dust in 15 seconds, bismuth dust becomes polonium in 20. Bismuth only comes from the decay hastener."
+  ],
+  "sources": [
+   "nuclearcraft:irradiator",
+   "nuclearcraft:coil_magnesium_diboride",
+   "nuclearcraft:alloy_smelter/magnesium_diboride_ingots",
+   "nuclearcraft:irradiator/thorium_to_tbp",
+   "nuclearcraft:irradiator/bismuth_to_polonium",
+   "nuclearcraft:bismuth_dust (decay_hastener/uranium_233)"
+  ]
+ },
+ "geiger": {
+  "de": [
+   "Die Stufen auf Kronwerke: ab 10 mSv/h oder 1 Sv Gesamtdosis Schwäche und Abbaulähmung, ab 0,5 Sv/h oder 3 Sv Übelkeit und Langsamkeit, ab 10 Sv/h oder 6 Sv Blindheit und Schaden, ab 100 Sv/h oder 10 Sv Ausdörrung und schwerer Schaden. Es zählt der schlimmere der beiden Werte.",
+   "Dein Körper baut gesammelte Dosis hier 300 mal schneller ab als in der Grundeinstellung des Mods. Selbst die Netherödnis hat schon 50 µSv/h Hintergrundstrahlung."
+  ],
+  "en": [
+   "The stages on Kronwerke: from 10 mSv/h or 1 Sv total dose weakness and mining fatigue, from 0.5 Sv/h or 3 Sv nausea and slowness, from 10 Sv/h or 6 Sv blindness and damage, from 100 Sv/h or 10 Sv wither and heavy damage. Whichever of the two is worse counts.",
+   "Your body clears collected dose 300 times faster here than in the mod's default. Even the nether wastes have 50 µSv/h background radiation."
+  ],
+  "sources": [
+   "srv/config/nuclear_radiation-radiation.toml ([thresholds_sv_per_hour], [thresholds_career_sv], [background])",
+   "NuclearRadiation jar: RadiationEffects (computeStage, apply)",
+   "srv/config/nuclear_radiation-common.toml (entityDecayMultiplier 3000, default 10)"
+  ]
+ },
+ "hazmat": {
+  "de": [
+   "Der ganze Anzug kostet 19 [[minecraft:phantom_membrane]]: 4 für den Helm, 7 für den Anzug, 6 für die Hose, 2 für die Stiefel. Ohne Helm atmest du in Gaswolken radioaktive Gase ein, die die Lunge belasten."
+  ],
+  "en": [
+   "The full suit takes 19 [[minecraft:phantom_membrane]]: 4 for the helmet, 7 for the suit, 6 for the leggings, 2 for the boots. Without the helmet you breathe in radioactive gas inside gas clouds, which burdens your lungs."
+  ],
+  "sources": [
+   "nuclear_radiation:hazmat_helmet",
+   "nuclear_radiation:hazmat_chestplate",
+   "nuclear_radiation:hazmat_leggings",
+   "nuclear_radiation:hazmat_boots",
+   "srv/config/nuclear_radiation-radiation.toml ([gas])"
+  ]
+ },
+ "medicine": {
+  "de": [
+   "Ein Rezept gibt 2 Jodtabletten, und jede blockt danach 30 Sekunden lang Jod. Die Ghast-Träne für RadAway holst du im Nether ({{nether/m_ghast}}). Weil dein Körper Dosis auf Kronwerke schnell abbaut, brauchst du Medizin vor allem nach Unfällen."
+  ],
+  "en": [
+   "One recipe gives 2 iodine pills, and each one blocks iodine for 30 seconds after. The ghast tear for RadAway comes from the Nether ({{nether/m_ghast}}). Since your body clears dose quickly on Kronwerke, you mostly need medicine after accidents."
+  ],
+  "sources": [
+   "nuclear_radiation:iodine_pill",
+   "NuclearRadiation jar: NRMedicineItems (iodine 0.5 Sv, 600 ticks)",
+   "srv/config/nuclear_radiation-common.toml (entityDecayMultiplier 3000)"
+  ]
+ },
+ "goal": {
+  "de": [
+   "Für 4 Zellen brauchst du 16 Zirkoniumbarren, also 32 Diorit. Führ den verbrauchten Brennstoff mit Rohren aus dem Port in eine Kiste weit weg, und prüf vor jedem Umbau die Netto-Hitze im Controller.",
+   "Was der Reaktor neben anderen Stromquellen leistet, vergleicht {{list_power/nc_fission}}."
+  ],
+  "en": [
+   "4 cells take 16 zirconium ingots, so 32 diorite. Pipe the spent fuel out of the port into a chest far away, and check the net heat in the controller before every change.",
+   "{{list_power/nc_fission}} compares the reactor with other power sources."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor_solid_fuel_cell",
+   "nuclearcraft:rock_crusher/diorite"
+  ]
+ },
+ "upgrades": {
+  "de": [
+   "Die Staube kommen aus der Manufactory: Lapis 10 Sekunden, Obsidian 20 Sekunden pro Stück. Obsidianstaub gibt es auch im Rock Crusher aus 7 Tiefenschiefer, zusammen mit Jodstaub."
+  ],
+  "en": [
+   "The dusts come from the manufactory: lapis 10 seconds, obsidian 20 seconds each. Obsidian dust also comes from the rock crusher out of 7 deepslate, together with iodine dust."
+  ],
+  "sources": [
+   "nuclearcraft:manufactory/lapis",
+   "nuclearcraft:manufactory/obsidian",
+   "nuclearcraft:rock_crusher/deepslate",
+   "nuclearcraft:upgrade_speed",
+   "nuclearcraft:upgrade_energy"
+  ]
+ },
+ "solar": {
+  "de": [
+   "Das Advanced-Panel liefert genau so viel wie die drei Basic-Panels darin plus 28 FE/t. Für die Nacht brauchst du daneben einen Speicher oder einen Reaktor ({{nuclearcraft/reactor}})."
+  ],
+  "en": [
+   "The advanced panel gives as much as the three basic panels inside it plus 28 FE/t. For the night you need storage next to it or a reactor ({{nuclearcraft/reactor}})."
+  ],
+  "sources": [
+   "NuclearCraft jar: content/energy/EnergyGenDefs (solar_panel_basic 28, solar_panel_advanced 112)",
+   "nuclearcraft:solar_panel_advanced"
+  ]
+ },
+ "nuclear_furnace": {
+  "de": [
+   "Als Brennstoff zählt jeder Uranbarren, auch der von Mekanism. Denk daran, dass die Barren im Ofen eine Strahlungsquelle sind ({{nuclearcraft/geiger}})."
+  ],
+  "en": [
+   "Any uranium ingot counts as fuel, Mekanism's too. Remember that the ingots inside are a radiation source ({{nuclearcraft/geiger}})."
+  ],
+  "sources": [
+   "NuclearCraft jar: block_entity/NuclearFurnaceBE (#c:ingots/uranium)",
+   "srv/config/nuclear_radiation-radiation.toml (container_radiation)"
+  ],
+  "client": [
+   "That ingots inside the nuclear furnace count as a container radiation source"
+  ]
+ },
+ "tough_armor": {
+  "de": [
+   "Helm 5, Brustplatte 8, Hose 7 und Stiefel 4 Barren, zusammen 24. Die Strahlenschutz-Platten setzt du am Schmiedetisch ein ({{nuclearcraft/shielding}})."
+  ],
+  "en": [
+   "Helmet 5, chestplate 8, leggings 7 and boots 4 ingots, 24 in all. Add the radiation shielding plates at the smithing table ({{nuclearcraft/shielding}})."
+  ],
+  "sources": [
+   "nuclearcraft:tough_helmet",
+   "nuclearcraft:tough_chestplate",
+   "nuclearcraft:tough_leggings",
+   "nuclearcraft:tough_boots"
+  ]
+ },
+ "redstone_sink": {
+  "de": [
+   "Der Redstone-Kühlkörper zieht 90 H/t ab, zählt aber **nur direkt an einer Brennstoffzelle**, nicht an einem Moderator. Der Quarz-Kühlkörper zieht ebenfalls 90 ab und muss dafür an einem Moderator sitzen, die beiden ergänzen sich."
+  ],
+  "en": [
+   "The redstone heat sink removes 90 H/t, but **only when it touches a fuel cell**, not a moderator. The quartz heat sink also removes 90 and has to touch a moderator instead, so the two complement each other."
+  ],
+  "sources": [
+   "NuclearCraft jar: setup/entries/FissionReactor (redstone 90 fuel_cell, quartz 90 #nuclearcraft:moderators)",
+   "nuclearcraft:redstone_heat_sink"
+  ]
+ },
+ "turbine": {
+  "de": [
+   "Der Dampf muss per Rohr vom Port in die [[nuclearcraft:steam_turbine]]. Im Siede-Modus liefert der Port selbst keinen Strom mehr, nur noch Dampf."
+  ],
+  "en": [
+   "Pipe the steam from the port into the [[nuclearcraft:steam_turbine]]. In boiling mode the reactor itself delivers no power any more, only steam."
+  ],
+  "sources": [
+   "NuclearCraft jar: FissionReactorLogic (steam mode sets energyPerTick 0)",
+   "nuclearcraft:steam_turbine"
+  ]
+ },
+ "heu": {
+  "de": [
+   "HEU-235 macht 300 Hitze pro Zelle, sechsmal so viel wie LEU, bei viermal so viel Strom (960). Für 3 HEU brauchst du 3 Uran-235, also 30 Uranstaub aus drei Trennungen."
+  ],
+  "en": [
+   "HEU-235 makes 300 heat per cell, six times as much as LEU, for four times the power (960). 3 HEU need 3 uranium 235, so 30 uranium dust from three separations."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor/uranium_heu_235",
+   "nuclearcraft:fuel_uranium_heu_235_cr",
+   "nuclearcraft:isotope_separator/uranium"
+  ]
+ },
+ "shielding": {
+  "de": [
+   "Danach gibt es noch zwei Stufen: Heavy aus Obsidian, Gold und Prismarin, Dense aus 8 Diamanten um einen Netheritbarren. Ein Rezept Light gibt 4 Platten, genug für eine ganze Rüstung."
+  ],
+  "en": [
+   "Two more tiers follow: heavy from obsidian, gold and prismarine, dense from 8 diamonds around a netherite ingot. One light recipe gives 4 plates, enough for a full set of armour."
+  ],
+  "sources": [
+   "nuclear_radiation:rad_shielding_heavy",
+   "nuclear_radiation:rad_shielding_dps",
+   "nuclear_radiation:rad_shielding_light"
+  ]
+ },
+ "prussian": {
+  "de": [
+   "Preußischblau kostet nur Lapis und 2 Eisennuggets, damit ist es die billigste Medizin. Ein Rad-Protection Potion mit Leuchtsteinstaub wird zum Rad-Protection Potion II, der zehn statt fünf Minuten hält."
+  ],
+  "en": [
+   "Prussian blue only costs lapis and 2 iron nuggets, which makes it the cheapest medicine. A Rad-Protection Potion with glowstone dust becomes Rad-Protection Potion II, which lasts ten minutes instead of five."
+  ],
+  "sources": [
+   "nuclear_radiation:prussian_blue",
+   "NuclearRadiation jar: NRMedicineItems (rad_protection_potion 6000 ticks, rad_protection_potion_2 12000 ticks)",
+   "nuclear_radiation:rad_protection_potion_2"
+  ]
+ }
+}

@@ -1,0 +1,550 @@
+{
+ "hammer": {
+  "de": [
+   "Der Hammer will genau normalen [[minecraft:cobblestone]], dazu Faden und zwei Stöcke. Der [[mahoutsukai:guidebook]] heißt im Spiel treuer Ratgeber für Mahou Tsukai und lässt sich schon vor Stufe 4 bauen, Hammer, Dolch und Pulver erst ab Stufe 4.",
+   "Die 30 Stäbe und die 128 Gaia-Seelen wachsen nicht mit der Spielerzahl. Wie du die Stäbe schnell baust, steht in {{mahou_tsukai/obelisk}}."
+  ],
+  "en": [
+   "The hammer wants plain [[minecraft:cobblestone]] exactly, plus string and two sticks. The [[mahoutsukai:guidebook]] can be built before stage 4; hammer, dagger and powders only from stage 4.",
+   "The 30 staffs and the 128 Gaia spirits do not grow with the player count. How to make the staffs quickly is in {{mahou_tsukai/obelisk}}."
+  ],
+  "sources": [
+   "mahoutsukai:hammer",
+   "mahoutsukai:guidebook (stage 1)",
+   "config/kronwerke/goals.json (stage4 magic: gaia_spirit 128 fixed, mystic_staff 30 fixed)"
+  ]
+ },
+ "blood": {
+  "de": [
+   "Die Taste Mahoujin zeichnen liegt ab Werk auf **M**; kollidiert sie mit einer Karte, leg sie in der Steuerung um ({{tips/h_keys}}). Der Kreis geht nur auf festen Blöcken.",
+   "Den Schaden kannst du dir beliebig holen, auf diesem Server muss er nicht vom Dolch kommen. Dein Höchstmana steigt um 1 für je 100 ausgegebenes Mana, bis höchstens 200 000."
+  ],
+  "en": [
+   "The Draw Mahoujin key is **M** by default; if it clashes with a map mod, rebind it in the controls ({{tips/h_keys}}). The circle only works on solid blocks.",
+   "Any damage will do, on this server it does not have to come from the dagger. Your maximum mana grows by 1 for every 100 mana you spend, up to 200 000."
+  ],
+  "sources": [
+   "mahoutsukai jar: stepsword/mahoutsukai/Keybinds.class (key.drawMahoujin, GLFW 77 = M)",
+   "config/mahoutsukai-server.toml (BLOOD_CIRCLE_SOLID_ONLY true, BLEEDING_FROM_DAGGER_ONLY false, MANA_UP_COUNTER 100, MANA_INCREASE 1, MAX_MANA_CAP 200000)"
+  ],
+  "client": [
+   "Default key M, possible clash with a map key"
+  ]
+ },
+ "dagger": {
+  "de": [
+   "Du brauchst je 2 Gold, Eisen und lila Farbstoff und einen Stock. Für den Kreis ist der Dolch nicht Pflicht, für das [[mahoutsukai:spell_cloth]] schon ({{mahou_tsukai/cloth}}), und er bleibt dabei im Raster."
+  ],
+  "en": [
+   "You need 2 each of gold, iron and purple dye and a stick. The circle does not need the dagger, the [[mahoutsukai:spell_cloth]] does ({{mahou_tsukai/cloth}}), and it stays in the grid."
+  ],
+  "sources": [
+   "mahoutsukai:dagger",
+   "mahoutsukai:spell_cloth",
+   "config/mahoutsukai-server.toml (BLEEDING_FROM_DAGGER_ONLY false)"
+  ]
+ },
+ "catalysts": {
+  "de": [
+   "Jedes Material gibt mit dem Hammer ein Pulver, mit Mörser und Stößel zwei ({{mahou_tsukai/mortar}}). Bau den Mörser deshalb vor dem großen Pulvervorrat.",
+   "Am meisten brauchst du Gold und Diamant: Explosive Manakondensation, das Mystische Zeichen und viele Rollen bestehen daraus. Eisenpulver frisst jede Barriere ({{mahou_tsukai/alarm}})."
+  ],
+  "en": [
+   "Each material gives one powder with the hammer and two with the mortar and pestle ({{mahou_tsukai/mortar}}). So build the mortar before you grind a big stock.",
+   "Gold and diamond are the ones you need most: explosive mana condensation, the mystic code and many scrolls are made of them. Iron powder goes into every boundary ({{mahou_tsukai/alarm}})."
+  ],
+  "sources": [
+   "mahoutsukai:powdered_iron",
+   "mahoutsukai:powdered_iron_2",
+   "mahoutsukai:powdered_gold",
+   "mahoutsukai:powdered_emerald",
+   "mahoutsukai:powdered_emerald_2",
+   "mahoutsukai:powdered_ender",
+   "mahoutsukai:powdered_eye",
+   "mahoutsukai:powdered_quartz",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "mortar": {
+  "de": [
+   "Zusammen kosten Mörser und Stößel **4 Diamanten**, 2 Ziegel und 2 Stöcke. Das Werkzeug bleibt beim Mahlen im Raster.",
+   "Nutzt du für die Stäbe das Zeichen der Ersten Magie ({{mahou_tsukai/first_sorcery}}), reicht für alle dreißig eine einzige Rolle, und der Mörser spart vor allem bei Barrieren und Schaltkreisen."
+  ],
+  "en": [
+   "Mortar and pestle together cost **4 diamonds**, 2 bricks and 2 sticks. The tool stays in the grid while grinding.",
+   "If you use the First Sorcery code for the staffs ({{mahou_tsukai/first_sorcery}}), one scroll covers all thirty, and the mortar mainly saves on boundaries and circuits."
+  ],
+  "sources": [
+   "mahoutsukai:mortar",
+   "mahoutsukai:pestle",
+   "mahoutsukai:mortar_and_pestle",
+   "mahoutsukai jar: stepsword/mahoutsukai/item/MortarAndPestle.class (crafting remainder)",
+   "config/mahoutsukai-server.toml (FIRST_SORCERY_DURABILITY 50)"
+  ]
+ },
+ "cloth": {
+  "de": [
+   "Nur [[minecraft:white_wool]] zählt, gefärbte Wolle nicht. Für die 8 Tücher der Quest brauchst du zwei Wolle.",
+   "Plan genug ein: Jede Rolle braucht ein Tuch, ein Mystisches Zeichen frisst sechs ({{mahou_tsukai/mystic_code}})."
+  ],
+  "en": [
+   "Only [[minecraft:white_wool]] works, dyed wool does not. The 8 cloths of this quest take two wool.",
+   "Plan for plenty: every scroll needs one cloth, a mystic code eats six ({{mahou_tsukai/mystic_code}})."
+  ],
+  "sources": [
+   "mahoutsukai:spell_cloth (4 out)",
+   "mahoutsukai:mystic_code"
+  ]
+ },
+ "strengthening": {
+  "de": [
+   "Mit 50 Mana passt die Rolle in deine Startleiste von 100 Mana. Viele spätere Rollen kosten mehr, als deine Leiste fasst: Rho Aias 300, Projektion 1 000, der Stab 2 000.",
+   "Das Höchstmana steigt nur um 1 je 100 verbrauchtes Mana. Für die großen Zauber holst du dir deshalb Speicher: {{mahou_tsukai/gems}} und {{mahou_tsukai/circuit}}."
+  ],
+  "en": [
+   "At 50 mana this scroll fits your starting bar of 100. Many later scrolls cost more than your bar holds: Rho Aias 300, projection 1 000, the staff 2 000.",
+   "Maximum mana only grows by 1 per 100 mana used. So get storage for the big spells: {{mahou_tsukai/gems}} and {{mahou_tsukai/circuit}}."
+  ],
+  "sources": [
+   "mahoutsukai jar: stepsword/mahoutsukai/dataattachments/mahou/Mahou.class (maxMana 100)",
+   "config/mahoutsukai-server.toml (STRENGTHENING_MANA_COST 50, RHO_AIAS_MANA_COST 300, PROJECTION_MANA_COST 1000, MYSTIC_STAFF_SUMMON_MANA_COST 2000, MANA_UP_COUNTER 100)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "schools": {
+  "de": [
+   "Der Schild hält 1 200 Ticks, also eine Minute. Gandr-Geschosse vernichtet er.",
+   "300 Mana sind mehr als deine Startleiste, du brauchst dafür also gespeichertes Mana ({{mahou_tsukai/gems}}). Von hier gehen {{mahou_tsukai/gandr}} und {{mahou_tsukai/borrowed_authority}} ab."
+  ],
+  "en": [
+   "The shield lasts 1 200 ticks, one minute. It destroys Gandr projectiles.",
+   "300 mana is more than your starting bar, so you need stored mana for it ({{mahou_tsukai/gems}}). {{mahou_tsukai/gandr}} and {{mahou_tsukai/borrowed_authority}} branch off here."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (RHO_AIAS_LIFE 1200, RHO_AIAS_ENTITY_KILL_LIST gandr_entity)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "gandr": {
+  "de": [
+   "Gandr ist das einzige Rezept dieser Reihe aus drei verschiedenen Pulvern. Der Schaden liegt auf diesem Server zwischen 5 und 1 000 und wächst mit deinem Mana, die Kosten wachsen mit."
+  ],
+  "en": [
+   "Gandr is the only recipe in this row made of three different powders. On this server its damage is between 5 and 1 000 and grows with your mana, and so does its cost."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (GANDR_MANA_SCALES, GANDR_DAMAGE_SCALES, GANDR_MIN_DAMAGE 5, GANDR_MAX_DAMAGE 1000)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "proj_displacement": {
+  "de": [
+   "Schieß einen Pfeil an die Stelle, wo du hin willst, und lies dann die Rolle: ein günstiger Sprung über Schluchten oder auf Dächer. Von hier gehen {{mahou_tsukai/protective}} und {{mahou_tsukai/ascension}} ab."
+  ],
+  "en": [
+   "Shoot an arrow where you want to go, then read the scroll: a cheap jump across ravines or onto roofs. {{mahou_tsukai/protective}} and {{mahou_tsukai/ascension}} branch off here."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (PROJECTILE_DISPLACEMENT_MANA_COST 50)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "projection": {
+  "de": [
+   "**1 000 Mana** pro Einsatz: Ohne eingestimmten Edelstein oder Schaltkreis kannst du die Rolle am Anfang nicht benutzen ({{mahou_tsukai/gems}}).",
+   "Projizierte Waffen sind Munition für {{mahou_tsukai/weapon_shooter}}."
+  ],
+  "en": [
+   "**1 000 mana** per use: without an attuned gem or a circuit you cannot use this scroll early on ({{mahou_tsukai/gems}}).",
+   "Projected weapons are ammunition for {{mahou_tsukai/weapon_shooter}}."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (PROJECTION_MANA_COST 1000)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "familiar": {
+  "de": [
+   "Der Vertraute hat nur 10 Lebenspunkte und meldet sich etwa alle 20 Sekunden. Das Chunkladen ist auf diesem Server eingeschaltet."
+  ],
+  "en": [
+   "The familiar has only 10 health and reports about every 20 seconds. Chunk loading is switched on on this server."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (SUMMON_FAMILIAR_MANA_COST 200, FAMILIAR_HEALTH 10, FAMILIAR_REPORT_SURROUNDINGS_TIME 400, FAMILIAR_CHUNKLOADS true)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "damage_exchange": {
+  "de": [
+   "Für **5 Treffer** sinkt der Schaden auf 1, und jeder Treffer gibt dir 20 Mana. Bei 40 Mana Kosten lohnt sich die Rolle also ab dem zweiten Treffer."
+  ],
+  "en": [
+   "For **5 hits** the damage drops to 1, and every hit gives you 20 mana. At a cost of 40 mana the scroll pays off from the second hit on."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (DAMAGE_EXCHANGE_MANA_COST 40, DAMAGE_EXCHANGE_MANA_GAIN 20, DAMAGE_EXCHANGE_REDUCE_TO 1.0, DAMAGE_EXCHANGE_CAP 5)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "caliburn": {
+  "de": [
+   "Die 5 000 Mana für das Schwert holst du aus einem Schaltkreis in 10 Blöcken ({{mahou_tsukai/circuit}}). Der See muss erst auf eine Mindestgröße wachsen, bevor er ein Schwert verwandelt.",
+   "Reparatur zählt nicht für den Verzauberungsbonus, und Clarent und Morgan nimmt der See nicht. Eine Projektion von Caliburn gibt kein neues Caliburn."
+  ],
+  "en": [
+   "Take the 5 000 mana for the sword from a circuit within 10 blocks ({{mahou_tsukai/circuit}}). The lake first has to grow to a minimum size before it transforms a sword.",
+   "Mending does not count for the enchantment bonus, and the lake refuses Clarent and Morgan. A projection of Caliburn does not make a new Caliburn."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (POWER_CONSOLIDATION_SWORD_MANA_COST 5000, LAKE_MANA_COST 30, LAKE_THRESHHOLD 150, ENCHANT_BLACKLIST mending, POWER_CONSOLIDATION_BLACKLIST clarent morgan, PROJECTIONS_ALLOWED false)",
+   "mahoutsukai jar: data/mahoutsukai/advancement/sword_in_the_lake.json",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ],
+  "client": [
+   "How big the lake must grow (threshold 150) and how it shows"
+  ]
+ },
+ "gems": {
+  "de": [
+   "**Rezept auf Kronwerke:** Der [[mahoutsukai:attuner]] nimmt an den Seiten **4 [[botania:terrasteel_ingot]]** statt Gold ({{botania_runes/terrasteel}}), in die Ecken Lapis.",
+   "Der Einstimmer wird beim Einstimmen verbraucht, jeder Edelstein kostet also 4 Terrastahl. Mehr Speicher fürs Geld gibt der [[mahoutsukai:mana_circuit_magitech]] mit 100 000 Mana aus Eisen und Smaragdpulver ({{mahou_tsukai/circuit}})."
+  ],
+  "en": [
+   "**Recipe on Kronwerke:** the [[mahoutsukai:attuner]] takes **4 [[botania:terrasteel_ingot]]** on the sides instead of gold ({{botania_runes/terrasteel}}), lapis in the corners.",
+   "The attuner is used up when attuning, so every gem costs 4 terrasteel. More storage for the price comes from the [[mahoutsukai:mana_circuit_magitech]] with 100 000 mana from iron and emerald powder ({{mahou_tsukai/circuit}})."
+  ],
+  "sources": [
+   "mahoutsukai:attuner (key B = botania:terrasteel_ingot)",
+   "kubejs/server_scripts/kronwerke/round.js (attuner gold -> terrasteel)",
+   "mahoutsukai:attuned_diamond",
+   "mahoutsukai jar: stepsword/mahoutsukai/item/attunedgems/Attuner.class (no crafting remainder)",
+   "config/mahoutsukai-server.toml (ATTUNED_DIAMOND_CAPACITY 10000, MANA_CIRCUIT_MAGITECH_CAPACITY 100000)"
+  ]
+ },
+ "attuned_emerald": {
+  "de": [
+   "Auch der Smaragd braucht einen ganzen [[mahoutsukai:attuner]] mit 4 Terrastahl, billiger ist nur der Edelstein selbst. Schon ein eingestimmter Smaragd reicht für zwei Mystische Stäbe zu je 2 000 Mana.",
+   "Die Quest {{mahou_tsukai/staff}} schenkt dir einen eingestimmten Smaragd."
+  ],
+  "en": [
+   "The emerald too needs a whole [[mahoutsukai:attuner]] with 4 terrasteel; only the gem itself is cheaper. A single attuned emerald already covers two Mystic Staffs at 2 000 mana each.",
+   "The quest {{mahou_tsukai/staff}} gives you an attuned emerald."
+  ],
+  "sources": [
+   "mahoutsukai:attuned_emerald",
+   "mahoutsukai:attuner",
+   "config/mahoutsukai-server.toml (ATTUNED_EMERALD_CAPACITY 5000, MYSTIC_STAFF_SUMMON_MANA_COST 2000)"
+  ]
+ },
+ "circuit": {
+  "de": [
+   "Der Schaltkreis braucht keinen Einstimmer: 6 Eisenbarren und 3 Smaragdpulver, damit ist er der günstigste große Speicher. Mit Mörser und Stößel sind das nur 2 Smaragde.",
+   "Füllen von Hand dauert lange. Tauschkreis ({{mahou_tsukai/chronal}}) und Kodoku ({{mahou_tsukai/sources}}) laden ihn nebenbei."
+  ],
+  "en": [
+   "The circuit needs no attuner: 6 iron ingots and 3 emerald powder, which makes it the cheapest large storage. With the mortar and pestle that is only 2 emeralds.",
+   "Filling it by hand takes long. The exchange circle ({{mahou_tsukai/chronal}}) and the kodoku ({{mahou_tsukai/sources}}) charge it on the side."
+  ],
+  "sources": [
+   "mahoutsukai:mana_circuit_magitech",
+   "mahoutsukai:powdered_emerald_2",
+   "config/mahoutsukai-server.toml (MANA_CIRCUIT_MAGITECH_CAPACITY 100000, MANA_CIRCUIT_RANGE 10)"
+  ]
+ },
+ "chronal": {
+  "de": [
+   "Der Kreis rechnet alle 20 Ticks ab, daher die 10 Mana pro Sekunde in beide Richtungen. Der Haltbarkeitstausch gibt höchstens 10 Mana pro Takt.",
+   "Die Quest ist ein Häkchen: Hak sie ab, sobald ein Tauschkreis neben deinem Schaltkreis liegt."
+  ],
+  "en": [
+   "The circle settles every 20 ticks, hence the 10 mana per second either way. The durability exchange gives at most 10 mana per cycle.",
+   "The quest is a checkmark: tick it once an exchange circle lies next to your circuit."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (CHRONAL_EXCHANGE_BLOCK_CYCLE 20, CHRONAL_EXCHANGE_MANA_GAIN_LOSS 10, DURABILITY_EXCHANGE_MANA_GAIN_CAP 10)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ],
+  "client": [
+   "Whether gain and loss go to the caster or to nearby circuits"
+  ]
+ },
+ "sources": {
+  "de": [
+   "Alle Zutaten sind gewöhnlich bis auf [[minecraft:nether_wart]], die nur im Nether wächst oder auf Seelensand, den du von dort mitbringst. Die giftige Kartoffel fällt gelegentlich bei der Kartoffelernte."
+  ],
+  "en": [
+   "All ingredients are common except [[minecraft:nether_wart]], which only grows in the Nether or on soul sand you bring from there. The poisonous potato drops now and then when you harvest potatoes."
+  ],
+  "sources": [
+   "mahoutsukai:kodoku",
+   "mahoutsukai jar: data/mahoutsukai/advancement/kodoku.json"
+  ]
+ },
+ "fay_sight": {
+  "de": [
+   "Die Sicht hält **600 Ticks, also 30 Sekunden**, und kostet 100 Mana, deine ganze Startleiste. Leylinien gibt es auf diesem Server in jeder Dimension.",
+   "Den Elytra-Schub an einer Linie bekommst du auf diesem Server auch ohne aktive Feensicht."
+  ],
+  "en": [
+   "The sight lasts **600 ticks, 30 seconds**, and costs 100 mana, your whole starting bar. On this server ley lines exist in every dimension.",
+   "On this server the elytra boost along a line works even without Fay Sight active."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (FAY_SIGHT_MANA_COST 100, FAY_SIGHT_TIME 600, LEY_DISTANCE 300, LEY_DIMENSION_LIST [] with LEY_BLACKLIST true, LEY_ELYTRA_LIMITED_TO_FAY_SIGHT false)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "fae": {
+  "de": [
+   "Jede Fae lässt 1 bis 2 [[mahoutsukai:fae_essence]] fallen, Plünderung gibt bis zu eine mehr je Stufe. Für die 8 Essenzen brauchst du also vier bis acht.",
+   "Weil die Feensicht nur 30 Sekunden hält, nimm einen gefüllten eingestimmten Edelstein mit, damit du sie mehrmals erneuern kannst ({{mahou_tsukai/gems}})."
+  ],
+  "en": [
+   "Each fae drops 1 to 2 [[mahoutsukai:fae_essence]], looting adds up to one more per level. So the 8 essences take four to eight fae.",
+   "Fay Sight lasts only 30 seconds, so carry a filled attuned gem to renew it several times ({{mahou_tsukai/gems}})."
+  ],
+  "sources": [
+   "mahoutsukai jar: data/mahoutsukai/loot_table/fae.json",
+   "config/mahoutsukai-server.toml (FAY_SIGHT_TIME 600)"
+  ]
+ },
+ "fae_circuit": {
+  "de": [
+   "Er kostet nur Essenz und ein Smaragdpulver, kein Eisen. Freigegeben wird er wie jeder Schaltkreis mit einem Klick Feen-Essenz; zusammen mit dem Zeichen der Ersten Magie ist das der schnelle Weg zu den Stäben ({{mahou_tsukai/obelisk}})."
+  ],
+  "en": [
+   "It costs only essence and one emerald powder, no iron. Like any circuit it is shared by clicking it with fae essence; together with the First Sorcery code that is the quick route to the staffs ({{mahou_tsukai/obelisk}})."
+  ],
+  "sources": [
+   "mahoutsukai:mana_circuit",
+   "config/mahoutsukai-server.toml (MANA_CIRCUIT_CAPACITY 100000)"
+  ]
+ },
+ "reality_marble": {
+  "de": [
+   "Drei Diamantpulver sind drei Diamanten mit dem Hammer, mit dem Mörser nur zwei. Die 4 000 Mana überschreiten jeden einzelnen eingestimmten Smaragd; ein Diamant (10 000) oder ein Schaltkreis reicht."
+  ],
+  "en": [
+   "Three diamond powders are three diamonds with the hammer, only two with the mortar. The 4 000 mana are more than any single attuned emerald; a diamond (10 000) or a circuit is enough."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (MARBLE_MANA_COST 4000, ATTUNED_EMERALD_CAPACITY 5000, ATTUNED_DIAMOND_CAPACITY 10000)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "marble_visit": {
+  "de": [
+   "Die Schwerter dort sind Eisen, Diamant oder Stein und halten je 3 Schläge. Kronwerke sperrt die Dimension bis Stufe 4, vorher kommst du nicht hinein."
+  ],
+  "en": [
+   "The swords there are iron, diamond or stone and last 3 hits each. Kronwerke locks the dimension until stage 4, before that you cannot enter."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (MARBLE_SWORD_SPAWN_LIST, MARBLE_DIMENSION_DURABILITY 3)",
+   "core: src/main/java/de/kronwerke/core/config/KronwerkeConfig.java (mahoutsukai:reality_marble=kronwerke:stage4)"
+  ]
+ },
+ "mystic_code": {
+  "de": [
+   "Die Taste mystisches Zeichen ändern liegt ab Werk auf Y. Das Zeichen der Ersten Magie ({{mahou_tsukai/first_sorcery}}) braucht dasselbe Tuchgerüst, also leg gleich zwölf [[mahoutsukai:spell_cloth]] bereit."
+  ],
+  "en": [
+   "The Change Mystic Code key is Y by default. The First Sorcery code ({{mahou_tsukai/first_sorcery}}) uses the same cloth frame, so have twelve [[mahoutsukai:spell_cloth]] ready."
+  ],
+  "sources": [
+   "mahoutsukai:mystic_code",
+   "mahoutsukai:mystic_code_first_sorcery",
+   "mahoutsukai jar: stepsword/mahoutsukai/Keybinds.class (key.changeMysticCode, GLFW 89 = Y)"
+  ],
+  "client": [
+   "Default key Y (shown as Z on some German keyboards?)"
+  ]
+ },
+ "staff_scroll": {
+  "de": [
+   "Mit dem Zeichen der Ersten Magie ({{mahou_tsukai/first_sorcery}}) reicht **eine einzige Rolle** für alle Stäbe, ohne Zeichen kostet jeder Stab eine neue Rolle mit 2 Gold und 1 Diamantpulver."
+  ],
+  "en": [
+   "With the First Sorcery code ({{mahou_tsukai/first_sorcery}}) **one single scroll** covers all staffs; without it every staff costs a new scroll of 2 gold and 1 diamond powder."
+  ],
+  "sources": [
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class",
+   "config/mahoutsukai-server.toml (FIRST_SORCERY_DURABILITY 50, MYSTIC_CODE_FIRST_SORCERY_BLACKLIST drain life only)"
+  ]
+ },
+ "staff": {
+  "de": [
+   "Der Wert 2 000 steht in der Serverconfig, der Mod hätte 100. Die große Explosion hat Größe 30 und der Strahl bricht bis zu 90 Blöcke pro Tick: beides zerstört auf diesem Server wirklich Blöcke.",
+   "Abgabe und den schnellen Weg zu dreißig Stäben findest du in {{mahou_tsukai/obelisk}}."
+  ],
+  "en": [
+   "The value of 2 000 is in the server config, the mod default is 100. The big explosion has size 30 and the beam breaks up to 90 blocks per tick: both really destroy blocks on this server.",
+   "Handing in and the quick route to thirty staffs are in {{mahou_tsukai/obelisk}}."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (MYSTIC_STAFF_SUMMON_MANA_COST 2000, default 100; MYSTIC_STAFF_BIG_SIZE 30; MYSTIC_STAFF_BEAM_MAX_BLOCK_BREAK_PER_TICK 90; MYSTIC_STAFF_WORLD_DAMAGE true)"
+  ]
+ },
+ "first_sorcery": {
+  "de": [
+   "Mit 50 Haltbarkeit reicht ein Zeichen für alle 30 Stäbe des Obelisken, mit Rest. Nur die Rolle der Barriere des Lebensraubs ist auf diesem Server gesperrt.",
+   "Die Feen-Essenz bekommst du in {{mahou_tsukai/fae}}."
+  ],
+  "en": [
+   "With 50 durability one code covers all 30 staffs for the obelisk, with some to spare. Only the Boundary of Drain Life scroll is barred on this server.",
+   "You get the fae essence in {{mahou_tsukai/fae}}."
+  ],
+  "sources": [
+   "mahoutsukai:mystic_code_first_sorcery",
+   "config/mahoutsukai-server.toml (FIRST_SORCERY_DURABILITY 50, MYSTIC_CODE_FIRST_SORCERY_BLACKLIST scroll_boundary_drain_life)"
+  ]
+ },
+ "obelisk": {
+  "de": [
+   "Rechtsklick am Obelisken gibt den Stapel in deiner Hand ab. Mit einem Gegenstand in der Hand und zwei Schleich-Rechtsklicks binnen 5 Sekunden gibst du alles aus deinem Hauptinventar ab, nicht aus der Schnellleiste.",
+   "Für die Quest brauchst du zuerst 5 Stäbe im Inventar. Die 30 Stäbe des Ziels sind fest und wachsen nicht mit der Spielerzahl; ein Schaltkreis fasst 100 000 Mana und deckt die 60 000 locker."
+  ],
+  "en": [
+   "Right click at the obelisk hands in the stack in your hand. With an item in hand and two sneak right clicks within 5 seconds you hand in everything in your main inventory, not the hotbar.",
+   "For the quest you first need 5 staffs in your inventory. The goal's 30 staffs are fixed and do not grow with the player count; one circuit holds 100 000 mana and easily covers the 60 000."
+  ],
+  "sources": [
+   "docs/STAGES.md (What the obelisk is)",
+   "config/kronwerke/goals.json (stage4 mystic_staff base 30 fixed)",
+   "config/mahoutsukai-server.toml (MANA_CIRCUIT_CAPACITY 100000)"
+  ]
+ },
+ "protective": {
+  "de": [
+   "Wie Projektilverschiebung kostet die Rolle nur 50 Mana und passt in deine Startleiste. Gut gegen Skelette und Schützen bei Bosskämpfen."
+  ],
+  "en": [
+   "Like projectile displacement the scroll costs only 50 mana and fits your starting bar. Good against skeletons and archers in boss fights."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (PROTECTIVE_DISPLACEMENT_MANA_COST 50)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "ascension": {
+  "de": [
+   "Mit 30 Mana ist die Rolle der billigste Zauber der Reihe und passt in jede Startleiste. Für einen Aufzug legst du den Kreis ohne Tuch unten in den Schacht."
+  ],
+  "en": [
+   "At 30 mana the scroll is the cheapest spell in the row and fits any starting bar. For a lift, lay the circle without cloth at the bottom of the shaft."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (ASCENSION_SCROLL_MANA_COST 30, ASCENSION_BLOCK_CYCLE 4)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "weapon_shooter": {
+  "de": [
+   "Der Bogen hält 30 Schüsse. Projizierte Waffen aus {{mahou_tsukai/projection}} sind die billigste Munition, sonst verschießt er auch deine echten Waffen."
+  ],
+  "en": [
+   "The bow lasts 30 shots. Projected weapons from {{mahou_tsukai/projection}} are the cheapest ammunition, otherwise it fires your real weapons too."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (WEAPON_SHOOTER_MANA_COST 100, WEAPON_SHOOTER_DURABILITY 30)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "treasury": {
+  "de": [
+   "Das Ziel darf auf diesem Server höchstens 20 Blöcke entfernt sein. 1 000 Mana für die Rolle brauchen gespeichertes Mana ({{mahou_tsukai/gems}})."
+  ],
+  "en": [
+   "On this server the target can be at most 20 blocks away. The 1 000 mana for the scroll need stored mana ({{mahou_tsukai/gems}})."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (TREASURY_PROJECTION_SCROLL_MANA_COST 1000, GAUNTLET_MANA_COST 120, TREASURY_PROJECTION_DISTANCE 20)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ],
+  "client": [
+   "Meaning of TREASURY_PROJECTION_DISTANCE 20 (max target distance)"
+  ]
+ },
+ "borrowed_authority": {
+  "de": [
+   "Die Wirkung hält 400 Ticks, also 20 Sekunden. Für 900 Mana brauchst du gespeichertes Mana aus Edelsteinen oder einem Schaltkreis ({{mahou_tsukai/gems}})."
+  ],
+  "en": [
+   "The effect lasts 400 ticks, 20 seconds. The 900 mana need stored mana from gems or a circuit ({{mahou_tsukai/gems}})."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (AUTHORITY_MANA_COST 900, AUTHORITY_TIME 400)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "binding_eyes": {
+  "de": [
+   "Die Augen halten 600 Ticks, also 30 Sekunden. Die Augen der Einsicht kosten 320 Mana, die der Schwarzen Flamme 300.",
+   "Enderaugenpulver frisst Enderaugen; mit dem Mörser gibt jedes Auge zwei Pulver."
+  ],
+  "en": [
+   "The eyes last 600 ticks, 30 seconds. Eyes of Insight cost 320 mana, Black Flame 300.",
+   "Eye powder eats eyes of ender; with the mortar each eye gives two powders."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (MYSTIC_EYES_MANA_COST 320, MYSTIC_EYES_TIME 600, INSIGHT_MANA_COST 320, BLACK_FLAME_MANA_COST 300)",
+   "mahoutsukai:powdered_eye_2",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "alarm": {
+  "de": [
+   "Jede Barriere braucht 2 Eisenpulver, für alle vier dieser Reihe also 8. Mit Mörser und Stößel gibt jeder Eisenbarren zwei.",
+   "Die Quest ist ein Häkchen: Hak sie ab, sobald deine Alarmbarriere liegt."
+  ],
+  "en": [
+   "Every boundary needs 2 iron powder, so 8 for all four in this row. With mortar and pestle each iron ingot gives two.",
+   "The quest is a checkmark: tick it once your alarm boundary is down."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (ALARM_BARRIER_RADIUS 10)",
+   "mahoutsukai:powdered_iron_2",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "tangible": {
+  "de": [
+   "Die Wand hat denselben Radius von 10 Blöcken wie die Alarmbarriere, beide passen also über dieselbe Fläche. Die Quest ist ein Häkchen."
+  ],
+  "en": [
+   "The wall has the same 10 block radius as the alarm boundary, so both fit over the same area. The quest is a checkmark."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (TANGIBLE_BARRIER_RADIUS 10, ALARM_BARRIER_RADIUS 10)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "displacement_boundary": {
+  "de": [
+   "Mit 11 Blöcken ist sie einen Block größer als die anderen Barrieren. Die Quest ist ein Häkchen."
+  ],
+  "en": [
+   "At 11 blocks it is one block bigger than the other boundaries. The quest is a checkmark."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (DISPLACEMENT_BARRIER_RADIUS 11)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ },
+ "drain_life": {
+  "de": [
+   "Pro Spieler sind höchstens **10 Barrieren des Lebensraubs** gleichzeitig aktiv. Monster haben in Stufe 4 auf diesem Server 120 Prozent mehr Leben, eine Barriere braucht bei ihnen also länger.",
+   "Die Quest ist ein Häkchen."
+  ],
+  "en": [
+   "Each player can have at most **10 Boundaries of Drain Life** active at once. In stage 4 monsters on this server have 120 percent more health, so a boundary takes longer with them.",
+   "The quest is a checkmark."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (DRAIN_LIFE_BARRIER_RADIUS 10, ACTIVE_MAGIC_CIRCLE_NAMES drain_life_barrier, ACTIVE_MAGIC_CIRCLE_LIMITS 10)",
+   "srv/config/kronwerke-common.toml [mobs] (health stage 4 = 1.2)",
+   "mahoutsukai jar: stepsword/mahoutsukai/block/spells/MahoujinRecipeRegistrar.class"
+  ]
+ }
+}

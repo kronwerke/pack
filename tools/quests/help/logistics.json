@@ -1,0 +1,531 @@
+{
+ "welcome": {
+  "de": [
+   "Auf Kronwerke sitzt im [[integrateddynamics:squeezer]] eine [[create:mechanical_press]] statt des Eisenblocks, du brauchst also Create aus Stufe 1 ({{create/press}}). Das [[integrateddynamics:drying_basin]] nimmt beliebige Stämme und schwarzen Farbstoff.",
+   "Nur Integrated Dynamics braucht diese beiden Blöcke. XNet ({{logistics/xnet_controller}}), LaserIO ({{logistics/laser_node}}) und der Mining Gadget ({{logistics/mg_gadget}}) starten unabhängig davon."
+  ],
+  "en": [
+   "On Kronwerke the [[integrateddynamics:squeezer]] takes a [[create:mechanical_press]] instead of the iron block, so you need Create from stage 1 ({{create/press}}). The [[integrateddynamics:drying_basin]] takes any logs and black dye.",
+   "Only Integrated Dynamics needs these two blocks. XNet ({{logistics/xnet_controller}}), LaserIO ({{logistics/laser_node}}) and the Mining Gadget ({{logistics/mg_gadget}}) start without them."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/squeezer",
+   "integrateddynamics:crafting/drying_basin",
+   "kubejs/server_scripts/kronwerke/round.js (squeezer: #c:storage_blocks/iron -> create:mechanical_press)"
+  ]
+ },
+ "menril": {
+  "de": [
+   "Menril-Bäume wachsen in der ganzen Oberwelt, aber selten. Verlässlich findest du sie im Biom Meneglin. Aus den Blättern fallen Setzlinge, Stöcke und [[integrateddynamics:menril_berries]]; heb die Beeren auf, das Display Panel braucht später acht davon.",
+   "Jeder [[integrateddynamics:menril_log]] gibt im Squeezer 1 000 mB Harz, im Basin trocknet daraus in 150 Ticks ein Block. Das Kapitel frisst viele Chunks, pflanz also gleich eine eigene Menril-Farm."
+  ],
+  "en": [
+   "Menril trees grow all over the overworld, but rarely. You find them reliably in the Meneglin biome. The leaves drop saplings, sticks and [[integrateddynamics:menril_berries]]; keep the berries, the display panel later needs eight of them.",
+   "Every [[integrateddynamics:menril_log]] gives 1 000 mB of resin in the squeezer, and the basin dries it into a block in 150 ticks. This chapter eats a lot of chunks, so plant your own menril farm right away."
+  ],
+  "sources": [
+   "integrateddynamics:squeezer/base/menril_resin_logs",
+   "integrateddynamics:drying_basin/base/crystalized_menril_block (duration 150)",
+   "integrateddynamics jar: data/integrateddynamics/loot_table/blocks/menril_leaves.json, placed_feature/tree_menril_general.json (overworld, weight 1 of 100)",
+   "srv/config/integrateddynamicscompat-common.toml (meneglinBiomeSpawnWeight 5)"
+  ]
+ },
+ "mechanical": {
+  "de": [
+   "Eine [[integrateddynamics:energy_battery]] kostet 6 Chunks, 2 Blöcke und einen Redstoneblock. Für beide Maschinen brauchst du vier Stück.",
+   "Beide Maschinen ziehen **80 FE pro Tick** und fassen 100 000 FE, ohne Strom tun sie nichts. Der Mechanical Squeezer gibt aus einem Menril Log neben dem Harz noch 2 bis 4 Chunks und braucht nur 15 Ticks. Strom aus dem eigenen Netz bekommst du mit {{logistics/fluid_energy}}."
+  ],
+  "en": [
+   "An [[integrateddynamics:energy_battery]] costs 6 chunks, 2 blocks and a block of redstone. Both machines together need four.",
+   "Both machines draw **80 FE per tick** and hold 100 000 FE; without power they do nothing. The mechanical squeezer also gives 2 to 4 chunks per menril log besides the resin, in only 15 ticks. Power from your own network comes with {{logistics/fluid_energy}}."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/energy_battery",
+   "integrateddynamics:crafting/mechanical_squeezer",
+   "integrateddynamics:crafting/mechanical_drying_basin",
+   "integrateddynamics:mechanical_squeezer/base/menril_resin_logs (2 + 2x 50 %, duration 15)",
+   "srv/config/integrateddynamics-common.toml (machine.mechanical_squeezer / mechanical_drying_basin: capacity 100000, consumptionRate 80)"
+  ]
+ },
+ "cables": {
+  "de": [
+   "Ein Kabelrezept braucht 6 Chunks, 16 Kabel also 36 Chunks. Eine Kartenrunde kostet 8 Chunks und gibt gleich 24 Karten, das reicht lange.",
+   "Die Transformer kommen als Nächstes: 2 Karten, 2 Chunks und ein [[minecraft:sticky_piston]] geben 4 Input Variable Transformer, mit einem normalen [[minecraft:piston]] werden es Output Transformer. Eine beschriebene Karte machst du an der Werkbank formlos wieder leer."
+  ],
+  "en": [
+   "One cable recipe takes 6 chunks, so 16 cables cost 36 chunks. One round of cards costs 8 chunks and gives 24 cards, which lasts a long time.",
+   "The transformers come next: 2 cards, 2 chunks and a [[minecraft:sticky_piston]] give 4 Input Variable Transformers, with a plain [[minecraft:piston]] you get Output Transformers. A written card goes back to blank in the crafting grid on its own."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/cable",
+   "integrateddynamics:crafting/variable",
+   "integrateddynamics:crafting/variable_transformer_input",
+   "integrateddynamics:crafting/variable_transformer_output",
+   "integrateddynamics:special/clear_variable"
+  ]
+ },
+ "reader": {
+  "de": [
+   "Im Reader heißt der Aspekt mit der genauen Signalstärke schlicht **Redstone** (eine Zahl), daneben gibt es Wahr/Falsch-Aspekte wie Redstone High oder Redstone Clock.",
+   "Das Display Panel ist teurer als der Reader: 2 [[integrateddynamics:menril_berries]], zwei Static Light Panels (je 3 Beeren, ein Redstone und ein Output Transformer) und ein weiterer Output Transformer. Zusammen sind das 8 Beeren und 3 Output Transformer."
+  ],
+  "en": [
+   "In the reader the aspect with the exact signal strength is just called **Redstone** (a number); next to it are true/false aspects such as Redstone High or Redstone Clock.",
+   "The display panel costs more than the reader: 2 [[integrateddynamics:menril_berries]], two static light panels (3 berries, a redstone and an output transformer each) and one more output transformer. That is 8 berries and 3 output transformers in all."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/part_redstone_reader",
+   "integrateddynamics:crafting/part_display_panel",
+   "integrateddynamics:crafting/part_static_light_panel",
+   "integrateddynamics jar: assets/integrateddynamics/lang/en_us.json (aspect.integrateddynamics.read.integer.redstone.value = Redstone)"
+  ]
+ },
+ "programmer": {
+  "de": [
+   "Der [[integrateddynamics:variablestore]] kostet 6 Chunks, 2 Blöcke und eine Holztruhe. Den [[integrateddynamics:logic_programmer]] machst du formlos zum Portable Logic Programmer und zurück, so programmierst du auch unterwegs.",
+   "Das Handbuch [[integrateddynamics:on_the_dynamics_of_integration]] ist formlos ein Buch und 2 Chunks. Danach geht es mit {{logistics/writer}}, {{logistics/tunnels}} und {{logistics/labeller}} weiter."
+  ],
+  "en": [
+   "The [[integrateddynamics:variablestore]] costs 6 chunks, 2 blocks and a wooden chest. The [[integrateddynamics:logic_programmer]] turns into a Portable Logic Programmer in the crafting grid and back, so you can program on the go.",
+   "The manual [[integrateddynamics:on_the_dynamics_of_integration]] is a book and 2 chunks, shapeless. After this come {{logistics/writer}}, {{logistics/tunnels}} and {{logistics/labeller}}."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/variablestore",
+   "integrateddynamics:crafting/logic_programmer_to_portable",
+   "integrateddynamics:crafting/logic_programmer_from_portable",
+   "integrateddynamics:crafting/on_the_dynamics_of_integration"
+  ]
+ },
+ "writer": {
+  "de": [
+   "Mit einer Boolean-Karte gibt der Aspekt Redstone bei Wahr ein volles Signal aus. Mit einer Zahlenkarte nimmst du den Integer-Aspekt Redstone, der die Zahl als genaue Signalstärke ausgibt, und Redstone Pulse sendet einen Puls, sobald sich der Wert ändert.",
+   "Das ist die Grundlage für {{logistics/counter}}."
+  ],
+  "en": [
+   "With a boolean card the Redstone aspect outputs a full signal when true. With a number card use the integer Redstone aspect, which outputs the number as exact signal strength, and Redstone Pulse sends a pulse whenever the value changes.",
+   "This is the base for {{logistics/counter}}."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/part_redstone_writer",
+   "integrateddynamics jar: assets/integrateddynamics/lang/en_us.json (aspect.integrateddynamics.write.boolean.redstone, write.integer.redstone, redstone.pulse)"
+  ]
+ },
+ "tunnels": {
+  "de": [
+   "Ein Interfacerezept (5 Chunks, eine Holztruhe) gibt 4 Item Interfaces, genau so viele, wie die Quest braucht: zwei bleiben Interfaces, je eins kommt formlos mit einem Input bzw. Output Transformer zusammen.",
+   "Setz Interface und Importer an dasselbe Netz aus Logic Cables, sonst sieht der Importer kein Lager. Weiter geht es mit {{logistics/terminal}} und {{logistics/fluid_energy}}."
+  ],
+  "en": [
+   "One interface recipe (5 chunks, a wooden chest) gives 4 Item Interfaces, exactly what the quest needs: two stay interfaces, one each goes into the grid with an Input or Output Transformer.",
+   "Put interface and importer on the same network of logic cables, or the importer sees no storage. Next are {{logistics/terminal}} and {{logistics/fluid_energy}}."
+  ],
+  "sources": [
+   "integratedtunnels:crafting/part_interface_item",
+   "integratedtunnels:crafting/part_importer_item",
+   "integratedtunnels:crafting/part_exporter_item"
+  ],
+  "client": [
+   "Importer only sees storage on the same cable network"
+  ]
+ },
+ "fluid_energy": {
+  "de": [
+   "Beide Interfaces kommen zu viert aus 5 Chunks plus einem Eimer bzw. einer [[integrateddynamics:energy_battery]]. Der Energy Exporter der Quest ist formlos ein Energy Interface und ein Output Transformer.",
+   "So versorgst du den Mechanical Squeezer und das Mechanical Drying Basin ({{logistics/mechanical}}) über das Netz statt über eigene Kabel."
+  ],
+  "en": [
+   "Both interfaces come four at a time from 5 chunks plus a bucket or an [[integrateddynamics:energy_battery]]. The energy exporter of this quest is an energy interface and an output transformer, shapeless.",
+   "This is how you power the mechanical squeezer and drying basin ({{logistics/mechanical}}) through the network instead of separate cables."
+  ],
+  "sources": [
+   "integratedtunnels:crafting/part_interface_fluid",
+   "integratedtunnels:crafting/part_interface_energy",
+   "integratedtunnels:crafting/part_exporter_energy"
+  ]
+ },
+ "terminal": {
+  "de": [
+   "[[integratedterminals:menril_glass]] trocknet aus normalem farblosem Glas und 1 000 mB Harz: 200 Ticks im Drying Basin, 20 im Mechanical Drying Basin. Dazu kommen 4 Glowstonestaub, je ein Input und Output Transformer und ein Display Panel ({{logistics/reader}}).",
+   "Das Terminal ist ein Part: Setz es an ein Kabel desselben Netzes wie deine Interfaces."
+  ],
+  "en": [
+   "[[integratedterminals:menril_glass]] dries from plain colorless glass and 1 000 mB of resin: 200 ticks in the drying basin, 20 in the mechanical one. Add 4 glowstone dust, one input and one output transformer and a display panel ({{logistics/reader}}).",
+   "The terminal is a part: put it on a cable of the same network as your interfaces."
+  ],
+  "sources": [
+   "integratedterminals:crafting/part_terminal_storage",
+   "integratedterminals:drying_basin/menril_glass (200)",
+   "integratedterminals:mechanical_drying_basin/menril_glass (20)"
+  ]
+ },
+ "crafting": {
+  "de": [
+   "Das Crafting Interface kostet 4 Eisenbarren, 2 Werkbänke, je einen Input und Output Transformer und einen Crystallized Menril Block. Setz eins an jede Maschine, die für dich craften soll, und verbinde es mit dem Netz, in dem auch die Zutaten hinter Item Interfaces liegen.",
+   "Den Fortschritt der Aufträge zeigt {{logistics/crafting_jobs}}."
+  ],
+  "en": [
+   "The crafting interface costs 4 iron ingots, 2 crafting tables, one input and one output transformer and a block of crystallized menril. Put one on every machine that should craft for you, on the same network where the ingredients sit behind item interfaces.",
+   "{{logistics/crafting_jobs}} shows how the jobs are doing."
+  ],
+  "sources": [
+   "integratedcrafting:crafting/part_interface_crafting",
+   "integratedcrafting:crafting/part_crafting_writer"
+  ],
+  "client": [
+   "Crafting interface pulls ingredients from storage on the same network"
+  ]
+ },
+ "counter": {
+  "de": [
+   "Der Inventory Reader: Input Transformer unten in der Mitte, eine Truhe darüber und je eine links und rechts. **Inventory Count zählt alle Gegenstände** der Kiste, leg also nur Stahl in die Pufferkiste.",
+   "Die Vergleichszahl holst du aus /kw goals: Stahl und Schaltkreise wachsen mit der Zahl aktiver Spieler, nur die 8 Stahlkerne sind fest. Der Obelisk nimmt jeden Stahl mit dem Tag c:ingots/steel, die Quest zählt nur [[mekanism:ingot_steel]]."
+  ],
+  "en": [
+   "The inventory reader: input transformer at the bottom middle, one chest above it and one each left and right. **Inventory Count counts every item** in the chest, so keep only steel in the buffer chest.",
+   "Take the number to compare against from /kw goals: steel and circuits grow with the number of active players, only the 8 steel cores are fixed. The obelisk takes any steel with the tag c:ingots/steel, the quest counts only [[mekanism:ingot_steel]]."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/part_inventory_reader (pattern ' X ', 'XVX')",
+   "integrateddynamics jar: lang aspect.integrateddynamics.read.integer.inventory.count (Get the total amount of items)",
+   "config/kronwerke/goals.json (stage3: #c:ingots/steel base 4000, advanced_control_circuit base 250, steel_core 8 fixed, scale true)",
+   "docs/STAGES.md (What the obelisk is)"
+  ]
+ },
+ "crafting_jobs": {
+  "de": [
+   "Anders als das Storage Terminal braucht dieses keinen Transformer: 4 Glowstonestaub, [[integratedterminals:menril_glass]], ein Display Panel und eine Werkbank.",
+   "Es lohnt sich erst, wenn ein Crafting Interface ({{logistics/crafting}}) Aufträge bekommt."
+  ],
+  "en": [
+   "Unlike the storage terminal this one needs no transformer: 4 glowstone dust, [[integratedterminals:menril_glass]], a display panel and a crafting table.",
+   "It only pays off once a crafting interface ({{logistics/crafting}}) gets jobs."
+  ],
+  "sources": [
+   "integratedterminals:crafting/part_terminal_crafting_job"
+  ]
+ },
+ "labeller": {
+  "de": [
+   "Billig und schnell gebaut: 4 Chunks und ein Buch und Feder. Lohnt sich, sobald im [[integrateddynamics:variablestore]] mehr als eine Handvoll Karten liegt."
+  ],
+  "en": [
+   "Cheap and quick: 4 chunks and a book and quill. Worth it as soon as more than a handful of cards sit in the [[integrateddynamics:variablestore]]."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/labeller"
+  ]
+ },
+ "xnet_controller": {
+  "de": [
+   "Der [[rftoolsbase:machine_frame]] nimmt auf Kronwerke **4 Stahlbarren von Mekanism** statt Eisen ({{mekanism/steel}}), dazu 2 blauen Farbstoff und 2 Goldnuggets. Router, Wireless Router und Redstone Proxy brauchen jeweils einen weiteren Rahmen.",
+   "Im Controller ersetzt ein [[ae2:logic_processor]] den Komparator ({{ae2/logic_proc}}). Er speichert 100 000 RF, nimmt bis 1 000 RF pro Tick auf und braucht 1 RF/t pro aktivem Kanal plus 2 RF pro Vorgang."
+  ],
+  "en": [
+   "On Kronwerke the [[rftoolsbase:machine_frame]] takes **4 Mekanism steel ingots** instead of iron ({{mekanism/steel}}), plus 2 blue dye and 2 gold nuggets. Router, wireless router and redstone proxy each need another frame.",
+   "In the controller a [[ae2:logic_processor]] replaces the comparator ({{ae2/logic_proc}}). It stores 100 000 RF, takes up to 1 000 RF per tick and uses 1 RF/t per active channel plus 2 RF per operation."
+  ],
+  "sources": [
+   "rftoolsbase:machine_frame (key i = mekanism:ingot_steel)",
+   "xnet:controller (ae2:logic_processor)",
+   "kubejs/server_scripts/kronwerke/round.js (machine_frame iron -> steel, controller comparator -> logic_processor)",
+   "srv/config/xnet-server.toml (controllerMaxRF, controllerRfPerTick, controllerChannelRFT, controllerOperationRFT)"
+  ]
+ },
+ "xnet_connectors": {
+  "de": [
+   "Die Quest zählt nur **blaue** Connectors und Kabel. Ein Connector kostet 4 blauen Farbstoff, eine Truhe, einen Goldbarren und 3 Redstone; ein Kabelrezept (4 Faden, Farbstoff, Goldnugget, 3 Redstone) gibt 16 Kabel, für 32 also zwei Runden.",
+   "Falsche Farbe gebaut? Connector oder Kabel formlos mit blauem Farbstoff umfärben. [[xnet:facade]] gibt es zu 16 aus Glas, Papier und Wolle."
+  ],
+  "en": [
+   "The quest counts only **blue** connectors and cables. A connector costs 4 blue dye, a chest, a gold ingot and 3 redstone; one cable recipe (4 string, dye, gold nugget, 3 redstone) gives 16 cables, so two rounds for 32.",
+   "Built the wrong colour? Dye a connector or cable blue in the crafting grid. [[xnet:facade]] comes 16 at a time from glass, paper and wool."
+  ],
+  "sources": [
+   "xnet:connector_blue",
+   "xnet:netcable_blue",
+   "xnet:connector_blue_dye",
+   "xnet:netcable_blue_dye",
+   "xnet:facade"
+  ]
+ },
+ "xnet_advanced": {
+  "de": [
+   "Die Quest will 2 **blaue** Advanced Connectors, jeder aus einem blauen Connector, einem Diamanten, einer Enderperle und einem Redstone. Der Advanced Connector puffert 500 000 RF statt 50 000.",
+   "Eine Stahlstraße mit Infusionsanlagen findest du in {{mekanism/ore_line}}."
+  ],
+  "en": [
+   "The quest wants 2 **blue** advanced connectors, each from a blue connector, a diamond, an ender pearl and a redstone. The advanced connector buffers 500 000 RF instead of 50 000.",
+   "A steel line with infusers is in {{mekanism/ore_line}}."
+  ],
+  "sources": [
+   "xnet:advanced_connector_blue",
+   "xnet:connector_upgrade",
+   "srv/config/xnet-server.toml (maxRfConnector 50000, maxRfAdvancedConnector 500000, maxRfRateAdvanced 100000, maxFluidRateAdvanced 5000)"
+  ]
+ },
+ "xnet_logic": {
+  "de": [
+   "Der [[xnet:redstone_proxy]] ist ein [[rftoolsbase:machine_frame]] in 8 Redstone, kostet also wieder 4 Stahlbarren.",
+   "Ein Logic-Kanal braucht keinen eigenen Strom, belastet aber den Controller wie jeder Kanal mit 1 RF/t."
+  ],
+  "en": [
+   "The [[xnet:redstone_proxy]] is a [[rftoolsbase:machine_frame]] in 8 redstone, so it costs 4 steel ingots again.",
+   "A logic channel needs no power of its own, but like every channel it costs the controller 1 RF/t."
+  ],
+  "sources": [
+   "xnet:redstone_proxy",
+   "srv/config/xnet-server.toml (controllerChannelRFT 1)"
+  ]
+ },
+ "xnet_router": {
+  "de": [
+   "Router: 2 Antriebsschienen und ein Komparator oben, Redstone neben dem [[rftoolsbase:machine_frame]], unten Eisen, Enderperle, Eisen. Ein Rezept [[xnet:netcable_routing]] gibt 32 Kabel, für die Quest reicht eins.",
+   "Der [[xnet:connector_routing]] ist ein beliebiger Connector mit 2 Goldnuggets und 6 Redstone. Ein Router reicht höchstens 32 veröffentlichte Kanäle weiter."
+  ],
+  "en": [
+   "Router: 2 powered rails and a comparator on top, redstone beside the [[rftoolsbase:machine_frame]], iron, ender pearl, iron below. One recipe of [[xnet:netcable_routing]] gives 32 cables, one is enough for the quest.",
+   "The [[xnet:connector_routing]] is any connector with 2 gold nuggets and 6 redstone. A router passes on at most 32 published channels."
+  ],
+  "sources": [
+   "xnet:router",
+   "xnet:netcable_routing",
+   "xnet:connector_routing",
+   "srv/config/xnet-server.toml (maxPublishedChannels 32)"
+  ]
+ },
+ "xnet_wireless": {
+  "de": [
+   "Der Wireless Router puffert 100 000 RF und nimmt bis 5 000 RF pro Tick auf; ohne Strom funkt er nicht. Die [[xnet:antenna]] kostet 4 Eisengitter und 3 Eisenbarren, die [[xnet:antenna_base]] einen Eisenblock und 4 Barren."
+  ],
+  "en": [
+   "The wireless router buffers 100 000 RF and takes up to 5 000 RF per tick; without power it does not transmit. The [[xnet:antenna]] costs 4 iron bars and 3 iron ingots, the [[xnet:antenna_base]] an iron block and 4 ingots."
+  ],
+  "sources": [
+   "xnet:wireless_router",
+   "xnet:antenna",
+   "xnet:antenna_base",
+   "xnet:antenna_dish",
+   "srv/config/xnet-server.toml (wirelessRouterMaxRF, wirelessRouterRfPerTick, wireless1RfPerChannel 20, wireless2RfPerChannel 50, antennaTier1Range 100, antennaTier2Range 500)"
+  ],
+  "client": [
+   "Antenna base and antenna stack on top of the wireless router"
+  ]
+ },
+ "laser_node": {
+  "de": [
+   "**Rezept auf Kronwerke:** Der [[laserio:laser_connector]] nimmt unten 3 [[ae2:fluix_crystal]] statt Eisenbarren ({{ae2/fluix}}), oben Glas, in der Mitte Redstone, Logic Chip, Redstone. Zwei Nodes kosten also 6 Fluixkristalle.",
+   "Ein Rezept Raw Logic Chip (4 Redstone, 2 Goldnuggets, 2 Ton, ein Quarzblock) gibt 4 Rohlinge, die im Ofen in 100 Ticks zu Chips werden. Der [[laserio:laser_wrench]] kostet 3 Eisen und einen Chip. Mehr als 8 Blöcke Abstand lehnt er ab."
+  ],
+  "en": [
+   "**Recipe on Kronwerke:** the [[laserio:laser_connector]] takes 3 [[ae2:fluix_crystal]] at the bottom instead of iron ingots ({{ae2/fluix}}), glass on top, redstone, logic chip, redstone in the middle. Two nodes cost 6 fluix crystals.",
+   "One raw logic chip recipe (4 redstone, 2 gold nuggets, 2 clay, a quartz block) gives 4 blanks that turn into chips in a furnace in 100 ticks. The [[laserio:laser_wrench]] costs 3 iron and a chip. It refuses links longer than 8 blocks."
+  ],
+  "sources": [
+   "laserio:laser_connector (key i = ae2:fluix_crystal)",
+   "kubejs/server_scripts/kronwerke/round.js (laser_connector #c:ingots/iron -> ae2:fluix_crystal)",
+   "laserio:logic_chip_raw",
+   "laserio:logic_chip (cookingtime 100)",
+   "laserio:laser_wrench",
+   "laserio jar: com/direwolf20/laserio/common/items/LaserWrench.class (maxDistance 8)"
+  ]
+ },
+ "laser_cards": {
+  "de": [
+   "Neben Extract, Insert und Stock gibt es noch den Modus Sensor. Mit der Einstellung Sneaky spricht eine Karte eine andere Seite des Blocks an als die, an der der Node sitzt, praktisch bei Maschinen mit festen Ein und Ausgängen.",
+   "Die Quest will 2 Item Cards: eine zum Herausziehen, eine zum Einfügen. Die übrigen Kartensorten folgen in {{logistics/laser_energy}} und {{logistics/laser_fluid}}."
+  ],
+  "en": [
+   "Besides Extract, Insert and Stock there is a Sensor mode. With the Sneaky setting a card talks to a different side of the block than the one the node touches, handy for machines with fixed inputs and outputs.",
+   "The quest wants 2 item cards: one to extract, one to insert. The other card types follow in {{logistics/laser_energy}} and {{logistics/laser_fluid}}."
+  ],
+  "sources": [
+   "laserio:card_item",
+   "laserio jar: assets/laserio/lang/en_us.json (laserio.tooltip.item.card.mode.*, card.sneaky.*)"
+  ],
+  "client": [
+   "Sneaky setting lets a card address another face of the block"
+  ]
+ },
+ "laser_energy": {
+  "de": [
+   "Die 1 000 000 FE/t sind der Serverwert für eine einzelne Karte. Für ein Stromnetz ohne Kabel brauchst du je Maschine einen Node mit Insert-Karte, und alle Nodes müssen über Laser verbunden sein ({{logistics/laser_node}})."
+  ],
+  "en": [
+   "The 1 000 000 FE/t is the server value for a single card. For a cable free power grid every machine needs a node with an insert card, and all nodes must be linked by lasers ({{logistics/laser_node}})."
+  ],
+  "sources": [
+   "laserio:card_energy",
+   "srv/config/laserio-common.toml (card.energy_card.max_fe_tick 1000000)"
+  ]
+ },
+ "laser_fluid": {
+  "de": [
+   "Die Chemical Card nimmt jeden einfachen Schaltkreis mit dem Tag c:circuits/basic, etwa [[mekanism:basic_control_circuit]] ({{mekanism/circuit}}).",
+   "Ohne Upgrade bewegt eine Fluid Card 5 000 mB pro Vorgang, jeder Card Overclocker erlaubt 10 000 mB mehr. Die Chemical Card schafft 15 000 mB, plus 60 000 pro Overclocker ({{logistics/laser_upgrades}})."
+  ],
+  "en": [
+   "The chemical card takes any basic circuit with the tag c:circuits/basic, such as [[mekanism:basic_control_circuit]] ({{mekanism/circuit}}).",
+   "Without upgrades a fluid card moves 5 000 mB per operation, each card overclocker allows 10 000 mB more. The chemical card does 15 000 mB, plus 60 000 per overclocker ({{logistics/laser_upgrades}})."
+  ],
+  "sources": [
+   "laserio:card_fluid",
+   "laserio:card_chemical (#c:circuits/basic)",
+   "srv/config/laserio-common.toml (base_milli_buckets_fluid 5000, multiplier 10000, base_milli_buckets_chemical 15000, multiplier 60000)"
+  ]
+ },
+ "laser_redstone": {
+  "de": [
+   "Die [[laserio:card_redstone]] ist wie eine Item Card gebaut, nur mit drei Redstone oben statt Redstone, Lapis, Redstone. Item, Fluid und Energy Cards haben in ihrem Fenster eine Redstone-Einstellung mit eigenem Redstone-Kanal, so schaltet ein Signal einzelne Karten an und aus."
+  ],
+  "en": [
+   "The [[laserio:card_redstone]] is built like an item card, only with three redstone on top instead of redstone, lapis, redstone. Item, fluid and energy cards have a redstone setting with their own redstone channel in their window, so a signal switches single cards on and off."
+  ],
+  "sources": [
+   "laserio:card_redstone",
+   "laserio:card_item",
+   "laserio jar: assets/laserio/lang/en_us.json (screen.laserio.redstoneMode, screen.laserio.redstonechannel)"
+  ],
+  "client": [
+   "Redstone setting in the card screens of item, fluid and energy cards"
+  ]
+ },
+ "laser_upgrades": {
+  "de": [
+   "Ein Rezept Basic Filter (4 Eisengitter, 4 Glasscheiben, ein Logic Chip) gibt 4 Filter. Der [[laserio:overclocker_card]] kostet 4 Goldbarren, 2 Redstone und einen Chip, der [[laserio:overclocker_node]] dasselbe mit 4 Diamanten.",
+   "Außer Basic und Counting Filter gibt es Tag, Mod und Data Filter. Aus einem übrigen Basic Filter wird in {{logistics/laser_count}} der Counting Filter."
+  ],
+  "en": [
+   "One basic filter recipe (4 iron bars, 4 glass panes, a logic chip) gives 4 filters. The [[laserio:overclocker_card]] costs 4 gold ingots, 2 redstone and a chip, the [[laserio:overclocker_node]] the same with 4 diamonds.",
+   "Besides the basic and counting filters there are tag, mod and data filters. A spare basic filter becomes the counting filter in {{logistics/laser_count}}."
+  ],
+  "sources": [
+   "laserio:filter_basic",
+   "laserio:overclocker_card",
+   "laserio:overclocker_node",
+   "laserio:card_holder",
+   "laserio:card_cloner",
+   "laserio jar: assets/laserio/lang/en_us.json (filter_tag, filter_mod, filter_nbt)"
+  ]
+ },
+ "laser_count": {
+  "de": [
+   "Den [[laserio:filter_basic]] dafür hast du meist schon übrig, ein Rezept gibt vier. Leg den Counting Filter in die Insert-Karte am Ziel, nicht in die Extract-Karte an der Quelle."
+  ],
+  "en": [
+   "You usually have a spare [[laserio:filter_basic]] for this, one recipe gives four. Put the counting filter into the insert card at the target, not into the extract card at the source."
+  ],
+  "sources": [
+   "laserio:filter_count",
+   "laserio:filter_basic (4 out)"
+  ]
+ },
+ "mg_gadget": {
+  "de": [
+   "Die Quest zählt nur den **Mining Gadget MK1**. MK2 und MK3 sind dieselbe Gegenstandsklasse in anderem Aussehen, der MK1 ist also keine schlechtere Wahl. Das [[mininggadgets:upgrade_empty]] kostet 4 Redstone, 2 Lapis, 2 Diamanten und eine Glasscheibe, der MK1 dazu 3 Diamanten, 3 Eisen, ein Gold und ein Redstone.",
+   "Der Server rechnet mit 1 000 000 FE Speicher und 200 FE pro Block, ohne Upgrades also 5 000 Blöcke pro Ladung. Weiter geht es mit {{logistics/mg_upgrades}}."
+  ],
+  "en": [
+   "The quest only counts the **Mining Gadget MK1**. MK2 and MK3 are the same item class with another look, so the MK1 is no worse a pick. The [[mininggadgets:upgrade_empty]] costs 4 redstone, 2 lapis, 2 diamonds and a glass pane, the MK1 3 more diamonds, 3 iron, a gold and a redstone.",
+   "The server uses 1 000 000 FE of storage and 200 FE per block, so 5 000 blocks per charge without upgrades. Next is {{logistics/mg_upgrades}}."
+  ],
+  "sources": [
+   "mininggadgets:mininggadget_simple",
+   "mininggadgets:mininggadget (MK3, mekanism:basic_control_circuit)",
+   "mininggadgets:upgrade_empty",
+   "kubejs/server_scripts/kronwerke/links.js (mininggadgets:mininggadget redstone -> basic_control_circuit)",
+   "mininggadgets jar: com/direwolf20/mininggadgets/common/items/MiningGadget.class (single gadget class)",
+   "srv/config/mininggadgets-common.toml (maxPower 1000000, baseCost 200)"
+  ]
+ },
+ "mg_upgrades": {
+  "de": [
+   "Der Tisch kostet 6 Eisen, 2 Redstone und ein Blank Module, das 3x3 vier Redstoneblöcke, einen Diamantblock, 2 Enderperlen und eine Diamantspitzhacke.",
+   "Das 5x5 ist deutlich teurer: das 3x3, einen **Netheritblock**, eine Netheritspitzhacke, 2 Diamantblöcke und 4 Enderperlen. Das 7x7 gibt es erst in Stufe 4."
+  ],
+  "en": [
+   "The table costs 6 iron, 2 redstone and a blank module, the 3x3 four blocks of redstone, a diamond block, 2 ender pearls and a diamond pickaxe.",
+   "The 5x5 costs a lot more: the 3x3, a **netherite block**, a netherite pickaxe, 2 diamond blocks and 4 ender pearls. The 7x7 only comes in stage 4."
+  ],
+  "sources": [
+   "mininggadgets:modificationtable",
+   "mininggadgets:upgrade_size_1",
+   "mininggadgets:upgrade_size_2",
+   "mininggadgets:upgrade_size_3 (stage 4)"
+  ]
+ },
+ "mg_battery": {
+  "de": [
+   "Battery II (Quarzblöcke, Eisen, Netherquarz und Battery I) gibt 5 000 000 FE, Battery III 10 000 000 FE erst in Stufe 4.",
+   "Efficiency kostet je Stufe 10 FE mehr pro Block: 10 bei I, 20 bei II. Efficiency II gibt es in Stufe 3, III bis V erst in Stufe 4."
+  ],
+  "en": [
+   "Battery II (quartz blocks, iron, nether quartz and battery I) gives 5 000 000 FE, battery III with 10 000 000 FE only comes in stage 4.",
+   "Efficiency costs 10 FE more per block each tier: 10 for I, 20 for II. Efficiency II is stage 3, III to V only stage 4."
+  ],
+  "sources": [
+   "mininggadgets:upgrade_battery_1",
+   "mininggadgets:upgrade_battery_2",
+   "mininggadgets:upgrade_efficiency_1",
+   "srv/config/mininggadgets-common.toml (battery1 2000000, battery2 5000000, battery3 10000000, upgradeEfficiency1..5)"
+  ]
+ },
+ "mg_range": {
+  "de": [
+   "Range II: Range I in der Mitte, Lapis in den Ecken, Glas oben und unten, 2 Smaragde an den Seiten statt Diamanten. Range III kommt erst in Stufe 4."
+  ],
+  "en": [
+   "Range II: range I in the middle, lapis in the corners, glass top and bottom, 2 emeralds on the sides instead of diamonds. Range III only comes in stage 4."
+  ],
+  "sources": [
+   "mininggadgets:upgrade_range_1",
+   "mininggadgets:upgrade_range_2",
+   "mininggadgets:upgrade_range_3 (stage 4)"
+  ]
+ },
+ "mg_freeze_light": {
+  "de": [
+   "Für den Light Placer: 2 Laternen oben, 2 Glowstone an den Seiten, 2 Redstone-Lampen oben und unten in der Mitte, 2 Glowstonestaub in den unteren Ecken.",
+   "Beide Upgrades kosten laut Server je 100 FE zusätzlich, das zehrt mit Battery I schnell am Speicher ({{logistics/mg_battery}})."
+  ],
+  "en": [
+   "For the light placer: 2 lanterns on top, 2 glowstone on the sides, 2 redstone lamps top and bottom middle, 2 glowstone dust in the lower corners.",
+   "Both upgrades cost 100 FE extra each on this server, which drains even battery I quickly ({{logistics/mg_battery}})."
+  ],
+  "sources": [
+   "mininggadgets:upgrade_freezing",
+   "mininggadgets:upgrade_light_placer",
+   "srv/config/mininggadgets-common.toml (upgradeLight 100, upgradeFreeze 100)"
+  ]
+ },
+ "mg_fortune": {
+  "de": [
+   "Fortune II (Goldblöcke, Lapisblöcke und Fortune I) geht schon in Stufe 3 und kostet 60 FE pro Block. Fortune III braucht Diamanten und kommt erst in Stufe 4, 100 FE pro Block.",
+   "Die Quest zählt nur Fortune I, die Silk-Touch-Karte ist freiwillig."
+  ],
+  "en": [
+   "Fortune II (gold blocks, lapis blocks and fortune I) is already stage 3 and costs 60 FE per block. Fortune III needs diamonds, comes in stage 4 and costs 100 FE per block.",
+   "The quest only counts fortune I, the silk touch card is optional."
+  ],
+  "sources": [
+   "mininggadgets:upgrade_fortune_1",
+   "mininggadgets:upgrade_fortune_2",
+   "mininggadgets:upgrade_fortune_3 (stage 4)",
+   "mininggadgets:upgrade_silk",
+   "srv/config/mininggadgets-common.toml (upgradeFortune1..3 30/60/100, upgradeSilkCost 100)"
+  ]
+ },
+ "mg_magnet": {
+  "de": [
+   "Der Magnet kostet 25 FE pro Block extra, Void Junk nur 10. Bruchstein lohnt nur für das Stufe-1-Ziel {{start_here/o_stone}}, danach kann er weg."
+  ],
+  "en": [
+   "The magnet costs 25 FE extra per block, void junk only 10. Cobblestone only matters for the stage 1 goal {{start_here/o_stone}}, after that it can go."
+  ],
+  "sources": [
+   "mininggadgets:upgrade_magnet",
+   "mininggadgets:upgrade_void_junk",
+   "srv/config/mininggadgets-common.toml (upgradeMagnet 25, upgradeVoid 10)",
+   "config/kronwerke/goals.json (#c:cobblestones only in stage1)"
+  ]
+ }
+}

@@ -1,0 +1,540 @@
+{
+ "welcome": {
+  "de": [
+   "Gesperrte Dimensionen hält Kronwerke für jeden zu, der die Stufe noch nicht hat, auch auf dem Weg über Wegsteine oder einen Mekanism-Teleporter. Offen ist in Stufe 1 nur die Farmwelt ({{list_dimensions/d_mining}}).",
+   "Nether und End laufen auf eigenen Servern. Beim Durchgehen reist dein ganzer Spielerstand mit, Inventar, Enderkiste und Effekte."
+  ],
+  "en": [
+   "Kronwerke keeps a locked dimension shut for everyone who lacks its stage, also on the way through a waystone or a Mekanism teleporter. In stage 1 only the farm world is open ({{list_dimensions/d_mining}}).",
+   "The Nether and the End run on servers of their own. When you cross, your whole player state travels along: inventory, ender chest and effects."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [dimensions] locked",
+   "core: src/main/java/de/kronwerke/core/lock/LockedDimensions.java",
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (the player file travels)",
+   "docs/SCREENSHOTS.md (Nether and End are servers of their own)"
+  ]
+ },
+ "d_mining": {
+  "de": [
+   "Ein Rezept ergibt 2 [[kronwerke:grubenrahmen]]: 4 Andesitgehäuse in den Ecken, 4 [[naturesaura:infused_iron]] an den Seiten, ein Quelljuwel in der Mitte. Für 10 Rahmen brauchst du 5 Rezepte; Infused Iron kommt in Stufe 1 aus dem Natural Altar von Nature's Aura.",
+   "Entzündet wird das Portal mit einem **Quelljuwel** ([[ars_nouveau:source_gem]]), nicht mit Quellstein, und das Juwel wird verbraucht. Innen darf der Rahmen 2 bis 21 breit und 3 bis 21 hoch sein, die Ecken sind egal."
+  ],
+  "en": [
+   "One recipe makes 2 [[kronwerke:grubenrahmen]]: 4 Andesite Casings in the corners, 4 [[naturesaura:infused_iron]] on the sides, a Source Gem in the centre. 10 frames take 5 crafts; in stage 1 Infused Iron comes from Nature's Aura's Natural Altar.",
+   "You light the portal with a **Source Gem** ([[ars_nouveau:source_gem]]), not with Sourcestone, and the gem is used up. Inside, the frame may be 2 to 21 wide and 3 to 21 high; the corners do not matter."
+  ],
+  "sources": [
+   "kronwerke:grubenrahmen (CIC/IGI/CIC, count 2)",
+   "naturesaura:altar/infused_iron",
+   "core: src/main/java/de/kronwerke/core/portal/Ignite.java (ars_nouveau:source_gem, held.shrink(1))",
+   "core: src/main/java/de/kronwerke/core/portal/PortalShape.java (MIN_W 2, MIN_H 3, MAX 21, corners may be anything)",
+   "docs/STAGES.md (stage 1: lit with a source gem)"
+  ]
+ },
+ "d_mining_rules": {
+  "de": [
+   "Die Farmwelt hat nur 60 Prozent der üblichen Monster und Tiere, die Monster wachsen aber mit den Stufen wie überall. Fast alle Erze des Packs liegen dort, auch Mithril.",
+   "Loggst du drüben aus und die Farmwelt wird inzwischen neu erzeugt, wachst du beim nächsten Login an deinem Portal zuhause auf."
+  ],
+  "en": [
+   "The farm world has only 60 percent of the usual monsters and animals, but its monsters grow with the stages like everywhere. Almost every ore of the pack is there, Mithril too.",
+   "If you log out over there and the farm world is regenerated meanwhile, you wake up at your portal at home on your next login."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [mobs] capScale (mining=0.6)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (a side world learns the stage from main)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json",
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (crossing.resume_reset)"
+  ]
+ },
+ "d_nether_event": {
+  "de": [
+   "Bei 98 Prozent nimmt der Obelisk nichts mehr an, bis das Team das Ziel beim Event wieder öffnet. Die beiden Meilensteine, [[kronwerke:stone_gearbox]] und [[kronwerke:source_keystone]], zählen dabei besonders viel ({{start_here/o_event}}).",
+   "Mit Stufe 2 bekommt jeder Spieler einmal ein Startpaket: 16 [[create:brass_ingot]], einen [[create:blaze_burner]], ein [[ars_nouveau:source_jar]] und 8 [[botania:mana_pearl]], auch wer erst später einloggt."
+  ],
+  "en": [
+   "At 98 percent the obelisk stops taking items until the team opens the goal again at the event. The two milestones, [[kronwerke:stone_gearbox]] and [[kronwerke:source_keystone]], count for a lot ({{start_here/o_event}}).",
+   "With stage 2 every player gets a starter kit once: 16 [[create:brass_ingot]], a [[create:blaze_burner]], a [[ars_nouveau:source_jar]] and 8 [[botania:mana_pearl]], also those who log in later."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1: holdAt 0.98, weight 250 for the milestones, starterKit)",
+   "core: src/main/java/de/kronwerke/core/goal/Goal.java (holdAt: /kw admin goal open)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (giveKits)"
+  ]
+ },
+ "d_nether": {
+  "de": [
+   "Zündest du ein Netherportal vor Stufe 2 an, sagt der Server allen Spielern in der Nähe sofort, dass der Nether noch zu ist. Ab Stufe 2 nimmt das Portal nur dich mit, kein Reittier und kein Boot.",
+   "Monster haben ab Stufe 2 durch Kronwerke 30 Prozent mehr Leben, 20 Prozent mehr Schaden und 2 Rüstungspunkte mehr, auch im Nether."
+  ],
+  "en": [
+   "Light a Nether portal before stage 2 and the server tells every player nearby right away that the Nether is still shut. From stage 2 the portal only takes you, no mount and no boat.",
+   "From stage 2 Kronwerke gives monsters 30 percent more health, 20 percent more damage and 2 more armour points, in the Nether too."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/lock/LockedDimensions.java (portal lit before its stage, players within 32 blocks)",
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (portal.ride)",
+   "srv/config/kronwerke-common.toml [mobs] health/damage/armor"
+  ]
+ },
+ "d_aether": {
+  "de": [
+   "Der Rahmen braucht Leuchtsteinblöcke ([[minecraft:glowstone]]), je 4 Leuchtsteinstaub ergeben einen, also 40 Staub für 10 Blöcke. Das Aether ist ab Stufe 2 offen, die Bossverliese erst ab Stufe 3.",
+   "Mehr zu Portal und Ankunft steht in {{aether/portal}} und {{aether/arrive}}."
+  ],
+  "en": [
+   "The frame needs glowstone blocks ([[minecraft:glowstone]]); 4 glowstone dust make one, so 40 dust for 10 blocks. The Aether opens in stage 2, its boss dungeons in stage 3.",
+   "More on the portal and the arrival is in {{aether/portal}} and {{aether/arrive}}."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [dimensions] locked (aether:the_aether=stage2)",
+   "docs/STAGES.md (stage 3: the Aether dungeons)"
+  ]
+ },
+ "d_respawn_anchor": {
+  "de": [
+   "Weinenden Obsidian findest du schon in Stufe 1 an Ruinenportalen, den Leuchtstein erst im Nether. Weil der Nether auf einem eigenen Server läuft, bringt Kronwerke dich nach dem Tod selbst zu deinem Anker dort.",
+   "Ist der Anker weg oder leer, sagt dir der Server das nach der Ankunft. Mehr dazu in {{nether/n_respawn_anchor}}."
+  ],
+  "en": [
+   "Crying obsidian turns up in stage 1 already at ruined portals, glowstone only in the Nether. Because the Nether runs on a server of its own, Kronwerke takes you to your anchor there after a death.",
+   "If the anchor is gone or empty, the server tells you after you arrive. More in {{nether/n_respawn_anchor}}."
+  ],
+  "sources": [
+   "minecraft:respawn_anchor (OOO/GGG/OOO)",
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (a respawn at a bed or an anchor on the other side; players told that their bed or anchor was gone)"
+  ],
+  "client": [
+   "the message when the anchor is gone"
+  ]
+ },
+ "d_undergarden": {
+  "de": [
+   "Als Rahmen gehen auch Tiefenschieferziegel, Tiefenschieferfliesen, Polierter Tiefenschiefer und Verstärkter Tiefenschiefer, dazu die Ziegel aus dem Undergarden. Stahl für den [[undergarden:catalyst]] machst du ab Stufe 2 mit Mekanism.",
+   "Monster spawnen drüben nur bei völliger Dunkelheit: Jede Fackel hält sie fern. Mehr in {{undergarden/catalyst}}."
+  ],
+  "en": [
+   "Deepslate bricks, deepslate tiles, polished deepslate and reinforced deepslate work as frame too, and the Undergarden's own bricks. Make the steel for the [[undergarden:catalyst]] from stage 2 with Mekanism.",
+   "Monsters there only spawn in complete darkness: every torch keeps them away. More in {{undergarden/catalyst}}."
+  ],
+  "sources": [
+   "undergarden jar: tags/block/portal_frame_blocks.json",
+   "undergarden:catalyst (CSC/SES/CSC, C #c:ingots/steel, S #c:stones)",
+   "undergarden jar: dimension_type (coordinate_scale 4.0, bed_works true, monster_spawn_block_light_limit 0)",
+   "docs/STAGES.md (stage 2: Mekanism basic, steel)"
+  ]
+ },
+ "d_otherside": {
+  "de": [
+   "Der Warden lässt das [[deeperdarker:heart_of_the_deep]] immer fallen. Als feindliches Monster bekommt er den Stufenbonus von Kronwerke: ab Stufe 3 mindestens 70 Prozent mehr Leben und 45 Prozent mehr Schaden.",
+   "Wie das Portal steht, zeigt {{deeper_darker/portal}}."
+  ],
+  "en": [
+   "The Warden always drops the [[deeperdarker:heart_of_the_deep]]. As a hostile mob it gets Kronwerke's stage bonus: from stage 3 at least 70 percent more health and 45 percent more damage.",
+   "{{deeper_darker/portal}} shows how the portal stands."
+  ],
+  "sources": [
+   "deeperdarker jar: loot_modifiers/warden_heart_from_warden.json (min 1, max 1)",
+   "srv/config/kronwerke-common.toml [mobs] health [0.0, 0.3, 0.7, ...], damage [0.0, 0.2, 0.45, ...]",
+   "kronwerke:added/reinforced_deepslate"
+  ]
+ },
+ "d_alfheim": {
+  "de": [
+   "Die [[botania:natura_pylon]] baust du aus Manapylon, Enderauge und Terrastahlklumpen, und das [[botania:elven_gateway_core]] ist auf Kronwerke ab Stufe 3 freigeschaltet. Schimmerndes Lebeholz machst du aus einem Lebeholzstamm und Leuchtsteinstaub.",
+   "Die Schritte stehen in {{alfheim/core}}, {{alfheim/frame}} und {{alfheim/open}}."
+  ],
+  "en": [
+   "You build the [[botania:natura_pylon]] from a Mana Pylon, an Eye of Ender and a Terrasteel Nugget, and the [[botania:elven_gateway_core]] opens on Kronwerke in stage 3. Glimmering Livingwood comes from a Livingwood Log and glowstone dust.",
+   "The steps are in {{alfheim/core}}, {{alfheim/frame}} and {{alfheim/open}}."
+  ],
+  "sources": [
+   "botania:natura_pylon",
+   "botania:elven_gateway_core (stage 3)",
+   "botania:glimmering_livingwood_log"
+  ]
+ },
+ "d_end_event": {
+  "de": [
+   "Der Enderdrache gehört zu den Bossen, die mit der Gruppe wachsen: Jeder weitere Spieler im Kampf gibt ihm 60 Prozent mehr Leben und 15 Prozent mehr Schaden, bis 8 Spieler. Ab zwei Spielern greift er zusätzlich mit Blitz, Druckwelle und Raserei an.",
+   "Springst du vor Stufe 4 in ein Endportal, setzt dich der Server auf den nächsten Rahmenblock, damit du nicht in die Lava darunter fällst."
+  ],
+  "en": [
+   "The Ender Dragon is one of the bosses that grow with the group: every extra player in the fight gives it 60 percent more health and 15 percent more damage, up to 8 players. From two players on it also attacks with lightning, a shockwave and a rage.",
+   "Jump into an End portal before stage 4 and the server puts you on the nearest frame block, so you do not fall into the lava below."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [bosses] (minecraft:ender_dragon, healthPerPlayer 0.6, damagePerPlayer 0.15, maxPlayers 8)",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java",
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (An End portal that does not take the player)"
+  ]
+ },
+ "d_end": {
+  "de": [
+   "[[minecraft:ender_eye]] baust du erst mit Lohenstaub aus dem Nether. Mehr zum eigenen Portal steht in {{the_end/own_portal}}, zur Vorbereitung in {{the_end/prepare}}."
+  ],
+  "en": [
+   "You can only make [[minecraft:ender_eye]] once you have blaze powder from the Nether. More on your own portal is in {{the_end/own_portal}}, on preparing in {{the_end/prepare}}."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [dimensions] locked (minecraft:the_end=stage4)",
+   "minecraft:ender_eye"
+  ]
+ },
+ "d_starlight": {
+  "de": [
+   "Weitere [[eternal_starlight:orb_of_prophecy]] sind 5 blaue Sternenlicht-Kristallscherben im Kreuz und 4 Glas in den Ecken. Das [[eternal_starlight:seeking_eye]] führt dich drüben zu Bauwerken: 8 Starlight Flowers um eine Enderperle ergeben gleich 16 Stück.",
+   "Alles Weitere in {{eternal_starlight/orb}} und {{eternal_starlight/portal}}."
+  ],
+  "en": [
+   "More [[eternal_starlight:orb_of_prophecy]] are 5 Blue Starlight Crystal Shards in a cross and 4 glass in the corners. The [[eternal_starlight:seeking_eye]] leads you to structures over there: 8 Starlight Flowers around an ender pearl make 16 at once.",
+   "Everything else is in {{eternal_starlight/orb}} and {{eternal_starlight/portal}}."
+  ],
+  "sources": [
+   "eternal_starlight:orb_of_prophecy (GCG/CCC/GCG)",
+   "eternal_starlight:seeking_eye (FFF/FPF/FFF, count 16)",
+   "srv/config/kronwerke-common.toml [dimensions] locked"
+  ]
+ },
+ "d_marble": {
+  "de": [
+   "Die Mana zahlst du aus dem eigenen Mana von Mahou Tsukai, nicht aus Ars Nouveau. Die Schwerter, die drüben aus dem Boden ragen, halten nur 3 Schläge.",
+   "Den Weg zur Rolle zeigt {{mahou_tsukai/reality_marble}}."
+  ],
+  "en": [
+   "You pay the mana from Mahou Tsukai's own mana, not from Ars Nouveau. The swords sticking out of the ground over there only last 3 hits.",
+   "{{mahou_tsukai/reality_marble}} shows the way to the scroll."
+  ],
+  "sources": [
+   "srv/config/mahoutsukai-server.toml [projection.\"reality marble\"] (MARBLE_MANA_COST 4000, MARBLE_DIMENSION_DURABILITY 3)",
+   "mahoutsukai:scroll_reality_marble (stage 4)"
+  ],
+  "client": [
+   "that the marble swords can be picked up and used"
+  ]
+ },
+ "r_waystones": {
+  "de": [
+   "Der [[waystones:warp_stone]] ist auf Kronwerke anders: 4 Quelljuwelen in den Ecken, 4 Enderperlen an den Seiten, ein Smaragd in der Mitte. Wilde Wegsteine stehen etwa alle 25 Chunks in Oberwelt, Nether und End, dazu in manchen Dörfern.",
+   "Einen Wegstein, den du aufstellst, darf nur sein Besitzer umbenennen oder umstellen."
+  ],
+  "en": [
+   "The [[waystones:warp_stone]] is different on Kronwerke: 4 Source Gems in the corners, 4 ender pearls on the sides, an emerald in the centre. Wild waystones stand about every 25 chunks in the Overworld, the Nether and the End, and in some villages.",
+   "Only its owner may rename or edit a waystone you place."
+  ],
+  "sources": [
+   "waystones:warp_stone (DED/EGE/DED)",
+   "kubejs/server_scripts/kronwerke/round.js (amethyst_shard to ars_nouveau:source_gem)",
+   "srv/config/waystones-common.toml (chunksBetweenWildWaystones 25, wildWaystonesDimensionAllowList, spawnInVillages REGULAR, restrictedWaystones PLAYER)"
+  ]
+ },
+ "r_plates": {
+  "de": [
+   "Jede [[waystones:warp_plate]] kostet selbst schon einen [[waystones:dormant_shard]], dazu 4 Steinziegel und 4 Warppulver. Für zwei Platten und den Splitter zum Einstellen brauchst du also 3 Splitter, das sind 14 Warppulver und 3 Feuerstein.",
+   "Nach einem Sprung wartet die Platte eine Sekunde. Den Wither nimmt sie nie mit."
+  ],
+  "en": [
+   "Every [[waystones:warp_plate]] already costs a [[waystones:dormant_shard]] of its own, plus 4 stone bricks and 4 warp dust. Two plates and the shard to attune them take 3 shards, so 14 warp dust and 3 flint.",
+   "After a jump the plate waits one second. It never takes the Wither."
+  ],
+  "sources": [
+   "waystones:warp_plate (SWS/WFW/SWS)",
+   "waystones:dormant_shard (2 warp_dust, flint)",
+   "srv/config/waystones-common.toml (warpPlateUseTime 15, warpPlateCooldownTime 20, entityDenyList minecraft:wither, [source_is_warp_plate] multiply_xp_cost(0))"
+  ]
+ },
+ "r_nether_hub": {
+  "de": [
+   "**Create-Gleise führen auf Kronwerke nicht durch das Netherportal**, anders als der Questtext sagt: Der Nether läuft auf einem eigenen Server, und Core lässt das Gleis dort enden, damit kein Zug mit Fracht verschwindet. Bau Netherstrecken ganz im Nether.",
+   "Gegenstück ist das Portal, das der Nether-Server in der Nähe findet oder selbst baut, wie im normalen Spiel."
+  ],
+  "en": [
+   "**Create tracks do not lead through the Nether portal on Kronwerke**, whatever the quest text says: the Nether runs on a server of its own, and Core ends the track there so no train vanishes with its cargo. Build Nether lines entirely inside the Nether.",
+   "The other end is the portal the Nether server finds nearby or builds itself, as in the normal game."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/mixin/CreatePortalTrackMixin.java",
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (finds the nearest portal in range or builds one)"
+  ]
+ },
+ "r_trains": {
+  "de": [
+   "[[create:track]] kommt vom Fließband aus Steinstufen, Glatten Steinstufen oder Andesitstufen, dazu Eisen- oder Zinkklumpen. Robustes Blech steckt nicht im Gleis, sondern mit dem Messinggehäuse im Zugrahmen, aus dem der [[create:track_station]] wird.",
+   "Ein Zugrahmen und ein Kompass ergeben 2 Bahnhöfe. Alles Weitere in {{create_trains/laying}}."
+  ],
+  "en": [
+   "[[create:track]] comes off the sequenced assembly from stone slabs, smooth stone slabs or andesite slabs plus iron or zinc nuggets. Sturdy Sheet is not in the track but, with a brass casing, in the Railway Casing the [[create:track_station]] is made from.",
+   "One Railway Casing and a compass make 2 stations. More in {{create_trains/laying}}."
+  ],
+  "sources": [
+   "create:sequenced_assembly/track (create:sleepers, c:nuggets/iron or zinc)",
+   "create jar: tags/item/sleepers.json",
+   "create:item_application/railway_casing (brass_casing, #c:plates/obsidian)",
+   "create:crafting/kinetics/track_station (count 2)"
+  ]
+ },
+ "r_ars": {
+  "de": [
+   "Die [[ars_nouveau:warp_scroll]] von Ars Nouveau heißt genauso wie die Rolle von Waystones ({{list_dimensions/r_warp_scroll}}), ist aber ein anderer Gegenstand und auf Kronwerke ab Stufe 2 freigeschaltet. Die [[ars_nouveau:stable_warp_scroll]] machst du im Verzauberungsapparat aus einer Warp-Schriftrolle, 4 Lohenstaub und 2 Enderperlen."
+  ],
+  "en": [
+   "Ars Nouveau's [[ars_nouveau:warp_scroll]] is a different item from the Waystones scroll ({{list_dimensions/r_warp_scroll}}), even though the German names match, and it opens on Kronwerke in stage 2. You make the [[ars_nouveau:stable_warp_scroll]] in the Enchanting Apparatus from a Warp Scroll, 4 blaze powder and 2 ender pearls."
+  ],
+  "sources": [
+   "ars_nouveau:warp_scroll (stage 2, shapeless 4 #c:gems/lapis, 4 #c:gems/source, blank_parchment)",
+   "ars_nouveau:stable_warp_scroll (enchanting_apparatus: 4 blaze_powder, 2 #c:ender_pearls)"
+  ]
+ },
+ "r_botania": {
+  "de": [
+   "Im Spiel heißen die Gegenstände etwas anders als im Questtext: Die Schärpe, die beim Laufen schneller wird, ist die [[botania:planestriders_sash]], der Stab heißt [[botania:rod_of_the_skies]] und die Globetrotter-Schärpe [[botania:globetrotters_sash]].",
+   "Alle drei Schärpen und die Rute brauchen Runen vom Runenaltar, der in Stufe 2 öffnet ({{botania_runes/runic_altar}})."
+  ],
+  "en": [
+   "The German item names differ from the German quest text. The sash that speeds up as you run is the [[botania:planestriders_sash]], the rod is the [[botania:rod_of_the_skies]] and the globetrotter sash is the [[botania:globetrotters_sash]].",
+   "The sashes and the rod need runes from the Runic Altar, which opens in stage 2 ({{botania_runes/runic_altar}})."
+  ],
+  "sources": [
+   "botania:sojournors_sash, botania:planestriders_sash, botania:globetrotters_sash, botania:rod_of_the_skies (lang de)",
+   "botania:rune_of_air (stage 2)",
+   "docs/STAGES.md (stage 2: Botania runic altar)"
+  ]
+ },
+ "r_tempad": {
+  "de": [
+   "**Zeitstahl kannst du vor Stufe 3 nicht herstellen**, anders als der Questtext sagt: [[tempad:time_steel]] gehört zu Stufe 3, und Kronwerke hält seine Rezepte bis dahin zurück. In Stufe 2 sammelst du nur die Zutaten: Eisen und [[minecraft:netherite_scrap]].",
+   "Zeitstahl entsteht aus 2 Eisenbarren und 2 Netheritplatten im Quadrat oder im überhitzten Create-Mixer. Die Zeittür erscheint 3 Blöcke vor dir."
+  ],
+  "en": [
+   "**You cannot make Time Steel before stage 3**, whatever the quest text says: [[tempad:time_steel]] belongs to stage 3, and Kronwerke holds its recipes back until then. In stage 2 you can only collect the ingredients: iron and [[minecraft:netherite_scrap]].",
+   "Time Steel comes from 2 iron ingots and 2 netherite scrap in a square, or from the superheated Create mixer. The time door appears 3 blocks in front of you."
+  ],
+  "sources": [
+   "tempad:time_steel (stage 3; tempad:time_steel_shaped 'si'/'is', tempad:time_steel_create superheated)",
+   "srv/config/kronwerke-common.toml [locks] machineLocks",
+   "srv/config/tempad.jsonc (timedoor placement_distance 3)"
+  ]
+ },
+ "r_mekanism": {
+  "de": [
+   "Eine Runde [[mekanism:teleporter_frame]] ergibt 9 Stück: 8 Raffinierte Obsidianbarren um einen Raffinierten Leuchtsteinbarren, genau ein Rahmen. Der [[mekanism:portable_teleporter]] ist ein Teleportationskern mit 2 Energietabletts und 2 einfachen Schaltkreisen.",
+   "Auch ein Teleporter fragt nach der Stufe der Zieldimension. Alles Weitere in {{mekanism_advanced/teleporter}}."
+  ],
+  "en": [
+   "One craft of [[mekanism:teleporter_frame]] makes 9: 8 refined obsidian ingots around a refined glowstone ingot, exactly one frame. The [[mekanism:portable_teleporter]] is a Teleportation Core with 2 Energy Tablets and 2 basic control circuits.",
+   "A teleporter checks the target dimension's stage too. More in {{mekanism_advanced/teleporter}}."
+  ],
+  "sources": [
+   "mekanism:teleporter_frame (III/IGI/III, count 9)",
+   "mekanism:portable_teleporter (' E ' / CTC / ' E ')",
+   "mekanism:teleportation_core",
+   "core: src/main/java/de/kronwerke/core/lock/LockedDimensions.java (a waystone or a Mekanism teleporter)"
+  ]
+ },
+ "r_enderio": {
+  "de": [
+   "Im Spiel heißt der Binder [[enderio:conduit_binder]] und der Stab [[enderio:staff_of_travelling]]. Der Stab ist eine Diagonale aus zwei Dunkelstahlbarren mit dem Enderkristall oben rechts.",
+   "Die Reichweiten stehen so in der Serverconfig. Alles Weitere in {{enderio/travel}}."
+  ],
+  "en": [
+   "In game the binder is the [[enderio:conduit_binder]] and the staff the [[enderio:staff_of_travelling]]. The staff is a diagonal of two dark steel ingots with the ender crystal top right.",
+   "The ranges are as set in the server config. More in {{enderio/travel}}."
+  ],
+  "sources": [
+   "enderio:travel_anchor (IBI/BCB/IBI)",
+   "enderio:staff_of_travelling ('  C' / ' I ' / 'I  ')",
+   "srv/config/enderio/base-common.toml [items.travelling] (blinkRange 24, energyUse 1000, maxEnergy 100000, itemToBlockRange 192, blockToBlockRange 96)"
+  ]
+ },
+ "r_chunks": {
+  "de": [
+   "Die 500 Claims und 25 geladenen Chunks sind eine Obergrenze fürs Team: Es zählt das größte Limit eines Mitglieds, nicht die Summe. Geladene Chunks bleiben auch offline geladen, aber nur, solange in den letzten 7 Tagen jemand aus dem Team online war.",
+   "Claims verfallen nach 30 Tagen ohne Login ({{start_here/v_claim}})."
+  ],
+  "en": [
+   "The 500 claims and 25 force loaded chunks are a cap for the team: the largest limit of any member counts, not the sum. Loaded chunks stay loaded while you are offline, but only while someone of the team was online in the last 7 days.",
+   "Claims are released after 30 days without a login ({{start_here/v_claim}})."
+  ],
+  "sources": [
+   "srv/config/ftbchunks-world.snbt (max_claimed_chunks 500, max_force_loaded_chunks 25, hard_team_force_limit 25, party_limit_mode largest, force_load_mode always, max_idle_days_before_unforce 7, max_idle_days_before_unclaim 30)"
+  ]
+ },
+ "r_warp_scroll": {
+  "de": [
+   "Halte die Rolle 1,6 Sekunden lang gedrückt, dann öffnet sich die Auswahl. Nicht verwechseln: Die [[waystones:warp_scroll]] von Waystones und die gleichnamige Rolle von Ars Nouveau ({{list_dimensions/r_ars}}) sind zwei verschiedene Gegenstände."
+  ],
+  "en": [
+   "Hold the scroll for 1.6 seconds and the selection opens. Do not mix them up: the Waystones [[waystones:warp_scroll]] and the Ars Nouveau scroll ({{list_dimensions/r_ars}}) are two different items."
+  ],
+  "sources": [
+   "srv/config/waystones-common.toml (scrollUseTime 32, [source_is_scroll] multiply_xp_cost(0))",
+   "waystones:warp_scroll (GDG/GEG/PPP, count 3)"
+  ],
+  "client": [
+   "whether the selection opens at the end of the 1.6 seconds or at once"
+  ]
+ },
+ "r_sharestone": {
+  "de": [
+   "Jede Farbe ist ein eigenes Netz. Der [[waystones:warp_stone]] darin kostet auf Kronwerke 4 Quelljuwelen, 4 Enderperlen und einen Smaragd, ein Teilstein ist also teurer als er aussieht."
+  ],
+  "en": [
+   "Every colour is its own network. The [[waystones:warp_stone]] inside costs 4 Source Gems, 4 ender pearls and an emerald on Kronwerke, so a sharestone is dearer than it looks."
+  ],
+  "sources": [
+   "waystones:orange_sharestone (SSS/DWD/OOO)",
+   "waystones:warp_stone",
+   "waystones lang (tooltip.waystones.*_sharestone)"
+  ]
+ },
+ "r_horse": {
+  "de": [
+   "**Sättel gibt es auf Kronwerke doch an der Werkbank:** Fünf [[minecraft:leather]] und ein Faden ergeben einen [[minecraft:saddle]], drei Leder oben, darunter Leder, Faden, Leder. Das Rezept bringt der Aether mit.",
+   "[[farmersdelight:horse_feed]] sind ein Heuballen, ein Reisbündel, 2 Äpfel und eine Goldene Karotte."
+  ],
+  "en": [
+   "**Saddles can be crafted on Kronwerke after all:** five [[minecraft:leather]] and a string make a [[minecraft:saddle]], three leather on top, below it leather, string, leather. The recipe comes with the Aether.",
+   "[[farmersdelight:horse_feed]] is a hay bale, a rice bale, 2 apples and a golden carrot."
+  ],
+  "sources": [
+   "aether:aether_saddle (LLL / LSL, result minecraft:saddle)",
+   "farmersdelight:horse_feed"
+  ]
+ },
+ "r_ice_road": {
+  "de": [
+   "Packeis wird auch ohne Neunerpacks zu Blaueis: Create: Dragons Plus gefriert es 1 zu 1 im Lüfterstrom, und der Freezer im Aether ebenso. EMI zeigt beide unter [[minecraft:blue_ice]].",
+   "Für den Weg zum Tunnel siehe {{list_dimensions/r_nether_hub}}."
+  ],
+  "en": [
+   "Packed ice turns into blue ice without the nine to one recipe as well: Create: Dragons Plus freezes it 1 to 1 in a fan stream, and so does the Aether's freezer. EMI shows both under [[minecraft:blue_ice]].",
+   "For the way to the tunnel see {{list_dimensions/r_nether_hub}}."
+  ],
+  "sources": [
+   "create_dragons_plus:freezing/blue_ice_from_packed_ice",
+   "aether:blue_ice_freezing",
+   "minecraft:blue_ice"
+  ],
+  "client": [
+   "what the Dragons Plus fan needs to freeze"
+  ]
+ },
+ "r_elevator": {
+  "de": [
+   "Die [[create:elevator_pulley]] baust du aus Messinggehäuse, getrocknetem Seetangblock und Eisenblech, deshalb erst in Stufe 2. Die Einzelheiten stehen in {{create_brass/welcome}}."
+  ],
+  "en": [
+   "You build the [[create:elevator_pulley]] from a Brass Casing, a dried kelp block and an iron sheet, which is why it waits for stage 2. The details are in {{create_brass/welcome}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/elevator_pulley (stage 2)"
+  ]
+ },
+ "r_blink": {
+  "de": [
+   "Die Glyphe kommt mit {{ars_master/glyph_blink}}: Manipulationsessenz und 4 Enderperlen am Schreibtisch des Schreibers. Wo Blinzeln dich nicht hinlässt, hilft {{list_dimensions/r_ars}} weiter."
+  ],
+  "en": [
+   "The glyph comes with {{ars_master/glyph_blink}}: Manipulation Essence and 4 ender pearls at the Scribe's Table. Where Blink cannot take you, {{list_dimensions/r_ars}} helps."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_blink (ars_nouveau:glyph: manipulation_essence, 4 #c:ender_pearls)"
+  ]
+ },
+ "k_waypoints": {
+  "de": [
+   "JourneyMap setzt bei jedem Tod einen Todespunkt, so findest du deine Sachen wieder. Zu einem Wegpunkt teleportieren dürfen auf dem Server nur Admins, reisen musst du also selbst. Die Tasten im Questtext sind die Standardbelegung."
+  ],
+  "en": [
+   "JourneyMap sets a death point every time you die, so you find your things again. Only admins may teleport to a waypoint on the server, so you travel there yourself. The keys in the quest text are the defaults."
+  ],
+  "sources": [
+   "srv/journeymap/server/6.0/journeymap.server.global.config (allowDeathPoints true, teleportEnabled false, teleport OPS)",
+   "srv/config/waystones-common.toml [compatibility] journeyMap true"
+  ],
+  "client": [
+   "JourneyMap keys J and B"
+  ]
+ },
+ "k_natures": {
+  "de": [
+   "Der [[naturescompass:naturescompass]] nutzt sich auf dem Server nicht ab und zeigt dir neben der Richtung auch die Koordinaten des Bioms. Archwood-Wälder brauchst du für {{irons_spells/inscription}} und die {{list_dimensions/k_dowsing}}."
+  ],
+  "en": [
+   "On the server the [[naturescompass:naturescompass]] never wears out, and besides the direction it shows the biome's coordinates. You need Archwood forests for the {{irons_spells/inscription}} and the {{list_dimensions/k_dowsing}}."
+  ],
+  "sources": [
+   "srv/config/naturescompass-common.toml (compassDurability 0, displayCoordinates true)",
+   "ars_nouveau:dowsing_rod (archwood_planks)",
+   "irons_spellbooks:inscription_table (archwood_slab)"
+  ]
+ },
+ "k_dowsing": {
+  "de": [
+   "Die [[ars_nouveau:dowsing_rod]] zeigt keimenden Amethyst und lässt magische Wesen im Umkreis von 75 Blöcken leuchten. In der Farmwelt erzeugt das Pack keine Geoden, such Amethyst also in der Oberwelt.",
+   "Aus der Rute wird später die Glyphe Magie spüren ({{ars_nouveau/dowsing}})."
+  ],
+  "en": [
+   "The [[ars_nouveau:dowsing_rod]] shows budding amethyst and makes magical creatures within 75 blocks glow. The pack generates no geodes in the farm world, so look for amethyst in the Overworld.",
+   "Later the rod goes into the Sense Magic glyph ({{ars_nouveau/dowsing}})."
+  ],
+  "sources": [
+   "ars_nouveau lang ars_nouveau.page.dowsing_rod",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (only ore features)",
+   "ars_nouveau:glyph_sense_magic"
+  ]
+ },
+ "k_eyes": {
+  "de": [
+   "**Fünf Augen gehen auf Kronwerke schon in Stufe 1:** Wüstenauge, Fluchauge, Abgrundauge, Mechanisches Auge und Sturmauge haben ein zweites Rezept mit einem [[ars_nouveau:source_gem]] statt des Enderauges und einer Enderperle. EMI zeigt beide Rezepte.",
+   "Flammenauge, Monströses Auge und Auge der Leere brauchen weiter das Enderauge."
+  ],
+  "en": [
+   "**Five eyes work on Kronwerke in stage 1 already:** the desert, curse, abyss, mech and storm eyes have a second recipe with a [[ars_nouveau:source_gem]] in place of the Eye of Ender plus an ender pearl. EMI shows both recipes.",
+   "The flame, monstrous and void eyes still need the Eye of Ender."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/added.js (kronwerke:added/cataclysm_desert_eye, _cursed_eye, _abyss_eye, _mech_eye, _storm_eye)"
+  ]
+ },
+ "k_mod_compasses": {
+  "de": [
+   "Im Spiel heißt der Warden-Panzer [[deeperdarker:warden_carapace]], vier davon um einen Kompass ergeben den Antiken Kompass. Für Oberwelt-Bauwerke gibt es noch den [[irons_spellbooks:wayward_compass]] zu den Katakomben und die Furled Maps von Iron's Spells ({{irons_spells/catacombs}})."
+  ],
+  "en": [
+   "In game the warden armour is the [[deeperdarker:warden_carapace]]; four around a compass make the Ancient Compass. For Overworld structures there are also the [[irons_spellbooks:wayward_compass]] to the catacombs and the Furled Maps of Iron's Spells ({{irons_spells/catacombs}})."
+  ],
+  "sources": [
+   "deeperdarker:ancient_compass (' A ' / ACA / ' A ')",
+   "irons_spellbooks:wayward_compass",
+   "irons_spellbooks:furled_map"
+  ]
+ },
+ "k_banner_map": {
+  "de": [
+   "Das Fähnchen erscheint nur auf einer Karte, die den Ort des Banners zeigt. Am Kartentisch sperrst du eine Karte auch mit einer Glasscheibe, damit sie sich nicht mehr ändert."
+  ],
+  "en": [
+   "The flag only shows on a map that covers the banner's spot. At the cartography table you can also lock a map with a glass pane so it stops changing."
+  ],
+  "sources": [
+   "vanilla behaviour"
+  ],
+  "client": [
+   "banner marker behaviour in the client"
+  ]
+ },
+ "done": {
+  "de": [
+   "Die Goldkiste und der [[waystones:warp_stone]] sind die Belohnung; mit dem Warpstein baust du gleich einen Wegstein oder eine Warpplatte für die Basis ({{list_dimensions/r_plates}})."
+  ],
+  "en": [
+   "The Gold Crate and the [[waystones:warp_stone]] are the reward; turn the warp stone straight into a waystone or a warp plate for your base ({{list_dimensions/r_plates}})."
+  ],
+  "sources": [
+   "quest rewards",
+   "waystones:waystone (warp_stone)"
+  ]
+ }
+}

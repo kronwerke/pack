@@ -1,0 +1,626 @@
+{
+ "welcome": {
+  "de": [
+   "Iron's Spells hat keine deutsche Übersetzung, deshalb heißen alle Gegenstände des Mods auch im deutschen Spiel englisch. Das [[irons_spellbooks:copper_spell_book]] zaubert nur, wenn es im Zauberbuch-Slot steckt ({{irons_spells/equip}}).",
+   "Den wichtigsten Rohstoff, [[irons_spellbooks:arcane_essence]], lässt auf Kronwerke fast jedes feindliche Monster mit 4 Prozent Chance fallen, wenn du es selbst tötest ({{irons_spells/essence}}). Common Ink baust du an der Werkbank ({{irons_spells/ink}})."
+  ],
+  "en": [
+   "Iron's Spells has no German translation, so the mod's items keep their English names in a German game too. The [[irons_spellbooks:copper_spell_book]] only casts while it sits in the spell book slot ({{irons_spells/equip}}).",
+   "The key material, [[irons_spellbooks:arcane_essence]], drops on Kronwerke from almost every hostile mob with a 4 percent chance when you kill it yourself ({{irons_spells/essence}}). Common Ink is made at the crafting table ({{irons_spells/ink}})."
+  ],
+  "sources": [
+   "irons_spellbooks:copper_spell_book (spell_container mustEquip true, maxSpells 5)",
+   "irons_spellbooks jar: assets/irons_spellbooks/lang has no de_de.json",
+   "kubejs/data/kronwerke/loot_modifiers/drop_0_arcane_essence.json, kubejs/data/kronwerke/loot_table/inject/drop_0_arcane_essence.json",
+   "kronwerke:links/common_ink"
+  ]
+ },
+ "equip": {
+  "de": [
+   "Jedes Zauberbuch des Mods ist ein Buch zum Anlegen: Nur das Buch im Slot liefert die Zauber für Zauberrad und Zaubertaste. Ein zweites Buch im Inventar bringt nichts, tausch es im Slot aus.",
+   "Mehr Mana gibt es in Stufe 1 aus der Rüstung ({{irons_spells/wandering}}, {{irons_spells/wizard}}) und aus dem [[irons_spellbooks:mana_ring]] ({{irons_spells/mana_ring}})."
+  ],
+  "en": [
+   "Every spell book of the mod has to be equipped: only the book in the slot feeds the spell wheel and the cast key. A second book in your inventory does nothing, swap it into the slot instead.",
+   "More mana in stage 1 comes from armour ({{irons_spells/wandering}}, {{irons_spells/wizard}}) and from the [[irons_spellbooks:mana_ring]] ({{irons_spells/mana_ring}})."
+  ],
+  "sources": [
+   "irons_spellbooks:copper_spell_book, irons_spellbooks:iron_spell_book (mustEquip true)",
+   "kubejs/data/kronwerke/origins/powers/quellgeborene_zaubersinn.json (irons_spellbooks:max_mana +50)"
+  ]
+ },
+ "iron_book": {
+  "de": [
+   "Eine [[minecraft:chain]] kostet einen Eisenbarren und zwei Eisenklumpen, für das Tome brauchst du drei. Dazu kommen 4 [[minecraft:leather]] und 2 Papier.",
+   "Mehr als 6 Plätze bekommst du in Stufe 1 nur mit Glück: Das {{irons_spells/rotten_book}} hat 8. Das goldene Buch und alle besseren Bücher sind auf Kronwerke ab Stufe 2 freigeschaltet."
+  ],
+  "en": [
+   "A [[minecraft:chain]] costs one iron ingot and two iron nuggets, and the tome needs three. Add 4 [[minecraft:leather]] and 2 paper.",
+   "More than 6 slots in stage 1 take luck: the {{irons_spells/rotten_book}} has 8. The gold book and every better book open on Kronwerke from stage 2."
+  ],
+  "sources": [
+   "irons_spellbooks:iron_spell_book (pattern CLL/CPP/CLL, maxSpells 6)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (gold_spell_book), stage3.json (diamond_spell_book, netherite_spell_book)"
+  ]
+ },
+ "rotten_book": {
+  "de": [
+   "Die 1 Prozent gelten pro Kiste in Verliesen, Minenschächten, Wüsten- und Dschungeltempeln, Außenposten, Herrenhäusern, Ruinenportalen und Schiffswracks, auch in den Verliesen von YUNG's Better Dungeons. Lohnender sind die Sarkophage der Katakomben ({{irons_spells/catacombs}}).",
+   "Das [[irons_spellbooks:druidic_spell_book]] daraus ist auf Kronwerke erst ab **Stufe 2** freigeschaltet. Bis dahin benutzt du das Rotten Spell Book selbst."
+  ],
+  "en": [
+   "The 1 percent is per chest in dungeons, mineshafts, desert and jungle temples, outposts, mansions, ruined portals and shipwrecks, and in the dungeons of YUNG's Better Dungeons too. The catacomb sarcophagi pay better ({{irons_spells/catacombs}}).",
+   "The [[irons_spellbooks:druidic_spell_book]] made from it opens on Kronwerke only in **stage 2**. Until then use the Rotten Spell Book itself."
+  ],
+  "sources": [
+   "irons_spellbooks jar: data/irons_spellbooks/loot_table/chests/additional_generic_loot.json (rotten_spell_book 0.01)",
+   "irons_spellbooks jar: loot_modifiers/chest_loot/vanilla_generic_loot_modifier.json, compat_generic_loot_modifier.json",
+   "irons_spellbooks jar: loot_table/chests/catacombs/coffin_loot.json (0.15)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (druidic_spell_book)"
+  ]
+ },
+ "scroll": {
+  "de": [
+   "Die sicheren 3 bis 5 Rollen gibt es nur in der kleineren Bibliothek der Festungen. Die große Bibliothek von YUNG's Better Strongholds hat nur die normale Kistenbeute: zwei Versuche mit je einem Viertel Chance auf eine Rolle.",
+   "Zum Einschreiben brauchst du den {{irons_spells/inscription}}, eine eigene Rolle schmiedest du später in der {{irons_spells/scroll_forge}}."
+  ],
+  "en": [
+   "The safe 3 to 5 scrolls are only in the smaller stronghold library. The grand library of YUNG's Better Strongholds only has the normal chest loot: two tries at a one in four chance of a scroll each.",
+   "To inscribe a scroll you need the {{irons_spells/inscription}}; you forge your own scrolls later in the {{irons_spells/scroll_forge}}."
+  ],
+  "sources": [
+   "irons_spellbooks jar: loot_modifiers/chest_loot/stronghold_library_modifier.json (only minecraft:chests/stronghold_library) and compat_generic_loot_modifier.json (betterstrongholds:chests/grand_library gets the generic loot)",
+   "YungsBetterStrongholds jar: structure/rooms/library_md.nbt (minecraft:chests/stronghold_library), rooms/grand_library.nbt (betterstrongholds:chests/grand_library)",
+   "irons_spellbooks jar: data/irons_spellbooks/loot_table/chests/additional_generic_loot.json (2 rolls at 0.75, scroll weight 1 of 4)"
+  ]
+ },
+ "ink": {
+  "de": [
+   "Das Rezept ist formlos: [[minecraft:glass_bottle]], [[minecraft:ink_sac]] und ein [[ars_nouveau:source_gem]]. Tintenbeutel lassen Tintenfische fallen.",
+   "Magier lassen meist die bessere Sorte fallen: Uncommon Ink ist bei ihnen häufiger als Common Ink. Uncommon und Rare Ink sind bis Stufe 2 gesperrt, du kannst sie tragen und lagern, aber nicht in die Hand nehmen."
+  ],
+  "en": [
+   "The recipe is shapeless: [[minecraft:glass_bottle]], [[minecraft:ink_sac]] and a [[ars_nouveau:source_gem]]. Squid drop ink sacs.",
+   "Mages mostly drop the better kind: Uncommon Ink is more common from them than Common Ink. Uncommon and Rare Ink are locked until stage 2; you can carry and store them but not hold them."
+  ],
+  "sources": [
+   "kronwerke:links/common_ink (kubejs/server_scripts/kronwerke/links.js)",
+   "irons_spellbooks jar: loot_table/magic_items/good_ink.json (common 12, uncommon 20, rare 6, epic 3)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (uncommon_ink, rare_ink)"
+  ]
+ },
+ "inscription": {
+  "de": [
+   "Das Rezept ist anders als im Questtext: Das [[minecraft:book]] liegt **oben rechts**, die ganze mittlere Reihe sind drei [[ars_nouveau:archwood_slab]], dazu unten links und unten rechts je ein Holzzaun. Kronwerke hat die Holzstufen des Originals gegen Archwood-Platten getauscht.",
+   "Archwood wächst in den Archwood-Wäldern von Ars Nouveau ({{ars_nouveau/archwood}}), der {{list_dimensions/k_natures}} findet sie."
+  ],
+  "en": [
+   "The recipe differs from the quest text: the [[minecraft:book]] goes **top right**, the whole middle row is three [[ars_nouveau:archwood_slab]], and one wooden fence each goes bottom left and bottom right. Kronwerke swapped the original's wooden slabs for Archwood Slabs.",
+   "Archwood grows in the Archwood forests of Ars Nouveau ({{ars_nouveau/archwood}}); the {{list_dimensions/k_natures}} finds them."
+  ],
+  "sources": [
+   "irons_spellbooks:inscription_table (pattern '  B' / 'TTT' / 'L L', T ars_nouveau:archwood_slab, L #minecraft:wooden_fences)",
+   "kubejs/server_scripts/kronwerke/round.js (replaceInput #minecraft:wooden_slabs to ars_nouveau:archwood_slab)"
+  ]
+ },
+ "cast": {
+  "de": [
+   "Die Quest hakst du selbst ab. Für den ersten Zauber reicht jede gewöhnliche Rolle aus einer Kiste; welche Zauber du selbst schmieden kannst, zeigt die {{irons_spells/scroll_forge}}."
+  ],
+  "en": [
+   "You tick this quest yourself. Any common scroll from a chest will do for the first spell; the {{irons_spells/scroll_forge}} shows which spells you can forge yourself."
+  ],
+  "sources": [
+   "quest task: checkmark"
+  ]
+ },
+ "scroll_forge": {
+  "de": [
+   "Das Rezept ist anders als im Questtext: Der [[minecraft:crying_obsidian]] der mittleren Reihe gehört **in die Mitte**, nicht nach links. Oben liegen drei [[minecraft:polished_deepslate]], unten drei weitere Weinende Obsidian.",
+   "Polierten Tiefenschiefer machst du aus Bruchtiefenschiefer an der Werkbank (4 ergeben 4) oder am Steinmetz. Die Fokusse für die Schulen sammelst du in {{irons_spells/focuses}}."
+  ],
+  "en": [
+   "The recipe differs from the quest text: the [[minecraft:crying_obsidian]] in the middle row goes **in the centre**, not on the left. Three [[minecraft:polished_deepslate]] go on top, three more Crying Obsidian at the bottom.",
+   "Polished Deepslate comes from Cobbled Deepslate at the crafting table (4 make 4) or the stonecutter. You collect the school focuses in {{irons_spells/focuses}}."
+  ],
+  "sources": [
+   "irons_spellbooks:scroll_forge (pattern DDD / ' O ' / OOO)"
+  ]
+ },
+ "focuses": {
+  "de": [
+   "**Lohenruten sind auf Kronwerke nicht gesperrt.** Die Vorratskisten im Pyromancer Tower enthalten welche ({{irons_spells/pyromancer}}), damit schmiedest du Feuerzauber schon in Stufe 1.",
+   "Die Quest will 3 [[irons_spellbooks:frozen_bone]], von Strays in Schneebiomen oder aus dem {{irons_spells/cryomancer}}. Bottle o' Lightning und Blood Vial haben eigene Quests: {{irons_spells/lightning_bottle}} und {{irons_spells/blood_vial}}."
+  ],
+  "en": [
+   "**Blaze rods are not locked on Kronwerke.** The supply chests in the Pyromancer Tower hold some ({{irons_spells/pyromancer}}), so you can forge fire spells in stage 1 already.",
+   "The quest wants 3 [[irons_spellbooks:frozen_bone]], from strays in snowy biomes or from the {{irons_spells/cryomancer}}. Bottle o' Lightning and Blood Vial have quests of their own: {{irons_spells/lightning_bottle}} and {{irons_spells/blood_vial}}."
+  ],
+  "sources": [
+   "minecraft:blaze_rod is in no stage file (helpq item: stage 1); irons_spellbooks jar: loot_table/chests/pyromancer_tower/pyromancer_supplies.json (blaze_rod weight 8)",
+   "irons_spellbooks jar: tags/item/fire_focus.json (minecraft:blaze_rod)",
+   "irons_spellbooks jar: loot_table/entities/additional_stray_loot.json"
+  ]
+ },
+ "runes": {
+  "de": [
+   "Am sichersten ist der Keller des Ice Spider Den ({{irons_spells/ice_spider}}). Die 30 Prozent gelten nur in der kleineren Festungsbibliothek, die große Bibliothek von YUNG's Better Strongholds hat die normalen 4 Prozent.",
+   "Plane die Steine ein: Jedes Teil Schulrüstung kostet eine Rune ({{irons_spells/school_armor}}), ein ganzer Satz also vier [[irons_spellbooks:blank_rune]] und 32 Fokusse."
+  ],
+  "en": [
+   "The surest source is the Ice Spider Den basement ({{irons_spells/ice_spider}}). The 30 percent only applies in the smaller stronghold library; the grand library of YUNG's Better Strongholds has the normal 4 percent.",
+   "Plan your stones: every piece of school armour costs one rune ({{irons_spells/school_armor}}), so a full set is four [[irons_spellbooks:blank_rune]] and 32 focus items."
+  ],
+  "sources": [
+   "irons_spellbooks jar: loot_table/chests/ice_spider_den/basement.json (blank_rune 0.6)",
+   "irons_spellbooks jar: loot_modifiers/chest_loot/stronghold_library_modifier.json (only minecraft:chests/stronghold_library) and compat_generic_loot_modifier.json (betterstrongholds:chests/grand_library gets the generic loot)",
+   "YungsBetterStrongholds jar: structure/rooms/library_md.nbt (minecraft:chests/stronghold_library), rooms/grand_library.nbt (betterstrongholds:chests/grand_library)",
+   "irons_spellbooks jar: data/irons_spellbooks/loot_table/chests/additional_generic_loot.json (blank_rune 0.04)",
+   "irons_spellbooks:ice_rune and other runes (pattern FFF/FRF/FFF)"
+  ]
+ },
+ "anvil": {
+  "de": [
+   "Den [[irons_spellbooks:arcane_anvil]] kannst du in Stufe 1 nicht bauen, Kronwerke hält das Rezept bis Stufe 2 zurück. Statt Amethystblöcken braucht er auf Kronwerke drei [[ars_nouveau:source_gem_block]].",
+   "[[irons_spellbooks:mithril_ore]] liegt auch in der Farmwelt, abbauen lässt es sich aber nur mit einer Netheritspitzhacke ({{list_dimensions/d_mining}})."
+  ],
+  "en": [
+   "You cannot build the [[irons_spellbooks:arcane_anvil]] in stage 1; Kronwerke holds its recipe back until stage 2. On Kronwerke it takes three [[ars_nouveau:source_gem_block]] instead of amethyst blocks.",
+   "[[irons_spellbooks:mithril_ore]] is in the farm world too, but only a netherite pickaxe mines it ({{list_dimensions/d_mining}})."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (arcane_anvil), config kronwerke-common.toml [locks] machineLocks",
+   "kubejs/server_scripts/kronwerke/round.js (amethyst_block to ars_nouveau:source_gem_block)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (kronwerke:mine_mithril)",
+   "irons_spellbooks jar: data/neoforge/tags/block/needs_netherite_tool.json"
+  ]
+ },
+ "essence": {
+  "de": [
+   "Auf Kronwerke droppt [[irons_spellbooks:arcane_essence]] von fast allen feindlichen Monstern: 4 Prozent Chance, wenn du selbst tötest, mit Plünderung 6 Prozent und 2 Prozent mehr je Stufe darüber. Kronwerkes Zusatzbeute in Kisten enthält manchmal 1 bis 4 Stück.",
+   "Ohne Kampf geht es mit Ars Nouveau: {{irons_spells/ars_essence}} prägt Essenz aus Büchern."
+  ],
+  "en": [
+   "On Kronwerke [[irons_spellbooks:arcane_essence]] drops from almost every hostile mob: 4 percent when you kill it yourself, 6 percent with Looting and 2 percent more per level above that. Kronwerke's extra chest loot sometimes holds 1 to 4.",
+   "Without fighting, Ars Nouveau does it: {{irons_spells/ars_essence}} imbues essence from books."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/loot_table/inject/drop_0_arcane_essence.json (killed_by_player, 0.04, looting 0.06 + 0.02)",
+   "kubejs/data/kronwerke/loot_modifiers/drop_0_arcane_essence.json (234 entity loot tables)",
+   "kubejs/data/kronwerke/loot_table/inject/common.json (arcane_essence 1 to 4)"
+  ]
+ },
+ "wandering": {
+  "de": [
+   "Das Lederrüstungsteil muss aus Leder sein, eine gefärbte Lederjacke geht auch. Für den ganzen Satz brauchst du 24 [[minecraft:leather]]: 5 für die Kappe, 8 für die Jacke, 7 für die Hose, 4 für die Stiefel.",
+   "Lang hält der Satz nicht: Die Wizard-Rüstung ({{irons_spells/wizard}}) gibt pro Teil 125 statt 25 Mana."
+  ],
+  "en": [
+   "The armour piece has to be leather; a dyed leather tunic works too. A full set takes 24 [[minecraft:leather]]: 5 for the cap, 8 for the tunic, 7 for the pants, 4 for the boots.",
+   "The set does not last long: the wizard armour ({{irons_spells/wizard}}) gives 125 instead of 25 mana per piece."
+  ],
+  "sources": [
+   "irons_spellbooks:wandering_magician_chestplate (shapeless: minecraft:leather_chestplate, arcane_essence)",
+   "irons_spellbooks jar: WanderingMagicianArmorItem (25), WizardArmorItem (125, 0.05)"
+  ],
+  "client": [
+   "whether a dyed leather tunic is accepted by the shapeless recipe"
+  ]
+ },
+ "staff": {
+  "de": [
+   "Das Rezept ist eine Diagonale: [[irons_spellbooks:arcane_essence]] oben rechts, die Holzschaufel in der Mitte, der Eisenbarren unten links.",
+   "Der bessere Stab in Stufe 1 ist der {{irons_spells/ice_staff}}. Den Artificer's Cane baust du, sobald du Karmesinbretter aus dem Nether hast."
+  ],
+  "en": [
+   "The recipe is a diagonal: [[irons_spellbooks:arcane_essence]] top right, the wooden shovel in the centre, the iron ingot bottom left.",
+   "The better staff in stage 1 is the {{irons_spells/ice_staff}}. The Artificer's Cane follows once you have Crimson Planks from the Nether."
+  ],
+  "sources": [
+   "irons_spellbooks:graybeard_staff (pattern '  E' / ' S ' / 'I  ')",
+   "irons_spellbooks:artificer_cane (crimson_planks)"
+  ]
+ },
+ "cloth": {
+  "de": [
+   "Stoff brauchst du nicht nur für die Rüstung: Zwei stecken im Druidic Tome (Stufe 2), einer in der Karte zum Ice Spider Den ({{irons_spells/ice_spider}}).",
+   "Am schnellsten kommt die Essenz in Stufe 1 von Eisspinnen (4 bis 16 pro Spinne), ganz ohne Kampf aus der Imbuement-Kammer ({{irons_spells/ars_essence}})."
+  ],
+  "en": [
+   "Cloth is not only for armour: two go into the Druidic Tome (stage 2), one into the map to the Ice Spider Den ({{irons_spells/ice_spider}}).",
+   "The fastest essence in stage 1 comes from ice spiders (4 to 16 each), and with no fighting at all from the imbuement chamber ({{irons_spells/ars_essence}})."
+  ],
+  "sources": [
+   "irons_spellbooks:magic_cloth (DDD/DWD/DDD)",
+   "helpq uses irons_spellbooks:magic_cloth (druidic_spell_book, spider_den_map)",
+   "irons_spellbooks jar: loot_table/entities/ice_spider.json"
+  ]
+ },
+ "wizard": {
+  "de": [
+   "Die Muster im Questtext stimmen nicht ganz. Wizard Hat: ein Stoff oben rechts, einer in der Mitte, drei in der unteren Reihe. Wizard Hood: die obere Reihe voll und darunter links und rechts je einer, wie ein Lederhelm.",
+   "**Quellgeborene dürfen die ganze Zaubererrüstung tragen**, obwohl sie wie Diamant schützt: Ihr Verbot gilt nur für Eisen-, Gold-, Diamant- und Netheritrüstung."
+  ],
+  "en": [
+   "The patterns in the quest text are not quite right. Wizard Hat: one cloth top right, one in the centre, three in the bottom row. Wizard Hood: a full top row and one each below on the left and right, like a leather cap.",
+   "**Sourceborn may wear the whole wizard armour** although it protects like diamond: their ban only covers iron, gold, diamond and netherite armour."
+  ],
+  "sources": [
+   "irons_spellbooks:wizard_helmet_hat (pattern '  C' / ' C ' / CCC)",
+   "irons_spellbooks:wizard_helmet_hood (pattern CCC / 'C C')",
+   "kubejs/data/kronwerke/origins/powers/quellgeborene_kein_eisen.json (neoorigins:heavy_armor)",
+   "neoorigins jar: data/neoorigins/tags/item/heavy_armor.json (vanilla iron, gold, diamond, netherite only)"
+  ]
+ },
+ "school_armor": {
+  "de": [
+   "Die übrigen Sätze: [[irons_spellbooks:plagued_chestplate]] mit der Nature Rune, [[irons_spellbooks:electromancer_chestplate]] mit der Lightning Rune, [[irons_spellbooks:cultist_chestplate]] mit der Blood Rune. Die Rune ersetzt das Wizard-Teil nicht, du brauchst beides.",
+   "Die [[irons_spellbooks:pyromancer_chestplate]]-Rüstung geht entgegen dem Questtext schon in Stufe 1, weil Lohenruten nicht gesperrt sind und im Pyromancer Tower liegen. Die Quest hakst du selbst ab."
+  ],
+  "en": [
+   "The other sets: [[irons_spellbooks:plagued_chestplate]] with the Nature Rune, [[irons_spellbooks:electromancer_chestplate]] with the Lightning Rune, [[irons_spellbooks:cultist_chestplate]] with the Blood Rune. The rune does not replace the wizard piece, you need both.",
+   "Contrary to the quest text the [[irons_spellbooks:pyromancer_chestplate]] armour works in stage 1, because blaze rods are not locked and lie in the Pyromancer Tower. You tick the quest yourself."
+  ],
+  "sources": [
+   "helpq uses irons_spellbooks:nature_rune / lightning_rune / blood_rune / fire_rune (plagued_, electromancer_, cultist_, pyromancer_*_crafting)",
+   "irons_spellbooks:cryomancer_chestplate_crafting (wizard_base_chestplate, rune, arcane_essence)",
+   "minecraft:blaze_rod is in no stage file (helpq item: stage 1); irons_spellbooks jar: loot_table/chests/pyromancer_tower/pyromancer_supplies.json (blaze_rod weight 8)"
+  ]
+ },
+ "pyromancer": {
+  "de": [
+   "**Lohenruten sind auf Kronwerke nicht gesperrt**, anders als der Questtext sagt. Acht davon um einen [[irons_spellbooks:blank_rune]] ergeben schon in Stufe 1 die Fire Rune, und in der Scroll Forge sind sie der Fokus für Feuerzauber.",
+   "Die Rolle in der einfachen Vorratskiste des Turms ist immer ein Feuerzauber niedriger Stufe."
+  ],
+  "en": [
+   "**Blaze rods are not locked on Kronwerke**, whatever the quest text says. Eight of them around a [[irons_spellbooks:blank_rune]] make the Fire Rune in stage 1 already, and in the Scroll Forge they are the focus for fire spells.",
+   "The scroll in the tower's basic storage chest is always a low level fire spell."
+  ],
+  "sources": [
+   "minecraft:blaze_rod is in no stage file (helpq item: stage 1); irons_spellbooks jar: loot_table/chests/pyromancer_tower/pyromancer_supplies.json (blaze_rod weight 8)",
+   "irons_spellbooks:fire_rune",
+   "irons_spellbooks jar: loot_table/chests/pyromancer_tower/pyromancer_basic_storage.json (scroll, school fire, quality 0 to 0.4)"
+  ],
+  "client": [
+   "which container in the tower uses pyromancer_basic_storage"
+  ]
+ },
+ "archevoker": {
+  "de": [
+   "Der [[irons_spellbooks:evoker_spell_book]] ist auf Kronwerke bis **Stufe 2** gesperrt: aufheben und lagern geht, benutzen nicht. Jeder normale Evoker lässt ihn mit 1 Prozent Chance fallen, wenn du ihn tötest, mit Plünderung etwas öfter.",
+   "Die Evocation Rune vom Archevoker spart dir acht Smaragde und einen Runenstein für ein Teil des [[irons_spellbooks:archevoker_chestplate]]-Satzes."
+  ],
+  "en": [
+   "The [[irons_spellbooks:evoker_spell_book]] is locked on Kronwerke until **stage 2**: you can pick it up and store it but not use it. Every ordinary evoker drops it with a 1 percent chance when you kill it, a little more often with Looting.",
+   "The Evocation Rune from the Archevoker saves you eight emeralds and a runestone for one piece of the [[irons_spellbooks:archevoker_chestplate]] set."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (evoker_spell_book)",
+   "irons_spellbooks jar: loot_table/entities/additional_evoker_loot.json (0.01, looting 0.02 + 0.01), entities/archevoker.json (evocation_rune 0.5, killed_by_player)"
+  ]
+ },
+ "catacombs": {
+  "de": [
+   "Auf Kronwerke spawnen Necromancer in der Natur erst ab **Stufe 2**, auch in den Gängen der Katakomben. In Stufe 1 kommen sie nur aus einem Spawner in einem der Räume, sonst triffst du Catacombs Zombies und Skelette.",
+   "Eine [[minecraft:soul_lantern]] für den [[irons_spellbooks:wayward_compass]] musst du nicht im Nether holen: In antiken Städten hängen welche."
+  ],
+  "en": [
+   "On Kronwerke necromancers only spawn naturally from **stage 2**, in the catacomb halls too. In stage 1 they only come from a spawner in one of the rooms; otherwise you meet Catacombs Zombies and skeletons.",
+   "You do not need the Nether for the [[minecraft:soul_lantern]] of the [[irons_spellbooks:wayward_compass]]: ancient cities have them hanging."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [mobs] minStage (irons_spellbooks:necromancer=2)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onSpawn cancels NATURAL and CHUNK_GENERATION only)",
+   "irons_spellbooks jar: worldgen/structure/catacombs.json (spawn_overrides necromancer), structure/catacombs/room/balcony.nbt (spawner with necromancer)",
+   "irons_spellbooks:wayward_compass (soul_lantern)"
+  ],
+  "client": [
+   "whether the catacomb spawner room with the necromancer generates in every catacomb"
+  ]
+ },
+ "dead_king": {
+  "de": [
+   "Der Dead King gehört auf Kronwerke nicht zu den Bossen, die mit der Gruppe wachsen: Mehr Spieler machen ihn nicht stärker. Die Chance auf [[irons_spellbooks:blood_staff]] oder [[irons_spellbooks:necronomicon_spell_book]] liegt bei 50 Prozent für eines von beiden, und nur wenn ein Spieler ihn tötet.",
+   "Das Necronomicon ist bis **Stufe 3** gesperrt, den Blood Staff kannst du sofort benutzen. Die seltene Tinte aus den Bone Vaults ist ebenfalls gesperrt, Epic bis Stufe 3, Legendary bis Stufe 4."
+  ],
+  "en": [
+   "On Kronwerke the Dead King is not one of the bosses that grow with the group: more players do not make him stronger. The chance of a [[irons_spellbooks:blood_staff]] or a [[irons_spellbooks:necronomicon_spell_book]] is 50 percent for one of the two, and only when a player kills him.",
+   "The Necronomicon is locked until **stage 3**; the Blood Staff works right away. The rare ink from the Bone Vaults is locked too, epic until stage 3, legendary until stage 4."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [bosses] scaling (no irons_spellbooks entity)",
+   "irons_spellbooks jar: loot_table/entities/dead_king.json (one roll: blood_staff or necronomicon, 0.5, killed_by_player)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (necronomicon_spell_book, epic_ink), stage4.json (legendary_ink)"
+  ]
+ },
+ "cryomancer": {
+  "de": [
+   "Der Cryomancer lässt dasselbe fallen wie die anderen Magier, bei den Tinten meist Uncommon Ink, die bis Stufe 2 gesperrt ist. Lohnender sind hier die Turmkisten mit Frozen Bones.",
+   "Von hier geht es weiter zum {{irons_spells/icebreaker}} und zum {{irons_spells/ice_spider}}, beide liegen ebenfalls in kalten Biomen."
+  ],
+  "en": [
+   "The Cryomancer drops the same as the other mages, mostly Uncommon Ink among the inks, which is locked until stage 2. The tower chests with Frozen Bones are the better prize here.",
+   "From here go on to the {{irons_spells/icebreaker}} and the {{irons_spells/ice_spider}}, both also in cold biomes."
+  ],
+  "sources": [
+   "irons_spellbooks jar: loot_table/entities/cryomancer.json, magic_items/good_ink.json",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (uncommon_ink)"
+  ]
+ },
+ "ice_spider": {
+  "de": [
+   "Den Weg zeigt dir eine eigene [[irons_spellbooks:furled_map]]: 2 Frozen Bones in gegenüberliegende Ecken, 4 Spinnweben drumherum, ein Arcane Cloth in die Mitte.",
+   "Der [[irons_spellbooks:icy_fang]] fällt mit 40 Prozent Chance, wenn du die Spinne selbst tötest. Für die Quest zählen drei Eisspinnen."
+  ],
+  "en": [
+   "A [[irons_spellbooks:furled_map]] of its own shows the way: 2 Frozen Bones in opposite corners, 4 cobwebs around them, one Arcane Cloth in the centre.",
+   "The [[irons_spellbooks:icy_fang]] drops with a 40 percent chance when you kill the spider yourself. The quest counts three ice spiders."
+  ],
+  "sources": [
+   "irons_spellbooks:spider_den_map (pattern 'SW ' / WCW / ' WS', result furled_map_ice_spider_den)",
+   "irons_spellbooks jar: loot_table/entities/ice_spider.json (icy_fang 0.4, killed_by_player)"
+  ],
+  "client": [
+   "that the crafted map shows the way like a found Furled Map"
+  ]
+ },
+ "apothecarist": {
+  "de": [
+   "Der Apothecarist zählt wie die anderen Magier: 0 bis 8 Arcane Essence, eine Rolle, 1 bis 3 Tinten. Den [[irons_spellbooks:alchemist_cauldron]] baust du später aus Kessel, Eisen, Arcane Essence und [[irons_spellbooks:cinder_essence]].",
+   "Die Hütte steht im Sumpf, nimm also Blöcke oder ein Boot mit."
+  ],
+  "en": [
+   "The Apothecarist counts like the other mages: 0 to 8 Arcane Essence, a scroll, 1 to 3 inks. You build the [[irons_spellbooks:alchemist_cauldron]] later from a cauldron, iron, Arcane Essence and [[irons_spellbooks:cinder_essence]].",
+   "The hut stands in a swamp, so bring blocks or a boat."
+  ],
+  "sources": [
+   "irons_spellbooks jar: loot_table/entities/apothecarist.json",
+   "irons_spellbooks:alchemist_cauldron"
+  ]
+ },
+ "schools": {
+  "de": [
+   "Fokus, Rune und Schulrüstung gehören zusammen: Eis mit Frozen Bone und Cryomancer, Evocation mit Smaragd und Archevoker, Ender mit Enderperle und Shadow-Walker, Heilig mit Divine Pearl und Priest, Natur mit Giftiger Kartoffel und Plagued, Blitz mit Bottle o' Lightning und Electromancer, Blut mit Blood Vial und Cultist, Feuer mit Lohenrute und Pyromancer.",
+   "Jede Rune sind acht Fokusse um einen Blank Runestone ({{irons_spells/runes}})."
+  ],
+  "en": [
+   "Focus, rune and school armour go together: ice with Frozen Bone and Cryomancer, evocation with emerald and Archevoker, ender with ender pearl and Shadow-Walker, holy with Divine Pearl and Priest, nature with poisonous potato and Plagued, lightning with Bottle o' Lightning and Electromancer, blood with Blood Vial and Cultist, fire with blaze rod and Pyromancer.",
+   "Every rune is eight focus items around a Blank Runestone ({{irons_spells/runes}})."
+  ],
+  "sources": [
+   "irons_spellbooks jar: tags/item/*_focus.json",
+   "helpq uses irons_spellbooks:*_rune (school armour recipes)"
+  ]
+ },
+ "spells_fire": {
+  "de": [
+   "Feuerrollen schmiedest du entgegen dem Questtext schon in Stufe 1: [[minecraft:blaze_rod]] ist nicht gesperrt und liegt in den Kisten des {{irons_spells/pyromancer}}. Acht davon um einen Blank Runestone ergeben die Fire Rune für die Pyromancer-Rüstung."
+  ],
+  "en": [
+   "Contrary to the quest text you can forge fire scrolls in stage 1: [[minecraft:blaze_rod]] is not locked and lies in the chests of the {{irons_spells/pyromancer}}. Eight of them around a Blank Runestone make the Fire Rune for the Pyromancer armour."
+  ],
+  "sources": [
+   "minecraft:blaze_rod is in no stage file (helpq item: stage 1); irons_spellbooks jar: loot_table/chests/pyromancer_tower/pyromancer_supplies.json (blaze_rod weight 8)",
+   "irons_spellbooks:fire_rune"
+  ]
+ },
+ "spells_ice": {
+  "de": [
+   "Die stärkste Eis-Ausrüstung in Stufe 1 ist der {{irons_spells/ice_staff}} mit 15 Prozent mehr Eiszauberkraft und die Cryomancer-Rüstung aus Ice Runes ({{irons_spells/school_armor}}). Frozen Bones bekommst du am bequemsten im {{irons_spells/cryomancer}}."
+  ],
+  "en": [
+   "The strongest ice gear in stage 1 is the {{irons_spells/ice_staff}} with 15 percent more ice spell power and the Cryomancer armour made with Ice Runes ({{irons_spells/school_armor}}). Frozen Bones come easiest from the {{irons_spells/cryomancer}}."
+  ],
+  "sources": [
+   "irons_spellbooks:ice_staff",
+   "irons_spellbooks:cryomancer_chestplate",
+   "irons_spellbooks jar: loot_table/chests/mountain_tower"
+  ]
+ },
+ "spells_lightning": {
+  "de": [
+   "Jede gefüllte Flasche kostet den geladenen Creeper 5 Lebenspunkte, er gibt also nur wenige her, bevor er stirbt ({{irons_spells/lightning_bottle}}). Die Schulrüstung dazu ist der [[irons_spellbooks:electromancer_chestplate]]-Satz aus Lightning Runes."
+  ],
+  "en": [
+   "Every bottle you fill costs the charged creeper 5 health, so it only gives a few before it dies ({{irons_spells/lightning_bottle}}). The matching school armour is the [[irons_spellbooks:electromancer_chestplate]] set made with Lightning Runes."
+  ],
+  "sources": [
+   "irons_spellbooks jar: ServerPlayerEvents (EntityInteractSpecific: Creeper.isPowered, glass bottle, hurt 5.0)",
+   "helpq uses irons_spellbooks:lightning_rune"
+  ]
+ },
+ "spells_holy": {
+  "de": [
+   "Eine [[irons_spellbooks:divine_pearl]] kostet je einen Goldbarren und eine Amethystscherbe. Acht davon um einen Blank Runestone ergeben die Holy Rune für die [[irons_spellbooks:priest_chestplate]]-Rüstung, das sind acht Goldbarren pro Rune."
+  ],
+  "en": [
+   "A [[irons_spellbooks:divine_pearl]] costs one gold ingot and one amethyst shard. Eight of them around a Blank Runestone make the Holy Rune for the [[irons_spellbooks:priest_chestplate]] armour, so eight gold ingots per rune."
+  ],
+  "sources": [
+   "irons_spellbooks:divine_pearl",
+   "irons_spellbooks:holy_rune",
+   "helpq uses irons_spellbooks:holy_rune"
+  ]
+ },
+ "spells_ender": {
+  "de": [
+   "Acht Enderperlen und ein Blank Runestone ergeben die Ender Rune für die [[irons_spellbooks:shadowwalker_chestplate]]-Rüstung. Enderperlen brauchst du auch für Warppulver und Wegsteine, sammle also reichlich."
+  ],
+  "en": [
+   "Eight ender pearls and a Blank Runestone make the Ender Rune for the [[irons_spellbooks:shadowwalker_chestplate]] armour. You also need ender pearls for warp dust and waystones, so collect plenty."
+  ],
+  "sources": [
+   "irons_spellbooks:ender_rune",
+   "helpq uses irons_spellbooks:ender_rune",
+   "waystones:warp_dust",
+   "waystones:warp_stone"
+  ]
+ },
+ "spells_evocation": {
+  "de": [
+   "Die Evocation Rune bekommst du ohne Runenstein vom Archevoker, mit 50 Prozent Chance, wenn du ihn selbst tötest ({{irons_spells/archevoker}}). Sonst kostet sie acht Smaragde und einen Blank Runestone."
+  ],
+  "en": [
+   "You get the Evocation Rune without a runestone from the Archevoker, with a 50 percent chance when you kill him yourself ({{irons_spells/archevoker}}). Otherwise it costs eight emeralds and a Blank Runestone."
+  ],
+  "sources": [
+   "irons_spellbooks jar: loot_table/entities/archevoker.json",
+   "irons_spellbooks:evocation_rune"
+  ]
+ },
+ "spells_nature": {
+  "de": [
+   "Die Nature Rune aus acht Giftigen Kartoffeln führt zur [[irons_spellbooks:plagued_chestplate]]-Rüstung. Das [[irons_spellbooks:druidic_spell_book]] mit mehr Naturzauberkraft ist auf Kronwerke erst ab Stufe 2 freigeschaltet."
+  ],
+  "en": [
+   "The Nature Rune from eight poisonous potatoes leads to the [[irons_spellbooks:plagued_chestplate]] armour. The [[irons_spellbooks:druidic_spell_book]] with more nature spell power opens on Kronwerke only in stage 2."
+  ],
+  "sources": [
+   "irons_spellbooks:nature_rune",
+   "helpq uses irons_spellbooks:nature_rune",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (druidic_spell_book)"
+  ]
+ },
+ "spells_blood": {
+  "de": [
+   "Der [[irons_spellbooks:blood_staff]] fällt beim Dead King nur mit 50 Prozent Chance, und die teilt er sich mit dem Necronomicon ({{irons_spells/dead_king}}). Die Blood Rune aus acht [[irons_spellbooks:blood_vial]] führt zur [[irons_spellbooks:cultist_chestplate]]-Rüstung."
+  ],
+  "en": [
+   "The Dead King drops the [[irons_spellbooks:blood_staff]] only with a 50 percent chance, shared with the Necronomicon ({{irons_spells/dead_king}}). The Blood Rune from eight [[irons_spellbooks:blood_vial]] leads to the [[irons_spellbooks:cultist_chestplate]] armour."
+  ],
+  "sources": [
+   "irons_spellbooks jar: loot_table/entities/dead_king.json",
+   "helpq uses irons_spellbooks:blood_rune"
+  ]
+ },
+ "ars_essence": {
+  "de": [
+   "Das Rezept ist eine Kronwerke-Ergänzung. Du brauchst eine [[ars_nouveau:imbuement_chamber]] und zwei [[ars_nouveau:arcane_pedestal]] daneben, die Quelle zieht die Kammer aus einem [[ars_nouveau:source_jar]] in der Nähe.",
+   "Für die 32 Essenzen der Quest sind das 11 Bücher und 3 300 Quelle. Wie Kammer und Podeste stehen, zeigt {{ars_nouveau/imbuement}}."
+  ],
+  "en": [
+   "The recipe is a Kronwerke addition. You need an [[ars_nouveau:imbuement_chamber]] with two [[ars_nouveau:arcane_pedestal]] next to it; the chamber draws its source from a [[ars_nouveau:source_jar]] nearby.",
+   "The quest's 32 essence take 11 books and 3,300 source. {{ars_nouveau/imbuement}} shows how chamber and pedestals stand."
+  ],
+  "sources": [
+   "kronwerke:round/arcane_essence (ars_nouveau:imbuement, source 300, pedestalItems lapis_lazuli, glowstone_dust, output 3)",
+   "kubejs/server_scripts/kronwerke/round.js"
+  ],
+  "client": [
+   "the range in which the chamber finds pedestals and source jars"
+  ]
+ },
+ "arcane_ingot": {
+  "de": [
+   "Ein Arcane Ingot kostet 8 Essenzen. Für den [[irons_spellbooks:mana_ring]] brauchst du 4 Barren, für den [[irons_spellbooks:frosted_helve]] 3, zusammen also 56 Essenzen.",
+   "Später stecken Arcane Ingots auch in der leeren Upgrade-Kugel für den Arcane Anvil (Stufe 2)."
+  ],
+  "en": [
+   "An Arcane Ingot costs 8 essence. The [[irons_spellbooks:mana_ring]] takes 4 ingots and the [[irons_spellbooks:frosted_helve]] 3, so 56 essence for both.",
+   "Later Arcane Ingots also go into the Empty Upgrade Orb for the Arcane Anvil (stage 2)."
+  ],
+  "sources": [
+   "irons_spellbooks:arcane_ingot (DDD/DWD/DDD, #irons_spellbooks:arcane_ingot_base)",
+   "helpq uses irons_spellbooks:arcane_ingot (mana_ring, frosted_helve, upgrade_orb)"
+  ]
+ },
+ "mana_ring": {
+  "de": [
+   "Vier Arcane Ingots sind 32 Essenzen. Mit Ring und vollem Wizard-Satz kommst du in Stufe 1 auf 700 Mana: 100 Grundwert, 500 aus der Rüstung, 100 aus dem Ring.",
+   "Den [[irons_spellbooks:silver_ring]] und andere fertige Ringe findest du mit 5 Prozent Chance in den Kisten, in denen auch Rollen liegen."
+  ],
+  "en": [
+   "Four Arcane Ingots are 32 essence. With the ring and a full wizard set you reach 700 mana in stage 1: 100 base, 500 from the armour, 100 from the ring.",
+   "The [[irons_spellbooks:silver_ring]] and other ready rings turn up with a 5 percent chance in the chests that hold scrolls."
+  ],
+  "sources": [
+   "irons_spellbooks:mana_ring (DA / A A / ' A ')",
+   "irons_spellbooks jar: WizardArmorItem (125 per piece)",
+   "irons_spellbooks jar: data/irons_spellbooks/loot_table/chests/additional_generic_loot.json (magic_items/basic_curios 0.05)"
+  ]
+ },
+ "ice_staff": {
+  "de": [
+   "Der [[irons_spellbooks:frosted_helve]] ist eine Diagonale im Wechsel: vier Frozen Bones und drei Arcane Ingots, also 24 Essenzen. Den [[irons_spellbooks:permafrost_shard]] gibt es sicher in der Kapitänskajüte des {{irons_spells/icebreaker}}."
+  ],
+  "en": [
+   "The [[irons_spellbooks:frosted_helve]] is an alternating diagonal: four Frozen Bones and three Arcane Ingots, so 24 essence. The [[irons_spellbooks:permafrost_shard]] is sure to be in the captain's cabin of the {{irons_spells/icebreaker}}."
+  ],
+  "sources": [
+   "irons_spellbooks:frosted_helve (' BI' / BIB / 'IB ')",
+   "irons_spellbooks:ice_staff",
+   "irons_spellbooks jar: loot_table/chests/impaled_icebreaker/captain_quarters.json"
+  ]
+ },
+ "icebreaker": {
+  "de": [
+   "Mit Terralith steht das Schiff auch in den Biomen Frozen Cliffs und Glacial Chasm, dazu in tiefen gefrorenen Ozeanen. Die [[irons_spellbooks:epic_ink]] aus der Kajüte ist bis Stufe 3 gesperrt.",
+   "Die Smaragde aus dem Bündel tauschst du beim Fahrenden Händler gegen Rollen und Tinte."
+  ],
+  "en": [
+   "With Terralith the ship also stands in the Frozen Cliffs and Glacial Chasm biomes, and in deep frozen oceans. The [[irons_spellbooks:epic_ink]] from the cabin is locked until stage 3.",
+   "Trade the emeralds from the bundle to the wandering trader for scrolls and ink."
+  ],
+  "sources": [
+   "irons_spellbooks jar: tags/worldgen/biome/has_structure/impaled_icebreaker.json",
+   "irons_spellbooks jar: loot_table/chests/impaled_icebreaker/captain_quarters.json",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (epic_ink)"
+  ],
+  "client": [
+   "that the wandering trader sells Iron's Spells scrolls and ink (quest text claim)"
+  ]
+ },
+ "necromancer": {
+  "de": [
+   "**In Stufe 1 ist diese Quest schwer:** Natürlich spawnen Necromancer auf Kronwerke erst ab Stufe 2, auch in den Katakomben. Bis dahin kommen sie nur aus einem Spawner in einem der Katakombenräume.",
+   "Findest du den Spawner nicht, hak die Quest nach Stufe 2 ab. Mit Plünderung steigt die Chance auf die Rolle auf 30 Prozent und 5 Prozent mehr je Stufe."
+  ],
+  "en": [
+   "**In stage 1 this quest is hard:** on Kronwerke necromancers only spawn naturally from stage 2, in the catacombs too. Until then they only come from a spawner in one of the catacomb rooms.",
+   "If you cannot find the spawner, do the quest after stage 2 opens. With Looting the scroll chance rises to 30 percent and 5 percent more per level."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml [mobs] minStage (irons_spellbooks:necromancer=2)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onSpawn)",
+   "irons_spellbooks jar: structure/catacombs/room/balcony.nbt (spawner), loot_table/entities/necromancer.json (0.25, looting 0.3 + 0.05)"
+  ],
+  "client": [
+   "how often the catacomb room with the necromancer spawner appears"
+  ]
+ },
+ "lightning_bottle": {
+  "de": [
+   "Jede Füllung kostet den Creeper 5 Lebenspunkte. In Stufe 1 hat er 20, du bekommst also bis zu vier Flaschen, bevor er stirbt.",
+   "Ein Dreizack mit Kanalisierung ruft den Blitz nur bei Gewitter. Ohne Gewitter bleibt dir nur Warten."
+  ],
+  "en": [
+   "Each fill costs the creeper 5 health. In stage 1 it has 20, so you get up to four bottles before it dies.",
+   "A trident with Channeling only calls lightning during a thunderstorm. Without one you have to wait."
+  ],
+  "sources": [
+   "irons_spellbooks jar: ServerPlayerEvents (Creeper.isPowered, Items.GLASS_BOTTLE, hurt 5.0)",
+   "srv/config/kronwerke-common.toml [mobs] health (stage 1: 0.0)"
+  ],
+  "client": [
+   "that the fourth fill still gives a bottle when it kills the creeper"
+  ]
+ },
+ "blood_vial": {
+  "de": [
+   "Das Lagerfeuer muss brennen. Bei jedem Kochschritt nimmt das Tier 2 Schaden, und Blut sammelt sich im Kessel; mit der Glasflasche schöpfst du es ab.",
+   "Der Kessel schadet allem Lebendigen darin, also steig nicht selbst hinein."
+  ],
+  "en": [
+   "The campfire has to be lit. With every cooking step the animal takes 2 damage and blood collects in the cauldron; scoop it out with a glass bottle.",
+   "The cauldron hurts anything alive inside it, so do not step in yourself."
+  ],
+  "sources": [
+   "irons_spellbooks jar: BloodCauldronBlock (CampfireBlock.isLitCampfire, LivingEntity.hurt 2.0, tag cant_produce_blood)",
+   "irons_spellbooks:create_compat/create_fill_blood_vial"
+  ],
+  "client": [
+   "that the cauldron also hurts players",
+   "how many cooking steps fill one bottle"
+  ]
+ }
+}

@@ -212,6 +212,32 @@ def main():
     with open(os.path.join(out, "items.json"), "w", encoding="utf-8") as f:
         json.dump(names, f, ensure_ascii=False, separators=(",", ":"))
 
+    # names of what is not an item: mobs of kill tasks, dimensions, keys named in texts
+    other = {}
+    for ch in chapters:
+        for q in ch["quests"]:
+            for t in q["tasks"]:
+                if t.get("type") == "kill":
+                    other[t["entity"]] = "entity"
+                elif t.get("type") == "dimension":
+                    other[t["dimension"]] = "dimension"
+            for line in q["description"]:
+                for k in re.findall(r"\{key:([A-Za-z0-9_.$-]+)\}", line):
+                    other[k] = "key"
+    words = {}
+    for k, kind in sorted(other.items()):
+        if kind == "key":
+            de, en = jars.lang["de_de"].get(k), jars.lang["en_us"].get(k)
+        else:
+            ns, path = k.split(":", 1)
+            lk = f"entity.{ns}.{path}" if kind == "entity" else f"dimension.{ns}.{path}"
+            en = jars.lang["en_us"].get(lk)
+            de = jars.lang["de_de"].get(lk)
+        human = k.split(":")[-1].split(".")[-1].replace("_", " ").title()
+        words[k] = {"de": de or en or human, "en": en or human}
+    with open(os.path.join(out, "words.json"), "w", encoding="utf-8") as f:
+        json.dump(words, f, ensure_ascii=False, separators=(",", ":"))
+
     missing = []
     for tex in sorted(textures):
         ns, path = tex.split(":", 1)

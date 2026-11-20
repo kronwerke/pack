@@ -1,0 +1,630 @@
+{
+ "wilden_ritual": {
+  "de": [
+   "Es gibt ein zweites Rezept ganz ohne Wilden-Teile: [[ars_nouveau:purple_archwood_log]], [[minecraft:emerald_block]], [[minecraft:iron_sword]], [[minecraft:bow]] und [[minecraft:lapis_block]]. So sparst du dir drei Teile pro Kampf.",
+   "Die Zusätze Stachel, Horn und Flügel kommen von Wächtern, Jägern und Pirschern ({{ars_nouveau/wilden}}). Die Tafel Struktur finden mit einem Quelljuwel zeigt dir den nächsten Wilden-Bau."
+  ],
+  "en": [
+   "There is a second recipe without any Wilden parts: [[ars_nouveau:purple_archwood_log]], [[minecraft:emerald_block]], [[minecraft:iron_sword]], [[minecraft:bow]] and [[minecraft:lapis_block]]. That saves three parts per fight.",
+   "The spike, horn and wing augments drop from Defenders, Hunters and Stalkers ({{ars_nouveau/wilden}}). The Locate Structure tablet with a source gem shows you the nearest Wilden den."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_wilden_summon, ars_nouveau:wilden_summon_alt",
+   "ars_nouveau loot_table/entities/wilden_guardian.json, wilden_hunter.json, wilden_stalker.json",
+   "ars_additions jar: recipe/locate_structure/wilden_den.json"
+  ]
+ },
+ "tribute": {
+  "de": [
+   "Kronwerke macht feindliche Mobs mit jeder Stufe stärker, auch die Chimäre: Statt 1 000 hat sie in Stufe 3 **1 700 Lebenspunkte**, 45 Prozent mehr Schaden und 4 Rüstungspunkte mehr. Mit der Zahl der Spieler wächst sie nicht, zu dritt ist der Kampf also wirklich leichter.",
+   "Lava macht sie stärker, kämpf also nicht im Nether. Ein Tribut ist viel wert: Er steckt im {{ars_master/archmage_book}}, in fünf Malen ({{ars_master/mark_of_mastery}}) und im {{ars_master/summon_focus}}."
+  ],
+  "en": [
+   "Kronwerke makes hostile mobs stronger with each stage, the Chimera too: instead of 1,000 she has **1,700 health** in stage 3, 45 percent more damage and 4 more armor points. She does not grow with the number of players, so three of you really do have it easier.",
+   "Lava makes her stronger, so do not fight in the Nether. A tribute is worth a lot: it goes into the {{ars_master/archmage_book}}, into five marks ({{ars_master/mark_of_mastery}}) and into the {{ars_master/summon_focus}}."
+  ],
+  "sources": [
+   "ars_nouveau jar: WildenChimera attributes (MAX_HEALTH 1000, ATTACK_DAMAGE 8, ARMOR 6), hurt() LAVA",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onJoin, bosses skipped)",
+   "config/kronwerke-common.toml [mobs] health 0.7, damage 0.45, armor 4 in stage 3; [bosses] scaling list"
+  ]
+ },
+ "mark_of_mastery": {
+  "de": [
+   "**Die 8 Essenzen bleiben auf den Podesten liegen**, die Kammer verbraucht nur den Tribut und die Quelle. Die Podeste müssen direkt an der Kammer stehen, die Quelle zieht sie aus Gläsern bis 2 Blöcke weit.",
+   "Die Anima-Essenz kennst du aus {{ars_apprentice/el_anima}}. Ein Tribut ergibt fünf Male, genug für einen großen Fokus und vier Teile einer Elementar-Rüstung."
+  ],
+  "en": [
+   "**The 8 essences stay on the pedestals**; the chamber only uses the tribute and the source. The pedestals must be right next to the chamber; it pulls source from jars up to 2 blocks away.",
+   "You know anima essence from {{ars_apprentice/el_anima}}. One tribute makes five marks, enough for a major focus and four pieces of an elemental armor."
+  ],
+  "sources": [
+   "ars_elemental:mark_of_mastery (imbuement, input wilden_tribute, 8 essences, source 10000, count 5)",
+   "lang ars_nouveau.page1.imbuement_chamber (pedestal items not consumed, pedestals within 1 block, jars 2 blocks)"
+  ]
+ },
+ "major_focus": {
+  "de": [
+   "Den Kleinen Fokus machst du in {{ars_nouveau/lesser_focus}}. Anders als beim kleinen Fokus werden mit dem großen die anderen Elementschulen nicht schwächer.",
+   "Der Feuerfokus ändert dazu Glyphen: Entzünden verursacht Magischen Brand, der auch feuerfeste Monster trifft, und Ross beschwören ruft einen Schreiter. Die Quest will den Feuerfokus, die anderen drei baust du genauso aus ihrem kleinen Fokus."
+  ],
+  "en": [
+   "You make the Lesser Focus in {{ars_nouveau/lesser_focus}}. Unlike the lesser focus, the major one does not weaken the other elemental schools.",
+   "The fire focus also changes glyphs: Ignite inflicts Magic Burn, which hurts fire resistant mobs too, and Summon Steed calls a strider. The quest wants the fire focus; you build the other three the same way from their lesser focus."
+  ],
+  "sources": [
+   "ars_elemental:fire_focus (reagent lesser_fire_focus, mark_of_mastery, sourceCost 5000)",
+   "lang ars_elemental.page1.fire_focus, page2.fire_focus"
+  ]
+ },
+ "summon_focus": {
+  "de": [
+   "Der [[ars_nouveau:source_gem_block]] gehört in die Mitte, dazu je ein Wilden-Teil, ein Tribut und ein Goldbarren. Quelle braucht das Rezept nicht.",
+   "Der Fokus der Nekromantie ist mehr als ein Aufstehen: Die wiederbelebten Beschwörungen wirken Zielsuch-Zauber, wenn du zauberst, und heilen dich bei jedem Kill. Anima-Glyphen bekommen zweimal Zeit verlängern gratis. Der Fokus der Beschwörung führt weiter zu {{ars_master/source_spawner}}."
+  ],
+  "en": [
+   "The [[ars_nouveau:source_gem_block]] goes in the middle, with one of each Wilden part, a tribute and a gold ingot around it. The recipe needs no source.",
+   "The Focus of Necromancy does more than one revival: the risen summons cast homing spells when you cast and heal you on every kill. Anima glyphs get two free Extend Time. The Focus of Summoning leads on to {{ars_master/source_spawner}}."
+  ],
+  "sources": [
+   "ars_nouveau:summon_focus (reagent #c:storage_blocks/source, sourceCost 0)",
+   "ars_elemental:necrotic_focus",
+   "lang ars_elemental.page1.necrotic_focus, page2.necrotic_focus"
+  ]
+ },
+ "nether_star": {
+  "de": [
+   "Der Wither wächst auf Kronwerke mit der Gruppe: Für jeden Spieler nach dem ersten hat er **60 Prozent mehr Leben** und 15 Prozent mehr Schaden ({{bosses/b_group_scaling}}). Ab zwei Spielern setzt er außerdem Blitz und Schockwelle ein.",
+   "Plane die [[minecraft:wither_skeleton_skull]] für das ganze Kapitel: 3 für den Wither, 3 für Verdorren und einen für Untote beschwören. Mehr zum Kampf steht in {{nether/f_wither}}, das Modell in {{hostile_networks/wither_skeleton}}."
+  ],
+  "en": [
+   "On Kronwerke the Wither grows with the group: for every player after the first it has **60 percent more health** and 15 percent more damage ({{bosses/b_group_scaling}}). From two players on it also uses lightning and a shockwave.",
+   "Plan the [[minecraft:wither_skeleton_skull]] for the whole chapter: 3 for the Wither, 3 for Wither the glyph and one for Summon Undead. {{nether/f_wither}} covers the fight, {{hostile_networks/wither_skeleton}} the model."
+  ],
+  "sources": [
+   "config/kronwerke-common.toml [bosses] (minecraft:wither, healthPerPlayer 0.6, damagePerPlayer 0.15)",
+   "ars_nouveau:glyph_wither (3 wither_skeleton_skull), ars_nouveau:glyph_summon_undead"
+  ]
+ },
+ "archmage_book": {
+  "de": [
+   "Das [[minecraft:totem_of_undying]] lassen Magier fallen, die bei Überfällen und in Waldanwesen auftauchen. Einen Überfall startest du mit der Tafel Herausforderung aus {{ars_apprentice/ritual_small}}.",
+   "Alle Glyphen dieses Kapitels sind Glyphen der Stufe 3, auch die von Ars Elemental, Ars Additions und Ars Technica. Plane neben dem Buch also viele Erfahrungslevel ein, {{ars_master/ritual_disintegration}} hilft dabei."
+  ],
+  "en": [
+   "Evokers drop the [[minecraft:totem_of_undying]]; they appear in raids and woodland mansions. You start a raid with the Challenge tablet from {{ars_apprentice/ritual_small}}.",
+   "Every glyph in this chapter is a tier 3 glyph, including those from Ars Elemental, Ars Additions and Ars Technica. Plan plenty of experience besides the book; {{ars_master/ritual_disintegration}} helps."
+  ],
+  "sources": [
+   "ars_nouveau:archmage_book_upgrade",
+   "ars_nouveau:ritual_challenge",
+   "lang ars_nouveau.ritual_desc.ritual_challenge",
+   "config/ars_nouveau-server.toml [mana] tierMax 50, tierRegen 1",
+   "ars_nouveau/ars_technica jars: defaultTier THREE"
+  ]
+ },
+ "glyph_blink": {
+  "de": [
+   "Zauberturm und Runen schicken getroffene Wesen mit Blinzeln an den Ort einer Warp-Schriftrolle aus einem Inventar daneben, und die Rolle bleibt dabei erhalten. So baust du eine Falle, die Monster wegteleportiert.",
+   "Immateriell lässt sich verstärken, damit es auch härtere Blöcke durchlässig macht, AOE vergrößert die Fläche. Phantomhaut droppen Phantome, die nachts erscheinen, wenn du lange nicht geschlafen hast."
+  ],
+  "en": [
+   "Spell turrets and runes send hit entities with Blink to the spot of a warp scroll from an inventory next to them, and the scroll is not used up. That makes a trap that teleports monsters away.",
+   "Amplify lets Intangible open harder blocks too, AOE makes the area bigger. Phantom membrane drops from phantoms, which appear at night when you have not slept for a long time."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_blink, ars_nouveau:glyph_intangible",
+   "lang ars_nouveau.glyph_desc.glyph_blink, glyph_intangible"
+  ]
+ },
+ "glyph_lightning": {
+  "de": [
+   "Das [[minecraft:heart_of_the_sea]] liegt in vergrabenen Schätzen, die Karten aus Schiffswracks und Ozeanruinen zeigen. Jeder [[minecraft:lightning_rod]] braucht 3 Kupferbarren, die Belohnung gibt dir 8 zurück.",
+   "Blitz macht auch mehr Schaden an Wesen, die RF-betriebene Ausrüstung tragen. Wirkt mit Verstärken, Dämpfen und Zeit verlängern."
+  ],
+  "en": [
+   "The [[minecraft:heart_of_the_sea]] lies in buried treasure, shown by maps from shipwrecks and ocean ruins. Each [[minecraft:lightning_rod]] takes 3 copper ingots; the reward gives you 8 back.",
+   "Lightning also deals more damage to entities wearing RF powered gear. It works with Amplify, Dampen and Extend Time."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_lightning",
+   "lang ars_nouveau.glyph_desc.glyph_lightning"
+  ]
+ },
+ "glyph_burst": {
+  "de": [
+   "Den [[minecraft:firework_star]] craftest du aus Schwarzpulver und einem Farbstoff. Zusammen mit den 5 [[minecraft:tnt]] brauchst du also einiges an Schwarzpulver, Creeper und Ghasts liefern es.",
+   "Platzen ist die Grundlage für {{ars_master/technica}}. Mit Empfindlich trifft die Kugel Blöcke, das macht Platzen auch zum Werkzeug für große Flächen."
+  ],
+  "en": [
+   "You craft the [[minecraft:firework_star]] from gunpowder and a dye. With the 5 [[minecraft:tnt]] that is a fair amount of gunpowder; creepers and ghasts drop it.",
+   "Burst leads on to {{ars_master/technica}}. With Sensitive the sphere hits blocks, which makes Burst a tool for large areas too."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_burst",
+   "lang ars_nouveau.glyph_desc.glyph_burst"
+  ]
+ },
+ "technica": {
+  "de": [
+   "Superheat ist eine Verstärkung für Fuse, nicht für sich allein. Den [[create:blaze_cake]] kennst du aus dem Brass Works von Create, den [[minecraft:diamond_block]] braucht Obliterate.",
+   "Obliterate mit Empfindlich verarbeitet Items wie die Brechräder von Create, also nach deren Rezepten. Beide sind Glyphen der Stufe 3 und brauchen das Erzmagier-Buch."
+  ],
+  "en": [
+   "Superheat is an augment for Fuse, not a spell on its own. You know the [[create:blaze_cake]] from Create in Brass Works; Obliterate takes a [[minecraft:diamond_block]].",
+   "Obliterate with Sensitive processes items like Create's crushing wheels, using their recipes. Both are tier 3 and need the Archmage book."
+  ],
+  "sources": [
+   "ars_technica:glyph_obliterate, ars_technica:glyph_superheat",
+   "ars_technica jar: EffectObliterate, AugmentSuperheat defaultTier THREE",
+   "lang ars_technica.glyph_desc.glyph_obliterate, glyph_superheat"
+  ],
+  "client": [
+   "which stage opens the Create blaze cake"
+  ]
+ },
+ "glyph_split": {
+  "de": [
+   "Der Splitter ist das Quellrelais aus {{ars_apprentice/splitter}}, er wird dabei verbraucht. Den [[ars_nouveau:wilden_spike]] lassen Wilden-Wächter fallen.",
+   "Teilen ist eine Verstärkung: Es gehört hinter die Form. Bei Orbit erhöhen Verstärkungen die Zahl der Kugeln, ihr Tempo, den Radius und die Dauer."
+  ],
+  "en": [
+   "The splitter is the source relay from {{ars_apprentice/splitter}}, and it is used up. Wilden Defenders drop the [[ars_nouveau:wilden_spike]].",
+   "Split is an augment: it goes after the form. With Orbit, augments raise the number of orbs, their speed, the radius and the duration."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_split (relay_splitter, wilden_spike, stonecutter), ars_nouveau:glyph_orbit",
+   "lang ars_nouveau.glyph_desc.glyph_orbit, glyph_split",
+   "ars_nouveau loot_table/entities/wilden_guardian.json"
+  ]
+ },
+ "glyph_summon": {
+  "de": [
+   "Vex beschwören und Reißzähne fressen je ein [[minecraft:totem_of_undying]], du brauchst also zwei, eins gibt die Belohnung zurück. Für Untote beschwören brauchst du einen [[minecraft:wither_skeleton_skull]].",
+   "Bei Untote beschwören gibt Durchschlag den Skeletten Bögen, Teilen hinter dem Effekt ruft mehr davon. Reißzähne auf dich selbst erscheinen im Kreis um dich."
+  ],
+  "en": [
+   "Summon Vex and Fangs each use up a [[minecraft:totem_of_undying]], so you need two; the reward gives one back. Summon Undead takes a [[minecraft:wither_skeleton_skull]].",
+   "With Summon Undead, Pierce gives the skeletons bows and Split after the effect summons more of them. Fangs cast on yourself appear in a ring around you."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_summon_vex, glyph_fangs, glyph_summon_undead, glyph_summon_decoy",
+   "lang ars_nouveau.glyph_desc.glyph_summon_undead, glyph_fangs"
+  ]
+ },
+ "glyph_hex": {
+  "de": [
+   "Für Verhexen und Verdorren brauchst du 3 [[minecraft:wither_skeleton_skull]] und eine [[minecraft:wither_rose]], dazu 3 Lohenruten. Verhexen lohnt sich in Kombination: erst Gift oder Feuer, dann Verhexen.",
+   "Zurückspulen setzt auch Blöcke zurück, die ein Zauber bewegt hat. Glyphen hinter Zurückspulen wirken erst am Ende, als wären sie verzögert."
+  ],
+  "en": [
+   "Hex and Wither take 3 [[minecraft:wither_skeleton_skull]] and a [[minecraft:wither_rose]], plus 3 blaze rods. Hex pays off in a combo: poison or fire first, then Hex.",
+   "Rewind also puts back blocks that a spell moved. Glyphs after Rewind only resolve at its end, as if delayed."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_hex, glyph_wither, rewind",
+   "lang ars_nouveau.glyph_desc.glyph_hex, rewind"
+  ]
+ },
+ "additions_t3": {
+  "de": [
+   "Für Mark brauchst du die Tafel Eindämmung aus {{ars_apprentice/ritual_containment}} und ein [[ars_nouveau:mob_jar]], für Recall die Schriftrolle des Sehers ({{ars_nouveau/scrying}}) und ein [[ars_nouveau:enchanters_eye]]. Retaliate nimmt ein beliebiges verzaubertes Buch.",
+   "Mark und Recall brauchen das {{ars_master/reliquary}} in der Zweithand, ohne es tun sie nichts."
+  ],
+  "en": [
+   "Mark needs the Containment tablet from {{ars_apprentice/ritual_containment}} and a [[ars_nouveau:mob_jar]]; Recall needs a Scryer's Scroll ({{ars_nouveau/scrying}}) and an [[ars_nouveau:enchanters_eye]]. Retaliate takes any enchanted book.",
+   "Mark and Recall need the {{ars_master/reliquary}} in your off hand; without it they do nothing."
+  ],
+  "sources": [
+   "ars_additions:glyph_mark, glyph_recall, glyph_retaliate",
+   "lang ars_additions.glyph_desc.*, ars_additions.page.unstable_reliquary"
+  ]
+ },
+ "el_fire": {
+  "de": [
+   "Den [[ars_nouveau:bombegranate_pod]] für Feuersbrunst pflückst du an wilden Brennenden (roten) Archwood-Bäumen. Feuersbrunst zündet nur, wenn das Ziel schon brennt, also erst Entzünden, dann Feuersbrunst.",
+   "Ausbrennen entfernt nur Effekte, die auch Milch heilt. Raserei bringt das Ziel dazu, alles in der Nähe anzugreifen, auch seine eigenen Verbündeten."
+  ],
+  "en": [
+   "Pick the [[ars_nouveau:bombegranate_pod]] for Conflagrate from wild Blazing (red) archwood trees. Conflagrate only goes off when the target already burns, so Ignite first, then Conflagrate.",
+   "Cauterize only removes effects that milk would cure. Rage makes the target attack everything nearby, even its own allies."
+  ],
+  "sources": [
+   "ars_elemental:glyph_cauterize, glyph_conflagrate, glyph_rage",
+   "lang ars_elemental.glyph_desc.glyph_cauterize, glyph_conflagrate, glyph_rage",
+   "ars_nouveau jar: worldgen/configured_feature/natural_blazing_tree.json (bombegranate_pod)"
+  ]
+ },
+ "el_water": {
+  "de": [
+   "Die [[minecraft:breeze_rod]] lassen Breezes in Prüfungskammern fallen, das [[minecraft:heart_of_the_sea]] liegt in vergrabenen Schätzen. Einen [[minecraft:sponge]] gibt es in Ozeanmonumenten.",
+   "Wasserstrahl lässt sich mit Teilen mehrfach auslösen, mit Zufall dahinter sucht sich jeder Strahl ein anderes Ziel. Oxidieren auf Kupferblöcke beschleunigt ihre Oxidation."
+  ],
+  "en": [
+   "Breezes in trial chambers drop the [[minecraft:breeze_rod]]; the [[minecraft:heart_of_the_sea]] lies in buried treasure. You find a [[minecraft:sponge]] in ocean monuments.",
+   "Split makes Water Jet fire several jets; with Randomize after it each jet picks a different target. Oxidize on copper blocks speeds up their oxidation."
+  ],
+  "sources": [
+   "ars_elemental:glyph_cavitate, glyph_water_jet, glyph_oxidize",
+   "lang ars_elemental.glyph_desc.glyph_water_jet, glyph_oxidize"
+  ]
+ },
+ "el_homing": {
+  "de": [
+   "Zielsuchendes Projektil frisst einen [[minecraft:nether_star]], die [[ars_nouveau:dowsing_rod]] kennst du aus {{ars_nouveau/dowsing}}. **Abwehr aufheben gibt es auf diesem Server nicht**: Ars Elemental hat das Rezept abgeschaltet, Male und Netheritblock sparst du dir.",
+   "Zielsuche verfolgt Spieler nur mit Empfindlich, du triffst also nicht aus Versehen deine Freunde. Bei Lebensband dreht Empfindlich die Richtung um, Schneiden trennt das Band."
+  ],
+  "en": [
+   "Homing Projectile uses up a [[minecraft:nether_star]]; you know the [[ars_nouveau:dowsing_rod]] from {{ars_nouveau/dowsing}}. **Nullify Defense does not exist on this server**: Ars Elemental has its recipe switched off, so keep your marks and the netherite block.",
+   "Homing only chases players with Sensitive, so you do not hit your friends by accident. With Life Link, Sensitive reverses the direction and Cut severs the link."
+  ],
+  "sources": [
+   "ars_elemental:glyph_homing_projectile, glyph_propagator_homing, glyph_life_link",
+   "config/ars_elemental-common.toml (frame_skip_recipe = false); ars_elemental jar recipe/glyph_nullify_defense.json (condition sauce:ae_config frame_skip_recipe), not in the recipe dump",
+   "lang ars_elemental.glyph_desc.glyph_homing_projectile, glyph_life_link"
+  ]
+ },
+ "archmage": {
+  "de": [
+   "32 Quelljuwelblöcke sind 288 Quelljuwelen. Lass die Kammern schon vorher laufen ({{ars_nouveau/chamber_auto}}), dann ist der Vorrat schnell da.",
+   "Weiter geht es mit Stufe 4 im Kapitel Ars Nouveau: Episch, beginnend mit {{ars_epic/breath}}. Dort brauchst du die Blöcke für Armreife und Charms."
+  ],
+  "en": [
+   "32 source gem blocks are 288 source gems. Keep your chambers running early ({{ars_nouveau/chamber_auto}}) and the stock builds up quickly.",
+   "With stage 4 you go on in the chapter Ars Nouveau: Epic, starting with {{ars_epic/breath}}, where the blocks go into bangles and charms."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage 3 magic: elementium_ingot, afrit_essence, elven_star)",
+   "ars_elemental:base_bangle (source_gem_block)"
+  ]
+ },
+ "stahlwerk": {
+  "de": [
+   "**Arcane Permanence gibt es auf diesem Server nicht:** Das Ritual ist in der Konfiguration von Ars Additions abgeschaltet, das Rezept fehlt. Chunks lädst du stattdessen mit FTB Chunks dauerhaft ({{tips/m_claim}}).",
+   "Alles andere aus der Liste öffnet mit Stufe 3 und hat eine eigene Quest in diesem Kapitel, etwa {{ars_master/ritual_flight}} oder {{ars_master/turrets}}."
+  ],
+  "en": [
+   "**Arcane Permanence does not exist on this server:** the ritual is switched off in the Ars Additions config, so the recipe is missing. Force load chunks with FTB Chunks instead ({{tips/m_claim}}).",
+   "Everything else in the list opens with stage 3 and has its own quest in this chapter, such as {{ars_master/ritual_flight}} or {{ars_master/turrets}}."
+  ],
+  "sources": [
+   "config/ars_additions-common.toml ([chunkloading] ritual_enabled = false)",
+   "ars_additions jar: recipe/ritual/ritual_chunk_loading.json (condition ars_additions:config ritual_enabled); not in the recipe dump",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "ritual_flight": {
+  "de": [
+   "Das zweite Rezept von Ars Elemental ist billiger: Es braucht nur einen [[ars_nouveau:wilden_wing]] statt drei und eine Feder statt der Enderperle. Den [[ars_elemental:yellow_archwood_log]] liefern die goldenen Archwood-Bäume, die wie die anderen überall wachsen können.",
+   "Das Ritual zieht Quelle aus Gläsern in der Nähe, jedes Mal wenn es Flug gibt oder auffrischt. Stell genug Gläser oder ein Relais daneben, sonst fällst du."
+  ],
+  "en": [
+   "The second recipe from Ars Elemental is cheaper: it needs only one [[ars_nouveau:wilden_wing]] instead of three and a feather instead of the ender pearl. The [[ars_elemental:yellow_archwood_log]] comes from the golden archwood trees, which can grow anywhere like the others.",
+   "The ritual pulls source from jars nearby every time it grants or refreshes Flight. Put enough jars or a relay next to it, or you fall."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_flight, ars_elemental:flight_alt",
+   "lang ars_nouveau.ritual_desc.ritual_flight, ars_elemental.page1.flashing_archwood"
+  ]
+ },
+ "ritual_disintegration": {
+  "de": [
+   "Monster zerfallen ohne Beute, also kein Zerfall an einer Farm, deren Drops du brauchst. Für Erfahrung ist es dafür doppelt so gut wie ein normaler Tod.",
+   "Die Erfahrungsjuwelen lagerst du in Truhen und benutzt sie, wenn du am Tisch des Schreibers eine Glyphe lernen willst."
+  ],
+  "en": [
+   "Monsters disintegrate without drops, so do not put it at a farm whose loot you need. For experience it is twice as good as a normal death.",
+   "Store the experience gems in chests and use them when you want to learn a glyph at the Scribe's Table."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_disintegration",
+   "lang ars_nouveau.ritual_desc.ritual_disintegration"
+  ]
+ },
+ "ritual_awakening": {
+  "de": [
+   "Die vier Setzlinge sammelst du in {{ars_nouveau/archwood_colors}}. Starte das Ritual direkt am Stamm eines Archwood-Baums, sonst erwacht nichts.",
+   "Waldläufer heilen sich mit der Zeit. Stirbt einer, wird er zum Waldwackler."
+  ],
+  "en": [
+   "You gather the four saplings in {{ars_nouveau/archwood_colors}}. Start the ritual right at the base of an archwood tree, or nothing awakens.",
+   "Weald Walkers heal over time. If one dies it turns into a Weald Waddler."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_awakening",
+   "lang ars_nouveau.ritual_desc.ritual_awakening"
+  ]
+ },
+ "golem_bookwyrm": {
+  "de": [
+   "Den [[minecraft:budding_amethyst]] findest du nur in Amethystgeoden, mit Behutsamkeit lässt er sich nicht abbauen. Starte das Ritual also direkt in der Geode.",
+   "Bücherwürmer brauchst du für {{ars_master/storage_lectern}} und {{ars_epic/warp_index}}. Gib dazu Buch und Feder als Zusatz auf das Becken, bevor du das Ritual startest."
+  ],
+  "en": [
+   "[[minecraft:budding_amethyst]] only exists in amethyst geodes and cannot be mined, not even with Silk Touch. So start the ritual right in the geode.",
+   "You need Bookwyrms for {{ars_master/storage_lectern}} and {{ars_epic/warp_index}}. Add a book and quill to the brazier as augment before you start the ritual."
+  ],
+  "sources": [
+   "lang ars_nouveau.ritual_desc.ritual_awakening (Budding Amethyst into Amethyst Golems, Book and Quills for Bookwyrm Charms)",
+   "config/ars_nouveau-common.toml bookwyrmLimit 8, config/ars_nouveau-server.toml lecternLinkRange 30"
+  ]
+ },
+ "islands_warping": {
+  "de": [
+   "Für Verziehen musst du die beschriebene Warp-Schriftrolle ({{ars_apprentice/warp_scroll}}) als Zusatz auf das Becken werfen, bevor du das Ritual startest.",
+   "Die Inseln bauen Block für Block und ziehen dafür Quelle aus Gläsern in der Nähe. Die Frostaya für die Schneeinsel pflückst du an wilden Kaskadierenden (blauen) Archwood-Bäumen."
+  ],
+  "en": [
+   "For Warping you have to throw the inscribed warp scroll ({{ars_apprentice/warp_scroll}}) onto the brazier as augment before you start the ritual.",
+   "The islands build block by block and pull source from jars nearby. Pick the frostaya for a snowy island from wild Cascading (blue) archwood trees."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_warping, ritual_conjure_island_plains, ritual_conjure_island_desert",
+   "lang ars_nouveau.ritual_desc.ritual_warping, ritual_conjure_island_plains, ritual_conjure_island_desert",
+   "ars_nouveau jar: worldgen/configured_feature/natural_cascading_tree.json (frostaya_pod)"
+  ]
+ },
+ "turrets": {
+  "de": [
+   "Du brauchst zwei [[ars_nouveau:basic_spell_turret]] aus {{ars_apprentice/turret}}: einen für den Verstellbaren Turm an der Werkbank, einen mit [[minecraft:clock]] für den Timer im Apparat. Quelle braucht der Apparat dafür nicht.",
+   "Ein Timer-Turm mit Ernte über einem Feld oder mit Blinzeln an einer Monsterfarm arbeitet ohne Redstone."
+  ],
+  "en": [
+   "You need two [[ars_nouveau:basic_spell_turret]] from {{ars_apprentice/turret}}: one for the Adjustable Turret at the crafting table, one with a [[minecraft:clock]] for the Timer in the apparatus. The apparatus needs no source for it.",
+   "A timer turret with Harvest over a field or with Blink at a mob farm works without redstone."
+  ],
+  "sources": [
+   "ars_nouveau:rotating_spell_turret (shapeless, basic_spell_turret), ars_nouveau:timer_spell_turret (reagent basic_spell_turret, clock, sourceCost 0)"
+  ]
+ },
+ "robes": {
+  "de": [
+   "Für ein ganzes Set brauchst du vier Eisenteile und 16 [[ars_nouveau:magebloom_fiber]], die Fasern kommen aus {{ars_nouveau/magebloom}}. Quelle braucht der Apparat dafür nicht.",
+   "Die Robe des Arkanisten hat nach dem ersten Aufwerten an Brust und Hose schon einen Fadenplatz der Größe 3. Die Quellgeborene darf die Roben tragen, Eisen oder Diamant am Leib aber nicht."
+  ],
+  "en": [
+   "A full set takes four iron pieces and 16 [[ars_nouveau:magebloom_fiber]]; the fibers come from {{ars_nouveau/magebloom}}. The apparatus needs no source for it.",
+   "After the first upgrade the Arcanist set already has a size 3 thread slot on chest and legs. The Sourceborn may wear the robes, but not iron or diamond armor."
+  ],
+  "sources": [
+   "ars_nouveau:arcanist_robes (reagent iron_chestplate, 4 magebloom_fiber, sourceCost 0)",
+   "ars_nouveau jar: APIRegistry perk slots (ARCANIST_ROBES/LEGGINGS tier 2 [ONE, THREE])",
+   "docs/ORIGINS.md (Quellgeborene: no heavy armor)"
+  ]
+ },
+ "armor_upgrade": {
+  "de": [
+   "Die 2 500 Quelle zieht der Apparat aus Quellgläsern in der Nähe, ein ganzes Set kostet 10 000. Fäden und Verzauberungen bleiben beim Aufwerten erhalten.",
+   "Schon Stufe 2 gibt Arkanist und Zauberer an Brust und Hose einen Fadenplatz der Größe 3, genug für Gleiten oder Unsterblichkeit. Weiter geht es mit {{ars_master/alteration}}."
+  ],
+  "en": [
+   "The apparatus pulls the 2,500 source from source jars nearby; a full set costs 10,000. Threads and enchantments stay on when you upgrade.",
+   "Tier 2 already gives the Arcanist and Sorcerer sets a size 3 thread slot on chest and legs, enough for Gliding or Undying. Go on with {{ars_master/alteration}}."
+  ],
+  "sources": [
+   "ars_nouveau:first_armor_upgrade (2 #c:rods/blaze, sourceCost 2500, tier 1)",
+   "ars_nouveau jar: APIRegistry perk slots",
+   "lang ars_nouveau.page2.armor_upgrading"
+  ]
+ },
+ "alteration": {
+  "de": [
+   "Ein [[ars_nouveau:blank_thread]] braucht 6 Magieblütenfasern und 3 Goldnuggets, für die vier Checklisten danach brauchst du 16 leere Fäden. Mach gleich einen Vorrat.",
+   "Einen Faden nimmst du wieder heraus, indem du die Robe auf den Ständer legst und die Tafel benutzt. Wie viele Plätze welcher Größe eine Robe hat, zeigt die Tafel."
+  ],
+  "en": [
+   "A [[ars_nouveau:blank_thread]] takes 6 magebloom fibers and 3 gold nuggets, and the four checklists after this need 16 blank threads. Make a stock right away.",
+   "To take a thread out again, put the robe on the stand and use the tablet. The tablet shows how many slots of which size a robe has."
+  ],
+  "sources": [
+   "ars_nouveau:alteration_table, ars_nouveau:blank_thread (pattern xxx/yyy/xxx, count 1)",
+   "lang ars_nouveau.page1.alteration_table"
+  ]
+ },
+ "threads_fight": {
+  "de": [
+   "Die [[ars_nouveau:mendosteen_pod]] für Lebensentzug pflückst du an wilden Blühenden (grünen) Archwood-Bäumen, den [[minecraft:sculk_catalyst]] im Deep Dark. Zauberkraft braucht eine Magebloom-Blume, keine Faser.",
+   "Größere Plätze machen die Fäden stärker: Anzündholz brennt 5 Sekunden länger je Stufe, Chillen friert 10 Sekunden je Stufe und in einem Platz der Größe 3 mit Frieren II."
+  ],
+  "en": [
+   "Pick the [[ars_nouveau:mendosteen_pod]] for Life Drain from wild Flourishing (green) archwood trees, find the [[minecraft:sculk_catalyst]] in the Deep Dark. Spell Power takes a magebloom flower, not a fiber.",
+   "Bigger slots make threads stronger: Kindling burns 5 seconds longer per level, Chilling freezes for 10 seconds per level and with Freezing II in a size 3 slot."
+  ],
+  "sources": [
+   "ars_nouveau:thread_spellpower, thread_life_drain, thread_kindling, thread_chilling, thread_warding",
+   "lang ars_nouveau.perk_desc.thread_kindling, thread_chilling, thread_life_drain",
+   "ars_nouveau jar: worldgen/configured_feature/natural_flourishing_tree.json (mendosteen_pod)"
+  ]
+ },
+ "threads_daily": {
+  "de": [
+   "Die Helfer-Fäden brauchen mehr als die Scherben: Sternbunkel 3 Zucker und 2 Manipulationsessenzen, Wirbelzweig einen Goldenen Apfel und 2 Erdessenzen, Wixie 2 Netherwarzen, eine Lohenrute und 2 Abschwörungsessenzen, Drygmy eine Hasenpfote und 2 Erdessenzen.",
+   "Reparieren in einem Platz der Größe 3 macht alle getragene Magierrüstung unzerbrechlich. Für Magische Kapazität brauchst du Quellbeeren aus {{ars_nouveau/sourceberry}}."
+  ],
+  "en": [
+   "The helper threads need more than the shards: Starbuncle 3 sugar and 2 manipulation essence, Whirlisprig a golden apple and 2 earth essence, Wixie 2 nether wart, a blaze rod and 2 abjuration essence, Drygmy a rabbit's foot and 2 earth essence.",
+   "Repairing in a size 3 slot makes all worn magic armor unbreakable. Magic Capacity needs sourceberries from {{ars_nouveau/sourceberry}}."
+  ],
+  "sources": [
+   "ars_nouveau:thread_starbuncle, thread_whirlisprig, thread_wixie, thread_drygmy, thread_repairing, thread_magic_capacity",
+   "lang ars_nouveau.perk_desc.thread_repairing"
+  ]
+ },
+ "charged_certus": {
+  "de": [
+   "**Redstone und Glowstonestaub bleiben auf den Podesten liegen**, die Kammer verbraucht nur den Certus-Quarzkristall und 2 000 Quelle. Für die 16 Kristalle brauchst du also 16 Certus und 32 000 Quelle.",
+   "Lad den Certus nur hier: Auf Kronwerke gibt es außer der Kammer nur noch die Energizing Orb von Powah, der Charger von AE2 und die anderen Lader sind entfernt. Weiter geht es mit {{ae2/charged}}."
+  ],
+  "en": [
+   "**The redstone and glowstone dust stay on the pedestals**; the chamber only uses the certus quartz crystal and 2,000 source. The 16 crystals therefore take 16 certus and 32,000 source.",
+   "On Kronwerke only the chamber and Powah's Energizing Orb charge certus; the AE2 charger and the other chargers were removed. Go on with {{ae2/charged}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/ae2.js (kronwerke:ae2/charged_certus_imbuement, source 2000; kronwerke:ae2/charged_certus_energizing; other recipes removed)",
+   "lang ars_nouveau.page1.imbuement_chamber (pedestal items not consumed)"
+  ]
+ },
+ "mark_technomancy": {
+  "de": [
+   "Den Calibrated Precision Mechanism baust du in {{ars_apprentice/calibrated_mechanism}}, die Bleche presst Create. Alle Zutaten liegen auf den Podesten, der Tribut gehört in die Mitte.",
+   "Die Technik-Roben nehmen statt des Mals der Technomantie auch ein Mal der Meisterschaft. Wenn du schon Male der Meisterschaft übrig hast, brauchst du für {{ars_epic/tech_armor}} keinen eigenen Tribut."
+  ],
+  "en": [
+   "You build the Calibrated Precision Mechanism in {{ars_apprentice/calibrated_mechanism}}; Create presses the sheets. Everything goes on the pedestals, the tribute in the middle.",
+   "The tech robes also take a Mark of Mastery instead of the Mark of Technomancy. If you have Marks of Mastery to spare, {{ars_epic/tech_armor}} needs no tribute of its own."
+  ],
+  "sources": [
+   "ars_technica:mark_of_technomancy (reagent wilden_tribute, sourceCost 10000, count 5)",
+   "ars_technica:technomancer_chestplate (mark_of_mastery) and technomancer_chestplate_default (mark_of_technomancy)"
+  ]
+ },
+ "ring_greater": {
+  "de": [
+   "Der [[ars_nouveau:ring_of_lesser_discount]] aus {{ars_nouveau/ring_discount}} gehört in die Mitte und wird dabei aufgewertet. Quelle braucht das Rezept nicht. Die Lohenruten lassen Lohen in Netherfestungen fallen ({{nether/blaze}})."
+  ],
+  "en": [
+   "The [[ars_nouveau:ring_of_lesser_discount]] from {{ars_nouveau/ring_discount}} goes in the middle and gets upgraded. The recipe needs no source. The blaze rods come from blazes in Nether fortresses ({{nether/blaze}})."
+  ],
+  "sources": [
+   "ars_nouveau:ring_of_greater_discount (reagent ring_of_lesser_discount, sourceCost 0)"
+  ]
+ },
+ "source_spawner": {
+  "de": [
+   "Den [[ars_nouveau:drygmy_charm]] bekommst du in {{ars_nouveau/drygmy}}, den Fokus der Beschwörung in {{ars_master/summon_focus}}. Beide werden verbraucht.",
+   "Ein gefülltes Eindämmungsglas machst du mit der Tafel Eindämmung ({{ars_apprentice/ritual_containment}}). Ein Spawner ist auf einem Server schnell zu viel, schalte ihn mit Redstone ab, wenn du ihn nicht brauchst."
+  ],
+  "en": [
+   "You get the [[ars_nouveau:drygmy_charm]] in {{ars_nouveau/drygmy}}, the Focus of Summoning in {{ars_master/summon_focus}}. Both are used up.",
+   "You fill a containment jar with the Containment tablet ({{ars_apprentice/ritual_containment}}). A spawner quickly gets too much on a server, so switch it off with redstone when you do not need it."
+  ],
+  "sources": [
+   "ars_additions:apparatus/source_spawner (reagent drygmy_charm, summon_focus, conjuration_essence)",
+   "lang ars_additions.page.source_spawner"
+  ]
+ },
+ "reliquary": {
+  "de": [
+   "Das leere [[ars_nouveau:mob_jar]] gehört in die Mitte, Quelle braucht das Rezept nicht. Mark und Recall lernst du in {{ars_master/additions_t3}}.",
+   "Woran das Reliquary gebunden ist, zeigt sein Tooltip, bei einem Ort mit Koordinaten. Ist die Verbindung gerissen, steht das ebenfalls dort."
+  ],
+  "en": [
+   "The empty [[ars_nouveau:mob_jar]] goes in the middle; the recipe needs no source. You learn Mark and Recall in {{ars_master/additions_t3}}.",
+   "Its tooltip shows what the reliquary is bound to, with coordinates for a location. If the tether is broken, the tooltip says so too."
+  ],
+  "sources": [
+   "ars_additions:apparatus/unstable_reliquary (reagent mob_jar, sourceCost 0)",
+   "lang ars_additions.page.unstable_reliquary, tooltip.ars_additions.reliquary.marked.location, marked.broken"
+  ]
+ },
+ "storage_lectern": {
+  "de": [
+   "Statt normaler Truhen passt jede Truhe aus dem Tag c:chests, Quelle braucht das Rezept nicht. Mit dem Warp Index ({{ars_epic/warp_index}}) greifst du später aus der Ferne auf das Pult zu.",
+   "Die Bücherwürmer machst du in {{ars_master/golem_bookwyrm}}. Die Reichweite von 30 Blöcken ist auf diesem Server die Standardeinstellung."
+  ],
+  "en": [
+   "Instead of plain chests any chest from the c:chests tag fits; the recipe needs no source. Later the Warp Index ({{ars_epic/warp_index}}) reaches the lectern from afar.",
+   "You make the Bookwyrms in {{ars_master/golem_bookwyrm}}. The range of 30 blocks is the default on this server."
+  ],
+  "sources": [
+   "ars_nouveau:storage_lectern (reagent lectern, 4 #c:chests, sourceCost 0)",
+   "config/ars_nouveau-server.toml lecternLinkRange 30, config/ars_nouveau-common.toml bookwyrmLimit 8"
+  ]
+ },
+ "repository": {
+  "de": [
+   "Für vier Repositories brauchst du 16 Archwood-Stämme und 16 Goldnuggets. Jeder Stamm mit dem Tag Archwood passt, die Farbe ist egal.",
+   "Den Katalog verbindest du wie jedes Inventar mit dem Dominion-Zauberstab mit dem Pult ({{ars_master/storage_lectern}})."
+  ],
+  "en": [
+   "Four repositories take 16 archwood logs and 16 gold nuggets. Any log with the archwood tag fits, the colour does not matter.",
+   "Link the catalog to the lectern ({{ars_master/storage_lectern}}) with the Dominion Wand like any inventory."
+  ],
+  "sources": [
+   "ars_nouveau:repository (x #c:logs/archwood, y #c:nuggets/gold, yxy/x x/yxy)",
+   "ars_nouveau:repository_controller"
+  ],
+  "client": [
+   "that the catalog is linked to the lectern with the Dominion Wand"
+  ]
+ },
+ "el_turret": {
+  "de": [
+   "In der Kammer bleiben **die 3 Essenzen und der große Fokus auf den Podesten liegen**, nur der Verzauberte Zauberturm und die 5 000 Quelle werden verbraucht. Mit einem einzigen Fokus baust du also beliebig viele Türme.",
+   "Den Verzauberten Zauberturm baust du in {{ars_apprentice/spell_turret}}. Der Flashjack, der die Türme kapert, kommt aus {{ars_nouveau/flashjack}}."
+  ],
+  "en": [
+   "In the chamber **the 3 essences and the major focus stay on the pedestals**; only the Enchanted Spell Turret and the 5,000 source are used. With a single focus you can build as many turrets as you like.",
+   "You build the Enchanted Spell Turret in {{ars_apprentice/spell_turret}}. The Flashjack that hijacks turrets comes from {{ars_nouveau/flashjack}}."
+  ],
+  "sources": [
+   "ars_elemental:fire_turret (imbuement, input spell_turret, 3 fire_essence, fire_focus, source 5000)",
+   "lang ars_nouveau.page1.imbuement_chamber (pedestal items not consumed), ars_elemental.page2.flashjack_charm"
+  ]
+ },
+ "threads_travel": {
+  "de": [
+   "Die [[ars_nouveau:alakarkinos_token]] für Reach bekommst du von Alakarkinos ({{ars_nouveau/alakarkinos}}). Für Tiefe zählt jeder Fisch, dazu ein Kugelfisch.",
+   "Tiefe wirkt zusammen mit Atmung, die Verzauberung und der Faden stapeln sich."
+  ],
+  "en": [
+   "You get the [[ars_nouveau:alakarkinos_token]] for Reach from Alakarkinos ({{ars_nouveau/alakarkinos}}). Any fish counts for Depths, plus one pufferfish.",
+   "Depths stacks with the Respiration enchantment."
+  ],
+  "sources": [
+   "ars_additions:apparatus/thread_reach (3 alakarkinos_token)",
+   "ars_nouveau:thread_depths (3 #minecraft:fishes, pufferfish)",
+   "lang ars_nouveau.perk_desc.thread_depths"
+  ]
+ },
+ "threads_elemental": {
+  "de": [
+   "Die [[ars_elemental:flashpine_pod]] für Shocking wächst an den goldenen Archwood-Bäumen von Ars Elemental, die [[minecraft:spore_blossom]] hängt in üppigen Höhlen. Für Summoning zählen zwei beliebige Wilden-Teile.",
+   "Shocking setzt in einem Platz der Größe 3 statt Schock Statische Aufladung. Selbstverbrennung brauchst du nur, wenn du oft in Feuer oder Lava stehst."
+  ],
+  "en": [
+   "The [[ars_elemental:flashpine_pod]] for Shocking grows on Ars Elemental's golden archwood trees; the [[minecraft:spore_blossom]] hangs in lush caves. Any two Wilden parts count for Summoning.",
+   "In a size 3 slot Shocking inflicts Static Charged instead of Shocked. Immolation is only worth it if you often stand in fire or lava."
+  ],
+  "sources": [
+   "ars_elemental:thread_shock, thread_spore, thread_summon (2 #ars_nouveau:wilden_drop), ars_nouveau:thread_immolation",
+   "lang ars_elemental.perk_desc.thread_shock, ars_elemental.page2.flashing_archwood"
+  ],
+  "client": [
+   "that flashpine grows on the golden archwood trees"
+  ]
+ },
+ "prism_lenses": {
+  "de": [
+   "Das [[ars_elemental:advanced_prism]] craftest du an der Werkbank aus einem Zauberprisma, 4 Netherquarz und 4 Quelljuwelen. Ausgerichtet wird es mit dem Dominion-Zauberstab auf einen Block, schleichend nimmst du die Linse wieder heraus.",
+   "Die Zielsuch-Linse braucht die Glyphe Zielsuchendes Projektil aus {{ars_master/el_homing}} als Podestgegenstand, du bekommst sie zurück."
+  ],
+  "en": [
+   "You craft the [[ars_elemental:advanced_prism]] at the crafting table from a spell prism, 4 nether quartz and 4 source gems. Aim it at a block with the Dominion Wand; sneak and click to take the lens out again.",
+   "The homing lens takes the Homing Projectile glyph from {{ars_master/el_homing}} as a pedestal item, and you get it back."
+  ],
+  "sources": [
+   "ars_elemental:advanced_prism (QSQ/SPS/QSQ)",
+   "ars_elemental:homing_prism_lens (imbuement, source 2000)",
+   "lang ars_elemental.page1.advanced_prism, page3.advanced_prism, ars_nouveau.page1.imbuement_chamber"
+  ]
+ },
+ "ruined_portal": {
+  "de": [
+   "Große verfallene Warp-Portale gibt es zusätzlich in Archwood-Wäldern. Die Truhe gibt je einmal Explorer's Warp Scroll, Quellstein und Codex Entry.",
+   "Statt die Rolle ins Portal zu werfen, kannst du sie auch mit ihrer Taste direkt benutzen. Kein Ziel in der Nähe zeigt sie mit einer Meldung an, dann versuch es an einem anderen Portal."
+  ],
+  "en": [
+   "Large ruined warp portals also appear in archwood forests. The chest holds one Explorer's Warp Scroll, sourcestone and one Codex Entry.",
+   "Instead of throwing the scroll into the portal you can also use it directly with its key. If no target is near, it tells you so; then try another portal."
+  ],
+  "sources": [
+   "ars_additions jar: loot_table/chests/ruined_portal.json, tags/worldgen/biome/has_structure/ruined_portal_large.json",
+   "lang tooltip.ars_additions.exploration_warp_scroll.use, .failed",
+   "config/ars_additions-common.toml (ruined_warp_portals_enabled true)"
+  ],
+  "client": [
+   "which key uses the Explorer's Warp Scroll directly"
+  ]
+ }
+}

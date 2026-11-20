@@ -1,0 +1,519 @@
+{
+ "breath": {
+  "de": [
+   "Du brauchst hier mindestens drei Flaschen Drachenatem: je eine für {{ars_epic/linger}}, {{ars_epic/wall}} und die [[ars_nouveau:lingering_flask_cannon]]. Füll gleich mehr ab, solange der Drache lebt.",
+   "Der Enderdrache wächst auf Kronwerke mit eurer Gruppe: Für jeden Spieler nach dem ersten hat er **60 Prozent mehr Leben** und 15 Prozent mehr Schaden ({{bosses/b_group_scaling}}). Wie du ihn neu rufst, steht in {{the_end/respawn}}."
+  ],
+  "en": [
+   "You need at least three bottles of dragon's breath here: one each for {{ars_epic/linger}}, {{ars_epic/wall}} and the [[ars_nouveau:lingering_flask_cannon]]. Bottle more while the dragon is alive.",
+   "On Kronwerke the Ender Dragon grows with your group: for every player after the first it has **60 percent more health** and 15 percent more damage ({{bosses/b_group_scaling}}). {{the_end/respawn}} shows how to summon it again."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_linger, ars_nouveau:glyph_wall, ars_nouveau:lingering_flask_cannon (dragon_breath)",
+   "config/kronwerke-common.toml [bosses] (minecraft:ender_dragon, healthPerPlayer 0.6, damage 0.15)"
+  ]
+ },
+ "linger": {
+  "de": [
+   "Verweilen ist eine Glyphe der Stufe 3: Lernen und benutzen kannst du sie nur mit dem {{ars_master/archmage_book}}. Wirf die Zutaten auf den Tisch des Schreibers, der Tisch zieht sie auch aus Truhen daneben.",
+   "Neben den Verstärkungen aus dem Questtext wirkt auch Dämpfen: Das Feld ignoriert dann die Schwerkraft. Wand braucht dieselben Zutaten, sammle also gleich doppelt: 2 [[minecraft:diamond_block]], 4 [[minecraft:blaze_rod]], 2 Drachenatem, 2 Manipulationsessenzen."
+  ],
+  "en": [
+   "Linger is a tier 3 glyph: you can only learn and use it with the {{ars_master/archmage_book}}. Throw the ingredients onto the Scribe's Table; it also pulls them from chests next to it.",
+   "Besides the augments in the quest text, Dampen works too: the field then ignores gravity. Wall needs the same ingredients, so gather double: 2 [[minecraft:diamond_block]], 4 [[minecraft:blaze_rod]], 2 dragon's breath, 2 manipulation essence."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_linger, ars_nouveau:glyph_wall",
+   "ars_nouveau jar: EffectLinger.defaultTier THREE; lang ars_nouveau.augment_desc.glyph_linger_glyph_dampen, page1.scribes_table"
+  ]
+ },
+ "wall": {
+  "de": [
+   "Wand ist wie Verweilen eine Glyphe der Stufe 3 für das {{ars_master/archmage_book}}. Statt eines Feldes am Ziel steht eine Wand, Dämpfen lässt auch sie die Schwerkraft ignorieren.",
+   "Gegen die Diener des Gaia-Wächters ({{gaia/fight}}) ist eine Wand quer über die Arena ein guter Einsatz, und {{ars_epic/epic}} will einen Kampf mit Verweilen oder Wand sehen."
+  ],
+  "en": [
+   "Like Linger, Wall is a tier 3 glyph for the {{ars_master/archmage_book}}. Instead of a field at the target it puts up a wall; Dampen makes it ignore gravity too.",
+   "A wall across the arena is a good use against the minions of the Guardian of Gaia ({{gaia/fight}}), and {{ars_epic/epic}} asks for a fight with Linger or Wall."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_wall",
+   "ars_nouveau jar: EffectWall.defaultTier THREE; lang ars_nouveau.glyph_desc.glyph_wall, augment_desc.glyph_wall_glyph_dampen",
+   "config/kronwerke/goals.json (stage 4 magic: botania:gaia_spirit)"
+  ]
+ },
+ "glide": {
+  "de": [
+   "Plane die Elytren gleich für das ganze Kapitel: ein Paar für diese Glyphe, ein Paar für {{ars_epic/thread}}, dazu eins zum Tragen, wenn du willst. Elytren hängen in Endschiffen bei den Endsiedlungen ({{the_end/elytra}}).",
+   "Verstärken hebt die Stufe des Effekts, Zeit verlängern macht ihn länger. Gleiten ist eine Glyphe der Stufe 3, also nur mit dem {{ars_master/archmage_book}}."
+  ],
+  "en": [
+   "Plan the elytra for the whole chapter: one pair for this glyph, one pair for {{ars_epic/thread}}, plus one to wear if you like. Elytra hang in the End ships next to End cities ({{the_end/elytra}}).",
+   "Amplify raises the level of the effect, Extend Time makes it last longer. Glide is a tier 3 glyph, so it needs the {{ars_master/archmage_book}}."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_glide, ars_nouveau:thread_gliding (minecraft:elytra)",
+   "lang ars_nouveau.augment_desc.glyph_glide_*; EffectGlide.defaultTier THREE"
+  ]
+ },
+ "flask_cannon": {
+  "de": [
+   "In die Mitte des Apparats kommt die [[ars_nouveau:splash_flask_cannon]] aus {{ars_apprentice/flask_cannon}}, dazu Drachenatem und 2 Luftessenzen. Quelle braucht das Rezept nicht.",
+   "Die Kanone nimmt Tränke aus Flaschen und Trankflaschen in deinem Inventar. Welchen sie verschießt, wählst du im Radialmenü."
+  ],
+  "en": [
+   "The [[ars_nouveau:splash_flask_cannon]] from {{ars_apprentice/flask_cannon}} goes in the middle of the apparatus, with dragon's breath and 2 air essence around it. The recipe needs no source.",
+   "The cannon takes potions from bottles and potion flasks in your inventory. You pick which one it fires in the radial menu."
+  ],
+  "sources": [
+   "ars_nouveau:lingering_flask_cannon (reagent splash_flask_cannon, sourceCost 0)",
+   "lang ars_nouveau.page1.flask_cannons"
+  ],
+  "client": [
+   "how the radial menu for the flask cannon opens"
+  ]
+ },
+ "void_prism": {
+  "de": [
+   "Das Leereprisma craftest du an der Werkbank: [[ars_nouveau:spell_prism]] in die Mitte, 8 [[minecraft:obsidian]] außen herum. Das Zauberprisma kommt aus {{ars_apprentice/prisms}}.",
+   "Es zerstört **jedes** Zauberprojektil, das hindurchfliegt, auch das deiner eigenen Türme. Setz es also nie zwischen einen Turm und sein Ziel."
+  ],
+  "en": [
+   "You craft the Void Prism at the crafting table: [[ars_nouveau:spell_prism]] in the middle, 8 [[minecraft:obsidian]] around it. The spell prism comes from {{ars_apprentice/prisms}}.",
+   "It destroys **every** spell projectile that passes through, including those of your own turrets. Never put it between a turret and its target."
+  ],
+  "sources": [
+   "ars_nouveau:void_prism (crafting_shaped, #c:obsidians around spell_prism)",
+   "lang ars_nouveau.page.void_prism",
+   "kubejs/data/kronwerke/chapters/stages/stage4.json"
+  ]
+ },
+ "ender_jar": {
+  "de": [
+   "Für zwei Gläser brauchst du 8 [[minecraft:ender_pearl]] und 8 [[minecraft:popped_chorus_fruit]]. Geplatzte Chorusfrüchte brennst du im Ofen aus Chorusfrüchten, die du im End erntest ({{the_end/chorus}}). Der Apparat verbraucht dafür keine Quelle.",
+   "Jedes Ender-Quellglas, das du aufstellst, hängt am selben Vorrat. So brauchst du für eine zweite Basis keine Relais-Kette."
+  ],
+  "en": [
+   "Two jars take 8 [[minecraft:ender_pearl]] and 8 [[minecraft:popped_chorus_fruit]]. You get popped chorus fruit by smelting chorus fruit from the End in a furnace ({{the_end/chorus}}). The apparatus uses no source for it.",
+   "Every Ender Source Jar you place is linked to the same pool of source. A second base then needs no relay chain."
+  ],
+  "sources": [
+   "ars_additions:apparatus/ender_source_jar (4 ender_pearl, 4 popped_chorus_fruit, reagent source_jar, sourceCost 0)",
+   "lang ars_additions.page.ender_source_jar"
+  ],
+  "client": [
+   "whether Ender Source Jars of different players share one pool or each player has their own"
+  ]
+ },
+ "relay_warp": {
+  "de": [
+   "In die Mitte kommt ein normales [[ars_nouveau:relay]] aus {{ars_apprentice/relay}}. Verbunden wird wie bei jedem Relais mit dem Dominion-Zauberstab: erst die Quelle, dann das Ziel, schleichend löschst du die Verbindungen.",
+   "Für die Quest brauchst du zwei, also 8 Enderperlen und 8 geplatzte Chorusfrüchte. Wer über weite Strecken nichts verlieren will, macht daraus gleich {{ars_epic/air_relay}}."
+  ],
+  "en": [
+   "A plain [[ars_nouveau:relay]] from {{ars_apprentice/relay}} goes in the middle. You link it like any relay with the Dominion Wand: first the source, then the target; sneak to clear the links.",
+   "The quest wants two, so 8 ender pearls and 8 popped chorus fruit. If you do not want to lose source over long distances, turn them into {{ars_epic/air_relay}} right away."
+  ],
+  "sources": [
+   "ars_nouveau:relay_warp (reagent relay, 4 #c:ender_pearls, 4 popped_chorus_fruit)",
+   "lang ars_nouveau.page.relay_warp, page.relay, page.dominion_wand"
+  ],
+  "client": [
+   "whether warper relays work across dimensions and whether both ends must be chunk loaded"
+  ]
+ },
+ "elevator": {
+  "de": [
+   "Der [[ars_nouveau:wilden_wing]] kommt von Wilden-Pirschern ({{ars_nouveau/wilden}}), die [[minecraft:shulker_shell]] von Shulkern in den Endsiedlungen. Der Goldblock gehört in die Mitte, Quelle braucht das Rezept nicht.",
+   "Im Betrieb zieht der Aufwind Quelle, solange mindestens ein Wesen in ihm schwebt. Stell also ein Quellglas daneben."
+  ],
+  "en": [
+   "The [[ars_nouveau:wilden_wing]] comes from Wilden Stalkers ({{ars_nouveau/wilden}}), the [[minecraft:shulker_shell]] from shulkers in End cities. The gold block goes in the middle; the recipe needs no source.",
+   "While running, the upstream uses source as long as at least one entity floats in it, so put a source jar next to it."
+  ],
+  "sources": [
+   "ars_elemental:air_upstream (reagent #c:storage_blocks/gold, sourceCost 0)",
+   "lang ars_elemental.page.air_upstream",
+   "ars_nouveau loot_table/entities/wilden_stalker.json (wilden_wing)"
+  ],
+  "client": [
+   "how far from the elevator a source jar may stand"
+  ]
+ },
+ "bangle": {
+  "de": [
+   "Den [[ars_nouveau:ring_of_potential]] kennst du aus {{ars_nouveau/trinkets}}. Den [[minecraft:end_crystal]] craftest du aus 7 Glas, einem Enderauge und einer Ghast-Träne, und der [[ars_nouveau:source_gem_block]] sind 9 Quelljuwelen.",
+   "Der Armreif ohne Schule ist nur eine Zwischenstufe: Erst {{ars_epic/bangles}} und {{ars_epic/bangles_more}} machen ihn verlässlich."
+  ],
+  "en": [
+   "You know the [[ars_nouveau:ring_of_potential]] from {{ars_nouveau/trinkets}}. You craft the [[minecraft:end_crystal]] from 7 glass, an eye of ender and a ghast tear, and the [[ars_nouveau:source_gem_block]] is 9 source gems.",
+   "The bangle without a school is only a step: {{ars_epic/bangles}} and {{ars_epic/bangles_more}} make it reliable."
+  ],
+  "sources": [
+   "ars_elemental:base_bangle (reagent ring_of_potential, source_gem_block, 2 gold blocks, end_crystal)",
+   "lang ars_elemental.page1.base_bangle"
+  ]
+ },
+ "bangles": {
+  "de": [
+   "Jeder Schul-Armreif frisst einen [[ars_elemental:base_bangle]], für die vier hier brauchst du also vier aus {{ars_epic/bangle}}. Jeder verstärkt außerdem die Zauber seiner Schule.",
+   "Dazu kommen kleine Boni: Feuer macht dich in heißen Biomen schneller, Wasser in Wasser und Regen, Erde gibt Rückstoßresistenz und Schutz vor Kakteen und Beerensträuchern. Den Pulverschneeeimer füllst du mit einem leeren Eimer an Pulverschnee in verschneiten Hängen."
+  ],
+  "en": [
+   "Every school bangle uses up one [[ars_elemental:base_bangle]], so the four here need four from {{ars_epic/bangle}}. Each one also boosts the spells of its school.",
+   "They come with small extras: Fire makes you faster in hot biomes, Water in water and rain, Earth gives knockback resistance and protects you from cactus and berry bushes. Fill the powder snow bucket by using an empty bucket on powder snow in snowy slopes."
+  ],
+  "sources": [
+   "ars_elemental:fire_bangle, water_bangle, earth_bangle, air_bangle (reagent base_bangle)",
+   "lang ars_elemental.page.fire_bangle, water_bangle, earth_bangle, air_bangle"
+  ]
+ },
+ "locate": {
+  "de": [
+   "Die Tafel stammt aus {{ars_apprentice/ritual_locate}}, den [[ars_additions:wayfinder]] craftest du aus einem Amethystsplitter und 4 Goldbarren. Erst der [[minecraft:purpur_block]] auf dem Becken macht daraus die Suche nach einer Endsiedlung.",
+   "Starte die Suche im End, am besten auf einer äußeren Insel, denn sie findet die nächste Endsiedlung in der Dimension des Beckens. Purpurblöcke craftest du auch selbst aus geplatzten Chorusfrüchten."
+  ],
+  "en": [
+   "The tablet comes from {{ars_apprentice/ritual_locate}}; you craft the [[ars_additions:wayfinder]] from an amethyst shard and 4 gold ingots. Only the [[minecraft:purpur_block]] on the brazier turns it into a search for an End city.",
+   "Start the search in the End, best on an outer island, since it finds the nearest End city in the brazier's dimension. You can also craft purpur blocks yourself from popped chorus fruit."
+  ],
+  "sources": [
+   "ars_additions:ritual/ritual_locate_structure, ars_additions:wayfinder",
+   "ars_additions jar: data/ars_additions/recipe/locate_structure/end_city.json (augment minecraft:purpur_block)"
+  ],
+  "client": [
+   "that the ritual searches in the dimension of the brazier"
+  ]
+ },
+ "charms": {
+  "de": [
+   "Die [[ars_nouveau:stable_warp_scroll]] kommt aus {{ars_apprentice/stable_warp}}. Die Glasflasche gehört in beiden Rezepten in die Mitte, Quelle brauchen sie nicht.",
+   "Charms sind Trinkets mit wenigen Ladungen. Leer legst du sie in die Imbuement-Kammer: Void's Salvation lädt mit 2 000 Quelle je Ladung nach. Void's Salvation bringt dich an den letzten sicheren Platz zurück, an dem du gestanden hast."
+  ],
+  "en": [
+   "The [[ars_nouveau:stable_warp_scroll]] comes from {{ars_apprentice/stable_warp}}. The glass bottle goes in the middle in both recipes; neither needs source.",
+   "Charms are trinkets with only a few charges. When empty, put them in the imbuement chamber: Void's Salvation recharges at 2,000 source per charge. Void's Salvation takes you back to the last safe spot you stood on."
+  ],
+  "sources": [
+   "ars_additions:apparatus/void_protection_charm, ender_mask_charm (reagent glass_bottle)",
+   "ars_additions jar: recipe/imbuement_charging/void_protection_charm.json (costPerDamage 2000)",
+   "lang page.ars_additions.void_protection_charm.desc, ars_additions.page1.charms"
+  ]
+ },
+ "charms_rare": {
+  "de": [
+   "Alle drei kommen im Apparat mit einer [[minecraft:glass_bottle]] in die Mitte. Für Second Wind und Unyielding Magic gehen ein [[minecraft:totem_of_undying]] und eine [[minecraft:wither_rose]] drauf, die Belohnung gibt dir das Totem zurück.",
+   "Leer lädt die Imbuement-Kammer sie nach: Second Wind kostet 2 000 Quelle je Ladung, Resonant Shield und Unyielding Magic je 1 000. Resonant Shield lohnt sich in Antiken Stätten, wo der Wärter erscheint."
+  ],
+  "en": [
+   "All three are made in the apparatus with a [[minecraft:glass_bottle]] in the middle. Second Wind and Unyielding Magic use up a [[minecraft:totem_of_undying]] and a [[minecraft:wither_rose]]; the reward gives you the totem back.",
+   "When empty the imbuement chamber recharges them: Second Wind costs 2,000 source per charge, Resonant Shield and Unyielding Magic 1,000 each. Resonant Shield pays off in ancient cities, where the Warden appears."
+  ],
+  "sources": [
+   "ars_additions:apparatus/undying_charm, sonic_boom_protection_charm, dispel_protection_charm",
+   "ars_additions jar: recipe/imbuement_charging/*.json (undying 2000, sonic_boom 1000, dispel 1000)"
+  ]
+ },
+ "warp_index": {
+  "de": [
+   "Du brauchst zwei Hellseher-Kristalle: einen direkt für den Index und einen im [[ars_nouveau:enchanters_eye]] ({{ars_apprentice/enchanters_eye}}). Den [[ars_nouveau:bookwyrm_charm]] machst du mit {{ars_master/golem_bookwyrm}}, den [[ars_nouveau:starbuncle_charm]] kennst du aus {{ars_nouveau/starbuncle_charm}}.",
+   "**Das Aufbewahrungspult muss geladen sein**, sonst greift der Index ins Leere. Lade seinen Chunk mit FTB Chunks dauerhaft ({{tips/m_claim}})."
+  ],
+  "en": [
+   "You need two Scry Crystals: one directly for the index and one inside the [[ars_nouveau:enchanters_eye]] ({{ars_apprentice/enchanters_eye}}). You make the [[ars_nouveau:bookwyrm_charm]] in {{ars_master/golem_bookwyrm}}; you know the [[ars_nouveau:starbuncle_charm]] from {{ars_nouveau/starbuncle_charm}}.",
+   "**The Storage Lectern must be loaded**, or the index reaches nothing. Force load its chunk with FTB Chunks ({{tips/m_claim}})."
+  ],
+  "sources": [
+   "ars_additions:apparatus/warp_index (reagent mundane_belt), ars_nouveau:enchanters_eye (scryers_crystal)",
+   "lang ars_additions.page1.warp_indexes (lectern must be chunk-loaded)",
+   "config/ftbchunks-world.snbt (force_loading)"
+  ],
+  "client": [
+   "which key opens the warp index (tooltip warp_index.keybind)"
+  ]
+ },
+ "illusions": {
+  "de": [
+   "Ein [[ars_nouveau:magebloom_block]] braucht 4 Fasern, für 8 Gewebe brauchst du 8 Blöcke, also 32 [[ars_nouveau:magebloom_fiber]] je Sorte. Für beide Sorten der Quest sind das 64 Fasern, die Belohnung gibt dir 16 zurück.",
+   "Alle Illusionsblöcke taugen auch als Rahmen für Portale, und mit Licht beschwören darauf leuchten sie. Magie spüren zeigt jede Illusion."
+  ],
+  "en": [
+   "A [[ars_nouveau:magebloom_block]] takes 4 fibers, and 8 weave takes 8 blocks, so 32 [[ars_nouveau:magebloom_fiber]] per kind. Both kinds of the quest take 64 fibers; the reward gives 16 back.",
+   "All illusion blocks also work as portal frames, and casting light on them makes them glow. Sense Magic reveals every illusion."
+  ],
+  "sources": [
+   "ars_nouveau:magebloom_block, mirrorweave, falseweave (8 magebloom_block around an essence)",
+   "lang ars_nouveau.page1.illusion_blocks"
+  ]
+ },
+ "air_relay": {
+  "de": [
+   "Jedes Wind-Relais frisst ein [[ars_nouveau:relay_warp]], für zwei brauchst du also beide aus {{ars_epic/relay_warp}} oder baust zwei neue. Dazu je 2 Luftessenzen und 2 Diamanten, keine Quelle.",
+   "Laut Handbuch hält das Elementar-Relais mehr Quelle, schiebt schneller und verliert über weite Strecken nichts mehr."
+  ],
+  "en": [
+   "Every Wind Warper Relay uses up a [[ars_nouveau:relay_warp]], so two take both from {{ars_epic/relay_warp}} or two new ones. Each also takes 2 air essence and 2 diamonds, no source.",
+   "According to the handbook the elemental relay holds more source, moves it faster and no longer loses any over long distances."
+  ],
+  "sources": [
+   "ars_elemental:air_relay (reagent relay_warp, 2 air_essence, 2 #c:gems/diamond)",
+   "lang ars_elemental.page1.elemental_relays"
+  ]
+ },
+ "bangles_more": {
+  "de": [
+   "Beide verbrauchen wieder einen [[ars_elemental:base_bangle]] aus {{ars_epic/bangle}}. Die Anima-Essenz kennst du aus {{ars_apprentice/el_anima}}, die [[minecraft:wither_rose]] gibt es, wenn der Wither einen Gegner tötet.",
+   "Der Armreif der Beschwörung passt zum {{ars_master/summon_focus}}: Deine Beschwörungen folgen deinen Schlägen und greifen an, was du triffst."
+  ],
+  "en": [
+   "Both use up another [[ars_elemental:base_bangle]] from {{ars_epic/bangle}}. You know anima essence from {{ars_apprentice/el_anima}}; a [[minecraft:wither_rose]] drops when the Wither kills a mob.",
+   "The Summoner's Bangle goes well with the {{ars_master/summon_focus}}: your summons follow your hits and attack what you strike."
+  ],
+  "sources": [
+   "ars_elemental:summon_bangle, anima_bangle (reagent base_bangle)",
+   "lang ars_elemental.page1.summon_bangle, anima_bangle"
+  ]
+ },
+ "spell_horn": {
+  "de": [
+   "Der Zauber darf **keine Form** haben, also weder Projektil noch Berühren noch Selbst. Schreib ihn wie ein Pergament am Tisch des Schreibers ein.",
+   "Das [[ars_nouveau:wilden_horn]] kommt von Wilden-Jägern ({{ars_nouveau/wilden}}). Gefärbt wird das Horn mit einem Farbstoff im Handwerksfeld."
+  ],
+  "en": [
+   "The spell must have **no form**, so no Projectile, Touch or Self. Inscribe it at the Scribe's Table like a parchment.",
+   "The [[ars_nouveau:wilden_horn]] comes from Wilden Hunters ({{ars_nouveau/wilden}}). You can dye the horn with any dye in the crafting grid."
+  ],
+  "sources": [
+   "ars_elemental:spell_horn, ars_elemental:dye_horn",
+   "lang ars_elemental.page.spell_horn",
+   "ars_nouveau loot_table/entities/wilden_hunter.json (wilden_horn)"
+  ]
+ },
+ "stabilized_index": {
+  "de": [
+   "Der [[minecraft:nether_star]] kommt vom Wither ({{ars_master/nether_star}}), die [[minecraft:ender_chest]] craftest du an der Werkbank. Der Warp Index aus {{ars_epic/warp_index}} wird dabei aufgewertet, du brauchst keinen zweiten.",
+   "Auch der stabilisierte Index braucht ein geladenes Pult. Ohne dauerhaft geladenen Chunk ({{tips/m_claim}}) erreicht er es aus dem End nicht."
+  ],
+  "en": [
+   "The [[minecraft:nether_star]] comes from the Wither ({{ars_master/nether_star}}), you craft the [[minecraft:ender_chest]] at the crafting table. The Warp Index from {{ars_epic/warp_index}} is upgraded, you do not need a second one.",
+   "The stabilized index also needs a loaded lectern. Without a force loaded chunk ({{tips/m_claim}}) it cannot reach it from the End."
+  ],
+  "sources": [
+   "ars_additions:apparatus/stabilized_warp_index (reagent warp_index)",
+   "lang ars_additions.page1.warp_indexes"
+  ]
+ },
+ "planarium": {
+  "de": [
+   "In die Mitte kommt ein leeres [[ars_nouveau:mob_jar]], dazu eine [[ars_nouveau:stable_warp_scroll]] aus {{ars_apprentice/stable_warp}}. Quelle braucht das Rezept nicht.",
+   "Ohne Namen bleibt das Planarium ein leeres Glas. Den Namen setzt du mit Amboss oder der Glyphe Name, erst dann gehört eine Dimension dazu."
+  ],
+  "en": [
+   "An empty [[ars_nouveau:mob_jar]] goes in the middle, with a [[ars_nouveau:stable_warp_scroll]] from {{ars_apprentice/stable_warp}}. The recipe needs no source.",
+   "Without a name the planarium stays an empty jar. Name it on an anvil or with the Name glyph; only then does a dimension belong to it."
+  ],
+  "sources": [
+   "ars_nouveau:planarium (reagent mob_jar, sourceCost 0)",
+   "lang ars_nouveau.page1.planarium",
+   "config/ars_nouveau-server.toml [planarium]"
+  ]
+ },
+ "nexus_tower": {
+  "de": [
+   "Nexus-Türme entstehen in den Biomen, in denen Ruinenportale vorkommen, und in den Biomen der Endsiedlungen. Im End stehen sie also auf den äußeren Inseln, in der Oberwelt in den meisten Biomen.",
+   "Die Truhe gibt einen Kodex-Eintrag und eine zufällige Archwood-Frucht für {{ars_epic/fruits}}. Den Warp Nexus kannst du abbauen und mitnehmen, dann kostet aber jeder Sprung 1 000 Quelle."
+  ],
+  "en": [
+   "Nexus towers generate in the biomes where ruined portals can appear, and in the biomes of End cities. In the End you find them on the outer islands, in the Overworld almost anywhere.",
+   "The chest holds a Codex Entry and one random archwood fruit for {{ars_epic/fruits}}. You can mine the Warp Nexus and take it with you, but then every jump costs 1,000 source."
+  ],
+  "sources": [
+   "ars_additions jar: tags/worldgen/biome/has_structure/nexus_tower.json, loot_table/chests/nexus_tower.json",
+   "lang ars_additions.page2.warp_nexus",
+   "config/ars_additions-common.toml (nexus_tower_enabled true)"
+  ]
+ },
+ "fruits": {
+  "de": [
+   "Die Früchte wachsen auch an wilden Archwood-Bäumen: [[ars_nouveau:bastion_pod]] am Ärgerlichen (lila), [[ars_nouveau:frostaya_pod]] am Kaskadierenden (blau), [[ars_nouveau:mendosteen_pod]] am Blühenden (grün) und [[ars_nouveau:bombegranate_pod]] am Brennenden (rot). In einem Archwood-Wald hast du alle vier schnell zusammen.",
+   "Eine Truhe in Nexus-Turm oder Arkaner Bibliothek gibt nur eine zufällige Frucht. Arkane Bibliotheken stehen nur in Archwood-Wäldern."
+  ],
+  "en": [
+   "The fruits also grow on wild archwood trees: [[ars_nouveau:bastion_pod]] on Vexing (purple), [[ars_nouveau:frostaya_pod]] on Cascading (blue), [[ars_nouveau:mendosteen_pod]] on Flourishing (green) and [[ars_nouveau:bombegranate_pod]] on Blazing (red). In an archwood forest you have all four quickly.",
+   "A chest in a nexus tower or an arcane library holds only one random fruit. Arcane libraries only stand in archwood forests."
+  ],
+  "sources": [
+   "ars_nouveau jar: worldgen/configured_feature/natural_*_tree.json (podID)",
+   "ars_additions jar: loot_table/chests/nexus_tower.json, arcane_library.json, tags/worldgen/biome/has_structure/arcane_library.json"
+  ],
+  "client": [
+   "whether archwood trees grown from saplings also carry fruit pods"
+  ]
+ },
+ "sorcerer": {
+  "de": [
+   "Jedes Teil braucht das passende Goldteil: [[minecraft:golden_helmet]], Brustplatte, Hose und Stiefel, dazu je 4 [[ars_nouveau:magebloom_fiber]], also 16 Fasern für das Set. Quelle braucht der Apparat nicht.",
+   "Schon die erste Stufe hat an Brust und Hose einen Fadenplatz der Größe 2, nach dem ersten Aufwerten ({{ars_master/armor_upgrade}}) einen der Größe 3. Die Quellgeborene darf die Roben tragen, Gold am Leib dagegen nicht."
+  ],
+  "en": [
+   "Each piece needs the matching gold piece: [[minecraft:golden_helmet]], chestplate, leggings and boots, with 4 [[ars_nouveau:magebloom_fiber]] each, so 16 fibers for the set. The apparatus needs no source.",
+   "Even the first tier has a size 2 thread slot on chest and legs, and after the first upgrade ({{ars_master/armor_upgrade}}) one of size 3. The Sourceborn may wear the robes, but not gold armor."
+  ],
+  "sources": [
+   "ars_nouveau:sorcerer_robes (reagent golden_chestplate, 4 magebloom_fiber)",
+   "ars_nouveau jar: APIRegistry perk slots (SORCERER_ROBES/LEGGINGS: [TWO], [TWO, THREE], [TWO, TWO, THREE])",
+   "docs/ORIGINS.md (Quellgeborene: no heavy armor)",
+   "kubejs/data/kronwerke/chapters/stages/stage4.json"
+  ]
+ },
+ "upgrade": {
+  "de": [
+   "Die Aufwertung geht nur Schritt für Schritt: Ein Teil der Stufe 1 kommt erst mit 2 Lohenruten und 2 500 Quelle auf Stufe 2 ({{ars_master/armor_upgrade}}), dann hier auf Stufe 3. Fäden und Verzauberungen bleiben dabei drauf.",
+   "Die 5 000 Quelle zieht der Apparat aus Quellgläsern in der Nähe, plane für ein ganzes Set 20 000 nur für diesen Schritt. Chorusfrüchte erntest du im End ({{the_end/chorus}})."
+  ],
+  "en": [
+   "Upgrading goes one step at a time: a tier 1 piece first needs 2 blaze rods and 2,500 source for tier 2 ({{ars_master/armor_upgrade}}), then this step for tier 3. Threads and enchantments stay on.",
+   "The apparatus pulls the 5,000 source from source jars nearby; plan 20,000 for a full set for this step alone. You harvest chorus fruit in the End ({{the_end/chorus}})."
+  ],
+  "sources": [
+   "ars_nouveau:second_armor_upgrade (2 #c:ender_pearls, chorus_fruit, sourceCost 5000, tier 2)",
+   "ars_nouveau:first_armor_upgrade (2 #c:rods/blaze, sourceCost 2500, tier 1)"
+  ]
+ },
+ "thread": {
+  "de": [
+   "Der Faden braucht einen Platz der **Größe 3**. Den haben schon Brust und Hose von Arkanist und Zauberer auf Stufe 2, eine Robe der Stufe 3 ist dafür nicht nötig.",
+   "Eingenäht wird am Änderungstisch ({{ars_master/alteration}}). Fäden wirken nur einmal pro Set, ein zweiter Gleit-Faden bringt nichts."
+  ],
+  "en": [
+   "The thread needs a **size 3** slot. Chest and legs of the Arcanist and Sorcerer sets already have one at tier 2; a tier 3 robe is not required.",
+   "You sew it in at the alteration table ({{ars_master/alteration}}). Threads only count once per set; a second gliding thread does nothing."
+  ],
+  "sources": [
+   "ars_nouveau:thread_gliding (reagent blank_thread, 2 air_essence, elytra)",
+   "lang ars_nouveau.perk_desc.thread_gliding, page2.applying_perks",
+   "ars_nouveau jar: APIRegistry perk slots (ARCANIST_ROBES tier 2 [ONE, THREE], SORCERER_ROBES tier 2 [TWO, THREE])"
+  ]
+ },
+ "thread_undying": {
+  "de": [
+   "Wie Gleiten braucht der Faden einen Platz der **Größe 3**. Den haben Brust und Hose von Arkanist und Zauberer schon auf Stufe 2.",
+   "Der Faden lädt nach, wenn du schläfst. Für Bosskämpfe passt er gut zum Charm of Second Wind aus {{ars_epic/charms_rare}}, das Totem aus der Belohnung dort deckt eins der beiden Rezepte."
+  ],
+  "en": [
+   "Like Gliding, the thread needs a **size 3** slot. Chest and legs of the Arcanist and Sorcerer sets already have one at tier 2.",
+   "The thread recharges when you sleep. For boss fights it pairs well with the Charm of Second Wind from {{ars_epic/charms_rare}}; the totem from that reward covers one of the two recipes."
+  ],
+  "sources": [
+   "ars_nouveau:thread_undying (reagent blank_thread, totem_of_undying, phantom_membrane, 2 abjuration_essence)",
+   "lang ars_nouveau.perk_desc.thread_undying",
+   "ars_nouveau jar: APIRegistry perk slots"
+  ]
+ },
+ "el_armor": {
+  "de": [
+   "Das Rezept nimmt nur Teile der **Stufe 3**, eins der Stufe 2 erkennt der Apparat nicht. Jede Robe wird zum Gegenstück ihrer Klasse: Aus Zauberer, Arkanist und Kampfmagier werden leichte, mittlere und schwere Elementar-Rüstung.",
+   "Das [[ars_elemental:mark_of_mastery]] kommt aus {{ars_master/mark_of_mastery}}, ein Tribut gibt fünf. Für ein volles Set brauchst du 4 Male, 4 Netheritbarren und 28 000 Quelle."
+  ],
+  "en": [
+   "The recipe only takes **tier 3** pieces; the apparatus does not accept a tier 2 piece. Each robe turns into its class: Sorcerer, Arcanist and Battlemage become light, medium and heavy elemental armor.",
+   "The [[ars_elemental:mark_of_mastery]] comes from {{ars_master/mark_of_mastery}}; one tribute gives five. A full set takes 4 marks, 4 netherite ingots and 28,000 source."
+  ],
+  "sources": [
+   "ars_elemental:fire_robes, fire_tunic, fire_chestplate (sauce:armor_upgrade, sourceCost 7000)",
+   "sauce jar (in ars_elemental): ElementalArmorRecipe (tier default 3, matches perk tier == tier minus 1)",
+   "lang ars_elemental.page.armor_set.wip, armor_set.light/medium/heavy.desc"
+  ]
+ },
+ "tech_armor": {
+  "de": [
+   "Wie bei den Elementar-Rüstungen nimmt das Rezept nur Teile der Stufe 3. Statt des Mals der Technomantie nimmt der Apparat auch ein [[ars_elemental:mark_of_mastery]], beide Rezepte stehen in EMI.",
+   "Der Helm braucht eine [[create:goggles]] und nur einen Messingbarren. Das volle Set senkt Schaden von Create-Maschinen und macht Schemakanonen in der Nähe schneller."
+  ],
+  "en": [
+   "As with the elemental armors, the recipe only takes tier 3 pieces. Instead of the Mark of Technomancy the apparatus also takes a [[ars_elemental:mark_of_mastery]]; EMI shows both recipes.",
+   "The helmet needs [[create:goggles]] and just one brass ingot. The full set reduces damage from Create machinery and speeds up schematic cannons nearby."
+  ],
+  "sources": [
+   "ars_technica:technomancer_chestplate, technomancer_chestplate_default, artificer_cap (sauce:armor_upgrade, sourceCost 7000)",
+   "lang ars_technica.armor_set.technomancer.desc"
+  ]
+ },
+ "parts": {
+  "de": [
+   "Für die Tafel gibt es ein zweites Rezept ganz ohne Wilden-Teile: [[ars_nouveau:purple_archwood_log]], [[minecraft:emerald_block]], [[minecraft:iron_sword]], [[minecraft:bow]] und [[minecraft:lapis_block]]. Dann braucht jeder Kampf nur noch Stachel, Horn und Flügel als Zusatz.",
+   "Mit einem Wilden-Modell in Hostile Neural Networks ({{hostile_networks/wilden}}) kommen die Teile ohne Jagd. Die Tafel Struktur finden zeigt mit einem Quelljuwel den nächsten Wilden-Bau."
+  ],
+  "en": [
+   "There is a second recipe for the tablet without any Wilden parts: [[ars_nouveau:purple_archwood_log]], [[minecraft:emerald_block]], [[minecraft:iron_sword]], [[minecraft:bow]] and [[minecraft:lapis_block]]. Then each fight only needs a spike, a horn and a wing as augments.",
+   "A Wilden model in Hostile Neural Networks ({{hostile_networks/wilden}}) gets you the parts without hunting. The Locate Structure tablet with a source gem points to the nearest Wilden den."
+  ],
+  "sources": [
+   "ars_nouveau:wilden_summon_alt, ars_nouveau:ritual_wilden_summon",
+   "ars_additions jar: recipe/locate_structure/wilden_den.json (augment source_gem)",
+   "lang ars_nouveau.ritual_desc.ritual_wilden_summon"
+  ]
+ },
+ "phases": {
+  "de": [
+   "Die 1 000 Lebenspunkte sind der Grundwert. Kronwerke macht alle feindlichen Mobs mit jeder Stufe stärker, auch die Chimäre: In Stufe 4 hat sie **2 200 Lebenspunkte**, 75 Prozent mehr Schaden und 7 Rüstungspunkte mehr, in Stufe 5 sind es 2 800.",
+   "Mit der Zahl der Spieler wächst sie dagegen nicht, sie steht nicht auf der Bossliste des Servers. Zu zweit oder dritt ist der Kampf also deutlich leichter als allein."
+  ],
+  "en": [
+   "The 1,000 health is the base value. Kronwerke makes every hostile mob stronger with each stage, the Chimera too: in stage 4 she has **2,200 health**, 75 percent more damage and 7 more armor points, in stage 5 it is 2,800.",
+   "She does not grow with the number of players, though; she is not on the server's boss list. With two or three players the fight is much easier than alone."
+  ],
+  "sources": [
+   "ars_nouveau jar: WildenChimera attributes (MAX_HEALTH 1000, ATTACK_DAMAGE 8, ARMOR 6)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onJoin)",
+   "config/kronwerke-common.toml [mobs] health/damage/armor, [bosses] scaling"
+  ]
+ },
+ "chimera_kill": {
+  "de": [
+   "Wenn du die Chimäre rufst, zerstört das Ritual die Blöcke rund um das Becken, und ihr Sturzflug bricht auf diesem Server ebenfalls Blöcke. Kämpf also weit weg von allem, was dir lieb ist.",
+   "In Stufe 4 hat sie 2 200 Lebenspunkte ({{ars_epic/phases}}). In Lava wird sie stärker, also kein Kampf im Nether."
+  ],
+  "en": [
+   "When you summon the Chimera, the ritual destroys the blocks around the brazier, and on this server her dive bomb also breaks blocks. Fight far away from anything you care about.",
+   "In stage 4 she has 2,200 health ({{ars_epic/phases}}). Lava makes her stronger, so do not fight her in the Nether."
+  ],
+  "sources": [
+   "config/ars_nouveau-common.toml (destructiveDiveBomb true)",
+   "lang ars_nouveau.ritual_desc.ritual_wilden_summon",
+   "core: MobStages.java, config/kronwerke-common.toml [mobs]"
+  ],
+  "client": [
+   "whether FTB Chunks claims stop the Chimera from breaking blocks"
+  ]
+ },
+ "hunt": {
+  "de": [
+   "Ein Tribut deckt viel: fünf Male der Meisterschaft ({{ars_master/mark_of_mastery}}), fünf Male der Technomantie ({{ars_master/mark_technomancy}}) oder einen {{ars_master/summon_focus}}. Dazu wollen Reactive IV und Spellweave III je einen.",
+   "Für Stufe 5 zählt jeder Tribut, den ihr nicht verbraucht. Lagert sie gemeinsam ein, bis Stufe 5 offen ist."
+  ],
+  "en": [
+   "One tribute goes a long way: five Marks of Mastery ({{ars_master/mark_of_mastery}}), five Marks of Technomancy ({{ars_master/mark_technomancy}}) or a {{ars_master/summon_focus}}. Reactive IV and Spellweave III also want one each.",
+   "For stage 5 every tribute you do not spend counts. Store them together until stage 5 is open."
+  ],
+  "sources": [
+   "helpq uses ars_nouveau:wilden_tribute (archmage_book_upgrade, spellweave_3, mark_of_technomancy, reactive_4, summon_focus, mark_of_mastery)",
+   "ars_elemental:mark_of_mastery, ars_technica:mark_of_technomancy (count 5)",
+   "config/kronwerke/goals.json (stage 5: ars_nouveau:wilden_tribute 64 fixed)"
+  ]
+ },
+ "epic": {
+  "de": [
+   "Die 64 Tribute in Stufe 5 sind eine feste Zahl, sie wächst nicht mit der Zahl der Spieler. Daneben will der Obelisk auf der Magieseite Gaia-Barren.",
+   "In Stufe 5 hat die Chimäre 2 800 Lebenspunkte ({{ars_epic/phases}}), übt den Kampf also jetzt. Für den Gaia-Wächter geht es weiter in {{gaia/fight}}."
+  ],
+  "en": [
+   "The 64 tributes in stage 5 are a fixed number; it does not grow with the number of players. Next to them the obelisk wants Gaia ingots on the magic side.",
+   "In stage 5 the Chimera has 2,800 health ({{ars_epic/phases}}), so practice the fight now. For the Guardian of Gaia go on in {{gaia/fight}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage 5 magic: botania:gaia_ingot, ars_nouveau:wilden_tribute 64 fixed)",
+   "config/kronwerke-common.toml [mobs] health"
+  ]
+ }
+}

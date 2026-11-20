@@ -1,0 +1,587 @@
+{
+ "welcome": {
+  "de": [
+   "Ein [[mekanism:steel_casing]] mit 4 [[mekanism:ingot_lead]] im Kreuz drumherum gibt 4 Gehäuse. Für die 16 der Quest brauchst du also 4 Stahlgehäuse und 16 Blei. Weitere Gehäuse gehen in die Schnittstellen und den Logik-Adapter, bau gleich einen Vorrat.",
+   "Die 100 Pellets des Obelisken gelten für 30 aktive Spieler. Beim Öffnen von Stufe 5 wird die Zahl einmal verrechnet und landet zwischen 40 und 150. Ein Pellet sind 1 000 000 mB Polonium, also der Atommüll aus rund 10 000 Uranbarren."
+  ],
+  "en": [
+   "A [[mekanism:steel_casing]] with 4 [[mekanism:ingot_lead]] around it in a cross makes 4 casings, so the 16 of this quest take 4 steel casings and 16 lead. More casings go into the ports and the logic adapter, so make a stock right away.",
+   "The obelisk's 100 pellets assume 30 active players. When stage 5 opens the amount is scaled once and ends up between 40 and 150. One pellet is 1,000,000 mB of polonium, that is the nuclear waste of about 10,000 uranium ingots."
+  ],
+  "sources": [
+   "mekanismgenerators:fission_reactor/casing",
+   "config/kronwerke/goals.json (stage5 tech, scale true)",
+   "docs/STAGES.md (rule 4: base * clamp(active/30, 0.4, 1.5))",
+   "mekanism:processing/lategame/polonium, srv/config/Mekanism/general.toml (sps inputPerAntimatter 1000)"
+  ]
+ },
+ "yellowcake": {
+  "de": [
+   "Die [[mekanism:enrichment_chamber]] macht aus einem [[mekanism:ingot_uranium]] 2 [[mekanism:yellow_cake_uranium]], für die Quest brauchst du also 8 Barren. Uranerz und den Weg zum Barren zeigt {{mekanism_ores/uranium}}.",
+   "Ein Uranbarren wird am Ende der Kette zu 1 000 mB Spaltbrennstoff. Bei der Startbrennrate von 0,1 mB/t reicht das 10 000 Ticks, gut acht Minuten."
+  ],
+  "en": [
+   "The [[mekanism:enrichment_chamber]] turns one [[mekanism:ingot_uranium]] into 2 [[mekanism:yellow_cake_uranium]], so the quest takes 8 ingots. Uranium ore and the way to the ingot are in {{mekanism_ores/uranium}}.",
+   "At the end of the line one uranium ingot becomes 1,000 mB of fissile fuel. At the starting burn rate of 0.1 mB/t that lasts 10,000 ticks, a little over eight minutes."
+  ],
+  "sources": [
+   "mekanism:processing/uranium/yellow_cake_uranium",
+   "srv/config/Mekanism/generators.toml (defaultBurnRate 0.1)"
+  ]
+ },
+ "oxide": {
+  "de": [
+   "Der [[mekanism:chemical_oxidizer]] macht aus einem Gelbkuchen 250 mB Uranoxid, aus einem Uranbarren also 500 mB. Den Oxidierer kennst du schon aus {{mekanism_ores/oxidizer}}.",
+   "Im nächsten Schritt mischst du Oxid und Flusssäure 1 zu 1. Auf 2 Uranbarren kommt damit ein [[mekanism:fluorite_gem]]."
+  ],
+  "en": [
+   "The [[mekanism:chemical_oxidizer]] turns one yellow cake into 250 mB of uranium oxide, so one uranium ingot gives 500 mB. You know the oxidizer from {{mekanism_ores/oxidizer}}.",
+   "In the next step oxide and hydrofluoric acid mix 1 to 1. That means one [[mekanism:fluorite_gem]] for every 2 uranium ingots."
+  ],
+  "sources": [
+   "mekanism:processing/uranium/uranium_oxide",
+   "mekanism:processing/uranium/sulfuric_acid (chemical infusing, 1 + 1 = 2)",
+   "mekanism:processing/uranium/hydrofluoric_acid"
+  ]
+ },
+ "hf": {
+  "de": [
+   "Die [[mekanism:chemical_dissolution_chamber]] ist ein Gerät aus Stufe 4. Sie zieht während der Arbeit laufend 1 mB Schwefelsäure pro Tick, nicht eine feste Menge pro Stück. Die Säure baust du wie in {{mekanism_ores/acid}}.",
+   "Fluoriterz entsteht vom Grund der Welt bis Y 23. Die [[mekanism:enrichment_chamber]] macht aus einem Erz 6 Fluorit, siehe {{mekanism_ores/fluorite}}."
+  ],
+  "en": [
+   "The [[mekanism:chemical_dissolution_chamber]] is a stage 4 machine. While it works it draws 1 mB of sulfuric acid per tick, not a fixed amount per item. Make the acid as in {{mekanism_ores/acid}}.",
+   "Fluorite ore generates from the bottom of the world up to Y 23. The [[mekanism:enrichment_chamber]] makes 6 fluorite from one ore, see {{mekanism_ores/fluorite}}."
+  ],
+  "sources": [
+   "mekanism:processing/uranium/hydrofluoric_acid (per_tick_usage, sulfuric_acid 1)",
+   "mekanism:chemical_dissolution_chamber (stage 4)",
+   "srv/config/Mekanism/world.toml (fluorite.normal max Y 23)",
+   "mekanism:processing/fluorite/from_ore (6)"
+  ]
+ },
+ "uf6": {
+  "de": [
+   "Den [[mekanism:chemical_infuser]] nennt das Spiel auf Deutsch Chemischer Injektor. Er nimmt Flusssäure und Uranoxid und gibt doppelt so viel Uranhexafluorid zurück.",
+   "Leite Oxidierer und Auflösungskammer direkt in den Infusor und dessen Ausgang in die [[mekanism:isotopic_centrifuge]] ({{antimatter/fuel}}). Dann läuft die ganze Brennstoffkette ohne Zwischentanks."
+  ],
+  "en": [
+   "The [[mekanism:chemical_infuser]] takes hydrofluoric acid and uranium oxide and returns twice as much uranium hexafluoride.",
+   "Pipe the oxidizer and the dissolution chamber straight into the infuser and its output into the [[mekanism:isotopic_centrifuge]] ({{antimatter/fuel}}). Then the whole fuel line runs without tanks in between."
+  ],
+  "sources": [
+   "mekanism:processing/uranium/sulfuric_acid (chemical_infusing hydrofluoric_acid + uranium_oxide -> 2 uranium_hexafluoride)",
+   "mekanism:chemical_infuser (de: Chemischer Injektor)"
+  ]
+ },
+ "fuel": {
+  "de": [
+   "Die [[mekanism:isotopic_centrifuge]] ist ein Gerät aus Stufe 4. Bei 0,1 mB/t frisst der Reaktor 2 mB pro Sekunde, rund 7 200 mB in der Stunde, das sind gut 7 Uranbarren.",
+   "Dieselbe Maschine schleudert später Atommüll zu Plutonium ({{antimatter/plutonium}}). Stell dafür eine zweite auf, statt diese umzustecken."
+  ],
+  "en": [
+   "The [[mekanism:isotopic_centrifuge]] is a stage 4 machine. At 0.1 mB/t the reactor eats 2 mB per second, about 7,200 mB per hour, a little over 7 uranium ingots.",
+   "The same machine later spins nuclear waste into plutonium ({{antimatter/plutonium}}). Set up a second one for that instead of rerouting this one."
+  ],
+  "sources": [
+   "mekanism:processing/uranium/fissile_fuel",
+   "mekanism:processing/lategame/plutonium",
+   "srv/config/Mekanism/generators.toml (defaultBurnRate 0.1)"
+  ]
+ },
+ "assemblies": {
+  "de": [
+   "Rezept: Blei in der linken und rechten Spalte (6), Stahl oben und unten in der Mitte (2), in der Mitte ein [[mekanism:basic_chemical_tank]], im Spiel Einfacher Chemikalienbehälter.",
+   "Jede Baugruppe hebt die höchste mögliche Brennrate um **1 mB/t**. Mit den vier der Quest kommst du also bis 4 mB/t, das Vierzigfache der Startrate, aber nur, wenn Kühlung und Turbine das tragen."
+  ],
+  "en": [
+   "Recipe: lead in the left and right columns (6), steel at top and bottom centre (2), and a [[mekanism:basic_chemical_tank]] in the middle.",
+   "Each assembly raises the highest possible burn rate by **1 mB/t**. The four of this quest allow up to 4 mB/t, forty times the starting rate, but only if cooling and turbine can carry it."
+  ],
+  "sources": [
+   "mekanismgenerators:fission_reactor/fuel_assembly (ISI/ITI/ISI)",
+   "srv/config/Mekanism/generators.toml (burnPerAssembly 1)"
+  ]
+ },
+ "control_rod": {
+  "de": [
+   "Rezept: oben Blei, [[mekanism:elite_control_circuit]], Blei, darunter zweimal Stahl, Blei, Stahl. Das sind 3 Blei und 4 Stahl pro Stab.",
+   "Elitäre Steuerschaltkreise brauchst du in diesem Abschnitt noch öfter: zwei für die vier Schnittstellen ({{antimatter/ports}}). Die zwei aus der Belohnung decken genau das."
+  ],
+  "en": [
+   "Recipe: lead, [[mekanism:elite_control_circuit]], lead on top, then twice steel, lead, steel. That is 3 lead and 4 steel per rod.",
+   "You need more elite circuits right after: two for the four ports ({{antimatter/ports}}). The two from the reward cover exactly that."
+  ],
+  "sources": [
+   "mekanismgenerators:fission_reactor/control_rod_assembly (ICI/SIS/SIS)",
+   "mekanismgenerators:fission_reactor/port"
+  ]
+ },
+ "ports": {
+  "de": [
+   "4 Gehäuse im Kreuz um einen [[mekanism:elite_control_circuit]] geben 2 Schnittstellen. Für die Quest brauchst du also 8 Gehäuse und 2 Schaltkreise.",
+   "Eine Schnittstelle kennt drei Modi: **nur Eingang** (nimmt Brennstoff und Kühlmittel zugleich), Kühlmittelausgang (Dampf oder heißes Natrium) und Abfall-Ausgang. Drei reichen also, die vierte ist ein zweiter Eingang oder Ausgang. Den Modus wechselst du mit dem [[mekanism:configurator]]."
+  ],
+  "en": [
+   "4 casings in a cross around an [[mekanism:elite_control_circuit]] make 2 ports, so the quest takes 8 casings and 2 circuits.",
+   "A port has three modes: **input only** (takes fuel and coolant at once), output coolant (steam or superheated sodium) and output waste. Three ports are enough; the fourth is a second input or output. Switch the mode with the [[mekanism:configurator]]."
+  ],
+  "sources": [
+   "mekanismgenerators:fission_reactor/port",
+   "MekanismGenerators jar, lang fission.mekanismgenerators.port_mode_input/output_coolant/output_waste"
+  ],
+  "client": [
+   "Konfigurator-Klick schaltet den Modus der Schnittstelle um"
+  ]
+ },
+ "reactor": {
+  "de": [
+   "Der Dampf geht in die Industrieturbine aus {{mekanism_advanced/turbine}}. Der Abfall braucht immer einen Weg nach draußen: Steht der Abfalltank über **90 Prozent**, gilt das als Überschuss und der Reaktor nimmt Schaden.",
+   "Ab 100 Prozent Schaden kann er schmelzen, mit einer Grundchance von 0,1 Prozent, die mit dem Schaden steigt. Die Explosion hat Radius 8, die Strahlung von Brennstoff und Abfall wird mal 50 verteilt, und ein wieder aufgebauter Reaktor startet mit 75 Prozent Schaden. Bau zuerst den Not-Aus ({{antimatter/logic}})."
+  ],
+  "en": [
+   "The steam goes into the industrial turbine from {{mekanism_advanced/turbine}}. The waste must always have a way out: a waste tank above **90 percent** counts as excess and damages the reactor.",
+   "From 100 percent damage it can melt down, with a base chance of 0.1 percent that rises with the damage. The blast has radius 8, the radiation of fuel and waste is spread fifty times over, and a rebuilt reactor starts at 75 percent damage. Build the emergency stop first ({{antimatter/logic}})."
+  ],
+  "sources": [
+   "srv/config/Mekanism/generators.toml (fission_reactor.meltdowns: enabled, radius 8, chance 0.001, radiationMultiplier 50, postMeltdownDamage 75)",
+   "srv/config/Mekanism/general.toml (excessWaste 0.9)"
+  ],
+  "client": [
+   "Schmelzchance wird pro Tick geprüft (Config sagt nur: Chance ab 100 Prozent Schaden)"
+  ]
+ },
+ "logic": {
+  "de": [
+   "4 Redstone im Kreuz um ein Gehäuse. Wichtig: Nur im Modus **Aktivierung** steuert der Adapter den Reaktor, mit Signal an, ohne Signal aus. Die Modi Kritischer Schaden und Hohe Temperatur geben nur ein Redstone-Signal aus.",
+   "Für den Not-Aus brauchst du darum zwei Adapter: einer auf Kritischer Schaden oder Hohe Temperatur, sein Signal invertiert (etwa mit einer Redstone-Fackel) auf den zweiten im Modus Aktivierung. Fällt das Signal weg, geht der Reaktor aus."
+  ],
+  "en": [
+   "4 redstone in a cross around a casing. The point: only in **Activation** mode does the adapter control the reactor, on with a signal, off without. Damage Critical and High Temperature only emit a redstone signal.",
+   "So the emergency stop takes two adapters: one on Damage Critical or High Temperature, its signal inverted (a redstone torch will do) into a second one in Activation mode. When that signal drops, the reactor shuts down."
+  ],
+  "sources": [
+   "mekanismgenerators:fission_reactor/logic_adapter",
+   "MekanismGenerators jar: TileEntityFissionReactorLogicAdapter.onPowerChange (setActive only for ACTIVATION)",
+   "MekanismGenerators jar, lang de_de reactor.mekanismgenerators.logic.*"
+  ],
+  "client": [
+   "Aufbau mit Redstone-Fackel als Inverter schaltet den Reaktor bei Schaden sicher ab"
+  ]
+ },
+ "radiation": {
+  "de": [
+   "[[mekanism:geiger_counter]]: 4 Blei im Kreuz um einen Basis-Schaltkreis. [[mekanism:radioactive_waste_barrel]]: Stahl in den Ecken, Blei an den Seiten, die Mitte bleibt frei.",
+   "Eine Tonne fasst 512 000 mB und baut 1 mB pro Sekunde ab. Für Abfall, den du zu Polonium machen willst, ist sie also der falsche Ort; sie ist für verbrauchten Atommüll aus der Druckreaktionskammer und für Überschuss."
+  ],
+  "en": [
+   "[[mekanism:geiger_counter]]: 4 lead in a cross around a basic circuit. [[mekanism:radioactive_waste_barrel]]: steel in the corners, lead on the sides, the middle stays empty.",
+   "A barrel holds 512,000 mB and decays 1 mB per second. So it is the wrong place for waste you want to turn into polonium; it is for spent nuclear waste from the pressurized reaction chamber and for overflow."
+  ],
+  "sources": [
+   "mekanism:geiger_counter",
+   "mekanism:radioactive_waste_barrel (SIS/I I/SIS)",
+   "srv/config/Mekanism/general.toml (wasteBarrelCapacity 512000, wasteBarrelProcessTicks 20, wasteBarrelDecayAmount 1)",
+   "mekanism:processing/lategame/polonium_pellet/from_reaction (spent_nuclear_waste)"
+  ]
+ },
+ "hazmat": {
+  "de": [
+   "Die Teile schützen verschieden stark: Maske 25 Prozent, Oberteil 40, Hose 20, Stiefel 15. Erst alle vier zusammen ergeben vollen Schutz.",
+   "Die Dosis baut sich mit der Zeit ab, etwa um 0,05 Prozent pro Sekunde. Schäden gibt es erst ab einem gewissen Schweregrad, eine kurze Dosis am Reaktor ist also kein Drama, ein Leck ohne Anzug schon."
+  ],
+  "en": [
+   "The pieces shield differently: mask 25 percent, gown 40, pants 20, boots 15. Only all four together give full protection.",
+   "Your dose decays over time, by about 0.05 percent per second. Harmful effects only start above a certain severity, so a short dose at the reactor is no drama, a leak without the suit is."
+  ],
+  "sources": [
+   "Mekanism jar: ItemHazmatSuitArmor (0.25, 0.4, 0.2, 0.15)",
+   "srv/config/Mekanism/general.toml (targetDecayRate 0.9995, negativeEffectsMinSeverity 0.1)",
+   "mekanism:hazmat_pants, mekanism:hazmat_boots, mekanism:dosimeter"
+  ]
+ },
+ "sodium": {
+  "de": [
+   "Natrium kommt aus dem [[mekanism:electrolytic_separator]]: 10 mB Sole geben 1 mB Natrium und 1 mB Chlor, siehe {{mekanism/gas_sodium}}. Für einen Kreislauf brauchst du nur eine Füllung, das abgekühlte Natrium kommt aus dem Kessel zurück.",
+   "Das heiße Natrium geht in den Thermoelektrischen Dampfkessel ({{mekanism_advanced/boiler}}), der Dampf weiter in die Turbine. Der Reaktor bekommt dann Natrium statt Wasser in die Eingangs-Schnittstelle."
+  ],
+  "en": [
+   "Sodium comes from the [[mekanism:electrolytic_separator]]: 10 mB of brine give 1 mB of sodium and 1 mB of chlorine, see {{mekanism/gas_sodium}}. A loop needs only one filling, since the cooled sodium comes back from the boiler.",
+   "The superheated sodium goes into the thermoelectric boiler ({{mekanism_advanced/boiler}}), its steam on into the turbine. The reactor then gets sodium instead of water through its input port."
+  ],
+  "sources": [
+   "mekanism:separator/brine",
+   "mekanism:boiler_valve (stage 3)"
+  ],
+  "client": [
+   "Kessel nimmt überhitztes Natrium als Wärmequelle und gibt Natrium zurück"
+  ]
+ },
+ "waste": {
+  "de": [
+   "Der [[mekanism:solar_neutron_activator]] arbeitet mit Sonnenlicht: Seine Leistung hängt von der Sonnenhelligkeit ab, und Regen bremst ihn. Nachts steht er, plan also Tanks für den Atommüll der Nacht ein.",
+   "Rezept: oben Verstärkte Legierung, HDPE Platte, Verstärkte Legierung, in der Mitte Elitärer Steuerschaltkreis, [[mekanism:steel_casing]], Elitärer Steuerschaltkreis, unten 3 Bronze. Jedes Gerät kostet also 2 Elite-Schaltkreise."
+  ],
+  "en": [
+   "The [[mekanism:solar_neutron_activator]] runs on sunlight: its output depends on the sun's brightness, and rain slows it down. At night it stops, so plan tanks for the night's nuclear waste.",
+   "Recipe: reinforced alloy, HDPE sheet, reinforced alloy on top, elite control circuit, [[mekanism:steel_casing]], elite control circuit in the middle, 3 bronze at the bottom. Each one costs 2 elite circuits."
+  ],
+  "sources": [
+   "mekanism:processing/lategame/polonium",
+   "mekanism:solar_neutron_activator (A#A/CXC/III)",
+   "Mekanism jar: TileEntitySolarNeutronActivator (WorldUtils.getSunBrightness, Level.isRaining, biome precipitation)"
+  ]
+ },
+ "polonium": {
+  "de": [
+   "Die [[mekanism:pressurized_reaction_chamber]] braucht für ein Pellet 1 000 mB Polonium, 1 000 mB Wasser und einen [[mekanism:dust_fluorite]]. Fluoritstaub kommt aus dem [[mekanism:crusher]], ein Fluorit gibt einen Staub.",
+   "Ein SPS-Gehäuse frisst 4 Pellets, die Spule 3. Der Verbrauchte Atommüll, der übrig bleibt, gehört in eine [[mekanism:radioactive_waste_barrel]]."
+  ],
+  "en": [
+   "The [[mekanism:pressurized_reaction_chamber]] needs 1,000 mB of polonium, 1,000 mB of water and one [[mekanism:dust_fluorite]] per pellet. Fluorite dust comes from the [[mekanism:crusher]], one fluorite gives one dust.",
+   "An SPS casing eats 4 pellets, the coil 3. The spent nuclear waste left over belongs in a [[mekanism:radioactive_waste_barrel]]."
+  ],
+  "sources": [
+   "mekanism:processing/lategame/polonium_pellet/from_reaction",
+   "mekanism:processing/fluorite/to_dust",
+   "mekanism:sps_casing, mekanism:supercharged_coil"
+  ]
+ },
+ "plutonium": {
+  "de": [
+   "Die [[mekanism:isotopic_centrifuge]] macht aus 10 mB Atommüll 1 mB Plutonium, ein [[mekanism:pellet_plutonium]] kostet also 10 000 mB Atommüll. In der [[mekanism:pressurized_reaction_chamber]] kommen wie beim Polonium 1 000 mB Wasser und ein Fluoritstaub dazu.",
+   "Du brauchst Plutonium-Pellets für SPS-Gehäuse (eins pro Block) und QIO-Laufwerke. Jedes mB Atommüll, das hier landet, fehlt dem Polonium, also teil den Müll bewusst auf."
+  ],
+  "en": [
+   "The [[mekanism:isotopic_centrifuge]] makes 1 mB of plutonium from 10 mB of nuclear waste, so one [[mekanism:pellet_plutonium]] costs 10,000 mB of waste. In the [[mekanism:pressurized_reaction_chamber]] it takes 1,000 mB of water and one fluorite dust, as with polonium.",
+   "You need plutonium pellets for SPS casings (one per block) and QIO drives. Every mB of waste that ends up here is missing for polonium, so split the waste on purpose."
+  ],
+  "sources": [
+   "mekanism:processing/lategame/plutonium",
+   "mekanism:processing/lategame/plutonium_pellet/from_reaction",
+   "mekanism:sps_casing"
+  ]
+ },
+ "reprocess": {
+  "de": [
+   "Die [[mekanism:chemical_injection_chamber]] zieht beim Injizieren laufend 1 mB Chlorwasserstoff pro Tick. Chlorwasserstoff mischst du im Chemischen Injektor aus Wasserstoff und Chlor, siehe {{mekanism/gas_hcl}}.",
+   "Die Rechnung: 10 000 mB Atommüll werden über das Pellet zu 8 000 mB Brennstoff, also 80 Prozent zurück. Der neue Brennstoff macht wieder Atommüll, fehlt aber derweil dem Polonium."
+  ],
+  "en": [
+   "The [[mekanism:chemical_injection_chamber]] draws 1 mB of hydrogen chloride per tick while it works. Mix hydrogen chloride from hydrogen and chlorine in the chemical infuser, see {{mekanism/gas_hcl}}.",
+   "The numbers: 10,000 mB of nuclear waste become 8,000 mB of fuel via the pellet, 80 percent back. The new fuel makes waste again, but in the meantime it is missing for polonium."
+  ],
+  "sources": [
+   "mekanism:processing/uranium/reprocessing/from_plutonium (per_tick_usage, hydrogen_chloride 1, 4 fragments)",
+   "mekanism:processing/uranium/reprocessing/to_fuel (2000 mB)",
+   "mekanism:chemical_infusing/hydrogen_chloride"
+  ]
+ },
+ "qio_hyper": {
+  "de": [
+   "Der [[mekanism:teleportation_core]] in der Mitte ist auf Kronwerke mit [[botania:mana_pearl]] gebaut: 4 Manaperlen in den Ecken, 2 Atomlegierungen, 2 Gold und ein Diamant.",
+   "Ein Hyperdichtes Laufwerk kostet damit 4 Plutonium-Pellets, also 40 000 mB Atommüll. Bau es erst, wenn der Reaktor schon länger Abfall liefert."
+  ],
+  "en": [
+   "The [[mekanism:teleportation_core]] in the middle is made with [[botania:mana_pearl]] on Kronwerke: 4 mana pearls in the corners, 2 atomic alloy, 2 gold and a diamond.",
+   "One hyper-dense drive costs 4 plutonium pellets, that is 40,000 mB of nuclear waste. Build it once the reactor has been making waste for a while."
+  ],
+  "sources": [
+   "mekanism:qio_drive_hyper_dense (IPI/P#P/IPI)",
+   "mekanism:teleportation_core (#A#/IDI/#A#, botania:mana_pearl)",
+   "mekanism:processing/lategame/plutonium"
+  ]
+ },
+ "qio_dilating": {
+  "de": [
+   "Ein [[mekanism:qio_drive_time_dilating]] steckt in vier Hyperdichten Laufwerken: zusammen 20 Plutonium-Pellets, 4 Teleportationskerne, 16 QIO-Laufwerke und ein Polonium-Pellet.",
+   "Das Supermassive braucht vier davon und ein Antimaterie-Pellet, das dem Obelisken fehlt. Lohnt sich nur, wenn eure Antimaterie schon reicht."
+  ],
+  "en": [
+   "A [[mekanism:qio_drive_time_dilating]] contains four hyper-dense drives: together 20 plutonium pellets, 4 teleportation cores, 16 QIO drives and one polonium pellet.",
+   "The supermassive drive takes four of these and an antimatter pellet the obelisk then lacks. Only worth it once your antimatter is enough."
+  ],
+  "sources": [
+   "mekanism:qio_drive_time_dilating (IPI/P#P/IPI)",
+   "mekanism:qio_drive_hyper_dense",
+   "mekanism:qio_drive_supermassive"
+  ]
+ },
+ "sps_casing": {
+  "de": [
+   "Jedes [[mekanism:sps_casing]] kostet 4 [[mekanism:hdpe_sheet]], 4 Polonium-Pellets und ein Plutonium-Pellet. An Rohstoff sind das 4 000 mB Polonium und 1 000 mB Plutonium, also 50 000 mB Atommüll pro Block.",
+   "Das SPS ist ein Multiblock von 7 mal 7 mal 7 Blöcken. HDPE Platten macht die Anreicherungskammer aus 3 HDPE-Pellets, siehe {{mekanism_elite/hdpe}}."
+  ],
+  "en": [
+   "Each [[mekanism:sps_casing]] costs 4 [[mekanism:hdpe_sheet]], 4 polonium pellets and one plutonium pellet. In raw material that is 4,000 mB of polonium and 1,000 mB of plutonium, so 50,000 mB of nuclear waste per block.",
+   "The SPS is a 7 by 7 by 7 multiblock. HDPE sheets come from the enrichment chamber, 3 HDPE pellets each, see {{mekanism_elite/hdpe}}."
+  ],
+  "sources": [
+   "mekanism:sps_casing (PAP/A#A/PAP)",
+   "Mekanism jar: SPSValidator (7, 7, 7)",
+   "mekanism:enriching/hdpe_sheet"
+  ],
+  "client": [
+   "Form des SPS (welche Positionen Gehäuse brauchen)"
+  ]
+ },
+ "sps_port": {
+  "de": [
+   "4 [[mekanism:sps_casing]] im Kreuz um einen [[mekanism:ultimate_control_circuit]] geben einen [[mekanism:sps_port]]. Ein Port kostet also 16 Polonium- und 4 Plutonium-Pellets.",
+   "Du brauchst mindestens zwei: einen für das Polonium hinein und einen für die Antimaterie heraus. An einen davon kommt die Spule ({{antimatter/coil}})."
+  ],
+  "en": [
+   "4 [[mekanism:sps_casing]] in a cross around an [[mekanism:ultimate_control_circuit]] make one [[mekanism:sps_port]]. So one port costs 16 polonium and 4 plutonium pellets.",
+   "You need at least two: one for polonium in and one for antimatter out. The coil goes onto one of them ({{antimatter/coil}})."
+  ],
+  "sources": [
+   "mekanism:sps_port ( # /#C#/ # )"
+  ]
+ },
+ "coil": {
+  "de": [
+   "Der [[mekanism:laser]] in der Mitte ist der aus {{mekanism_elite/laser}}: Diamant, Verstärkte Legierung, Energietablett und Stahlgehäuse. Oben kommen 3 Kupferbarren hin, keine Bleche.",
+   "Mehr Spulen bringen mehr Strom in das SPS, jede sitzt an einem eigenen Port. Für den Anfang reicht eine."
+  ],
+  "en": [
+   "The [[mekanism:laser]] in the middle is the one from {{mekanism_elite/laser}}: diamond, reinforced alloy, energy tablet and steel casing. The top row takes 3 copper ingots, not sheets.",
+   "More coils feed more power into the SPS, each on a port of its own. One is enough to start."
+  ],
+  "sources": [
+   "mekanism:supercharged_coil (ccc/C#C/AAA, c:ingots/copper)",
+   "mekanism:laser"
+  ],
+  "client": [
+   "Mehrere Spulen an mehreren Ports erhöhen die Energieaufnahme des SPS"
+  ]
+ },
+ "wind": {
+  "de": [
+   "Der [[mekmm:large_wind_generator]] braucht eine [[mekanism:ultimate_induction_cell]] aus der Induktionsmatrix ({{mekanism_elite/induction_cell}}) und einen [[mekanism:robit]].",
+   "Zum Vergleich der Bedarf: Das SPS will 1 000 000 J pro mB Polonium, ein Pellet also eine Billion J. Ein Großer Windgenerator mit 3 000 000 J/t im Mittel schafft damit rund 5 Pellets am Tag. Für 100 Pellets in den 14 Tagen von Stufe 5 braucht ihr mindestens zwei, und genug Polonium dazu."
+  ],
+  "en": [
+   "The [[mekmm:large_wind_generator]] needs an [[mekanism:ultimate_induction_cell]] from the induction matrix ({{mekanism_elite/induction_cell}}) and a [[mekanism:robit]].",
+   "Compare the demand: the SPS wants 1,000,000 J per mB of polonium, so one pellet is a trillion J. A large wind generator at 3,000,000 J/t on average manages about 5 pellets a day. For 100 pellets in the 14 days of stage 5 you need at least two, and enough polonium as well."
+  ],
+  "sources": [
+   "mekmm:large_wind_generator (BCB/BRB/BTB)",
+   "srv/config/MekanismMoreMachine/generators.toml (generationMin 2250000, generationMax 3750000)",
+   "srv/config/Mekanism/general.toml (sps energyPerInput 1000000)",
+   "docs/STAGES.md (stage 5: 14 days)"
+  ]
+ },
+ "sps": {
+  "de": [
+   "Rechne den Atommüll von hinten: 1 mB Antimaterie braucht 1 000 mB Polonium aus 10 000 mB Atommüll. Bei Brennrate 10 mB/t liefert ein Reaktor in einer Stunde 720 000 mB Abfall, genug für 72 mB Antimaterie. Für ein Pellet läuft so ein Reaktor knapp 14 Stunden.",
+   "Das SPS speichert nur 1 000 mB Antimaterie, genau ein Pellet. Lass den Ausgangsport darum dauernd in den Kristallisator laufen ({{antimatter/pellet}}), sonst steht es voll."
+  ],
+  "en": [
+   "Work the waste out backwards: 1 mB of antimatter needs 1,000 mB of polonium from 10,000 mB of nuclear waste. At a burn rate of 10 mB/t one reactor makes 720,000 mB of waste per hour, enough for 72 mB of antimatter. For one pellet such a reactor runs almost 14 hours.",
+   "The SPS stores only 1,000 mB of antimatter, exactly one pellet. So let the output port feed the crystallizer all the time ({{antimatter/pellet}}), or it fills up and stops."
+  ],
+  "sources": [
+   "srv/config/Mekanism/general.toml (sps inputPerAntimatter 1000, outputTankCapacity 1000, energyPerInput 1000000)",
+   "mekanism:processing/lategame/polonium"
+  ]
+ },
+ "pellet": {
+  "de": [
+   "Der [[mekanism:chemical_crystallizer]] ist ein Gerät aus Stufe 4: Fluorit, Ultimative Steuerschaltkreise, Raffinierter Obsidian und ein Stahlgehäuse. Häng ihn direkt an den Ausgangsport des SPS.",
+   "Gas im Tank zählt am Obelisken nicht, nur fertige [[mekanism:pellet_antimatter]]. Zum Lagern ist der Weg über den Oxidierer zurück verlustfrei, 1 Pellet gibt wieder 1 000 mB."
+  ],
+  "en": [
+   "The [[mekanism:chemical_crystallizer]] is a stage 4 machine: fluorite, ultimate control circuits, refined obsidian and a steel casing. Put it straight on the SPS output port.",
+   "Gas in a tank does not count at the obelisk, only finished [[mekanism:pellet_antimatter]]. For storage the way back through the oxidizer loses nothing, 1 pellet gives 1,000 mB again."
+  ],
+  "sources": [
+   "mekanism:processing/lategame/antimatter_pellet/from_gas",
+   "mekanism:processing/lategame/antimatter/from_pellet",
+   "mekanism:chemical_crystallizer (stage 4)",
+   "config/kronwerke/goals.json (mekanism:pellet_antimatter)"
+  ]
+ },
+ "goal": {
+  "de": [
+   "Am Obelisken gibt Rechtsklick den Stapel in der Hand ab, Schleichen und Rechtsklick alles Passende aus den **Hauptreihen** des Inventars. Pellets in Schnellleiste, Nebenhand oder Rucksack bleiben dabei liegen.",
+   "Jedes Pellet zählt 30 Punkte auf der Technik-Säule, ein Erwachter Draconiumblock 50 ({{draconic_chaos/goal}}). Bei 98 Prozent wird der Termin für den Kampf gesetzt, siehe {{finale/start}}."
+  ],
+  "en": [
+   "At the obelisk a right click hands in the stack in your hand, sneak and right click everything that fits from the **main rows** of your inventory. Pellets in the hotbar, offhand or a backpack stay where they are.",
+   "Each pellet counts 30 points on the tech pillar, an awakened draconium block 50 ({{draconic_chaos/goal}}). At 98 percent the date of the fight is set, see {{finale/start}}."
+  ],
+  "sources": [
+   "docs/STAGES.md (What the obelisk is; stage 5 table)",
+   "config/kronwerke/goals.json (stage5 holdAt 0.98, weights 30 and 50)",
+   "core: obelisk sneak click hands in main inventory rows only"
+  ]
+ },
+ "nucleosynthesizer": {
+  "de": [
+   "Weitere Rezepte, mit dem Verbrauch an Antimaterie: Zinnbarren zu Eisen (1 mB), Bogen zu Armbrust (1), Obsidian zu Weinendem Obsidian (1), blaue, rote, gelbe und hellgraue Wolle zu Lapis-, Redstone-, Glowstone- und Quarzblock (je 2), Amethyst zu Echoscherbe (2), Diamant zu Smaragd (4), Diamantschwert zu Dreizack (4), Leuchtfeuer zu Endkristall (3), Goldener Apfel zu Verzaubertem (3), Skelettschädel zu Witherskelettschädel (5), Netherstern zu Herz des Meeres (5).",
+   "Ein Pellet sind 1 000 mB, damit kommst du weit. Alle Rezepte zeigt EMI unter dem [[mekanism:antiprotonic_nucleosynthesizer]]."
+  ],
+  "en": [
+   "More recipes, with their antimatter cost: tin ingot to iron (1 mB), bow to crossbow (1), obsidian to crying obsidian (1), blue, red, yellow and light grey wool to lapis, redstone, glowstone and quartz blocks (2 each), amethyst to echo shard (2), diamond to emerald (4), diamond sword to trident (4), beacon to end crystal (3), golden apple to enchanted golden apple (3), skeleton skull to wither skeleton skull (5), nether star to heart of the sea (5).",
+   "One pellet is 1,000 mB, so that goes a long way. EMI shows every recipe under the [[mekanism:antiprotonic_nucleosynthesizer]]."
+  ],
+  "sources": [
+   "mekanism:nucleosynthesizing/* (iron, crossbow, crying_obsidian, lapis_block, redstone_block, glowstone_block, quartz_block, echo_shard, emerald, trident, end_crystal, enchanted_golden_apple, wither_skeleton_skull, heart_of_the_sea)",
+   "mekanism:antiprotonic_nucleosynthesizer"
+  ]
+ },
+ "uu": {
+  "de": [
+   "Der teure Teil ist der [[mekmm:empty_crystal]]: Die Druckreaktionskammer macht einen aus **64 Schrottkisten**, 10 000 mB D-T-Brennstoff wie für die Fusion ({{mekanism_elite/fuel}}) und 10 000 mB Instabilem Dimensionsgas aus dem Ambient Gas Collector. Eine Schrottkiste presst der Osmium Kompressor aus 64 Schrott.",
+   "Schrott kommt aus dem Recycler ({{mekanism_advanced/recycler}}): Stein und Erde geben mit 17 Prozent einen, Substrat mit 43 Prozent. Eine UU-Materie steckt damit in 262 144 Schrott, plan die Recycler-Reihe also vor dem ersten Kristall."
+  ],
+  "en": [
+   "The expensive part is the [[mekmm:empty_crystal]]: the pressurized reaction chamber makes one from **64 scrap boxes**, 10,000 mB of D-T fuel as for fusion ({{mekanism_elite/fuel}}) and 10,000 mB of unstable dimensional gas from the ambient gas collector. The osmium compressor presses a scrap box from 64 scrap.",
+   "Scrap comes from the recycler ({{mekanism_advanced/recycler}}): stone and dirt give one with 17 percent, substrate with 43 percent. One UU matter therefore holds 262,144 scrap, so plan the recycler row before the first crystal."
+  ],
+  "sources": [
+   "mekmm:nucleosynthesizing/uu_matter (64 empty_crystal, 2 mB antimatter)",
+   "mekmm:reaction/empty_crystal (64 scrap_box, 10000 c:fusion_fuel, 10000 mekmm:unstable_dimensional_gas)",
+   "mekmm:compressing/scrap_box (64 scrap, osmium)",
+   "mekmm:recycler/from_stone, from_dirt, from_substrate",
+   "mekmm jar lang info.mekmm.jei.unstable_dimensional_gas"
+  ]
+ },
+ "dragon_egg": {
+  "de": [
+   "Ein Ei kostet 4 mB Antimaterie, aus einem Pellet werden also 250 Dracheneier. Normale Hühnereier liefert dir jeder Hühnerstall.",
+   "Das echte Drachenei aus dem Ende gibt es nur einmal pro Welt, hier machst du so viele, wie du brauchst. Gebraucht wird es unter anderem für den Chaotischen Fusionsinjektor von Draconic Evolution ({{draconic_chaos/chaotic_injector}}) und für das Arkane Drachenei von Forbidden and Arcanus."
+  ],
+  "en": [
+   "An egg costs 4 mB of antimatter, so one pellet makes 250 dragon eggs. Plain chicken eggs come from any chicken coop.",
+   "The real dragon egg from the End exists once per world; here you make as many as you need. It goes into, among others, Draconic Evolution's chaotic crafting injector ({{draconic_chaos/chaotic_injector}}) and Forbidden and Arcanus' arcane dragon egg."
+  ],
+  "sources": [
+   "mekanism:nucleosynthesizing/dragon_egg (minecraft:egg, 4 mB, 1000 ticks)",
+   "draconicevolution:machines/chaotic_crafting_injector, forbidden_arcanus:arcane_dragon_egg (uses of minecraft:dragon_egg)"
+  ]
+ },
+ "grav_module": {
+  "de": [
+   "Neben Atomlegierung und Netherstern stecken zwei [[mekanism:ultimate_induction_provider]] darin, siehe {{mekanism_elite/induction_provider}}. Das Modul baust du im Modifikationsgerät in die Brustplatte ({{mekanism_elite/modstation}}).",
+   "1 000 J pro Tick sind 400 FE/t, im Flug also 8 000 FE pro Sekunde. Ein Geräusch für Sculk-Sensoren macht es dabei auch, wer über einer Antiken Stadt fliegt, kann den Wärter wecken."
+  ],
+  "en": [
+   "Besides atomic alloy and a nether star it takes two [[mekanism:ultimate_induction_provider]] from {{mekanism_elite/induction_provider}}. Install the module in the chestplate at the modification station ({{mekanism_elite/modstation}}).",
+   "1,000 J per tick is 400 FE/t, so 8,000 FE per second in flight. It also gives off vibrations for sculk sensors: fly over an ancient city and you may wake the warden."
+  ],
+  "sources": [
+   "mekanism:module_gravitational_modulating_unit (A#A/EPE/HHH)",
+   "srv/config/Mekanism/gear.toml (gravitationalModulation 1000, gravitationalVibrations true)",
+   "srv/config/Mekanism/general.toml (feConversionRate 2.5)"
+  ]
+ },
+ "teleport_module": {
+  "de": [
+   "Das Modul kommt ins [[mekanism:meka_tool]], eingebaut am Modifikationsgerät ({{mekanism_elite/modstation}}). Jeder Sprung kostet 1 000 J pro 10 Blöcke Weg, ein voller Sprung über 100 Blöcke also 10 000 J.",
+   "Der [[mekanism:teleportation_core]] ist auf Kronwerke mit Manaperlen von Botania gebaut. Die Belohnung gibt dir zwei zurück."
+  ],
+  "en": [
+   "The module goes into the [[mekanism:meka_tool]], installed at the modification station ({{mekanism_elite/modstation}}). Each jump costs 1,000 J per 10 blocks, so a full 100 block jump is 10,000 J.",
+   "The [[mekanism:teleportation_core]] is made with Botania mana pearls on Kronwerke. The reward gives you two back."
+  ],
+  "sources": [
+   "mekanism:module_teleportation_unit (A#A/APA/HHH)",
+   "srv/config/Mekanism/gear.toml (maxTeleportReach 100, teleport 1000 per 10 blocks)",
+   "mekanism:teleportation_core"
+  ]
+ },
+ "elytra_module": {
+  "de": [
+   "Richtig ist: [[mekanism:hdpe_elytra]] oben **Atomlegierung, HDPE Platte, Atomlegierung**, in der Mitte HDPE, [[minecraft:elytra]], HDPE, unten HDPE in den Ecken. Das Modul: Verstärkte Legierung oben links und rechts und Mitte links und rechts, die HDPE-Elytra oben in der Mitte, das Basismodul in der Mitte, unten Polonium, Antimaterie-Pellet, Polonium.",
+   "32 000 J pro Sekunde Flug sind 12 800 FE. Die Elytra holst du aus Endschiffen ({{the_end/elytra}})."
+  ],
+  "en": [
+   "The correct recipe: [[mekanism:hdpe_elytra]] with **atomic alloy, HDPE sheet, atomic alloy** on top, HDPE, [[minecraft:elytra]], HDPE in the middle, HDPE in the bottom corners. The module: reinforced alloy top left and right and middle left and right, the HDPE elytra top centre, the module base in the middle, polonium, antimatter pellet, polonium at the bottom.",
+   "32,000 J per second of flight is 12,800 FE. Get the elytra from End ships ({{the_end/elytra}})."
+  ],
+  "sources": [
+   "mekanism:hdpe_elytra (AHA/HPH/H H)",
+   "mekanism:module_elytra_unit (A#A/APA/HNH, c:alloys/elite)",
+   "srv/config/Mekanism/gear.toml (elytra 32000)"
+  ]
+ },
+ "replicator": {
+  "de": [
+   "Das Rezept will mehr als die Quest nennt: 4 Atomlegierungen in den Ecken, UU-Materie oben, 2 Ultimative Steuerschaltkreise neben dem [[mekanism:steel_casing]] und unten in der Mitte eine **Truhe**. Der Flüssigkeits-Replikator hat dort einen Eimer, der Chemikalien-Replikator einen Chemikalienbehälter.",
+   "Der Flüssigkeits-Replikator kopiert Wasser und Lava. Lohnend ist der Gegenstands-Replikator vor allem für Erze: Ein Erz kostet nur 1 mB UU-Materie, ein Barren 5."
+  ],
+  "en": [
+   "The recipe needs more than the quest says: 4 atomic alloys in the corners, UU matter on top, 2 ultimate control circuits beside the [[mekanism:steel_casing]] and a **chest** at bottom centre. The fluid replicator has a bucket there, the chemical replicator a chemical tank.",
+   "The fluid replicator copies water and lava. The item replicator pays off most for ores: an ore costs only 1 mB of UU matter, an ingot 5."
+  ],
+  "sources": [
+   "mekmm:replicator (A#A/CXC/ASA, S c:chests)",
+   "mekmm:fluid_replicator, mekmm:chemical_replicator",
+   "kubejs/data/mekmm/data_maps/item/item_replicator.json",
+   "kubejs/data/mekmm/data_maps/mekanism/chemical/chemical_replicator.json (empty)",
+   "mekmm jar data/mekmm/data_maps/fluid/fluid_replicator.json (#c:water, #c:lava)"
+  ]
+ },
+ "mega_16m": {
+  "de": [
+   "Die 4M-Komponenten kommen aus {{ae2_advanced/mega_4m}}, der [[megacells:accumulation_processor]] aus {{ae2_advanced/accumulation}}. Ein Erwachter Draconiumbarren ({{draconic_chaos/awakened_ingot}}) gibt 9 [[draconicevolution:awakened_draconium_nugget]].",
+   "Eine 16M-Komponente steckt in 3 4M, 9 1M und 27 256k, rechne also den ganzen Baum durch, bevor du anfängst. Zur Zelle wird sie mit einem MEGA-Gehäuse oder direkt mit Polarisiertem Quarzglas, Himmelssteinstaub und Himmelsstahl."
+  ],
+  "en": [
+   "The 4M components come from {{ae2_advanced/mega_4m}}, the [[megacells:accumulation_processor]] from {{ae2_advanced/accumulation}}. One awakened draconium ingot ({{draconic_chaos/awakened_ingot}}) gives 9 [[draconicevolution:awakened_draconium_nugget]].",
+   "One 16M component holds 3 4M, 9 1M and 27 256k components, so work out the whole tree before you start. It becomes a cell with a MEGA housing or directly with vibrant quartz glass, sky stone dust and sky steel."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/ae2.js (kwComponent aba/cdc/aca)",
+   "megacells:cells/standard/item_storage_cell_256m_with_housing, megacells:cells/standard/item_storage_cell_256m",
+   "draconicevolution:decompress/awakened_draconium_nugget",
+   "megacells:cells/standard/item_storage_cell_16m"
+  ]
+ },
+ "mega_256m": {
+  "de": [
+   "Den Baum gibt es nur mit Kronwerke-Rezepten: Jede Stufe nimmt drei der vorigen Komponente, einen [[megacells:accumulation_processor]] oben und ein Erwachtes Draconiumnugget in die Mitte. Ab 64M sitzen [[ae2:matter_ball]] in den Ecken.",
+   "Die fertige Zelle baust du aus Komponente und [[megacells:mega_item_cell_housing]], oder ohne Gehäuse aus Polarisiertem Quarzglas, Himmelssteinstaub und Himmelsstahlbarren."
+  ],
+  "en": [
+   "The tree only exists with Kronwerke recipes: each tier takes three of the previous component, an [[megacells:accumulation_processor]] on top and an awakened draconium nugget in the middle. From 64M on, [[ae2:matter_ball]] sit in the corners.",
+   "Craft the finished cell from the component and a [[megacells:mega_item_cell_housing]], or without housing from vibrant quartz glass, sky stone dust and sky steel ingots."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/ae2.js (cell_component_64m, cell_component_256m)",
+   "megacells:cells/standard/item_storage_cell_256m_with_housing, megacells:cells/standard/item_storage_cell_256m"
+  ]
+ },
+ "bulk": {
+  "de": [
+   "Richtig ist auf Kronwerke: Himmelssteinstaub in den Ecken, oben eine **[[ae2:spatial_cell_component_2]]** (2³, nicht 16³), links und rechts je ein Akkumulationsprozessor, in der Mitte ein Erwachtes Draconiumnugget, unten eine [[megacells:cell_component_1m]].",
+   "Die Zelle: oben Polarisiertes Quarzglas, Himmelssteinstaub, Polarisiertes Quarzglas, in der Mitte Himmelssteinstaub, Bulk-Komponente, Himmelssteinstaub, unten 3 Netheritbarren."
+  ],
+  "en": [
+   "The Kronwerke recipe: sky stone dust in the corners, a **[[ae2:spatial_cell_component_2]]** (2³, not 16³) on top, an accumulation processor left and right, an awakened draconium nugget in the middle and a [[megacells:cell_component_1m]] at the bottom.",
+   "The cell: vibrant quartz glass, sky stone dust, vibrant quartz glass on top, sky stone dust, bulk component, sky stone dust in the middle, 3 netherite ingots at the bottom."
+  ],
+  "sources": [
+   "kronwerke:ae2/bulk_cell_component (aba/cdc/aea, b ae2:spatial_cell_component_2)",
+   "kubejs/server_scripts/kronwerke/ae2.js",
+   "megacells:cells/standard/bulk_item_cell (aba/bcb/ddd)"
+  ]
+ },
+ "quantum": {
+  "de": [
+   "[[advanced_ae:quantum_structure]]: Quarzglas in den Ecken, Himmelsstein an den Seiten, die Mitte frei, gibt ein Stück. Die Singularität selbst kommt aus dem Materiekondensator ({{ae2_advanced/singularity}}), die Reaktionskammer macht daraus mit Enderperlenstaub und Himmelssteinstaub 2 Gespaltene Singularitäten ({{ae2_advanced/shattered}}).",
+   "Für den [[advanced_ae:quantum_core]] brauchst du schon einen Beschleuniger, eine Crafting Unit und den 256M-Speicher des Quantencomputers. Pro Computer sind laut Config höchstens ein Multi-Threader und ein Datenverschränker erlaubt."
+  ],
+  "en": [
+   "[[advanced_ae:quantum_structure]]: quartz glass in the corners, sky stone on the sides, the middle empty, makes one. The singularity itself comes from the matter condenser ({{ae2_advanced/singularity}}); the reaction chamber turns it with ender pearl dust and sky stone dust into 2 shattered singularities ({{ae2_advanced/shattered}}).",
+   "The [[advanced_ae:quantum_core]] already needs an accelerator, a crafting unit and the quantum computer's 256M storage. The config allows at most one multi-threader and one data entangler per computer."
+  ],
+  "sources": [
+   "advanced_ae:quantumstructure (QSQ/S S/QSQ)",
+   "advanced_ae:shatteredsingularity (reaction, 2 out)",
+   "advanced_ae:quantumcore",
+   "srv/config/advanced_ae-common.toml (quantumComputerMaxSize 7, AcceleratorThreads 8, MaxMultiThreaders 1, maxDataEntanglers 1, multiplication 4)"
+  ]
+ }
+}

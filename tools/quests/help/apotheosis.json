@@ -1,0 +1,590 @@
+{
+ "welcome": {
+  "de": [
+   "Die Quest hakt sich ab, sobald ein Affix-Item in deinem Inventar landet, es muss nicht in der Hand sein. In Kisten von Bauwerken wird etwa ein Drittel der Ausrüstung zu Affix-Beute, in Kisten liegen außerdem Edelsteine.",
+   "Das Handbuch Chronicle of Shadows ist formlos: ein [[minecraft:book]] und ein Goldbarren. Als Nächstes aktivierst du {{apotheosis/tiers}}, sonst bleiben die Teile unlesbar."
+  ],
+  "en": [
+   "The quest ticks as soon as an affix item lands in your inventory; it does not have to be in your hand. In structure chests about a third of the gear becomes affix loot, and chests also hold gems.",
+   "The Chronicle of Shadows handbook is shapeless: a [[minecraft:book]] and a gold ingot. Next, activate {{apotheosis/tiers}}, or the items stay unreadable."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/advancement/progression/haven.json (inventory_changed, affixed_item)",
+   "Apotheosis jar: data/apotheosis/loot_modifiers/affix_loot_injection.json, affix_conversion.json (0.3 to 0.35), gem_loot_injection.json",
+   "apotheosis:book"
+  ]
+ },
+ "rarities": {
+  "de": [
+   "Die Chancen hängen an deiner Weltstufe: Haven 60, 36 und 4 Prozent für Common, Uncommon und Rare. Frontier 29, 60, 10 und schon 1 Prozent Epic, Ascent 10, 30, 50 und **10 Prozent Epic**. Mythic gibt es ab Summit (5 Prozent) und Pinnacle (25).",
+   "Summit verlangt den Wither, also den Nether ab Stufe 2, Pinnacle den Enderdrachen in Stufe 4. Ascent erreichst du dagegen schon in Stufe 1 ({{apotheosis/invaders}})."
+  ],
+  "en": [
+   "The odds follow your world tier: Haven 60, 36 and 4 percent for common, uncommon and rare. Frontier 29, 60, 10 and already 1 percent epic, Ascent 10, 30, 50 and **10 percent epic**. Mythic starts at Summit (5 percent) and Pinnacle (25).",
+   "Summit needs the Wither, so the Nether from stage 2, Pinnacle the Ender Dragon in stage 4. Ascent, on the other hand, is reachable in stage 1 ({{apotheosis/invaders}})."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/rarities/*.json (weights per tier)",
+   "Apotheosis jar: data/apotheosis/advancement/progression/ascent.json, summit.json (kill_wither), pinnacle.json (kill_ender_dragon)",
+   "docs/STAGES.md (Nether stage 2, End stage 4)"
+  ]
+ },
+ "tiers": {
+  "de": [
+   "So schaltest du die Stufen frei: Frontier mit einem Affix-Teil in allen fünf Plätzen (vier Rüstungsteile und Hand). Ascent mit Uncommon oder besser in allen fünf und einem getöteten Invader. Summit mit Rare in allen fünf und dem Wither, Pinnacle mit Epic in allen fünf und dem Enderdrachen.",
+   "Die Weltstufe deckelt auch deinen Zaubertisch: Haven Eterna 30, Frontier 45, Ascent 60, Summit 75, Pinnacle 100. Du kannst jederzeit eine niedrigere Stufe wählen, wenn dir die Monster zu stark werden."
+  ],
+  "en": [
+   "This is how the tiers unlock: Frontier with an affix item in all five slots (four armour pieces and hand). Ascent with uncommon or better in all five and a slain invader. Summit with rare in all five and the Wither, Pinnacle with epic in all five and the Ender Dragon.",
+   "The world tier also caps your enchanting table: Haven Eterna 30, Frontier 45, Ascent 60, Summit 75, Pinnacle 100. You can pick a lower tier at any time if the monsters get too strong."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/advancement/progression/*.json",
+   "Apotheosis jar: data/apotheosis/tier_augments/*/max_eterna.json (-70, -55, -40, -25, none)",
+   "srv/config/apotheosis/apotheosis.cfg (Enable Manual World Tier Changes true)"
+  ],
+  "client": [
+   "Eine bereits freigeschaltete niedrigere Weltstufe lässt sich im Menü wieder aktivieren"
+  ]
+ },
+ "frontier": {
+  "de": [
+   "Gezählt wird beim Anlegen: Zieh die fünf Teile nacheinander an, die Reihenfolge ist egal. Auch die Edelsteine werden besser, in Frontier fallen 23 Prozent Cracked, 54 Chipped, 18 Flawed und 5 Prozent Normal.",
+   "Die nächste Stufe Ascent will dasselbe Set in mindestens Uncommon und einen getöteten Invader ({{apotheosis/invaders}})."
+  ],
+  "en": [
+   "It counts when you equip: put the five pieces on one after the other, in any order. Gems get better too: in Frontier 23 percent cracked, 54 chipped, 18 flawed and 5 percent normal.",
+   "The next tier, Ascent, wants the same set in at least uncommon and a slain invader ({{apotheosis/invaders}})."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/advancement/progression/frontier.json (apotheosis:equipped_item per slot)",
+   "Apotheosis jar: data/apotheosis/purity_weights/weights.json (frontier)",
+   "Apotheosis jar: data/apotheosis/advancement/progression/ascent.json"
+  ]
+ },
+ "invaders": {
+  "de": [
+   "Der erste getötete Invader ist zusammen mit einem Uncommon-Set die Bedingung für die Weltstufe Ascent. Dort steigt Rare auf 50 Prozent und Epic auf 10, und dein Zaubertisch darf bis Eterna 60.",
+   "Geh nicht allein: Invader tragen bessere Affixe als normale Monster. Ein Lichtstrahl in der Ferne lohnt den Umweg."
+  ],
+  "en": [
+   "The first slain invader, together with an uncommon set, unlocks the world tier Ascent. There rare rises to 50 percent and epic to 10, and your enchanting table may reach Eterna 60.",
+   "Do not go alone: invaders carry stronger affixes than normal monsters. A light beam in the distance is worth the detour."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/advancement/progression/ascent.json (kill_apothic_invader)",
+   "Apotheosis jar: data/apotheosis/rarities/rare.json, epic.json (ascent 500, 100)",
+   "Apotheosis jar: data/apotheosis/tier_augments/ascent/max_eterna.json"
+  ]
+ },
+ "gem": {
+  "de": [
+   "Die 4 Prozent gelten nur für Monster, die ein echter Spieler tötet. Tötungen durch Fake-Spieler wie Deployer zählen nur 0,5 Prozent, Fallen ganz ohne Spieler gar nichts. Eine Mobfarm liefert also kaum Edelsteine.",
+   "In Kisten von Vanilla-Bauwerken liegt mit 25 Prozent ein Edelstein, in Kisten anderer Mods mit 20 Prozent. Erkunden lohnt sich darum mehr als Grinden."
+  ],
+  "en": [
+   "The 4 percent only applies to monsters a real player kills. Kills by fake players such as deployers only get 0.5 percent, traps without any player nothing. So a mob farm yields hardly any gems.",
+   "Vanilla structure chests hold a gem with 25 percent, chests from other mods with 20 percent. So exploring pays off more than grinding."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/loot_modifiers/gem_entity_drops_from_real_players.json (0.04), gem_entity_drops.json (killed_by_player, 0.005)",
+   "Apotheosis jar: data/apotheosis/loot_modifiers/gem_loot_injection.json (0.25, 0.2)"
+  ]
+ },
+ "gem_dust": {
+  "de": [
+   "Der Amboss macht aus **jedem Edelstein genau einen** [[apotheosis:gem_dust]], egal welche Reinheit. Die Mengen im Questtext (Cracked ein bis zwei, Flawed zwei bis vier) gelten erst am [[apotheosis:salvaging_table]].",
+   "Wirf ruhig einen ganzen Stapel gleicher Steine hin, der Amboss nimmt alle auf einmal. Für die Quest reichen zwei Edelsteine."
+  ],
+  "en": [
+   "The anvil turns **each gem into exactly one** [[apotheosis:gem_dust]], whatever the purity. The amounts in the quest text (cracked one to two, flawed two to four) only apply at the [[apotheosis:salvaging_table]].",
+   "Feel free to drop a whole stack of the same gem, the anvil takes them all at once. Two gems are enough for the quest."
+  ],
+  "sources": [
+   "Apotheosis jar: AdventureEvents (AnvilLandEvent: gem stack replaced by gem_dust of the same count)",
+   "Apotheosis jar: data/apotheosis/recipe/salvaging/gem/*.json"
+  ]
+ },
+ "salvaging": {
+  "de": [
+   "Die [[create:copper_sheet]] oben sind die Kronwerke-Änderung, sonst wären es Kupferbarren. Bleche presst die Mechanische Presse von Create.",
+   "Gem Dust ist hier besser als am Amboss: Cracked gibt ein bis zwei, Chipped ein bis drei, Flawed zwei bis vier, Normal drei bis fünf. Eisenwerkzeug gibt dagegen nur null bis ein Eisenbarren zurück."
+  ],
+  "en": [
+   "The [[create:copper_sheet]] on top are the Kronwerke change; otherwise it would be copper ingots. Sheets come from Create's mechanical press.",
+   "Gem dust is better here than at the anvil: cracked gives one to two, chipped one to three, flawed two to four, normal three to five. Iron tools, on the other hand, give back only zero or one iron ingot."
+  ],
+  "sources": [
+   "apotheosis:salvaging_table (III/RSO/GLG, create:copper_sheet)",
+   "kubejs/server_scripts/kronwerke/links.js (swap #c:ingots/copper to create:copper_sheet)",
+   "Apotheosis jar: data/apotheosis/recipe/salvaging/gem/*.json, other/iron_tools.json"
+  ]
+ },
+ "materials": {
+  "de": [
+   "Jedes Affix-Item gibt ein bis vier Stück, im Schnitt zweieinhalb. Für 8 [[apotheosis:mysterious_scrap_metal]] reichen meist drei bis vier Common-Teile, für 3 [[apotheosis:timeworn_fabric]] ein bis zwei Uncommon.",
+   "Mit den Materialien geht es zu {{apotheosis/gem_cutting}} und zu den Upgrade-Vorlagen ({{apotheosis/iron_template}}). Arcane Sands bekommst du schon ab der Weltstufe Ascent, dort fällt Epic zu 10 Prozent."
+  ],
+  "en": [
+   "Each affix item gives one to four, two and a half on average. Three to four common pieces usually make the 8 [[apotheosis:mysterious_scrap_metal]], one or two uncommon pieces the 3 [[apotheosis:timeworn_fabric]].",
+   "The materials go into {{apotheosis/gem_cutting}} and the upgrade templates ({{apotheosis/iron_template}}). You can get arcane sands from world tier Ascent on, where epic drops at 10 percent."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/recipe/salvaging/affix_item/*.json (1 to 4)",
+   "Apotheosis jar: data/apotheosis/rarities/epic.json (ascent 100, material arcane_sands)"
+  ]
+ },
+ "gem_cutting": {
+  "de": [
+   "Die Stufen über Normal gehen schon mit Material aus Stufe 1: Normal zu Flawless kostet 7 Gem Dust und 27 Timeworn Fabric oder 9 Crystal Shards (oder 3 Arcane Sands, 1 Godforged Pearl). Flawless zu Perfect kostet 9 Gem Dust und 27 Crystal Shards, 9 Arcane Sands oder 3 Godforged Pearls.",
+   "Beide Edelsteine müssen dieselbe Sorte und dieselbe Reinheit haben. Heb darum gleiche Steine auf, statt sie zu zerlegen."
+  ],
+  "en": [
+   "The steps above normal already work with stage 1 material: normal to flawless costs 7 gem dust and 27 timeworn fabric or 9 crystal shards (or 3 arcane sands, 1 godforged pearl). Flawless to perfect costs 9 gem dust and 27 crystal shards, 9 arcane sands or 3 godforged pearls.",
+   "Both gems must be the same kind and the same purity. So keep matching gems instead of salvaging them."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/recipe/gem_cutting/normal.json, flawless.json",
+   "apotheosis:gem_cutting_table (SHS/PGP/P P)"
+  ],
+  "client": [
+   "Zweiter Edelstein muss gleiche Sorte haben (nicht nur gleiche Reinheit)"
+  ]
+ },
+ "slate": {
+  "de": [
+   "Das Rezept will echten [[minecraft:deepslate]], nicht Bruchtiefenschiefer. Abgebaut bekommst du den nur mit Behutsamkeit, sonst schmilz Bruchtiefenschiefer im Ofen oder schick ihn durch die Anreicherungskammer von Mekanism.",
+   "Ein Gem Dust gibt 8 Slate. Für ein Set Siegel (3 Socketing, 6 Rebirth, 6 Unnaming) brauchst du 9 Slate, also 2 Rezepte."
+  ],
+  "en": [
+   "The recipe wants real [[minecraft:deepslate]], not cobbled deepslate. Mining gives it only with Silk Touch; otherwise smelt cobbled deepslate in a furnace or run it through Mekanism's enrichment chamber.",
+   "One gem dust makes 8 slate. One batch of sigils (3 socketing, 6 rebirth, 6 unnaming) takes 9 slate, so 2 crafts."
+  ],
+  "sources": [
+   "apotheosis:gem_fused_slate (DDD/DGD/DDD, minecraft:deepslate)",
+   "minecraft:deepslate (smelting), mekanism:enriching/conversion/deepslate/from_cobbled",
+   "apotheosis:sigil_of_socketing, apotheosis:sigil_of_rebirth, apotheosis:sigil_of_unnaming"
+  ]
+ },
+ "socketing": {
+  "de": [
+   "Das Limit von zwei Sockeln gilt nur für die Siegel. Hat ein Rare-Item schon zwei Sockel, bringt ein weiteres Siegel nichts.",
+   "Edelsteine sitzen fest: Herausholen kannst du sie erst mit dem Sigil of Withdrawal, das eine Lohenrute braucht und darum auf den Nether in Stufe 2 wartet."
+  ],
+  "en": [
+   "The two socket limit only applies to sigils. If a rare item already has two sockets, another sigil does nothing.",
+   "Gems are stuck once set: you can only get them out with the Sigil of Withdrawal, which needs a blaze rod and therefore waits for the Nether in stage 2."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/recipe/sigil_add_sockets.json (max_sockets 2)",
+   "apotheosis:sigil_of_withdrawal (minecraft:blaze_rod)",
+   "docs/STAGES.md (Nether stage 2)"
+  ],
+  "client": [
+   "Ein Siegel auf einem Item mit bereits zwei Sockeln wird abgelehnt"
+  ]
+ },
+ "rebirth": {
+  "de": [
+   "Ein Rezept kostet 6 [[apotheosis:gem_fused_slate]] und 3 Gem Dust, also gut einen halben Gem Dust pro Siegel. Später kosten Epic 4 und Mythic 5 Siegel pro Umschmieden.",
+   "Weiter geht es mit {{apotheosis/reforge_table}}."
+  ],
+  "en": [
+   "One craft costs 6 [[apotheosis:gem_fused_slate]] and 3 gem dust, so a little over half a gem dust per sigil. Later, epic costs 4 and mythic 5 sigils per reforge.",
+   "Next up is {{apotheosis/reforge_table}}."
+  ],
+  "sources": [
+   "apotheosis:sigil_of_rebirth (GGG/EEE/GGG)",
+   "Apotheosis jar: data/apotheosis/recipe/reforging/*.json (sigil_cost)"
+  ]
+ },
+ "reforge_table": {
+  "de": [
+   "Den [[ars_nouveau:source_gem]] oben hat Kronwerke statt eines Eisenbarrens eingesetzt. Quelljuwelen machst du in der Imbuement Chamber von Ars Nouveau, siehe {{ars_nouveau/first_gem}}.",
+   "Ein Uncommon-Item auf Uncommon neu würfeln kostet 2 Timeworn Fabric, ein Siegel und 5 Level. Du wählst die Zielseltenheit über das Material, du kannst ein Common-Item also mit Fabric gleich zu Uncommon machen."
+  ],
+  "en": [
+   "Kronwerke put the [[ars_nouveau:source_gem]] on top in place of an iron ingot. Make source gems in the Ars Nouveau imbuement chamber, see {{ars_nouveau/first_gem}}.",
+   "Rerolling to uncommon costs 2 timeworn fabric, one sigil and 5 levels. The material picks the target rarity, so you can turn a common item into an uncommon one with fabric."
+  ],
+  "sources": [
+   "apotheosis:simple_reforging_table ( I /GEG/SSS, ars_nouveau:source_gem)",
+   "kubejs/server_scripts/kronwerke/links.js (swap #c:ingots/iron to ars_nouveau:source_gem)",
+   "Apotheosis jar: data/apotheosis/recipe/reforging/uncommon.json"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Die Godforged Pearls für den Augmenting Table und die Enhancement-Siegel fallen nur aus Mythic-Beute, und Mythic gibt es ab der Weltstufe Summit nach dem Wither. Ein Sigil of Enhancement: vier Slate, vier Gem Dust und eine Pearl geben vier.",
+   "Arcane Sands für den großen Reforging Table bekommst du schon in Ascent aus zerlegtem Epic."
+  ],
+  "en": [
+   "The godforged pearls for the augmenting table and the enhancement sigils only come from mythic loot, and mythic starts at world tier Summit after the Wither. A Sigil of Enhancement: four slate, four gem dust and one pearl make four.",
+   "The arcane sands for the big reforging table you can already get in Ascent from salvaged epic items."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/rarities/mythic.json (summit 50, material godforged_pearl), epic.json (ascent 100)",
+   "apotheosis:sigil_of_enhancement (GEG/EOE/GEG, 4)",
+   "srv/config/apotheosis/apotheosis.cfg (augmenting: 2 sigils 225 levels, 1 sigil 175 levels)"
+  ]
+ },
+ "ench_table": {
+  "de": [
+   "Die Weltstufen-Grenzen stimmen mit der Config überein: Haven 30, Frontier 45, Ascent 60, Summit 75, Pinnacle ohne Abzug, also 100. Ascent erreichst du schon in Stufe 1 ({{apotheosis/invaders}}).",
+   "Den Weg zu 45 zeigt {{apotheosis/seashelf}}, zu 60 {{apotheosis/infused_seashelf}}."
+  ],
+  "en": [
+   "The world tier caps match the config: Haven 30, Frontier 45, Ascent 60, Summit 75, Pinnacle without a reduction, so 100. Ascent is already reachable in stage 1 ({{apotheosis/invaders}}).",
+   "The way to 45 is in {{apotheosis/seashelf}}, the way to 60 in {{apotheosis/infused_seashelf}}."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/tier_augments/*/max_eterna.json"
+  ]
+ },
+ "shelves": {
+  "de": [
+   "Für Quanta zählen alle Schädel aus dem Tag: Skelett, Zombie, Creeper und Piglin geben je 5 Prozent, ein Witherskelettschädel 10. Schädel gibt es von geladenen Creepern, den Witherschädel von Witherskeletten im Nether.",
+   "Kronwerke legt noch etwas drauf: jede Große Kerze von Occultism ([[occultism:large_candle]]) gibt **4 Prozent Arcana**, der [[occultism:spirit_attuned_crystal]] 3 Eterna bis 45."
+  ],
+  "en": [
+   "For quanta every skull in the tag counts: skeleton, zombie, creeper and piglin give 5 percent each, a wither skeleton skull 10. Heads come from charged creepers, the wither skull from wither skeletons in the Nether.",
+   "Kronwerke adds a bit more: every Occultism large candle ([[occultism:large_candle]]) gives **4 percent arcana**, the [[occultism:spirit_attuned_crystal]] 3 Eterna up to 45."
+  ],
+  "sources": [
+   "ApothicEnchanting jar: data/apothic_enchanting/enchanting_stats/basic_skulls.json, wither_skull.json, tags/block/basic_skulls.json",
+   "kubejs/data/apothic_enchanting/enchanting_stats/large_candles.json (#occultism:candles arcana 4)",
+   "kubejs/data/apothic_enchanting/enchanting_stats/spirit_attuned_crystal.json (eterna 3, max 45)",
+   "occultism jar: data/occultism/tags/block/candles.json (large candles)"
+  ]
+ },
+ "scrap_tome": {
+  "de": [
+   "Acht Bücher und ein [[minecraft:anvil]] geben gleich acht Tomes, ein Amboss reicht also lange. Das Item geht dabei verloren, nimm darum Beute, die du ohnehin zerlegen würdest.",
+   "Das Tome of Superior Scrapping verlangt bei der Infusion Eterna 45, Quanta 25 bis 50 und Arcana 35 und gibt 4 Stück. Das Tome of Extraction braucht Eterna 60, Quanta 25 bis 75 und Arcana 45."
+  ],
+  "en": [
+   "Eight books and an [[minecraft:anvil]] make eight tomes at once, so one anvil lasts a long time. The item is lost in the process, so use loot you would salvage anyway.",
+   "The Tome of Superior Scrapping needs Eterna 45, quanta 25 to 50 and arcana 35 for its infusion and gives 4. The Tome of Extraction needs Eterna 60, quanta 25 to 75 and arcana 45."
+  ],
+  "sources": [
+   "apothic_enchanting:scrap_tome (BBB/BAB/BBB, 8)",
+   "apothic_enchanting:infusion/improved_scrap_tome, apothic_enchanting:infusion/extraction_tome",
+   "ApothicEnchanting jar lang info.apothic_enchanting.scrap_tome"
+  ]
+ },
+ "seashelf": {
+  "de": [
+   "Ein Prismarinziegel sind 9 Prismarinscherben, ein Seashelf braucht 6 Ziegel. Fünf Seashelves kosten also 270 Scherben, das ist ein Ozeanmonument voll Wächter.",
+   "Für die [[minecraft:potion]] in der Mitte reicht eine Wasserflasche aus einer Glasflasche am Wasser. Das Hellshelf aus dem Nether gibt 3 Eterna bis 45 und 3 Quanta statt Arcana."
+  ],
+  "en": [
+   "A prismarine brick is 9 prismarine shards, and a seashelf takes 6 bricks. Five seashelves therefore cost 270 shards, an ocean monument full of guardians.",
+   "The middle needs only a water bottle, a glass bottle filled at water. The Nether's hellshelf gives 3 Eterna up to 45 and 3 quanta instead of arcana."
+  ],
+  "sources": [
+   "apothic_enchanting:seashelf (PPP/OBU/PPP)",
+   "minecraft:prismarine_bricks (9 shards)",
+   "ApothicEnchanting jar: data/apothic_enchanting/enchanting_stats/seashelf.json, hellshelf.json"
+  ]
+ },
+ "first_infusion": {
+  "de": [
+   "Die Karotte verlangt Eterna **genau 20**: Ein elftes Regal macht das Rezept schon dunkel. Arcana ist ihr egal.",
+   "Die Honigflasche braucht für eine Erfahrungsflasche nicht nur Eterna 20, sondern auch je 25 Prozent Quanta und Arcana. Bei Eterna 60 werden es 8 Flaschen, bei 100 sogar 32."
+  ],
+  "en": [
+   "The carrot wants Eterna of **exactly 20**: an eleventh bookshelf already darkens the recipe. It does not care about arcana.",
+   "For an experience bottle the honey bottle needs not just Eterna 20 but also 25 percent quanta and arcana each. At Eterna 60 it gives 8 bottles, at 100 even 32."
+  ],
+  "sources": [
+   "apothic_enchanting:infusion/carrot (eterna 20 to 20, quanta 10 to 30)",
+   "apothic_enchanting:infusion/xp_bottle, xp_bottle_2, xp_bottle_3"
+  ]
+ },
+ "infused_seashelf": {
+  "de": [
+   "Das Rezept hat nur Untergrenzen, mehr schadet nicht. Melonshelves dürfen hier aber nicht stehen, sie drücken Quanta unter die 15.",
+   "Eine Große Kerze von Occultism am Tisch gibt 4 Prozent Arcana extra, falls dir für ein anderes Rezept etwas fehlt."
+  ],
+  "en": [
+   "The recipe only has lower limits; more does no harm. But keep melonshelves away here, they push quanta below 15.",
+   "An Occultism large candle at the table adds 4 percent arcana if another recipe comes up short."
+  ],
+  "sources": [
+   "apothic_enchanting:infusion/infused_seashelf (requirements only)",
+   "ApothicEnchanting jar: data/apothic_enchanting/enchanting_stats/melonshelf.json (quanta -10)",
+   "kubejs/data/apothic_enchanting/enchanting_stats/large_candles.json"
+  ]
+ },
+ "library": {
+  "de": [
+   "Rezept: 4 [[minecraft:ender_chest]] in die Ecken, 4 infundierte Regale an die Seiten, ein [[minecraft:enchanting_table]] in die Mitte. Infused Seashelves zählen dafür, du brauchst also vier aus {{apotheosis/infused_seashelf}}.",
+   "Die Library of Alexandria wird per Infusion bei Eterna 100, Quanta 45 bis 50 und Arcana 100 aus der normalen Bibliothek."
+  ],
+  "en": [
+   "Recipe: 4 [[minecraft:ender_chest]] in the corners, 4 infused shelves on the sides, an [[minecraft:enchanting_table]] in the middle. Infused seashelves count, so you need four from {{apotheosis/infused_seashelf}}.",
+   "The Library of Alexandria is infused from the normal library at Eterna 100, quanta 45 to 50 and arcana 100."
+  ],
+  "sources": [
+   "apothic_enchanting:library (CSC/STS/CSC, #apothic_enchanting:infused_shelves)",
+   "apothic_enchanting:infusion/ender_library"
+  ],
+  "client": [
+   "Infused Seashelf ist im Tag apothic_enchanting:infused_shelves"
+  ]
+ },
+ "spawner": {
+  "de": [
+   "Behutsamkeit I reicht, der Spawner behält dabei sein Monster. Rogue Spawners erzeugt Apotheosis laut Config nur in der Oberwelt.",
+   "Kronwerke-Verbindung: Ein Monsterspawner allein im Crafting-Gitter wird zum [[enderio:broken_spawner]] von Ender IO (Stufe 3), dem einzigen Weg zum Kaputten Spawner. Den brauchst du für den Powered Spawner ({{enderio/powered_spawner}})."
+  ],
+  "en": [
+   "Silk Touch I is enough, and the spawner keeps its monster. Apotheosis generates rogue spawners only in the overworld, per its config.",
+   "Kronwerke link: a monster spawner alone in the crafting grid becomes an Ender IO [[enderio:broken_spawner]] (stage 3), the only way to a broken spawner. You need it for the powered spawner ({{enderio/powered_spawner}})."
+  ],
+  "sources": [
+   "srv/config/apothic_spawners.cfg (Spawner Silk Level 1, Spawner Silk Damage 100, Spawners Drop Empty false)",
+   "srv/config/apotheosis/apotheosis.cfg (Generation Dimension Whitelist overworld)",
+   "kronwerke:tech/broken_spawner, kubejs/server_scripts/kronwerke/tech.js",
+   "enderio:powered_spawner (enderio:broken_spawner)"
+  ]
+ },
+ "rune": {
+  "de": [
+   "Ein Rezept braucht 5 [[apotheosis:spawner_chain]] und gibt 2 Runen. Aus einem gesprengten Spawner mit 48 bis 64 Chains werden also 18 bis 24 leere Runen.",
+   "Der gesprengte Spawner ist danach weg, nimm also einen doppelten. Die Chains kommen aus der Beutetabelle des instabilen Spawners, nicht aus dem Monster."
+  ],
+  "en": [
+   "One craft needs 5 [[apotheosis:spawner_chain]] and gives 2 runes. A blown up spawner with 48 to 64 chains therefore makes 18 to 24 empty runes.",
+   "The blown up spawner is gone afterwards, so use a spare one. The chains come from the unstable spawner's loot table, not from the monster."
+  ],
+  "sources": [
+   "apotheosis:spawner_rune (GEG/SES/SSS, 2)",
+   "Apotheosis jar: data/apothic_spawners/loot_table/gameplay/unstable_spawner.json (48 to 64)"
+  ],
+  "client": [
+   "Spawner zittert nach TNT und explodiert nach ein paar Sekunden selbst"
+  ]
+ },
+ "frontier_rune": {
+  "de": [
+   "Die Frontier-Rune setzt keine Spawn Range, die bleibt bei 4. Ascent hebt auf 100 bis 400 Ticks, 10 Monster pro Spawn und 18 erlaubt.",
+   "Summit braucht eine Warden-Ranke, ein Sigil of Malice und Arcane Sands, Pinnacle eine Perfect Endersurge und Godforged Pearls. EMI zeigt alle unter dem Monsterspawner."
+  ],
+  "en": [
+   "The frontier rune does not set the spawn range; it stays at 4. Ascent raises it to 100 to 400 ticks, 10 monsters per spawn and 18 allowed.",
+   "Summit needs a warden tendril, a Sigil of Malice and arcane sands, Pinnacle a perfect Endersurge gem and godforged pearls. EMI shows all of them under the monster spawner."
+  ],
+  "sources": [
+   "apotheosis:spawner_modifiers/tier/frontier, tier/ascent",
+   "apotheosis:summit_spawner_upgrade_rune, apotheosis:pinnacle_spawner_upgrade_rune"
+  ]
+ },
+ "stat_runes": {
+  "de": [
+   "Die Echoing-Rune lässt sich bis zu dreimal anwenden. Die Tropfstein-Rune geht in Schritten von 16 Prozent, bis die Monster nur noch mit 20 Prozent Leben starten.",
+   "Die leere Rune infundierst du bei Eterna 70, Quanta 30 und Arcana 50 zur Infused Spawner Rune. Eterna 70 braucht Deepshelves und die Weltstufe Summit."
+  ],
+  "en": [
+   "The echoing rune can be applied up to three times. The dripstone rune works in steps of 16 percent until monsters start with only 20 percent health.",
+   "Infuse the empty rune at Eterna 70, quanta 30 and arcana 50 to get the infused spawner rune. Eterna 70 needs deepshelves and world tier Summit."
+  ],
+  "sources": [
+   "apotheosis:spawner_modifiers/echoing (max 3), initial_health (-0.16, min 0.2)",
+   "apotheosis:infused_spawner_rune (70/30/50)",
+   "Apotheosis jar: data/apotheosis/tier_augments/summit/max_eterna.json"
+  ]
+ },
+ "capturing": {
+  "de": [
+   "Laut Config geht Capturing auf diesem Server **bis Stufe VII**: Aus Beute kommt höchstens III, am Zaubertisch mit genug Eterna mehr. Jede Stufe gibt 0,5 Prozent, Stufe VII also 3,5 Prozent.",
+   "Am Zaubertisch erscheint sie nur auf Schwertern, per Buch und Amboss passt sie auch auf Äxte."
+  ],
+  "en": [
+   "Per config, Capturing goes **up to level VII** on this server: loot gives at most III, the enchanting table more with enough Eterna. Each level gives 0.5 percent, so level VII 3.5 percent.",
+   "At the enchanting table it only appears on swords; with a book and an anvil it also fits axes."
+  ],
+  "sources": [
+   "srv/config/apotheosis/enchantments.cfg (apothic_spawners:capturing Max Level 7, Max Loot Level 3)",
+   "srv/config/apothic_spawners.cfg (Capturing Drop Chance 0.005)",
+   "ApothicSpawners jar: data/apothic_spawners/enchantment/capturing.json (supported #minecraft:enchantable/sharp_weapon, primary sword)"
+  ]
+ },
+ "attributes": {
+  "de": [
+   "Hier siehst du auch, was die Weltstufe dir gibt: Frontier legt 35 Prozent auf Experience Gained und 20 Prozent auf Luck. Mit Shift über dem Eintrag steht die Quelle jedes Bonus dabei, so findest du heraus, welches Teil was bringt.",
+   "Weiter geht es mit {{apotheosis/compare}}, dort vergleichst du Funde direkt mit deiner Ausrüstung."
+  ],
+  "en": [
+   "This is also where you see what the world tier gives you: Frontier adds 35 percent experience gained and 20 percent luck. Hold Shift over an entry to see the source of each bonus and find out which piece does what.",
+   "Next is {{apotheosis/compare}}, where you compare finds directly with your gear."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/tier_augments/frontier/experience.json (0.35), luck.json (0.2)"
+  ],
+  "client": [
+   "Knopf Show Attributes oben rechts im Inventar, Hide Unchanged, Shift zeigt die Modifikatoren mit Quelle"
+  ]
+ },
+ "compare": {
+  "de": [
+   "Beide Funktionen sind auf dem Server eingeschaltet, das Verlinken hat 100 Ticks Abklingzeit, also 5 Sekunden. Leg dir die Tasten in den Steuerungseinstellungen auf etwas Bequemes.",
+   "Mehr Glück wirkt bei jedem Fund, auch bei Edelsteinen: Es verschiebt die Gewichte zu höheren Reinheiten."
+  ],
+  "en": [
+   "Both features are on on the server; linking has a 100 tick cooldown, that is 5 seconds. Put the keys on something handy in the controls settings.",
+   "More luck works on every find, gems included: it shifts the weights towards higher purities."
+  ],
+  "sources": [
+   "srv/config/apotheosis/apotheosis.cfg (Enable Item Linking true, Item Linking Cooldown 100, Enable Equipment Comparisons true)",
+   "Apotheosis jar: data/apotheosis/purity_weights/weights.json (quality per purity)"
+  ],
+  "client": [
+   "Standardbelegung der Tasten Compare Hovered Equipment und Link Hovered Item to Chat"
+  ]
+ },
+ "final": {
+  "de": [
+   "Am schnellsten kommst du über die Weltstufe an Rare: In Haven 4 Prozent, in Frontier 10, in Ascent 50. Jedes zerlegte Rare-Item gibt ein bis vier [[apotheosis:luminous_crystal_shard]].",
+   "Die Quest setzt fünf andere voraus, darunter {{apotheosis/infused_seashelf}} und {{apotheosis/stat_runes}}. Schau, welche dir noch fehlt."
+  ],
+  "en": [
+   "The quickest way to rare is the world tier: 4 percent in Haven, 10 in Frontier, 50 in Ascent. Each salvaged rare item gives one to four [[apotheosis:luminous_crystal_shard]].",
+   "The quest needs five others first, among them {{apotheosis/infused_seashelf}} and {{apotheosis/stat_runes}}. Check which one you are missing."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/rarities/rare.json",
+   "Apotheosis jar: data/apotheosis/recipe/salvaging/affix_item/rare.json"
+  ]
+ },
+ "iron_template": {
+  "de": [
+   "Steinstufe heißt hier nur Werkzeug: Schwert, Spitzhacke, Axt, Schaufel und Hacke aus Stein, bei Rüstung nur die Kettenrüstung. Leder lässt sich nicht aufwerten.",
+   "Die Affixe und Sockel bleiben beim Aufwerten erhalten, das ist der Sinn der Sache. Ein Rezept gibt zwei Vorlagen."
+  ],
+  "en": [
+   "Stone tier means tools only here: sword, pickaxe, axe, shovel and hoe made of stone; for armour only chainmail. Leather cannot be upgraded.",
+   "Affixes and sockets carry over when you upgrade, which is the whole point. One craft gives two templates."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/recipe/smithing/upgrade_stone_*_to_iron_*.json, upgrade_chainmail_*_to_iron_*.json (4 c:ingots/iron)",
+   "apotheosis:iron_upgrade_smithing_template ( M /SGS/SGS, 2)"
+  ],
+  "client": [
+   "Affixe und Sockel bleiben beim Aufwerten erhalten; Vorlage wird verbraucht"
+  ]
+ },
+ "diamond_template": {
+  "de": [
+   "Den Zwischenschritt Eisen zu Gold macht die [[apotheosis:gold_upgrade_smithing_template]] mit Timeworn Fabric oben und 4 Goldbarren am Schmiedetisch. Der ganze Weg kostet also Scrap Metal, Fabric und einen Crystal Shard.",
+   "Diamant ist das Ende dieses Wegs, zu Netherit geht es mit der normalen Vanilla-Vorlage weiter."
+  ],
+  "en": [
+   "The iron to gold step uses the [[apotheosis:gold_upgrade_smithing_template]] with timeworn fabric on top and 4 gold ingots at the smithing table. So the whole way costs scrap metal, fabric and one crystal shard.",
+   "Diamond is the end of this route; netherite continues with the normal vanilla template."
+  ],
+  "sources": [
+   "apotheosis:diamond_upgrade_smithing_template ( L /SGS/SGS, 2)",
+   "apotheosis:gold_upgrade_smithing_template ( T /SGS/SGS)",
+   "Apotheosis jar: data/apotheosis/recipe/smithing/upgrade_golden_*_to_diamond_*.json (4 c:gems/diamond)"
+  ]
+ },
+ "unnaming": {
+  "de": [
+   "Ein Rezept gibt sechs Siegel für 6 [[apotheosis:gem_fused_slate]] und 3 Feuerstein. Praktisch vor dem Verlinken im Chat ({{apotheosis/compare}}), wenn der Name sonst zwei Zeilen füllt."
+  ],
+  "en": [
+   "One craft gives six sigils for 6 [[apotheosis:gem_fused_slate]] and 3 flint. Handy before linking an item in chat ({{apotheosis/compare}}) when the name would fill two lines."
+  ],
+  "sources": [
+   "apotheosis:sigil_of_unnaming (GGG/FFF/GGG, 6)"
+  ]
+ },
+ "melonshelf": {
+  "de": [
+   "Melonen kommen aus jedem Melonenfeld, die Glitzernde Melonenscheibe ist eine Melonenscheibe mit acht Goldnuggets. Ein Melonshelf kostet zusätzlich 2 Eterna, stell es also neben genug Regale.",
+   "Ein Beeshelf macht Quanta mit +100 Prozent maximal wild, gut für Infusionen mit hoher Quanta-Grenze wie das Occult Ender Lead (Quanta 85)."
+  ],
+  "en": [
+   "Melons come from any melon patch; a glistering melon slice is a melon slice with eight gold nuggets. A melonshelf also costs 2 Eterna, so place it next to enough shelves.",
+   "A beeshelf pushes quanta to the maximum with +100 percent, useful for infusions with a high quanta floor such as the occult ender lead (quanta 85)."
+  ],
+  "sources": [
+   "apothic_enchanting:melonshelf (MMM/GBG/MMM)",
+   "ApothicEnchanting jar: data/apothic_enchanting/enchanting_stats/melonshelf.json, beeshelf.json",
+   "apothic_enchanting:infusion/occult_ender_lead (quanta 85, arcana 60, eterna 75)"
+  ]
+ },
+ "ender_lead": {
+  "de": [
+   "Die Ender Lead fängt fast alle Wesen, auch Monster. Die Stufe danach, das Occult Ender Lead, entsteht bei Eterna 75, Quanta 85 und Arcana 60 aus einer Ender Lead mit einer gefangenen Hexe und bindet Wesen an Monsterspawner."
+  ],
+  "en": [
+   "The Ender Lead catches almost every creature, monsters included. The next step, the occult ender lead, is infused at Eterna 75, quanta 85 and arcana 60 from an Ender Lead holding a witch, and binds creatures to monster spawners."
+  ],
+  "sources": [
+   "apothic_enchanting:flimsy_ender_lead (shapeless)",
+   "apothic_enchanting:infusion/ender_lead, apothic_enchanting:infusion/occult_ender_lead (leashed_entity_type minecraft:witch)",
+   "ApothicEnchanting jar lang item.apothic_enchanting.*ender_lead.desc"
+  ]
+ },
+ "inert_trident": {
+  "de": [
+   "Quanta darf hier höchstens 50 sein, ein Beeshelf verdirbt das Rezept. Arcana 35 erreichst du mit Seashelves und Großen Kerzen von Occultism, Eterna 40 schon in Frontier.",
+   "Das Herz des Meeres ist der Engpass: Es liegt in vergrabenen Schatztruhen, die du mit Schatzkarten aus Schiffswracks und Ruinen findest."
+  ],
+  "en": [
+   "Quanta may be at most 50 here; a beeshelf spoils the recipe. You reach arcana 35 with seashelves and Occultism large candles, Eterna 40 already in Frontier.",
+   "The heart of the sea is the bottleneck: it lies in buried treasure chests, which you find with treasure maps from shipwrecks and ruins."
+  ],
+  "sources": [
+   "apothic_enchanting:infusion/trident (max quanta 50)",
+   "apothic_enchanting:inert_trident (NNN/ H / I )",
+   "kubejs/data/apothic_enchanting/enchanting_stats/large_candles.json"
+  ]
+ },
+ "heart_seashelf": {
+  "de": [
+   "Ein Heart-Forged Seashelf ersetzt vier Infused Seashelves beim Arcana, braucht aber ein [[minecraft:heart_of_the_sea]], das du sonst auch für den Dreizack ({{apotheosis/inert_trident}}) willst.",
+   "Mit zwei davon und den Regalen hast du Arcana 40 plus, genug für die Ender Lead ({{apotheosis/ender_lead}})."
+  ],
+  "en": [
+   "A heart-forged seashelf replaces four infused seashelves for arcana, but it takes a [[minecraft:heart_of_the_sea]] that you also want for the trident ({{apotheosis/inert_trident}}).",
+   "Two of them plus the shelves give you arcana above 40, enough for the Ender Lead ({{apotheosis/ender_lead}})."
+  ],
+  "sources": [
+   "apothic_enchanting:heart_seashelf ( H /PIP/PPP)",
+   "ApothicEnchanting jar: data/apothic_enchanting/enchanting_stats/heart_seashelf.json (eterna 15, arcana 20, max 60)",
+   "apothic_enchanting:infusion/ender_lead (arcana 40)"
+  ]
+ },
+ "filtering_shelf": {
+  "de": [
+   "Das Regal kostet **zwei** [[apothic_enchanting:infused_seashelf]], eins oben und eins unten in der Mitte. Plan sie mit ein, bevor du alle Infused Seashelves verbaust.",
+   "Steck Bücher mit den Verzauberungen hinein, die dir den Tisch verstopfen, dann bleiben die guten häufiger übrig."
+  ],
+  "en": [
+   "The shelf costs **two** [[apothic_enchanting:infused_seashelf]], one at top centre and one at bottom centre. Plan for them before you use up all your infused seashelves.",
+   "Insert books with the enchantments that clog the table, so the good ones show up more often."
+  ],
+  "sources": [
+   "apothic_enchanting:filtering_shelf (PSP/LLL/PSP)",
+   "ApothicEnchanting jar lang info.apothic_enchanting.filtering_shelf, filtering_shelf2"
+  ],
+  "client": [
+   "Gefilterte Verzauberungen erscheinen nicht mehr am Tisch"
+  ]
+ },
+ "silent_rune": {
+  "de": [
+   "Jede Wollfarbe geht, das Rezept nimmt alles aus dem Woll-Tag. Mit [[minecraft:quartz]] in der Nebenhand machst du den Spawner wieder laut und den Quarz behältst du."
+  ],
+  "en": [
+   "Any colour of wool works; the recipe takes anything in the wool tag. With [[minecraft:quartz]] in your offhand you make the spawner loud again and you keep the quartz."
+  ],
+  "sources": [
+   "apotheosis:silent_spawner_rune (#minecraft:wool)",
+   "apotheosis:spawner_modifiers/_inverse/silent (offhand minecraft:quartz)"
+  ]
+ }
+}

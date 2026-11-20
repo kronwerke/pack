@@ -93,6 +93,36 @@ class Jars:
                 if n.startswith("assets/") and n.endswith(".png"):
                     self.index.setdefault(n, z)
 
+    def advancement(self, aid):
+        """(German, English) title of an advancement, from its file in the pack or a jar."""
+        ns, path = aid.split(":", 1)
+        raw = None
+        local = os.path.join(os.path.dirname(ASSETS), "data", ns, "advancement", path + ".json")
+        if os.path.exists(local):
+            with open(local, "rb") as f:
+                raw = f.read()
+        else:
+            for z in self.zips:
+                try:
+                    raw = z.read(f"data/{ns}/advancement/{path}.json")
+                    break
+                except KeyError:
+                    continue
+        try:
+            title = (json.loads(raw.decode("utf-8", "replace")).get("display") or {}).get("title")
+        except (AttributeError, ValueError):
+            return None, None
+        if isinstance(title, str):
+            return title, title
+        if isinstance(title, dict):
+            if title.get("translate"):
+                key = title["translate"]
+                en = self.lang["en_us"].get(key) or title.get("fallback")
+                return self.lang["de_de"].get(key) or en, en
+            if title.get("text"):
+                return title["text"], title["text"]
+        return None, None
+
     def name(self, iid, loc):
         ns, path = iid.split(":", 1)
         for key in (f"item.{ns}.{path}", f"block.{ns}.{path}", f"entity.{ns}.{path}", f"fluid.{ns}.{path}"):
@@ -174,7 +204,13 @@ def main():
                  "description": {"de": desc, "en": tr(desc)},
                  "tasks": tasks, "rewards": rewards, "deps": q["deps"], "icon": q["icon"],
                  "size": q["size"], "shape": q["shape"], "optional": q["optional"], "hide": q["hide"]}
-            collect_items([tasks, rewards, q["icon"]], items)
+            collect_items([tasks, rewards], items)
+            if isinstance(q["icon"], str) and ":" in q["icon"]:
+                items.add(q["icon"])  # a quest's own icon is often an item no task names
+            for t in tasks:
+                # a kill task shows the mob's spawn egg, as the game does
+                if t.get("type") == "kill" and isinstance(t.get("entity"), str):
+                    items.add(t["entity"] + "_spawn_egg")
             quests.append({k: v for k, v in d.items() if not (v is None or v is False or v == [] or v == "")})
         images = []
         for im in ch["images"]:
@@ -217,6 +253,8 @@ def main():
     for iid in sorted(items):
         if not isinstance(iid, str) or ":" not in iid:
             continue
+        if iid.endswith("_spawn_egg") and not jars.lang["en_us"].get("item." + iid.replace(":", ".", 1)):
+            continue  # a mob without an egg: the page draws a sword there
         names[iid] = {"de": jars.name(iid, "de_de"), "en": jars.name(iid, "en_us"), "stage": stage(iid)}
     with open(os.path.join(out, "items.json"), "w", encoding="utf-8") as f:
         json.dump(names, f, ensure_ascii=False, separators=(",", ":"))
@@ -230,6 +268,8 @@ def main():
                     other[t["entity"]] = "entity"
                 elif t.get("type") == "dimension":
                     other[t["dimension"]] = "dimension"
+                elif t.get("type") == "advancement" and t.get("advancement"):
+                    other[t["advancement"]] = "advancement"
             for line in q["description"]:
                 for k in re.findall(r"\{key:([A-Za-z0-9_.$-]+)\}", line):
                     other[k] = "key"
@@ -237,6 +277,8 @@ def main():
     for k, kind in sorted(other.items()):
         if kind == "key":
             de, en = jars.lang["de_de"].get(k), jars.lang["en_us"].get(k)
+        elif kind == "advancement":
+            de, en = jars.advancement(k)
         else:
             ns, path = k.split(":", 1)
             lk = f"entity.{ns}.{path}" if kind == "entity" else f"dimension.{ns}.{path}"

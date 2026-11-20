@@ -1,0 +1,575 @@
+{
+ "welcome": {
+  "de": [
+   "Die [[eidolon_repraised:codex]] machst du formlos aus einem Buch und einem [[minecraft:rotten_flesh]], das geht schon vor Stufe 3. Alles andere von Eidolon öffnet erst mit Stufe 3 (Stahlwerk).",
+   "Danach teilt sich das Kapitel: Pewter, Kessel und Feuerschale für Alchemie und Rituale ({{eidolon/pewter}}), Altar und Bildnis für die Gebete ({{eidolon/altar}})."
+  ],
+  "en": [
+   "You make the [[eidolon_repraised:codex]] shapeless from a book and a [[minecraft:rotten_flesh]], which works even before stage 3. Everything else of Eidolon only opens with stage 3 (Steel Works).",
+   "After that the chapter splits: pewter, crucible and brazier for alchemy and rituals ({{eidolon/pewter}}), altar and effigy for prayers ({{eidolon/altar}})."
+  ],
+  "sources": [
+   "eidolon_repraised:codex (crafting_shapeless book + rotten_flesh)",
+   "helpq item eidolon_repraised:codex (stage 1)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "pewter": {
+  "de": [
+   "Formlos gibt 1 Bleibarren und 1 Eisenbarren 2 [[eidolon_repraised:pewter_blend]], der Create-Mixer macht aus denselben Zutaten 3. Im Ofen wird jede Mischung zu einem [[eidolon_repraised:pewter_ingot]], im Hochofen doppelt so schnell.",
+   "Blei- und Silbererz von Eidolon gibt es in der Farmwelt, [[mekanism:ingot_lead]] taugt genauso. Für die 16 Barren der Quest brauchst du 8 Blei mit der Werkbank oder 6 mit dem Mixer."
+  ],
+  "en": [
+   "Shapeless, 1 lead ingot and 1 iron ingot give 2 [[eidolon_repraised:pewter_blend]], the Create mixer makes 3 from the same ingredients. In a furnace each blend becomes a [[eidolon_repraised:pewter_ingot]], in a blast furnace twice as fast.",
+   "Eidolon's lead and silver ore spawn in the farm world, and [[mekanism:ingot_lead]] works just as well. For the 16 ingots of the quest you need 8 lead at the crafting table or 6 with the mixer."
+  ],
+  "sources": [
+   "eidolon_repraised:pewter_blend",
+   "kubejs/server_scripts/kronwerke/round.js (kronwerke:round/pewter_mixing, 3 blend)",
+   "eidolon_repraised:smelt_pewter_blend (200), blast_pewter_blend (100)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_eidolon_lead, mine_eidolon_silver)"
+  ]
+ },
+ "crucible": {
+  "de": [
+   "Der Kessel ist 7 [[eidolon_repraised:pewter_ingot]] in U-Form. Am meisten brauchst du [[eidolon_repraised:enchanted_ash]]: 1 Knochen gibt im Ofen 2 Stück, ein Knochenblock 6.",
+   "Praktische Rezepte im Kessel: 2 Goldbarren, dann Enchanted Ash und zweimal rühren, dann ein Apfel ergibt einen Goldenen Apfel. Mit 2 Goldnuggets und einer Melonenscheibe genauso eine Glitzernde Melonenscheibe, beides brauchen die Rituale."
+  ],
+  "en": [
+   "The crucible is 7 [[eidolon_repraised:pewter_ingot]] in a U shape. What you need most is [[eidolon_repraised:enchanted_ash]]: 1 bone gives 2 in a furnace, a bone block 6.",
+   "Handy crucible recipes: 2 gold ingots, then Enchanted Ash and stir twice, then an apple gives a Golden Apple. 2 gold nuggets and a melon slice the same way give a Glistering Melon Slice, both are needed by the rituals."
+  ],
+  "sources": [
+   "eidolon_repraised:crucible (crafting_shaped)",
+   "eidolon_repraised:enchanted_ash (smelting bone 2), enchanted_ash_from_block (6)",
+   "eidolon_repraised:gilding_apple, gilding_melon (crucible)"
+  ]
+ },
+ "brazier": {
+  "de": [
+   "Eine [[eidolon_repraised:stone_hand]] sind 3 Steinstufen und 2 Stein und ergibt nur eine, für vier also 12 Stufen und 8 Stein. Die Hände stellst du rund um die Feuerschale, die Nebenzutaten legst du mit Rechtsklick darauf.",
+   "Für die Beschwörungen kommt später der [[eidolon_repraised:necrotic_focus]] dazu: 5 Stein mit einem Knochen in der Mitte, unten Pewter, Pewter Inlay, Pewter."
+  ],
+  "en": [
+   "A [[eidolon_repraised:stone_hand]] is 3 stone slabs and 2 stone and makes just one, so four need 12 slabs and 8 stone. Place the hands around the brazier and put the side ingredients on them with a right click.",
+   "The summoning rituals later add the [[eidolon_repraised:necrotic_focus]]: 5 stone with a bone in the middle, bottom row pewter, Pewter Inlay, pewter."
+  ],
+  "sources": [
+   "eidolon_repraised:stone_hand, brazier, necrotic_focus (crafting_shaped)"
+  ],
+  "client": [
+   "placing items on stone hands with right click",
+   "how far the hands may stand from the brazier"
+  ]
+ },
+ "soul_shard": {
+  "de": [
+   "Jeder Untote, den das Ritual tötet, lässt 1 bis 3 [[eidolon_repraised:soul_shard]] fallen. Es wirkt nur in einem kleinen Bereich um die Feuerschale, die Untoten müssen also direkt daneben stehen.",
+   "Bequemer wird es später mit der Reaper Scythe ({{eidolon/reaper_scythe}}): Damit gibt jeder getötete Untote Splitter, ganz ohne Ritual."
+  ],
+  "en": [
+   "Every undead the ritual kills drops 1 to 3 [[eidolon_repraised:soul_shard]]. It only works in a small area around the brazier, so the undead have to stand right next to it.",
+   "It gets easier later with the Reaper Scythe ({{eidolon/reaper_scythe}}): with it every undead you kill gives shards, no ritual needed."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/crystal",
+   "CrystalRitual.class (hurt in getSearchBounds, drops 1 + nextInt(3) soul shards)",
+   "lang: codex.page.reaper_scythe"
+  ],
+  "client": [
+   "exact size of the ritual area"
+  ]
+ },
+ "alchemy": {
+  "de": [
+   "Ein Durchgang gibt 2 [[eidolon_repraised:arcane_gold_ingot]], für die 6 der Quest also dreimal kochen: zusammen 6 Redstone, 3 Soul Shards und 6 Goldbarren.",
+   "Auf Kronwerke braucht auch der Spirit Altar von Malum Arcane Gold statt Gold ({{malum/altar}}). Dazu Goblet (4), Gold Inlay (4 für 2), Censer (3) und Soul Enchanter (2)."
+  ],
+  "en": [
+   "One run gives 2 [[eidolon_repraised:arcane_gold_ingot]], so cook three times for the 6 of the quest: 6 redstone, 3 Soul Shards and 6 gold ingots in total.",
+   "On Kronwerke Malum's Spirit Altar also needs Arcane Gold instead of gold ({{malum/altar}}). Then the Goblet (4), Gold Inlay (4 for 2), Censer (3) and Soul Enchanter (2)."
+  ],
+  "sources": [
+   "eidolon_repraised:arcane_gold_ingot_alchemy (crucible, 2)",
+   "kubejs/server_scripts/kronwerke/round.js (malum:spirit_altar gold -> arcane gold)",
+   "eidolon_repraised:goblet, gold_inlay, censer, soul_enchanter"
+  ]
+ },
+ "soul_gem": {
+  "de": [
+   "Auf Kronwerke ist das Rezept geändert: Der letzte Schritt will einen [[deeperdarker:soul_crystal]], und den lässt nur der Beobachter in der Anderwelt fallen ({{deeper_darker/stalker}}). Jeder [[eidolon_repraised:lesser_soul_gem]] kostet also einen Beobachter.",
+   "Gebraucht wird er unter anderem in Gravity Belt, Pickaxe of Inversion, beiden Stäben und im Sanguine Amulet. Leere Stäbe lädst du mit einem Soul Gem auf der Feuerschale wieder auf: für den Bonechill Wand mit 2 Schneebällen und Redstone, für den Soulfire Wand mit 2 Lohenstaub und Redstone, der Stab liegt dabei auf einer Hand."
+  ],
+  "en": [
+   "The recipe is changed on Kronwerke: the last step wants a [[deeperdarker:soul_crystal]], and only the Stalker in the Otherside drops it ({{deeper_darker/stalker}}). So every [[eidolon_repraised:lesser_soul_gem]] costs one Stalker.",
+   "It goes into, among others, the Gravity Belt, the Pickaxe of Inversion, both wands and the Sanguine Amulet. You recharge empty wands with a Soul Gem on the brazier: the Bonechill Wand with 2 snowballs and redstone, the Soulfire Wand with 2 blaze powder and redstone, with the wand on a hand."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (kronwerke:round/eidolon_repraised_lesser_soul_gem)",
+   "deeperdarker jar: data/deeperdarker/loot_table/entities/stalker.json",
+   "eidolon_repraised:rituals/recharging_chill, recharging_soulfire (invariant wand)"
+  ]
+ },
+ "r_daylight": {
+  "de": [
+   "Die Uhrzeit gilt für die ganze Welt, also für alle, die gerade auf dem Server sind. Sag kurz Bescheid, bevor du die Nacht abbrichst, jemand könnte gerade Untote für Splitter jagen.",
+   "Die Quest ist ein Häkchen: Setz es selbst, wenn das Ritual gelaufen ist."
+  ],
+  "en": [
+   "The time of day is the same for the whole world, so for everyone on the server. Say so before you cut the night short, someone might be hunting undead for shards.",
+   "The quest is a checkmark: tick it yourself once the ritual has run."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/daylight",
+   "DaylightRitual.class (setDayTime)"
+  ]
+ },
+ "r_moonlight": {
+  "de": [
+   "Jeder schwarze Farbstoff zählt, auch aus Tintenbeuteln. Die Nacht bringt die Untoten, die du für Soul Shards, Zombie Hearts und Tattered Cloth brauchst.",
+   "Wie beim Tag gilt: Die Uhrzeit ändert sich für alle in der Welt."
+  ],
+  "en": [
+   "Any black dye counts, ink sacs included. Night brings the undead you need for Soul Shards, Zombie Hearts and Tattered Cloth.",
+   "As with daylight: the time changes for everyone in the world."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/moonlight (reagent #c:dyes/black)",
+   "MoonlightRitual.class"
+  ]
+ },
+ "r_allure": {
+  "de": [
+   "Das Ritual sucht Tiere bis 96 Blöcke um die Feuerschale und lässt sie herlaufen. Den [[minecraft:golden_apple]] machst du billig im Crucible ({{eidolon/crucible}}), den Rosenstrauch findest du als hohe Blume in Wäldern und Blumenwäldern."
+  ],
+  "en": [
+   "The ritual looks for animals up to 96 blocks around the brazier and makes them walk over. Make the [[minecraft:golden_apple]] cheaply in the crucible ({{eidolon/crucible}}), the rose bush grows as a tall flower in forests and flower forests."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/allure",
+   "AllureRitual.class (AABB inflate 96, 16, 96)",
+   "eidolon_repraised:gilding_apple"
+  ]
+ },
+ "r_repelling": {
+  "de": [
+   "Es erfasst Monster bis 96 Blöcke waagrecht und 16 nach oben und unten und treibt sie weg. Die [[minecraft:nautilus_shell]] angelst du oder bekommst sie von Ertrunkenen.",
+   "Mit leerer Hand an der Feuerschale löschst du das Ritual wieder."
+  ],
+  "en": [
+   "It catches monsters up to 96 blocks sideways and 16 up and down and drives them away. You fish the [[minecraft:nautilus_shell]] or get it from drowned.",
+   "An empty hand on the brazier puts the ritual out again."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/repelling",
+   "RepellingRitual.class (AABB inflate 96, 16, 96)",
+   "lang: codex.page.brazier.0 (extinguish with empty hand)"
+  ],
+  "client": [
+   "how long the repelling effect lasts"
+  ]
+ },
+ "r_purify": {
+  "de": [
+   "Der Trank muss ein normaler **Trank der Heilung** sein, nicht Stufe II und kein Wurftrank. Die Glitzernde Melonenscheibe kochst du im Crucible aus 2 Goldnuggets, Enchanted Ash und einer Melonenscheibe ({{eidolon/crucible}}).",
+   "Das Ritual heilt Zombie-Dorfbewohner und macht Zombie-Piglins und Zoglins wieder zu Piglins und Hoglins."
+  ],
+  "en": [
+   "The potion has to be a plain **Potion of Healing**, not level II and not a splash potion. Cook the Glistering Melon Slice in the crucible from 2 gold nuggets, Enchanted Ash and a melon slice ({{eidolon/crucible}}).",
+   "The ritual cures zombie villagers and turns zombified piglins and zoglins back into piglins and hoglins."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/purify (potion_contents minecraft:healing)",
+   "PurifyRitual.class (PIGLIN, HOGLIN)",
+   "eidolon_repraised:gilding_melon"
+  ]
+ },
+ "r_deceit": {
+  "de": [
+   "Jeder Pilz aus dem Tag c:mushrooms zählt, also brauner oder roter. Das Ritual wirkt auf Dorfbewohner bis 48 Blöcke um die Feuerschale, nützlich nach einem Villager-Opfer am Stone Altar ({{eidolon/stone_altar}})."
+  ],
+  "en": [
+   "Any mushroom of the c:mushrooms tag counts, brown or red. The ritual works on villagers up to 48 blocks around the brazier, handy after a villager sacrifice at the Stone Altar ({{eidolon/stone_altar}})."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/deceit (#c:mushrooms)",
+   "DeceitRitual.class (Villager, AABB inflate 48, 16, 48)"
+  ]
+ },
+ "r_summon": {
+  "de": [
+   "Den [[eidolon_repraised:necrotic_focus]] stellst du wie eine Steinhand neben die Feuerschale ({{eidolon/brazier}}). Auf die Hände kommen ein Soul Shard und eine Zutat, in den Fokus die zweite: Knochen und Knochen für ein Skelett, Knochen und Faden für einen Eiswanderer, Fleisch und Sand für einen Wüstenzombie, Fleisch und Prismarinkristalle für einen Ertrunkenen.",
+   "Am nützlichsten: Mit [[eidolon_repraised:tattered_cloth]] auf der Hand und im Fokus beschwörst du einen Wraith, der Tattered Cloth und Wraith Hearts für Sense und Bonechill Wand fallen lässt."
+  ],
+  "en": [
+   "Place the [[eidolon_repraised:necrotic_focus]] next to the brazier like a stone hand ({{eidolon/brazier}}). The hands get a Soul Shard and one ingredient, the focus the second: bone and bone for a skeleton, bone and string for a stray, flesh and sand for a husk, flesh and prismarine crystals for a drowned.",
+   "Most useful: with [[eidolon_repraised:tattered_cloth]] on the hand and in the focus you summon a Wraith, which drops Tattered Cloth and Wraith Hearts for the scythe and the Bonechill Wand."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/summon_zombie, summon_skeleton, summon_stray, summon_husk, summon_drowned, summon_wraith",
+   "eidolon jar: data/eidolon_repraised/loot_table/entities/wraith.json"
+  ],
+  "client": [
+   "where the necrotic focus has to stand"
+  ]
+ },
+ "altar": {
+  "de": [
+   "**Vanilla-Kerzen zählen nicht**, auch nicht die aus der Belohnung. Power geben nur die Eidolon-Kerze [[eidolon_repraised:candle]] (2, aus Faden über [[eidolon_repraised:tallow]]: Verrottetes Fleisch im Hochofen), Fackeln und Laternen (1) und der Magische Kerzenleuchter (3).",
+   "Dazu Schädel (Witherskelett: 3 Capacity, 1 Power) und eingetopfte Pflanzen (Witherrose 3, Karmesin- und Wirrpilz 2). Von jeder Sorte zählt nur das beste Stück, Goblet und Censer zählen zusammen als eine Sorte."
+  ],
+  "en": [
+   "**Vanilla candles do not count**, not even the ones from the reward. Power only comes from the Eidolon [[eidolon_repraised:candle]] (2, made from string over [[eidolon_repraised:tallow]]: rotten flesh in a blast furnace), torches and lanterns (1) and the Magic Candlestick (3).",
+   "Then skulls (wither skeleton: 3 capacity, 1 power) and potted plants (wither rose 3, crimson and warped fungus 2). Only the best piece of each kind counts, and Goblet and Censer count together as one kind."
+  ],
+  "sources": [
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/eidolon_repraised/data_maps/block/altar_entries.json",
+   "eidolon_repraised:candle, tallow (blasting rotten_flesh)",
+   "lang: codex.page.altar_lights.0, altar_skulls.0, altar_herbs.0"
+  ]
+ },
+ "wicked_sign": {
+  "de": [
+   "Hexen findest du in Sumpfhütten und nachts überall in der Oberwelt. Wirf den Codex in ihrer Nähe auf den Boden, damit sie ihn aufhebt.",
+   "Die Quest ist ein Häkchen, das du selbst setzt. Danach steht das Zeichen im Kapitel Signs des Codex, und das Dark Prayer ({{eidolon/prayer}}) geht."
+  ],
+  "en": [
+   "You find witches in swamp huts and anywhere in the overworld at night. Throw the codex on the ground near one so she picks it up.",
+   "The quest is a checkmark you tick yourself. After that the sign is in the Signs chapter of the codex, and the Dark Prayer ({{eidolon/prayer}}) works."
+  ],
+  "sources": [
+   "WitchBarterGoal.class / GenericBarterGoal.class (picks up an ItemEntity)",
+   "lang: advancement.desc.wicked_path"
+  ],
+  "client": [
+   "the witch returns the codex with the Wicked Sign"
+  ]
+ },
+ "prayer": {
+  "de": [
+   "Das Bildnis muss höchstens 4 Blöcke von dir entfernt auf dem Altar stehen, sonst kommt die Meldung, dass keines da ist. Jedes Gebet geht nur einmal pro Tag, ein zweiter Versuch bringt nur eine Meldung.",
+   "Die Gunst beim dunklen Gott schaltet der Reihe nach frei: ab 3 das Blood Sign und Tieropfer, ab 10 Touch of Darkness, ab 15 das Villager-Opfer."
+  ],
+  "en": [
+   "The effigy has to stand on the altar no more than 4 blocks from you, otherwise you get the message that there is none. Every prayer works only once per day, a second try only brings a message.",
+   "Favour with the dark god unlocks things in order: from 3 the Blood Sign and animal sacrifices, from 10 Touch of Darkness, from 15 the villager sacrifice."
+  ],
+  "sources": [
+   "eidolon_repraised:dark_prayer (chant wicked x3)",
+   "PrayerSpell.class (EffigyTileEntity within 4, prayer_cooldown)",
+   "DarkDeity.class (stages 3 SACRIFICE_MOB, 10 DARK_TOUCH, 15 SACRIFICE_VILLAGER)",
+   "lang: codex.page.dark_prayer.1"
+  ],
+  "client": [
+   "how many favour points one prayer gives"
+  ]
+ },
+ "sign_blood": {
+  "de": [
+   "Das Blood Sign kommt, sobald deine Gunst beim dunklen Gott 3 erreicht. Ab derselben Gunst geht auch das Tieropfer im Goblet ({{eidolon/goblet}}), und erst dieses erste Opfer bringt dich weiter zum Soul Sign."
+  ],
+  "en": [
+   "The Blood Sign comes as soon as your favour with the dark god reaches 3. The same favour allows the animal sacrifice in the Goblet ({{eidolon/goblet}}), and only that first sacrifice takes you on to the Soul Sign."
+  ],
+  "sources": [
+   "DarkDeity.class (stage SACRIFICE_MOB at 3: onReputationLock grants BLOOD_SIGN, onReputationUnlock grants SOUL_SIGN)",
+   "AnimalSacrificeSpell.class (needs 3.0 reputation)"
+  ]
+ },
+ "goblet": {
+  "de": [
+   "Der Goblet muss in der Nähe des Bildnisses auf dem Altar stehen, sonst bricht der Gesang ab. Das Opfer braucht mindestens 3 Gunst, das Blood Sign hast du dann schon ({{eidolon/sign_blood}}).",
+   "Dein erstes Tieropfer schenkt dir sofort das Soul Sign ({{eidolon/sign_soul}}). Goblet und Censer geben beide +2 Capacity, zählen aber nicht zusammen."
+  ],
+  "en": [
+   "The Goblet has to stand on the altar near the effigy, otherwise the chant fails. The sacrifice needs at least 3 favour, by then you already have the Blood Sign ({{eidolon/sign_blood}}).",
+   "Your first animal sacrifice gives you the Soul Sign right away ({{eidolon/sign_soul}}). Goblet and Censer both give +2 capacity, but they do not add up."
+  ],
+  "sources": [
+   "eidolon_repraised:goblet (4 arcane gold)",
+   "AnimalSacrificeSpell.class (no_goblet, no_effigy, 3.0)",
+   "DarkDeity.class (SACRIFICE_MOB unlock -> SOUL_SIGN)",
+   "eidolon_repraised-1.21.1-0.5.0.4.jar altar_entries.json (censer and goblet share key eidolon_repraised:goblet)"
+  ],
+  "client": [
+   "how far the goblet may stand from the effigy"
+  ]
+ },
+ "sign_soul": {
+  "de": [
+   "Das Soul Sign kommt mit deinem ersten Tieropfer, nicht erst nach mehr Gebeten. Hast du {{eidolon/goblet}} erledigt, hast du es schon.",
+   "Touch of Darkness (Wicked, Soul, Wicked, Soul) wirkt erst ab 10 Gunst. Bete und opfere also weiter, bevor du das Unholy Symbol ({{eidolon/unholy_symbol}}) versuchst."
+  ],
+  "en": [
+   "The Soul Sign comes with your first animal sacrifice, not after more prayers. If you have done {{eidolon/goblet}}, you already have it.",
+   "Touch of Darkness (Wicked, Soul, Wicked, Soul) only works from 10 favour. So keep praying and sacrificing before you try the Unholy Symbol ({{eidolon/unholy_symbol}})."
+  ],
+  "sources": [
+   "DarkDeity.class (SACRIFICE_MOB unlock -> SOUL_SIGN, DARK_TOUCH at 10)",
+   "eidolon_repraised:dark_touch (chant)",
+   "eidolon_repraised:convert_inlay_unholy (min_devotion 10)"
+  ]
+ },
+ "worktable": {
+  "de": [
+   "Auf Kronwerke will der Worktable [[malum:runewood_planks]] statt beliebiger Bretter, Runewood fällst du in Malum ({{malum/runewood}}). Eine [[eidolon_repraised:pewter_inlay]] sind 4 Pewter im Kreis und ergibt 2.",
+   "Die vier Extraplätze rund um das 3 x 3 nehmen die magischen Zutaten, die EMI bei Worktable-Rezepten getrennt anzeigt."
+  ],
+  "en": [
+   "On Kronwerke the Worktable wants [[malum:runewood_planks]] instead of any planks, you fell Runewood in Malum ({{malum/runewood}}). A [[eidolon_repraised:pewter_inlay]] is 4 pewter in a ring and makes 2.",
+   "The four extra slots around the 3 x 3 take the magical ingredients, which EMI shows separately for Worktable recipes."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (worktable planks -> malum:runewood_planks)",
+   "eidolon_repraised:worktable, pewter_inlay"
+  ],
+  "client": [
+   "how EMI shows the reagent slots"
+  ]
+ },
+ "unholy_symbol": {
+  "de": [
+   "Der Gesang wirkt erst ab **10 Gunst** beim dunklen Gott. Darunter passiert nichts, bete und opfere dann noch ein paar Tage.",
+   "Die Quest will zwei: eins für die Reaper Scythe ({{eidolon/reaper_scythe}}), eins für die Elder Statue ({{eidolon/stone_altar}}). Später braucht jeder Stapel Wicked Weave noch eins."
+  ],
+  "en": [
+   "The chant only works from **10 favour** with the dark god. Below that nothing happens, so pray and sacrifice for a few more days.",
+   "The quest wants two: one for the Reaper Scythe ({{eidolon/reaper_scythe}}), one for the Elder Statue ({{eidolon/stone_altar}}). Later every batch of Wicked Weave needs another one."
+  ],
+  "sources": [
+   "eidolon_repraised:convert_inlay_unholy (chant_conversion, deity dark, min_devotion 10)",
+   "eidolon_repraised:reaper_scythe, unholy_effigy, wicked_weave (patron symbol / unholy symbol)"
+  ]
+ },
+ "stone_altar": {
+  "de": [
+   "Die Elder Statue ([[eidolon_repraised:unholy_effigy]]) ist ein Stein in Kreuzform mit glattem Stein oben, das Unholy Symbol und eine Gold Inlay kommen in die Extraplätze. Sie ersetzt das Strohbildnis auf dem Altar.",
+   "Das Villager-Opfer braucht 15 Gunst, einen Goblet und den Gesang Blood, Wicked, Blood, Soul. Danach schenkt dir der Patron das Mind Sign."
+  ],
+  "en": [
+   "The Elder Statue ([[eidolon_repraised:unholy_effigy]]) is stone in a cross shape with smooth stone on top, the Unholy Symbol and a Gold Inlay go into the extra slots. It replaces the straw effigy on the altar.",
+   "The villager sacrifice needs 15 favour, a Goblet and the chant Blood, Wicked, Blood, Soul. After it the patron gives you the Mind Sign."
+  ],
+  "sources": [
+   "eidolon_repraised:unholy_effigy, stone_altar (worktable)",
+   "eidolon_repraised:dark_villager_sacrifice (chant)",
+   "VillagerSacrificeSpell.class (15.0, no_goblet, inadequate_altar)",
+   "DarkDeity.class (SACRIFICE_VILLAGER unlock -> MIND_SIGN)"
+  ]
+ },
+ "athame": {
+  "de": [
+   "Für Merammer Root zählt auch die weiße Tulpe, für Avennian Sprig auch der große Farn. Seerosen für die Oanna Bloom findest du in Sümpfen.",
+   "Aus [[eidolon_repraised:merammer_root]] wird formlos Merammer Resin, die Basis fast jedes Räucherwerks ({{eidolon/censer}}). Das Goldnugget und das Silbernugget kommen in die Extraplätze."
+  ],
+  "en": [
+   "For Merammer Root the white tulip counts too, for Avennian Sprig the large fern too. You find lily pads for the Oanna Bloom in swamps.",
+   "[[eidolon_repraised:merammer_root]] becomes Merammer Resin shapeless, the base of almost every incense ({{eidolon/censer}}). The gold nugget and the silver nugget go into the extra slots."
+  ],
+  "sources": [
+   "eidolon_repraised:forage_merammer_root (oxeye_daisy, lily_of_the_valley, white_tulip), forage_avennian_sprig (fern, large_fern), forage_oanna_bloom (lily_pad)",
+   "eidolon_repraised:merammer_resin",
+   "eidolon_repraised:athame (worktable)"
+  ]
+ },
+ "death_essence": {
+  "de": [
+   "Das [[eidolon_repraised:zombie_heart]] fällt nur, wenn du den Zombie Brute selbst tötest: mit 15 Prozent, mit Plünderung I 25 Prozent und je Stufe 10 Prozent mehr. Brutes spawnen nachts fast überall in der Oberwelt, nicht in der Tiefen Dunkelheit und auf Pilzinseln.",
+   "Ein Herz gibt 4 Death Essence. Der Shadow Gem ({{eidolon/necromancer}}) braucht 2 davon."
+  ],
+  "en": [
+   "The [[eidolon_repraised:zombie_heart]] only drops when you kill the Zombie Brute yourself: 15 percent, 25 percent with Looting I and 10 percent more per level. Brutes spawn at night almost anywhere in the overworld, not in the Deep Dark or on mushroom islands.",
+   "One heart gives 4 Death Essence. The Shadow Gem ({{eidolon/necromancer}}) needs 2 of them."
+  ],
+  "sources": [
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/eidolon_repraised/loot_table/entities/zombie_brute.json",
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/eidolon_repraised/neoforge/biome_modifier/spawn_zombie_brute.json",
+   "eidolon_repraised:death_essence (crucible, 4)"
+  ]
+ },
+ "reaper_scythe": {
+  "de": [
+   "[[eidolon_repraised:tattered_cloth]] lässt jeder Wraith fallen (0 bis 2, mit Plünderung mehr). Wraiths spawnen nachts in der Oberwelt, oder du beschwörst sie mit Tattered Cloth an der Feuerschale ({{eidolon/r_summon}}).",
+   "Untote, die die Sense tötet, zerfallen zu Soul Shards statt ihre Leiche zu hinterlassen. Ab hier brauchst du das Kristallisationsritual kaum noch."
+  ],
+  "en": [
+   "Every Wraith drops [[eidolon_repraised:tattered_cloth]] (0 to 2, more with Looting). Wraiths spawn at night in the overworld, or you summon them with Tattered Cloth at the brazier ({{eidolon/r_summon}}).",
+   "Undead the scythe kills crumble into Soul Shards instead of leaving their body. From here on you hardly need the crystallization ritual."
+  ],
+  "sources": [
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/eidolon_repraised/loot_table/entities/wraith.json",
+   "eidolon_repraised:rituals/summon_wraith",
+   "lang: codex.page.reaper_scythe",
+   "Events.class (ReaperScytheItem, isValidUndead)"
+  ],
+  "client": [
+   "shards per kill with the scythe, and whether normal drops are lost"
+  ]
+ },
+ "soul_enchanter": {
+  "de": [
+   "Anders als der Zaubertisch hat der Soul Enchanter kein Mindestlevel, und er verzaubert auch schon verzauberte Items. Hohe Stufen brauchen viele Durchgänge, also viele Level und Soul Shards: Halt eine Splitterquelle bereit ({{eidolon/reaper_scythe}})."
+  ],
+  "en": [
+   "Unlike the enchanting table the Soul Enchanter has no minimum level, and it also enchants items that are already enchanted. High levels need many rounds, so many levels and Soul Shards: keep a shard source ready ({{eidolon/reaper_scythe}})."
+  ],
+  "sources": [
+   "eidolon_repraised:soul_enchanter (worktable)",
+   "lang: codex.page.soul_enchanter.0, soul_enchanter.1"
+  ],
+  "client": [
+   "cost per enchanting step"
+  ]
+ },
+ "necromancer": {
+  "de": [
+   "Die [[minecraft:ghast_tear]] holst du im Nether, die 2 Death Essence aus {{eidolon/death_essence}}. Die 32 Soul Shards der Quest musst du nur gleichzeitig im Inventar haben, sie werden nicht verbraucht.",
+   "Plane mehrere Gems: einen für den Soulfire Wand, einen für das Sword of Sapping, und die volle Warlock-Rüstung braucht 16 Wicked Weave, also zwei Gems."
+  ],
+  "en": [
+   "Get the [[minecraft:ghast_tear]] in the Nether, the 2 Death Essence from {{eidolon/death_essence}}. You only need to hold the 32 Soul Shards of the quest at the same time, they are not used up.",
+   "Plan several gems: one for the Soulfire Wand, one for the Sword of Sapping, and the full warlock armour needs 16 Wicked Weave, so two gems."
+  ],
+  "sources": [
+   "eidolon_repraised:shadow_gem (crucible)",
+   "tools/quests/ftbq.py (task_item without consume)",
+   "eidolon_repraised:soulfire_wand, wicked_weave (8 per gem), warlock_hat (4), warlock_cloak (8), warlock_boots (4)",
+   "eidolon_repraised:rituals/brazier_craft_sapping_sword"
+  ]
+ },
+ "apothecary": {
+  "de": [
+   "Er ersetzt den Braustand ohne Lohenstaub als Brennstoff, die Netherwarze brauchst du trotzdem. Für das Sword of Sapping ({{eidolon/sapping_sword}}) muss es ein **normaler** Trank des Schadens sein, Stufe II passt nicht in den Fokus."
+  ],
+  "en": [
+   "It replaces the brewing stand without blaze powder as fuel, you still need the nether wart. For the Sword of Sapping ({{eidolon/sapping_sword}}) it has to be a **plain** Potion of Harming, level II does not fit into the focus."
+  ],
+  "sources": [
+   "eidolon_repraised:wooden_brewing_stand",
+   "lang: advancement.desc.wooden_brewing_stand",
+   "eidolon_repraised:rituals/brazier_craft_sapping_sword (focus potion harming, strict)"
+  ]
+ },
+ "censer": {
+  "de": [
+   "Silber gibt es als Eidolon-Erz in der Farmwelt, [[occultism:silver_ingot]] zählt genauso. [[eidolon_repraised:merammer_resin]] machst du formlos aus Merammer Root, die Oanna Bloom erntest du mit dem Athame an Seerosen ({{eidolon/athame}}).",
+   "Bloodlust und Soul Harvest kochst du im Crucible, Tough Incense dagegen ist formlos an der Werkbank. Auf dem Altar zählen Censer und Goblet nicht zusammen, beide geben dieselben +2 Capacity."
+  ],
+  "en": [
+   "Silver comes as Eidolon ore in the farm world, and [[occultism:silver_ingot]] counts just as well. Make [[eidolon_repraised:merammer_resin]] shapeless from Merammer Root, harvest the Oanna Bloom from lily pads with the Athame ({{eidolon/athame}}).",
+   "Bloodlust and Soul Harvest are cooked in the crucible, Tough Incense however is shapeless at the crafting table. On the altar Censer and Goblet do not add up, both give the same +2 capacity."
+  ],
+  "sources": [
+   "eidolon_repraised:censer (#c:ingots/silver)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_eidolon_silver)",
+   "eidolon_repraised:restoration_incense, tough_incense (crafting_shapeless), bloodlust_incense, soul_harvest_incense (crucible)",
+   "eidolon_repraised-1.21.1-0.5.0.4.jar altar_entries.json (censer key goblet)"
+  ]
+ },
+ "void_amulet": {
+  "de": [
+   "Das Amulett kommt in den Halskettenplatz der Curios. Eine Pewter Inlay machst du aus 4 Pewter im Kreis ({{eidolon/worktable}}), das Basic Amulet ist danach auch der Grundstoff für das Sanguine Amulet."
+  ],
+  "en": [
+   "The amulet goes into the necklace slot of Curios. A Pewter Inlay is 4 pewter in a ring ({{eidolon/worktable}}), and the Basic Amulet is also the base of the Sanguine Amulet."
+  ],
+  "sources": [
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/curios/tags/item/necklace.json",
+   "eidolon_repraised:basic_amulet, void_amulet",
+   "eidolon_repraised:rituals/brazier_craft_sanguine_amulet"
+  ]
+ },
+ "warded_mail": {
+  "de": [
+   "Das Kettenhemd kommt in den Körperplatz der Curios, die Eisenbrustplatte geht dabei auf. Die 3 [[eidolon_repraised:enchanted_ash]] machst du aus Knochen im Ofen ({{eidolon/crucible}})."
+  ],
+  "en": [
+   "The mail goes into the body slot of Curios, and the iron chestplate is used up. You make the 3 [[eidolon_repraised:enchanted_ash]] from bones in a furnace ({{eidolon/crucible}})."
+  ],
+  "sources": [
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/curios/tags/item/body.json",
+   "eidolon_repraised:warded_mail (worktable)",
+   "eidolon_repraised:enchanted_ash"
+  ]
+ },
+ "gravity_belt": {
+  "de": [
+   "Der Gürtel kommt in den Gürtelplatz der Curios. Den [[eidolon_repraised:lesser_soul_gem]] gibt es nur mit einem Seelenkristall aus der Anderwelt ({{eidolon/soul_gem}}), das ist der teure Teil."
+  ],
+  "en": [
+   "The belt goes into the belt slot of Curios. The [[eidolon_repraised:lesser_soul_gem]] only comes with a Soul Crystal from the Otherside ({{eidolon/soul_gem}}), that is the expensive part."
+  ],
+  "sources": [
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/curios/tags/item/belt.json",
+   "eidolon_repraised:gravity_belt (worktable)",
+   "kronwerke:round/eidolon_repraised_lesser_soul_gem"
+  ]
+ },
+ "reversal_pick": {
+  "de": [
+   "[[minecraft:crying_obsidian]] findest du in Ruinenportalen und Bastionen oder tauschst ihn bei Piglins. Wie der Soul Gem kostet die Spitzhacke einen Seelenkristall ({{eidolon/soul_gem}})."
+  ],
+  "en": [
+   "You find [[minecraft:crying_obsidian]] in ruined portals and bastions or barter it from piglins. Like the Soul Gem, the pickaxe costs a Soul Crystal ({{eidolon/soul_gem}})."
+  ],
+  "sources": [
+   "eidolon_repraised:reversal_pick (worktable)"
+  ]
+ },
+ "bonechill_wand": {
+  "de": [
+   "Das [[eidolon_repraised:wraith_heart]] fällt nur mit 5 Prozent, mit Plünderung I 7,5 Prozent und je Stufe 2,5 Prozent mehr. Am schnellsten geht es mit beschworenen Wraiths an der Feuerschale ({{eidolon/r_summon}}).",
+   "Leer lädst du ihn auf der Feuerschale wieder auf: Soul Gem auf die Schale, 2 Schneebälle und Redstone auf die Hände, den Stab dazu auf eine Hand."
+  ],
+  "en": [
+   "The [[eidolon_repraised:wraith_heart]] only drops at 5 percent, 7.5 percent with Looting I and 2.5 percent more per level. The fastest way is summoned Wraiths at the brazier ({{eidolon/r_summon}}).",
+   "When empty you recharge it on the brazier: Soul Gem on the brazier, 2 snowballs and redstone on the hands, and the wand on a hand as well."
+  ],
+  "sources": [
+   "eidolon_repraised-1.21.1-0.5.0.4.jar data/eidolon_repraised/loot_table/entities/wraith.json (killed_by_player, 0.05, looting 0.075 + 0.025)",
+   "eidolon_repraised:rituals/summon_wraith",
+   "eidolon_repraised:rituals/recharging_chill"
+  ]
+ },
+ "soulfire_wand": {
+  "de": [
+   "Der Gold Inlay unten links sind 4 Arcane Gold im Kreis, ergibt 2. Leer lädst du den Stab auf der Feuerschale wieder auf: Soul Gem auf die Schale, 2 Lohenstaub und Redstone auf die Hände, den Stab dazu auf eine Hand."
+  ],
+  "en": [
+   "The Gold Inlay bottom left is 4 Arcane Gold in a ring and makes 2. When empty you recharge the wand on the brazier: Soul Gem on the brazier, 2 blaze powder and redstone on the hands, and the wand on a hand as well."
+  ],
+  "sources": [
+   "eidolon_repraised:soulfire_wand (worktable)",
+   "eidolon_repraised:gold_inlay",
+   "eidolon_repraised:rituals/recharging_soulfire"
+  ]
+ },
+ "warlock_cloak": {
+  "de": [
+   "Der Umhang braucht **8 Wicked Weave**, die volle Brustplattenform, ein Durchgang Wicked Weave reicht also genau für ihn. Hut und Stiefel brauchen je 4 dazu, für die volle Rüstung also zwei Shadow Gems ({{eidolon/necromancer}}) und zwei Unholy Symbols."
+  ],
+  "en": [
+   "The cloak needs **8 Wicked Weave**, the full chestplate shape, so one batch of Wicked Weave makes exactly one cloak. Hat and boots need 4 each on top, so the full set takes two Shadow Gems ({{eidolon/necromancer}}) and two Unholy Symbols."
+  ],
+  "sources": [
+   "eidolon_repraised:warlock_cloak (pattern www/www/w w), warlock_hat (4), warlock_boots (4)",
+   "eidolon_repraised:wicked_weave (8, shadow gem + unholy symbol)"
+  ]
+ },
+ "sapping_sword": {
+  "de": [
+   "Der Trank im Fokus muss ein normaler **Trank des Schadens** sein, Stufe II oder ein Wurftrank passen nicht. Den brau im Apothecary Stand ({{eidolon/apothecary}}).",
+   "Die 10 Herzen zieht das Ritual aus Lebewesen in der Nähe der Feuerschale, stell also genug Tiere in einen Pferch daneben."
+  ],
+  "en": [
+   "The potion in the focus has to be a plain **Potion of Harming**, level II or a splash potion do not fit. Brew it in the Apothecary Stand ({{eidolon/apothecary}}).",
+   "The ritual draws the 10 hearts from living creatures near the brazier, so put enough animals in a pen next to it."
+  ],
+  "sources": [
+   "eidolon_repraised:rituals/brazier_craft_sapping_sword (health_requirement 20.0, focus potion harming strict, keep_nbt_of_reagent)"
+  ],
+  "client": [
+   "which creatures the health requirement takes from"
+  ]
+ }
+}

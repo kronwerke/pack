@@ -1,0 +1,534 @@
+{
+ "welcome": {
+  "de": [
+   "Das Rezept ist geformt: ein [[botania:terrasteel_ingot]] in die Mitte, je eine [[botania:gaia_spirit]] darüber, darunter, links und rechts. Gaia-Seelen gibt es nur aus dem Kampf gegen den Gaia-Wächter ({{gaia/fight}}), und jeder Kampf kostet selbst einen Terrastahlbarren als Opfer.",
+   "Eine Fusion für [[draconicevolution:awakened_draconium_block]] frisst 2 Barren, also 8 Seelen pro 4 Blöcke. Der Magie-Pfeiler von Stufe 5 will die Barren ebenfalls (128 als Grundwert, die Menge wächst mit der Spielerzahl), sprecht die Aufteilung früh mit den Magiern ab."
+  ],
+  "en": [
+   "The recipe is shaped: a [[botania:terrasteel_ingot]] in the middle, one [[botania:gaia_spirit]] above, below, left and right. Gaia Spirits only come from fighting the Guardian of Gaia ({{gaia/fight}}), and every fight itself costs a Terrasteel Ingot as the offering.",
+   "One fusion for [[draconicevolution:awakened_draconium_block]] eats 2 ingots, so 8 spirits per 4 blocks. The stage 5 magic pillar wants the ingots too (128 as the base, the amount grows with the number of players), so agree on the split with the mages early."
+  ],
+  "sources": [
+   "botania:gaia_ingot (crafting_shaped, pattern ' S ','SIS',' S ')",
+   "kubejs/server_scripts/kronwerke/tech.js (kronwerke:tech/awakened_draconium_block)",
+   "config/kronwerke/goals.json (stage5 magic: botania:gaia_ingot base 128, scaled)"
+  ]
+ },
+ "dragon_heart": {
+  "de": [
+   "Ein Drachenherz gibt es nur vom Enderdrachen, eins pro Kampf ({{the_end/respawn}}: vier [[minecraft:end_crystal]] auf den Rand des Ausgangsportals). Die Belohnung sind genau die vier Kristalle für den nächsten Drachen.",
+   "Der Server legt bei jedem Drachen ein neues [[minecraft:dragon_egg]] ab, und es fallen rund 64 Draconiumstaub. Der Drache ist auf Kronwerke ein Gruppenboss: Pro weiterem Spieler hat er 60 Prozent mehr Leben und macht 15 Prozent mehr Schaden, bis 8 Spieler."
+  ],
+  "en": [
+   "A Dragon Heart only comes from the Ender Dragon, one per fight ({{the_end/respawn}}: four [[minecraft:end_crystal]] on the rim of the exit portal). The reward is exactly the four crystals for the next dragon.",
+   "The server places a new [[minecraft:dragon_egg]] after every dragon, and about 64 draconium dust drops. On Kronwerke the dragon is a group boss: for each extra player it has 60 percent more health and deals 15 percent more damage, up to 8 players."
+  ],
+  "sources": [
+   "srv/config/brandon3055/DraconicEvolution.cfg (dragonEggSpawnOverride=true, dragonDustLootModifier=64)",
+   "core: src/main/java/de/kronwerke/core/config/KronwerkeConfig.java (bosses.scaling minecraft:ender_dragon, healthPerPlayer 0.6, damagePerPlayer 0.15, maxPlayers 8)"
+  ]
+ },
+ "cores": {
+  "de": [
+   "An der Werkbank: 4 [[draconicevolution:draconium_ingot]] in die Ecken, 4 [[eternal_starlight:deepsilver_ingot]] an die Seiten, ein Diamant in die Mitte. Deepsilver schmilzt du aus dem Deepsilver-Erz von Eternal Starlight.",
+   "Für eine Fusion liegen die 4 Kerne, die 2 Gaia-Seelenbarren und das Drachenherz in sieben Injektoren mindestens der Wyvern-Stufe ({{draconic/w_injector}}). Jeder Injektor muss auf den Kern zeigen und darf höchstens 16 Blöcke von ihm entfernt stehen."
+  ],
+  "en": [
+   "At the crafting table: 4 [[draconicevolution:draconium_ingot]] in the corners, 4 [[eternal_starlight:deepsilver_ingot]] on the sides, a diamond in the middle. Deepsilver is smelted from the Deepsilver ore of Eternal Starlight.",
+   "For one fusion the 4 cores, the 2 Gaia Spirit Ingots and the heart sit in seven injectors of at least Wyvern tier ({{draconic/w_injector}}). Every injector has to face the core and stand no more than 16 blocks away from it."
+  ],
+  "sources": [
+   "draconicevolution:components/draconium_core",
+   "eternal_starlight:deepsilver_ingot (smelting/blasting from deepsilver ores)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (fusionInjectorRange=16)"
+  ],
+  "client": [
+   "injectors must face the core"
+  ]
+ },
+ "blocks": {
+  "de": [
+   "9 [[draconicevolution:draconium_ingot]] im 3 x 3 ergeben einen [[draconicevolution:draconium_block]]. Die 4 Blöcke kommen als ein Stapel in den Fusionskern ({{draconic/crafting_core}}), nicht in einen Injektor.",
+   "Für die 64 Blöcke des Ziels sind das 16 Fusionen mit zusammen 64 Draconiumblöcken."
+  ],
+  "en": [
+   "9 [[draconicevolution:draconium_ingot]] in a 3 x 3 make a [[draconicevolution:draconium_block]]. The 4 blocks go into the Fusion Crafting Core as one stack ({{draconic/crafting_core}}), not into an injector.",
+   "For the 64 blocks of the goal that is 16 fusions with 64 draconium blocks in total."
+  ],
+  "sources": [
+   "draconicevolution:compress/draconium_block",
+   "kronwerke:tech/awakened_draconium_block (catalyst: stack of 4 draconium_block)"
+  ]
+ },
+ "awakened": {
+  "de": [
+   "Auf Kronwerke ist das Rezept geändert, EMI zeigt die neue Version: Im Kern liegen 4 [[draconicevolution:draconium_block]], in sieben Injektoren 4 [[draconicevolution:draconium_core]], 2 [[botania:gaia_ingot]] und 1 [[draconicevolution:dragon_heart]]. Heraus kommen 4 [[draconicevolution:awakened_draconium_block]].",
+   "Die Fusion braucht 50 Millionen Energie und Injektoren mindestens der Wyvern-Stufe. Behalte mindestens einen Block für die nächsten Quests: Er wird zu Barren ({{draconic_chaos/awakened_ingot}}), die in Kernen, Werkzeugen und Modulen stecken."
+  ],
+  "en": [
+   "The recipe is changed on Kronwerke, EMI shows the new version: the core holds 4 [[draconicevolution:draconium_block]], seven injectors hold 4 [[draconicevolution:draconium_core]], 2 [[botania:gaia_ingot]] and 1 [[draconicevolution:dragon_heart]]. Out come 4 [[draconicevolution:awakened_draconium_block]].",
+   "The fusion needs 50 million energy and injectors of at least Wyvern tier. Keep at least one block for the next quests: it becomes ingots ({{draconic_chaos/awakened_ingot}}) that go into cores, tools and modules."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/tech.js (kronwerke:tech/awakened_draconium_block, techLevel wyvern, totalEnergy 50000000)"
+  ]
+ },
+ "awakened_ingot": {
+  "de": [
+   "Formlos an der Werkbank: 1 Block gibt 9 [[draconicevolution:awakened_draconium_ingot]], 1 Barren gibt 9 [[draconicevolution:awakened_draconium_nugget]]. 9 Stück im 3 x 3 ergeben wieder die Stufe darüber, du verlierst also nichts.",
+   "Die Quest will 9 Barren auf einmal im Inventar. Nuggets stecken in den MEGA-Komponenten ab 16M ({{antimatter/mega_16m}}) und in den drakonischen Energie-, Schadens- und Projektilmodulen."
+  ],
+  "en": [
+   "Shapeless at the crafting table: 1 block gives 9 [[draconicevolution:awakened_draconium_ingot]], 1 ingot gives 9 [[draconicevolution:awakened_draconium_nugget]]. 9 of them in a 3 x 3 make the step above again, so nothing is lost.",
+   "The quest wants 9 ingots in your inventory at once. Nuggets go into the MEGA components from 16M up ({{antimatter/mega_16m}}) and into the draconic energy, damage and projectile modules."
+  ],
+  "sources": [
+   "draconicevolution:decompress/awakened_draconium_ingot",
+   "draconicevolution:decompress/awakened_draconium_nugget",
+   "kronwerke:ae2/cell_component_16m, _64m, _256m, bulk_cell_component",
+   "draconicevolution:modules/item_draconic_energy, item_draconic_damage, item_draconic_proj_damage"
+  ]
+ },
+ "injector": {
+  "de": [
+   "Jeder [[draconicevolution:awakened_crafting_injector]] kostet 2 [[draconicevolution:wyvern_core]] und damit 2 Nethersterne, dazu 1 [[draconicevolution:awakened_draconium_block]]. Den Wyvern-Injektor im Kern bekommst du aus {{draconic/w_injector}}.",
+   "Acht reichen für Werkzeuge, Brustplatte und Kondensator, aber **nicht für alles**: Der Stab der Macht hat 10 Zutaten, der Chaotische Injektor 9 und der Chaotische Kern 12. Für den Kern brauchst du also zwölf Injektoren der Drakonischen Stufe oder höher."
+  ],
+  "en": [
+   "Every [[draconicevolution:awakened_crafting_injector]] costs 2 [[draconicevolution:wyvern_core]], so 2 Nether Stars, plus 1 [[draconicevolution:awakened_draconium_block]]. You get the Wyvern injector for the core from {{draconic/w_injector}}.",
+   "Eight are enough for tools, chestpiece and capacitor, but **not for everything**: the Draconic Staff of Power has 10 ingredients, the Chaotic injector 9 and the Chaotic Core 12. For the core you need twelve injectors of Draconic tier or higher."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar data/draconicevolution/recipe/machines/awakened_crafting_injector.json",
+   "draconicevolution:components/wyvern_core (nether star)",
+   "draconicevolution:tools/draconic_staff (10), machines/chaotic_crafting_injector (9), components/chaotic_core (12)"
+  ],
+  "client": [
+   "higher tier injectors also work for lower tier fusions"
+  ]
+ },
+ "awakened_core": {
+  "de": [
+   "Jeder [[draconicevolution:wyvern_core]] hat selbst einen [[minecraft:nether_star]] in der Mitte ({{draconic/w_core}}). Ein [[draconicevolution:awakened_core]] kostet damit fünf Nethersterne: einen im Fusionskern, vier in den Wyvern-Kernen.",
+   "Gebraucht wird er im Stab, im Drakonischen Kondensator, im AOE-Modul, im Chaotischen Energiekern, im chaotischen Schildmodul und vierfach im Chaotischen Kern. Rechne für die chaotische Ausrüstung also mit mehreren Dutzend Sternen."
+  ],
+  "en": [
+   "Every [[draconicevolution:wyvern_core]] has a [[minecraft:nether_star]] of its own in the middle ({{draconic/w_core}}). So a [[draconicevolution:awakened_core]] costs five Nether Stars: one in the fusion core, four in the Wyvern Cores.",
+   "It goes into the staff, the Draconic Capacitor, the AOE module, the Chaotic Energy Core, the chaotic shield module and four times into the Chaotic Core. Plan for several dozen stars for the chaotic gear."
+  ],
+  "sources": [
+   "draconicevolution:components/awakened_core (catalyst #c:nether_stars, 4 wyvern_core, 4 awakened ingots, 1000000)",
+   "draconicevolution:components/wyvern_core",
+   "uses: tools/draconic_staff, tools/draconic_capacitor, modules/item_draconic_aoe, components/chaotic_energy_core, modules/item_chaotic_shield_capacity, components/chaotic_core"
+  ]
+ },
+ "energy_core": {
+  "de": [
+   "Die vier [[draconicevolution:wyvern_energy_core]] an den Seiten kommen aus {{draconic/w_energy}}. Die Belohnung gibt dir die 2 Wyvern-Kerne für die nächsten zwei zurück.",
+   "Du brauchst viele davon: einen pro drakonischem Werkzeug, Bogen und Brustplatte, einen im Stab, drei im Drakonischen Kondensator, einen pro Reaktorstabilisator und vier pro Chaotischem Energiekern."
+  ],
+  "en": [
+   "The four [[draconicevolution:wyvern_energy_core]] on the sides come from {{draconic/w_energy}}. The reward gives you back the 2 Wyvern Cores for the next two.",
+   "You need a lot of them: one per draconic tool, bow and chestpiece, one in the staff, three in the Draconic Capacitor, one per reactor stabilizer and four per Chaotic Energy Core."
+  ],
+  "sources": [
+   "draconicevolution:components/draconic_energy_core",
+   "uses: tools/draconic_*, tools/draconic_staff, tools/draconic_capacitor (3), machines/reactor_stabilizer, components/chaotic_energy_core (4)"
+  ]
+ },
+ "tools": {
+  "de": [
+   "Fusion der Drakonischen Stufe, also in acht Injektoren aus {{draconic_chaos/injector}}. Die [[draconicevolution:wyvern_pickaxe]] für den Kern kommt aus {{draconic/tools}}.",
+   "Das Modulraster wächst von 4 x 4 auf 6 x 5 Felder. Axt, Schaufel, Hacke, Schwert und Bogen haben dasselbe Rezept mit ihrem Wyvern-Gegenstück, jedes kostet 4 Netheritbarren und 32 Millionen Energie."
+  ],
+  "en": [
+   "A Draconic tier fusion, so in eight injectors from {{draconic_chaos/injector}}. The [[draconicevolution:wyvern_pickaxe]] for the core comes from {{draconic/tools}}.",
+   "The module grid grows from 4 x 4 to 6 x 5 slots. Axe, shovel, hoe, sword and bow have the same recipe with their Wyvern counterpart, each costs 4 Netherite Ingots and 32 million energy."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_pickaxe, draconic_axe, draconic_shovel, draconic_hoe, draconic_sword, draconic_bow (draconic, 32000000)",
+   "DE jar: com/brandon3055/draconicevolution/init/ModuleCfg.class (default grid sizes) WYVERN_TOOLS 4x4, DRACONIC_TOOLS 6x5"
+  ]
+ },
+ "bow": {
+  "de": [
+   "Der [[draconicevolution:wyvern_bow]] für den Kern kommt aus {{draconic/bow}}. Das [[draconicevolution:item_draconic_proj_damage]] braucht zwei Wyvern-Projektil-Schadensmodule, also baue die zuerst.",
+   "Der Schild des Wächters hat keine Grenze, wie schnell er getroffen werden darf. Darum lohnen Schadens- und Tempomodule im Bogen mehr als ein starkes Schwert. Die Geschosse von Draconic Evolution treffen auch Endermen, Shulker, Wither und den Enderdrachen."
+  ],
+  "en": [
+   "The [[draconicevolution:wyvern_bow]] for the core comes from {{draconic/bow}}. The [[draconicevolution:item_draconic_proj_damage]] needs two Wyvern projectile damage modules, so build those first.",
+   "The guardian's shield has no limit on how fast it may be hit. That is why damage and speed modules in the bow pay off more than a strong sword. Draconic Evolution's projectiles also hit endermen, shulkers, withers and the Ender Dragon."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_bow",
+   "draconicevolution:modules/item_draconic_proj_damage",
+   "DEConfig.class (guardianShield comment: no limit to how fast you can hit)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (projectileAntiImmuneEntities)"
+  ]
+ },
+ "chestpiece": {
+  "de": [
+   "Die [[draconicevolution:wyvern_chestpiece]] für den Kern kommt aus {{draconic/armor}}. Die Fusion kostet 4 Netheritbarren, 2 Erwachte Barren, einen Wyvern-Kern und einen Drakonischen Energiekontroller, 32 Millionen Energie.",
+   "Das Modulraster wächst von 6 x 5 auf 8 x 6 Felder. Platz brauchst du für Schild, Untod, Flug und Energie: {{draconic_chaos/shield_mod}}, {{draconic_chaos/modules}}, {{draconic_chaos/flight}} und {{draconic_chaos/d_energy_mod}}."
+  ],
+  "en": [
+   "The [[draconicevolution:wyvern_chestpiece]] for the core comes from {{draconic/armor}}. The fusion costs 4 Netherite Ingots, 2 awakened ingots, a Wyvern Core and a Draconic Energy Controller, 32 million energy.",
+   "The module grid grows from 6 x 5 to 8 x 6 slots. You need room for shield, undying, flight and energy: {{draconic_chaos/shield_mod}}, {{draconic_chaos/modules}}, {{draconic_chaos/flight}} and {{draconic_chaos/d_energy_mod}}."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_chestpiece",
+   "DE jar: com/brandon3055/draconicevolution/init/ModuleCfg.class (default grid sizes) WYVERN_CHESTPIECE 6x5, DRACONIC_CHESTPIECE 8x6"
+  ]
+ },
+ "shield_mod": {
+  "de": [
+   "Ein [[draconicevolution:item_draconic_shield_capacity]] fasst 50 Schildpunkte, das Wyvern-Modul in der Mitte ({{draconic/shield_mod}}) nur 25. Die drakonische Version lädt auch mehr als doppelt so schnell nach.",
+   "Fünf Module und vier Draconiumkerne ergeben ein großes Schildmodul mit 250 Punkten, das aber gar nicht von selbst nachlädt. Von den zwei Modulen der Quest steckt eins später im Untod-Modul ({{draconic_chaos/modules}})."
+  ],
+  "en": [
+   "A [[draconicevolution:item_draconic_shield_capacity]] holds 50 shield points, the Wyvern module in the middle ({{draconic/shield_mod}}) only 25. The draconic version also recharges more than twice as fast.",
+   "Five modules and four Draconium Cores make a large shield module with 250 points, but it does not recharge on its own at all. One of the two modules of this quest later goes into the undying module ({{draconic_chaos/modules}})."
+  ],
+  "sources": [
+   "srv/config/brandon3055/ModuleStats.cfg (wyvern_shield_capacity 25/0.005, draconic 50/0.0125, draconic_large 250/0.0)",
+   "draconicevolution:modules/item_draconic_large_shield_capacity",
+   "draconicevolution:modules/item_draconic_undying"
+  ]
+ },
+ "modules": {
+  "de": [
+   "Der Trank oben muss ein **Trank der Heilung II** sein, ein normaler Heiltrank passt nicht. Das Wyvern-Untod-Modul für die Mitte kommt aus {{draconic/mod_undying}}.",
+   "Fängt es einen tödlichen Treffer ab, heilt es 12 Lebenspunkte und gibt dir 50 Schildpunkte für 30 Sekunden. Danach lädt es 60 Sekunden lang nach und zieht dabei 10 Millionen Energie aus der Brustplatte."
+  ],
+  "en": [
+   "The potion on top has to be a **Potion of Healing II**, a plain healing potion does not fit. The Wyvern undying module for the middle comes from {{draconic/mod_undying}}.",
+   "When it catches a lethal hit it heals 12 health points and gives you 50 shield points for 30 seconds. Then it recharges for 60 seconds and draws 10 million energy from the chestpiece."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_draconic_undying (potion_contents minecraft:strong_healing)",
+   "srv/config/brandon3055/ModuleStats.cfg (draconic_undying health_boost 12, shield_boost 50, shield_boost_time 600, charge_ticks 1200, charge_energy 10000000)"
+  ]
+ },
+ "flight": {
+  "de": [
+   "Oben gehört ein **Trank des sanften Falls** hin (die normale, nicht die verlängerte Version), unten eine [[minecraft:firework_rocket]]. Das Wyvern-Flugmodul für die Mitte kommt aus {{draconic/flight}}.",
+   "Das Wyvern-Modul gibt nur Elytraflug. Das drakonische schaltet zusätzlich Kreativflug frei, der auf diesem Server erlaubt ist, und der Elytra-Schub ist doppelt so stark."
+  ],
+  "en": [
+   "The top slot takes a **Potion of Slow Falling** (the normal one, not the long version), the bottom a [[minecraft:firework_rocket]]. The Wyvern flight module for the middle comes from {{draconic/flight}}.",
+   "The Wyvern module only gives elytra flight. The draconic one adds creative flight, which this server allows, and its elytra boost is twice as strong."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_draconic_flight (potion_contents minecraft:slow_falling)",
+   "DEModules.class (flightData: wyvern elytra only, draconic elytra + creative)",
+   "srv/config/brandon3055/ModuleStats.cfg (elytra_boost_speed 1.0 / 2.0)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (enableCreativeFlight=true)"
+  ]
+ },
+ "staff": {
+  "de": [
+   "Die Fusion hat **zehn Zutaten**, du brauchst also zehn Injektoren der Drakonischen Stufe, zwei mehr als {{draconic_chaos/injector}} verlangt. Im Kern liegt ein [[draconicevolution:awakened_core]].",
+   "Drakonische Spitzhacke, Schaufel und Schwert gehen dabei auf, mit allem, was sie gekostet haben. Dafür hat der Stab ein Raster von 8 x 6 Feldern für Module."
+  ],
+  "en": [
+   "The fusion has **ten ingredients**, so you need ten Draconic tier injectors, two more than {{draconic_chaos/injector}} asks for. The core holds an [[draconicevolution:awakened_core]].",
+   "The draconic pickaxe, shovel and sword are used up, with everything they cost. In return the staff has a grid of 8 x 6 slots for modules."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_staff (10 ingredients, draconic, 256000000)",
+   "DE jar: com/brandon3055/draconicevolution/init/ModuleCfg.class (default grid sizes) DRACONIC_STAFF 8x6"
+  ]
+ },
+ "find_island": {
+  "de": [
+   "Die Chaosinseln liegen im End im Abstand von 10 000 Blöcken, jede mit etwa 160 Blöcken Radius und dem Chaoskristall in der Mitte auf Höhe 80. Speicher die Insel sofort in einem [[draconicevolution:advanced_dislocator]] ({{draconic/adv_dislocator}}).",
+   "Für das Finale führt euch das Team gemeinsam hin ({{finale/trip}}). Die Quest ist ein Häkchen, das du selbst setzt, sobald du dort stehst."
+  ],
+  "en": [
+   "The Chaos Islands lie in the End 10,000 blocks apart, each with a radius of about 160 blocks and the Chaos Crystal in the middle at height 80. Save the island in an [[draconicevolution:advanced_dislocator]] right away ({{draconic/adv_dislocator}}).",
+   "For the finale the team leads you there together ({{finale/trip}}). The quest is a checkmark you tick yourself once you stand there."
+  ],
+  "sources": [
+   "srv/config/brandon3055/DraconicEvolution.cfg (Chaos Island: chaosIslandSeparation 10000, chaosIslandSize 160, chaosIslandYPosition 80)",
+   "qbook finale/trip"
+  ]
+ },
+ "crystals": {
+  "de": [
+   "Der Schild eines Wächterkristalls (512 Punkte) wird nur instabil, wenn ihn ein Angriff des Wächters selbst trifft, und bleibt es 10 Sekunden. In diesem Fenster muss jemand am Kristall sein und zuschlagen.",
+   "Chaotische Waffen gehen durch den Kristallschild direkt durch, aber die gibt es erst nach dem ersten Sieg ({{draconic_chaos/chaotic_gear}})."
+  ],
+  "en": [
+   "A guardian crystal's shield (512 points) only becomes unstable when an attack of the guardian itself hits it, and stays so for 10 seconds. In that window someone has to be at the crystal and strike.",
+   "Chaotic weapons go straight through the crystal shield, but they only exist after the first win ({{draconic_chaos/chaotic_gear}})."
+  ],
+  "sources": [
+   "DEConfig.class (guardianCrystalShield default 512, guardianCrystalUnstableWindow default 200 ticks)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (values -99 = defaults, chaoticBypassCrystalShield=true)"
+  ],
+  "client": [
+   "which player gets the kill credit for the crystal"
+  ]
+ },
+ "guardian": {
+  "de": [
+   "Nach den Kristallen hat der Wächter 16 000 Schildpunkte und darunter 1 000 Leben, die Werte von Draconic Evolution sind auf dem Server nicht verändert. Der Schild darf beliebig schnell getroffen werden: Viele gleichzeitige Bögen ({{draconic_chaos/bow}}) bringen mehr als einzelne starke Schläge.",
+   "Jeder Mitkämpfer braucht eine Brustplatte mit vollen Schildmodulen, einem Untod-Modul ({{draconic_chaos/modules}}), Flug und Energiemodulen, dazu einen geladenen Kondensator ({{draconic_chaos/d_capacitor}}). Ablauf des Finales: {{finale/fight}}."
+  ],
+  "en": [
+   "After the crystals the guardian has 16,000 shield points and 1,000 health beneath them, Draconic Evolution's values are not changed on the server. The shield may be hit as fast as you like: many bows at once ({{draconic_chaos/bow}}) do more than single strong hits.",
+   "Every fighter needs a chestpiece with full shield modules, an undying module ({{draconic_chaos/modules}}), flight and energy modules, plus a charged capacitor ({{draconic_chaos/d_capacitor}}). How the finale runs: {{finale/fight}}."
+  ],
+  "sources": [
+   "DEConfig.class (guardianShield default 16000, guardianHealth default 1000)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (Guardian Fight values -99)"
+  ]
+ },
+ "chaos_shard": {
+  "de": [
+   "Der Chaoskristall gibt 5 [[draconicevolution:chaos_shard]], und jede Scherbe sind 9 Große Chaosfragmente. Das klingt nach viel, ist es aber nicht: 8 Chaotische Injektoren brauchen 32 Große Fragmente, ein Chaotischer Kern 5, der Reaktor eine ganze Scherbe und 26 Große Fragmente, die Chaotischen Kerne seiner vier Stabilisatoren mitgezählt.",
+   "Teilt die Scherben vor dem Kampf auf. Weitere Inseln mit eigenem Wächter liegen jeweils 10 000 Blöcke weiter."
+  ],
+  "en": [
+   "The Chaos Crystal gives 5 [[draconicevolution:chaos_shard]], and every shard is 9 Large Chaos Fragments. That sounds like a lot, but it is not: 8 chaotic injectors need 32 Large Fragments, a Chaotic Core 5, the reactor a whole shard and 26 Large Fragments, counting the Chaotic Cores of its four stabilizers.",
+   "Split the shards before the fight. More islands with their own guardian lie 10,000 blocks further on."
+  ],
+  "sources": [
+   "srv/config/brandon3055/DraconicEvolution.cfg (chaosDropCount=5, chaosIslandSeparation 10000)",
+   "draconicevolution:decompress/large_chaos_frag",
+   "machines/chaotic_crafting_injector (4 large), components/chaotic_core (catalyst + 4 large), machines/reactor_core (shard + 2 large), machines/reactor_stabilizer (1 large each, 4 needed)"
+  ]
+ },
+ "fragments": {
+  "de": [
+   "Vorsicht mit den Namen: Im Spiel heißen die drei Stufen Large, Small und Tiny Chaos Fragment ([[draconicevolution:large_chaos_frag]], [[draconicevolution:medium_chaos_frag]], [[draconicevolution:small_chaos_frag]]). Jede Stufe zerfällt formlos in 9 der nächsten, 9 gleiche im 3 x 3 setzen sie wieder zusammen.",
+   "Große Fragmente brauchen Chaotischer Injektor (4), Chaotischer Kern (5), jeder Reaktorstabilisator (1) und das chaotische Schildmodul (2). Die mittleren (Small) brauchst du für den Chaotischen Energiekern (4) und den Chaotischen Stab."
+  ],
+  "en": [
+   "Mind the names: in the game the three steps are called Large, Small and Tiny Chaos Fragment ([[draconicevolution:large_chaos_frag]], [[draconicevolution:medium_chaos_frag]], [[draconicevolution:small_chaos_frag]]). Each step splits shapeless into 9 of the next, 9 alike in a 3 x 3 put it back together.",
+   "Large Fragments go into the Chaotic injector (4), the Chaotic Core (5), each reactor stabilizer (1) and the chaotic shield module (2). The middle ones (Small) go into the Chaotic Energy Core (4) and the Chaotic Staff."
+  ],
+  "sources": [
+   "draconicevolution lang en_us (medium_chaos_frag = Small Chaos Fragment, small_chaos_frag = Tiny Chaos Fragment)",
+   "draconicevolution:decompress/*_chaos_frag, compress/*",
+   "draconicevolution:components/chaotic_energy_core (medium_chaos_frag x4)"
+  ]
+ },
+ "chaotic_injector": {
+  "de": [
+   "Die Fusion hat neun Zutaten, also neun drakonische Injektoren, und ein zehnter liegt als Katalysator im Kern. Das [[minecraft:dragon_egg]] bringt jeder Drache neu, oder du brütest eins im Antiprotonischen Kernsynthesizer aus ({{antimatter/dragon_egg}}).",
+   "Eine reicht für die Quest, aber Fusionen der Chaotischen Stufe brauchen ganze Reihen: acht für jedes chaotische Teil, neun für den Reaktorkern, zehn für den Reaktor-Energieinjektor. Jeder kostet 4 Große Chaosfragmente und ein Drachenei."
+  ],
+  "en": [
+   "The fusion has nine ingredients, so nine draconic injectors, and a tenth sits in the core as the catalyst. Every dragon brings a new [[minecraft:dragon_egg]], or you hatch one in the Antiprotonic Nucleosynthesizer ({{antimatter/dragon_egg}}).",
+   "One is enough for the quest, but Chaotic tier fusions need whole rows: eight for every chaotic item, nine for the reactor core, ten for the reactor energy injector. Each one costs 4 Large Chaos Fragments and a Dragon Egg."
+  ],
+  "sources": [
+   "draconicevolution:machines/chaotic_crafting_injector (9 ingredients, draconic, 8000000)",
+   "draconicevolution:tools/chaotic_* (8, chaotic), machines/reactor_core (9, chaotic), machines/reactor_injector (10, chaotic)",
+   "mekanism:nucleosynthesizing/dragon_egg",
+   "srv/config/brandon3055/DraconicEvolution.cfg (dragonEggSpawnOverride=true)"
+  ]
+ },
+ "chaotic_core": {
+  "de": [
+   "Zwölf Zutaten heißt zwölf Injektoren der Drakonischen Stufe oder höher, so viele hat bis hier niemand. Im Kern liegt ein [[draconicevolution:large_chaos_frag]].",
+   "Die vier [[draconicevolution:awakened_core]] kosten zusammen 20 Nethersterne. Jedes chaotische Werkzeug, der Kondensator, jeder Reaktorstabilisator und der Stab brauchen je einen [[draconicevolution:chaotic_core]]."
+  ],
+  "en": [
+   "Twelve ingredients means twelve injectors of Draconic tier or higher, more than anyone has built so far. The core holds a [[draconicevolution:large_chaos_frag]].",
+   "The four [[draconicevolution:awakened_core]] cost 20 Nether Stars together. Every chaotic tool, the capacitor, every reactor stabilizer and the staff need one [[draconicevolution:chaotic_core]] each."
+  ],
+  "sources": [
+   "draconicevolution:components/chaotic_core (12 ingredients, draconic, 100000000)",
+   "draconicevolution:components/awakened_core",
+   "uses: tools/chaotic_*, tools/chaotic_capacitor, machines/reactor_stabilizer, tools/chaotic_staff"
+  ]
+ },
+ "chaotic_gear": {
+  "de": [
+   "Die Quest will das [[draconicevolution:chaotic_sword]], mit dem [[draconicevolution:draconic_sword]] ({{draconic_chaos/d_sword}}) im Kern. Die Fusion ist Chaotische Stufe, du brauchst also acht chaotische Injektoren ({{draconic_chaos/chaotic_injector}}).",
+   "Jedes chaotische Teil kostet einen [[draconicevolution:chaotic_core]] und einen [[draconicevolution:chaotic_energy_core]]. Für den Energiekern gehören 4 Small Chaos Fragments ([[draconicevolution:medium_chaos_frag]]) in die Ecken."
+  ],
+  "en": [
+   "The quest wants the [[draconicevolution:chaotic_sword]], with the [[draconicevolution:draconic_sword]] ({{draconic_chaos/d_sword}}) in the core. The fusion is Chaotic tier, so you need eight chaotic injectors ({{draconic_chaos/chaotic_injector}}).",
+   "Every chaotic item costs a [[draconicevolution:chaotic_core]] and a [[draconicevolution:chaotic_energy_core]]. The energy core takes 4 Small Chaos Fragments ([[draconicevolution:medium_chaos_frag]]) in the corners."
+  ],
+  "sources": [
+   "draconicevolution:tools/chaotic_sword (catalyst draconic_sword, chaotic, 128000000)",
+   "draconicevolution:components/chaotic_energy_core"
+  ]
+ },
+ "reactor_parts": {
+  "de": [
+   "Die Quest will je ein Teil, der Reaktor aber viel mehr: Jeder der 4 Stabilisatoren braucht eine Rotorbaugruppe (2 innere, 2 äußere Rotoren), einen Fokusring und einen Rahmen. Der Reaktor-Energieinjektor braucht noch einmal 4 innere Rotoren.",
+   "Zusammen sind das 12 [[draconicevolution:reactor_prt_in_rotor]], 8 [[draconicevolution:reactor_prt_out_rotor]] und 16 [[draconicevolution:wyvern_core]] für Baugruppen, Ringe und Rahmen. Alles ist normales Werkbankhandwerk, keine Fusion."
+  ],
+  "en": [
+   "The quest wants one of each part, the reactor needs much more: each of the 4 stabilizers needs a rotor assembly (2 inner, 2 outer rotors), a focus ring and a frame. The reactor energy injector needs another 4 inner rotors.",
+   "That adds up to 12 [[draconicevolution:reactor_prt_in_rotor]], 8 [[draconicevolution:reactor_prt_out_rotor]] and 16 [[draconicevolution:wyvern_core]] for assemblies, rings and frames. All of it is plain crafting table work, no fusion."
+  ],
+  "sources": [
+   "draconicevolution:machines/reactor_prt_in_rotor, reactor_prt_out_rotor, reactor_prt_rotor_full, reactor_prt_focus_ring (2 wyvern_core), reactor_prt_stab_frame (1 wyvern_core)",
+   "draconicevolution:machines/reactor_injector (4 reactor_prt_in_rotor)"
+  ]
+ },
+ "reactor": {
+  "de": [
+   "Alle drei Teile sind Fusionen der Chaotischen Stufe. Der [[draconicevolution:reactor_core]] hat neun Zutaten (4 Erwachte Barren, 3 Draconiumbarren, 2 Große Fragmente), der [[draconicevolution:reactor_injector]] mit einem Wyvern-Kern im Kern zehn (4 Draconiumbarren, 4 innere Rotoren, 2 Eisenbarren). Du brauchst also zehn chaotische Injektoren.",
+   "Die große Explosion ist **eingeschaltet** und in voller Stärke (disableLargeReactorBoom false, reactorExplosionScale 1.0). Bau ihn weit weg von allem, was dir oder anderen gehört."
+  ],
+  "en": [
+   "All three parts are Chaotic tier fusions. The [[draconicevolution:reactor_core]] has nine ingredients (4 awakened ingots, 3 draconium ingots, 2 Large Fragments), the [[draconicevolution:reactor_injector]] with a Wyvern Core in the core has ten (4 draconium ingots, 4 inner rotors, 2 iron ingots). So you need ten chaotic injectors.",
+   "The large explosion is **on** and at full strength (disableLargeReactorBoom false, reactorExplosionScale 1.0). Build it far away from anything that belongs to you or others."
+  ],
+  "sources": [
+   "draconicevolution:machines/reactor_core (chaotic, 64000000)",
+   "draconicevolution:machines/reactor_stabilizer (chaotic, 16000000)",
+   "draconicevolution:machines/reactor_injector (chaotic, 16000000, 10 ingredients)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (Reactor)"
+  ]
+ },
+ "goal": {
+  "de": [
+   "Die Quest hakt ab, sobald du 16 [[draconicevolution:awakened_draconium_block]] gleichzeitig im Inventar hast, sie nimmt sie dir nicht weg. Danach gibst du sie am Obelisken ab: Leg sie in die Hauptreihen des Inventars (nicht in die Schnellleiste), halte ein Item in der Hand und klick zweimal schleichend innerhalb von 5 Sekunden.",
+   "Die 64 Blöcke des Ziels sind fest und wachsen nicht mit der Spielerzahl, die Antimaterie-Pellets ({{antimatter/goal}}, 100 als Grundwert) schon."
+  ],
+  "en": [
+   "The quest ticks once you hold 16 [[draconicevolution:awakened_draconium_block]] in your inventory at the same time, it does not take them. Then hand them in at the obelisk: put them in the main inventory rows (not the hotbar), hold an item in your hand and sneak click twice within 5 seconds.",
+   "The goal's 64 blocks are fixed and do not grow with the number of players, the antimatter pellets ({{antimatter/goal}}, 100 as the base) do."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage5 tech: awakened_draconium_block base 64 fixed, mekanism:pellet_antimatter base 100)",
+   "tools/quests/ftbq.py (task_item without consume)",
+   "core: obelisk hand-in (sneak click, main inventory rows, 5 s)"
+  ]
+ },
+ "awakened_magnet": {
+  "de": [
+   "Im Spiel heißt er Awakened Item Dislocator ([[draconicevolution:advanced_magnet]]). Er zieht Gegenstände aus 32 Blöcken Umkreis heran, der normale aus {{draconic/magnet}} nur aus 8, und der normale gehört beim Bauen unten in die Mitte."
+  ],
+  "en": [
+   "In the game it is called Awakened Item Dislocator ([[draconicevolution:advanced_magnet]]). It pulls items from a 32 block range, the normal one from {{draconic/magnet}} only from 8, and the normal one goes in the bottom middle of the recipe."
+  ],
+  "sources": [
+   "draconicevolution:tools/advanced_magnet",
+   "DEContent.class (Magnet range 8 for magnet, 32 for advanced_magnet)"
+  ]
+ },
+ "d_capacitor": {
+  "de": [
+   "Der [[draconicevolution:wyvern_capacitor]] für den Kern kommt aus {{draconic/w_capacitor}}. Die drei Energiekontroller und der Drakonische Kern machen ihn teuer, plane sie beim Bau von {{draconic_chaos/energy_core}} gleich mit ein.",
+   "Sein Modulraster wächst von 4 x 4 auf 5 x 5 Felder. Mit drakonischen Energiemodulen ({{draconic_chaos/d_energy_mod}}) darin fasst er mehr, und er ist der Katalysator für den Chaotischen Kondensator."
+  ],
+  "en": [
+   "The [[draconicevolution:wyvern_capacitor]] for the core comes from {{draconic/w_capacitor}}. The three energy controllers and the Draconic Core make it expensive, plan them in when you build {{draconic_chaos/energy_core}}.",
+   "Its module grid grows from 4 x 4 to 5 x 5 slots. Draconic energy modules ({{draconic_chaos/d_energy_mod}}) inside raise its storage, and it is the catalyst for the Chaotic Capacitor."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_capacitor (draconic, 32000000)",
+   "DE jar: com/brandon3055/draconicevolution/init/ModuleCfg.class (default grid sizes) WYVERN_CAPACITOR 4x4, DRACONIC_CAPACITOR 5x5",
+   "draconicevolution:tools/chaotic_capacitor (catalyst draconic_capacitor)"
+  ]
+ },
+ "d_energy_mod": {
+  "de": [
+   "Die zwei Wyvern-Energiemodule für die Mitte kommen aus {{draconic/mod_energy}}. Ein Wyvern-Modul fasst 4 Millionen bei 64 000 pro Tick, das drakonische also das Vierfache.",
+   "Die nächste Stufe, das chaotische Energiemodul, fasst 64 Millionen bei 1 024 000 pro Tick."
+  ],
+  "en": [
+   "The two Wyvern energy modules for the middle come from {{draconic/mod_energy}}. A Wyvern module holds 4 million at 64,000 per tick, so the draconic one four times as much.",
+   "The next step, the chaotic energy module, holds 64 million at 1,024,000 per tick."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_draconic_energy",
+   "srv/config/brandon3055/ModuleStats.cfg (wyvern_energy 4000000/64000, draconic_energy 16000000/256000, chaotic_energy 64000000/1024000)"
+  ]
+ },
+ "d_aoe": {
+  "de": [
+   "Die Mitte braucht zwei Wyvern-AOE-Module ({{draconic/mod_aoe}}) und einen [[draconicevolution:awakened_core]], also fünf Nethersterne.",
+   "Die Reichweite zählt vom Block aus nach jeder Seite: Wyvern 2 (5 x 5), Drakonisch 3 (7 x 7), Chaotisch 5 (11 x 11)."
+  ],
+  "en": [
+   "The middle needs two Wyvern AOE modules ({{draconic/mod_aoe}}) and an [[draconicevolution:awakened_core]], so five Nether Stars.",
+   "The range counts from the block to each side: Wyvern 2 (5 x 5), Draconic 3 (7 x 7), Chaotic 5 (11 x 11)."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_draconic_aoe",
+   "srv/config/brandon3055/ModuleStats.cfg (wyvern_aoe 2, draconic_aoe 3, chaotic_aoe 5)"
+  ]
+ },
+ "d_recovery": {
+  "de": [
+   "Das Regenerationsmodul fasst selbst nur 10 Schildpunkte, lädt aber mit 0,125 nach, zehnmal so schnell wie ein drakonisches Kapazitätsmodul (0,0125). Das Wyvern-Modul liegt bei 5 Punkten und 0,05.",
+   "Mische beides in der Brustplatte: Kapazität fängt den großen Treffer, Regeneration hält dich im langen Kampf."
+  ],
+  "en": [
+   "The recovery module only holds 10 shield points itself, but recharges at 0.125, ten times as fast as a draconic capacity module (0.0125). The Wyvern module has 5 points and 0.05.",
+   "Mix both in the chestpiece: capacity catches the big hit, recovery keeps you going in a long fight."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_shield_recovery, item_draconic_shield_recovery",
+   "srv/config/brandon3055/ModuleStats.cfg (wyvern_shield_recovery 5/0.05, draconic_shield_recovery 10/0.125, draconic_shield_capacity 50/0.0125)"
+  ]
+ },
+ "d_sword": {
+  "de": [
+   "Das [[draconicevolution:wyvern_sword]] für den Kern kommt aus {{draconic/sword}}, die Wyvern-Schadensmodule aus derselben Reihe. Den [[minecraft:dragon_breath]] füllst du beim Drachenkampf mit leeren Flaschen ab ({{the_end/breath}}).",
+   "Behalte das Schwert gut: Es ist der Katalysator für das Chaotische Schwert ({{draconic_chaos/chaotic_gear}}) und eine Zutat im Stab der Macht."
+  ],
+  "en": [
+   "The [[draconicevolution:wyvern_sword]] for the core comes from {{draconic/sword}}, the Wyvern damage modules from the same row. Collect the [[minecraft:dragon_breath]] with empty bottles during the dragon fight ({{the_end/breath}}).",
+   "Keep the sword safe: it is the catalyst for the Chaotic Sword ({{draconic_chaos/chaotic_gear}}) and an ingredient of the Draconic Staff of Power."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_sword",
+   "draconicevolution:modules/item_draconic_damage (dragon_breath)",
+   "draconicevolution:tools/chaotic_sword, draconic_staff"
+  ]
+ },
+ "chaotic_armor": {
+  "de": [
+   "Chaotische Stufe heißt acht chaotische Injektoren ({{draconic_chaos/chaotic_injector}}). Das Modulraster wächst von 8 x 6 auf 10 x 8 Felder.",
+   "Das chaotische Untod-Modul heilt 20 Lebenspunkte, gibt 100 Schildpunkte für 2 Minuten und lädt in 45 Sekunden nach. Der chaotische Flug hat Elytra-Schub 3,5 statt 2."
+  ],
+  "en": [
+   "Chaotic tier means eight chaotic injectors ({{draconic_chaos/chaotic_injector}}). The module grid grows from 8 x 6 to 10 x 8 slots.",
+   "The chaotic undying module heals 20 health points, gives 100 shield points for 2 minutes and recharges in 45 seconds. Chaotic flight has an elytra boost of 3.5 instead of 2."
+  ],
+  "sources": [
+   "draconicevolution:tools/chaotic_chestpiece (chaotic, 128000000)",
+   "DE jar: com/brandon3055/draconicevolution/init/ModuleCfg.class (default grid sizes) DRACONIC_CHESTPIECE 8x6, CHAOTIC_CHESTPIECE 10x8",
+   "srv/config/brandon3055/ModuleStats.cfg (chaotic_undying 20/100/2400/900, chaotic_flight 3.5)"
+  ]
+ },
+ "chaotic_shield": {
+  "de": [
+   "Ein [[draconicevolution:item_chaotic_shield_capacity]] fasst 100 Schildpunkte bei Nachladerate 0,025, doppelt so viel wie das drakonische. Unten gehört ein [[draconicevolution:awakened_core]] hin, das sind wieder fünf Nethersterne pro Modul."
+  ],
+  "en": [
+   "An [[draconicevolution:item_chaotic_shield_capacity]] holds 100 shield points at a recharge rate of 0.025, twice the draconic one. The bottom slot takes an [[draconicevolution:awakened_core]], again five Nether Stars per module."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_chaotic_shield_capacity",
+   "srv/config/brandon3055/ModuleStats.cfg (chaotic_shield_capacity 100/0.025, draconic 50/0.0125)"
+  ]
+ },
+ "chaotic_capacitor": {
+  "de": [
+   "Die drei [[draconicevolution:chaotic_energy_core]] kosten zusammen 12 Drakonische Energiekontroller, 3 Drakonische Kerne und 12 Small Chaos Fragments. Dafür hat der Kondensator ein Modulraster von 8 x 6 statt 5 x 5.",
+   "Mit chaotischen Energiemodulen (64 Millionen pro Stück) ist er der größte tragbare Speicher von Draconic Evolution."
+  ],
+  "en": [
+   "The three [[draconicevolution:chaotic_energy_core]] cost 12 Draconic Energy Controllers, 3 Draconic Cores and 12 Small Chaos Fragments together. In return the capacitor has a module grid of 8 x 6 instead of 5 x 5.",
+   "With chaotic energy modules (64 million each) it is the largest portable storage of Draconic Evolution."
+  ],
+  "sources": [
+   "draconicevolution:tools/chaotic_capacitor",
+   "draconicevolution:components/chaotic_energy_core",
+   "DE jar: com/brandon3055/draconicevolution/init/ModuleCfg.class (default grid sizes) DRACONIC_CAPACITOR 5x5, CHAOTIC_CAPACITOR 8x6",
+   "srv/config/brandon3055/ModuleStats.cfg (chaotic_energy 64000000)"
+  ]
+ }
+}

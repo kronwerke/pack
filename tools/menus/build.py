@@ -210,6 +210,10 @@ TITLE_HIDDEN = ('minecraft_logo_widget', 'minecraft_splash_widget', 'minecraft_b
                 '376388', '604388', '376394', '604394', '376382', '604382')
 COL = -164          # left edge of the button column, from the right screen edge
 CW = 148
+# The logo is the painted one (art/src/logo.png, drawn by Nycole), not pixel art: its files are
+# four times the size they are shown at, so they are sharp at GUI scale 4 and thinned out below.
+LOGO = (COL + 8, 3, 132, 73)          # over the button column of the title and the pause screen
+LOGO_LOAD = (-80, -81, 160, 89)       # over the bar of the loading screen
 
 
 # The picture is painted 640x360 around its 480x270 middle (tools/menus/art/scene.py) and laid
@@ -262,7 +266,7 @@ def title(name, art, hours):
     L = name
     mode = 'night' if 'night' in name else 'dusk'
     b = picture(L, f'art_{mode}.png', mode)
-    b += image(L + ':logo', 'logo.png', 'top-right', COL - 8, 8, 163, 62)
+    b += image(L + ':logo', 'logo.png', 'top-right', *LOGO)
     b += button(L + ':join', local('join'), 'top-right', COL, 78, CW, 32, 'btn_main.png', 'btn_main_hover.png',
                 [('joinserver', SERVER)], tip=local('join.tip'))
     players = ph('json', source=STATUS, json_path='$.server.players')
@@ -337,7 +341,7 @@ def pause():
     L = 'pause'
     x, y = COL, 80
     left, right = ('btn_80.png', 'btn_80_hover.png'), ('btn_64.png', 'btn_64_hover.png')     # 80 wide: "Advancements" must fit
-    b = image(L + ':logo', 'logo.png', 'top-right', COL - 8, 8, 163, 62)
+    b = image(L + ':logo', 'logo.png', 'top-right', *LOGO)
     b += vanilla('pause_return_to_game_button', 'top-right', x, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
     b += button(L + ':quests', local('quests'), 'top-right', x, y + 24, 80, 20, *left,
                 actions=[('closegui', ''), ('sendmessage', '/ftbquests open_book')])      # the book has no key in the pack
@@ -366,7 +370,7 @@ def loading(name, art, hours):
     everything lands in the wrong place whenever the game's own GUI scale is another one."""
     L = name
     b = picture(L, 'art_night.png' if 'night' in name else 'art_dusk.png')
-    b += image(L + ':logo', 'logo.png', 'mid-centered', -82, -50, 163, 62)
+    b += image(L + ':logo', 'logo_load.png', 'mid-centered', *LOGO_LOAD)
     b += image(L + ':frame', 'bar_frame.png', 'mid-centered', -74, 14, CW, 20)
     p = base(L + ':bar', 'progress_bar', 'mid-centered', -70, 18, CW - 8, 12)
     head = [('bar_color', '#E5B451FF'), ('bar_texture', A + 'bar_fill.png'), ('background_color', '#00000000'), ('direction', 'right'),
@@ -462,7 +466,7 @@ OTHER = {
 # The module places in plain pixels and does not scale with the window, so logo and bar stay in
 # the middle, where every window size shows them. Measured: at offset 0 the logo's centre sits
 # 46 above the middle, and the bar hangs below the logo (its y offset is relative to the logo).
-EARLY = {'logo': (0, -30, 652, 248), 'bar': (0, -30, 592, 80)}
+EARLY = {'logo': (0, -100, 640, 356), 'bar': (0, -14, 592, 80)}
 
 
 def drippy_options():
@@ -540,8 +544,9 @@ def art():
         c.image(1, rgba=True).save(os.path.join(W, sprite + '.png'), optimize=True)
         w, h = c.w, c.h
         write(os.path.join(W, sprite + '.png.mcmeta'), sprite_meta(w, h, 4 if w > 20 else 3))
+    brand()
     # larger copies for the early window, which smooths its textures
-    for k in ('logo', 'bar_frame', 'bar_fill'):
+    for k in ('bar_frame', 'bar_fill'):
         im = Image.open(os.path.join(ASSETS, k + '.png'))
         im.resize((im.width * 4, im.height * 4), Image.NEAREST).save(os.path.join(ASSETS, k + '_big.png'), optimize=True)
     fill = Image.new('RGBA', (148, 20), (0, 0, 0, 0))
@@ -549,14 +554,37 @@ def art():
     fill.resize((592, 80), Image.NEAREST).save(os.path.join(ASSETS, 'bar_fill_early.png'), optimize=True)
     # a dark shade for writing that stands on the picture
     Image.new('RGBA', (8, 8), (13, 11, 16, 150)).save(os.path.join(ASSETS, 'shade.png'))
-    # window icons
-    for size in (16, 32):
-        ui.window_icon(size).image(1, rgba=True).save(os.path.join(ASSETS, f'icon_{size}.png'), optimize=True)
     for lang, lines in TIPS.items():
         write(os.path.join(ASSETS, f'tips_{lang}.txt'), '\n'.join(lines) + '\n')
 
 
+def brand():
+    """The files of the painted logo: the whole logo for the title, pause and loading screens
+    and the early window, and its crown as the window's icon. Only resized from art/src."""
+    from PIL import Image, ImageDraw
+    src = os.path.join(HERE, 'art', 'src')
+    logo = Image.open(os.path.join(src, 'logo.png')).convert('RGBA')
+    for name, (w, h) in (('logo', (LOGO[2] * 4, LOGO[3] * 4)), ('logo_load', (LOGO_LOAD[2] * 4, LOGO_LOAD[3] * 4)), ('logo_big', EARLY['logo'][2:])):
+        fit = logo.resize((w, round(logo.height * w / logo.width)), Image.LANCZOS)
+        out = Image.new('RGBA', (w, h), (0, 0, 0, 0))
+        out.alpha_composite(fit, (0, (h - fit.height) // 2))
+        out.save(os.path.join(ASSETS, name + '.png'), optimize=True)
+    crown = Image.open(os.path.join(src, 'crown.png')).convert('RGBA')
+    for size in (16, 32):
+        n = size * 8
+        icon = Image.new('RGBA', (n, n), (0, 0, 0, 0))
+        ImageDraw.Draw(icon).rounded_rectangle([0, 0, n - 1, n - 1], radius=n // 5, fill=(16, 14, 24, 255))
+        w = int(n * 0.86)
+        c = crown.resize((w, round(crown.height * w / crown.width)), Image.LANCZOS)
+        icon.alpha_composite(c, ((n - w) // 2, (n - c.height) // 2))
+        icon.resize((size, size), Image.LANCZOS).save(os.path.join(ASSETS, f'icon_{size}.png'), optimize=True)
+
+
 def main():
+    if '--brand' in sys.argv:                # only the logo files and the layouts
+        os.makedirs(ASSETS, exist_ok=True)
+        brand()
+        sys.argv.append('--layouts')
     if '--layouts' not in sys.argv:          # the pictures take minutes; with --layouts only the layout files are written
         art()
     for f in os.listdir(LAYOUTS) if os.path.isdir(LAYOUTS) else []:

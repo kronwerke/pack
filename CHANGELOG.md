@@ -649,3 +649,9 @@ The quest book was read against the pack, chapter by chapter (20.11.2026): every
 - Three pictures in quest texts pointed at textures that do not exist and showed the missing texture; two are gone, one shows the scroll.
 - For the website: section banners are exported in English too, a kill task can carry a title, and `task_any` carries an icon.
 - Not seen in a client: any of the corrected texts in the game's quest book, the new recipes, the any-variant tasks ticking off, the German item names.
+
+## 0.25.3
+
+- The new logo, drawn by Nycole (24.11.2026). The title screen, the pause screen, the loading screen and the early window show the painted logo where the pixel lettering stood, and the window's icon is the logo's ice crown. `tools/menus/build.py --brand` makes the files from `tools/menus/art/src/` and writes the layouts; the pixel art of the picture behind it is untouched.
+- Kronwerke Core 0.39.42: the server list entry shows the logo. Every server answers a ping with the crown as its icon and the name in the logo's colours; a client with the pack draws the logo's lettering as a picture in its place. The join screen and the header of the `/kw` window carry the lettering too.
+- Seen in the light menu client (FancyMenu, Drippy, Core) at 1920x1080 and 1366x768: early window, loading screen, title screen. Not seen: any of it with the whole pack, the pause screen, the window icon.

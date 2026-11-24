@@ -186,10 +186,10 @@ element {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -82
-  y = -50
-  width = 163
-  height = 62
+  x = -80
+  y = -81
+  width = 160
+  height = 89
   stay_on_screen = false
   element_loading_requirement_container_identifier = 85fec346-28ca-526d-8150-7b067d7e7eaa-1763000000318
   [loading_requirement_container_meta:85fec346-28ca-526d-8150-7b067d7e7eaa-1763000000318] = [groups:][instances:]
@@ -223,7 +223,7 @@ element {
   advanced_vertical_tilt_degrees = 0.0
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
-  source = [source:local]/config/fancymenu/assets/kronwerke/logo.png
+  source = [source:local]/config/fancymenu/assets/kronwerke/logo_load.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5

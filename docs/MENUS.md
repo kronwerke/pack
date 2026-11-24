@@ -21,6 +21,13 @@ the layout files, so the menus can be rebuilt, compared and reviewed like code.
 | `kubejs/assets/kwmenu/lang/` | the menu's own texts, German and English |
 | `kubejs/assets/minecraft/textures/gui/sprites/widget/` | the game's buttons and sliders in brass, for every screen |
 
+The logo is not drawn by a script. It is the painted logo of Season 2 (drawn by Nycole,
+nycole.art): `tools/menus/art/src/logo.png` is the whole logo, `lettering.png` the name alone
+and `crown.png` its crown cut free. `build.py --brand` resizes them into `logo.png` (title and
+pause screen), `logo_load.png` (loading screen), `logo_big.png` (early window) and the window
+icons, and writes the layouts. The files are four times the size they are shown at: sharp at GUI
+scale 4, thinned out by the game at 3 and 2 (looked at in a 1366x768 window, fine).
+
 Do not edit these by hand. Change `build.py` (layouts, texts, links) or the scripts in
 `tools/menus/art/` (`scene.py` and `works.py` draw the picture, `ui.py` the logo and plates,
 `px.py` is the small pixel toolkit) and run the build again.
